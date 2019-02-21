@@ -1,0 +1,165 @@
+{
+    "method": "json",
+    "object": {
+        "add": [
+            {
+                "item": "howto_computer",
+                "repeat": 1,
+                "x": 8,
+                "y": 2
+            }
+        ],
+        "furniture": {
+            "#": "f_bed",
+            "&": "f_autodoc",
+            "H": "f_autodoc_couch",
+            "X": "f_safe_l",
+			"a": "f_desk",
+            "{": "f_locker"
+        },
+        "place_items": [
+            {
+                "chance": 65,
+                "item": "drugs_emergency",
+                "x": 20,
+                "y": 4
+            },
+            {
+                "chance": 65,
+                "item": "drugs_emergency",
+                "x": [
+                    21,
+                    22
+                ],
+                "y": 2
+            },
+            {
+                "chance": 85,
+                "item": "drugs_analgesic",
+                "x": 22,
+                "y": 4
+            },
+            {
+                "chance": 80,
+                "item": "clothing_glasses",
+                "x": 8,
+                "y": 1
+            },
+            {
+                "chance": 70,
+                "item": "drugs_heal_simple",
+                "x": 21,
+                "y": 4
+            },
+            {
+                "chance": 70,
+                "item": "drugs_heal_simple",
+                "x": 20,
+                "y": 2
+            },
+            {
+                "chance": 45,
+                "item": "tools_medical",
+                "x": 8,
+                "y": [
+                    12,
+                    13
+                ]
+            },
+            {
+                "chance": 50,
+                "item": "drugs_heal_simple",
+                "x": 7,
+                "y": 1
+            },
+            {
+                "chance": 90,
+                "item": "drugs_rare",
+				"repeat": 2,
+                "x": 22,
+                "y": 11
+            },
+            {
+                "chance": 90,
+                "item": "drugs_rare",
+				"repeat": 2,
+                "x": 22,
+                "y": 8
+            }
+        ],
+		"place_signs": [
+        { "signage": "WIP. YOU BROKE IN FOR NOTHING :D", "x": 5, "y": 15 }
+		],
+        "place_monster": [
+            {
+                "monster": "mon_zombie_sxz84",
+                "x": 10,
+                "y": 6
+            },
+            {
+                "monster": "mon_zombie_sxz92",
+                "x": 13,
+                "y": 6
+            },
+            {
+                "monster": "mon_zombie_sxz65",
+                "x": 16,
+                "y": 6
+            },
+            {
+                "monster": "mon_zombie_sxz117",
+                "x": 19,
+                "y": 6
+            }
+        ],
+        "rows": [
+            "||||||||||||||||||||||||",
+            "||&H|||##|||||||||||||||",
+            "||_.d.d._||<<|||||||{{{|",
+            "|||||d|||||dd|||...d.._|",
+            "|||||............|||{{{|",
+            "|||||.||||||||||||||||||",
+            "|||||.+>|_.-_.-_.-_.||||",
+            "|||||.6||..-..-..-..||||",
+            "|||||.|||+-|+-|+-|+-||X|",
+            "|||||.|_.............+.|",
+            "|||||.d..............6.|",
+            "|||||.|..|-+|-+|-+|-+|X|",
+            "|||||.|.a|..-..-..-..|||",
+            "|||||.|ca|._-._-._-._|||",
+            "||||C+||||||||||||||||||",
+            "|||||.||||||||||||||||||",
+            "||||||||||||||||||||||||",
+            "||||||||||||||||||||||||",
+            "||||||||||||||||||||||||",
+            "||||||||||||||||||||||||",
+            "||||||||||||||||||||||||",
+            "||||||||||||||||||||||||",
+            "||||||||||||||||||||||||",
+            "||||||||||||||||||||||||"
+        ],
+        "terrain": {
+            "#": "t_strconc_floor",
+            "&": "t_strconc_floor",
+            "+": "t_door_metal_locked",
+            "-": "t_reinforced_glass",
+            ".": "t_strconc_floor",
+            "6": "t_card_science",
+            "<": "t_stairs_up",
+            ">": "t_stairs_down",
+            "C": "t_card_reader_broken",
+            "H": "t_strconc_floor",
+            "P": "t_strconc_wall",
+            "X": "t_strconc_floor",
+            "_": "t_utility_light",
+            "a": "t_strconc_floor",
+            "c": "t_console",
+            "d": "t_door_metal_c",
+            "{": "t_strconc_floor",
+            "|": "t_strconc_wall"
+        }
+    },
+    "om_terrain": "SecronomSSLab_b2",
+    "type": "mapgen",
+    "weight": 100
+}

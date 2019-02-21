@@ -1,0 +1,266 @@
+[
+    {
+    "type": "mod_tileset",
+    "compatibility": [ "MSX++DEAD_PEOPLE" ],
+    "tiles-new": [
+        {
+        "file": "1_32x32_monster_tile_0-99.png",
+		"sprite_height": 32,
+		"sprite_width": 32,
+		"sprite_offset_x":0,
+		"sprite_offset_y":0,
+        "tiles": [
+            {
+            "id": "mon_zombie_blade",
+            "fg": 1,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_sharpblade",
+            "fg": 2,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_serratedblade",
+            "fg": 3,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_tendrils",
+            "fg": 4,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_tendricles",
+            "fg": 5,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_thicktendrils",
+            "fg": 6,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_mouth",
+            "fg": 7,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_bellymouth",
+            "fg": 8,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_omouth",
+            "fg": 9,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_spoder",
+            "fg": 10,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_spoderhug",
+            "fg": 11,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_spodertickle",
+            "fg": 12,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_translucent",
+            "fg": 13,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_pellucid",
+            "fg": 14,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_WALKINGPOTATO",
+            "fg": 15,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_zawk",
+            "fg": 16,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_zoth",
+            "fg": 17,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_zoid",
+            "fg": 18,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_vex",
+            "fg": 19,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_jinx_ed",
+            "fg": 20,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_faker",
+            "fg": 21,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_scourge",
+            "fg": 22,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_defile",
+            "fg": 23,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_unify",
+            "fg": 24,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_unity",
+            "fg": 25,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_bloodvessel",
+            "fg": 26,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_grubby_s",
+            "fg": 27,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_slimy_s",
+            "fg": 28,
+			"bg": 0
+            },
+			{
+            "id": "mon_insect_parasiteworm_pain",
+            "fg": 29,
+			"bg": 0
+            },
+			{
+            "id": "mon_insect_parasiteworm_int",
+            "fg": 30,
+			"bg": 0
+            },
+			{
+            "id": "mon_insect_parasiteworm_move",
+            "fg": 31,
+			"bg": 0
+            },
+			{
+            "id": "mon_insect_parasiteworm_stomach",
+            "fg": 32,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_lick",
+            "fg": 33,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_swarmer_weak",
+            "fg": 34,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_swarmer_segway",
+            "fg": 35,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_swarmer_moderate",
+            "fg": 36,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_swarmer_strong",
+            "fg": 37,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_swarmer_evo_hungry",
+            "fg": 38,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_swarmer_evo_starving",
+            "fg": 39,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_swarmer_evo_savage",
+            "fg": 40,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_swarmer_evo_virulent",
+            "fg": 41,
+			"bg": 0
+            }
+        ]
+        },
+		{
+		"file": "2_64x80_monster_tile_100-199.png",
+		"sprite_height": 80,
+		"sprite_width": 64,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+            {
+            "id": "mon_zombie_titan",
+            "fg": 100,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_blacktitan",
+            "fg": 101,
+			"bg": 0
+            },
+			{
+            "id": "mon_ayenel",
+            "fg": 102,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_jinx",
+            "fg": 103,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_ichorus",
+            "fg": 104,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_psyrus",
+            "fg": 105,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_jolt",
+            "fg": 106,
+			"bg": 0
+            }
+        ]
+		}
+    ]
+    }
+]

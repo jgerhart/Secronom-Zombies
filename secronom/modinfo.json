@@ -1,0 +1,10 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "secronom",
+    "name": "Secronom",
+    "authors": [ "Axema Vales" ],
+    "description": "Adds a new upgrade branch of EVEN deadlier mutant zombies to the game! (WIP)",
+    "category": "creatures"
+  }
+]

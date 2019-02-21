@@ -1,0 +1,161 @@
+[
+ {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "SSmutant_drop",
+	"//": "Dreadful mutation caused their patient dress to rip, leaving only a garbage",
+    "entries": [ { "item": "rag_bloody" } ]
+  },
+ {
+    "//": "SXZ type. Speciallized in seeking or gnawing players.",
+    "id": "mon_zombie_sxz84",
+    "type": "MONSTER",
+    "name": "SXZ 84",
+    "description": "Alluring large skin in shape of a starfish and mouth slits nibbles near every tip. Its abdomen is infused with gigantic lizard eye, eager to seek its prey.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": 81500,
+    "hp": 95,
+    "speed": 105,
+    "material": [ "flesh" ],
+    "symbol": "*",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_cut": 3,
+    "dodge": 1,
+    "armor_bash": 4,
+    "armor_cut": 2,
+    "armor_fire": 2,
+    "vision_day": 50,
+    "vision_night": 10,
+	"harvest": "zombie",
+    "special_attacks": [
+    [ "LUNGE", 15 ],
+    { "type": "bite", "cooldown": 6, "min_mul": 0.5, "max_mul": 1.0, "no_infection_chance": 20,
+        "damage_max_instance": [
+          { "damage_type": "cut", "amount": 4, "armor_multiplier": 0.6 },
+          { "damage_type": "stab", "amount": 2, "armor_multiplier": 0.8 }
+        ]
+      }
+    ],
+	"death_drops": "SSmutant_drop",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
+  },
+  {
+    "id": "mon_zombie_sxz92",
+    "type": "MONSTER",
+    "name": "SXZ 92",
+    "description": "A human body with its head mutated and deformed into a flowery petal mouth. It shows hundreds of teeth and a centered eye whenever it opens, and bites with a strenght of five regular zombie jaws, which could break a bone as well as ripping target's inner flesh.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": 81500,
+    "hp": 90,
+    "speed": 100,
+    "material": [ "flesh" ],
+    "symbol": "Y",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "melee_cut": 2,
+    "dodge": 1,
+    "armor_bash": 5,
+    "armor_cut": 2,
+	"harvest": "zombie",
+    "armor_fire": 1,
+    "special_attacks": [
+    [ "LUNGE", 20 ],
+    { "type": "bite", "cooldown": 10, "min_mul": 1.0,
+        "damage_max_instance": [
+          { "damage_type": "bash", "amount": 15, "armor_multiplier": 0.8 },
+          { "damage_type": "stab", "amount": 5, "armor_multiplier": 0.4 }
+        ]
+      }
+    ],
+    "death_drops": "SSmutant_drop",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
+  },
+  {
+    "id": "mon_zombie_sxz65",
+    "type": "MONSTER",
+    "name": "SXZ 65",
+    "description": "A twisted body with various attachments of human anatomy, resulting into a nightmarish agile crawler, with its head ruptured into a mouth and an eye inside, constantly opens and close just to survey its vicinity.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "volume": "30000 ml",
+    "weight": 40750,
+    "hp": 50,
+    "speed": 120,
+    "material": [ "flesh" ],
+    "symbol": "w",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "dodge": 1,
+    "armor_bash": 1,
+    "armor_cut": 4,
+    "armor_fire": 1,
+	"harvest": "zombie",
+    "special_attacks": [
+    [ "LUNGE", 12 ],
+    { "type": "bite", "cooldown": 13, "min_mul": 0.5,
+        "damage_max_instance": [
+          { "damage_type": "cut", "amount": 10, "armor_multiplier": 0.7, "armor_penetration": 14 },
+          { "damage_type": "stab", "amount": 4, "armor_multiplier": 0.5 }
+        ]
+      }
+    ],
+    "death_drops": "SSmutant_drop",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "SMELLS", "HEARS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "HARDTOSHOOT" ]
+  },
+  {
+    "id": "mon_zombie_sxz117",
+    "type": "MONSTER",
+    "name": "SXZ 117",
+    "description": "Headless humanoid monster, with its rib ruptured into a torsal eyed mouth. The arms are gone, but it has no limitation to seek its prey.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": 81500,
+    "hp": 75,
+    "speed": 90,
+	"harvest": "zombie",
+    "material": [ "flesh" ],
+    "symbol": "B",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 0,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "armor_bash": 2,
+    "armor_cut": 4,
+    "special_attacks": [
+    { "type": "bite", "cooldown": 10, "min_mul": 0.5,
+        "damage_max_instance": [
+          { "damage_type": "cut", "amount": 3, "armor_multiplier": 0.6 },
+          { "damage_type": "stab", "amount": 14, "armor_multiplier": 0.5 }
+        ]
+      }
+    ],
+    "death_drops": "SSmutant_drop",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "NOHEAD" ]
+  }
+]
