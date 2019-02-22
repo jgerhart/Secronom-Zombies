@@ -214,7 +214,47 @@
             "id": "mon_zombie_swarmer_evo_virulent",
             "fg": 41,
 			"bg": 0
-            }
+            },
+			{
+          "id": "mon_zombie_jinx_ed",
+          "fg": [
+            { "weight":1, "sprite":20},
+			{ "weight":1, "sprite":42},
+			{ "weight":1, "sprite":43},
+			{ "weight":1, "sprite":44},
+			{ "weight":1, "sprite":45},		
+			{ "weight":1, "sprite":46},
+			{ "weight":1, "sprite":47},
+			{ "weight":1, "sprite":48},
+			{ "weight":1, "sprite":49},
+			{ "weight":1, "sprite":50},
+			{ "weight":1, "sprite":51},
+			{ "weight":1, "sprite":52},		
+			{ "weight":1, "sprite":53},
+			{ "weight":1, "sprite":54},
+			{ "weight":1, "sprite":55},
+			{ "weight":1, "sprite":56},
+			{ "weight":1, "sprite":57},
+			{ "weight":1, "sprite":58},
+			{ "weight":1, "sprite":59},
+			{ "weight":1, "sprite":60},		
+			{ "weight":1, "sprite":61},
+			{ "weight":1, "sprite":62},
+			{ "weight":1, "sprite":63},
+			{ "weight":1, "sprite":64},
+			{ "weight":1, "sprite":65},
+			{ "weight":1, "sprite":66},
+			{ "weight":1, "sprite":67},		
+			{ "weight":1, "sprite":68},
+			{ "weight":1, "sprite":69},
+			{ "weight":1, "sprite":70},
+			{ "weight":1, "sprite":71},
+			{ "weight":1, "sprite":72},
+			{ "weight":1, "sprite":73}
+            ],
+          "bg": 0,
+          "rotates": false
+        }
         ]
         },
 		{
