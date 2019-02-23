@@ -38,7 +38,7 @@
     "id": "mon_zombie_vex",
     "type": "MONSTER",
     "name": "vex",
-    "description": "Denoted on its completely wasted remains, its big, black eyes are widely set to the living with malevolent lust.",
+    "description": "Denoted on its completely wasted remains, its big, red eyes are widely set to the living with malevolent lust.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "30000 ml",
