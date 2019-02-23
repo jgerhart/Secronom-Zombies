@@ -49,7 +49,7 @@
     "id": "mon_zombie_mlick",
     "type": "MONSTER",
     "name": "licker zombie",
-    "description": "An ever dominant licker mutant much more distinct to its terrific appearance. Its skin sheds into a fleshy physique, claws arose awkwardly and its tongue grew much longer.",
+    "description": "An ever dominant licker mutant with much more distinction to its terrific appearance. Its skin sheds into a fleshy physique, claws arose awkwardly and its tongue grew much longer.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "30000 ml",
