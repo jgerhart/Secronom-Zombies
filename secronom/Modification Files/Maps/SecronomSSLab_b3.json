@@ -79,7 +79,7 @@
                 "y": 5
             }
         ],
-		"place_monsters": [
+		"place_monster": [
             {
                 "monster": "mon_zombie_scientist",
                 "x": 17,
