@@ -367,42 +367,5 @@
       "NO_BREATHE",
       "REVIVES"
     ]
-  },
-  {
-    "//": "So far, this is a non-humanoid chaos zed... And much like an aberration in its role",
-    "id": "mon_zombie_fleshmongy",
-    "type": "MONSTER",
-    "name": "fleshmonger",
-    "description": "A huge, living blob of rotten flesh, seemingly crawls toward the fallen corpses and \"recycles\" them. Upon absorbing these organics, a baneful entity splits out of it.",
-    "default_faction": "zombie",
-    "species": [ "ZOMBIE" ],
-    "volume": "875000 ml",
-    "weight": 200000,
-    "hp": 500,
-    "speed": 70,
-    "material": [ "flesh" ],
-    "symbol": "Z",
-    "color": "black_white",
-    "aggression": 0,
-    "morale": 0,
-	"//": "Doesn't care about you, and cares only at the dead.",
-    "melee_skill": 6,
-    "melee_dice": 3,
-    "melee_dice_sides": 3,
-    "melee_cut": 3,
-	"armor_cut": 2,
-	"armor_bash": 2,
-    "dodge": 2,
-	"harvest": "zombie",
-	"vision_day": 0,
-	"vision_night": 0,
-    "special_attacks": [
-	[ "SENSE_FLESH", 10 ],
-	[ "PROCESS_FLESH", 0 ]
-    ],
-	"//": "Let it eat nearby corpses, and shits a new one.",
-    "death_drops": "default_zombie_death_drops",
-    "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FAT", "PUSH_MON", "PLASTIC" ]
   }
 ]

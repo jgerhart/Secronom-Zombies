@@ -419,38 +419,6 @@ end
 
 -- NOTE: If you hold something with very low light source, the electricity will strike near you at nighttime.
 
-function fleshy_sense(monster)
-	local locs = {}
-	if monster:can_act() == true then
-	for delta_x = -0, 10 do
-		for delta_y = -0, 10 do
-			local point = monster:pos()
-			point.x = point.x + delta_x
-			point.y = point.y + delta_y
-			if map:has_items(point) then
-				table.insert(locs, point )
-				monster:wander_to(loc, 200)
-			end
-		end
-	end
-	
-	if #locs == 0 then
-		return false
-	end
-
-	local loc = pick_from_list(locs)
-	
-	end
-end
-
-function fleshy_process(monster)
-	if map:has_items(monster:pos()) == true
-	and item:is_corpse(monster:pos()) == true then
-		game.add_msg("The corpse flows through the fleshmonger...")
-		map:i_rem(monster:pos(),item("corpse", 1))
-	end
-end
-
 game.register_monattack("SMASH_GROUND", ground_smash )
 game.register_monattack("TITAN_CHARGE", titan_bashingcharge )
 game.register_monattack("TITAN_IMPACT", titan_bashingcharge_impact )
@@ -468,5 +436,3 @@ game.register_monattack("SHED_ZOMBIE", zombie_shed )
 game.register_monattack("ESPARK_L", electric_spark_lrange )
 game.register_monattack("ESPARK_S", electric_spark_srange )
 game.register_monattack("ESPARK_A", electric_spark_allrange )
-game.register_monattack("SENSE_FLESH", fleshy_sense )
-game.register_monattack("PROCESS_FLESH", fleshy_process )
