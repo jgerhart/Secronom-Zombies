@@ -254,7 +254,12 @@
             ],
           "bg": 0,
           "rotates": false
-        }
+            },
+			{
+            "id": "mon_zombie_mlick",
+            "fg": 74,
+			"bg": 0
+            }
         ]
         },
 		{
