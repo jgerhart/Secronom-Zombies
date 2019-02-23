@@ -79,6 +79,18 @@
                 "y": 5
             }
         ],
+		"place_monsters": [
+            {
+                "monster": "mon_zombie_scientist",
+                "x": 17,
+                "y": 7
+            },
+			{
+                "monster": "mon_zombie_scientist",
+                "x": 14,
+                "y": 8
+            }
+        ],
 		"place_fields": [
             {
                 "field": "fd_blood",
