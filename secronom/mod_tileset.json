@@ -303,6 +303,11 @@
             "id": "mon_zombie_jolt",
             "fg": 106,
 			"bg": 0
+            },
+			{
+            "id": "mon_zombie_tentawraith",
+            "fg": 107,
+			"bg": 0
             }
         ]
 		}
