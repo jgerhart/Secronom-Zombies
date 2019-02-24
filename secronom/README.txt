@@ -16,3 +16,4 @@ CURRENT UPDATES (changes, contents, rebalances, fixes.)
 # REWORKS ON TILESET(frequent)
 
 ~ LICKER (new upgrade path, stats tweaked)
+~ TENDRILS (final upgrade path)
