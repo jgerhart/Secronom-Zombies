@@ -119,6 +119,16 @@
     ]
   },
   {
+    "name": "GROUP_MOUTH_UPGRADEX",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_bellymouth", "freq": 100, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_omouth", "freq": 100, "cost_multiplier": 1 },
+	  { "monster": "mon_zombie_suctionmouth", "freq": 100, "cost_multiplier": 10 }
+    ]
+  },
+  {
     "name": "GROUP_LYING_UPGRADE",
     "type": "monstergroup",
     "default": "mon_null",
