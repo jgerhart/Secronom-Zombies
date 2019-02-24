@@ -6,7 +6,7 @@
     
 "name": "mouthswell zombie",
     
-"description": "A human body, distinct to its big, thick and morbidly deformed jaws.",
+"description": "A human body, distinct to its big, thick and morbidly deformed jaws, dribbling in black ooze.",
     
 "default_faction": "zombie",
     
@@ -189,7 +189,7 @@
     "id": "mon_zombie_suctionmouth",
     "type": "MONSTER",
     "name": "sucker",
-    "description": "A large, ravenous zed, with its elongated mouth viciously altered similar to lamprey's. With its thick skin developed to endure physical impacts, it focuses on gnawing at its hapless target.",
+    "description": "A large, ravenous zed, prevailing an elongated mouth viciously altered similar to lamprey's. With its rough, thick skin developed to endure extreme physical impacts, it focuses on gnawing at its hapless target.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE" ],
     "volume": "92500 ml",
@@ -227,7 +227,7 @@
     "armor_acid": 2,
     "armor_fire": 2,
     "special_attacks": [
-      { "type": "bite", "cooldown": 15, "effects": [ { "id": "grabbed", "duration": 1000, "bp": "TORSO" } ],
+      { "type": "bite", "cooldown": 13, "effects": [ { "id": "grabbed", "duration": 1000, "bp": "TORSO" } ],
         "damage_max_instance": [
           { "damage_type": "bash", "amount": 20, "armor_multiplier": 0.2 },
 		  { "damage_type": "cut", "amount": 20, "armor_multiplier": 0.4 },
