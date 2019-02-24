@@ -81,6 +81,17 @@
     ]
   },
   {
+    "name": "GROUP_TENDRILS_UPGRADEX",
+	"//": "Cycle the evolution until it hits the final upgrade.",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_thicktendrils", "freq": 100, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_tendricles", "freq": 100, "cost_multiplier": 1 },
+	  { "monster": "mon_zombie_tentawraith", "freq": 100, "cost_multiplier": 10 }
+    ]
+  },
+  {
     "name": "GROUP_BLADED_UPGRADE",
     "type": "monstergroup",
     "default": "mon_null",
