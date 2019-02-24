@@ -7,38 +7,9 @@ function creature_distance_from_player(target)
 	
 end
 
-function creature_distance_from_creature(target)
-
-	local mpoint = target:pos() 
-	local ppoint = mmonsters_around()
-	local distance_to_creature = math.sqrt( ((mpoint.x - ppoint.x)^2) + ((mpoint.y - ppoint.y)^2) )
-	return distance_to_creature
-	
-end
-
 function monsters_around()
 
 	local center = player:pos()
-	for off = 1, 60 do
-		for x = -off, off do
-			for y = -off, off do
-			local z = 0 
-				if math.abs(x) == off or math.abs(y) == off then
-					local point = tripoint(center.x + x, center.y + y, center.z + z)
-					local monster = g:critter_at(point)
-						if monster then
-							return monster
-						end
-				end
-			end
-		end
-	end
-	
-end
-
-function mmonsters_around(target)
-
-	local center = monster:pos()
 	for off = 1, 60 do
 		for x = -off, off do
 			for y = -off, off do
