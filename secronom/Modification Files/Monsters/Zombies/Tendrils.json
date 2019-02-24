@@ -99,6 +99,10 @@
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
+	"upgrades": {
+      "half_life": 12,
+      "into_group": "GROUP_TENDRILS_UPGRADEX"
+    },
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "PUSH_MON" ]
   },
   {
@@ -151,6 +155,62 @@
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
+	"upgrades": {
+      "half_life": 12,
+      "into_group": "GROUP_TENDRILS_UPGRADEX"
+    },
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "PUSH_MON" ]
+  },
+  {
+    "id": "mon_zombie_tentawraith",
+	"//": "A boss from Dead Frontier. &%$# this!",
+    "type": "MONSTER",
+    "name": "wraith",
+    "description": "Terrifying outgrowths of savage tentacle accompanies this corpse's crimson body, thrashing anything in its path as it moves aimlessly. Within a closer look, one of its arm pulsates and burdens the body, dragging the heavily mutated portion into the ground.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "volume": "92500 ml",
+    "weight": 120000,
+    "hp": 465,
+    "speed": 95,
+    "material": [ "flesh" ],
+    "symbol": "K",
+    "color": "red_pink",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 4,
+	"harvest": "zombie",
+    "melee_dice_sides": 6,
+    "melee_cut": 4,
+    "dodge": 2,
+    "melee_damage": [
+      {
+        "damage_type": "bash",
+        "amount": 6
+      },
+	  {
+        "damage_type": "cut",
+        "amount": 6
+      }
+    ],
+    "vision_night": 5,
+    "armor_bash": 11,
+    "armor_cut": 9,
+    "armor_acid": 4,
+    "armor_fire": 2,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 7,
+        "armor_penetration": 12
+      },
+      [ "STRETCH_ATTACK", 18 ],
+      [ "tendrilgrip", 15 ],
+      [ "tendrilslam", 22 ],
+      [ "tendrilswing", 2 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "PUSH_MON", "ATTACKMON" ]
   }
 ]
