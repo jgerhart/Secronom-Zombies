@@ -198,7 +198,7 @@
     "speed": 80,
     "material": [ "flesh" ],
     "symbol": "P",
-    "color": "red_pink",
+    "color": "red_green",
 	"harvest": "zombie",
     "aggression": 100,
     "morale": 100,

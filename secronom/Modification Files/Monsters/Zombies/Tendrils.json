@@ -175,7 +175,7 @@
     "speed": 95,
     "material": [ "flesh" ],
     "symbol": "K",
-    "color": "red_pink",
+    "color": "red",
     "aggression": 100,
     "morale": 100,
     "melee_skill": 8,
