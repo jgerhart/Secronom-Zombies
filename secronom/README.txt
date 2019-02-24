@@ -1,5 +1,6 @@
-													Secronom V1.3a - Axema Vales (author)
-										https://discourse.cataclysmdda.org - CDDA official website
+Secronom V1.3a - Axema Vales (author)
+
+https://discourse.cataclysmdda.org - CDDA official website
 
 
 
