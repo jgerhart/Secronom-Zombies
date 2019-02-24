@@ -16,4 +16,4 @@ CURRENT UPDATES (changes, contents, rebalances, fixes.)
 # REWORKS ON TILESET(frequent)
 
 ~ LICKER (new upgrade path, stats tweaked)
-~ TENDRILS, MOUTH (final upgrade path)
+~ TENDRILS, MOUTH, SCOURGE (final upgrade path)
