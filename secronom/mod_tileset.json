@@ -259,6 +259,11 @@
             "id": "mon_zombie_mlick",
             "fg": 74,
 			"bg": 0
+            },
+			{
+            "id": "mon_zombie_tentawraith_tent",
+            "fg": 75,
+			"bg": 0
             }
         ]
         },
