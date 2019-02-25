@@ -308,6 +308,16 @@
             "id": "mon_zombie_tentawraith",
             "fg": 107,
 			"bg": 0
+            },
+			{
+            "id": "mon_zombie_suctionmouth",
+            "fg": 108,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_leptiosa",
+            "fg": 109,
+			"bg": 0
             }
         ]
 		}
