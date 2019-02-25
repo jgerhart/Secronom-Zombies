@@ -172,7 +172,7 @@
     "volume": "92500 ml",
     "weight": 120000,
     "hp": 465,
-    "speed": 95,
+    "speed": 90,
     "material": [ "flesh" ],
     "symbol": "K",
     "color": "red",
@@ -205,10 +205,11 @@
         "cooldown": 7,
         "armor_penetration": 12
       },
-      [ "STRETCH_ATTACK", 18 ],
-      [ "tendrilgrip", 15 ],
+      [ "STRETCH_ATTACK", 20 ],
+      [ "tendrilgrip", 11 ],
       [ "tendrilslam", 22 ],
-      [ "tendrilswing", 2 ]
+	  [ "tendrilstab", 22 ],
+      [ "tendrilswing", 3 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "PUSH_MON", "ATTACKMON" ]
