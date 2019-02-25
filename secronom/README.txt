@@ -1,4 +1,4 @@
-Secronom V1.3a - Axema Vales (author)
+Secronom V1.3.3 - Axema Vales (author)
 
 https://discourse.cataclysmdda.org - CDDA official website
 
@@ -11,10 +11,25 @@ https://discourse.cataclysmdda.org - CDDA official website
   
   
 
-CURRENT UPDATES (#changes, +contents, ~rebalances, -fixes.)
+CURRENT UPDATES (#changes, +contents, ~rebalances, -fixes...)
 
 # REWORKS ON TILESET(frequent)
 
 +~ LICKER (new upgrade path, stats tweaked)
 +~ MOUTH, SCOURGE (new and final upgrade path, stats tweaked)
-+~ TENDRILS (new and final upgrade path, stats tweaked, abilities reworked)`
++~ TENDRILS (new and final upgrade path, stats tweaked, abilities reworked)
+
+
+
+PAST UPDATES
+
+--> v1.2 <--
+
++ADDED CITY ZED MUTANT (lying body, scourge)
++ADDED 5 CHAOS TYPE ZEDS (zoid, vex, jinx, fake zombie and jolt)
++ADDED A WANDERING MUTANT (ayenel)
++ADDED SECRONOM DRAGON (confined boss)
++ADDED SECRONOM LAB (aesthetic building, outline for an even larger lab)
+
+~TITAN (stats and abilities reworked)
+~SWARMERS (removed and separated some specials)
