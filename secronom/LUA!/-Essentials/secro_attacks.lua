@@ -340,8 +340,8 @@ function electric_spark_lrange(monster)
 	local mon = monster
 	local locs = {}
 	if monster:can_act() == true then
-	for delta_x = -10, 25 do
-		for delta_y = -10, 25 do
+	for delta_x = -25, 25 do
+		for delta_y = -25, 25 do
 			local point = monster:pos()
 			point.x = point.x + delta_x
 			point.y = point.y + delta_y
@@ -367,8 +367,8 @@ function electric_spark_srange(monster)
 	local mon = monster
 	local locs = {}
 	if monster:can_act() == true then
-	for delta_x = -0, 10 do
-		for delta_y = -0, 10 do
+	for delta_x = -10, 10 do
+		for delta_y = -10, 10 do
 			local point = monster:pos()
 			point.x = point.x + delta_x
 			point.y = point.y + delta_y
@@ -394,8 +394,8 @@ function electric_spark_allrange(monster)
 	local mon = monster
 	local locs = {}
 	if monster:can_act() == true then
-	for delta_x = -0, 25 do
-		for delta_y = -0, 25 do
+	for delta_x = -25, 25 do
+		for delta_y = -25, 25 do
 			local point = monster:pos()
 			point.x = point.x + delta_x
 			point.y = point.y + delta_y
@@ -419,6 +419,98 @@ end
 
 -- NOTE: If you hold something with very low light source, the electricity will strike near you at nighttime.
 
+function spawn_tenta(monster)
+	local mon = monster
+	local locs = {}
+	if monster:can_act() == true then
+	if player:sees(monster) then
+	game.add_msg("<color_red>A tendril burst out of the ground!</color>")
+		end
+	for delta_x = -5, 5 do
+		for delta_y = -5, 5 do
+			local point = monster:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if g:is_empty(point) then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	local monster = game.create_monster(mtype_id("mon_zombie_tentawraith_tent"), loc)
+	
+	end
+end
+
+function spawn_tenta_near(monster)
+	local mon = monster
+	local locs = {}
+	if monster:sees(player) == true and
+	creature_distance_from_player(mon) <= 15 then
+	local baam = math.random(3)
+	player:add_effect(efftype_id("stunned"), TURNS(baam))
+	if player:sees(monster) then
+	game.add_msg("<color_red>A tendril bursts out of the ground and inflicts a submissive blow!</color>")
+		end
+	for delta_x = -1, 1 do
+		for delta_y = -1, 1 do
+			local point = player:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if g:is_empty(point) then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	local monster = game.create_monster(mtype_id("mon_zombie_tentawraith_tent"), loc)
+	
+	end
+end
+
+-- NOTE: It spawns a tendril - whether inside a car or through an impenetrable window - when it sees you.
+
+function tent_auto(monster)
+	if monster:has_effect(efftype_id("tent_time")) ~= true then
+		local lifetime = math.random(30,50)
+		monster:add_effect(efftype_id("tent_time"), TURNS(lifetime))
+		end
+	if monster:has_effect(efftype_id("tent_time")) == true then
+		local deathtime = math.random(50)
+		if deathtime == 50 then
+		monster:add_effect(efftype_id("tent_time"), TURNS(deathtime))
+		end
+	end
+end
+
+function tent_back(monster)
+	local life = monster:get_effect_int(efftype_id("tent_time"))
+		if life == 2 then
+			monster:die(monster)
+			game.add_msg("The tendril slithers back to the ground...")
+	end
+end
+
+function tent_backforce(monster)
+	local tentax = monster:hp_percentage()
+	if tentax <= 75 then
+		monster:die(monster)
+		game.add_msg("The tendril slithers back to the ground...")
+	end
+end
+
+-- Its death with these functions will not count as your kill :<
+
 game.register_monattack("SMASH_GROUND", ground_smash )
 game.register_monattack("TITAN_CHARGE", titan_bashingcharge )
 game.register_monattack("TITAN_IMPACT", titan_bashingcharge_impact )
@@ -436,3 +528,8 @@ game.register_monattack("SHED_ZOMBIE", zombie_shed )
 game.register_monattack("ESPARK_L", electric_spark_lrange )
 game.register_monattack("ESPARK_S", electric_spark_srange )
 game.register_monattack("ESPARK_A", electric_spark_allrange )
+game.register_monattack("TENTA_SPAWN", spawn_tenta )
+game.register_monattack("NEAR_TENTA_SPAWN", spawn_tenta_near )
+game.register_monattack("AUTO_TENT", tent_auto )
+game.register_monattack("BACK_TENT", tent_back )
+game.register_monattack("FORCEBACK_TENT", tent_backforce )
