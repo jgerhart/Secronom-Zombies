@@ -209,5 +209,13 @@
 		"desc": ["An odd marking appeared somewhere on your body."],
 		"int_add_val": 1,
 		"max_intensity": 30
+	},
+	{
+		"type": "effect_type",
+		"id": "tent_time",
+		"name": ["Tendril's Life"],
+		"desc": ["Tendril's lifespan"],
+		"int_add_val": 1,
+		"max_intensity": 2
 	}
 ]
