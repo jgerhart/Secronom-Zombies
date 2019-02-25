@@ -153,7 +153,6 @@
     "type": "MONSTER",
     "name": "zombie",
     "description": "A human body, swaying as it moves, an unstoppable rage is visible in its oily red eyes.",
-	"//": "Even without reading the description, players can realize this is fake, since it has a different ID.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
@@ -177,6 +176,7 @@
 	[ "scratch", 20 ],
 	[ "SHED_ZOMBIE", 0 ]
 	],
+	"//": "If dying, it transforms either of two options, and brings back health to the fullest.",
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
     "flags": [
