@@ -511,6 +511,57 @@ end
 
 -- Its death with these functions will not count as your kill :<
 
+function spawn_flesher(monster)
+	local mon = monster
+	local locs = {}
+	if monster:can_act() == true then
+	monster:apply_damage(monster, "bp_torso", 205)
+	if player:sees(monster) then
+	game.add_msg("<color_red>The fleshmonger shivers and splits a chunk of living flesh!</color>")
+		end
+	for delta_x = -1, 1 do
+		for delta_y = -1, 1 do
+			local point = monster:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if g:is_empty(point) then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	local monster = game.create_monster(mtype_id("mon_zombie_flesher"), loc)
+	
+	end
+end
+
+function heal_fleshmonger(monster)
+	if monster:can_act() == true then
+		local toxicity = math.random(10)
+		local toxicmx = monster:get_hp_max() 
+		local toxichp = monster:get_hp()
+		local toxicaddhp = toxichp + toxicmx / 50 + toxicity
+		if toxichp + toxicaddhp < toxicmx then
+		monster:set_hp( toxichp + toxicaddhp )
+		end
+	end
+end
+
+function explode_flesher(monster)
+	local fleshermax = monster:hp_percentage()
+	if fleshermax >= 51 then
+			monster:apply_damage(monster, "bp_torso", 1)
+	elseif fleshermax <= 50 then
+			monster:die(monster)
+			game.add_msg("The flesher erupts into a toxic gas...")
+	end
+end
+
 game.register_monattack("SMASH_GROUND", ground_smash )
 game.register_monattack("TITAN_CHARGE", titan_bashingcharge )
 game.register_monattack("TITAN_IMPACT", titan_bashingcharge_impact )
@@ -533,3 +584,7 @@ game.register_monattack("NEAR_TENTA_SPAWN", spawn_tenta_near )
 game.register_monattack("AUTO_TENT", tent_auto )
 game.register_monattack("BACK_TENT", tent_back )
 game.register_monattack("FORCEBACK_TENT", tent_backforce )
+game.register_monattack("FLESHER_SPAWN", spawn_flesher )
+game.register_monattack("FLESHMONGER_HEAL", heal_fleshmonger )
+game.register_monattack("FLESHER_EXPLODE", explode_flesher )
+game.register_monattack("FLESHER_WANDER", wander_flesher )
