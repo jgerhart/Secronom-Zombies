@@ -163,7 +163,7 @@
   },
   {
     "id": "mon_zombie_tentawraith",
-	"//": "A boss from Dead Frontier. Heavily remaked for CDDA version!",
+	"//": "A boss from Dead Frontier. Heavily remaked for CDDA version as skillful zombie!",
     "type": "MONSTER",
     "name": "wraith",
     "description": "Terrifying outgrowths of savage tentacle accompanies this corpse's crimson body, thrashing anything in its path as it moves aimlessly. Within a closer look, one of its arm pulsates and burdens the body, dragging the heavily mutated portion into the ground.",
