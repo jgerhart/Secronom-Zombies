@@ -367,5 +367,66 @@
       "NO_BREATHE",
       "REVIVES"
     ]
+  },
+  {
+    "//": "A non-humanoid zombie, with an ability to obscure surroundings with toxic gas and soaks up LOTS of damage.",
+    "id": "mon_zombie_fleshmonger",
+    "type": "MONSTER",
+    "name": "fleshmonger",
+    "description": "A humongous rotten blob of flesh, emitting foul odor in its vicinity. Though in it's haphazard trashy appearance, it simply wanders toward nothingness, occasionally splitting smaller matters in its path.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE" ],
+    "volume": "875000 ml",
+    "weight": 200000,
+    "hp": 1655,
+    "speed": 55,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "black_white",
+    "aggression": 5,
+    "morale": 5,
+	"emit_fields": [ "flesh_odor_emit" ],
+	"//": "Yes, it is a passive monster.",
+    "melee_skill": 10,
+    "melee_dice": 6,
+    "melee_dice_sides": 6,
+    "melee_cut": 4,
+	"harvest": "exempt",
+    "special_attacks": [
+	[ "FLESHER_SPAWN", 50 ],
+	[ "FLESHMONGER_HEAL", 20 ]
+    ],
+	"//": "Spawning a flesher costs health(and eventually dies with this ability) while these minions will explode anywhere in their limited life. The fleshmonger gains small health overtime.",
+    "death_function": [ "GAS" ],
+    "flags": [ "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "PUSH_MON" ]
+  },
+  {
+    "//": "Suicidal blob.",
+    "id": "mon_zombie_flesher",
+    "type": "MONSTER",
+    "name": "flesher",
+    "description": "A blob of icky flesh, oozing a wickedly foul liquid across the ground.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE" ],
+    "volume": "30000 ml",
+    "weight": 40750,
+    "hp": 205,
+    "speed": 110,
+    "material": [ "flesh" ],
+    "symbol": "z",
+    "color": "black_white",
+    "aggression": 5,
+    "morale": 5,
+	"emit_fields": [ "flesh_smallodor_emit" ],
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 0,
+	"harvest": "exempt",
+    "special_attacks": [
+	[ "FLESHER_EXPLODE", 0 ]
+    ],
+    "death_function": [ "GAS" ],
+    "flags": [ "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE" ]
   }
 ]
