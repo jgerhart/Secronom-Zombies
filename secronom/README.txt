@@ -8,12 +8,15 @@ https://discourse.cataclysmdda.org - CDDA official website
   ~ MOST OF THE CREATURES CAME FROM VARIOUS REFERENCES, NOTABLY "DEAD FRONTIER". While others are miscellaneous and made-up addition, just to widen the bestiary(and interest).
 
   *This README.txt is my changelog, so what is done will be recorded(after v1.2) and released after a week. Always check this repository for the newest updates ;)
+  *AND LASTLY... PLEASE, notify me of any bugs you encountered while playing along with this mod. I'd like to hear petitions from every players who supports ^_^
   
   
 
 CURRENT UPDATES (#changes, +contents, ~rebalances, -fixes...)
 
 # REWORKS ON TILESET(frequent)
+
++ NEW CHAOS ZED (fleshmonger)
 
 +~ LICKER (new upgrade path, stats tweaked)
 +~ MOUTH, SCOURGE (new and final upgrade path, stats tweaked)
