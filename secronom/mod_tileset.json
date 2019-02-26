@@ -264,6 +264,11 @@
             "id": "mon_zombie_tentawraith_tent",
             "fg": 75,
 			"bg": 0
+            },
+			{
+            "id": "mon_zombie_flesher",
+            "fg": 76,
+			"bg": 0
             }
         ]
         },
@@ -322,6 +327,11 @@
 			{
             "id": "mon_zombie_leptiosa",
             "fg": 109,
+			"bg": 0
+            },
+			{
+            "id": "mon_zombie_fleshmonger",
+            "fg": 110,
 			"bg": 0
             }
         ]
