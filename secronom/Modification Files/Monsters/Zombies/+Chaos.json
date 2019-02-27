@@ -397,7 +397,7 @@
 	[ "FLESHER_SPAWN", 50 ],
 	[ "FLESHMONGER_HEAL", 20 ]
     ],
-	"//": "Spawning a flesher costs health while it gains a small health overtime.",
+	"//": "Spawning a flesher costs health while gaining small health overtime.",
     "death_function": [ "GAS" ],
     "flags": [ "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "PUSH_MON" ]
   },
@@ -430,5 +430,42 @@
 	"//": "Explodes automatically within health threshold.",
     "death_function": [ "GAS" ],
     "flags": [ "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE" ]
+  },
+  {
+    "//": "Animalistic zombie, with the ability to randomly teleport, meaning it can go pass through solid walls(and even in your death mobile)",
+    "id": "mon_zombie_faux",
+    "type": "MONSTER",
+    "name": "faux",
+    "description": "Merely a thick shadow of reality, as if light doesn't penetrate through. In its shady outline, it appears to be a quadruped creature, glaring its sharp eyes amidst of nowhere.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE" ],
+    "volume": "62500 ml",
+    "weight": 81500,
+    "hp": 155,
+    "speed": 110,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "black_white",
+    "aggression": 100,
+    "morale": 50,
+    "melee_skill": 6,
+    "melee_dice": 4,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+	"dodge": 3,
+	"harvest": "exempt",
+	"vision_day": 25,
+	"armor_cut": 7,
+	"armor_bash": 5,
+    "special_attacks": [
+	[ "PLAYER_TELE_FAUX", 5 ],
+	[ "RUN_TELE_FAUX", 5 ],
+	[ "TELE_FAUX", 25 ],
+	[ "MINIHEAL_FAUX", 0 ]
+    ],
+	"//": "Teleport to player upon sighting and in range while teleports into a place that monster doesn't see (when damaged greatly). Will also teleport randomly.",
+	"fear_triggers": [ "HURT" ],
+    "death_function": [ "DISAPPEAR" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER_1", "REGEN_MORALE", "HEARS", "SMELLS", "FILTHY", "STUMBLES", "BASHES", "POISON", "NO_BREATHE" ]
   }
 ]
