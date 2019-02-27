@@ -46,7 +46,7 @@
       "into_group": "GROUP_ZSPIDER_UPGRADE"
     },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "CLIMBS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "CLIMBS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "FILTHY", "REVIVES", "BONES" ]
   },
   {
     "id": "mon_zombie_spoderhug",
@@ -92,7 +92,7 @@
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "CLIMBS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "CLIMBS", "WARM", "BASHES", "POISON", "NO_BREATHE", "FILTHY", "REVIVES", "BONES" ]
   },
   {
     "id": "mon_zombie_spodertickle",
@@ -137,6 +137,6 @@
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "CLIMBS", "WARM", "BASHES", "POISON", "NO_BREATHE", "BLEED", "REVIVES", "BONES" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "CLIMBS", "WARM", "BASHES", "POISON", "NO_BREATHE", "BLEED", "FILTHY", "REVIVES", "BONES" ]
   }
 ]

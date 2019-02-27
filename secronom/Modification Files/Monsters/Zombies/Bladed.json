@@ -62,7 +62,7 @@
     
 "death_function": [ "NORMAL"],
     
-"flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES" ]
+"flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "BONES" ]
   },
   
   
@@ -139,7 +139,7 @@
     
 "death_function": [ "NORMAL"],
     
-"flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES", "BLEED"]
+"flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "BONES", "BLEED"]
   },
   
 {
@@ -216,6 +216,6 @@
     
 "death_function": [ "NORMAL"],
     
-"flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES", "BLEED"]
+"flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "BONES", "BLEED"]
   }
 ]

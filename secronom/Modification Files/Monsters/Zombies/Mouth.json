@@ -74,7 +74,7 @@
     },
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL"],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "BONES" ]
   },
   {
     "id": "mon_zombie_bellymouth",
@@ -126,7 +126,7 @@
       "half_life": 12,
       "into_group": "GROUP_MOUTH_UPGRADEX"
     },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "BONES" ]
   },
   {
     "id": "mon_zombie_omouth",
@@ -183,7 +183,7 @@
       "half_life": 12,
       "into_group": "GROUP_MOUTH_UPGRADEX"
     },
-    "flags": [ "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES" ]
+    "flags": [ "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "BONES" ]
   },
 {
     "id": "mon_zombie_suctionmouth",
@@ -238,6 +238,6 @@
 	"//": "Perfectly strong biter!",
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL"],
-    "flags": [ "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES" ]
+    "flags": [ "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "BONES" ]
   }  
 ]

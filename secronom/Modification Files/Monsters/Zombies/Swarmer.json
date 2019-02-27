@@ -38,7 +38,7 @@
       "half_life": 14,
       "into": "mon_zombie_swarmer_moderate"
      },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "SWARMS", "GRABS" ]
   },
   {
     "id": "mon_zombie_swarmer_segway",
@@ -77,7 +77,7 @@
       "into_group": "GROUP_SWARMERSEGWAY_UPGRADE",
       "//": "Particularly, normal zombie upgrade is very time wasting. This zombie stays with other swarmer types, difference is, it will upgrade into mutated ones."
      },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "SWARMS", "GRABS" ]
   },
   {
     "id": "mon_zombie_swarmer_moderate",
@@ -115,7 +115,7 @@
       "half_life": 14,
       "into": "mon_zombie_swarmer_strong"
      },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
   },
   {
     "id": "mon_zombie_swarmer_strong",
@@ -153,7 +153,7 @@
       "half_life": 14,
       "into": "mon_zombie_swarmer_evo_hungry"
      },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "SWARMS", "GRABS" ]
   },
   {
     "id": "mon_zombie_swarmer_evo_hungry",
@@ -191,7 +191,7 @@
       "half_life": 14,
       "into": "mon_zombie_swarmer_evo_starving"
      },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "SWARMS", "GRABS" ]
   },
  {
     "id": "mon_zombie_swarmer_evo_starving",
@@ -229,7 +229,7 @@
       "half_life": 14,
       "into_group": "GROUP_EZTARVING_UPGRADE"
      },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "SWARMS", "GRABS" ]
   },
  {
     "id": "mon_zombie_swarmer_evo_savage",
@@ -261,7 +261,7 @@
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "SWARMS" ]
   },
   {
     "id": "mon_zombie_swarmer_evo_virulent",
@@ -293,6 +293,6 @@
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "ATTACKMON", "PUSH_MON" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "FILTHY", "SWARMS", "ATTACKMON", "PUSH_MON" ]
   }
 ]

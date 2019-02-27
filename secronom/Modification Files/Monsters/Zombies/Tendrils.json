@@ -49,7 +49,7 @@
       "half_life": 12,
       "into_group": "GROUP_TENDRILS_UPGRADE"
     },
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "PUSH_MON" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "REVIVES", "BONES", "PUSH_MON" ]
   },
   {
     "id": "mon_zombie_thicktendrils",
@@ -103,7 +103,7 @@
       "half_life": 12,
       "into_group": "GROUP_TENDRILS_UPGRADEX"
     },
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "PUSH_MON" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "BONES", "PUSH_MON" ]
   },
   {
     "id": "mon_zombie_tendricles",
@@ -159,7 +159,7 @@
       "half_life": 12,
       "into_group": "GROUP_TENDRILS_UPGRADEX"
     },
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "PUSH_MON" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "PUSH_MON" ]
   },
   {
     "id": "mon_zombie_tentawraith",
@@ -215,7 +215,7 @@
     ],
 	"//": "It spawns a tendril at random spots whether it sees you or not. If it spawns beside you, it inflicts stun.",
     "death_drops": "default_zombie_death_drops",
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "PUSH_MON", "ATTACKMON" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "PUSH_MON", "ATTACKMON" ]
   },
   {
     "id": "mon_zombie_tentawraith_tent",

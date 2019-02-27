@@ -33,7 +33,7 @@
       "into_group": "GROUP_LYING_UPGRADE"
      },
     "death_function": [ "NORMAL" ],
-    "flags": [ "STUMBLES", "WARM", "POISON", "NO_BREATHE", "REVIVES" ]
+    "flags": [ "STUMBLES", "WARM", "POISON", "NO_BREATHE", "FILTHY", "REVIVES" ]
   },
   {
     "//": "Flying zombies.",
@@ -63,7 +63,7 @@
     "vision_night": 4,
 	"harvest": "zombie",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FLIES", "BLEED", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "FLIES", "BLEED", "GRABS" ]
   },
   {
     "//": "much like a gasbag.",
@@ -94,6 +94,6 @@
     "vision_night": 20,
 	"harvest": "zombie",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FLIES", "BLEED", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "FLIES", "BLEED", "GRABS" ]
   }
 ]

@@ -39,7 +39,7 @@
       "half_life": 14,
       "into": "mon_zombie_unity"
      },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE" ]
   },
   {
 	"//": "Guns will take this down easily.",
@@ -82,7 +82,7 @@
 	 "special_attacks": [
       [ "GRENADIER", 15 ]
     ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "PLASTIC" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "PLASTIC" ]
   },
   {
     "id": "mon_zombie_bloodvessel",

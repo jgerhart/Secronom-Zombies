@@ -43,7 +43,7 @@
       "half_life": 14,
       "into": "mon_zombie_mlick"
      },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "FILTHY", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE" ]
  },
  {
     "id": "mon_zombie_mlick",
@@ -85,6 +85,6 @@
     },
     "death_function": [ "NORMAL" ],
 	
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "REVIVES", "BONES", "GROUP_MORALE" ]
  }
 ]
