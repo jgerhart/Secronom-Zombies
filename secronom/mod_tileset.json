@@ -333,6 +333,11 @@
             "id": "mon_zombie_fleshmonger",
             "fg": 110,
 			"bg": 0
+            },
+			{
+            "id": "mon_zombie_faux",
+            "fg": 111,
+			"bg": 0
             }
         ]
 		}
