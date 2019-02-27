@@ -596,7 +596,8 @@ function faux_tele_player(monster)
 	local locs = {}
 	if monster:sees(player) == true and
 	creature_distance_from_player(mon) <= 10 then
-	if player:sees(monster) then
+	if player:sees(monster) == true and
+	creature_distance_from_player(mon) > 2 then
 	game.add_msg("<color_red>The faux shifts and appears beside you!</color>")
 		end
 	for delta_x = -1, 1 do
@@ -654,7 +655,8 @@ function faux_tele(monster)
 	local tpnow = math.random(5)
 	local locs = {}
 	if monster:can_act() == true then
-	if player:sees(monster) then
+	if player:sees(monster) and
+	tpnow == 5 then
 	game.add_msg("The faux shifts...")
 		end
 	for delta_x = -10, 10 do
