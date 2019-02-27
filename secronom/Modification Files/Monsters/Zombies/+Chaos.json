@@ -29,9 +29,10 @@
     "special_attacks": [
 	[ "STANCES_ZOID", 11 ]
     ],
+	"//": "You'll see it blink, but getting closer lets you know the stance...",
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FAT", "PUSH_MON" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FAT", "PUSH_MON" ]
   },
   {
     "//": "A vulnerable zombie with constant ability to inflict a debuff, as long as the battlers see each other.",
@@ -63,7 +64,7 @@
 	"//": "Severity of effects are random, also applies for the type of effect too.",
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FAT" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "FILTHY", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FAT" ]
   },
   {
     "//": "A zombie that relies TOTALLY on spawning minions. Unlike other creatures in the game, these minions are the key in dealing immensive damage.",
@@ -93,7 +94,7 @@
 	"armor_cut": 12,
 	"armor_bash": 6,
     "special_attacks": [
-	[ "JINX_SPAWNSTART", 20 ],
+	[ "JINX_SPAWNSTART", 15 ],
 	[ "JINX_SPAWN", 0 ],
 	[ "JINX_CONCENTRATE", 50 ]
     ],
@@ -101,7 +102,7 @@
     "death_drops": "default_zombie_death_drops",
 	"anger_triggers": [ "HURT", "PLAYER_CLOSE" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "PATH_AVOID_DANGER_1", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FAT" ]
+    "flags": [ "SEES", "PATH_AVOID_DANGER_1", "HEARS", "SMELLS", "FILTHY", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FAT" ]
   },
   {
     "id": "mon_zombie_jinx_ed",
@@ -242,7 +243,7 @@
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
     "flags": [
-      "SEES",
+      "SEES", "FILTHY",
       "HEARS",
       "SMELLS",
       "STUMBLES",
@@ -302,7 +303,7 @@
 	"//": "Very strong bite!",
     "death_function": [ "NORMAL" ],
     "flags": [
-      "SEES",
+      "SEES", "FILTHY",
       "HEARS",
       "SMELLS",
 	  "FLIES",
@@ -339,7 +340,7 @@
     "melee_dice_sides": 2,
     "melee_cut": 2,
 	"dodge": 2,
-	"harvest": "zombie",
+	"harvest": "CBM_SUBS",
 	"vision_day": 30,
 	"armor_cut": 10,
 	"armor_bash": 6,
@@ -355,7 +356,7 @@
 	"anger_triggers": [ "HURT", "PLAYER_CLOSE" ],
     "death_function": [ "NORMAL" ],
     "flags": [
-      "SEES",
+      "SEES", "FILTHY",
       "HEARS",
       "SMELLS",
       "STUMBLES",
@@ -396,7 +397,7 @@
 	[ "FLESHER_SPAWN", 50 ],
 	[ "FLESHMONGER_HEAL", 20 ]
     ],
-	"//": "Spawning a flesher costs health(and eventually dies with this ability) while these minions will explode anywhere in their limited life. The fleshmonger gains small health overtime.",
+	"//": "Spawning a flesher costs health while it gains a small health overtime.",
     "death_function": [ "GAS" ],
     "flags": [ "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "PUSH_MON" ]
   },
@@ -426,6 +427,7 @@
     "special_attacks": [
 	[ "FLESHER_EXPLODE", 0 ]
     ],
+	"//": "Explodes automatically within health threshold.",
     "death_function": [ "GAS" ],
     "flags": [ "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE" ]
   }
