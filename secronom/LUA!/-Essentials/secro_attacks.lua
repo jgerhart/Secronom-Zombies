@@ -66,11 +66,15 @@ function ground_smash(monster)
 		if math.random(10) > 3 then
 			player:add_effect(efftype_id("downed"), TURNS(2))
 			player:add_effect(efftype_id("stunned"), TURNS(2))
+			if player:sees(monster) then
 			game.add_msg("<color_red>The "..monster:get_name().." brought down tremor!</color>")
+			end
 		else
 			player:add_effect(efftype_id("stunned"), TURNS(5))
 			player:add_effect(efftype_id("downed"), TURNS(5))
+			if player:sees(monster) then
 			game.add_msg("<color_red>The "..monster:get_name().." brought down an immensive tremor!</color>")
+			end
 			map:destroy(monster:pos())
 		end
 	else
@@ -84,7 +88,9 @@ function titan_bashingcharge(monster)
 	local titancharge_duration = TURNS(15)
 	if monster:sees(player) == true 
 	and creature_distance_from_player(mon) > 15	then
-		game.add_msg("<color_red>A titan is ferociously charging towards you!</color>")
+		if player:sees(monster) then
+		game.add_msg("<color_red>A titan is ferociously charging!</color>")
+		end
 		monster:add_effect(titancharge, titancharge_duration)
 		monster:add_effect(efftype_id("blind"), TURNS(12))
 		monster:move_to(player:pos())
@@ -112,7 +118,9 @@ function blacktitan_bashingcharge(monster)
 	local blacktitancharge_duration = TURNS(15)
 	if monster:sees(player) == true 
 	and creature_distance_from_player(mon) > 15	then
-		game.add_msg("<color_red>A black titan is ferociously charging towards you!</color>")
+		if player:sees(monster) then
+		game.add_msg("<color_red>A black titan is ferociously charging!</color>")
+		end
 		monster:add_effect(blacktitancharge, blacktitancharge_duration)
 		monster:add_effect(efftype_id("blind"), TURNS(12))
 		monster:move_to(player:pos())
@@ -155,7 +163,9 @@ function spawn_inforcer(monster)
 
 	local loc = pick_from_list(locs)
 	local monster = game.create_monster(mtype_id("mon_bot_secroinforcer"), loc)
+	if player:sees(monster) then
 	game.add_msg("<color_purple>A reinforcer bot flies into vicinity!</color>")
+	end
 	
 	end
 end
@@ -168,7 +178,9 @@ function secrodrag_eheal(monster)
 		local draghp = monster:get_hp()
 		local dragaddhp = draghp + draghpmax / 5
 		monster:set_hp( draghp + dragaddhp )
+		if player:sees(monster) then
 		game.add_msg("<color_purple>The secronom dragon momentarily pauses as it undergo maintenance.</color>")
+		end
 	end
 end
 
@@ -202,7 +214,7 @@ function zoid_stances(monster)
 			monster:add_effect(efftype_id("downed"), TURNS(3))
 			if player:sees(monster) == true
 			and creature_distance_from_player(mon) < 5 then
-			game.add_msg("<color_green>But it suddenly spasms to the floor!</color>")
+			game.add_msg("<color_green>And suddenly spasms to the floor!</color>")
 			end
 			end
 		end
@@ -229,9 +241,11 @@ end
 
 function startspawn_jinx(monster)
 	if monster:sees(player) == true then
-	local spawncount = math.random(3,10)
-	monster:add_effect(efftype_id("jinx_spawning"), TURNS(spawncount))
-	game.add_msg("<color_red>Shadows are emerging from the smog!</color>")
+		local spawncount = math.random(3,10)
+		monster:add_effect(efftype_id("jinx_spawning"), TURNS(spawncount))
+		if player:sees(monster) then
+			game.add_msg("<color_red>Shadows are emerging from the smog!</color>")
+		end
 	end
 end
 
@@ -307,7 +321,9 @@ function zombie_shed(monster)
 		monster:set_hp( aftershedhp + beforeshedhp )
 		if shedwhat == 1 then
 			monster:poly(mtype_id("mon_zombie_ichorus"))
+			if player:sees(monster) then
 			game.add_msg("<color_red>The head of the zombie bursts a dreadful tentacle, flinging acid everywhere!</color>")
+			end
 			local source = monster:pos()
 			for re = 0, 1 do
 			for x = -re, re do
@@ -325,11 +341,15 @@ function zombie_shed(monster)
 			
 		elseif shedwhat == 2 then
 			monster:poly(mtype_id("mon_zombie_psyrus"))
+			if player:sees(monster) then
 			game.add_msg("<color_red>The whole body of the zombie explodes into gore, revealing its true, revolting figure!</color>")
+			end
 			if creature_distance_from_player(mon) <= 2 then
 			player:add_effect(efftype_id("stunned"), TURNS(2))
 			player:add_effect(efftype_id("downed"), TURNS(3))
-			game.add_msg("<color_red>The remains are flung towards you, and knocks you in its impact!</color>")
+			if player:sees(monster) then
+			game.add_msg("<color_red>The remains are flung towards you, knocking you in its impact!</color>")
+			end
 			
 			end
 		end
@@ -497,7 +517,9 @@ function tent_back(monster)
 	local life = monster:get_effect_int(efftype_id("tent_time"))
 		if life == 2 then
 			monster:die(monster)
+			if player:sees(monster) then
 			game.add_msg("The tendril slithers back to the ground...")
+		end
 	end
 end
 
@@ -505,11 +527,11 @@ function tent_backforce(monster)
 	local tentax = monster:hp_percentage()
 	if tentax <= 75 then
 		monster:die(monster)
+		if player:sees(monster) then
 		game.add_msg("The tendril slithers back to the ground...")
+		end
 	end
 end
-
--- Its death with these functions will not count as your kill :<
 
 function spawn_flesher(monster)
 	local mon = monster
@@ -554,11 +576,18 @@ end
 
 function explode_flesher(monster)
 	local fleshermax = monster:hp_percentage()
+	local flesherhp = monster:get_hp()
 	if fleshermax >= 51 then
+			local flesherheal = math.random(10)
 			monster:apply_damage(monster, "bp_torso", 1)
+			if flesherheal == 10 then
+			monster:set_hp( flesherhp + 2 )
+			end
 	elseif fleshermax <= 50 then
 			monster:die(monster)
-			game.add_msg("The flesher erupts into a toxic gas...")
+			if player:sees(monster) then
+			game.add_msg("The flesher erupts into a toxic gas!")
+		end
 	end
 end
 
