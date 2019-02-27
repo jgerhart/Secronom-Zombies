@@ -594,11 +594,13 @@ end
 function faux_tele_player(monster)
 	local mon = monster
 	local locs = {}
+	local fauxpct = monster:hp_percentage()
 	if monster:sees(player) == true and
+	fauxpct > 60 and
 	creature_distance_from_player(mon) <= 10 then
 	if player:sees(monster) == true and
 	creature_distance_from_player(mon) > 2 then
-	game.add_msg("<color_red>The faux shifts and appears beside you!</color>")
+	game.add_msg("<color_red>The faux shifts and reappears beside you!</color>")
 		end
 	for delta_x = -1, 1 do
 		for delta_y = -1, 1 do
@@ -625,7 +627,7 @@ function faux_tele_run(monster)
 	local mon = monster
 	local fauxpct = monster:hp_percentage()
 	local locs = {}
-	if fauxpct < 50 then
+	if fauxpct <= 60 then
 	if player:sees(monster) then
 	game.add_msg("<color_green>The faux shifts...</color>")
 		end
