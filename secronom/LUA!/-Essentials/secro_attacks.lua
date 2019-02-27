@@ -581,13 +581,111 @@ function explode_flesher(monster)
 			local flesherheal = math.random(10)
 			monster:apply_damage(monster, "bp_torso", 1)
 			if flesherheal == 10 then
-			monster:set_hp( flesherhp + 2 )
-			end
+				monster:set_hp( flesherhp + 2 )
+				end
 	elseif fleshermax <= 50 then
 			monster:die(monster)
 			if player:sees(monster) then
-			game.add_msg("The flesher erupts into a toxic gas!")
+				game.add_msg("The flesher erupts into a toxic gas!")
 		end
+	end
+end
+
+function faux_tele_player(monster)
+	local mon = monster
+	local locs = {}
+	if monster:sees(player) == true and
+	creature_distance_from_player(mon) <= 10 then
+	if player:sees(monster) then
+	game.add_msg("<color_red>The faux shifts and appears beside you!</color>")
+		end
+	for delta_x = -1, 1 do
+		for delta_y = -1, 1 do
+			local point = player:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if g:is_empty(point) then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	monster:setpos(loc)
+	
+	end
+end
+
+function faux_tele_run(monster)
+	local mon = monster
+	local fauxpct = monster:hp_percentage()
+	local locs = {}
+	if fauxpct < 50 then
+	if player:sees(monster) then
+	game.add_msg("<color_green>The faux shifts...</color>")
+		end
+	for delta_x = -20, 20 do
+		for delta_y = -20, 20 do
+			local point = monster:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if monster:sees(point) ~= true then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	monster:setpos(loc)
+	
+	end
+end
+
+function faux_tele(monster)
+	local mon = monster
+	local tpnow = math.random(5)
+	local locs = {}
+	if monster:can_act() == true then
+	if player:sees(monster) then
+	game.add_msg("The faux shifts...")
+		end
+	for delta_x = -10, 10 do
+		for delta_y = -10, 10 do
+			local point = monster:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if monster:sees(point) ~= true then
+				if tpnow == 5 then
+				table.insert(locs, point )
+				end
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	monster:setpos(loc)
+	
+	end
+end
+
+function faux_healmini(monster)
+	local fauxpct = monster:hp_percentage()
+	local fauxhp = monster:get_hp()
+	if fauxpct <= 100 then
+		local fauxadd = math.random(3)
+		monster:set_hp( fauxhp + fauxadd )
 	end
 end
 
@@ -616,3 +714,7 @@ game.register_monattack("FORCEBACK_TENT", tent_backforce )
 game.register_monattack("FLESHER_SPAWN", spawn_flesher )
 game.register_monattack("FLESHMONGER_HEAL", heal_fleshmonger )
 game.register_monattack("FLESHER_EXPLODE", explode_flesher )
+game.register_monattack("PLAYER_TELE_FAUX", faux_tele_player )
+game.register_monattack("RUN_TELE_FAUX", faux_tele_run )
+game.register_monattack("TELE_FAUX", faux_tele )
+game.register_monattack("MINIHEAL_FAUX", faux_healmini )
