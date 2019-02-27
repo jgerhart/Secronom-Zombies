@@ -636,7 +636,8 @@ function faux_tele_run(monster)
 			local point = monster:pos()
 			point.x = point.x + delta_x
 			point.y = point.y + delta_y
-			if monster:sees(point) ~= true then
+			if monster:sees(point) ~= true and
+			g:is_empty(point) then
 				table.insert(locs, point )
 			end
 		end
@@ -666,7 +667,8 @@ function faux_tele(monster)
 			local point = monster:pos()
 			point.x = point.x + delta_x
 			point.y = point.y + delta_y
-			if monster:sees(point) ~= true then
+			if monster:sees(point) ~= true and
+			g:is_empty(point) then
 				if tpnow == 5 then
 				table.insert(locs, point )
 				end
