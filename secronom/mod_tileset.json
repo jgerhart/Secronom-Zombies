@@ -269,6 +269,11 @@
             "id": "mon_zombie_flesher",
             "fg": 76,
 			"bg": 0
+            },
+			{
+            "id": "mon_zombie_uruxis",
+            "fg": 77,
+			"bg": 0
             }
         ]
         },
