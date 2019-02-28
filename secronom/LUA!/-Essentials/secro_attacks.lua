@@ -695,6 +695,293 @@ function faux_healmini(monster)
 	end
 end
 
+function spawn_uruxis(monster)
+	local locs = {}
+	local urux_spawnlist = {}
+	urux_spawnlist[1] = {
+[1] = "mon_zombie",
+[2] = "mon_zombie_fat",
+[3] = "mon_zombie_tough",
+[4] = "mon_zombie_child",
+[5] = "mon_zombie_rot",
+[6] = "mon_zombie_crawler",
+[7] = "mon_zombie_dog",
+[8] = "mon_dog_skeleton",
+[9] = "mon_dog_zombie_cop",
+[10] = "mon_dog_zombie_rot",
+[11] = "mon_zombie_soldier",
+[12] = "mon_zombie_cop",
+[13] = "mon_zombie_hazmat",
+[14] = "mon_zombie_fireman",
+[15] = "mon_zombie_grabber",
+[16] = "mon_skeleton",
+[17] = "mon_zombie_smoker",
+[18] = "mon_zombie_shady",
+[19] = "mon_zombie_gasbag",
+[20] = "mon_zombie_swimmer",
+[21] = "mon_zombie_shrieker",
+[22] = "mon_zombie_spitter",
+[23] = "mon_boomer",
+[24] = "mon_beekeeper",
+[25] = "mon_zombie_technician",
+[26] = "mon_zombie_runner"
+}
+	urux_spawnlist[2] = {
+[1] = "mon_zombie",
+[2] = "mon_zombie_fat",
+[3] = "mon_zombie_tough",
+[4] = "mon_zombie_child",
+[5] = "mon_zombie_rot",
+[6] = "mon_zombie_crawler",
+[7] = "mon_zombie_dog",
+[8] = "mon_dog_skeleton",
+[9] = "mon_dog_zombie_cop",
+[10] = "mon_dog_zombie_rot",
+[11] = "mon_zombie_soldier",
+[12] = "mon_zombie_cop",
+[13] = "mon_zombie_hazmat",
+[14] = "mon_zombie_fireman",
+[15] = "mon_zombie_grabber",
+[16] = "mon_skeleton",
+[17] = "mon_zombie_smoker",
+[18] = "mon_zombie_shady",
+[19] = "mon_zombie_gasbag",
+[20] = "mon_zombie_swimmer",
+[21] = "mon_zombie_shrieker",
+[22] = "mon_zombie_spitter",
+[23] = "mon_boomer",
+[24] = "mon_beekeeper",
+[25] = "mon_zombie_technician",
+[26] = "mon_zombie_runner",
+[27] = "mon_zombie_blade",
+[28] = "mon_zombie_mouth",
+[29] = "mon_zombie_scourge",
+[30] = "mon_zombie_spoder",
+[31] = "mon_zombie_tendrils",
+[32] = "mon_zombie_translucent"
+}
+	urux_spawnlist[3] = {
+[1] = "mon_zombie",
+[2] = "mon_zombie_fat",
+[3] = "mon_zombie_tough",
+[4] = "mon_zombie_child",
+[5] = "mon_zombie_rot",
+[6] = "mon_zombie_crawler",
+[7] = "mon_zombie_dog",
+[8] = "mon_dog_skeleton",
+[9] = "mon_dog_zombie_cop",
+[10] = "mon_dog_zombie_rot",
+[11] = "mon_zombie_soldier",
+[12] = "mon_zombie_cop",
+[13] = "mon_zombie_hazmat",
+[14] = "mon_zombie_fireman",
+[15] = "mon_zombie_grabber",
+[16] = "mon_skeleton",
+[17] = "mon_zombie_smoker",
+[18] = "mon_zombie_shady",
+[19] = "mon_zombie_gasbag",
+[20] = "mon_zombie_swimmer",
+[21] = "mon_zombie_shrieker",
+[22] = "mon_zombie_spitter",
+[23] = "mon_boomer",
+[24] = "mon_beekeeper",
+[25] = "mon_zombie_technician",
+[26] = "mon_zombie_runner",
+[27] = "mon_zombie_blade",
+[28] = "mon_zombie_mouth",
+[29] = "mon_zombie_scourge",
+[30] = "mon_zombie_spoder",
+[31] = "mon_zombie_tendrils",
+[32] = "mon_zombie_translucent",
+[33] = "mon_zombie_titan",
+[34] = "mon_zombie_unify",
+[35] = "mon_zombie_lick",
+[36] = "mon_zombie_grubby_s",
+[37] = "mon_zombie_brute_grappler",
+[38] = "mon_zombie_brute_ninja",
+[39] = "mon_zombie_brute_shocker",
+[40] = "mon_zombie_corrosive",
+[41] = "mon_zombie_hulk",
+[42] = "mon_zombie_predator",
+[43] = "mon_skeleton_hulk",
+[44] = "mon_boomer_huge",
+[45] = "mon_zombie_brute"
+}
+	local urux_spawnlist_pick = math.random(#urux_spawnlist)
+	if urux_spawnlist_pick == 3 then
+		urux_spawnlist_pick = urux_spawnlist_pick - 1
+	end
+	local urux_spawnlist_pick_mon = math.random(#urux_spawnlist[urux_spawnlist_pick])
+	if monster:sees(player) ~= true then
+	for delta_x = -3, 3 do
+		for delta_y = -3, 3 do
+			local point = monster:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if g:is_empty(point) and
+			monster:sees(point) == true and
+			map:has_flag_ter("DIGGABLE", point) == true then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	urux_spawn = mtype_id(urux_spawnlist[urux_spawnlist_pick][urux_spawnlist_pick_mon])
+	local mon = g:summon_mon(urux_spawn, loc)
+	if player:sees(monster) then
+	game.add_msg("<color_red>The uruxis' hand sways in the air. Suddenly, a corpse rises from the ground!</color>")
+	end
+	
+	end
+end
+
+function spawn_uruxis_more(monster)
+	local locs = {}
+	local urux_spawnlist = {}
+	urux_spawnlist[1] = {
+[1] = "mon_zombie",
+[2] = "mon_zombie_fat",
+[3] = "mon_zombie_tough",
+[4] = "mon_zombie_child",
+[5] = "mon_zombie_rot",
+[6] = "mon_zombie_crawler",
+[7] = "mon_zombie_dog",
+[8] = "mon_dog_skeleton",
+[9] = "mon_dog_zombie_cop",
+[10] = "mon_dog_zombie_rot",
+[11] = "mon_zombie_soldier",
+[12] = "mon_zombie_cop",
+[13] = "mon_zombie_hazmat",
+[14] = "mon_zombie_fireman",
+[15] = "mon_zombie_grabber",
+[16] = "mon_skeleton",
+[17] = "mon_zombie_smoker",
+[18] = "mon_zombie_shady",
+[19] = "mon_zombie_gasbag",
+[20] = "mon_zombie_swimmer",
+[21] = "mon_zombie_shrieker",
+[22] = "mon_zombie_spitter",
+[23] = "mon_boomer",
+[24] = "mon_beekeeper",
+[25] = "mon_zombie_technician",
+[26] = "mon_zombie_runner"
+}
+	urux_spawnlist[2] = {
+[1] = "mon_zombie",
+[2] = "mon_zombie_fat",
+[3] = "mon_zombie_tough",
+[4] = "mon_zombie_child",
+[5] = "mon_zombie_rot",
+[6] = "mon_zombie_crawler",
+[7] = "mon_zombie_dog",
+[8] = "mon_dog_skeleton",
+[9] = "mon_dog_zombie_cop",
+[10] = "mon_dog_zombie_rot",
+[11] = "mon_zombie_soldier",
+[12] = "mon_zombie_cop",
+[13] = "mon_zombie_hazmat",
+[14] = "mon_zombie_fireman",
+[15] = "mon_zombie_grabber",
+[16] = "mon_skeleton",
+[17] = "mon_zombie_smoker",
+[18] = "mon_zombie_shady",
+[19] = "mon_zombie_gasbag",
+[20] = "mon_zombie_swimmer",
+[21] = "mon_zombie_shrieker",
+[22] = "mon_zombie_spitter",
+[23] = "mon_boomer",
+[24] = "mon_beekeeper",
+[25] = "mon_zombie_technician",
+[26] = "mon_zombie_runner",
+[27] = "mon_zombie_blade",
+[28] = "mon_zombie_mouth",
+[29] = "mon_zombie_scourge",
+[30] = "mon_zombie_spoder",
+[31] = "mon_zombie_tendrils",
+[32] = "mon_zombie_translucent"
+}
+	urux_spawnlist[3] = {
+[1] = "mon_zombie",
+[2] = "mon_zombie_fat",
+[3] = "mon_zombie_tough",
+[4] = "mon_zombie_child",
+[5] = "mon_zombie_rot",
+[6] = "mon_zombie_crawler",
+[7] = "mon_zombie_dog",
+[8] = "mon_dog_skeleton",
+[9] = "mon_dog_zombie_cop",
+[10] = "mon_dog_zombie_rot",
+[11] = "mon_zombie_soldier",
+[12] = "mon_zombie_cop",
+[13] = "mon_zombie_hazmat",
+[14] = "mon_zombie_fireman",
+[15] = "mon_zombie_grabber",
+[16] = "mon_skeleton",
+[17] = "mon_zombie_smoker",
+[18] = "mon_zombie_shady",
+[19] = "mon_zombie_gasbag",
+[20] = "mon_zombie_swimmer",
+[21] = "mon_zombie_shrieker",
+[22] = "mon_zombie_spitter",
+[23] = "mon_boomer",
+[24] = "mon_beekeeper",
+[25] = "mon_zombie_technician",
+[26] = "mon_zombie_runner",
+[27] = "mon_zombie_blade",
+[28] = "mon_zombie_mouth",
+[29] = "mon_zombie_scourge",
+[30] = "mon_zombie_spoder",
+[31] = "mon_zombie_tendrils",
+[32] = "mon_zombie_translucent",
+[33] = "mon_zombie_titan",
+[34] = "mon_zombie_unify",
+[35] = "mon_zombie_lick",
+[36] = "mon_zombie_grubby_s",
+[37] = "mon_zombie_brute_grappler",
+[38] = "mon_zombie_brute_ninja",
+[39] = "mon_zombie_brute_shocker",
+[40] = "mon_zombie_corrosive",
+[41] = "mon_zombie_hulk",
+[42] = "mon_zombie_predator",
+[43] = "mon_skeleton_hulk",
+[44] = "mon_boomer_huge",
+[45] = "mon_zombie_brute"
+}
+	local urux_spawnlist_pick = math.random(#urux_spawnlist)
+	local urux_spawnlist_pick_mon = math.random(#urux_spawnlist[urux_spawnlist_pick])
+	if monster:sees(player) == true then
+	for delta_x = -3, 3 do
+		for delta_y = -3, 3 do
+			local point = monster:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if g:is_empty(point) and
+			monster:sees(point) == true and
+			map:has_flag_ter("DIGGABLE", point) == true then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	urux_spawn = mtype_id(urux_spawnlist[urux_spawnlist_pick][urux_spawnlist_pick_mon])
+	local mon = g:summon_mon(urux_spawn, loc)
+	if player:sees(monster) then
+	game.add_msg("<color_red>The uruxis' hand quickly sways in the air. Suddenly, a corpse bursts from the ground!</color>")
+	end
+	
+	end
+end
+
 game.register_monattack("SMASH_GROUND", ground_smash )
 game.register_monattack("TITAN_CHARGE", titan_bashingcharge )
 game.register_monattack("TITAN_IMPACT", titan_bashingcharge_impact )
@@ -724,3 +1011,5 @@ game.register_monattack("PLAYER_TELE_FAUX", faux_tele_player )
 game.register_monattack("RUN_TELE_FAUX", faux_tele_run )
 game.register_monattack("TELE_FAUX", faux_tele )
 game.register_monattack("MINIHEAL_FAUX", faux_healmini )
+game.register_monattack("URUXIS_SPAWN", spawn_uruxis )
+game.register_monattack("URUXIS_SPAWN_MORE", spawn_uruxis_more )
