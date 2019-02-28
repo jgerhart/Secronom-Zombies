@@ -14,6 +14,8 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 CURRENT UPDATES (#changes, +contents, ~rebalances, -fixes...)
 
+--> V1.3: COMPILED CITY ZEDS <--
+
 # REWORKS ON TILESET(frequent)
 
 + LAST 3 CHAOS ZEDS (fleshmonger, faux, uruxis)
