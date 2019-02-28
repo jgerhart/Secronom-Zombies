@@ -16,7 +16,7 @@ CURRENT UPDATES (#changes, +contents, ~rebalances, -fixes...)
 
 # REWORKS ON TILESET(frequent)
 
-+ 2 NEW CHAOS ZED (fleshmonger, faux)
++ LAST 3 CHAOS ZEDS (fleshmonger, faux, uruxis)
 
 +~ LICKER (new upgrade path, stats tweaked)
 +~ MOUTH, SCOURGE (new and final upgrade path, stats tweaked)
