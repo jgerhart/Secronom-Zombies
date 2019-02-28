@@ -27,7 +27,7 @@
             "chance": 25
         }
     ],
-    "death_function": [ "NORMAL" ],
+    "death_function": [ "MELT" ],
     "flags": [ "PATH_AVOID_DANGER_1", "SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "POISON" ]
   },
   {
@@ -58,7 +58,7 @@
             "chance": 25
         }
     ],
-    "death_function": [ "NORMAL" ],
+    "death_function": [ "MELT" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "POISON", "PATH_AVOID_DANGER_1" ]
   },
   {
@@ -89,7 +89,7 @@
             "chance": 25
         }
     ],
-    "death_function": [ "NORMAL" ],
+    "death_function": [ "MELT" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "POISON", "PATH_AVOID_DANGER_1" ]
   },
   {
@@ -120,7 +120,7 @@
             "chance": 25
         }
     ],
-    "death_function": [ "NORMAL" ],
+    "death_function": [ "MELT" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "POISON", "PATH_AVOID_DANGER_1" ]
   }
 ]
