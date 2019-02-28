@@ -345,6 +345,32 @@
 			"bg": 0
             }
         ]
+		},
+		{
+		"file": "1_32x32_effects_tile_200-299.png",
+		"sprite_offset_x":-16,
+		"tiles": [
+            {
+            "id": "overlay_effect_jinx_mark",
+            "fg": 200,
+			"bg": 0
+            },
+			{
+            "id": "overlay_effect_unify_bloodslow",
+            "fg": 201,
+			"bg": 0
+            },
+			{
+            "id": "overlay_effect_unity_bloodslow",
+            "fg": 202,
+			"bg": 0
+            },
+			{
+            "id": ["overlay_effect_parasiteworm_pain", "overlay_effect_parasiteworm_move", "overlay_effect_parasiteworm_int", "overlay_effect_parasiteworm_stomach"]
+            "fg": 203,
+			"bg": 0
+            }
+        ]
 		}
     ]
     }
