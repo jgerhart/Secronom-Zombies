@@ -813,8 +813,8 @@ function spawn_uruxis(monster)
 	end
 	local urux_spawnlist_pick_mon = math.random(#urux_spawnlist[urux_spawnlist_pick])
 	if monster:sees(player) ~= true then
-	for delta_x = -3, 3 do
-		for delta_y = -3, 3 do
+	for delta_x = -5, 5 do
+		for delta_y = -5, 5 do
 			local point = monster:pos()
 			point.x = point.x + delta_x
 			point.y = point.y + delta_y
@@ -955,8 +955,8 @@ function spawn_uruxis_more(monster)
 	local urux_spawnlist_pick = math.random(#urux_spawnlist)
 	local urux_spawnlist_pick_mon = math.random(#urux_spawnlist[urux_spawnlist_pick])
 	if monster:sees(player) == true then
-	for delta_x = -3, 3 do
-		for delta_y = -3, 3 do
+	for delta_x = -5, 5 do
+		for delta_y = -5, 5 do
 			local point = monster:pos()
 			point.x = point.x + delta_x
 			point.y = point.y + delta_y
