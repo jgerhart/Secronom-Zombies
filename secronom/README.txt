@@ -14,17 +14,20 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 CURRENT UPDATES (#changes, +contents, ~rebalances, -fixes...)
 
---> V1.3: COMPILED CITY ZEDS <--
+--> V1.3: COMPILED ALL CITY ZEDS <--
 
 # REWORKS ON TILESET(frequent)
 
 + LAST 3 CHAOS ZEDS (fleshmonger, faux, uruxis)
++ NEW INSECTOID MUTANT (worm)
 
 +~ LICKER (new upgrade path, stats tweaked)
 +~ MOUTH, SCOURGE (new and final upgrade path, stats tweaked)
 +~ TENDRILS (new and final upgrade path, stats tweaked, abilities reworked)
 
 - CHAOS SPAWNRATE (lowered spawn chance)
+
+
 
 PAST UPDATES
 
