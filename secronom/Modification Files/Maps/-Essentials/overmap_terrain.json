@@ -38,5 +38,13 @@
     "sym": 76,
     "color": "ltgray",
     "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "Secroflesh_top",
+    "name": "field",
+    "sym": 1,
+    "color": "red",
+    "see_cost": 5
   }
 ]
