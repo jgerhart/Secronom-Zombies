@@ -1,0 +1,67 @@
+[
+ {
+	"//": "A little template of terrain for a little area with little surprise.",
+    "type": "terrain",
+    "id": "t_dirt_fleshy",
+    "name": "dirt",
+    "description": "A dirt colored in blood-red dye. Stepping at it gives a slight sensation underneath.",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [ "TRANSPARENT", "DIGGABLE", "FLAT", "PLOWABLE" ],
+    "bash": { "sound": "thump", "ter_set": "t_null", "str_min": 50, "str_max": 100, "str_min_supported": 100, "bash_below": true }
+  },
+  {
+    "type": "terrain",
+    "id": "t_grass_fleshy",
+    "name": "grass",
+    "description": "A patch of red hue grass. Sometimes, it wriggles on its own.",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [ "TRANSPARENT", "DIGGABLE", "FLAT", "PLOWABLE" ],
+    "bash": { "sound": "thump", "ter_set": "t_null", "str_min": 40, "str_max": 100, "str_min_supported": 100, "bash_below": true }
+  },
+  {
+    "type": "terrain",
+    "id": "t_grass_long_fleshy",
+    "name": "long grass",
+    "description": "Thick grass, with a reddish hue. Though harmless in its look, it is very sticky.",
+    "looks_like": "t_grass",
+    "symbol": ",",
+    "color": "red",
+    "move_cost": 8,
+    "flags": [ "TRANSPARENT", "DIGGABLE", "FLAT", "PLOWABLE" ],
+    "bash": { "sound": "thump", "ter_set": "t_null", "str_min": 40, "str_max": 100, "str_min_supported": 100, "bash_below": true }
+  },
+  {
+    "type": "terrain",
+    "id": "t_grass_long_secret_fleshy",
+    "name": "long grass",
+    "description": "Thick grass, with a reddish hue. Though harmless in its look, it is very sticky.",
+    "looks_like": "t_grass",
+    "symbol": ",",
+    "color": "red",
+    "move_cost": 8,
+    "flags": [ "TRANSPARENT", "DIGGABLE", "FLAT", "PLOWABLE" ],
+    "bash": { "str_min": 2, "str_max": 60, "sound": "crunch.", "sound_fail": "poof!", "ter_set": "t_hole_down_fleshy" }
+  },
+  {
+    "type": "terrain",
+    "id": "t_hole_down_fleshy",
+    "name": "downward hole",
+    "symbol": ">",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [ "TRANSPARENT", "GOES_DOWN", "PLACE_ITEM" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_hole_up_fleshy",
+    "name": "upward hole",
+    "symbol": "<",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [ "TRANSPARENT", "GOES_DOWN", "PLACE_ITEM" ]
+  }
+]
