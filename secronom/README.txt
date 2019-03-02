@@ -14,7 +14,7 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 ?? SECRONOM LAB (immersive and dangerous, rework on loots and boss area) 
 ?? SECRONOM LAB CREATURES (wider zombie experimentals, Bio-Organic-Weapons or "BOW" creatures)
-?? FLESHY STRUCTURES (random city buildings with fleshy texture)
+?? FLESHY CAVES (random caves with fleshy texture)
 ?? FLESH CREATURES (creatures that spawns inside fleshy structures)
 ?  SUGGESTIONS FROM PEOPLE (it helps me alot, as of now I'm out of f***ing ideas)
 
