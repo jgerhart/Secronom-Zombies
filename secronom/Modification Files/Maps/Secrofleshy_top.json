@@ -1,0 +1,42 @@
+{
+    "method": "json",
+    "object": {
+		"fill_ter": "t_grass",
+        "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "           ..           ",
+        "         .,,,.          ",
+        "          .,,,,..       ",
+        "         .,,//,,,.      ",
+        "          .,,/,,,...    ",
+        "        ..,,///,,,..    ",
+        "      ..,,,/////,,,.    ",
+        "         .,///////,,..  ",
+        "       ..,,/||///,,     ",
+        "      ..,,,/||//,,..    ",
+        "     ..,,,,,//,,,.      ",
+        "       .,,/////,,,,..   ",
+        "      .,,,,,,,,,..      ",
+        "        .,,,.,.         ",
+        "          ....          ",
+        "                        "
+        ],
+        "terrain": {
+			" ": ["t_dirt", "t_dirt_fleshy", "t_grass"],
+            ".": ["t_dirt_fleshy", "t_dirt"],
+            ",": ["t_grass_fleshy", "t_dirt_fleshy", "t_dirt"],
+            "/": ["t_grass_long_fleshy", "t_grass_fleshy", "t_dirt_fleshy"],
+			"|": ["t_grass_long_fleshy", "t_grass_long_secret_fleshy"]
+        }
+    },
+    "om_terrain": "Secroflesh_top",
+    "type": "mapgen",
+    "weight": 300
+}
