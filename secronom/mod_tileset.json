@@ -353,7 +353,19 @@
             "id": "mon_zombieworm_gravedigger",
             "fg": 112,
 			"bg": 0
-            }
+            },
+			{ "id": "t_hole_down_fleshy",
+          "fg": 113,
+          "rotates": false
+			},
+			{ "id": "t_hole_down_fleshy_season_winter",
+          "fg": 114,
+          "rotates": false
+			},
+			{ "id": "t_hole_up_fleshy",
+          "fg": 115,
+          "rotates": false
+			}
         ]
 		},
 		{
@@ -380,6 +392,206 @@
             "fg": 203,
 			"bg": 0
             }
+        ]
+		},
+		{
+		"file": "1_32x32_connect_tile_300-399.png",
+		"tiles": [
+		{ "id": "t_dirt_fleshy",
+          "fg": 204,
+          "rotates": false
+        },
+		{ "id": "t_dirt_fleshy_season_winter",
+          "fg": 205,
+          "rotates": false
+        },
+		{ "id": ["t_grass_fleshy", "t_grass_long_fleshy", "t_grass_long_secret_fleshy"],
+          "fg": 300,
+          "multitile": true,
+          "additional_tiles": [            
+		    {
+              "fg": 300,
+			  "bg": 204,
+              "id": "center"
+            },
+			{
+              "fg": [ 301, 302, 303, 304 ],
+			  "bg": 204,
+              "id": "corner"
+            },            
+			{
+              "fg": [ 305, 306, 307, 308],
+			  "bg": 204,
+              "id": "t_connection"
+            },
+            {
+              "fg": [ 309, 310],
+			  "bg": 204,
+              "id": "edge"
+            },
+            {
+              "fg": [ 311, 312, 313, 314],
+			  "bg": 204,
+              "id": "end_piece"
+            },
+
+            {
+              "fg": 315,
+			  "bg": 204,
+              "id": "unconnected"
+            }
+          ],
+          "rotates": true		  
+        },
+		{ "id": "t_grass_fleshy_season_summer",
+          "fg": 316,
+          "multitile": true,
+          "additional_tiles": [            
+		    {
+              "fg": 316,
+			  "bg": 204,
+              "id": "center"
+            },
+			{
+              "fg": [ 317, 318, 319, 320 ],
+			  "bg": 204,
+              "id": "corner"
+            },            
+			{
+              "fg": [ 321, 322, 323, 324],
+			  "bg": 204,
+              "id": "t_connection"
+            },
+            {
+              "fg": [ 325, 326],
+			  "bg": 204,
+              "id": "edge"
+            },
+            {
+              "fg": [ 327, 328, 329, 330],
+			  "bg": 204,
+              "id": "end_piece"
+            },
+
+            {
+              "fg": 331,
+			  "bg": 204,
+              "id": "unconnected"
+            }
+          ],
+          "rotates": true		  
+        },
+		{ "id": "t_grass_fleshy_season_autumn",
+          "fg": 332,
+          "multitile": true,
+          "additional_tiles": [            
+		    {
+              "fg": 332,
+			  "bg": 204,
+              "id": "center"
+            },
+			{
+              "fg": [ 333, 334, 335, 336 ],
+			  "bg": 204,
+              "id": "corner"
+            },            
+			{
+              "fg": [ 337, 338, 339, 340],
+			  "bg": 204,
+              "id": "t_connection"
+            },
+            {
+              "fg": [ 341, 342],
+			  "bg": 204,
+              "id": "edge"
+            },
+            {
+              "fg": [ 343, 344, 345, 346],
+			  "bg": 204,
+              "id": "end_piece"
+            },
+            {
+              "fg": 347,
+			  "bg": 204,
+              "id": "unconnected"
+            }
+          ],
+          "rotates": true		  
+        },
+		{ "id": ["t_grass_fleshy_season_winter", "t_grass_long_fleshy_season_winter", "t_grass_long_secret_fleshy_season_winter"],
+          "fg": 348,
+          "bg": 205,
+          "rotates": false,
+          "multitile": true,
+          "additional_tiles": [
+            {
+              "id": "center",
+              "fg": [
+			{ "weight":300, "sprite":348},
+			{ "weight":300, "sprite":349},
+			{ "weight":300, "sprite":350},
+			{ "weight":300, "sprite":351},
+			{ "weight":300, "sprite":352},
+			{ "weight":300, "sprite":353}
+            ]
+            },
+            {
+              "id": "corner",
+              "fg": [
+			{ "weight":300, "sprite":348},
+			{ "weight":300, "sprite":349},
+			{ "weight":300, "sprite":350},
+			{ "weight":300, "sprite":351},
+			{ "weight":300, "sprite":352},
+			{ "weight":300, "sprite":353}
+            ]
+            },
+            {
+              "id": "edge",
+              "fg": [
+			{ "weight":300, "sprite":348},
+			{ "weight":300, "sprite":349},
+			{ "weight":300, "sprite":350},
+			{ "weight":300, "sprite":351},
+			{ "weight":300, "sprite":352},
+			{ "weight":300, "sprite":353}
+            ]
+            },
+            {
+              "id": "end_piece",
+              "fg": [
+			{ "weight":300, "sprite":348},
+			{ "weight":300, "sprite":349},
+			{ "weight":300, "sprite":350},
+			{ "weight":300, "sprite":351},
+			{ "weight":300, "sprite":352},
+			{ "weight":300, "sprite":353}
+            ]
+            },
+            {
+              "id": "t_connection",
+              "fg": [
+			{ "weight":300, "sprite":348},
+			{ "weight":300, "sprite":349},
+			{ "weight":300, "sprite":350},
+			{ "weight":300, "sprite":351},
+			{ "weight":300, "sprite":352},
+			{ "weight":300, "sprite":353}
+            ]
+            },
+            {
+              "id": "unconnected",
+              "fg": [
+			{ "weight":300, "sprite":348},
+			{ "weight":300, "sprite":349},
+			{ "weight":300, "sprite":350},
+			{ "weight":300, "sprite":351},
+			{ "weight":300, "sprite":352},
+			{ "weight":300, "sprite":353}
+            ]
+            }
+          ]
+        }
         ]
 		}
     ]
