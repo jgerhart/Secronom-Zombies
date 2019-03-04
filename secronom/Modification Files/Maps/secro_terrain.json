@@ -63,5 +63,47 @@
     "color": "red",
     "move_cost": 5,
     "flags": [ "TRANSPARENT", "GOES_DOWN", "PLACE_ITEM" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_wall_fleshy",
+    "name": "fleshy wall",
+    "description": "A solid clump of flesh, packed into a shock resistant wall.",
+    "symbol": "#",
+    "color": "light_red",
+    "move_cost": 0,
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL" ],
+    "roof": "t_rock_floor",
+    "bash": {
+      "str_min": 400,
+      "str_max": 1000,
+      "sound": "hish!",
+      "sound_fail": "hish!",
+      "ter_set": "t_floor_fleshy"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_floor_fleshy",
+    "name": "fleshy floor",
+    "description": "A sticky, bloody coated floor composed of flesh.",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "roof": "t_flat_roof",
+    "flags": [ "TRANSPARENT", "INDOORS", "COLLAPSES", "SUPPORTS_ROOF", "FLAT", "ROAD" ],
+    "bash": { "ter_set": "t_null", "str_min": 75, "str_max": 400, "str_min_supported": 100, "bash_below": true }
+  },
+  {
+    "type": "terrain",
+    "id": "t_floor_fleshytumors",
+    "name": "fleshy floor",
+    "description": "A sticky, bloody coated floor composed of flesh. It has thick, bloated tumors on it.",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 8,
+    "roof": "t_flat_roof",
+    "flags": [ "TRANSPARENT", "INDOORS", "COLLAPSES", "SUPPORTS_ROOF", "FLAT", "ROAD" ],
+    "bash": { "ter_set": "t_null", "str_min": 75, "str_max": 400, "str_min_supported": 100, "bash_below": true }
   }
 ]
