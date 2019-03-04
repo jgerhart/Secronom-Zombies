@@ -1,6 +1,7 @@
 [
  {
 	"//": "A little template of terrain for a little area with little surprise.",
+	"//": "We all get spammed with messages when stepping here everytime.",
     "type": "terrain",
     "id": "t_dirt_fleshy",
     "name": "dirt",
@@ -15,7 +16,7 @@
     "type": "terrain",
     "id": "t_grass_fleshy",
     "name": "grass",
-    "description": "A patch of red hue grass. Sometimes, it wriggles on its own.",
+    "description": "A patch of red hue grass. Doesn't seem to oppose hazard.",
     "symbol": ".",
     "color": "red",
     "move_cost": 5,
@@ -38,7 +39,7 @@
     "type": "terrain",
     "id": "t_grass_long_secret_fleshy",
     "name": "long grass",
-    "description": "Thick grass, with a reddish hue. Though harmless in its look, it is very sticky.",
+    "description": "Thick, sunken grass, with a reddish hue. Though harmless in its look, it is very sticky.",
     "looks_like": "t_grass",
     "symbol": ",",
     "color": "red",
