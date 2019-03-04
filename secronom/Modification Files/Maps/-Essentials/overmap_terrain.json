@@ -42,9 +42,33 @@
   {
     "type": "overmap_terrain",
     "id": "Secroflesh_top",
-    "name": "field",
-    "sym": 1,
+    "name": "cave",
+    "sym": 67,
+    "color": "brown",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "Secroflesh_b1_north",
+    "name": "fleshy cavern",
+    "sym": 67,
     "color": "red",
-    "see_cost": 5
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "Secroflesh_b1_center",
+    "name": "fleshy cavern",
+    "sym": 67,
+    "color": "red",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "Secroflesh_b1_south",
+    "name": "fleshy cavern",
+    "sym": 67,
+    "color": "red",
+    "see_cost": 2
   }
 ]
