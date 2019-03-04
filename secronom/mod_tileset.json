@@ -591,11 +591,12 @@
             ]
             },
 			{
-		  "id": "t_wall_fleshy",
-          "fg": 354,
-          "bg": 204,
-          "multitile": true,
-          "additional_tiles": [            
+		"//": "THERE SEEMS TO BE AN ERROR HERE... Sprites doesn't appear into the game, so I will temporarily cancel this in-game.",
+		"id": "t_wall_fleshy",
+        "fg": 354,
+        "bg": 204,
+        "multitile": true,
+        "additional_tiles": [            
 		    {
               "fg": 354,
 		      "bg": 204, 
