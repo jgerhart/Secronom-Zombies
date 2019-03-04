@@ -589,7 +589,124 @@
 			{ "weight":300, "sprite":352},
 			{ "weight":300, "sprite":353}
             ]
+            },
+			{
+		  "id": "t_wall_fleshy",
+          "fg": 354,
+          "bg": 204,
+          "multitile": true,
+          "additional_tiles": [            
+		    {
+              "fg": 354,
+		      "bg": 204, 
+              "id": "center"
+            },
+			{
+              "fg": [ 355, 356, 357, 358 ],
+			  "bg": 204,
+              "id": "corner"
+            },            
+			{
+              "fg": [ 359, 360, 361, 362],
+			  "bg": 204,
+              "id": "t_connection"
+            },
+            {
+              "fg": [ 363, 364],
+	          "bg": 204,		  
+              "id": "edge"
+            },
+            {
+              "fg": [ 365, 366, 367, 368],
+			  "bg": 204,
+              "id": "end_piece"
+            },
+            {
+              "fg": 369,
+			  "bg": 204,
+              "id": "unconnected"
             }
+          ],
+          "rotates": false		  
+        },
+		{
+		  "id": "t_floor_fleshy",
+          "fg": 370,
+          "bg": 206,
+          "multitile": true,
+          "additional_tiles": [            
+		    {
+              "fg": 370,
+		      "bg": 206,
+              "id": "center"
+            },
+			{
+              "fg": [ 371, 372, 373, 374 ],
+			  "bg": 206,
+              "id": "corner"
+            },            
+			{
+              "fg": [ 375, 376, 377, 378],
+		      "bg": 206,
+              "id": "t_connection"
+            },
+            {
+              "fg": [ 379, 380],
+              "bg": 206,		  
+              "id": "edge"
+            },
+            {
+              "fg": [ 381, 382, 383, 384],
+              "bg": 206,
+              "id": "end_piece"
+            },
+            {
+              "fg": 385,
+			  "bg": 206,
+              "id": "unconnected"
+            }
+          ],
+          "rotates": false		  
+        },
+		{
+		  "id": "t_floor_fleshytumors",
+          "fg": 386,
+          "bg": 206,
+          "multitile": true,
+          "additional_tiles": [            
+		    {
+              "fg": 386,
+		      "bg": 370,
+              "id": "center"
+            },
+			{
+              "fg": 386,
+			  "bg": [ 371, 372, 373, 374 ],
+              "id": "corner"
+            },            
+			{
+              "fg": 386,
+		      "bg": [ 375, 376, 377, 378],
+              "id": "t_connection"
+            },
+            {
+              "fg": 386,
+              "bg": [ 379, 380],		  
+              "id": "edge"
+            },
+            {
+              "fg": 386,
+              "bg": [ 381, 382, 383, 384],
+              "id": "end_piece"
+            },
+            {
+              "fg": 386,
+			  "bg": 385,
+              "id": "unconnected"
+            }
+          ],
+          "rotates": false		  
+        }
           ]
         }
         ]
