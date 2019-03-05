@@ -145,5 +145,50 @@
       { "monster": "mon_zombie_defile", "freq": 100, "cost_multiplier": 1 },
       { "monster": "mon_zombie_leptiosa", "freq": 100, "cost_multiplier": 10 }
     ]
+  },
+  {
+    "name": "GROUP_BOW_KAXIX",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zedbow_kaxix", "freq": 100, "cost_multiplier": 1 },
+      { "monster": "mon_zedbow_kaxix_armed", "freq": 100, "cost_multiplier": 15 }
+    ]
+  },
+  {
+    "name": "GROUP_BOW_AXXUROS",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zedbow_axxuros", "freq": 100, "cost_multiplier": 1 },
+      { "monster": "mon_zedbow_axxuros_armed", "freq": 100, "cost_multiplier": 15 }
+    ]
+  },
+  {
+    "name": "GROUP_BOW_EXIOS",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zedbow_exios", "freq": 100, "cost_multiplier": 1 },
+      { "monster": "mon_zedbow_exios_armed", "freq": 100, "cost_multiplier": 15 }
+    ]
+  },
+  {
+    "name": "GROUP_BOW_DREXX",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zedbow_drexx", "freq": 100, "cost_multiplier": 1 },
+      { "monster": "mon_zedbow_drexx_armed", "freq": 100, "cost_multiplier": 15 }
+    ]
+  },
+  {
+    "name": "GROUP_BOW_EPIXO",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zedbow_epixo", "freq": 100, "cost_multiplier": 1 },
+      { "monster": "mon_zedbow_epixo_armed", "freq": 100, "cost_multiplier": 15 }
+    ]
   }
 ]
