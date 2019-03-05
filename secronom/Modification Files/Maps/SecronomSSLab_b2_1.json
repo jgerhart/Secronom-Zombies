@@ -13,11 +13,11 @@
         "  dddd    ddddjnnnnn    ",
         "  dfes hk ddddjddddds   ",
         "  dddd dt ddddjdonnn    ",
-        "  cjjj b  ddddjb        ",
+        "  cjjj c  ddddjb        ",
         "  ddddddd ddddmddnnnrs  ",
-        " idddddddbddddcdddqdddi ",
+        " zdddddddbddddcdddqdddi ",
         "  ddddddd dddd ddddddd  ",
-        "  cjjj b  rddr   jjjjc  ",
+        "  cjjj c  rddr   jjjjc  ",
         "  dddd dd qddq   pdpdd  ",
         "  ddds hk qddq   ddddd  ",
         "  ghhh    rddr   pspsp  ",
@@ -41,6 +41,7 @@
         "g": "t_strconc_floor",
         "h": "t_strconc_floor",
         "i": "t_console",
+		"z": "t_console",
         "j": "t_reinforced_glass",
         "k": "t_strconc_floor",
         "l": "t_strconc_floor",
@@ -64,39 +65,72 @@
         "q": "f_chair",
         "r": "f_indoor_plant"
       },
+	  "computers": {
+        "i": {
+          "name": "SS Bionics Containment Room",
+          "security": 4,
+          "options": [ { "name": "UNLOCK CONTAINMENT DOOR", "action": "unlock", "security": 6 } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        },
+		"z": {
+          "name": "SS Patient Containment Room",
+          "security": 2,
+          "options": [ { "name": "UNLOCK CONTAINMENT DOOR", "action": "unlock", "security": 4 } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+		},
       "place_monsters": [
         {
-          "monster": "GROUP_CENTRAL_LAB",
-          "chance": 5,
-          "repeat": [ 5 ],
+          "monster": "GROUP_SECROLAB_SPECIMENS",
+          "density": 0.3,
+          "x": [ 10, 13 ],
+          "y": [ 4, 21 ]
+        },
+		{
+          "monster": "GROUP_SECROLAB_BOWSPECIMENS",
+          "density": 0.2,
           "x": [ 10, 13 ],
           "y": [ 4, 21 ]
         },
         {
-          "monster": "GROUP_CENTRAL_LAB",
-          "chance": 10,
-          "repeat": [ 5 ],
+          "monster": "GROUP_SECROLAB_SPECIMENS",
+          "density": 0.2,
+          "x": [ 2, 8 ],
+          "y": [ 8, 10 ]
+        },
+		{
+          "monster": "GROUP_SECROLAB_ALL",
+          "density": 0.2,
           "x": [ 2, 8 ],
           "y": [ 8, 10 ]
         },
         {
-          "monster": "GROUP_CENTRAL_LAB",
-          "chance": 5,
-          "repeat": [ 5 ],
+          "monster": "GROUP_SECROLAB_ALL",
+          "density": 0.2,
+          "x": [ 15, 21 ],
+          "y": [ 8, 10 ]
+        },
+		{
+          "monster": "GROUP_SECROLAB_BOWSPECIMENS",
+          "density": 0.2,
           "x": [ 15, 21 ],
           "y": [ 8, 10 ]
         },
         {
-          "monster": "GROUP_CENTRAL_LAB",
-          "chance": 25,
-          "repeat": [ 5 ],
+          "monster": "GROUP_SECROLAB_FAILEDSPECIMENS",
+          "density": 0.1,
           "x": [ 15, 18 ],
           "y": [ 19, 21 ]
         },
         {
-          "monster": "GROUP_CENTRAL_LAB",
-          "chance": 5,
-          "repeat": [ 5 ],
+          "monster": "GROUP_SECROLAB_ALL",
+          "density": 0.1,
+          "x": [ 20, 22 ],
+          "y": [ 19, 21 ]
+        },
+		{
+          "monster": "GROUP_SECROLAB_BOWSPECIMENS",
+          "density": 0.1,
           "x": [ 20, 22 ],
           "y": [ 19, 21 ]
         }
