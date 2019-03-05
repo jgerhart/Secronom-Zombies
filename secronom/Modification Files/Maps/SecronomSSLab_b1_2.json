@@ -70,30 +70,44 @@
       ],
       "place_monsters": [
         {
-          "monster": "GROUP_CENTRAL_LAB",
-          "chance": 25,
-          "repeat": [ 5 ],
+          "monster": "GROUP_SECROLAB_ALL",
+          "density": 0.1,
           "x": [ 4, 6 ],
           "y": [ 5, 10 ]
         },
         {
-          "monster": "GROUP_CENTRAL_LAB",
-          "chance": 25,
-          "repeat": [ 5 ],
+          "monster": "GROUP_SECROLAB_ALL",
+          "density": 0.1,
           "x": [ 15, 17 ],
           "y": [ 5, 10 ]
         },
         {
-          "monster": "GROUP_CENTRAL_LAB",
-          "chance": 25,
-          "repeat": [ 5 ],
+          "monster": "GROUP_SECROLAB_ALL",
+          "density": 0.2,
+          "x": [ 8, 13 ],
+          "y": [ 6, 11 ]
+        },
+		{
+          "monster": "GROUP_SECROLAB_SPECIMENS",
+          "density": 0.2,
+          "x": [ 4, 6 ],
+          "y": [ 5, 10 ]
+        },
+        {
+          "monster": "GROUP_SECROLAB_SPECIMENS",
+          "density": 0.1,
+          "x": [ 15, 17 ],
+          "y": [ 5, 10 ]
+        },
+        {
+          "monster": "GROUP_SECROLAB_SPECIMENS",
+          "density": 0.2,
           "x": [ 8, 13 ],
           "y": [ 6, 11 ]
         },
         {
-          "monster": "GROUP_CENTRAL_LAB",
-          "chance": 25,
-          "repeat": [ 5 ],
+          "monster": "GROUP_SECROLAB_ALL",
+          "density": 0.5,
           "x": [ 13, 15 ],
           "y": [ 17, 19 ]
         }
