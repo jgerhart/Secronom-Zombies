@@ -150,6 +150,66 @@
     ]
   },
   {
+	"//": "Spawn random secrolab and vanilla creatures. Scientist are common here, followed by failed specimens.",
+    "type":"monstergroup",
+    "name" : "GROUP_SECROLAB_ALL",
+    "default" : "mon_null",
+    "monsters" : [
+	  { "monster" : "mon_zombie_scientist", "freq" : 200, "cost_multiplier": 1 },
+      { "monster" : "mon_zedfail_seeker", "freq" : 125, "cost_multiplier": 2 },
+	  { "monster" : "mon_zedfail_floral", "freq" : 100, "cost_multiplier": 3 },
+	  { "monster" : "mon_zedfail_twistcrawl", "freq" : 125, "cost_multiplier": 2 },
+	  { "monster" : "mon_zedfail_chomp", "freq" : 100, "cost_multiplier": 3 },
+	  { "monster" : "mon_zedbow_kaxix", "freq" : 60, "cost_multiplier": 8 },
+	  { "monster" : "mon_zedbow_axxuros", "freq" : 50, "cost_multiplier": 9 },
+	  { "monster" : "mon_zedbow_exios", "freq" : 40, "cost_multiplier": 10 },
+	  { "monster" : "mon_zedbow_drexx", "freq" : 15, "cost_multiplier": 15 },
+	  { "monster" : "mon_zedbow_epixo", "freq" : 10, "cost_multiplier": 30 }
+    ]
+  },
+  {
+	"//": "Spawn random secrolab specimens. Failed specimens are common here",
+    "type":"monstergroup",
+    "name" : "GROUP_SECROLAB_SPECIMENS",
+    "default" : "mon_null",
+    "monsters" : [
+      { "monster" : "mon_zedfail_seeker", "freq" : 125, "cost_multiplier": 2 },
+	  { "monster" : "mon_zedfail_floral", "freq" : 100, "cost_multiplier": 3 },
+	  { "monster" : "mon_zedfail_twistcrawl", "freq" : 125, "cost_multiplier": 2 },
+	  { "monster" : "mon_zedfail_chomp", "freq" : 100, "cost_multiplier": 3 },
+	  { "monster" : "mon_zedbow_kaxix", "freq" : 60, "cost_multiplier": 8 },
+	  { "monster" : "mon_zedbow_axxuros", "freq" : 50, "cost_multiplier": 9 },
+	  { "monster" : "mon_zedbow_exios", "freq" : 40, "cost_multiplier": 10 },
+	  { "monster" : "mon_zedbow_drexx", "freq" : 15, "cost_multiplier": 15 },
+	  { "monster" : "mon_zedbow_epixo", "freq" : 10, "cost_multiplier": 30 }
+    ]
+  },
+  {
+	"//": "Spawn random secrolab failed specimens.",
+    "type":"monstergroup",
+    "name" : "GROUP_SECROLAB_FAILEDSPECIMENS",
+    "default" : "mon_null",
+    "monsters" : [
+      { "monster" : "mon_zedfail_seeker", "freq" : 125, "cost_multiplier": 2 },
+	  { "monster" : "mon_zedfail_floral", "freq" : 100, "cost_multiplier": 3 },
+	  { "monster" : "mon_zedfail_twistcrawl", "freq" : 125, "cost_multiplier": 2 },
+	  { "monster" : "mon_zedfail_chomp", "freq" : 100, "cost_multiplier": 3 }
+    ]
+  },
+  {
+	"//": "Spawn random secrolab BOWs",
+    "type":"monstergroup",
+    "name" : "GROUP_SECROLAB_BOWSPECIMENS",
+    "default" : "mon_null",
+    "monsters" : [
+	  { "monster" : "mon_zedbow_kaxix", "freq" : 60, "cost_multiplier": 8 },
+	  { "monster" : "mon_zedbow_axxuros", "freq" : 50, "cost_multiplier": 9 },
+	  { "monster" : "mon_zedbow_exios", "freq" : 40, "cost_multiplier": 10 },
+	  { "monster" : "mon_zedbow_drexx", "freq" : 15, "cost_multiplier": 15 },
+	  { "monster" : "mon_zedbow_epixo", "freq" : 10, "cost_multiplier": 30 }
+    ]
+  },
+  {
     "type":"monstergroup",
     "name" : "GROUP_FOREST",
     "default" : "mon_null",
