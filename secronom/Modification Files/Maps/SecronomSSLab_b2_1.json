@@ -13,7 +13,7 @@
         "  dddd    ddddjnnnnn    ",
         "  dfes hk ddddjddddds   ",
         "  dddd dt ddddjdonnn    ",
-        "  cjjj c  ddddjb        ",
+        "  cjjj c  dddd b        ",
         "  ddddddd ddddmddnnnrs  ",
         " zdddddddbddddcdddqdddi ",
         "  ddddddd dddd ddddddd  ",
@@ -59,23 +59,23 @@
         "f": "f_autodoc_couch",
         "g": "f_robotic_arm",
         "h": "f_rack",
-        "k": "f_gun_safe_el",
+        "k": "f_gunsafe_ml",
         "n": "f_desk",
         "p": "f_bed",
         "q": "f_chair",
         "r": "f_indoor_plant"
       },
 	  "computers": {
-        "i": {
+        "z": {
           "name": "SS Bionics Containment Room",
           "security": 4,
-          "options": [ { "name": "UNLOCK CONTAINMENT DOOR", "action": "unlock", "security": 6 } ],
+          "options": [ { "name": "UNLOCK BIONICS CONTAINMENT DOOR", "action": "unlock", "security": 6 } ],
           "failures": [ { "action": "damage" }, { "action": "alarm" } ]
         },
-		"z": {
-          "name": "SS Patient Containment Room",
+		"i": {
+          "name": "SS Subject Containment Room",
           "security": 2,
-          "options": [ { "name": "UNLOCK CONTAINMENT DOOR", "action": "unlock", "security": 4 } ],
+          "options": [ { "name": "UNLOCK SUBJECT CONTAINMENT DOOR", "action": "unlock", "security": 4 } ],
           "failures": [ { "action": "damage" }, { "action": "alarm" } ]
         }
 		},
@@ -143,11 +143,11 @@
           "x": [ 17, 19 ],
           "y": [ 8, 8 ]
         },
-        { "group": "drugs_rare", "chance": 100, "repeat": [ 1 ], "x": [ 15, 19 ], "y": [ 4, 4 ] },
+        { "group": "drugs_rare", "chance": 100, "repeat": [ 3 ], "x": [ 15, 19 ], "y": [ 4, 4 ] },
         {
           "group": "drugs_pharmacy",
           "chance": 100,
-          "repeat": [ 2 ],
+          "repeat": [ 3 ],
           "x": [ 17, 19 ],
           "y": [ 6, 6 ]
         },
@@ -167,7 +167,7 @@
         {
           "group": "drugs_emergency",
           "chance": 100,
-          "repeat": [ 2 ],
+          "repeat": [ 1 ],
           "x": [ 3, 3 ],
           "y": [ 5, 5 ]
         }

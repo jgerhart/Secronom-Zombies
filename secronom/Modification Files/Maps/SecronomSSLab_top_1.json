@@ -1,18 +1,9 @@
 {
     "method": "json",
     "object": {
-        "place_monster": [
-            {
-                "monster": "mon_turret",
-                "x": 11,
-                "y": 14
-            },
-            {
-                "monster": "mon_turret",
-                "x": 12,
-                "y": 14
-            }
-        ],
+        "monster": {
+        "t": { "monster": "mon_turret" }
+        },
         "rows": [
             "                        ",
             " ---------++++--------- ",
@@ -28,7 +19,7 @@
             " -   ||`||rrrr||`||   - ",
             " -   ||d|``````|d||   - ",
             " -   ||``````````||   - ",
-            " -    |`>``````>`|    - ",
+            " -    |`>``tt``>`|    - ",
             " -    |``.||||.``|    - ",
             " -    ||||||||||||    - ",
             " -   ||||||||||||||   - ",
@@ -50,7 +41,8 @@
             "D": "t_door_metal_locked",
             "d": "t_door_metal_c",
             "r": "t_reinforced_glass",
-            "|": "t_strconc_wall"
+            "|": "t_strconc_wall",
+			"t": "t_strconc_floor"
         }
     },
     "om_terrain": "SecronomSSLab_top",
