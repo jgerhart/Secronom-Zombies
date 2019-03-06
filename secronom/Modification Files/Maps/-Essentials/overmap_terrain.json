@@ -17,7 +17,23 @@
   },
   {
     "type": "overmap_terrain",
+    "id": "SecronomSSLab_bowspecs",
+    "name": "underground secronom lab",
+    "sym": 76,
+    "color": "ltgray",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
     "id": "SecronomSSLab_b2",
+    "name": "underground secronom lab",
+    "sym": 76,
+    "color": "ltgray",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "SecronomSSLab_failspecs",
     "name": "underground secronom lab",
     "sym": 76,
     "color": "ltgray",
