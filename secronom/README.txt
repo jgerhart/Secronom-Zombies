@@ -12,29 +12,34 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 
 
-=>TO-DO LIST<= (focused goal for V1.4)
+	=>TO-DO LIST<= (focused goal for V1.4)
 
 !? SECRONOM LAB (immersive and dangerous, rework on loots and boss area) 
-!! SECRONOM LAB CREATURES (wider zombie experimentals, Bio-Organic-Weapons or "BOW" creatures)
+!? SECRONOM LAB CREATURES (wider zombie experimentals, Bio-Organic-Weapon creatures)
 !! FLESHY CAVES (random caves with fleshy texture)
-?? FLESH CREATURES (creatures that spawns inside fleshy structures)
+?? FLESH CREATURES (creatures that spawns inside the cave)
 ?  SUGGESTIONS FROM PEOPLE (it helps me alot, as of now I'm out of f***ing ideas)
 
 
 
-=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes...)
+
+
+	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes...)
 
 #  REWORKS ON TILESET (frequent)
 
-+  ADDED BOW creatures (kaxix, axxuros, exios, drexx and epixo)
++  ADDED BOW CREATURES (kaxix, axxuros, exios, drexx and epixo)
++  ADDED FAILED SPECIMEN (squirtler)
 +  ADDED FLESH CAVERN (disgusting patch underneath the earth, home for the baneful flesh)
 
-+~ IMPROVEMENTS ON SECRONOM LAB (new mapgens, reworks and fixes on the structure)
++~ MAJOR IMPROVEMENTS ON SECRONOM LAB (new mapgens, reworks and fixes on the structure)
 +~ FIXES ON SECRONOM LAB FAILED SPECIMENS (name based on appearance instead of numbers)
 
 
 
-=>PAST UPDATES<=
+
+
+	=>PAST UPDATES<=
 
 --> V1.3: COMPILED ALL CITY ZEDS <--
 
@@ -45,7 +50,9 @@ https://discourse.cataclysmdda.org - CDDA official website
 +~ MOUTH, SCOURGE (new and final upgrade path, stats tweaked)
 +~ TENDRILS (new and final upgrade path, stats tweaked, abilities reworked)
 
-- CHAOS SPAWNRATE (lowered spawn chance)
+-  CHAOS SPAWNRATE (lowered spawn chance)
+
+
 
 
 
