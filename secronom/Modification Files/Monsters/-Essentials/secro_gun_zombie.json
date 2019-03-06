@@ -161,5 +161,26 @@
     "ammo_effects": [ "LIGHTNING", "BEANBAG", "WIDE" ],
 	"//": "Will stun its primary target.",
     "flags": [ "NEVER_JAMS" ]
-  }
+  },
+  {
+        "id": "squirtler_bulb",
+        "type": "GUN",
+		"copy-from": "fake_item",
+        "name": "squirting bulb",
+        "description": "Bulb of the squirtler.",
+        "flags": [ "NEVER_JAMS" ],
+        "ammo_effects": [ "NO_DAMAGE_SCALING", "DRAW_AS_LINE" ],
+        "skill": "rifle",
+        "durability": 10,
+        "range" : 10,
+		"modes": [
+			[ "N", "near", 5 ],
+			[ "M", "mid", 2 ],
+            [ "L", "far", 1 ] ],
+        "dispersion" : 1000,
+        "ranged_damage" : {
+            "damage_type": "acid",
+            "amount": 2
+        }
+    }
 ]
