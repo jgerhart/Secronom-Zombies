@@ -7,7 +7,7 @@
     "entries": [ { "item": "rag_bloody" } ]
   },
  {
-    "//": "Failed specimens. Instead of numbered names, we'd call them more appropriate.",
+    "//": "Failed specimens. Unwanted creatures of secronom lab, now the ravaging wanderers inside.",
     "id": "mon_zedfail_seeker",
     "type": "MONSTER",
     "name": "seeker",
@@ -157,5 +157,44 @@
     "death_drops": "SSmutant_drop",
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "FILTHY", "REVIVES", "NOHEAD" ]
+  },
+  {
+    "id": "mon_zedfail_squirtler",
+    "type": "MONSTER",
+    "name": "squirtler",
+    "description": "Attached to the ceiling, this irregular patch of large, pale skin features a swollen, bulbous mouth, oozing in greenish liquid. Highly aggressive, it shoots a pressurized stream of acid on its target within line of sight.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE" ],
+    "volume": "62500 ml",
+    "weight": 81500,
+    "hp": 75,
+    "speed": 50,
+	"harvest": "exempt",
+    "material": [ "flesh" ],
+    "symbol": "u",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_cut": 0,
+    "armor_bash": 4,
+    "armor_cut": 4,
+	"vision_day": 20,
+    "special_attacks": [
+    {
+        "type": "gun",
+        "cooldown": 4,
+        "move_cost": 50,
+        "gun_type": "squirtler_bulb",
+        "require_targeting_player": false,
+        "description": "The squirtler spew a stream of acid!",
+        "ranges": [ [ 1, 2, "N" ], [ 3, 5, "M" ], [ 6, 10, "L" ] ]
+      }
+    ],
+	"//": "The acid is very strong.",
+    "death_function": [ "ACID", "NORMAL" ],
+    "flags": [ "SEES", "IMMOBILE", "WARM", "POISON", "NO_BREATHE", "FILTHY", "REVIVES", "NOHEAD", "ACIDPROOF", "ACID_BLOOD" ]
   }
 ]
