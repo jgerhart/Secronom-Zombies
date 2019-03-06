@@ -160,6 +160,7 @@
 	  { "monster" : "mon_zedfail_floral", "freq" : 100, "cost_multiplier": 3 },
 	  { "monster" : "mon_zedfail_twistcrawl", "freq" : 125, "cost_multiplier": 2 },
 	  { "monster" : "mon_zedfail_chomp", "freq" : 100, "cost_multiplier": 3 },
+	  { "monster" : "mon_zedfail_squirtler", "freq" : 50, "cost_multiplier": 5 },
 	  { "monster" : "mon_zedbow_kaxix", "freq" : 60, "cost_multiplier": 8 },
 	  { "monster" : "mon_zedbow_axxuros", "freq" : 50, "cost_multiplier": 9 },
 	  { "monster" : "mon_zedbow_exios", "freq" : 40, "cost_multiplier": 10 },
@@ -177,6 +178,7 @@
 	  { "monster" : "mon_zedfail_floral", "freq" : 100, "cost_multiplier": 3 },
 	  { "monster" : "mon_zedfail_twistcrawl", "freq" : 125, "cost_multiplier": 2 },
 	  { "monster" : "mon_zedfail_chomp", "freq" : 100, "cost_multiplier": 3 },
+	  { "monster" : "mon_zedfail_squirtler", "freq" : 50, "cost_multiplier": 5 },
 	  { "monster" : "mon_zedbow_kaxix", "freq" : 60, "cost_multiplier": 8 },
 	  { "monster" : "mon_zedbow_axxuros", "freq" : 50, "cost_multiplier": 9 },
 	  { "monster" : "mon_zedbow_exios", "freq" : 40, "cost_multiplier": 10 },
@@ -193,7 +195,8 @@
       { "monster" : "mon_zedfail_seeker", "freq" : 125, "cost_multiplier": 2 },
 	  { "monster" : "mon_zedfail_floral", "freq" : 100, "cost_multiplier": 3 },
 	  { "monster" : "mon_zedfail_twistcrawl", "freq" : 125, "cost_multiplier": 2 },
-	  { "monster" : "mon_zedfail_chomp", "freq" : 100, "cost_multiplier": 3 }
+	  { "monster" : "mon_zedfail_chomp", "freq" : 100, "cost_multiplier": 3 },
+	  { "monster" : "mon_zedfail_squirtler", "freq" : 50, "cost_multiplier": 5 }
     ]
   },
   {
