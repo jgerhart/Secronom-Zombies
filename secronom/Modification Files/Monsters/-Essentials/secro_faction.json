@@ -7,5 +7,13 @@
 	{
         "type" : "MONSTER_FACTION",
         "name" : "ayenel"
+    },
+	{
+        "type" : "MONSTER_FACTION",
+        "name" : "flesh"
+    },
+	{
+        "type" : "SPECIES",
+        "id" : "FLESH"
     }
 ]
