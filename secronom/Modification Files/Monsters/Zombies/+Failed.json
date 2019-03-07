@@ -51,7 +51,7 @@
     "id": "mon_zedfail_floral",
     "type": "MONSTER",
     "name": "flora",
-    "description": "A human body with its head mutated and deformed into a flowery petal mouth. It shows hundreds of teeth and a centered eye whenever it opens, and bites with a strenght of five regular zombie jaws, which could break a bone as well as ripping target's inner flesh.",
+    "description": "A human body with its head mutated and deformed into a flowery petal mouth. It shows hundreds of teeth and a centered eye whenever it opens, and bites with a strength of five regular zombie jaws, which could break a bone as well as ripping target's inner flesh.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
