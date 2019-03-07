@@ -16,9 +16,9 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 !? SECRONOM LAB (immersive and dangerous, rework on loots and boss area) 
 !? SECRONOM LAB CREATURES (wider zombie experimentals, Bio-Organic-Weapon creatures)
-!! FLESHY CAVES (random caves with fleshy texture)
-?? FLESH CREATURES (creatures that spawns inside the cave)
-?  SUGGESTIONS FROM PEOPLE (it helps me alot, as of now I'm out of f***ing ideas)
+!? FLESHY CAVES (random caves with fleshy texture)
+!? FLESH CREATURES (creatures that resides in its source)
+?  SUGGESTIONS FROM PEOPLE (it helps me alot, as of now I'm out of effing ideas)
 
 
 
@@ -28,12 +28,14 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 #  REWORKS ON TILESET (frequent)
 
++  NEW FAILED SPECIMEN (squirtler)
 +  ADDED BOW CREATURES (kaxix, axxuros, exios, drexx and epixo)
-+  ADDED FAILED SPECIMEN (squirtler)
-+  ADDED FLESH CAVERN (disgusting patch underneath the earth, home for the baneful flesh)
++  ADDED FLESH CAVERN (disgusting patch of earthen filth, home for the baneful flesh)
++  ADDED FLESH CREATURES (nearly finite gorey walls and a bunch of cloned creatures)
 
 +~ MAJOR IMPROVEMENTS ON SECRONOM LAB (new mapgens, reworks and fixes on the structure)
-+~ FIXES ON SECRONOM LAB FAILED SPECIMENS (name based on appearance instead of numbers)
+
+~  FIXES ON FAILED SPECIMENS (name based on appearance, instead of numbers)
 
 
 
@@ -47,12 +49,10 @@ https://discourse.cataclysmdda.org - CDDA official website
 +  NEW INSECTOID MUTANT (worm)
 
 +~ LICKER (new upgrade path, stats tweaked)
-+~ MOUTH, SCOURGE (new and final upgrade path, stats tweaked)
++~ MOUTH, SCOURGE (new and final upgrade paths, stats tweaked)
 +~ TENDRILS (new and final upgrade path, stats tweaked, abilities reworked)
 
 -  CHAOS SPAWNRATE (lowered spawn chance)
-
-
 
 
 
