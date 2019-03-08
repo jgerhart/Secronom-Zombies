@@ -982,6 +982,246 @@ function spawn_uruxis_more(monster)
 	end
 end
 
+function flesh_rej1_spawn(monster)
+	local locs = {}
+	local rej_mons = {}
+	rej_mons = {
+[1] = "mon_flesh_root_1",
+[2] = "mon_flesh_root_1",
+[3] = "mon_flesh_root_1",
+[4] = "mon_flesh_lasher_1",
+[5] = "mon_flesh_lasher_1",
+[6] = "mon_flesh_spawner_1"
+}
+	local rej_mons_pick = math.random(#rej_mons)
+	if monster:can_act() == true then
+	for delta_x = -1, 1 do
+		for delta_y = -1, 1 do
+			local point = monster:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if g:is_empty(point) then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	rej_mon = mtype_id(rej_mons[rej_mons_pick])
+	local mon = g:summon_mon(rej_mon, loc)
+	if player:sees(monster) then
+	game.add_msg("<color_red>A strand of thick flesh bursts out of the rejuvenator!</color>")
+	end
+	
+	end
+end
+
+function flesh_root1_spawn(monster)
+	local locs = {}
+	local root_mons = {}
+	root_mons = {
+[1] = "mon_flesh_root_1",
+[2] = "mon_flesh_root_1",
+[3] = "mon_flesh_root_1",
+[4] = "mon_flesh_root_1",
+[5] = "mon_flesh_root_1",
+[6] = "mon_flesh_lasher_1",
+[7] = "mon_flesh_lasher_1",
+[8] = "mon_flesh_lasher_1",
+[9] = "mon_flesh_spawner_1"
+}
+	local root_mons_pick = math.random(#root_mons)
+	local root_chance = math.random(5)
+	if monster:can_act() == true and
+	root_chance == 5 then
+	for delta_x = -1, 1 do
+		for delta_y = -1, 1 do
+			local point = monster:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if g:is_empty(point) then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	root_mon = mtype_id(root_mons[root_mons_pick])
+	local mon = g:summon_mon(root_mon, loc)
+	if player:sees(monster) then
+	game.add_msg("<color_red>A strand of thick flesh bursts out of the flesh root!</color>")
+	end
+	
+	end
+end
+
+function flesh_spawner1_spawn(monster)
+	local locs = {}
+	local spw_mons = {}
+	spw_mons = {
+[1] = "mon_flesh_zombie",
+[2] = "mon_flesh_dog",
+[3] = "mon_flesh_trashpanda",
+[4] = "mon_flesh_snek",
+[5] = "mon_flesh_squirrel",
+[6] = "mon_flesh_rat"
+}
+	local spw_mons_pick = math.random(#spw_mons)
+	if monster:can_act() == true then
+	for delta_x = -1, 1 do
+		for delta_y = -1, 1 do
+			local point = monster:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if g:is_empty(point) then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	spw_mon = mtype_id(spw_mons[spw_mons_pick])
+	local mon = g:summon_mon(spw_mon, loc)
+	if player:sees(monster) then
+	game.add_msg("<color_red>An abominable creature shoots out of the parcel bulb!</color>")
+	end
+	
+	end
+end
+
+function flesh_rej2_spawn(monster)
+	local locs = {}
+	local rej_mons = {}
+	rej_mons = {
+[1] = "mon_flesh_root_2",
+[2] = "mon_flesh_root_2",
+[3] = "mon_flesh_root_2",
+[4] = "mon_flesh_lasher_2",
+[5] = "mon_flesh_lasher_2",
+[6] = "mon_flesh_spawner_2"
+}
+	local rej_mons_pick = math.random(#rej_mons)
+	if monster:can_act() == true then
+	for delta_x = -1, 1 do
+		for delta_y = -1, 1 do
+			local point = monster:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if g:is_empty(point) then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	rej_mon = mtype_id(rej_mons[rej_mons_pick])
+	local mon = g:summon_mon(rej_mon, loc)
+	if player:sees(monster) then
+	game.add_msg("<color_red>A strand of thick flesh bursts out of the rejuvenator!</color>")
+	end
+	
+	end
+end
+
+function flesh_root2_spawn(monster)
+	local locs = {}
+	local root_mons = {}
+	root_mons = {
+[1] = "mon_flesh_root_2",
+[2] = "mon_flesh_root_2",
+[3] = "mon_flesh_root_2",
+[4] = "mon_flesh_root_2",
+[5] = "mon_flesh_root_2",
+[6] = "mon_flesh_lasher_2",
+[7] = "mon_flesh_lasher_2",
+[8] = "mon_flesh_lasher_2",
+[9] = "mon_flesh_spawner_2"
+}
+	local root_mons_pick = math.random(#root_mons)
+	local root_chance = math.random(5)
+	if monster:can_act() == true and
+	root_chance == 5 then
+	for delta_x = -1, 1 do
+		for delta_y = -1, 1 do
+			local point = monster:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if g:is_empty(point) then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	root_mon = mtype_id(root_mons[root_mons_pick])
+	local mon = g:summon_mon(root_mon, loc)
+	if player:sees(monster) then
+	game.add_msg("<color_red>A strand of thick flesh bursts out of the flesh root!</color>")
+	end
+	
+	end
+end
+
+function flesh_spawner2_spawn(monster)
+	local locs = {}
+	local spw_mons = {}
+	spw_mons = {
+[1] = "mon_flesh_zombie",
+[2] = "mon_flesh_dog",
+[3] = "mon_flesh_trashpanda",
+[4] = "mon_flesh_snek",
+[5] = "mon_flesh_squirrel",
+[6] = "mon_flesh_rat",
+[7] = "mon_flesh_moose",
+[8] = "mon_flesh_bear"
+}
+	local spw_mons_pick = math.random(#spw_mons)
+	if monster:can_act() == true then
+	for delta_x = -1, 1 do
+		for delta_y = -1, 1 do
+			local point = monster:pos()
+			point.x = point.x + delta_x
+			point.y = point.y + delta_y
+			if g:is_empty(point) then
+				table.insert(locs, point )
+			end
+		end
+	end
+	
+	if #locs == 0 then
+		return false
+	end
+
+	local loc = pick_from_list(locs)
+	spw_mon = mtype_id(spw_mons[spw_mons_pick])
+	local mon = g:summon_mon(spw_mon, loc)
+	if player:sees(monster) then
+	game.add_msg("<color_red>An abominable creature shoots out of the parcel bulb!</color>")
+	end
+	
+	end
+end
+
 game.register_monattack("SMASH_GROUND", ground_smash )
 game.register_monattack("TITAN_CHARGE", titan_bashingcharge )
 game.register_monattack("TITAN_IMPACT", titan_bashingcharge_impact )
@@ -1013,3 +1253,9 @@ game.register_monattack("TELE_FAUX", faux_tele )
 game.register_monattack("MINIHEAL_FAUX", faux_healmini )
 game.register_monattack("URUXIS_SPAWN", spawn_uruxis )
 game.register_monattack("URUXIS_SPAWN_MORE", spawn_uruxis_more )
+game.register_monattack("REJ1", flesh_rej2_spawn )
+game.register_monattack("ROT1", flesh_root2_spawn )
+game.register_monattack("SPW1", flesh_spawner1_spawn )
+game.register_monattack("REJ2", flesh_rej2_spawn )
+game.register_monattack("ROT2", flesh_root2_spawn )
+game.register_monattack("SPW2", flesh_spawner2_spawn )
