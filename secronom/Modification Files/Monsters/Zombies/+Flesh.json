@@ -21,6 +21,9 @@
     "melee_dice_sides": 0,
     "melee_cut": 0,
 	"harvest": "exempt",
+	"special_attacks": [
+      [ "REJ1", 5 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SMELLS", "WARM", "POISON", "NO_BREATHE" ]
   },
@@ -45,6 +48,9 @@
     "melee_dice_sides": 0,
     "melee_cut": 0,
 	"harvest": "exempt",
+	"special_attacks": [
+      [ "ROT1", 12 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SMELLS", "WARM",  "POISON", "NO_BREATHE" ]
   },
@@ -95,6 +101,9 @@
     "melee_cut": 0,
 	"armor_cut": 2,
 	"harvest": "exempt",
+	"special_attacks": [
+      [ "SPW1", 18 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SMELLS", "WARM",  "POISON", "NO_BREATHE" ]
   },
@@ -182,7 +191,7 @@
     "harvest": "exempt",
     "death_function": [ "MELT" ],
     "flags": [ "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON" ]
-  }
+  },
   {
     "id": "mon_flesh_snek",
     "type": "MONSTER",
@@ -289,6 +298,9 @@
     "melee_dice_sides": 0,
     "melee_cut": 0,
 	"harvest": "exempt",
+	"special_attacks": [
+      [ "REJ2", 4 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SMELLS", "WARM", "POISON", "NO_BREATHE" ]
   },
@@ -313,6 +325,9 @@
     "melee_dice_sides": 0,
     "melee_cut": 0,
 	"harvest": "exempt",
+	"special_attacks": [
+      [ "ROT2", 10 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SMELLS", "WARM",  "POISON", "NO_BREATHE" ]
   },
@@ -363,6 +378,9 @@
     "melee_cut": 0,
 	"armor_cut": 2,
 	"harvest": "exempt",
+	"special_attacks": [
+      [ "SPW2", 15 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SMELLS", "WARM",  "POISON", "NO_BREATHE" ]
   },
