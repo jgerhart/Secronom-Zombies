@@ -1035,9 +1035,9 @@ function flesh_root1_spawn(monster)
 [9] = "mon_flesh_spawner_1"
 }
 	local root1_mons_pick = math.random(#root1_mons)
-	local root_chance = math.random(5)
+	local root1_chance = math.random(5)
 	if monster:can_act() == true and
-	root_chance == 5 then
+	root1_chance >= 4 then
 	for delta_x = -1, 1 do
 		for delta_y = -1, 1 do
 			local point = monster:pos()
@@ -1072,7 +1072,8 @@ function flesh_spawner1_spawn(monster)
 [3] = "mon_flesh_trashpanda",
 [4] = "mon_flesh_snek",
 [5] = "mon_flesh_squirrel",
-[6] = "mon_flesh_rat"
+[6] = "mon_flesh_rat",
+[7] = "mon_flesh_rabbit"
 }
 	local spw1_mons_pick = math.random(#spw1_mons)
 	local spw_chance = math.random(3)
@@ -1156,9 +1157,9 @@ function flesh_root2_spawn(monster)
 [9] = "mon_flesh_spawner_2"
 }
 	local root2_mons_pick = math.random(#root2_mons)
-	local root_chance = math.random(5)
+	local root2_chance = math.random(5)
 	if monster:can_act() == true and
-	root_chance == 5 then
+	root2_chance >= 3 then
 	for delta_x = -1, 1 do
 		for delta_y = -1, 1 do
 			local point = monster:pos()
@@ -1176,7 +1177,7 @@ function flesh_root2_spawn(monster)
 
 	local loc = pick_from_list(locs)
 	root2_mon = mtype_id(root2_mons[root2_mons_pick])
-	local mon = g:summon_mon(root_mon2, loc)
+	local mon = g:summon_mon(root2_mon, loc)
 	if player:sees(monster) then
 	game.add_msg("<color_red>A strand of thick flesh bursts out of the flesh root!</color>")
 	end
@@ -1194,8 +1195,11 @@ function flesh_spawner2_spawn(monster)
 [4] = "mon_flesh_snek",
 [5] = "mon_flesh_squirrel",
 [6] = "mon_flesh_rat",
-[7] = "mon_flesh_moose",
-[8] = "mon_flesh_bear"
+[7] = "mon_flesh_rabbit",
+[8] = "mon_flesh_moose",
+[9] = "mon_flesh_bear",
+[10] = "mon_flesh_cougar",
+[11] = "mon_flesh_frog"
 }
 	local spw2_mons_pick = math.random(#spw2_mons)
 	local spw_chance = math.random(3)
