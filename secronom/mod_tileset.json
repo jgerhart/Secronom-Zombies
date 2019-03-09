@@ -327,6 +327,18 @@
             "id": ["mon_flesh_spawner_1", "mon_flesh_spawner_2"],
             "fg": 90,
 			"bg": 0
+            },{
+            "id": "mon_flesh_cougar",
+            "fg": 91,
+			"bg": 0
+            },{
+            "id": "mon_flesh_rabbit",
+            "fg": 92,
+			"bg": 0
+            },{
+            "id": "mon_flesh_frog",
+            "fg": 93,
+			"bg": 0
             }
         ]
         },
@@ -566,8 +578,84 @@
           ],
           "rotates": true		  
         },
-		{ "id": ["t_grass_fleshy_season_winter", "t_grass_long_fleshy_season_winter", "t_grass_long_secret_fleshy_season_winter"],
+		{ "id": "t_wall_fleshy",
           "fg": 348,
+		  "bg": 206,
+          "multitile": true,
+          "additional_tiles": [            
+		    {
+              "fg": 348,
+			  "bg": 206,
+              "id": "center"
+            },
+			{
+              "fg": [ 349, 350, 351, 352 ],
+			  "bg": 206,
+              "id": "corner"
+            },            
+			{
+              "fg": [ 353, 354, 355, 356],
+			  "bg": 206,
+              "id": "t_connection"
+            },
+            {
+              "fg": [ 357, 358],
+			  "bg": 206,
+              "id": "edge"
+            },
+            {
+              "fg": [ 359, 360, 361, 362],
+			  "bg": 206,
+              "id": "end_piece"
+            },
+            {
+              "fg": 363,
+			  "bg": 206,
+              "id": "unconnected"
+            }
+          ],
+          "rotates": true		  
+        },
+		{ "id": "t_floor_fleshy",
+          "fg": 364,
+		  "bg": 206,
+          "multitile": true,
+          "additional_tiles": [            
+		    {
+              "fg": 364,
+			  "bg": 206,
+              "id": "center"
+            },
+			{
+              "fg": [ 365, 366, 367, 368 ],
+			  "bg": 206,
+              "id": "corner"
+            },            
+			{
+              "fg": [ 369, 370, 371, 372],
+			  "bg": 206,
+              "id": "t_connection"
+            },
+            {
+              "fg": [ 373, 374],
+			  "bg": 206,
+              "id": "edge"
+            },
+            {
+              "fg": [ 375, 376, 377, 378],
+			  "bg": 206,
+              "id": "end_piece"
+            },
+            {
+              "fg": 379,
+			  "bg": 206,
+              "id": "unconnected"
+            }
+          ],
+          "rotates": true		  
+        },
+{ "id": ["t_grass_fleshy_season_winter", "t_grass_long_fleshy_season_winter", "t_grass_long_secret_fleshy_season_winter"],
+          "fg": 380,
           "bg": 205,
           "rotates": false,
           "multitile": true,
@@ -575,188 +663,70 @@
             {
               "id": "center",
               "fg": [
-			{ "weight":300, "sprite":348},
-			{ "weight":300, "sprite":349},
-			{ "weight":300, "sprite":350},
-			{ "weight":300, "sprite":351},
-			{ "weight":300, "sprite":352},
-			{ "weight":300, "sprite":353}
+			{ "weight":300, "sprite":380},
+			{ "weight":300, "sprite":381},
+			{ "weight":300, "sprite":382},
+			{ "weight":300, "sprite":383},
+			{ "weight":300, "sprite":384},
+			{ "weight":300, "sprite":385}
             ]
             },
             {
               "id": "corner",
               "fg": [
-			{ "weight":300, "sprite":348},
-			{ "weight":300, "sprite":349},
-			{ "weight":300, "sprite":350},
-			{ "weight":300, "sprite":351},
-			{ "weight":300, "sprite":352},
-			{ "weight":300, "sprite":353}
+			{ "weight":300, "sprite":381},
+			{ "weight":300, "sprite":382},
+			{ "weight":300, "sprite":383},
+			{ "weight":300, "sprite":384},
+			{ "weight":300, "sprite":385},
+			{ "weight":300, "sprite":386}
             ]
             },
             {
               "id": "edge",
               "fg": [
-			{ "weight":300, "sprite":348},
-			{ "weight":300, "sprite":349},
-			{ "weight":300, "sprite":350},
-			{ "weight":300, "sprite":351},
-			{ "weight":300, "sprite":352},
-			{ "weight":300, "sprite":353}
+			{ "weight":300, "sprite":381},
+			{ "weight":300, "sprite":382},
+			{ "weight":300, "sprite":383},
+			{ "weight":300, "sprite":384},
+			{ "weight":300, "sprite":385},
+			{ "weight":300, "sprite":386}
             ]
             },
             {
               "id": "end_piece",
               "fg": [
-			{ "weight":300, "sprite":348},
-			{ "weight":300, "sprite":349},
-			{ "weight":300, "sprite":350},
-			{ "weight":300, "sprite":351},
-			{ "weight":300, "sprite":352},
-			{ "weight":300, "sprite":353}
+			{ "weight":300, "sprite":381},
+			{ "weight":300, "sprite":382},
+			{ "weight":300, "sprite":383},
+			{ "weight":300, "sprite":384},
+			{ "weight":300, "sprite":385},
+			{ "weight":300, "sprite":386}
             ]
             },
             {
               "id": "t_connection",
               "fg": [
-			{ "weight":300, "sprite":348},
-			{ "weight":300, "sprite":349},
-			{ "weight":300, "sprite":350},
-			{ "weight":300, "sprite":351},
-			{ "weight":300, "sprite":352},
-			{ "weight":300, "sprite":353}
+			{ "weight":300, "sprite":381},
+			{ "weight":300, "sprite":382},
+			{ "weight":300, "sprite":383},
+			{ "weight":300, "sprite":384},
+			{ "weight":300, "sprite":385},
+			{ "weight":300, "sprite":386}
             ]
             },
             {
               "id": "unconnected",
               "fg": [
-			{ "weight":300, "sprite":348},
-			{ "weight":300, "sprite":349},
-			{ "weight":300, "sprite":350},
-			{ "weight":300, "sprite":351},
-			{ "weight":300, "sprite":352},
-			{ "weight":300, "sprite":353}
+			{ "weight":300, "sprite":381},
+			{ "weight":300, "sprite":382},
+			{ "weight":300, "sprite":383},
+			{ "weight":300, "sprite":384},
+			{ "weight":300, "sprite":385},
+			{ "weight":300, "sprite":386}
             ]
-            },
-			{
-		"//": "THERE SEEMS TO BE AN ERROR HERE... Sprites doesn't appear into the game, so I will temporarily cancel this in-game.",
-		"id": "t_wall_fleshy",
-        "fg": 354,
-        "bg": 204,
-        "multitile": true,
-        "additional_tiles": [            
-		    {
-              "fg": 354,
-		      "bg": 204, 
-              "id": "center"
-            },
-			{
-              "fg": [ 355, 356, 357, 358 ],
-			  "bg": 204,
-              "id": "corner"
-            },            
-			{
-              "fg": [ 359, 360, 361, 362],
-			  "bg": 204,
-              "id": "t_connection"
-            },
-            {
-              "fg": [ 363, 364],
-	          "bg": 204,		  
-              "id": "edge"
-            },
-            {
-              "fg": [ 365, 366, 367, 368],
-			  "bg": 204,
-              "id": "end_piece"
-            },
-            {
-              "fg": 369,
-			  "bg": 204,
-              "id": "unconnected"
             }
-          ],
-          "rotates": false		  
-        },
-		{
-		  "id": "t_floor_fleshy",
-          "fg": 370,
-          "bg": 206,
-          "multitile": true,
-          "additional_tiles": [            
-		    {
-              "fg": 370,
-		      "bg": 206,
-              "id": "center"
-            },
-			{
-              "fg": [ 371, 372, 373, 374 ],
-			  "bg": 206,
-              "id": "corner"
-            },            
-			{
-              "fg": [ 375, 376, 377, 378],
-		      "bg": 206,
-              "id": "t_connection"
-            },
-            {
-              "fg": [ 379, 380],
-              "bg": 206,		  
-              "id": "edge"
-            },
-            {
-              "fg": [ 381, 382, 383, 384],
-              "bg": 206,
-              "id": "end_piece"
-            },
-            {
-              "fg": 385,
-			  "bg": 206,
-              "id": "unconnected"
-            }
-          ],
-          "rotates": false		  
-        },
-		{
-		  "id": "t_floor_fleshytumors",
-          "fg": 386,
-          "bg": 206,
-          "multitile": true,
-          "additional_tiles": [            
-		    {
-              "fg": 386,
-		      "bg": 370,
-              "id": "center"
-            },
-			{
-              "fg": 386,
-			  "bg": [ 371, 372, 373, 374 ],
-              "id": "corner"
-            },            
-			{
-              "fg": 386,
-		      "bg": [ 375, 376, 377, 378],
-              "id": "t_connection"
-            },
-            {
-              "fg": 386,
-              "bg": [ 379, 380],		  
-              "id": "edge"
-            },
-            {
-              "fg": 386,
-              "bg": [ 381, 382, 383, 384],
-              "id": "end_piece"
-            },
-            {
-              "fg": 386,
-			  "bg": 385,
-              "id": "unconnected"
-            }
-          ],
-          "rotates": false		  
-        }
-          ]
+        ]
         }
         ]
 		}
