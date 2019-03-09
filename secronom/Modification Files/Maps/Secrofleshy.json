@@ -10,78 +10,37 @@
         "                        ",
         "                        ",
         "                        ",
-        "                        ",
-        "                        ",
-        "           ..           ",
-        "         .,,,.          ",
-        "          .,,,,..       ",
-        "         .,,//,,,.      ",
+        "             .          ",
+        "       ... .,..         ",
+        "      ./,,....,.        ",
+        "      .,>//,,.,.        ",
+        "       ./,,,,,,,.       ",
+        "        ..,,//,,,.      ",
         "          .,,/,,,...    ",
         "        ..,,///,,,..    ",
         "      ..,,,/////,,,.    ",
         "         .,///////,,..  ",
-        "       ..,,/||///,,     ",
-        "      ..,,,/||//,,..    ",
+        "       ..,,//////,,     ",
+        "      ..,,,/////,,..    ",
         "     ..,,,,,//,,,.      ",
         "       .,,/////,,,,..   ",
-        "      .,,,,,,,,,..      ",
-        "        .,,,.,.         ",
-        "          ....          ",
+        "      .,,,,,,,,,,./,.   ",
+        "        .,,,.....,..    ",
+        "          ....   ..     ",
         "                        "
         ],
         "terrain": {
-			" ": ["t_dirt", "t_dirt_fleshy", "t_grass"],
+			" ": ["t_dirt", "t_grass"],
             ".": ["t_dirt_fleshy", "t_dirt"],
             ",": ["t_grass_fleshy", "t_dirt_fleshy", "t_dirt"],
             "/": ["t_grass_long_fleshy", "t_grass_fleshy", "t_dirt_fleshy"],
-			"|": ["t_hole_down_fleshy", "t_grass_long_secret_fleshy"]
+			"|": ["t_hole_down_fleshy", "t_grass_long_secret_fleshy"],
+			">": "t_hole_down_fleshy"
         }
     },
     "om_terrain": "Secroflesh_top",
     "type": "mapgen",
     "weight": 300
- },
- {
-    "method": "json",
-    "object": {
-		"fill_ter": "t_grass",
-        "rows": [
-        "           ..           ",
-        "         .,,,.          ",
-        "          .,,,,..       ",
-        "         .,,//,,,.      ",
-        "          .,,/,,,...    ",
-        "        ..,,///,,,..    ",
-        "      ..,,,/////,,,.    ",
-        "    ......,///////,,..  ",
-        "       ..,,/||///,,     ",
-        "      ..,,,/||//,,..    ",
-        "     ..,,,,,//,,,.      ",
-        "    ....,,/////,,,,..   ",
-        "      .,,,,,,,,,..      ",
-        "        .,,,.,.         ",
-        "       .......          ",
-        "         ....           ",
-		"       ..,,,.           ",
-        "      .,,/,..           ",
-        "        .,..            ",
-        "         ..             ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        "
-        ],
-        "terrain": {
-			" ": ["t_dirt", "t_dirt_fleshy", "t_grass"],
-            ".": ["t_dirt_fleshy", "t_dirt"],
-            ",": ["t_grass_fleshy", "t_dirt_fleshy", "t_dirt"],
-            "/": ["t_grass_long_fleshy", "t_grass_fleshy", "t_dirt_fleshy"],
-			"|": ["t_hole_down_fleshy", "t_grass_long_secret_fleshy"]
-        }
-    },
-    "om_terrain": "Secroflesh_top",
-    "type": "mapgen",
-    "weight": 200
  },
  {
     "method": "json",
@@ -97,8 +56,8 @@
             "###########,,//,,#######",
             "############,,]/,,######",
             "##########,,]//,,#######",
-            "##########,,/|],,#######",
-            "########,,]///,,########",
+            "########<#,,//],,#######",
+            "########,/]///,,########",
             "######,,////,,##########",
             "########,,/]/,,#########",
             "########,,/,,###########",
@@ -117,9 +76,10 @@
             "#": "t_wall_fleshy",
             ",": ["t_wall_fleshy", "t_floor_fleshy"],
             "/": "t_floor_fleshy",
-			"]": ["t_floor_fleshy","t_floor_fleshytumors"],
-			"|": "t_hole_up_fleshy"
-        }
+			"]": "t_floor_fleshy",
+			"<": "t_hole_up_fleshy"
+        },
+		"place_monsters": [ { "monster": "GROUP_FCAVERN_B1", "x": [ 2, 22 ], "y": [ 2, 22 ], "repeat": [ 1, 2 ], "density": 0.1 } ]
     },
     "om_terrain": "Secroflesh_b1_north",
     "type": "mapgen",
@@ -139,8 +99,8 @@
             "###########,,//,,#######",
             "############,,//,,######",
             "##########,,/]/,/#######",
-            "##########,,/|],/#######",
-            "########,,/]//,,/#######",
+            "########<#,,//],/#######",
+            "########,//]//,,/#######",
             "######,,,,,,,,##,/######",
             "########,,,,,,,##]/#,###",
             "########,,,,,,##/,#/,,##",
@@ -159,9 +119,10 @@
             "#": "t_wall_fleshy",
             ",": ["t_wall_fleshy", "t_floor_fleshy"],
             "/": "t_floor_fleshy",
-			"]": ["t_floor_fleshy","t_floor_fleshytumors"],
-			"|": "t_hole_up_fleshy"
-        }
+			"]": "t_floor_fleshy",
+			"<": "t_hole_up_fleshy"
+        },
+		"place_monsters": [ { "monster": "GROUP_FCAVERN_B1", "x": [ 2, 22 ], "y": [ 2, 22 ], "repeat": [ 1, 2 ], "density": 0.1 } ]
     },
     "om_terrain": "Secroflesh_b1_north",
     "type": "mapgen",
@@ -201,8 +162,9 @@
             "#": "t_wall_fleshy",
             ",": ["t_wall_fleshy", "t_floor_fleshy"],
             "/": "t_floor_fleshy",
-			"]": ["t_floor_fleshy","t_floor_fleshytumors"]
-        }
+			"]": "t_floor_fleshy"
+        },
+		"place_monsters": [ { "monster": "GROUP_FCAVERN_B1", "x": [ 2, 22 ], "y": [ 2, 22 ], "repeat": [ 1, 2 ], "density": 0.1 } ]
     },
     "om_terrain": "Secroflesh_b1_center",
 	"//": "Concentrated area.",
@@ -243,8 +205,9 @@
             "#": "t_wall_fleshy",
             ",": ["t_wall_fleshy", "t_floor_fleshy"],
             "/": "t_floor_fleshy",
-			"]": ["t_floor_fleshy","t_floor_fleshytumors"]
-        }
+			"]": "t_floor_fleshy"
+        },
+		"place_monsters": [ { "monster": "GROUP_FCAVERN_B1", "x": [ 2, 22 ], "y": [ 2, 22 ], "repeat": [ 1, 2 ], "density": 0.1 } ]
     },
     "om_terrain": "Secroflesh_b1_center",
 	"//": "Even more randomized and concentrated area.",
@@ -285,9 +248,10 @@
             "#": "t_wall_fleshy",
             ",": ["t_wall_fleshy", "t_floor_fleshy"],
             "/": "t_floor_fleshy",
-			"]": ["t_floor_fleshy","t_floor_fleshytumors"],
+			"]": "t_floor_fleshy",
 			"|": "t_hole_down_fleshy"
-        }
+        },
+		"place_monsters": [ { "monster": "GROUP_FCAVERN_B1", "x": [ 2, 22 ], "y": [ 2, 22 ], "repeat": [ 1, 2 ], "density": 0.1 } ]
     },
     "om_terrain": "Secroflesh_b1_south",
     "type": "mapgen",
