@@ -63,7 +63,7 @@
     "symbol": "<",
     "color": "red",
     "move_cost": 5,
-    "flags": [ "TRANSPARENT", "GOES_DOWN", "PLACE_ITEM" ]
+    "flags": [ "TRANSPARENT", "GOES_UP", "PLACE_ITEM" ]
   },
   {
     "type": "terrain",
@@ -91,18 +91,6 @@
     "symbol": ".",
     "color": "red",
     "move_cost": 5,
-    "roof": "t_flat_roof",
-    "flags": [ "TRANSPARENT", "INDOORS", "COLLAPSES", "SUPPORTS_ROOF", "FLAT", "ROAD" ],
-    "bash": { "ter_set": "t_null", "str_min": 75, "str_max": 400, "str_min_supported": 100, "bash_below": true }
-  },
-  {
-    "type": "terrain",
-    "id": "t_floor_fleshytumors",
-    "name": "fleshy floor",
-    "description": "A sticky, bloody coated floor composed of flesh. It has thick, bloated tumors on it.",
-    "symbol": ".",
-    "color": "light_red",
-    "move_cost": 8,
     "roof": "t_flat_roof",
     "flags": [ "TRANSPARENT", "INDOORS", "COLLAPSES", "SUPPORTS_ROOF", "FLAT", "ROAD" ],
     "bash": { "ter_set": "t_null", "str_min": 75, "str_max": 400, "str_min_supported": 100, "bash_below": true }
