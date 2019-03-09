@@ -217,5 +217,11 @@
 		"desc": ["Tendril's lifespan"],
 		"int_add_val": 1,
 		"max_intensity": 2
+	},{
+		"type": "effect_type",
+		"id": "flesh_succumb",
+		"name": ["Relentless Flesh"],
+		"desc": ["The compressed surroundings isn't right... And you feel the pressure beneath your feet!"],
+		"//": "Technically, you'll take a constant damage inside the flesh cavern... GET A HIGH ENVIRONMENTAL RESISTANCE TO AVOID IT (power armor gear is suggested)"
 	}
 ]
