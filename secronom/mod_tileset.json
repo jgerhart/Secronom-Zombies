@@ -279,6 +279,54 @@
             "id": "mon_zombieworm_noxeater",
             "fg": 78,
 			"bg": 0
+            },{
+            "id": "mon_flesh_zombie",
+            "fg": 79,
+			"bg": 0
+            },{
+            "id": "mon_flesh_dog",
+            "fg": 80,
+			"bg": 0
+            },{
+            "id": "mon_flesh_trashpanda",
+            "fg": 81,
+			"bg": 0
+            },{
+            "id": "mon_flesh_snek",
+            "fg": 82,
+			"bg": 0
+            },{
+            "id": "mon_flesh_squirrel",
+            "fg": 83,
+			"bg": 0
+            },{
+            "id": "mon_flesh_rat",
+            "fg": 84,
+			"bg": 0
+            },{
+            "id": "mon_flesh_moose",
+            "fg": 85,
+			"bg": 0
+            },{
+            "id": "mon_flesh_bear",
+            "fg": 86,
+			"bg": 0
+            },{
+            "id": ["mon_flesh_rejuvenate_1", "mon_flesh_rejuvenate_2"],
+            "fg": 87,
+			"bg": 0
+            },{
+            "id": ["mon_flesh_root_1", "mon_flesh_root_2"],
+            "fg": 88,
+			"bg": 0
+            },{
+            "id": ["mon_flesh_lasher_1", "mon_flesh_lasher_2"],
+            "fg": 89,
+			"bg": 0
+            },{
+            "id": ["mon_flesh_spawner_1", "mon_flesh_spawner_2"],
+            "fg": 90,
+			"bg": 0
             }
         ]
         },
