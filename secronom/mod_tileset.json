@@ -429,6 +429,31 @@
         ]
 		},
 		{
+		"file": "1_32x32_item_tile_400-499.png",
+		"tiles": [
+            {
+            "id": "SS_grenade_launcher",
+            "fg": 400,
+			"rotates": false
+            },
+			{
+            "id": "overlay_wielded_SS_grenade_launcher",
+            "fg": 401,
+			"rotates": false
+            },
+			{
+            "id": "laser_rifle_secro",
+            "fg": 402,
+			"rotates": false
+            },
+			{
+            "id": "overlay_wielded_laser_rifle_secro",
+            "fg": 403,
+			"rotates": false
+            }
+        ]
+		},
+		{
 		"file": "1_32x32_effects_tile_200-299.png",
 		"sprite_offset_y":-16,
 		"tiles": [
