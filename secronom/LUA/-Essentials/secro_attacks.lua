@@ -1,3 +1,5 @@
+-- Some LUA codes here could result to fatal error. If it happens, tell me along with the screenshot.
+
 function zoid_off(monster)
 	local zoidbase_melee = monster:get_melee()
 	monster:set_cut_bonus( zoidbase_melee + 7 )
@@ -15,9 +17,7 @@ function zoid_off(monster)
 		monster:set_dodge_bonus( 0 )
 		monster:set_speed_bonus( 0 )
 		end
-	end
-
--- Remove other stance bonuses, place with core ones.
+	end -- Remove other stance bonuses, place with core ones.
 
 function zoid_def(monster)
 	local zoidbase_defense = monster:get_hp_max()
@@ -1230,6 +1230,29 @@ function flesh_spawner2_spawn(monster)
 	end
 end
 
+function flesh_check(monster) -- Checks the flesh monster if it stands on a flesh floor, if not, kill it.
+	local bloodmess = math.random(30, 50)
+	local bloodmessy = math.random(1, 2)
+	if map:tername(monster:pos()) ~= "fleshy floor" then
+		monster:die(monster)
+		map:add_field(monster:pos(), "fd_blood", bloodmessy, TURNS(bloodmess))
+		if player:sees(monster) then
+		game.add_msg("The "..monster:get_name().." bursts into gore!")
+		end
+	end
+end
+
+function flesh_heart(monster) -- Give player effect "before" dying. 
+	local hearthppct = monster:hp_percentage()
+	if hearthppct <= 75 then
+		monster:die(player)
+		player:add_effect(efftype_id("flesh_breakdown"), TURNS(10000))
+		if player:sees(monster) then
+		game.add_msg("<color_green>The "..monster:get_name().." bursts into gore as the whole area desaturates of its reddish hue!</color>")
+		end
+	end
+end
+
 game.register_monattack("SMASH_GROUND", ground_smash )
 game.register_monattack("TITAN_CHARGE", titan_bashingcharge )
 game.register_monattack("TITAN_IMPACT", titan_bashingcharge_impact )
@@ -1267,3 +1290,5 @@ game.register_monattack("SPW1", flesh_spawner1_spawn )
 game.register_monattack("REJ2", flesh_rej2_spawn )
 game.register_monattack("ROT2", flesh_root2_spawn )
 game.register_monattack("SPW2", flesh_spawner2_spawn )
+game.register_monattack("CHECK_FLESH", flesh_check )
+game.register_monattack("HEART_FLESH", flesh_heart )
