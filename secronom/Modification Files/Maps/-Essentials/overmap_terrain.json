@@ -86,5 +86,61 @@
     "sym": 67,
     "color": "red",
     "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "Secroflesh_b2_south",
+    "name": "cave",
+    "sym": 67,
+    "color": "brown",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "Secroflesh_b2_swest",
+    "name": "fleshy cavern",
+    "sym": 67,
+    "color": "red",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "Secroflesh_b2_seast",
+    "name": "fleshy cavern",
+    "sym": 67,
+    "color": "red",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "Secroflesh_b2_nwest",
+    "name": "fleshy cavern",
+    "sym": 67,
+    "color": "red",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "Secroflesh_b2_neast",
+    "name": "fleshy cavern",
+    "sym": 67,
+    "color": "red",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "Secroflesh_b2_north",
+    "name": "fleshy cavern",
+    "sym": 67,
+    "color": "red",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "Secroflesh_climax",
+    "name": "fleshy cavern",
+    "sym": 67,
+    "color": "red",
+    "see_cost": 2
   }
 ]
