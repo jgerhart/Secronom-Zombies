@@ -33,6 +33,7 @@
       }
     ],
     "death_function": [ "NORMAL" ],
+	"anger_triggers": [ "HURT" ],
 	"upgrades":
      {
       "half_life": 6,
@@ -70,7 +71,7 @@
     "special_attacks": [
       {
         "type": "bite",
-        "cooldown": 22,
+        "cooldown": 27,
         "accuracy": 8,
         "damage_max_instance": [
           { "damage_type": "stab", "amount": 30, "armor_multiplier": 0.5 },
@@ -78,7 +79,8 @@
         ]
       }
     ],
-	"//": "So yeah... It could penetrate through power armors, so be careful",
+	"//": "So yeah... It could kill you with few bites and penetrates through power armors, so be careful",
+	"anger_triggers": [ "HURT" ],
     "death_function": [ "NORMAL" ],
     "flags": [ "DIGS", "CAN_DIG", "HEARS", "GOODHEARING", "WARM", "PLASTIC" ]
  }
