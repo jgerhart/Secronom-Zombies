@@ -9,7 +9,7 @@ Secronom v1.5 - Weaponry Update
 	Hecate II		Sniper Rifle	.50 BMG
 	KAC ChainSAW	LMG				5.56×45mm NATO
 	PSG-1			Sniper Rifle	7.62×51mm NATO
-	Walther 2000	Sniper Rifle 	.300 Winchester Magnum
+	Walther 2000	Sniper Rifle	.300 Winchester Magnum
 	XM556			LMG				5.56×45mm NATO
 	XM8				Assault Rifle	5.56×45mm NATO
 
