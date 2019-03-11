@@ -4,14 +4,15 @@ Secronom v1.5 - Weaponry Update
 
 ~On the list below, they are the weapons I discovered while taking a break and I am about to work with these stuff in the upcoming v1.5, which is focused on real life firearms:
 
-	GUNS			GUN TYPE		AMMUNITION
-	CheyTac M200	Sniper Rifle	.50 BMG
-	Hecate II		Sniper Rifle	.50 BMG
-	KAC ChainSAW	LMG				5.56×45mm NATO
-	PSG-1			Sniper Rifle	7.62×51mm NATO
-	Walther 2000	Sniper Rifle	.300 Winchester Magnum
-	XM556			LMG				5.56×45mm NATO
-	XM8				Assault Rifle	5.56×45mm NATO
+	WEAPONS
+
+	CheyTac M200
+	Hecate II
+	KAC ChainSAW
+	PSG-1
+	Walther 2000
+	XM556
+	XM8
 
 
 
