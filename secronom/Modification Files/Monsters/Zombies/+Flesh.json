@@ -24,7 +24,8 @@
 	"armor_bash": 15,
 	"harvest": "exempt",
 	"special_attacks": [
-      [ "REJ1", 1 ]
+      [ "REJ1", 1 ],
+	  [ "CHECK_FLESH", 15 ]
     ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SMELLS", "WARM", "POISON", "NO_BREATHE" ]
@@ -52,7 +53,8 @@
 	"armor_bash": 15,
 	"harvest": "exempt",
 	"special_attacks": [
-      [ "ROT1", 12 ]
+      [ "ROT1", 12 ],
+	  [ "CHECK_FLESH", 15 ]
     ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SMELLS", "WARM",  "POISON", "NO_BREATHE" ]
@@ -69,20 +71,23 @@
     "hp": 90,
     "speed": 105,
     "material": [ "flesh" ],
-    "symbol": "~",
+    "symbol": "?",
     "color": "red",
     "aggression": 100,
     "morale": 100,
-    "melee_skill": 4,
-    "melee_dice": 2,
-    "melee_dice_sides": 4,
-    "melee_cut": 2,
+    "melee_skill": 2,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_cut": 1,
 	"armor_cut": 2,
 	"armor_bash": 15,
 	"harvest": "exempt",
 	"special_attacks": [
-      [ "ROT1", 20 ]
+      [ "ROT1", 20 ],
+	  [ "CHECK_FLESH", 15 ],
+	  [ "TENTACLE", 250 ]
     ],
+	"//": "Tentacle attack is overpowered, so its cooldown should keep you alive ;)",
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SEES", "SMELLS", "WARM",  "POISON", "NO_BREATHE" ]
   },
@@ -98,7 +103,7 @@
     "hp": 260,
     "speed": 105,
     "material": [ "flesh" ],
-    "symbol": "~",
+    "symbol": "O",
     "color": "red",
     "aggression": 100,
     "morale": 100,
@@ -110,7 +115,8 @@
 	"harvest": "exempt",
 	"special_attacks": [
       [ "SPW1", 18 ],
-	  [ "ROT1", 25 ]
+	  [ "ROT1", 25 ],
+	  [ "CHECK_FLESH", 15 ]
     ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SMELLS", "WARM",  "POISON", "NO_BREATHE" ]
@@ -142,6 +148,9 @@
 	"armor_stab": 3,
     "vision_day": 30,
     "harvest": "exempt",
+	"special_attacks": [
+	  [ "CHECK_FLESH", 15 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON" ]
   },
@@ -171,6 +180,9 @@
 	"armor_stab": 2,
     "vision_day": 30,
     "harvest": "exempt",
+	"special_attacks": [
+	  [ "CHECK_FLESH", 15 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON" ]
   },
@@ -200,6 +212,9 @@
 	"armor_stab": 1,
     "vision_day": 30,
     "harvest": "exempt",
+	"special_attacks": [
+	  [ "CHECK_FLESH", 15 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON" ]
   },
@@ -229,6 +244,9 @@
 	"armor_stab": 1,
     "vision_day": 30,
     "harvest": "exempt",
+	"special_attacks": [
+	  [ "CHECK_FLESH", 15 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "SMELLS", "HARDTOSHOOT", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON" ]
   },
@@ -258,6 +276,9 @@
 	"armor_stab": 1,
     "vision_day": 30,
     "harvest": "exempt",
+	"special_attacks": [
+	  [ "CHECK_FLESH", 15 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "SMELLS", "HARDTOSHOOT", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON" ]
   },
@@ -287,13 +308,16 @@
 	"armor_stab": 1,
     "vision_day": 30,
     "harvest": "exempt",
+	"special_attacks": [
+	  [ "CHECK_FLESH", 15 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "SMELLS", "HARDTOSHOOT", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON" ]
   },
   {
     "id": "mon_flesh_rabbit",
     "type": "MONSTER",
-    "name": "flesh rabit",
+    "name": "flesh rabbit",
     "description": "An animate flesh, formed as a rodent. Its front teeth were notably sharpened, as it reflects back projected light. Though it moves individually, it is forbidden to leave its source of life.",
     "default_faction": "flesh",
     "species": [ "FLESH" ],
@@ -316,6 +340,9 @@
 	"armor_stab": 1,
     "vision_day": 30,
     "harvest": "exempt",
+	"special_attacks": [
+	  [ "CHECK_FLESH", 15 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "SMELLS", "HARDTOSHOOT", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON" ]
   },
@@ -324,7 +351,7 @@
     "id": "mon_flesh_rejuvenate_2",
     "type": "MONSTER",
     "name": "rejuvenator",
-    "description": "A massive flabby flesh, constantly pumping new strands of bloody vile fiends beside it.",
+    "description": "A massive flabby flesh, constantly pumping new strands of bloody vile fiends to its surroundings.",
     "default_faction": "flesh",
     "species": [ "FLESH" ],
     "volume": "875000 ml",
@@ -343,7 +370,8 @@
 	"armor_bash": 17,
 	"harvest": "exempt",
 	"special_attacks": [
-      [ "REJ2", 1 ]
+      [ "REJ2", 1 ],
+	  [ "CHECK_FLESH", 15 ]
     ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SMELLS", "WARM", "POISON", "NO_BREATHE" ]
@@ -371,7 +399,8 @@
 	"armor_bash": 17,
 	"harvest": "exempt",
 	"special_attacks": [
-      [ "ROT2", 10 ]
+      [ "ROT2", 10 ],
+	  [ "CHECK_FLESH", 15 ]
     ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SMELLS", "WARM",  "POISON", "NO_BREATHE" ]
@@ -388,19 +417,21 @@
     "hp": 120,
     "speed": 105,
     "material": [ "flesh" ],
-    "symbol": "~",
+    "symbol": "?",
     "color": "red",
     "aggression": 100,
     "morale": 100,
-    "melee_skill": 0,
-    "melee_dice": 0,
-    "melee_dice_sides": 0,
-    "melee_cut": 0,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 2,
 	"armor_cut": 2,
 	"armor_bash": 17,
 	"harvest": "exempt",
 	"special_attacks": [
-      [ "ROT2", 16 ]
+      [ "ROT2", 16 ],
+	  [ "CHECK_FLESH", 15 ],
+	  [ "TENTACLE", 200 ]
     ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SEES", "SMELLS", "WARM",  "POISON", "NO_BREATHE" ]
@@ -417,7 +448,7 @@
     "hp": 335,
     "speed": 105,
     "material": [ "flesh" ],
-    "symbol": "~",
+    "symbol": "O",
     "color": "red",
     "aggression": 100,
     "morale": 100,
@@ -430,7 +461,8 @@
 	"harvest": "exempt",
 	"special_attacks": [
       [ "SPW2", 15 ],
-	  [ "ROT2", 24 ]
+	  [ "ROT2", 24 ],
+	  [ "CHECK_FLESH", 15 ]
     ],
     "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SMELLS", "WARM",  "POISON", "NO_BREATHE" ]
@@ -463,6 +495,9 @@
 	"armor_stab": 4,
     "vision_day": 30,
     "harvest": "exempt",
+	"special_attacks": [
+	  [ "CHECK_FLESH", 15 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON" ]
   },
@@ -491,6 +526,9 @@
 	"armor_stab": 5,
     "vision_day": 30,
     "harvest": "exempt",
+	"special_attacks": [
+	  [ "CHECK_FLESH", 15 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON" ]
   },
@@ -520,6 +558,9 @@
 	"armor_stab": 2,
     "vision_day": 30,
     "harvest": "exempt",
+	"special_attacks": [
+	  [ "CHECK_FLESH", 15 ]
+    ],
     "death_function": [ "MELT" ],
     "flags": [ "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON", "BLEED" ]
   },
@@ -547,9 +588,39 @@
     "armor_cut": 4,
 	"armor_stab": 2,
     "vision_day": 30,
-	"special_attacks": [ { "type": "leap", "cooldown": 10, "move_cost": 0, "max_range": 14, "min_consider_range": 2 } ],
+	"special_attacks": [ [ "CHECK_FLESH", 15 ], { "type": "leap", "cooldown": 10, "move_cost": 0, "max_range": 14, "min_consider_range": 2 } ],
     "harvest": "exempt",
     "death_function": [ "MELT" ],
     "flags": [ "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON", "BLEED" ]
+  },
+  
+  {	"//": "This is the key to destroy the whole cave. Not really destroy the overmap, but reverts blood terrain to cavern ones.",
+    "id": "mon_flesh_heart",
+    "type": "MONSTER",
+    "name": "heart",
+    "description": "A horrendously colossal flesh, beating in an interval like that of a human heart. Large strands of thick vein shoots out of it, attaching them across the vicinity.",
+    "default_faction": "flesh",
+    "species": [ "FLESH" ],
+    "volume": "875000 ml",
+    "weight": 200000,
+    "hp": 10000,
+    "speed": 100,
+    "material": [ "flesh" ],
+    "symbol": "&",
+    "color": "light_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_cut": 0,
+	"armor_bash": 20,
+	"harvest": "exempt",
+	"special_attacks": [
+      [ "HEART_FLESH", 1 ],
+	  [ "CHECK_FLESH", 15 ]
+    ],
+    "death_function": [ "MELT" ],
+    "flags": [ "IMMOBILE", "SMELLS", "WARM", "POISON", "NO_BREATHE" ]
   }
 ]
