@@ -9,20 +9,8 @@ https://discourse.cataclysmdda.org - CDDA official website
 
   *This README.txt is my changelog, so what is done will be recorded and released depending on accumulated progress. Since I publish new contents less than 2 days, make sure to check this repository for the newest updates.
   *AND LASTLY... PLEASE, notify me of any bugs you encountered while playing along with this mod. I'd like to hear petitions from every players who supports ^_^
-
-
-
-	=>TO-DO LIST<= (focused goal for V1.4)
-
-!? SECRONOM LAB (immersive and dangerous, rework on loots and boss area) 
-!? SECRONOM LAB CREATURES (wider zombie experimentals, Bio-Organic-Weapon creatures)
-!? FLESHY CAVES (random caves with fleshy texture)
-!? FLESH CREATURES (creatures that resides in its source)
-?  SUGGESTIONS FROM PEOPLE (it helps me alot, as of now I'm out of effing ideas)
-
-
-
-
+  
+  
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes...)
 
@@ -30,7 +18,7 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 +  NEW FAILED SPECIMEN (squirtler)
 +  ADDED BOW CREATURES (kaxix, axxuros, exios, drexx and epixo)
-+  ADDED FLESH CAVERN (disgusting patch of earthen filth, home for the baneful flesh)
++  ADDED FLESH CAVERN (disgusting patch of earthen filth. Home for the baneful flesh)
 +  ADDED FLESH CREATURES (nearly finite gorey walls and a bunch of cloned creatures)
 
 +~ MAJOR IMPROVEMENTS ON SECRONOM LAB (new mapgens, reworks and fixes on the structure)
