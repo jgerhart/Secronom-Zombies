@@ -253,7 +253,7 @@
 			"|": "t_hole_down_fleshy"
         },
 		"monster": {
-        "&": { "monster": "mon_flesh_heart" }
+        "&": { "monster": "mon_flesh_rejuvenate_1" }
         },
 		"place_monsters": [ { "monster": "GROUP_FCAVERN_B1", "x": [ 2, 22 ], "y": [ 2, 22 ], "repeat": [ 1, 2 ], "density": 0.1 } ]
     },
@@ -509,7 +509,7 @@
 			"&": "t_floor_fleshy"
         },
 		"monster": {
-        "&": { "monster": "mon_flesh_heart" }
+        "&": { "monster": "mon_flesh_rejuvenate_2" }
         },
 		"place_monsters": [ { "monster": "GROUP_FCAVERN_B2", "x": [ 2, 22 ], "y": [ 2, 22 ], "repeat": [ 1, 2 ], "density": 0.15 } ]
     },
