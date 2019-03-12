@@ -1,4 +1,4 @@
-Secronom V1.4 - Axema Vales (author)
+Secronom V1.5 - Axema Vales (author)
 
 https://discourse.cataclysmdda.org - CDDA official website
 
@@ -9,12 +9,25 @@ https://discourse.cataclysmdda.org - CDDA official website
 
   *This README.txt is my changelog, so what is done will be recorded and released depending on accumulated progress. Since I publish new contents less than 2 days, make sure to check this repository for the newest updates.
   *AND LASTLY... PLEASE, notify me of any bugs you encountered while playing along with this mod. I'd like to hear petitions from every players who supports ^_^
-  
-  
+
+	=>TO-DO LIST<=
+
+?? REAL LIFE GUNS (cancelled or not, they're in)
+?? SCI-FI GUNS (for both science and gun maniacs)
+
+
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes...)
 
 #  REWORKS ON TILESET (frequent)
+
++  7 NEW GUNS (see v1.5.txt, they are rare)
+
+
+
+	=>PAST UPDATES<=
+
+--> V1.4: STRUCTURAL REFORMS <--
 
 +  NEW FAILED SPECIMEN (squirtler)
 +  ADDED BOW CREATURES (kaxix, axxuros, exios, drexx and epixo)
@@ -23,15 +36,11 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 +~ MAJOR IMPROVEMENTS ON SECRONOM LAB (new mapgens, reworks and fixes on the structure)
 
-~  FIXES ON FAILED SPECIMENS (name based on appearance, instead of numbers)
+-  FIXES ON FAILED SPECIMENS (name based on appearance, instead of numbers)
 
 
 
-
-
-	=>PAST UPDATES<=
-
---> V1.3: COMPILED ALL CITY ZEDS <--
+--> V1.3: CITY ZEDS COMPILATION <--
 
 +  LAST 3 CHAOS ZEDS (fleshmonger, faux, uruxis)
 +  NEW INSECTOID MUTANT (worm)
