@@ -209,46 +209,10 @@
       [ "tendrilgrip", 11 ],
       [ "tendrilslam", 22 ],
 	  [ "tendrilstab", 22 ],
-      [ "tendrilswing", 3 ],
-	  [ "TENTA_SPAWN", 25 ],
-      [ "NEAR_TENTA_SPAWN", 40 ]
+      [ "tendrilswing", 3 ]
     ],
 	"//": "It spawns a tendril at random spots whether it sees you or not. If it spawns beside you, it inflicts stun.",
     "death_drops": "default_zombie_death_drops",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "PUSH_MON", "ATTACKMON" ]
-  },
-  {
-    "id": "mon_zombie_tentawraith_tent",
-    "type": "MONSTER",
-    "name": "tendril",
-    "description": "A thick and fleshy tendril, wriggling in unstoppable fury. Half feet tall and appears to be grievous than it looks.",
-    "default_faction": "zombie",
-    "species": [ "ZOMBIE" ],
-    "volume": "30000 ml",
-    "weight": 40750,
-    "hp": 60,
-    "speed": 100,
-    "material": [ "flesh" ],
-    "symbol": "?",
-    "color": "pink",
-    "aggression": 100,
-    "morale": 100,
-    "melee_skill": 4,
-    "melee_dice": 2,
-	"harvest": "exempt",
-    "melee_dice_sides": 4,
-    "melee_cut": 2,
-    "vision_night": 5,
-    "special_attacks": [
-      [ "STRETCH_ATTACK", 26 ],
-      [ "tendrilswing", 2 ],
-	  [ "GRAB", 5 ],
-	  [ "AUTO_TENT", 0 ],
-	  [ "BACK_TENT", 0 ],
-	  [ "FORCEBACK_TENT", 0 ]
-    ],
-	"//": "It has two options: die peacefully or not.",
-	"death_function": [ "MELT" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "IMMOBILE", "PLASTIC", "GRABS" ]
   }
 ]

@@ -34,10 +34,6 @@
     "armor_cut": 16,
     "armor_acid": 3,
     "armor_fire": 5,
-    "special_attacks": [
-	[ "TITAN_IMPACT", 2 ],
-	[ "TITAN_CHARGE", 10 ]
-    ],
 	"//": "Stunning impact will apply when it charges towards you.",
     "death_drops": "mon_zombie_hulk_death_drops",
     "upgrades": {
@@ -80,10 +76,6 @@
     "armor_cut": 22,
     "armor_acid": 4,
     "armor_fire": 8,
-    "special_attacks": [
-	[ "BLACKTITAN_IMPACT", 2 ],
-	[ "BLACKTITAN_CHARGE", 10 ]
-    ],
 	"//": "movement speed rises 3x. And a bug could occur.",
     "death_drops": "mon_zombie_hulk_death_drops",
     "death_function": [ "NORMAL" ],

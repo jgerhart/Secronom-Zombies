@@ -86,10 +86,7 @@
 	  [ "secrodragon_SSLRatk", 2 ],
 	  [ "secrodragon_M240atk", 5 ],
 	  [ "secrodragon_SSGLatk", 15 ],
-	  [ "secrodragon_pershieldatk", 10 ],
-	  [ "SMASH_GROUND", 42 ],
-	  [ "INFORCER_SPAWN", 200 ],
-	  [ "EHEAL_SECRODRAG", 40 ]
+	  [ "secrodragon_pershieldatk", 10 ]
     ],
     "death_drops": { "groups": [ [ "robots", 100 ], [ "secrodrag_drops", 80 ] ] },
     "death_function": [ "NORMAL" ],

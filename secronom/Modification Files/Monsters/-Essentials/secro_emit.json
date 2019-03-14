@@ -35,28 +35,5 @@
     "field": "fd_fire",
     "quantity": 1,
     "chance": 1
-  },
-  {
-    "id": "emit_jolt_jolting",
-    "type": "emit",
-    "field": "fd_electricity",
-    "qty": 5,
-	"chance": 50
-  },
-  {
-    "id": "flesh_odor_emit",
-    "type": "emit",
-    "field": "fd_toxic_gas",
-    "density": 3,
-    "quantity": 15,
-    "chance": 50
-  },
-  {
-    "id": "flesh_smallodor_emit",
-    "type": "emit",
-    "field": "fd_toxic_gas",
-    "density": 1,
-    "quantity": 5,
-    "chance": 25
   }
 ]
