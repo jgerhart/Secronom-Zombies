@@ -106,7 +106,7 @@ Bio-Organic-Weapons. These are the strong zombies set for warring purposes, cont
 
 Dreadful flesh-eaters and are rarely sighted in the wilderness.
 
-* **Ayenel**
+* **Ayenel** - A towering abomination, with maximized range of vision. It excels in combat abilities.
 
 ## Robots
 
@@ -118,23 +118,23 @@ Coded for fun!
 After the deletion of LUA in 0.D, features listed below has been removed. **Still, they're available on the outdated builds...**
 
 ## Chaos Zombies
-Chaos type zeds are coded with LUA. They have unique RNG mechanics in performing special abilities, so the odds are unpredictable.
+Chaos type zeds are mostly coded with LUA. They have unique RNG mechanics in performing special abilities, so the odds are unpredictable.
 
-* **Zoid** - Has the ability to morph its body into different stances: offensive, defensive and agile stances. There could be a chance to hurt itself in that process.
-* **Vex** - Has the ability to inflict players with debuffs, mainly blindness. Chances and intensities are random.
-* **Jinx** - Has the ability to summon shadows. These shadows will try to mark you, and if they do, **Jinx** will inflict damage that is unavoidable, even coated in impenetrable armor.
-* **Fake** - Has the ability to surprise players with its disguised zombie looks. They could transform into an **Ichorus** - a hybrid of acidic and hulk - or **Psyrus** - a fast and strong melee attacker.
-* **Jolt** - Has a passive ability to shock the ground with waves of electricity at even further ranges.
-* **Fleshmonger** - Has the ability to spawn minions that explodes into toxic clouds, in which it costs chunks of health points to perform.
-* **Faux** - Has the ability to shift in and out of reality, teleporting at random distances or pops out near the player's location.
-* **Uruxis** - Has the ability to call zombies out of the soil. It literally needs a soil to perform. If so, it raises a fresh zombie from that. Lethality of that zombie depends on the situation. If **Uruxis** sees you, the spawnrate triples and it could spawn a brute, or even a hulk in its vicinity!
+* **Zoid** - Has the ability to morph its body into different stances: offensive, defensive and agile stances. Each of these has a corresponding stat bonuses that the **zoid** gains temporarily. There could be a chance to hurt itself in that process.
+* **Vex** - Has the ability to inflict players with debuffs and blindness is common. Chances and intensities are random.
+* **Jinx** - Has the ability to summon shadows. These shadows will try to mark you, and if they do, **jinx** will inflict damage that is unavoidable, even if you're coated in an impenetrable armor. The damage calculation depends on how much marking did you have before **jinx** performs the ability.
+* **Fake** - Has the ability to surprise players with its disguised zombie looks. They could transform into an **ichorus** - a hybrid of acidic and hulk - or **psyrus** - a fast and strong melee attacker. Though killing before it can act prevents this to happen, like an overkill from anti-materiel rifles or ramming with a vehicle with a speed of MPH 80.
+* **Jolt** - Has a passive ability to shock the ground with waves of electricity at even further ranges. Its electricity fields doesn't stop even struck by EMP.
+* **Fleshmonger** - Has the ability to spawn minions that explodes into toxic clouds, in which it costs chunk of health points to perform.
+* **Faux** - Has the ability to shift in and out of reality. It teleports at random distances or it could reappear near the player's location. It also retreats when heavily damaged and vice versa when not.
+* **Uruxis** - Has the ability to call zombies out from the soil. It literally needs a soil to perform this. If so, it raises a fresh zombie from that. Lethality of that zombie depends on the situation. If **uruxis** sees you, the spawnrate triples and it could spawn a brute, or even a hulk in its vicinity!
 
 ## Flesh Cavern
 A cave that ~~wasn't completed~~ is made of flesh. Sticky, wet (and gross).
 
-* This cavern constantly deals damage to players who came in unprepared. So you'll need more than `3 environmental resistance` in every body part to gain immunity from damage. Power armor is an example.
+* This cavern constantly deals damage to players who ventures unprepared. You will need to have more than `3 environmental resistance` in every body part to gain immunity from damage. Power armor is an example of this.
 
-The cave will try to stop you from progressing afar by blocking the pathways with tough, fleshy strands and/or other horrifying things.
+The cave will try to stop you from progressing afar by blocking the pathways with tough, fleshy strands and/or with other horrifying things.
 
 ##### Flesh
 These are creatures only exclusive inside the flesh caverns.
@@ -144,6 +144,7 @@ These are creatures only exclusive inside the flesh caverns.
 * **Lasher** - Also acts as a barrier, but it can attack.
 * **Parcel** - Acts as a tough barrier that can spawn fleshy creatures like flesh rabbit, snakes and moose.
 * **Heart** - Destroying the **heart** destroys everything that is fleshy. It nullifies the cavern back to normal terrain upon its death.
+* **Flesh Creatures** - Any wildlife critters and anomalies that are consumed by the cave. They are cloned and sent out to engage invaders.
 
 ##### Rewards
 No, you will not gain any reward from destroying a flesh cavern...
