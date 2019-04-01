@@ -5,6 +5,7 @@ Its mod thread is at the [official forums](https://discourse.cataclysmdda.org/t/
 An alteration of Dead Frontier into the Cataclysm world. That game is probably dead, so scavenging is a better thing to do.
 
 - This mod is at its stable status. Expect lesser updates or nothing to occur.
+- Remember that CDDA is an open source game, suggestions are welcome!
 
 ## Zombies
 The secronom aims to add various zombies to the world, ranging from weak up to strong variety of them.
