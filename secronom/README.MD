@@ -12,7 +12,7 @@ The secronom aims to add various zombies to the world, ranging from weak up to s
 
 ![Evo Sheet](https://i.imgur.com/nBT3pYL.png)
 
-*(Above is a simple visualization of secronom's zombie evolution, some are not included)*
+*(Above is a simple visualization of secronom's zombie evolution throughout the game. Some are not included)*
 
 ### City Zombies
 
@@ -105,7 +105,7 @@ Bio-Organic-Weapons. These are the strong zombies set for warring purposes, cont
 
 ## Abberations
 
-Dreadful flesh-eaters and are rarely sighted in the wilderness.
+Dreadful flesh-eaters that are rarely sighted in the wilderness.
 
 * **Ayenel** - A towering abomination, with maximized range of vision. It excels in combat abilities.
 
@@ -122,7 +122,7 @@ After the deletion of LUA in 0.D, features listed below has been removed. **Stil
 Chaos type zeds are mostly coded with LUA. They have unique RNG mechanics in performing special abilities, so the odds are unpredictable.
 
 * **Zoid** - Has the ability to morph its body into different stances: offensive, defensive and agile stances. Each of these has a corresponding stat bonuses that the **zoid** gains temporarily. There could be a chance to hurt itself in that process.
-* **Vex** - Has the ability to inflict players with debuffs and blindness is common. Chances and intensities are random.
+* **Vex** - Has the ability to inflict players with debuffs and blindness is common to this. Chances and intensities are random.
 * **Jinx** - Has the ability to summon shadows. These shadows will try to mark you, and if they do, **jinx** will inflict damage that is unavoidable, even if you're coated in an impenetrable armor. The damage calculation depends on how much marking did you have before **jinx** performs the ability.
 * **Fake** - Has the ability to surprise players with its disguised zombie looks. They could transform into an **ichorus** - a hybrid of acidic and hulk - or **psyrus** - a fast and strong melee attacker. Though killing before it can act prevents this to happen, like an overkill from anti-materiel rifles or ramming with a vehicle with a speed of MPH 80.
 * **Jolt** - Has a passive ability to shock the ground with waves of electricity at even further ranges. Its electricity fields doesn't stop even struck by EMP.
@@ -138,9 +138,9 @@ A cave that ~~wasn't completed~~ is made of flesh. Sticky, wet (and gross).
 The cave will try to stop you from progressing afar by blocking the pathways with tough, fleshy strands and/or with other horrifying things.
 
 ##### Flesh
-These are creatures only exclusive inside the flesh caverns.
+These are the creatures only exclusive inside the flesh caverns.
 
-* **Rejuvenator** - Acts much like a creeper hub, but its death doesn't apply to the connect flesh strands.
+* **Rejuvenator** - Acts much like a creeper hub, but its death doesn't apply to the connected flesh strands.
 * **Root** - Acts as a barrier.
 * **Lasher** - Also acts as a barrier, but it can attack.
 * **Parcel** - Acts as a tough barrier that can spawn fleshy creatures like flesh rabbit, snakes and moose.
