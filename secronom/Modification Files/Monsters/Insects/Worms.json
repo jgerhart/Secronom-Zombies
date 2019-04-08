@@ -46,7 +46,7 @@
     "id": "mon_zombieworm_gravedigger",
     "type": "MONSTER",
     "name": "grave digger",
-    "description": "A huge, blood-red worm with its thick skin formed like a tough rubber. Its quad-interloping fangs hinder thousands of ravenous teeth and a single strike of its bite could sink through the toughest of armor.",
+    "description": "A huge, blood-red worm with its thick skin formed like a tough rubber. Under its quad-interloping fangs hinder thousands of ravenous teeth and a single strike of its bite could sink through the toughest of armor.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "WORM" ],
     "volume": "875000 ml",

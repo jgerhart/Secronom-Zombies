@@ -3,7 +3,7 @@
     "id": "mon_ayenel",
     "type": "MONSTER",
     "name": "ayenel",
-    "description": "A walking flesh sentinel, with a huge, sharp blade hanging by its predominant eye. It appears to be a various failed specimens stitched together, forming life to a lethal giant by mistake.",
+    "description": "A walking flesh sentinel, with huge, sharp blade hanging by its predominant eye. Much of its extra appendages hang without a certain function.",
     "default_faction": "ayenel",
     "species": [ "ABERRATION" ],
     "diff": 10,
