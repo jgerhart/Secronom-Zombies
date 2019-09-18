@@ -42,7 +42,6 @@
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE" ]
   },
   {
-	"//": "Guns will take this down easily.",
     "id": "mon_zombie_unity",
     "type": "MONSTER",
     "name": "unity zombie",

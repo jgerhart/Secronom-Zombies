@@ -34,7 +34,6 @@
     "armor_cut": 16,
     "armor_acid": 3,
     "armor_fire": 5,
-	"//": "Stunning impact will apply when it charges towards you.",
     "death_drops": "mon_zombie_hulk_death_drops",
     "upgrades": {
       "half_life": 12,
@@ -76,7 +75,6 @@
     "armor_cut": 22,
     "armor_acid": 4,
     "armor_fire": 8,
-	"//": "movement speed rises 3x. And a bug could occur.",
     "death_drops": "mon_zombie_hulk_death_drops",
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "DESTROYS", "POISON", "ATTACKMON", "LEATHER", "NO_BREATHE", "FILTHY", "REVIVES", "BONES", "FAT", "PUSH_MON" ]

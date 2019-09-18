@@ -12,8 +12,7 @@
     ]
   },
  {
-    "//": "BASICALLY, this has been stripped off from my (completely) abandoned mod, Dragonairs, due to the lack of lore.",
-	"//": "Rewards given doesn't satisfy players... So its your choice.",
+	"//": "Rewards given doesn't satisfy players... So it is your choice.",
     "id": "mon_secrodragon_sleep",
     "type": "MONSTER",
     "name": "secronom dragon",
@@ -49,7 +48,7 @@
       "half_life": 22,
       "into": "mon_secrodragon_woke"
      },
-	 "//": "DEFINITELY wakes up two years below.",
+	 "//": "Might wake up in approximately two years.",
     "flags": [ "IMMOBILE", "WARM", "POISON", "NO_BREATHE",  "BONES", "ELECTRIC", "FIREPROOF" ]
   },
   {

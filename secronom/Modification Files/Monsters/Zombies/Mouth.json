@@ -80,7 +80,7 @@
     "id": "mon_zombie_bellymouth",
     "type": "MONSTER",
     "name": "bellymouth zombie",
-    "description": "This fat zombie's intestinal organs mutated, rupturing its tummy and turns out as a large, fleshy jawed mouth.",
+    "description": "Unique to its gaping mouth on its ruptured belly, this corpse poses a great threat.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE" ],
     "volume": "62500 ml",
@@ -227,7 +227,7 @@
     "armor_acid": 2,
     "armor_fire": 2,
     "special_attacks": [
-      { "type": "bite", "cooldown": 13, "effects": [ { "id": "grabbed", "duration": 1000, "bp": "TORSO" } ],
+      { "type": "bite", "cooldown": 30, "effects": [ { "id": "grabbed", "duration": 1000, "bp": "TORSO" } ],
         "damage_max_instance": [
           { "damage_type": "bash", "amount": 20, "armor_multiplier": 0.2 },
 		  { "damage_type": "cut", "amount": 20, "armor_multiplier": 0.4 },

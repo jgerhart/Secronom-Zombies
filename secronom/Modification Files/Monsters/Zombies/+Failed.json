@@ -162,7 +162,7 @@
     "id": "mon_zedfail_squirtler",
     "type": "MONSTER",
     "name": "squirtler",
-    "description": "Attached to the ceiling, this irregular patch of large, pale skin features a swollen, bulbous mouth, oozing in greenish liquid. Highly aggressive, it shoots a pressurized stream of acid on its target within line of sight.",
+    "description": "Attached to the terrain, this irregular patch of large, pale skin features a swollen, bulbous mouth, oozing in greenish liquid.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE" ],
     "volume": "62500 ml",

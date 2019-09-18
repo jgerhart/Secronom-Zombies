@@ -163,10 +163,9 @@
   },
   {
     "id": "mon_zombie_tentawraith",
-	"//": "A boss from Dead Frontier. Heavily remaked for CDDA version as skillful zombie!",
     "type": "MONSTER",
     "name": "wraith",
-    "description": "Terrifying outgrowths of savage tentacle accompanies this corpse's crimson body, thrashing anything in its path as it moves aimlessly. Within a closer look, one of its arm pulsates and burdens the body, dragging the heavily mutated portion into the ground.",
+    "description": "Dreadful outgrowths of savage tentacle accompanies this corpse's crimson body, thrashing anything in its path as it moves aimlessly. Within a closer look, one of its arm pulsates and burdens the body, dragging the heavily mutated portion into the ground.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "92500 ml",
@@ -211,7 +210,6 @@
 	  [ "tendrilstab", 22 ],
       [ "tendrilswing", 3 ]
     ],
-	"//": "It spawns a tendril at random spots whether it sees you or not. If it spawns beside you, it inflicts stun.",
     "death_drops": "default_zombie_death_drops",
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "PUSH_MON", "ATTACKMON" ]
   }

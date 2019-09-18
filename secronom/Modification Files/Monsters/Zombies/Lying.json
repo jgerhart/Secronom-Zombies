@@ -1,10 +1,10 @@
 [
  {
-    "//": "Lying body is a reference from the Silent Hill, it looks like a zombie, so I included it.",
+    "//": "Lying body is a reference from the Silent Hill. It looks like a zombie, so I included it.",
     "id": "mon_zombie_WALKINGPOTATO",
     "type": "MONSTER",
     "name": "lying body",
-    "description": "A walking swollen cocoon, seemingly made out skin. It doesn't have the strenght to burst out whatever is inside of it.",
+    "description": "A walking swollen cocoon, seemingly made out skin. Silent moaning is heard from the inside",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
@@ -40,7 +40,7 @@
     "id": "mon_zombie_zawk",
     "type": "MONSTER",
     "name": "zawk",
-    "description": "A large humanoid distinct to its overgrown skinny wings, curved talons and a beak similar to hawks. With its ability to fly, it actually depends on it to search and chase down anything with ease.",
+    "description": "A once humanoid distinct to its overgrown skinny wings, curved talons and a beak.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
