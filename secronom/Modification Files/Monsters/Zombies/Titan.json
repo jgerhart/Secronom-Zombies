@@ -10,7 +10,7 @@
     "volume": "875000 ml",
     "weight": 200000,
     "hp": 460,
-    "speed": 130,
+    "speed": 110,
     "material": [ "flesh", "bone" ],
     "symbol": "Z",
     "color": "ltred_magenta",
@@ -34,6 +34,10 @@
     "armor_cut": 16,
     "armor_acid": 3,
     "armor_fire": 5,
+    "special_attacks": [
+    { "type": "spell", "spell_id": "mon_zombie_titan_charge", "cooldown": 58 },
+      [ "SMASH", 32 ]
+    ],
     "death_drops": "mon_zombie_hulk_death_drops",
     "upgrades": {
       "half_life": 12,
@@ -52,7 +56,7 @@
     "volume": "875000 ml",
     "weight": 200000,
     "hp": 715,
-    "speed": 150,
+    "speed": 125,
     "material": [ "flesh", "bone" ],
     "symbol": "Z",
     "color": "dark_gray_red",
@@ -75,6 +79,10 @@
     "armor_cut": 22,
     "armor_acid": 4,
     "armor_fire": 8,
+    "special_attacks": [
+    { "type": "spell", "spell_id": "mon_zombie_titan_charge", "cooldown": 50 },
+      [ "SMASH", 26 ]
+    ],
     "death_drops": "mon_zombie_hulk_death_drops",
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "DESTROYS", "POISON", "ATTACKMON", "LEATHER", "NO_BREATHE", "FILTHY", "REVIVES", "BONES", "FAT", "PUSH_MON" ]
