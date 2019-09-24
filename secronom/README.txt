@@ -9,10 +9,13 @@ https://discourse.cataclysmdda.org - CDDA official website
 ?? REAL LIFE GUNS (cancelled or not, they're in)
 ?? SCI-FI GUNS (for both science and gun maniacs)
 ?? MORE ZED TYPES (bestiary's not enough)
+?? MAGIC ATTACKS (spells for special zeds. Serves as an alternative to LUA attacks)
 
 
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes...)
+	
+--> V1.5 - Currently, I'm recreating the LUA-based monster attacks with magic spells, along with new contents. <--
 
 #  REWORKS ON TILESET (frequent)
 #  REMOVED LUA DEPENDENT STUFF (chaos zeds, special attacks and some places were removed)
@@ -25,7 +28,7 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 	=>PAST UPDATES<=
 
---> V1.4: STRUCTURAL REFORMS <--
+--> V1.4 - Focused on recreating the main location of the mod, making it bigger, loot-worthy and more alive with unique dwellers inside. <--
 
 +  NEW FAILED SPECIMEN (squirtler)
 +  ADDED BOW CREATURES (kaxix, axxuros, exios, drexx and epixo)
@@ -38,7 +41,7 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 
 
---> V1.3: CITY ZEDS COMPILATION <--
+--> V1.3 - Focused on completing the zombie bestiary by adding the final upgrade counterparts and the last 3 LUA-based monsters. <--
 
 +  LAST 3 CHAOS ZEDS (fleshmonger, faux, uruxis)
 +  NEW INSECTOID MUTANT (worm)
@@ -51,11 +54,11 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 
 
---> v1.2 <--
+--> v1.2 - Focused on formulating and creating the LUA-based monsters that cycles throughout the update, with mild introduction of the main location. <--
 
 #  LUA SPECIAL ATTACKS (LUA dependent attack mechanics)
 
-+  ADDED CITY ZED MUTANT (lying body, scourge)
++  ADDED NEW CITY ZED MUTANTS (lying body, scourge)
 +  ADDED 5 CHAOS TYPE ZEDS (zoid, vex, jinx, fake zombie and jolt)
 +  ADDED A WANDERING MUTANT (ayenel)
 +  ADDED SECRONOM DRAGON (confined boss)
@@ -66,8 +69,8 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 
 
---> v1.1 and below <--
+--> v1.1 and below - Main idea posted on the forums. <--
 
-+ INTRODUCED SECRONOM CREATURES (city zed and lab mutants)
++ INTRODUCED SECRONOM CREATURES (earlier versions of city zeds and lab mutants)
 
 
