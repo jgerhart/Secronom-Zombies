@@ -177,5 +177,16 @@
       "hunger_chance": [1],
       "thirst_chance": [2]
     }
-    }
+    },
+    {
+    "type": "effect_type",
+    "id": "titan_charge",
+    "name": [ "Titan Charge" ],
+    "desc": [ "The titan blocks the incoming physical damage whilst charging!" ],
+    "apply_message": "Titan starts to block.",
+    "remove_message": "Titan put its guard down.",
+    "rating": "good",
+    "show_in_info": true,
+    "base_mods": { "material_thickness": [ 10 ], "speed_mod": [ 30 ] }
+  }
 ]
