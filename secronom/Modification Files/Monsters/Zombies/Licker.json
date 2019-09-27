@@ -43,13 +43,13 @@
       "half_life": 14,
       "into": "mon_zombie_mlick"
      },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "FILTHY", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "FILTHY", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "HARDTOSHOOT" ]
  },
  {
     "id": "mon_zombie_mlick",
     "type": "MONSTER",
     "name": "licker zombie",
-    "description": "An ever dominant licker with much more distinction to its terrific appearance. Its skin sheds into a fleshy physique, claws arose awkwardly and its tongue grew much longer.",
+    "description": "An ever dominant licker with much more distinction to its terrific appearance: Its skin sheds into a fleshy physique, claws arose awkwardly and its tongue grew much longer.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "30000 ml",
@@ -89,7 +89,7 @@
       "half_life": 10,
       "into": "mon_zombie_xlick"
      },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "REVIVES", "BONES", "GROUP_MORALE" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "REVIVES", "BONES", "GROUP_MORALE", "HARDTOSHOOT" ]
  },
  {
     "id": "mon_zombie_xlick",
@@ -120,7 +120,8 @@
       [ "scratch", 5 ],
       [ "GRAB", 5 ],
       [ "LUNGE", 15 ],
-      { "type": "leap", "allow_no_target": false, "cooldown": 9, "max_range": 7 }
+      { "type": "leap", "allow_no_target": false, "cooldown": 9, "max_range": 7 },
+	  { "type": "spell", "spell_id": "mon_zombie_xlick_pstab", "cooldown": 18 }
     ],
     "death_drops": {
       "subtype": "collection",
@@ -130,6 +131,6 @@
       ]
     },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "REVIVES", "BONES", "GROUP_MORALE" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "REVIVES", "BONES", "GROUP_MORALE", "HARDTOSHOOT" ]
  }
 ]
