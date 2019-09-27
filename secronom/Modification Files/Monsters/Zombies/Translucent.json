@@ -1,6 +1,5 @@
 [
  {
-    "//": "REMOVED A ZED FOR ITS UNAVOIDABLE BUG.",
     "id": "mon_zombie_translucent",
     "type": "MONSTER",
     "name": "translucent zombie",
@@ -20,8 +19,7 @@
     "melee_dice": 1,
     "melee_dice_sides": 2,
     "melee_cut": 1,
-    "dodge": 1,
-    "luminance": 5,
+    "luminance": 2,
 	"harvest": "zombie",
     "melee_damage": [
       {
@@ -47,7 +45,7 @@
     "id": "mon_zombie_pellucid",
     "type": "MONSTER",
     "name": "pellucid zombie",
-    "description": "Unrecognizable face dribbles with unfriendly liquid. This zombie's skin thinned into a diversion of light, supposably an effect from acid reflux as it ages further. Within a closer look, you'll see its vein compose mostly of green-ish glows.",
+    "description": "Unrecognizable face dribbles with unfriendly liquid. This zombie's skin thinned into a diversion of light, supposably an effect from acid reflux as it ages further. Within a closer look, its vein is compose mostly of green-ish glows.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
@@ -72,10 +70,9 @@
       }
     ],
     "luminance": 1,
-    "armor_bash": 3,
-    "armor_cut": 1,
+    "armor_bash": 6,
     "armor_fire": 2,
-    "special_attacks": [ [ "ACID_BARF", 30 ], [ "ACID", 25 ] ],
+    "special_attacks": [ [ "ACID_BARF", 30 ], [ "ACID", 25 ], { "type": "spell", "spell_id": "mon_zombie_pellucid_aburst",  "cooldown": 49 } ],
     "special_when_hit": [ "ACIDSPLASH", 25 ],
     "death_drops": "default_zombie_death_drops",
     "anger_triggers": [ "PLAYER_CLOSE" ],
