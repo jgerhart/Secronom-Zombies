@@ -98,6 +98,7 @@
     "melee_dice": 3,
     "melee_dice_sides": 5,
     "melee_cut": 3,
+    "grab_strength": 2,
     "melee_damage": [
       {
         "damage_type": "cut",
@@ -208,6 +209,7 @@
     "melee_cut": 4,
     "dodge": 1,
     "attack_cost": 200,
+    "grab_strength": 4,
     "melee_damage": [
       {
         "damage_type": "bash",
