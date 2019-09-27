@@ -6,23 +6,27 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 	=>TO-DO LIST<=
 
-?? REAL LIFE GUNS (cancelled or not, they're in)
-?? SCI-FI GUNS (for both science and gun maniacs)
-?? MORE ZED TYPES (bestiary's not enough)
-?? MAGIC ATTACKS (spells for special zeds. Serves as an alternative to LUA attacks)
++! GUNS (we've got 7 guns! Heck ya they're OP and that's enough)
++- MORE ZED TYPES (bestiary is not enough)
++- MAGIC ATTACKS (spells for special monsters. Serves as an alternative to LUA attacks thanks to KorGgenT's awesomeness)
 
 
 
-	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes...)
+	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
 --> V1.5 - Currently, I'm recreating the LUA-based monster attacks with magic spells, along with new contents. <--
 
-#  REWORKS ON TILESET (frequent)
+#  REWORKS ON TILESET (frequent, or whenever I can)
 #  REMOVED LUA DEPENDENT STUFF (chaos zeds, special attacks and some places were removed)
 
-+  7 NEW GUNS
++  7 NEW GUNS (rare, milspec guns)
++  UNIFIER, LYING BODY (final upgrade path)
++  ADDED WANDERING ABERRATIONS (flesh weaver, maneater)
++  NEW CITY ZED MUTANT (nautilus)
 
 +~ LICKER (final upgrade path, stats tweaked)
+
+-  FIXED MONSTER SPAWNGROUPS (to reduce the mod's file size)
 
 
 
@@ -60,7 +64,7 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 +  ADDED NEW CITY ZED MUTANTS (lying body, scourge)
 +  ADDED 5 CHAOS TYPE ZEDS (zoid, vex, jinx, fake zombie and jolt)
-+  ADDED A WANDERING MUTANT (ayenel)
++  ADDED A WANDERING ABERRATION (ayenel)
 +  ADDED SECRONOM DRAGON (confined boss)
 +  ADDED SECRONOM LAB (aesthetic building, outline for an even larger lab)
 
@@ -71,6 +75,6 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 --> v1.1 and below - Main idea posted on the forums. <--
 
-+ INTRODUCED SECRONOM CREATURES (earlier versions of city zeds and lab mutants)
++ INTRODUCED SECRONOM CREATURES (earlier versions of city zeds, lab mutants used to spawn in science labs)
 
 
