@@ -20,6 +20,7 @@
 	"harvest": "zombie",
     "melee_dice_sides": 4,
     "melee_cut": 1,
+    "grab_strength": 2,
     "dodge": 1,
     "melee_damage": [
       {
@@ -72,6 +73,7 @@
     "melee_dice": 3,
     "melee_dice_sides": 5,
     "melee_cut": 1,
+    "grab_strength": 3,
     "melee_damage": [
       {
         "damage_type": "bash",
@@ -127,6 +129,7 @@
     "melee_dice_sides": 6,
     "melee_cut": 2,
     "dodge": 1,
+    "grab_strength": 4,
     "melee_damage": [
       {
         "damage_type": "bash",
@@ -183,6 +186,7 @@
     "melee_dice_sides": 6,
     "melee_cut": 4,
     "dodge": 2,
+    "grab_strength": 6,
     "melee_damage": [
       {
         "damage_type": "bash",
@@ -199,9 +203,7 @@
     "armor_acid": 4,
     "armor_fire": 2,
     "special_attacks": [
-    { "type": "spell", "spell_id": "mon_zombie_tentawraith_outburst", "cooldown": 54 },
-    { "type": "spell", "spell_id": "mon_zombie_tentawraith_twist", "cooldown": 79 },
-    { "type": "spell", "spell_id": "mon_summon_tentawraith_tent", "cooldown": 38 },
+    { "type": "spell", "spell_id": "mon_zombie_tentawraith_outburst", "cooldown": 52 },
       {
         "type": "bite",
         "cooldown": 7,
@@ -257,7 +259,7 @@
       [ "STRETCH_ATTACK", 12 ],
       { "type": "spell", "spell_id": "mon_zombie_tentawraith_tent_pmis", "cooldown": 23 }
     ],
-    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "MELT" ],
     "flags": [ "IMMOBILE", "SEES", "HEARS", "SMELLS", "WARM", "POISON", "NO_BREATHE" ]
   }
 ]
