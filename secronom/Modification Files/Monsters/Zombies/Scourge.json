@@ -4,7 +4,7 @@
     "id": "mon_zombie_scourge",
     "type": "MONSTER",
     "name": "scourge zombie",
-    "description": "A vessel of oozing pus staggering as it walks, dripping its filthy liquid on its path.",
+    "description": "A vessel of oozing pus staggering as it walks, dripping filthy liquid on its path.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
@@ -66,10 +66,11 @@
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "POISON", "BLEED", "NO_BREATHE", "REVIVES", "FILTHY" ]
   },
   {
+	"//": "Its name was wrong...",
     "id": "mon_zombie_leptiosa",
     "type": "MONSTER",
-    "name": "leptiosa",
-    "description": "A corpse of swollen ichor, as its whole body is embraced in necrotic tissue. Aside from its huge hump lying on its back, its skin is tough as it was burned alive on its death.",
+    "name": "lepotitsa",
+    "description": "A corpse of swollen ichor, as its whole body is embraced in necrotic tissue. Aside from its huge hump lying on its back, its skin is full of fleshy holes, each emits a subtle gas.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
@@ -91,7 +92,7 @@
     "vision_day": 25,
     "vision_night": 6,
     "harvest": "zombie",
-    "special_attacks": [ [ "GRAB", 10 ], {"type": "bite", "no_infection_chance": 0, "cooldown": 15}  ],
+    "special_attacks": [ [ "GRAB", 10 ], {"type": "bite", "no_infection_chance": 0, "cooldown": 15},{ "type": "spell", "spell_id": "mon_zombie_leptiosa_ngas", "cooldown": 33 }  ],
     "death_function": [ "GAS" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "POISON", "BLEED", "NO_BREATHE", "REVIVES", "FILTHY" ]
   }
