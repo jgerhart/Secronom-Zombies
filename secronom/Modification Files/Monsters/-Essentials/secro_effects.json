@@ -188,5 +188,50 @@
     "rating": "good",
     "show_in_info": true,
     "base_mods": { "material_thickness": [ 10 ], "speed_mod": [ 30 ] }
-  }
+  },
+  {
+    "type": "effect_type",
+    "id": "omi_curse",
+    "name": [ "Ominous Curse" ],
+    "apply_message": "You've been cursed!",
+    "desc": [ "A terrifying curse reduces your insanity!" ],
+    "decay_messages": [["You withdraw from the curse!", "good"]],
+    "remove_message": "The curse lifts away!",
+    "int_add_val": 1,
+    "max_intensity": 5,
+    "int_decay_step": -3,
+    "int_decay_tick": 60,
+    "max_duration": 300,
+    "rating": "bad",
+    "base_mods": {
+      "int_mod": [-1, -4]
+    },
+    "scaling_mods": {
+      "int_mod": [-2]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "pedo_restraint",
+    "name": [ "Nautilus Restraint" ],
+    "apply_message": "A nautilus torpedo latches onto you!",
+    "desc": [ "You are being held in place by nautilus torpedo(s)" ],
+    "miss_messages": [[ "You feel your limbs stiff.", 2]],
+    "decay_messages": [["You're feeling free again!", "good"]],
+    "remove_message": "You are free from nautilus restraint!",
+    "int_add_val": 1,
+    "max_intensity": 10,
+    "int_decay_step": -2,
+    "int_decay_tick": 30,
+    "max_duration": 300,
+    "rating": "bad",
+    "base_mods": {
+    "dex_mod": [-2],
+      "speed_mod": [-2.5]
+    },
+    "scaling_mods": {
+    "dex_mod": [-0.25],
+      "speed_mod": [-0.25]
+    }
+ }
 ]
