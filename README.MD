@@ -12,5 +12,7 @@
 4. Put _secronom_ from **LUA secronom** to the mod folder of the outdated CDDA.
 5. Done. Enjoy the new features!
 
+**NOTE:** This version is outdated, and remains until now...
+
 ### Additional info:
 _Secronom_ mod folder has informational texts that might help you out...
