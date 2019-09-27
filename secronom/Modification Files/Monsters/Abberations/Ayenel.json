@@ -22,20 +22,20 @@
     "melee_cut": 4,
     "attack_cost": 200,
     "dodge": 2,
-	"harvest": "jabberwock",
+	"harvest": "zombie",
     "melee_damage": [
       {
         "damage_type": "cut",
         "amount": 11
       }
     ],
-    "armor_bash": 14,
-    "armor_cut": 10,
+    "armor_bash": 8,
+    "armor_cut": 14,
     "armor_acid": 1,
-    "armor_fire": 3,
     "special_attacks": [
 	[ "ayenel_swing", 18 ],
-	[ "ayenel_bitedown", 26 ]
+	[ "ayenel_bitedown", 26 ],
+	{ "type": "spell", "spell_id": "mon_ayenel_locko_v", "cooldown": 148 }
     ],
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "STUMBLES", "WARM", "BASHES", "POISON", "ATTACKMON", "NO_BREATHE", "BONES", "FAT", "PUSH_MON" ]
