@@ -1,52 +1,6 @@
 [
  {
-    "//": "Pretty awkward that this became a melee attack.",
-    "type": "monster_attack",
-    "attack_type": "melee",
-    "id": "swarmscreamer_shout",
-    "cooldown": 30,
-    "move_cost": 300,
-    "damage_max_instance": [
-      {
-        "damage_type": "bash",
-        "amount": 10,
-        "armor_penetration": 25
-      }
-    ],
-    "effects": [
-      { "id": "deaf", "duration": 10 },
-      { "id": "dazed", "duration": 10 }
-    ],
-    "body_parts": [ [ "HEAD", 1 ] ],
-    "hit_dmg_u": "The %1$s shouts on your ears!",
-    "hit_dmg_npc": "The %1$s shouts at <npcname>!",
-    "no_dmg_msg_u": "The %1$s tries to shout at you, but it was blocked!",
-    "no_dmg_msg_npc": "The %1$s tries to shout at <npcname>, but it was blocked!"
-  },
-  {
-    "type": "monster_attack",
-    "attack_type": "melee",
-    "id": "swarmshrill_shrill",
-    "cooldown": 50,
-    "move_cost": 500,
-    "damage_max_instance": [
-      {
-        "damage_type": "bash",
-        "amount": 15,
-        "armor_penetration": 25
-      }
-    ],
-    "effects": [
-      { "id": "deaf", "duration": 30 },
-      { "id": "dazed", "duration": 15 }
-    ],
-    "body_parts": [ [ "HEAD", 1 ] ],
-    "hit_dmg_u": "The %1$s shouts an ear-piercing screech on your ear!",
-    "hit_dmg_npc": "The %1$s shrills at <npcname>!",
-    "no_dmg_msg_u": "The %1$s tries to shrill at you, but it was blocked!",
-    "no_dmg_msg_npc": "The %1$s tries to shrill at <npcname>, but it was blocked!"
-  },
- {
+	"//": "Some attacks have bio damage, it is done to apply effects that shouldn't be blocked.",
     "type": "monster_attack",
     "attack_type": "melee",
     "id": "swordbashtrip",
@@ -326,7 +280,7 @@
     "body_parts": [ [ "HEAD", 1 ] ],
     "hit_dmg_u": "The %1$s grips your head!",
     "hit_dmg_npc": "The %1$s grips <npcname>'s head!",
-    "no_dmg_msg_u": "The %1$s tries to grip youe head, but fails to take effect!",
+    "no_dmg_msg_u": "The %1$s tries to grip your head, but fails to take effect!",
     "no_dmg_msg_npc": "The %1$s tries to grip <npcname>'s head, but fails to take effect!"
   },
 	  {
