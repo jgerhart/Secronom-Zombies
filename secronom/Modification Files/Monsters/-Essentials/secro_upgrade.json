@@ -138,12 +138,31 @@
     ]
   },
   {
+    "name": "GROUP_LYING_UPGRADEX",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_zawk", "freq": 100, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_zoth", "freq": 100, "cost_multiplier": 1 },
+	  { "monster": "mon_zombie_nightwail", "freq": 100, "cost_multiplier": 10 }
+    ]
+  },
+  {
     "name": "GROUP_SCOURGE_UPGRADEX",
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_zombie_defile", "freq": 100, "cost_multiplier": 1 },
       { "monster": "mon_zombie_leptiosa", "freq": 100, "cost_multiplier": 10 }
+    ]
+  },
+  {
+    "name": "GROUP_UNIFIER_UPGRADEX",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_unity", "freq": 100, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_hemo", "freq": 100, "cost_multiplier": 10 }
     ]
   },
   {
