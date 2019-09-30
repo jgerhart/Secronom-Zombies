@@ -1,54 +1,56 @@
-Secronom V1.5 - Axema Vales (author)
+Secronom V1.6 - Axema Vales (author)
 
-https://discourse.cataclysmdda.org - CDDA official website
+https://discourse.cataclysmdda.org - CDDA official forums
 
   *This README.txt is my changelog, so what is done will be recorded and released depending on accumulated progress.
-
-	=>TO-DO LIST<=
-
-+! GUNS (we've got 7 guns! Heck ya they're OP and that's enough)
-+- MORE ZED TYPES (bestiary is not enough)
-+- MAGIC ATTACKS (spells for special monsters. Serves as an alternative to LUA attacks thanks to KorGgenT's awesomeness)
 
 
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.5 - Currently, I'm recreating the LUA-based monster attacks with magic spells, along with new contents. <--
+--> V1.6 - Currently, the plan is to rebalance and expand the new monsters. <--
 
 #  REWORKS ON TILESET (frequent, or whenever I can)
-#  REMOVED LUA DEPENDENT STUFF (chaos zeds, special attacks and some places were removed)
-
-+  7 NEW GUNS (rare, milspec guns)
-+  UNIFIER, LYING BODY (final upgrade path)
-+  ADDED WANDERING ABERRATIONS (flesh weaver, maneater)
-+  NEW CITY ZED MUTANT (nautilus)
-
-+~ LICKER (final upgrade path, stats tweaked)
-
--  FIXED MONSTER SPAWNGROUPS (to reduce the mod's file size)
 
 
 
 	=>PAST UPDATES<=
 
---> V1.4 - Focused on recreating the main location of the mod, making it bigger, loot-worthy and more alive with unique dwellers inside. <--
+--> v1.5 - Focused on expanding the monster bestiary, especially the wandering monsters. Magic spells were composed to suit every monster's prowess, and thanks to KorGgenT, it served as an alternative to LUA attacks. <--
+
+#  REMOVED LUA DEPENDENT STUFF (chaos zeds, special attacks and some places were removed)
+#  MAGIC OVERHAUL (unique spells for monsters to cast)
+
++  7 GUNS (rare, milspec guns)
++  UNIFIER, LYING BODY (final upgrade path)
++  WANDERING ABERRATIONS (flesh weaver, maneater)
++  ZED MUTANTS (nautilus, stray - nature, corrosive)
++  UNKNOWN MONSTER (looms in the wilderness, a secret, wandering passage of the galactic horrors)
++  UNKNOWN SPECIES (carrions, vectors)
+
++~ LICKER (final upgrade path, stats tweaked)
+
+-  FIXED MONSTER SPAWNGROUPS (used to be the full list of monstergroups from CDDA)
+
+
+
+--> v1.4 - Focused on recreating the main location of the mod, making it bigger, loot-worthy and more alive with unique dwellers inside. <--
 
 +  NEW FAILED SPECIMEN (squirtler)
-+  ADDED BOW CREATURES (kaxix, axxuros, exios, drexx and epixo)
-+  ADDED FLESH CAVERN (disgusting patch of earthen filth. Home for the baneful flesh)
-+  ADDED FLESH CREATURES (nearly finite gorey walls and a bunch of cloned creatures)
++  BOW CREATURES (kaxix, axxuros, exios, drexx and epixo)
++  FLESH CAVERN (disgusting patch of earthen filth. Home for the baneful flesh)
++  FLESH CREATURES (nearly finite gorey walls and a bunch of cloned creatures)
 
 +~ MAJOR IMPROVEMENTS ON SECRONOM LAB (new mapgens, reworks and fixes on the structure)
 
--  FIXES ON FAILED SPECIMENS (name based on appearance, instead of numbers)
+-  FAILED SPECIMENS (name based on appearance, instead of incoherent numbers)
 
 
 
---> V1.3 - Focused on completing the zombie bestiary by adding the final upgrade counterparts and the last 3 LUA-based monsters. <--
+--> v1.3 - Focused on completing the zombie bestiary by adding the final upgrade counterparts and the last 3 LUA-based monsters. <--
 
 +  LAST 3 CHAOS ZEDS (fleshmonger, faux, uruxis)
-+  NEW INSECTOID MUTANT (worm)
++  INSECTOID MUTANT (worm)
 
 +~ LICKER (new upgrade path, stats tweaked)
 +~ MOUTH, SCOURGE (new and final upgrade paths, stats tweaked)
@@ -62,11 +64,11 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 #  LUA SPECIAL ATTACKS (LUA dependent attack mechanics)
 
-+  ADDED NEW CITY ZED MUTANTS (lying body, scourge)
-+  ADDED 5 CHAOS TYPE ZEDS (zoid, vex, jinx, fake zombie and jolt)
-+  ADDED A WANDERING ABERRATION (ayenel)
-+  ADDED SECRONOM DRAGON (confined boss)
-+  ADDED SECRONOM LAB (aesthetic building, outline for an even larger lab)
++  CITY ZED MUTANTS (lying body, scourge)
++  5 CHAOS TYPE ZEDS (zoid, vex, jinx, fake zombie and jolt)
++  A WANDERING ABERRATION (ayenel)
++  SECRONOM DRAGON (confined boss)
++  SECRONOM LAB (aesthetic building, outline for an even larger lab)
 
 ~  TITAN (stats and abilities reworked)
 ~  SWARMERS (removed and separated some specials)
