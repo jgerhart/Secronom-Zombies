@@ -51,7 +51,7 @@
     "id": "mon_zedfail_floral",
     "type": "MONSTER",
     "name": "flora",
-    "description": "A human body with its head mutated and deformed into a flowery petal mouth. It shows hundreds of teeth and a centered eye whenever it opens, and bites with a strength of five regular zombie jaws, which could break a bone as well as ripping target's inner flesh.",
+    "description": "A human body with its head mutated and deformed into a flowery petal mouth. It shows hundreds of teeth and a centered eye whenever it opens.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
@@ -89,7 +89,7 @@
     "id": "mon_zedfail_twistcrawl",
     "type": "MONSTER",
     "name": "distorted crawler",
-    "description": "A twisted body with various attachments of human anatomy, resulting into a nightmarish agile crawler. Its head ruptured into a horrid mouth and an fiendish eye inside, constantly opens and close just to survey its vicinity.",
+    "description": "A twisted body with various attachments of human anatomy, resulting into a nightmarish agile crawler. Its head ruptured into a horrid mouth and a fiendish eye inside, constantly opens and close to survey its vicinity.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "30000 ml",
@@ -127,7 +127,7 @@
     "id": "mon_zedfail_chomp",
     "type": "MONSTER",
     "name": "chomper",
-    "description": "Headless humanoid monster, with its rib ruptured into a torsal eyed mouth. The arms are gone, but it has no limitation to seek its prey.",
+    "description": "Headless humanoid monster, with its rib ruptured into a torsal eyed mouth. The arms are gone, yet it is a threat not to be misjudged.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
@@ -193,7 +193,7 @@
         "ranges": [ [ 1, 2, "N" ], [ 3, 5, "M" ], [ 6, 10, "L" ] ]
       }
     ],
-	"//": "The acid is very strong.",
+	"//": "The acid is very strong (cuz of headshot).",
     "death_function": [ "ACID", "NORMAL" ],
     "flags": [ "SEES", "IMMOBILE", "WARM", "POISON", "NO_BREATHE", "FILTHY", "REVIVES", "NOHEAD", "ACIDPROOF", "ACID_BLOOD" ]
   }
