@@ -121,7 +121,9 @@
     "monsters" : [
 	  { "monster" : "mon_ayenel", "freq" : 1, "cost_multiplier" : 130 },
 	  { "monster" : "mon_fleshweaver", "freq" : 1, "cost_multiplier" : 200 },
-	{ "monster" : "mon_maneater", "freq" : 1, "cost_multiplier" : 100 }
+	{ "monster" : "mon_maneater", "freq" : 1, "cost_multiplier" : 100 },
+	{ "monster" : "mon_unknown_unknown_carrion", "freq" : 100, "cost_multiplier" : 100 },
+	{ "monster" : "mon_unknown_unknown_vector", "freq" : 100, "cost_multiplier" : 100 }
     ]
   },
   {
@@ -132,7 +134,36 @@
     "monsters": [
     { "monster" : "mon_ayenel", "freq" : 1, "cost_multiplier" : 130 },
 	  { "monster" : "mon_fleshweaver", "freq" : 1, "cost_multiplier" : 200 },
-    { "monster" : "mon_maneater", "freq" : 1, "cost_multiplier" : 100 }
+    { "monster" : "mon_maneater", "freq" : 1, "cost_multiplier" : 100 },
+{ "monster" : "mon_unknown_unknown_carrion", "freq" : 100, "cost_multiplier" : 100 },
+	{ "monster" : "mon_unknown_unknown_vector", "freq" : 100, "cost_multiplier" : 100 }
     ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_CARRIONS",
+    "default": "mon_carrion",
+    "monsters": [
+    { "monster" : "mon_carrion", "freq" : 100, "cost_multiplier" : 1 },
+	  { "monster" : "mon_carrion_dismantler", "freq" : 100, "cost_multiplier" : 2 },
+	{ "monster" : "mon_carrion_orifice", "freq" : 100, "cost_multiplier" : 4 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_VECTORS",
+    "default": "mon_vector",
+    "monsters": [
+	  { "monster" : "mon_vector_sprig", "freq" : 50, "cost_multiplier" : 1 },
+	{ "monster" : "mon_vector_sprout", "freq" : 100, "cost_multiplier" : 1 },
+	{ "monster" : "mon_vector", "freq" : 100, "cost_multiplier" : 2 },
+	  { "monster" : "mon_vector_seedler", "freq" : 100, "cost_multiplier" : 5 },
+	{ "monster" : "mon_vector_stinger", "freq" : 100, "cost_multiplier" : 3 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_VECTOR_SEEDLING",
+    "default": "mon_vector_sprig"
   }
 ]
