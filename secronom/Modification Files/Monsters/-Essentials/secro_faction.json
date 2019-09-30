@@ -1,4 +1,8 @@
 [
+    {
+        "type" : "MONSTER_FACTION",
+        "name" : "unknown"
+    },
 	 {
         "type" : "MONSTER_FACTION",
         "name" : "saddler",
@@ -36,5 +40,13 @@
    {
         "type" : "MONSTER_FACTION",
         "name" : "maneater"
+    },
+    {
+        "type" : "MONSTER_FACTION",
+        "name" : "carrion"
+    },
+    {
+        "type" : "MONSTER_FACTION",
+        "name" : "vector"
     }
 ]
