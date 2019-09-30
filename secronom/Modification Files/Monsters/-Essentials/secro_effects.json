@@ -233,5 +233,14 @@
     "dex_mod": [-0.25],
       "speed_mod": [-0.25]
     }
- }
+ },
+ {
+    "type": "effect_type",
+    "id": "rooty_grasp",
+    "name": [ "Nature's Grasp" ],
+    "desc": [ "Thick strands of roots and vines take hold of you!" ],
+    "apply_message": "Roots and vines entangle your limbs!",
+    "remove_message": "The roots and vines wither up and die.",
+    "base_mods": { "speed_mod": [ -75 ] }
+  }
 ]
