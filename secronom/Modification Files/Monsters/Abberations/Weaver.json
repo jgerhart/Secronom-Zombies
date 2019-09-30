@@ -12,7 +12,7 @@
     "material": [ "flesh", "bone" ],
     "symbol": "H",
     "color": "light_blue",
-    "aggression": 0,
+    "aggression": -100,
     "morale": -20,
     "melee_skill": 4,
     "melee_dice": 2,
