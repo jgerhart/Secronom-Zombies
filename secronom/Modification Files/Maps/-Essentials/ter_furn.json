@@ -1,0 +1,71 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_vector",
+    "name": "vector bed",
+    "description": "Thick, light blue foliage lay low on the ground, writhing in harmony with the wind.",
+    "symbol": ".",
+    "light_emitted": 1,
+    "color": "light_blue",
+    "move_cost": 3,
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "NOCOLLIDE", "VECTOR" ],
+    "bash": {
+      "sound": "smash",
+      "ter_set": "t_null",
+      "str_min": 20,
+      "str_max": 400,
+      "str_min_supported": 50
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_shrub_vector",
+    "name": "vector shrub",
+    "description": "A vague reminiscence of a shrub, with large outgrowths of branches and leaves that blooms in vector dust.",
+    "symbol": "#",
+    "color": "blue",
+    "move_cost": 8,
+    "light_emitted": 3,
+    "coverage": 40,
+    "flags": [ "TRANSPARENT", "CONTAINER", "FLAMMABLE_ASH", "THIN_OBSTACLE", "PLACE_ITEM", "SHRUB", "VECTOR", "SHORT" ],
+    "bash": { "str_min": 4, "str_max": 60, "sound": "crunch.", "sound_fail": "oof!", "ter_set": "t_vector" }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_vector_young",
+    "name": "young vector tree",
+    "description": "An immature tree, infested by vector dust.",
+    "symbol": "1",
+    "color": "blue",
+    "light_emitted": 3,
+    "move_cost": 4,
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "NOITEM", "VECTOR", "YOUNG", "REDUCE_SCENT" ],
+    "bash": { "str_min": 4, "str_max": 50, "sound": "crunch!", "sound_fail": "oof!", "ter_set": "t_vector" }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_vector",
+    "name": "vector tree",
+    "description": "Infested by vector dust, this tree luminates the surroundings with its leaves, bark stripes and falling starlights.",
+    "symbol": "7",
+    "color": "light_blue",
+    "light_emitted": 10,
+    "move_cost": 0,
+    "coverage": 80,
+    "flags": [ "FLAMMABLE_ASH", "NOITEM", "VECTOR", "TREE", "REDUCE_SCENT" ],
+    "bash": { "str_min": 40, "str_max": 180, "sound": "crunch!", "sound_fail": "oof!", "ter_set": "t_vector" }
+  },
+  {
+    "type": "furniture",
+    "id": "f_floral_vector",
+    "name": "floral vector",
+    "description": "A once colorful flower, now just a monochromatic blue in every angle.",
+    "symbol": "f",
+    "color": "blue",
+    "move_cost_mod": 0,
+    "required_str": -1,
+    "light_emitted": 2,
+    "flags": [ "TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "FLOWER", "VECTOR" ],
+    "bash": { "str_min": 2, "str_max": 6, "sound": "oof!.", "sound_fail": "whish." }
+  }
+]
