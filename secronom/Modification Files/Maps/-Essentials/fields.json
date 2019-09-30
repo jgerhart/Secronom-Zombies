@@ -1,0 +1,145 @@
+[{
+        "id": "fd_portal_carrion",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "carrion portal",
+                "color": "dark_red",
+                "sym": "*",
+                "light_emitted": 5,
+                "monster_spawn_chance": 40,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_CARRIONS"
+            }, {
+                "color": "red",
+                "light_emitted": 10,
+                "monster_spawn_chance": 25,
+                "monster_spawn_count": 2,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_CARRIONS"
+            }, {
+                "color": "light_red",
+                "transparent": false,
+                "monster_spawn_chance": 15,
+                "monster_spawn_count": 3,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_CARRIONS",
+                "light_emitted": 15
+            }
+        ],
+        "priority": 9,
+        "half_life": "20 seconds",
+        "accelerated_decay": true,
+        "gas_absorption_factor": 20,
+        "dirty_transparency_cache": true,
+        "phase": "gas",
+        "display_items": false,
+        "display_field": true
+    }, {
+        "id": "fd_portal_vector",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "vector portal",
+                "color": "dark_blue",
+                "sym": "*",
+                "light_emitted": 5,
+                "monster_spawn_chance": 40,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_VECTORS"
+            }, {
+                "color": "blue",
+                "light_emitted": 10,
+                "monster_spawn_chance": 25,
+                "monster_spawn_count": 2,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_VECTORS"
+            }, {
+                "color": "light_blue",
+                "transparent": false,
+                "monster_spawn_chance": 15,
+                "monster_spawn_count": 3,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_VECTORS",
+                "light_emitted": 15
+            }
+        ],
+        "priority": 9,
+        "half_life": "20 seconds",
+        "accelerated_decay": true,
+        "gas_absorption_factor": 20,
+        "dirty_transparency_cache": true,
+        "phase": "gas",
+        "display_items": false,
+        "display_field": true
+    }, {
+        "id": "fd_ministars",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "starlight",
+                "sym": "*",
+                "light_emitted": 3
+            }
+        ],
+        "priority": 5,
+        "half_life": "10 turns",
+        "display_field": true
+    }, {
+        "id": "fd_vector_haze",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "hazy cloud",
+                "sym": ".",
+                "color": "light_blue",
+                "dangerous": true,
+                "light_emitted": 1
+            }, {
+                "name": "vector haze"
+            }, {
+                "name": "thick vector haze",
+                "transparent": false,
+                "color": "cyan",
+                "light_emitted": 2
+            }
+        ],
+        "decay_amount_factor": 25,
+        "gas_absorption_factor": 10,
+        "percent_spread": 5,
+        "outdoor_age_speedup": "10 turns",
+        "dirty_transparency_cache": true,
+        "has_fume": true,
+        "immunity_data": {
+            "body_part_env_resistance": [["MOUTH", 15], ["EYES", 15]]
+        },
+        "priority": 7,
+        "half_life": "4 minutes",
+        "phase": "gas",
+        "display_items": false,
+        "display_field": true
+    }, {
+        "id": "fd_vector_seed",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "vector seeds",
+                "sym": "~",
+                "color": "light_blue"
+            }, {}, {
+                "color": "blue",
+                "light_emitted": 3,
+                "monster_spawn_chance": 5,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_VECTOR_SEEDLING"
+            }
+        ],
+        "priority": 8,
+        "half_life": "10 seconds",
+        "wandering_field": "fd_vector_haze",
+        "accelerated_decay": true,
+        "gas_absorption_factor": 15,
+        "dirty_transparency_cache": true,
+        "phase": "gas",
+        "display_items": false,
+        "display_field": true
+    }
+]
