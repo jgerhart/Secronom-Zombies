@@ -1,7 +1,5 @@
 [
  {
-	"//": "REMOVED LOTS OF SWARMER SPECIALS. Some special monsters are separated as another mutant, while some are removed completely. Simply saying that swarmers are just \"a swarmer\".",
-	"//": "As of the current update, most melee_dice line are decreased by one while few remains untouched.", 
     "id": "mon_zombie_swarmer_weak",
     "type": "MONSTER",
     "name": "swarmer zombie",
@@ -267,7 +265,7 @@
     "id": "mon_zombie_swarmer_evo_virulent",
     "type": "MONSTER",
     "name": "virulent swarmer zombie",
-    "description": "A greenish scourge with significant lust upon living flesh. It rather bite its \"team\" when nothing edible insight, but seeing one brings this weirdo into a ferocious berserk, gnawing the air as it chase down the target!",
+    "description": "A greenish scourge with significant lust upon the living flesh. It rather bite its \"team\" when nothing edible insight, but seeing one brings this weirdo into a ferocious berserk, gnawing the air as it chase down the target.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
