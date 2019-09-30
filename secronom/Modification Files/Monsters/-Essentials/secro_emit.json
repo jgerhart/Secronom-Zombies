@@ -3,7 +3,7 @@
     "id": "secro_unifyblood_explode",
     "type": "emit",
     "field": "fd_blood",
-    "density": 3,
+    "intensity": 3,
     "quantity": 100,
     "chance": 100
   },
@@ -11,7 +11,7 @@
     "id": "secro_transluncent_acid",
     "type": "emit",
     "field": "fd_acid",
-    "density": 1,
+    "intensity": 1,
     "quantity": 10,
     "chance": 30
   },
@@ -19,7 +19,7 @@
     "id": "secro_zoth",
     "type": "emit",
     "field": "fd_toxic_gas",
-    "density": 2,
+    "intensity": 2,
     "quantity": 10,
     "chance": 60
   },
@@ -35,5 +35,54 @@
     "field": "fd_fire",
     "quantity": 1,
     "chance": 1
+  },
+  {
+    "id": "secro_nstro3_ss",
+    "type": "emit",
+    "field": "fd_relax_gas",
+    "quantity": 5,
+    "chance": 50
+  },
+  {
+    "id": "secro_astro2_acid",
+    "type": "emit",
+    "field": "fd_acid",
+    "intensity": 1,
+    "quantity": 25,
+    "chance": 25
+  },
+  {
+    "id": "secro_vector_small",
+    "type": "emit",
+    "field": "fd_vector_haze",
+    "intensity": 1,
+    "quantity": 5,
+    "chance": 15
+  },
+  {
+    "id": "secro_vector_normal",
+    "type": "emit",
+    "field": "fd_vector_haze",
+    "intensity": 3,
+    "quantity": 3,
+    "chance": 20
+  },
+  {
+    "id": "secro_vector_stream",
+    "type": "emit",
+    "//": "Stream of haze for bloomers.",
+    "field": "fd_vector_haze",
+    "intensity": 2,
+    "quantity": 10,
+    "chance": 75
+  },
+  {
+    "id": "secro_vector_seeding",
+    "type": "emit",
+    "//": "Rare seeding for bloomers.",
+    "field": "fd_vector_seed",
+	"intensity": 3,
+    "quantity": 1,
+    "chance": 5
   }
 ]
