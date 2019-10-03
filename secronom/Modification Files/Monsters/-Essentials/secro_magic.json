@@ -1,9 +1,10 @@
 [{
-        "//": "Since monsters can only have one spell in their special attacks (and idk if this is intentional to the devs), I tend to combine them instead...",
+		"//": "Every spell that a monster casts are explained here. There's no way of telling you the hints in-game, and here we are, reading infos about 'em at this file!",
+        "//": "Since monsters can only have one spell in their special attacks (and idk if this is intentional to the devs), I tend to combine them instead... Combo (combination) spell and a regular one, casted in an instance!",
         "id": "sacrifice_spell",
         "type": "SPELL",
         "name": "Sacrifice",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster deals an instant death damage, sacrificing itself to cast a spell.'",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster deals an instant death damage, sacrificing itself upon casting a spell that's been combined with.'",
         "valid_targets": ["ally", "hostile", "ground", "self"],
         "effect": "target_attack",
         "min_damage": 9999999,
@@ -87,7 +88,8 @@
         "type": "SPELL",
         "id": "mon_zombie_titan_charge",
         "name": "Charging Stance",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sets itself into guarding stance, blocking physical damage while gaining speed.'",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sets itself into guarding stance, blocking physical damage while gaining a burst of speed.'",
+        "message": "Then sets itself to the %s.",
         "valid_targets": ["ground", "ally"],
         "effect": "target_attack",
         "effect_str": "titan_charge",
@@ -95,6 +97,23 @@
         "min_duration": 1500,
         "max_duration": 1500
     }, {
+        "type": "SPELL",
+        "id": "mon_zombie_titan_charge_target",
+        "name": "Spell Target",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell.'",
+        "message": "The sight of <npcname> locks onto its target...",
+        "extra_effects": [{
+                "id": "mon_zombie_titan_charge", "hit_self": true
+            }
+        ],
+        "valid_targets": ["ground", "hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_range": 60,
+        "max_range": 60,
+        "min_duration": 1,
+        "max_duration": 1
+    },{
         "id": "mon_zombie_pellucid_aburst",
         "type": "SPELL",
         "name": "Acid Burst",
@@ -108,7 +127,7 @@
         "min_range": 8,
         "max_range": 8,
         "field_id": "fd_acid",
-        "field_chance": 50,
+        "field_chance": 65,
         "min_field_intensity": 1,
         "max_field_intensity": 1,
         "damage_type": "acid"
@@ -778,7 +797,7 @@
         "max_duration": 300,
         "base_casting_time": 1250,
         "field_id": "fd_acid",
-        "field_chance": 75,
+        "field_chance": 85,
         "min_field_intensity": 1,
         "max_field_intensity": 1,
         "damage_type": "acid"
@@ -805,16 +824,16 @@
         "id": "mon_unknown_unknown_gcollapse_carrion",
         "type": "SPELL",
         "name": "Gravitational Collapse",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing enormous bash damage to all creatures. Sparkling objects are scattered, which enlightens the whole area.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing tremendous bash damage to all creatures. Sparkling objects are scattered, which enlightens the whole area.'",
         "valid_targets": ["ally", "hostile", "ground"],
         "effect": "projectile_attack",
         "extra_effects": [{
                 "id": "mon_unknown_unknown_portal_carrion"
             }
         ],
-        "min_damage": 72,
-        "max_damage": 72,
-        "//": "Basically, an emeny target has to be the center of explosion...",
+        "min_damage": 30,
+        "max_damage": 30,
+        "//": "Basically, an enemy target has to be the center of explosion, so that combo spells get casted successfully.",
         "min_range": 3,
         "max_range": 3,
         "min_aoe": 42,
@@ -848,7 +867,7 @@
         "id": "mon_unknown_unknown_gcollapse_vector",
         "type": "SPELL",
         "name": "Gravitational Collapse",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing enormous bash damage to all creatures. Sparkling objects are scattered, which enlightens the whole area.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing tremendous bash damage to all creatures. Sparkling objects are scattered, which enlightens the whole area.'",
         "valid_targets": ["ally", "hostile", "ground"],
         "effect": "projectile_attack",
         "extra_effects": [{
@@ -857,8 +876,8 @@
         ],
         "min_range": 3,
         "max_range": 3,
-        "min_damage": 72,
-        "max_damage": 72,
+        "min_damage": 30,
+        "max_damage": 30,
         "min_aoe": 42,
         "max_aoe": 42,
         "base_casting_time": 10000,
@@ -867,5 +886,37 @@
         "min_field_intensity": 1,
         "max_field_intensity": 1,
         "damage_type": "bash"
+    }, {
+        "id": "mon_vector_rize_smol",
+        "type": "SPELL",
+        "name": "Vectorize",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'A wave of vector dust spreads from the caster, converting nearby organic terrains such as grass and bushes to become infested.'",
+        "message": "A blast of dust particles infect the surroundings!",
+        "valid_targets": ["ally", "hostile", "ground", "self"],
+        "effect": "ter_transform",
+        "effect_str": "vectorize",
+        "min_aoe": 2,
+        "max_aoe": 2,
+        "field_id": "fd_vector_haze",
+        "field_chance": 100,
+        "min_field_intensity": 2,
+        "max_field_intensity": 2,
+        "hit_self": true
+    }, {
+        "id": "mon_vector_rize_big",
+        "type": "SPELL",
+        "name": "Vectorize",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'A wave of vector dust spreads from the caster, converting nearby organic terrains such as grass and bushes to become infested.'",
+        "message": "A large blast of dust particles infect the surroundings!",
+        "valid_targets": ["ally", "hostile", "ground", "self"],
+        "effect": "ter_transform",
+        "effect_str": "vectorize",
+        "min_aoe": 7,
+        "max_aoe": 7,
+        "field_id": "fd_vector_haze",
+        "field_chance": 100,
+        "min_field_intensity": 2,
+        "max_field_intensity": 2,
+        "hit_self": true
     }
 ]
