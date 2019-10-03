@@ -4,13 +4,13 @@ Its mod thread is at the [official forums](https://discourse.cataclysmdda.org/t/
 
 Mod made from various references, mixed up with random spices! 
 
-- This mod is at its stable status. Expect lesser updates or nothing to occur.
+- This mod is WIP, some new contents need rebalances and fixes, but expect no fatal crashes to occur.
 - Remember that CDDA is an open source game, suggestions are welcome!
 
 ## Zombies
 The secronom aims to add various enemies to the world, ranging from weak up to strong variety of them.
 
-The evolution sheet is outdated and it is taken down until a new one is created.
+The evolution sheet is outdated and it is taken down until a new one is created. And due to a technical problem, I can't make monster sprites for the new creatures...
 
 ### City Zombies
 
@@ -69,16 +69,16 @@ Zombie type with extremely high agility and barrages melee attacks.
 
 ##### Titan
 Zombie type with enormous health, extremely fast movement speed and slow, but concentrated melee attacks.
-* **Black Titan**
+* _**Black Titan**_
 
 ##### Noxious Eater
-A worm, zombie type that burrows underneath, with biting ability fatal even to a heavily armored target.
+A worm, zombie type that burrows underneath, with biting ability fatal even to heavily armored targets.
 * **Grave Digger**
 
 ##### Swarmer Zombie
 Zombie type that grows stronger as time passes by.
-* It has 6 upgrade paths, each has a difference to what it was before evolution.
-* The other swarmer zombie paths to city zed mutants
+* It has 6 upgrade paths, in each progress strenghtens the zed.
+* The other swarmer zombie paths to city zed mutants.
 
 ### Wandering Zombies
 Zombies that are seen rarely out of the cities:
@@ -90,8 +90,6 @@ Zombies that are seen rarely out of the cities:
 ### Lab Zombies
 These are the zombies only exclusive to secronom labs:
 
-*All of them has no sprites nor tilesets to visualize their appearances...*
-
 ##### Failed Mutants
 Zombies which are completely deformed and are considered *garbages* by the lab...
 
@@ -102,7 +100,7 @@ Zombies which are completely deformed and are considered *garbages* by the lab..
 * **Squirtler**
 
 ##### BOWs
-Bio-Organic-Weapons. These are the strong zombies set for warring purposes, contained within the lab perimeters. They could be wearing suits of power armor...
+Bio-Organic-Weapons. These are the zombies set for warring purposes, contained within the lab perimeters. They could be wearing suits of power armor...
 
 * **Kaxix**
 * **Axxuros**
@@ -127,11 +125,10 @@ Extraterrestrial creatures from uncharted worlds.
 
 * **Carrion**: Carrions are undeads that lived from their own ruined world. With no sustenance, they travel between dimensions to sate their hunger.
 
-* **Vector**: Vectors are beautiful, plant-like creatures that tends to spread and dominate the living by manipulation.
-
+* **Vector**: Vectors are beautiful plant creatures that tends to spread and dominate the living by manipulation.
 
 ## Robots
 
 Coded for fun!
 
-* **Secronom Dragon** - Its enormous health points paired with specialized armor platings makes it a formidable foe, with large weaponry system installed to bring wrath on its target.
+* **Secronom Dragon** - Its enormous body paired with specialized armor platings makes it a formidable foe, with large weaponry system installed to bring wrath on its target.
