@@ -1,9 +1,9 @@
 [{
-        "//": "Plant-like creatures with similarities and resemblance to the CDDA's fungal critters.",
+        "//": "Alien plant creatures with similarities and resemblance to the CDDA's fungal critters.",
         "id": "mon_vector",
         "type": "MONSTER",
         "name": "vector",
-        "description": "A briskly, nearly 10-feet tall light blue-ish plant with luminating broad leaves and errant stripes in its stem and branches, twitching wildly as it moves. Feeble yet pleasant to the eyes, dust particles enshroud the creature that twinkles like a starry night sky.",
+        "description": "A briskly, nearly 10-feet tall light blue-ish plant with luminating broad leaves and errant stripes in its stem and branches, twitching wildly as it moves. Feeble yet pleasant to the sight, dust particles enshroud the creature that twinkles like a starry night sky.",
         "default_faction": "vector",
         "species": ["UNKNOWN"],
         "volume": "92500 ml",
@@ -11,10 +11,13 @@
         "hp": 95,
         "speed": 75,
         "material": ["veggy"],
-        "emit_fields": ["secro_vector_normal"],
+        "emit_fields": ["secro_vector_normal", "secro_vector_normal_seeding"],
         "symbol": "V",
         "color": "light_blue",
-        "aggression": 10,
+        "attack_effs": [
+      { "id": "vector_infect", "duration": 9999999, "chance": 15 }
+    ],
+        "aggression": -35,
         "morale": 0,
         "melee_skill": 6,
         "melee_dice": 4,
@@ -25,23 +28,26 @@
         "armor_cut": 10,
         "armor_stab": 10,
         "armor_acid": 3,
-        "vision_day": 8,
-        "vision_night": 32,
+        "vision_day": 24,
+        "vision_night": 12,
         "harvest": "exempt",
+        "luminance": 3,
         "path_settings": {
             "max_dist": 1
         },
+        "special_attacks": [ { "type": "spell", "spell_id": "mon_vector_rize_smol", "cooldown": 14 } ],
         "death_function": ["DISINTEGRATE"],
         "upgrades": {
             "age_grow": 6,
             "into_group": "GROUP_VECTOR_GROW"
         },
+        "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "FRIEND_DIED" ],
         "flags": ["SEES", "SMELLS", "BASHES", "GROUP_BASH", "NOHEAD", "NO_BREATHE"]
     }, {
         "id": "mon_vector_sprout",
-        "copy-from": "mon_vector",
         "type": "MONSTER",
         "name": "vector sprout",
+		"default_faction": "vector",
         "description": "A dangling vector sprout, as tall as a person. Immature, it reeks in twinkling particles from its broad leaves and thick branches.",
         "volume": "62500 ml",
         "weight": 81500,
@@ -49,9 +55,12 @@
         "speed": 45,
         "material": ["veggy"],
         "emit_fields": ["secro_vector_small"],
+        "attack_effs": [
+      { "id": "vector_infect", "duration": 9999999, "chance": 15 }
+    ],
         "symbol": "v",
         "color": "light_blue",
-        "aggression": 0,
+        "aggression": -50,
         "morale": 0,
         "melee_skill": 4,
         "melee_dice": 2,
@@ -63,14 +72,18 @@
         "armor_acid": 2,
         "dodge": 1,
         "luminance": 2,
+        "vision_day": 24,
+        "vision_night": 12,
+        "harvest": "exempt",
         "upgrades": {
             "age_grow": 4,
             "into_group": "GROUP_VECTOR_GROW1"
         },
+        "special_attacks": [ { "type": "spell", "spell_id": "mon_vector_rize_smol", "cooldown": 24 } ],
+        "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "FRIEND_DIED" ],
         "flags": ["SEES", "SMELLS", "NOHEAD", "NO_BREATHE"]
     }, {
         "id": "mon_vector_sprig",
-        "copy-from": "mon_vector",
         "type": "MONSTER",
         "name": "vector sprig",
         "description": "A writhing dark blue-ish stem, with leaves the size of a fist.",
@@ -78,10 +91,11 @@
         "weight": 1000,
         "hp": 10,
         "speed": 5,
+		"default_faction": "vector",
         "material": ["veggy"],
         "symbol": "v",
         "color": "blue",
-        "aggression": 0,
+        "aggression": -50,
         "morale": 0,
         "melee_skill": 1,
         "melee_dice": 1,
@@ -93,11 +107,44 @@
         "armor_acid": 1,
         "harvest": "exempt",
         "luminance": 1,
+        "vision_day": 24,
+        "vision_night": 12,
         "upgrades": {
             "age_grow": 2,
             "into_group": "GROUP_VECTOR_GROW2"
         },
-        "flags": ["SEES", "SMELLS", "NOHEAD", "NO_BREATHE"]
+        "flags": ["SEES", "SMELLS", "NOHEAD", "NO_BREATHE","PACIFIST"]
+    }, {
+        "id": "mon_vector_spore",
+        "type": "MONSTER",
+        "name": "vector spore",
+        "description": "A compact dust, blown and floats gently in the air.",
+        "volume": "750 ml",
+        "weight": 1000,
+        "hp": 10,
+        "speed": 30,
+		"default_faction": "vector",
+        "material": ["veggy"],
+        "emit_fields": ["secro_vector_smol_seeding"],
+        "symbol": "o",
+        "color": "light_blue",
+        "aggression": -50,
+        "morale": 0,
+        "melee_skill": 1,
+        "melee_dice": 1,
+        "melee_dice_sides": 1,
+        "melee_cut": 0,
+        "phase": "GAS",
+        "harvest": "exempt",
+        "luminance": 1,
+        "vision_day": 24,
+        "vision_night": 12,
+        "upgrades": {
+            "age_grow": 1,
+            "into": "mon_vector_sprig"
+        },
+        "special_attacks": [ [ "DISAPPEAR", 325 ], { "type": "spell", "spell_id": "mon_vector_rize_smol", "cooldown": 38 } ],
+        "flags": ["SEES", "NOHEAD", "NO_BREATHE", "FLIES", "NOGIB", "PACIFIST"]
     }, {
         "id": "mon_vector_seedler",
         "type": "MONSTER",
@@ -113,23 +160,28 @@
         "emit_fields": [ "secro_vector_stream", "secro_vector_seeding" ],
         "symbol": "V",
         "color": "cyan",
-        "aggression": 10,
-        "morale": 5,
+        "aggression": -25,
+        "morale": 0,
         "melee_skill": 4,
         "melee_dice": 4,
         "melee_dice_sides": 4,
         "melee_cut": 0,
+        "attack_effs": [
+      { "id": "vector_infect", "duration": 9999999, "chance": 1 }
+    ],
         "dodge": 1,
         "armor_bash": 3,
         "armor_cut": 13,
         "armor_stab": 13,
         "armor_acid": 3,
-        "vision_day": 8,
-        "vision_night": 32,
+        "vision_day": 24,
+        "vision_night": 12,
         "harvest": "exempt",
         "path_settings": {
             "max_dist": 1
         },
+        "special_attacks": [ { "type": "spell", "spell_id": "mon_vector_rize_big", "cooldown": 34 } ],
+        "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "FRIEND_DIED" ],
         "death_function": ["DISINTEGRATE"],
         "flags": ["SEES", "SMELLS", "BASHES", "GROUP_BASH", "NOHEAD", "NO_BREATHE"]
     }, {
@@ -146,9 +198,12 @@
         "material": ["veggy"],
         "symbol": "V",
         "color": "blue",
-        "emit_fields": ["secro_vector_small"],
-        "aggression": 10,
-        "morale": 15,
+        "aggression": -10,
+        "morale": 0,
+        "attack_effs": [
+      { "id": "sap", "duration": 30, "chance": 15 },
+      { "id": "vector_infect", "duration": 9999999, "chance": 3 }
+    ],
         "melee_skill": 6,
         "melee_dice": 2,
         "melee_dice_sides": 6,
@@ -158,13 +213,57 @@
         "armor_cut": 8,
         "armor_stab": 8,
         "armor_acid": 2,
-        "vision_day": 8,
-        "vision_night": 32,
+        "vision_day": 24,
+        "vision_night": 12,
         "harvest": "exempt",
         "path_settings": {
             "max_dist": 1
         },
         "death_function": ["DISINTEGRATE"],
+        "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "FRIEND_DIED" ],
         "flags": ["SEES", "SMELLS", "BASHES", "GROUP_BASH", "NOHEAD", "BLEED", "NO_BREATHE"]
+    }, {
+        "//": "A fungal tower, but moves. Only seen in vector portals.",
+        "id": "mon_vector_tree",
+        "type": "MONSTER",
+        "name": "vector tree",
+        "description": "An elderly vector, much higher and larger than a regular oak tree. Nearly immobile, strands of dense vines cover its thick bark and whenever the wind howls, the starlight dusts spread even further.",
+        "default_faction": "vector",
+        "species": ["UNKNOWN"],
+        "volume": "875000 ml",
+	    "weight": 200000,
+        "hp": 690,
+        "//": "Nice.",
+        "speed": 5,
+        "material": ["veggy"],
+        "emit_fields": ["secro_vector_tree_seeding", "secro_vector_tree_spread"],
+        "symbol": "V",
+        "color": "cyan",
+        "attack_cost": 275,
+        "aggression": -100,
+        "morale": 0,
+        "melee_skill": 10,
+        "melee_dice": 10,
+        "melee_dice_sides": 8,
+        "melee_cut": 4,
+        "dodge": 1,
+        "attack_effs": [
+      { "id": "vector_infect", "duration": 9999999, "chance": 15 }
+    ],
+        "armor_bash": 6,
+        "armor_cut": 17,
+        "armor_stab": 17,
+        "armor_acid": 5,
+        "vision_day": 24,
+        "vision_night": 12,
+        "harvest": "exempt",
+        "luminance": 10,
+        "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "FRIEND_DIED" ],
+        "path_settings": {
+            "max_dist": 1
+        },
+        "special_attacks": [ { "type": "spell", "spell_id": "mon_vector_rize_big", "cooldown": 18 } ],
+        "death_function": ["DISINTEGRATE"],
+        "flags": ["SEES", "SMELLS", "BASHES", "GROUP_BASH", "NOHEAD", "NO_BREATHE", "STUN_IMMUNE" ]
     }
 ]
