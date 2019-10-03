@@ -11,7 +11,7 @@
     "weight": 0,
     "hp": 999999,
     "speed": 10,
-    "material": [ "null" ],
+    "material": ["null"],
     "symbol": "O",
     "color": "black",
     "phase": "GAS",
