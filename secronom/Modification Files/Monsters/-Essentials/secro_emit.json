@@ -40,7 +40,7 @@
     "id": "secro_nstro3_ss",
     "type": "emit",
     "field": "fd_relax_gas",
-    "quantity": 5,
+    "quantity": 15,
     "chance": 50
   },
   {
@@ -68,6 +68,23 @@
     "chance": 20
   },
   {
+    "id": "secro_vector_smol_seeding",
+    "type": "emit",
+    "//": "Very rare seeding for spores.",
+    "field": "fd_vector_seed",
+    "intensity": 3,
+    "quantity": 1,
+    "chance": 1
+  },
+  {
+    "id": "secro_vector_normal_seeding",
+    "type": "emit",
+    "field": "fd_vector_seed",
+    "intensity": 3,
+    "quantity": 1,
+    "chance": 2
+  },
+  {
     "id": "secro_vector_stream",
     "type": "emit",
     "//": "Stream of haze for bloomers.",
@@ -84,5 +101,23 @@
 	"intensity": 3,
     "quantity": 1,
     "chance": 5
+  },
+  {
+    "id": "secro_vector_tree_spread",
+    "type": "emit",
+    "//": "Explosion of haze for trees.",
+    "field": "fd_vector_haze",
+    "intensity": 2,
+    "quantity": 45,
+    "chance": 20
+  },
+  {
+    "id": "secro_vector_tree_seeding",
+    "type": "emit",
+    "//": "Large seeding for trees.",
+    "field": "fd_vector_seed",
+	"intensity": 3,
+    "quantity": 10,
+    "chance": 10
   }
 ]
