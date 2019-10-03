@@ -26,8 +26,8 @@
         "dex_mod": [-0.5]
     },
     "scaling_mods": {
-        "speed_mod": [-3],
-        "dex_mod": [-1]
+        "speed_mod": [2.25],
+        "dex_mod": [0.90]
     }
  },
  {
@@ -72,8 +72,8 @@
         "dex_mod": [-0.5]
     },
     "scaling_mods": {
-        "speed_mod": [-1],
-        "dex_mod": [-0.2]
+        "speed_mod": [2.28],
+        "dex_mod": [0.28]
     }
  },
  {
@@ -99,7 +99,7 @@
       "pain_chance": [50, 500]
     },
     "scaling_mods": {
-      "pain_min": [1],
+      "pain_min": [1.30],
       "pain_chance": [1, 2]
     }
   },
@@ -124,8 +124,8 @@
       "speed_mod": [-3]
     },
     "scaling_mods": {
-    "dex_mod": [-1.5],
-      "speed_mod": [-1]
+    "dex_mod": [1.55],
+      "speed_mod": [1.15]
     }
     },
   {
@@ -148,7 +148,7 @@
       "int_mod": [-3, -2]
     },
     "scaling_mods": {
-      "int_mod": [-2, -1]
+      "int_mod": [2, 1]
     }
     },
     {
@@ -207,7 +207,7 @@
       "int_mod": [-1, -4]
     },
     "scaling_mods": {
-      "int_mod": [-2]
+      "int_mod": [2]
     }
   },
   {
@@ -231,7 +231,7 @@
     },
     "scaling_mods": {
     "dex_mod": [-0.25],
-      "speed_mod": [-0.25]
+      "speed_mod": [0.25]
     }
  },
  {
@@ -242,5 +242,35 @@
     "apply_message": "Roots and vines entangle your limbs!",
     "remove_message": "The roots and vines wither up and die.",
     "base_mods": { "speed_mod": [ -75 ] }
+  },
+  {
+    "//": "Intended to kill very slow if players doesn't have any cure...",
+    "type": "effect_type",
+    "id": "vector_infect",
+    "apply_memorial_log": "Contracted a vector infection.",
+    "remove_memorial_log": "Stopped a vector infection.",
+    "miss_messages": [ [ "You feel something sinks deep inside.", 1 ] ],
+    "speed_name": "Vector Infection",
+    "desc": [ "You are suffering from a vector infection!\nPharmaceutical drugs doesn't seem to take effect and may require something... juicy." ],
+    "//": "Subtle hint for anxious ppl.",
+    "rating": "bad",
+    "max_intensity": 3,
+    "resist_traits": [ "POISRESIST" ],
+    "base_mods": { "speed_mod": [ -4 ], "hurt_min": [ 1 ], "hurt_max": [ 3 ], "hurt_chance": [ 21 ], "hurt_tick": [ 5 ] },
+    "scaling_mods": { "speed_mod": [ 0.75 ], "str_mod": [ -0.90 ], "per_mod": [ -0.82 ], "dex_mod": [ -1.30 ], "int_mod": [ -1.65 ] }
+  },
+  {
+    "//": "And royal jelly is the only available cure (at the moment).",
+    "type": "effect_type",
+    "id": "cureall",
+    "removes_effects": [
+      "vector_infect"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_magic_target",
+    "name": [ "Target" ],
+    "desc": [ "An ally or foe locks its line of sight onto you!" ]
   }
 ]
