@@ -43,6 +43,21 @@
     ]
   },
   {
+    "type": "monstergroup",
+    "name": "GROUP_PEST",
+    "default": "mon_crow",
+    "is_animal": true,
+    "monsters": [
+      {
+        "monster": "mon_bat",
+        "freq": 20,
+        "cost_multiplier": 0,
+        "pack_size": [ 6, 12 ],
+        "conditions": [ "DAWN", "DUSK", "NIGHT", "SPRING", "SUMMER", "AUTUMN" ]
+      }
+    ]
+  },
+  {
 	"//": "Spawn random secrolab and vanilla creatures. Scientist are common here, followed by failed specimens.",
     "type":"monstergroup",
     "name" : "GROUP_SECROLAB_ALL",
@@ -135,8 +150,8 @@
     { "monster" : "mon_ayenel", "freq" : 1, "cost_multiplier" : 130 },
 	  { "monster" : "mon_fleshweaver", "freq" : 1, "cost_multiplier" : 200 },
     { "monster" : "mon_maneater", "freq" : 1, "cost_multiplier" : 100 },
-{ "monster" : "mon_unknown_unknown_carrion", "freq" : 100, "cost_multiplier" : 100 },
-	{ "monster" : "mon_unknown_unknown_vector", "freq" : 100, "cost_multiplier" : 100 }
+{ "monster" : "mon_unknown_unknown_carrion", "freq" : 100, "cost_multiplier" : 150 },
+	{ "monster" : "mon_unknown_unknown_vector", "freq" : 100, "cost_multiplier" : 150 }
     ]
   },
   {
@@ -158,12 +173,17 @@
 	{ "monster" : "mon_vector_sprout", "freq" : 100, "cost_multiplier" : 1 },
 	{ "monster" : "mon_vector", "freq" : 100, "cost_multiplier" : 2 },
 	  { "monster" : "mon_vector_seedler", "freq" : 100, "cost_multiplier" : 5 },
-	{ "monster" : "mon_vector_stinger", "freq" : 100, "cost_multiplier" : 3 }
+	{ "monster" : "mon_vector_stinger", "freq" : 100, "cost_multiplier" : 3 },
+	{ "monster" : "mon_vector_tree", "freq" : 100, "cost_multiplier" : 15 }
     ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_VECTOR_SEEDLING",
-    "default": "mon_vector_sprig"
+    "default": "mon_vector_spore",
+    "monsters": [
+	{ "monster" : "mon_vector_spore", "freq" : 50, "cost_multiplier" : 1 },
+	{ "monster" : "mon_vector_sprig", "freq" : 5, "cost_multiplier" : 3 }
+]
   }
 ]
