@@ -35,7 +35,7 @@
     "armor_acid": 3,
     "armor_fire": 5,
     "special_attacks": [
-    { "type": "spell", "spell_id": "mon_zombie_titan_charge", "cooldown": 58 },
+    { "type": "spell", "spell_id": "mon_zombie_titan_charge_target", "cooldown": 60 },
       [ "SMASH", 32 ]
     ],
     "death_drops": "mon_zombie_hulk_death_drops",
@@ -80,7 +80,7 @@
     "armor_acid": 4,
     "armor_fire": 8,
     "special_attacks": [
-    { "type": "spell", "spell_id": "mon_zombie_titan_charge", "cooldown": 50 },
+    { "type": "spell", "spell_id": "mon_zombie_titan_charge_target", "cooldown": 50 },
       [ "SMASH", 26 ]
     ],
     "death_drops": "mon_zombie_hulk_death_drops",
