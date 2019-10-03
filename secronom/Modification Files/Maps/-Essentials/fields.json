@@ -90,7 +90,7 @@
         "intensity_levels": [{
                 "name": "hazy cloud",
                 "sym": ".",
-                "color": "light_blue",
+                "color": "cyan",
                 "dangerous": true,
                 "light_emitted": 1
             }, {
@@ -98,13 +98,13 @@
             }, {
                 "name": "thick vector haze",
                 "transparent": false,
-                "color": "cyan",
+                "color": "light_blue",
                 "light_emitted": 2
             }
         ],
-        "decay_amount_factor": 25,
+        "decay_amount_factor": 20,
         "gas_absorption_factor": 10,
-        "percent_spread": 5,
+        "percent_spread": 10,
         "outdoor_age_speedup": "10 turns",
         "dirty_transparency_cache": true,
         "has_fume": true,
@@ -120,10 +120,13 @@
         "id": "fd_vector_seed",
         "type": "field_type",
         "intensity_levels": [{
-                "name": "vector seeds",
+                "name": "thick vector haze",
                 "sym": "~",
-                "color": "light_blue"
+                "color": "blue",
+                "dangerous": true,
+                "transparent": false
             }, {}, {
+	            "name": "vector seeds",
                 "color": "blue",
                 "light_emitted": 3,
                 "monster_spawn_chance": 5,
