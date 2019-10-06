@@ -42,7 +42,6 @@
     "flags": [ "DIGS", "CAN_DIG", "HEARS", "GOODHEARING", "WARM" ]
  },
  {
-	"//": "In general, you might see this alarming at first. Ready yourself before provoking such monster.",
     "id": "mon_zombieworm_gravedigger",
     "type": "MONSTER",
     "name": "grave digger",
@@ -79,7 +78,6 @@
         ]
       }
     ],
-	"//": "So yeah... It could kill you with few bites and penetrates through power armors, so be careful",
 	"anger_triggers": [ "HURT" ],
     "death_function": [ "NORMAL" ],
     "flags": [ "DIGS", "CAN_DIG", "HEARS", "GOODHEARING", "WARM", "PLASTIC" ]
