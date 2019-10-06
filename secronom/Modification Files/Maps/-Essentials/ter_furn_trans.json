@@ -4,14 +4,7 @@
         "fail_message": "There's no organic terrain here to vectorize.",
         "terrain": [{
                 "result": "t_vector",
-                "valid_terrain": [
-                    "t_dirt",
-                    "t_dirtmound",
-                    "t_dirtmoundfloor",
-                    "t_grass_dead",
-                    "t_grass_tall",
-                    "t_grass_long",
-                    "t_grass"],
+                "valid_flags": ["DIGGABLE"],
                 "message": "The ground here has been vectorized."
             },
             {
@@ -42,7 +35,7 @@
         "id": "vectocide",
         "fail_message": "There's no vectorized terrain here to kill.",
         "terrain": [{
-                "result": "t_dirt_barren",
+                "result": [ [ "t_dirt", 5 ], "t_grass" ],
                 "valid_flags": ["VECTOR"],
                 "message": "The vector here dies."
             }
