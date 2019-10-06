@@ -8,10 +8,13 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.6 - Currently, the plan is to rebalance and expand the new monsters. <--
+--> V1.6 - Currently, the plan is to rebalance and expand the new monsters, attempt to recreate the chaos zeds and add some new contents too. <--
 
 #  REWORKS ON TILESET (frequent, or whenever I can)
+#  REMOVED LUA VERSION (we have spells and it's meant to replace the LUA attacks)
 
++  VECTOR IMPROVEMENTS (infection of organic terrains, haze infects the creatures)
++  ZED MUTANTS (dissonant screamer, jolt)
 
 
 	=>PAST UPDATES<=
@@ -26,7 +29,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  WANDERING ABERRATIONS (flesh weaver, maneater)
 +  ZED MUTANTS (nautilus, stray - nature, corrosive)
 +  UNKNOWN MONSTER (looms in the wilderness, a secret, wandering passage of the galactic horrors)
-+  UNKNOWN SPECIES (carrions, vectors)
++  UNKNOWN RACES (carrions, vectors)
 
 +~ LICKER (final upgrade path, stats tweaked)
 
