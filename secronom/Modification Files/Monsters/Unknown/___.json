@@ -2,6 +2,7 @@
  {
 	"//": "Ey, its a surprise monster. It'll deliver the finest challengers for you!",
     "id": "mon_unknown_unknown",
+    "looks_like": "mon_vortex",
     "type": "MONSTER",
     "name": "Unknown",
     "description": "A ripple of time and space, transparent and emits a gravitational force field, like that of a black hole's surrounding. Unidentified, it leaves you uncomfortable as if it is a threat or not.",
@@ -11,7 +12,7 @@
     "weight": 0,
     "hp": 999999,
     "speed": 10,
-    "material": ["null"],
+    "material": ["secro_null"],
     "symbol": "O",
     "color": "black",
     "phase": "GAS",
@@ -41,15 +42,19 @@
 {
     "id": "mon_unknown_unknown_carrion",
     "copy-from": "mon_unknown_unknown",
+    "looks_like": "mon_vortex",
     "type": "MONSTER",
     "name": "???",
+    "name_plural": "???",
     "special_attacks": [ { "type": "spell", "spell_id": "mon_unknown_unknown_gcollapse_carrion", "cooldown": 10 } ]
  },
  {
     "id": "mon_unknown_unknown_vector",
     "copy-from": "mon_unknown_unknown",
+    "looks_like": "mon_vortex",
     "type": "MONSTER",
     "name": "???",
+    "name_plural": "???",
     "special_attacks": [ { "type": "spell", "spell_id": "mon_unknown_unknown_gcollapse_vector", "cooldown": 10 } ]
  }
 ]
