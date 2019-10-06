@@ -4,7 +4,7 @@
     "type": "emit",
     "field": "fd_blood",
     "intensity": 3,
-    "quantity": 100,
+    "qty": 100,
     "chance": 100
   },
  {
@@ -12,7 +12,7 @@
     "type": "emit",
     "field": "fd_acid",
     "intensity": 1,
-    "quantity": 10,
+    "qty": 10,
     "chance": 30
   },
   {
@@ -20,7 +20,7 @@
     "type": "emit",
     "field": "fd_toxic_gas",
     "intensity": 2,
-    "quantity": 10,
+    "qty": 10,
     "chance": 60
   },
   {
@@ -33,14 +33,14 @@
     "id": "secro_secromissile_fire",
     "type": "emit",
     "field": "fd_fire",
-    "quantity": 1,
+    "qty": 1,
     "chance": 1
   },
   {
     "id": "secro_nstro3_ss",
     "type": "emit",
     "field": "fd_relax_gas",
-    "quantity": 15,
+    "qty": 15,
     "chance": 50
   },
   {
@@ -48,7 +48,7 @@
     "type": "emit",
     "field": "fd_acid",
     "intensity": 1,
-    "quantity": 25,
+    "qty": 25,
     "chance": 25
   },
   {
@@ -56,7 +56,7 @@
     "type": "emit",
     "field": "fd_vector_haze",
     "intensity": 1,
-    "quantity": 5,
+    "qty": 5,
     "chance": 15
   },
   {
@@ -64,7 +64,7 @@
     "type": "emit",
     "field": "fd_vector_haze",
     "intensity": 3,
-    "quantity": 3,
+    "qty": 3,
     "chance": 20
   },
   {
@@ -73,7 +73,7 @@
     "//": "Very rare seeding for spores.",
     "field": "fd_vector_seed",
     "intensity": 3,
-    "quantity": 1,
+    "qty": 1,
     "chance": 1
   },
   {
@@ -81,7 +81,7 @@
     "type": "emit",
     "field": "fd_vector_seed",
     "intensity": 3,
-    "quantity": 1,
+    "qty": 1,
     "chance": 2
   },
   {
@@ -90,8 +90,8 @@
     "//": "Stream of haze for bloomers.",
     "field": "fd_vector_haze",
     "intensity": 2,
-    "quantity": 10,
-    "chance": 75
+    "qty": 20,
+    "chance": 50
   },
   {
     "id": "secro_vector_seeding",
@@ -99,17 +99,17 @@
     "//": "Rare seeding for bloomers.",
     "field": "fd_vector_seed",
 	"intensity": 3,
-    "quantity": 1,
+    "qty": 1,
     "chance": 5
   },
   {
     "id": "secro_vector_tree_spread",
     "type": "emit",
-    "//": "Explosion of haze for trees.",
+    "//": "Big explosion of haze for trees.",
     "field": "fd_vector_haze",
     "intensity": 2,
-    "quantity": 45,
-    "chance": 20
+    "qty": 100,
+    "chance": 10
   },
   {
     "id": "secro_vector_tree_seeding",
@@ -117,7 +117,23 @@
     "//": "Large seeding for trees.",
     "field": "fd_vector_seed",
 	"intensity": 3,
-    "quantity": 10,
+    "qty": 5,
     "chance": 10
+  },
+  {
+    "id": "secro_shout",
+    "type": "emit",
+    "field": "fd_disser_scream",
+	"intensity": 1,
+    "qty": 150,
+    "chance": 15
+  },
+  {
+    "id": "secro_scream",
+    "type": "emit",
+    "field": "fd_disser_scream",
+	"intensity": 1,
+    "qty": 30,
+    "chance": 80
   }
 ]
