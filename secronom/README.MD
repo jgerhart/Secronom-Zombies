@@ -4,8 +4,9 @@ Its mod thread is at the [official forums](https://discourse.cataclysmdda.org/t/
 
 Mod made from various references, mixed up with random spices! 
 
-- This mod is WIP, some new contents need rebalances and fixes, but expect no fatal crashes to occur.
-- Remember that CDDA is an open source game, suggestions are welcome!
+- This mod will only work with the latest experimental of CDDA.
+- This mod is WIP. Some new contents need rebalances and fixes, but expect no fatal crashes to occur.
+- Remember that CDDA is an open source game, so does this mod. Suggestions are welcome!
 
 ## Zombies
 The secronom aims to add various enemies to the world, ranging from weak up to strong variety of them.
@@ -13,7 +14,6 @@ The secronom aims to add various enemies to the world, ranging from weak up to s
 The evolution sheet is outdated and it is taken down until a new one is created. And due to a technical problem, I can't make monster sprites for the new creatures...
 
 ### City Zombies
-
 Listed below are the zombies encountered in a city, along with their upgrade paths:
 
 ##### Blade Zombie
@@ -81,11 +81,13 @@ Zombie type that grows stronger as time passes by.
 * The other swarmer zombie paths to city zed mutants.
 
 ### Wandering Zombies
-Zombies that are seen rarely out of the cities:
+Zombies that are seen rarely in and out of the cities:
 
 * **Stray Zombie** - A lone walker, seen in the forest. If left wandering, it may acquire new abilities from almost everything.
 
 * **Nautilus** - An aquatic mutant, seen in sewers. Sluggish, it takes advantage by ensnaring their prey with its squidlings.
+
+* **Dissonant Screamer** - A zombie, distinct to its elongated jaws. Its harsh voice resonates into the surrounding, causing debuff to whoever hears it.
 
 ### Lab Zombies
 These are the zombies only exclusive to secronom labs:
@@ -128,7 +130,6 @@ Extraterrestrial creatures from uncharted worlds.
 * **Vector**: Vectors are beautiful plant creatures that tends to spread and dominate the living by manipulation.
 
 ## Robots
-
 Coded for fun!
 
 * **Secronom Dragon** - Its enormous body paired with specialized armor platings makes it a formidable foe, with large weaponry system installed to bring wrath on its target.
