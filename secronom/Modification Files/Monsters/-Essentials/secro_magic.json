@@ -1,11 +1,11 @@
 [{
-		"//": "Every spell that a monster casts are explained here. There's no way of telling you the hints in-game, and here we are, reading infos about 'em at this file!",
-        "//": "Since monsters can only have one spell in their special attacks (and idk if this is intentional to the devs), I tend to combine them instead... Combo (combination) spell and a regular one, casted in an instance!",
+		"//": "Every spell that a monster casts are explained here. There's no way of telling you the description in-game, and here we are, reading infos about 'em at this file!",
+        "//": "Since monsters can only have one spell in their special attacks (and idk if this is intentional to the devs), I tend to combine them... Combo (combination) spell and a regular one, casted in an instance!",
         "id": "sacrifice_spell",
         "type": "SPELL",
         "name": "Sacrifice",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster deals an instant death damage, sacrificing itself upon casting a spell that's been combined with.'",
-        "valid_targets": ["ally", "hostile", "ground", "self"],
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "hostile", "ground", "self"],
         "effect": "target_attack",
         "min_damage": 9999999,
         "max_damage": 9999999,
@@ -17,8 +17,7 @@
         "id": "mon_summon_tentawraith_tent",
         "name": "Summon Tentacles",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's tentacle outburst sprouts 3 tentacles out of the ground.'",
-        "flags": ["HOSTILE_SUMMON"],
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT","HOSTILE_SUMMON" ], "valid_targets": ["hostile", "ground"],
         "min_damage": 3,
         "max_damage": 3,
         "min_range": 10,
@@ -34,7 +33,7 @@
         "type": "SPELL",
         "name": "Twisted Strike",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's tentacle outburst pierces the closest target from the caster with compact tentacles, dealing moderate stabbing damage and inflicts unconsciousness for 1 turn.'",
-        "valid_targets": ["ground", "hostile"],
+        "flags": [ "SILENT" ], "valid_targets": ["ground", "hostile"],
         "effect": "projectile_attack",
         "effect_str": "stunned",
         "min_damage": 14,
@@ -50,7 +49,7 @@
         "type": "SPELL",
         "name": "Tentacle Outburst",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its body for some turns to strike the ground with its tentacles, then bursts violently under the target, dealing stabbing damage and applies an unstable footing that lasts for 3 turns to the affected creatures in its radius.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "projectile_attack",
         "effect_str": "downed",
         "extra_effects": [{
@@ -74,7 +73,7 @@
         "type": "SPELL",
         "name": "Pin Missile",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster quickly sways its limb to shoot off needle-like projectiles in a cone, dealing stabbing damage to the targets.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "cone_attack",
         "min_damage": 6,
         "max_damage": 6,
@@ -89,8 +88,7 @@
         "id": "mon_zombie_titan_charge",
         "name": "Charging Stance",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sets itself into guarding stance, blocking physical damage while gaining a burst of speed.'",
-        "message": "Then sets itself to the %s.",
-        "valid_targets": ["ground", "ally"],
+        "flags": [ "SILENT" ], "valid_targets": ["ground", "ally"],
         "effect": "target_attack",
         "effect_str": "titan_charge",
         "//": "15 turns duration, to make titans not OP everytime.",
@@ -99,18 +97,23 @@
     }, {
         "type": "SPELL",
         "id": "mon_zombie_titan_charge_target",
-        "name": "Spell Target",
+        "//": "Players will see this as 'the caster cast %s on you!', where %s is the name of the spell.",
+        "name": "a spell",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell.'",
         "message": "The sight of <npcname> locks onto its target...",
+        "//": "Message doesn't work on monster-casted spells, so I'll just leave it here and look at my attempt XD",
         "extra_effects": [{
-                "id": "mon_zombie_titan_charge", "hit_self": true
+                "id": "mon_zombie_titan_charge", "hit_self": true, "//": "hit_self, so it forces the monster to cast the spell with 0 range value to itself, receiving (de)buff, damage or healing spell effect."
             }
         ],
-        "valid_targets": ["ground", "hostile"],
+        "flags": [ "SILENT" ], "valid_targets": ["ground", "hostile"],
         "effect": "target_attack",
+        "//": "Add an effect to spell. Monster won't cast a spell if it doesn't do anything to the target.",
         "effect_str": "secro_magic_target",
-        "min_range": 60,
-        "max_range": 60,
+        "min_range": 69,
+        "//": "As long as caster sees the target, it will cast (if its not on cooldown, ofc). Nice.",
+        "max_range": 69,
+        "//": "Nice.",
         "min_duration": 1,
         "max_duration": 1
     },{
@@ -118,7 +121,7 @@
         "type": "SPELL",
         "name": "Acid Burst",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's acid glob explodes violently, dealing acid damage to all surrounding creatures.'",
-        "valid_targets": ["ally", "hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "hostile", "ground"],
         "effect": "projectile_attack",
         "min_damage": 4,
         "max_damage": 4,
@@ -127,7 +130,7 @@
         "min_range": 8,
         "max_range": 8,
         "field_id": "fd_acid",
-        "field_chance": 65,
+        "field_chance": 3,
         "min_field_intensity": 1,
         "max_field_intensity": 1,
         "damage_type": "acid"
@@ -136,7 +139,7 @@
         "type": "SPELL",
         "name": "Acid Glob",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots a mouthful of concentrated acid glob to the target, dealing moderate acid damage.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "extra_effects": [{
                 "id": "mon_zombie_pellucid_aburst"
             }
@@ -153,8 +156,7 @@
         "id": "mon_zombie_unify_bv",
         "name": "Summon Blood Vessel",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its hands to create a blood vessel.'",
-        "flags": ["HOSTILE_SUMMON"],
-        "valid_targets": ["ally", "ground"],
+        "flags": [ "SILENT","HOSTILE_SUMMON" ], "valid_targets": ["ally", "ground"],
         "min_damage": 1,
         "max_damage": 1,
         "min_aoe": 1,
@@ -169,8 +171,7 @@
         "id": "mon_zombie_unity_bv",
         "name": "Summon 2 Blood Vessels",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its core to create 2 blood vessels.'",
-        "flags": ["HOSTILE_SUMMON"],
-        "valid_targets": ["ally", "ground"],
+        "flags": [ "SILENT","HOSTILE_SUMMON" ], "valid_targets": ["ally", "ground"],
         "min_damage": 2,
         "max_damage": 2,
         "min_aoe": 1,
@@ -185,8 +186,7 @@
         "id": "mon_summon_hemo_bv",
         "name": "Summon 2 Blood Vessels",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's blood wave creates 2 blood vessels nearby.'",
-        "flags": ["HOSTILE_SUMMON"],
-        "valid_targets": ["ally", "ground"],
+        "flags": [ "SILENT","HOSTILE_SUMMON" ], "valid_targets": ["ally", "ground"],
         "min_damage": 2,
         "max_damage": 2,
         "min_aoe": 3,
@@ -200,8 +200,7 @@
         "id": "mon_summon_hemo_bf",
         "name": "Summon Blood Fiend",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's blood wave creates a blood fiend nearby.'",
-        "flags": ["HOSTILE_SUMMON"],
-        "valid_targets": ["ally", "ground"],
+        "flags": [ "SILENT","HOSTILE_SUMMON" ], "valid_targets": ["ally", "ground"],
         "min_damage": 1,
         "max_damage": 1,
         "min_aoe": 3,
@@ -215,7 +214,7 @@
         "type": "SPELL",
         "name": "Blood Curl",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'When the target is nearby, caster manipulates some of the blood wave's blood to stick into the target, applying bloodbath. This is casted 3 times.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "effect_str": "unity_bloodslow",
         "min_range": 3,
@@ -227,7 +226,7 @@
         "type": "SPELL",
         "name": "Blood Wave",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its surrounding blood to strike a large area in a cone, dealing moderate bash damage and applying bloodbath to the affected creatures.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "cone_attack",
         "effect_str": "unity_bloodslow",
         "extra_effects": [{
@@ -252,7 +251,7 @@
         "min_duration": 12000,
         "max_duration": 12000,
         "field_id": "fd_blood",
-        "field_chance": 75,
+        "field_chance": 5,
         "min_field_intensity": 1,
         "max_field_intensity": 1,
         "damage_type": "bash"
@@ -261,8 +260,7 @@
         "id": "mon_summon_nightwail_shroud_shadow",
         "name": "Summon Shadow",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's enshroud splits a small chunk of shadow next to the target.'",
-        "flags": ["HOSTILE_SUMMON"],
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT","HOSTILE_SUMMON" ], "valid_targets": ["hostile", "ground"],
         "min_damage": 1,
         "max_damage": 1,
         "min_range": 6,
@@ -278,7 +276,7 @@
         "type": "SPELL",
         "name": "Enshroud",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'If the caster's target is nearby, the target is enveloped in shadows, dealing small true damage, blinding them and summons a shadow next to them.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "effect_str": "blind",
         "extra_effects": [{
@@ -297,8 +295,7 @@
         "id": "mon_summon_nightwail_shadow",
         "name": "Summon Shadow",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's shadow splits a small chunk, creating an independent shadow.'",
-        "flags": ["HOSTILE_SUMMON"],
-        "valid_targets": ["ally", "ground"],
+        "flags": [ "SILENT","HOSTILE_SUMMON" ], "valid_targets": ["ally", "ground"],
         "extra_effects": [{
                 "id": "mon_zombie_nightwail_shroud"
             }
@@ -316,7 +313,7 @@
         "type": "SPELL",
         "name": "Lingering Shadow",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's ominous curse deals a light, continuous true damage to the target.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "extra_effects": [{
                 "id": "mon_zombie_nightwail_shroud"
@@ -334,7 +331,7 @@
         "type": "SPELL",
         "name": "Ominous Curse",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Target is afflicted by an ominous curse and is dealt with light true damage..'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "effect_str": "omi_curse",
         "extra_effects": [{
@@ -354,7 +351,7 @@
         "type": "SPELL",
         "name": "Writhing Slash",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'If the caster's target is nearby after precision stab, the caster's tongue sweeps it sideways, dealing cutting damage and applies an unstable footing to the affected creatures. This is casted for 2 times.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "cone_attack",
         "effect_str": "downed",
         "min_damage": 8,
@@ -371,7 +368,7 @@
         "type": "SPELL",
         "name": "Precision Stab",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster reaches and quickly strikes the target with its hideous tongue, dealing moderate stabbing damage.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "extra_effects": [{
                 "id": "mon_zombie_xlick_writhes"
@@ -390,7 +387,7 @@
         "type": "SPELL",
         "name": "Gas Burst",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'If the caster's target is upclose, caster sends a strong burst of acidic gas in a wide, yet short cone, dealing moderate acid damage to all affected creatures.'",
-        "valid_targets": ["ally", "hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "hostile", "ground"],
         "effect": "cone_attack",
         "min_damage": 10,
         "max_damage": 10,
@@ -404,7 +401,7 @@
         "type": "SPELL",
         "name": "Noxious Gas",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its body to produce an acidic gas and sends it to the target in a cone that deals lingering acid damage to all affected creatures.'",
-        "valid_targets": ["ally", "hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "hostile", "ground"],
         "effect": "cone_attack",
         "extra_effects": [{
                 "id": "mon_zombie_leptiosa_gasb"
@@ -425,7 +422,7 @@
         "type": "SPELL",
         "name": "Lock On",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster glares at the target, inflicting disorienting impairments.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "effect_str": "blind",
         "min_range": 30,
@@ -437,7 +434,7 @@
         "type": "SPELL",
         "name": "Lock On",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster glares at the target, inflicting disorienting impairments.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "effect_str": "shakes",
         "min_range": 30,
@@ -449,7 +446,7 @@
         "type": "SPELL",
         "name": "Lock On",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster glares at the target, inflicting disorienting impairments.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "effect_str": "glowing",
         "min_range": 30,
@@ -461,7 +458,7 @@
         "type": "SPELL",
         "name": "Lock On",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster glares at the target, inflicting disorienting impairments.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "effect_str": "visuals",
         "extra_effects": [{
@@ -482,7 +479,7 @@
         "type": "SPELL",
         "name": "Vein Explosion",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'The torn up ligament explodes internally, dealing an extra bio damage to the target.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "min_damage": 7,
         "max_damage": 7,
@@ -496,7 +493,7 @@
         "type": "SPELL",
         "name": "Volatile Scratch",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster scratches the target with a claw imbued in volatile bodily fluid, dealing moderate cutting damage that lingers for few turns.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "extra_effects": [{
                 "id": "mon_fleshweaver_vexpl"
@@ -519,15 +516,16 @@
         "effect": "area_pull",
         "effect_filter": ["fd_blood"],
         "effect_iterations": 2,
-        "valid_targets": ["ally", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "ground"],
         "min_aoe": 10,
         "max_aoe": 10
     }, {
         "id": "mon_maneater_bsuck",
         "type": "SPELL",
         "name": "Blood Suck",
+        "//": "Even if there's no blood field nearby, it still heals...", 
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'More vine strands from the caster sweeps around the vicinity, collecting and sucking the blood fields in which heals the caster.'",
-        "valid_targets": ["ally", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "ground"],
         "effect": "target_attack",
         "extra_effects": [{
                 "id": "mon_maneater_pullb"
@@ -541,7 +539,7 @@
         "type": "SPELL",
         "name": "Floral Bite",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'When upclose, caster crunches at the target, dealing extra moderate cutting damage.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "min_damage": 16,
         "max_damage": 16,
@@ -555,7 +553,7 @@
         "type": "SPELL",
         "name": "Vine Slash",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the target from afar with its sharpest, whip-like vine, dealing cutting damage.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "projectile_attack",
         "extra_effects": [{
                 "id": "mon_maneater_bsuck",
@@ -574,8 +572,7 @@
         "id": "mon_summon_nautilus_pedo",
         "name": "Summon 4 Nautilus Torpedos",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'After casting sewave, caster creates 4 nautilus torpedos.'",
-        "flags": ["HOSTILE_SUMMON"],
-        "valid_targets": ["ally", "ground"],
+        "flags": [ "SILENT","HOSTILE_SUMMON" ], "valid_targets": ["ally", "ground"],
         "min_damage": 4,
         "max_damage": 4,
         "min_aoe": 3,
@@ -588,8 +585,8 @@
         "id": "mon_zombie_nautilus_sewave",
         "type": "SPELL",
         "name": "Sewave",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster submerges into the water and generates a seismic wave in a cone, dealing cold damage and applying unstable footing to the affected creatures.'",
-        "valid_targets": ["hostile", "ground"],
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster submerges into the water and generates a seismic wave in a very large cone, dealing cold damage and applying unstable footing to the affected creatures.'",
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "cone_attack",
         "effect_str": "downed",
         "extra_effects": [{
@@ -598,10 +595,10 @@
         ],
         "min_damage": 7,
         "max_damage": 7,
-        "min_range": 12,
-        "max_range": 12,
-        "min_aoe": 2,
-        "max_aoe": 2,
+        "min_range": 6,
+        "max_range": 6,
+        "min_aoe": 20,
+        "max_aoe": 20,
         "min_duration": 300,
         "max_duration": 300,
         "damage_type": "cold"
@@ -609,8 +606,8 @@
         "id": "mon_zombie_nautilus_pedo_restraint",
         "type": "SPELL",
         "name": "Restraint",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster latches itself, reducing the dex and speed of the target.'",
-        "valid_targets": ["hostile", "ground"],
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster latches itself, reducing the agility of the target.'",
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "effect_str": "pedo_restraint",
         "extra_effects": [{
@@ -626,7 +623,7 @@
         "type": "SPELL",
         "name": "Lacerate",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'If the target is nearby, caster slashes with a vine, dealing moderate cutting damage. This is casted 2 times.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "projectile_attack",
         "min_damage": 10,
         "max_damage": 10,
@@ -641,7 +638,7 @@
         "type": "SPELL",
         "name": "Razor Leaf",
         "description": "(Combo) spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sends its sharp leaves to mince the targets in a line, dealing moderate cutting damage.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "line_attack",
         "extra_effects": [{
                 "id": "mon_zombie_stray_w_leaf_stro1_lace"
@@ -661,8 +658,8 @@
         "id": "mon_zombie_stray_w_leaf_stro2_sscent",
         "type": "SPELL",
         "name": "Sweet Scent",
-        "description": "Combo pell casted by a monster. If you're seeing this, then read this one instead:\n'Floral bloom accompanies the wild outburst, spreading sleep-inducing pollens in the same area.'",
-        "valid_targets": ["hostile", "ground"],
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Floral bloom accompanies the wild outburst, spreading sleep-inducing pollens in the same area.'",
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "projectile_attack",
         "min_range": 14,
         "max_range": 14,
@@ -673,13 +670,13 @@
         "field_id": "fd_relax_gas",
         "min_field_intensity": 1,
         "max_field_intensity": 1,
-        "field_chance": 60
+        "field_chance": 5
     }, {
         "id": "mon_zombie_stray_w_leaf_stro2_wildo",
         "type": "SPELL",
         "name": "Wild Outgrowth",
-        "description": "(Combo) spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its body to create an outburst of twisted roots and vines under the target, dealing moderate stabbing damage and slowing the affected creatures.'",
-        "valid_targets": ["hostile", "ground"],
+        "description": "(Combo) spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its body to create an outburst of twisted roots and vines under the target, dealing moderate stabbing damage and ensnares the affected creatures.'",
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "projectile_attack",
         "effect_str": "rooty_grasp",
         "extra_effects": [{
@@ -703,8 +700,7 @@
         "id": "mon_summon_stray_w_leaf_stro3_triffid",
         "name": "Summon 2 Triffids",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its hand to create and send forth 2 triffids, along with the wild outgrowth.'",
-        "flags": ["HOSTILE_SUMMON"],
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT","HOSTILE_SUMMON" ], "valid_targets": ["hostile", "ground"],
         "extra_effects": [{
                 "id": "mon_zombie_stray_w_leaf_stro2_wildo"
             }
@@ -724,7 +720,7 @@
         "type": "SPELL",
         "name": "Acid Touch",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'When upclose, caster then scratches the target with its excess blood, dealing acid damage.'",
-        "valid_targets": ["hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "min_damage": 6,
         "max_damage": 6,
@@ -735,8 +731,8 @@
         "id": "mon_zombie_stray_w_acid_stro2_acoat",
         "type": "SPELL",
         "name": "Acid Coat",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its hands to extract a large amount of acidic fluid from its body, then sends it to the target in a line, dealing moderate acid damage that lingers overtime.'",
-        "valid_targets": ["hostile", "ground"],
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its hands to extract a large amount of acidic fluid from its body, then sends it to the target in a short but wide line, dealing moderate acid damage that lingers overtime.'",
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "hostile", "ground"],
         "effect": "line_attack",
         "extra_effects": [{
                 "id": "mon_zombie_stray_w_acid_stro2_atouch"
@@ -744,6 +740,8 @@
         ],
         "min_damage": 16,
         "max_damage": 16,
+        "min_aoe": 4,
+        "max_aoe": 4,
         "min_range": 3,
         "max_range": 3,
         "min_dot": 1,
@@ -752,16 +750,16 @@
         "max_duration": 400,
         "base_casting_time": 300,
         "field_id": "fd_acid",
+        "field_chance": 10,
         "min_field_intensity": 1,
         "max_field_intensity": 1,
-        "field_chance": 100,
         "damage_type": "acid"
     }, {
         "id": "mon_zombie_stray_w_acid_stro3_asweep",
         "type": "SPELL",
         "name": "Sweepidic",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'If the target is nearby, caster sweeps some of the excess fluids in a small cone, dealing small damage to all creatures.'",
-        "valid_targets": ["ally", "hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "hostile", "ground"],
         "effect": "cone_attack",
         "min_damage": 8,
         "max_damage": 8,
@@ -779,14 +777,14 @@
         "type": "SPELL",
         "name": "Acid Rain",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its whole body for a very long time to produce an extremely vast amount of corrosive bodily fluids and sends it up above the target then explode, dealing tremendous acid damage to all creatures in the vicinity, which lingers within time.'",
-        "valid_targets": ["ally", "hostile", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "hostile", "ground"],
         "effect": "projectile_attack",
         "extra_effects": [{
                 "id": "mon_zombie_stray_w_acid_stro3_asweep"
             }
         ],
-        "min_damage": 28,
-        "max_damage": 28,
+        "min_damage": 22,
+        "max_damage": 22,
         "min_range": 14,
         "max_range": 14,
         "min_dot": 3,
@@ -797,7 +795,7 @@
         "max_duration": 300,
         "base_casting_time": 1250,
         "field_id": "fd_acid",
-        "field_chance": 85,
+        "field_chance": 15,
         "min_field_intensity": 1,
         "max_field_intensity": 1,
         "damage_type": "acid"
@@ -806,7 +804,7 @@
         "type": "SPELL",
         "name": "Portal",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'A multi-dimensional portal is made from the collapse. This portal leads the carrion race into the world.'",
-        "valid_targets": ["ally", "self", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "self", "ground"],
         "effect": "target_attack",
         "extra_effects": [{
                 "id": "sacrifice_spell",
@@ -815,17 +813,18 @@
         ],
         "min_damage": -1,
         "max_damage": -1,
-        "min_aoe": 1,
-        "max_aoe": 1,
+        "min_aoe": 2,
+        "max_aoe": 2,
         "field_id": "fd_portal_carrion",
+		"field_chance": 10,
         "min_field_intensity": 3,
         "max_field_intensity": 3
     }, {
         "id": "mon_unknown_unknown_gcollapse_carrion",
         "type": "SPELL",
         "name": "Gravitational Collapse",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing tremendous bash damage to all creatures. Sparkling objects are scattered, which enlightens the whole area.'",
-        "valid_targets": ["ally", "hostile", "ground"],
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing tremendous bash damage to all creatures. Sparkling objects are scattered, which enlightens the area.'",
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "hostile", "ground"],
         "effect": "projectile_attack",
         "extra_effects": [{
                 "id": "mon_unknown_unknown_portal_carrion"
@@ -840,7 +839,7 @@
         "max_aoe": 42,
         "base_casting_time": 10000,
         "field_id": "fd_ministars",
-        "field_chance": 25,
+        "field_chance": 50,
         "min_field_intensity": 1,
         "max_field_intensity": 1,
         "damage_type": "bash"
@@ -849,7 +848,7 @@
         "type": "SPELL",
         "name": "Portal",
         "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'A multi-dimensional portal is made from the collapse. This portal leads the vector race into the world.'",
-        "valid_targets": ["ally", "self", "ground"],
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "self", "ground"],
         "effect": "target_attack",
         "extra_effects": [{
                 "id": "sacrifice_spell",
@@ -858,17 +857,18 @@
         ],
         "min_damage": -1,
         "max_damage": -1,
-        "min_aoe": 1,
-        "max_aoe": 1,
+        "min_aoe": 2,
+        "max_aoe": 2,
         "field_id": "fd_portal_vector",
+		"field_chance": 10,
         "min_field_intensity": 3,
         "max_field_intensity": 3
     }, {
         "id": "mon_unknown_unknown_gcollapse_vector",
         "type": "SPELL",
         "name": "Gravitational Collapse",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing tremendous bash damage to all creatures. Sparkling objects are scattered, which enlightens the whole area.'",
-        "valid_targets": ["ally", "hostile", "ground"],
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'After channeling for a massive amount of time, caster's gravitational force field collapses, creating a supernova, dealing tremendous bash damage to all creatures. Sparkling objects are scattered, which enlightens the area.'",
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "hostile", "ground"],
         "effect": "projectile_attack",
         "extra_effects": [{
                 "id": "mon_unknown_unknown_portal_vector"
@@ -882,7 +882,7 @@
         "max_aoe": 42,
         "base_casting_time": 10000,
         "field_id": "fd_ministars",
-        "field_chance": 25,
+        "field_chance": 50,
         "min_field_intensity": 1,
         "max_field_intensity": 1,
         "damage_type": "bash"
@@ -890,33 +890,62 @@
         "id": "mon_vector_rize_smol",
         "type": "SPELL",
         "name": "Vectorize",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'A wave of vector dust spreads from the caster, converting nearby organic terrains such as grass and bushes to become infested.'",
-        "message": "A blast of dust particles infect the surroundings!",
-        "valid_targets": ["ally", "hostile", "ground", "self"],
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'A wave of vector dust spreads from the caster, converting nearby organic terrains such as grass and bushes to become infected.'",
+        "flags": [ "SILENT" ], "valid_targets": ["ground", "self"],
         "effect": "ter_transform",
         "effect_str": "vectorize",
-        "min_aoe": 2,
-        "max_aoe": 2,
+        "min_aoe": 1,
+        "max_aoe": 1,
         "field_id": "fd_vector_haze",
-        "field_chance": 100,
         "min_field_intensity": 2,
-        "max_field_intensity": 2,
-        "hit_self": true
+        "max_field_intensity": 2
+    }, {
+        "type": "SPELL",
+        "id": "mon_vector_rize_smol_target",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell.'",
+        "message": "The sight of <npcname> locks onto its target...",
+        "extra_effects": [{
+                "id": "mon_vector_rize_smol", "hit_self": true
+            }
+        ],
+        "flags": [ "SILENT" ], "valid_targets": ["ally", "hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_range": 70,
+        "max_range": 70,
+        "min_duration": 1,
+        "max_duration": 1
     }, {
         "id": "mon_vector_rize_big",
         "type": "SPELL",
         "name": "Vectorize",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'A wave of vector dust spreads from the caster, converting nearby organic terrains such as grass and bushes to become infested.'",
-        "message": "A large blast of dust particles infect the surroundings!",
-        "valid_targets": ["ally", "hostile", "ground", "self"],
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'A wave of vector dust spreads from the caster, converting nearby organic terrains such as grass and bushes to become infected.'",
+        "flags": [ "SILENT" ], "valid_targets": [ "ground", "self" ],
         "effect": "ter_transform",
         "effect_str": "vectorize",
-        "min_aoe": 7,
-        "max_aoe": 7,
+        "min_aoe": 4,
+        "max_aoe": 4,
         "field_id": "fd_vector_haze",
-        "field_chance": 100,
         "min_field_intensity": 2,
-        "max_field_intensity": 2,
-        "hit_self": true
+        "max_field_intensity": 2
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_vector_rize_big_target",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell.'",
+        "message": "The sight of <npcname> locks onto its target...",
+        "extra_effects": [{
+                "id": "mon_vector_rize_big", "hit_self": true
+            }
+        ],
+        "flags": [ "SILENT" ], "valid_targets": ["ally","hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_range": 70,
+        "max_range": 70,
+        "min_duration": 1,
+        "max_duration": 1
     }
 ]
