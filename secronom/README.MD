@@ -2,14 +2,14 @@
 
 Its mod thread is at the [official forums](https://discourse.cataclysmdda.org/t/secronom-zombies-mod-thread/16211/1).
 
-Mod made from various references, mixed up with random spices! 
+Mod made from various references, mixed up with random spices! If you're up for a good action or just loves beating zeds, activate this mod and see how they take you down!
 
-- This mod will only work with the latest experimental of CDDA.
+- This mod will only work with the latest experimental of CDDA. Update your client before using this.
 - This mod is WIP. Some new contents need rebalances and fixes, but expect no fatal crashes to occur.
 - Remember that CDDA is an open source game, so does this mod. Suggestions are welcome!
 
 ## Zombies
-The secronom aims to add various enemies to the world, ranging from weak up to strong variety of them.
+The secronom's main feature - the zeds. They range from weak up to strong variety of them.
 
 The evolution sheet is outdated and it is taken down until a new one is created. And due to a technical problem, I can't make monster sprites for the new creatures...
 
@@ -83,11 +83,15 @@ Zombie type that grows stronger as time passes by.
 ### Wandering Zombies
 Zombies that are seen rarely in and out of the cities:
 
-* **Stray Zombie** - A lone walker, seen in the forest. If left wandering, it may acquire new abilities from almost everything.
+* **Stray Zombie** - A lone walker, seen in the forest. If left wandering, it'll acquire new abilities from almost everything.
 
 * **Nautilus** - An aquatic mutant, seen in sewers. Sluggish, it takes advantage by ensnaring their prey with its squidlings.
 
 * **Dissonant Screamer** - A zombie, distinct to its elongated jaws. Its harsh voice resonates into the surrounding, causing debuff to whoever hears it.
+
+* **Jolt** - An electric zombie, bolting constant discharges around its area.
+
+* **Fake** - A disguised zed that morphs into a more lethal counterparts when provoked.
 
 ### Lab Zombies
 These are the zombies only exclusive to secronom labs:
@@ -116,7 +120,7 @@ Vile creatures that are rarely sighted in the wilderness.
 
 * **Ayenel** - A towering abomination, with maximized range of vision. It excels in combat abilities and a baneful eye.
 
-* **Maneater** - A triffid, but fleshy. Loathsome in its appearance, it strikes with viscious vines and suck blood that replenishes its rotten fibers.
+* **Maneater** - A triffid, but fleshy. Loathsome in its appearance, it strikes with viscious vines and sucks blood that replenishes its rotten fibers.
 
 * **Flesh Weaver** - A sentient, beetle-like creature. Sets of claws and appendages lies beneath its tough carapace.
 
