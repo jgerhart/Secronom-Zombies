@@ -66,6 +66,57 @@
     ]
   },
   {
+    "type": "monstergroup",
+    "name": "GROUP_SMALL_STATION",
+    "default": "mon_zombie_technician",
+    "monsters": [
+      { "monster": "mon_zombie_jolt", "freq": 25, "cost_multiplier": 4  }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_LARGE_STATION",
+    "default": "mon_zombie_technician",
+    "monsters": [
+      { "monster": "mon_zombie_jolt", "freq": 25, "cost_multiplier": 4  }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ELECTRO",
+    "default": "mon_zombie",
+    "monsters": [
+      { "monster": "mon_zombie_jolt", "freq": 80, "cost_multiplier": 7 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_PREPPER_HOUSE",
+    "default": "mon_zombie",
+    "monsters": [
+      { "monster": "mon_zombie_fake_ichorus", "freq": 100, "cost_multiplier": 10 },
+      { "monster": "mon_zombie_fake_psyrus", "freq": 200, "cost_multiplier": 10 }
+    ]
+  },
+  {
+    "name": "GROUP_PANICROOM",
+    "type": "monstergroup",
+    "default": "mon_zombie_child",
+    "monsters": [
+      { "monster": "mon_zombie_fake_ichorus", "freq": 100, "cost_multiplier": 10 },
+      { "monster": "mon_zombie_fake_psyrus", "freq": 100, "cost_multiplier": 10 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_HOUSE",
+    "default": "mon_zombie",
+    "monsters": [
+      { "monster": "mon_zombie_fake_ichorus", "freq": 100, "cost_multiplier": 100 },
+      { "monster": "mon_zombie_fake_psyrus", "freq": 100, "cost_multiplier": 100 }
+    ]
+  },
+  {
 	"//": "Spawn random secrolab and vanilla creatures. Scientist are common here, followed by failed specimens.",
     "type":"monstergroup",
     "name" : "GROUP_SECROLAB_ALL",
@@ -140,32 +191,29 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_FOREST",
-    "default" : "mon_null",
     "monsters" : [
-	  { "monster" : "mon_ayenel", "freq" : 1, "cost_multiplier" : 130 },
-	  { "monster" : "mon_fleshweaver", "freq" : 1, "cost_multiplier" : 200 },
-	{ "monster" : "mon_maneater", "freq" : 1, "cost_multiplier" : 100 },
-	{ "monster" : "mon_unknown_unknown_carrion", "freq" : 100, "cost_multiplier" : 100 },
-	{ "monster" : "mon_unknown_unknown_vector", "freq" : 100, "cost_multiplier" : 100 }
+	  { "monster" : "mon_ayenel", "freq" : 1, "cost_multiplier" : 250 },
+	  { "monster" : "mon_fleshweaver", "freq" : 1, "cost_multiplier" : 300 },
+	{ "monster" : "mon_maneater", "freq" : 1, "cost_multiplier" : 200 },
+	{ "monster" : "mon_unknown_unknown_carrion", "freq" : 1, "cost_multiplier" : 300 },
+	{ "monster" : "mon_unknown_unknown_vector", "freq" : 1, "cost_multiplier" : 300 }
     ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_SWAMP",
-    "default": "mon_null",
-    "is_animal": true,
     "monsters": [
-    { "monster" : "mon_ayenel", "freq" : 1, "cost_multiplier" : 130 },
-	  { "monster" : "mon_fleshweaver", "freq" : 1, "cost_multiplier" : 200 },
-    { "monster" : "mon_maneater", "freq" : 1, "cost_multiplier" : 100 },
-{ "monster" : "mon_unknown_unknown_carrion", "freq" : 100, "cost_multiplier" : 150 },
-	{ "monster" : "mon_unknown_unknown_vector", "freq" : 100, "cost_multiplier" : 150 }
+    { "monster" : "mon_ayenel", "freq" : 1, "cost_multiplier" : 250 },
+	  { "monster" : "mon_fleshweaver", "freq" : 1, "cost_multiplier" : 300 },
+    { "monster" : "mon_maneater", "freq" : 1, "cost_multiplier" : 200 },
+{ "monster" : "mon_unknown_unknown_carrion", "freq" : 1, "cost_multiplier" : 300 },
+	{ "monster" : "mon_unknown_unknown_vector", "freq" : 1, "cost_multiplier" : 300 }
     ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_CARRIONS",
-    "default": "mon_carrion",
+    "default": "mon_null",
     "monsters": [
     { "monster" : "mon_carrion", "freq" : 100, "cost_multiplier" : 1 },
 	  { "monster" : "mon_carrion_dismantler", "freq" : 100, "cost_multiplier" : 2 },
@@ -175,7 +223,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_VECTORS",
-    "default": "mon_vector",
+    "default": "mon_null",
     "monsters": [
 	  { "monster" : "mon_vector_sprig", "freq" : 50, "cost_multiplier" : 1 },
 	{ "monster" : "mon_vector_sprout", "freq" : 100, "cost_multiplier" : 1 },
@@ -188,10 +236,19 @@
   {
     "type": "monstergroup",
     "name": "GROUP_VECTOR_SEEDLING",
-    "default": "mon_vector_spore",
+    "default": "mon_null",
     "monsters": [
-	{ "monster" : "mon_vector_spore", "freq" : 50, "cost_multiplier" : 1 },
-	{ "monster" : "mon_vector_sprig", "freq" : 5, "cost_multiplier" : 3 }
+	{ "monster" : "mon_vector_spore", "freq" : 100, "cost_multiplier" : 1 },
+	{ "monster" : "mon_vector_sprig", "freq" : 100, "cost_multiplier" : 5 }
+]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_JOLT_BOLTS",
+    "default": "mon_null",
+    "monsters": [
+	{ "monster" : "mon_zombie_jolt_bolt_smol", "freq" : 100, "cost_multiplier" : 1 },
+	{ "monster" : "mon_zombie_jolt_bolt_big", "freq" : 100, "cost_multiplier" : 10 }
 ]
   }
 ]
