@@ -183,5 +183,20 @@
         "phase": "gas",
         "display_items": true,
         "display_field": false
-    }
+    },
+    {
+    "id": "fd_jolt_elec",
+    "//": "Hidden field for spawning purposes of jolt.",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "sparks", "sym": "9", "color": "cyan", "monster_spawn_chance": 100, "monster_spawn_count": 1, "monster_spawn_radius": 1, "monster_spawn_group": "GROUP_JOLT_BOLTS" },
+      { "name": "electric crackle", "color": "cyan", "monster_spawn_chance": 90 },
+      { "name": "electric cloud", "color": "blue", "monster_spawn_chance": 50 }
+    ],
+    "priority": 5,
+    "half_life": "1 turns",
+    "phase": "plasma",
+    "display_items": true,
+    "display_field": false
+  }
 ]
