@@ -5,73 +5,65 @@
         "int_add_val": 1,
         "max_duration": 120,
         "int_decay_step": -1,
-        "int_decay_tick": 120,
+        "int_decay_tick": 15,
         "rating": "bad",
         "name": [
             "Bloodcoated"
         ],
         "desc": [
-            "slightly slowed.",
-            "drastically slowed.",
-            "moderately slowed.",
-            "severely slowed.",
-            "extremely slowed."
+            "Blood splattered.",
+            "Drastically slowed.",
+            "Moderately slowed.",
+            "Severely slowed.",
+            "Extremely slowed."
         ],
         "reduced_desc": ["Your blood coat dries a bit."],
         "apply_message": "You've been blood coated!",
         "remove_message": "Bloodcoat leaves your body!",
-        "base_mods": {
-            "speed_mod": [-3],
-            "dex_mod": [-0.5]
-        },
         "scaling_mods": {
-            "speed_mod": [2.25],
-            "dex_mod": [0.90]
+            "speed_mod": [-2.2],
+            "dex_mod": [-0.3]
         }
     }, {
         "type": "effect_type",
         "id": "unity_bloodslow",
         "max_intensity": 20,
         "int_add_val": 1,
-        "max_duration": 30,
+        "max_duration": 240,
         "int_decay_step": -1,
-        "int_decay_tick": 30,
+        "int_decay_tick": 15,
         "rating": "bad",
         "name": [
             "Bloodbathed"
         ],
         "desc": [
-            "slightly slowed.",
-            "slightly slowed.",
-            "slightly slowed.",
-            "slightly slowed.",
-            "drastically slowed.",
-            "drastically slowed.",
-            "drastically slowed.",
-            "drastically slowed.",
-            "moderately slowed.",
-            "moderately slowed.",
-            "moderately slowed.",
-            "moderately slowed.",
-            "severely slowed.",
-            "severely slowed.",
-            "severely slowed.",
-            "severely slowed.",
-            "extremely slowed.",
-            "extremely slowed.",
-            "extremely slowed.",
-            "extremely slowed."
+            "Blood splattered.",
+            "Slightly slowed.",
+            "Slightly slowed.",
+            "Slightly slowed.",
+            "Drastically slowed.",
+            "Drastically slowed.",
+            "Drastically slowed.",
+            "Drastically slowed.",
+            "Moderately slowed.",
+            "Moderately slowed.",
+            "Moderately slowed.",
+            "Moderately slowed.",
+            "Severely slowed.",
+            "Severely slowed.",
+            "Severely slowed.",
+            "Severely slowed.",
+            "Extremely slowed.",
+            "Extremely slowed.",
+            "Extremely slowed.",
+            "Extremely slowed."
         ],
         "reduced_desc": ["Your thick blood coat dries a bit."],
         "apply_message": "You've been blood coated!",
         "remove_message": "Thick bloodcoat leaves your body!",
-        "base_mods": {
-            "speed_mod": [-1],
-            "dex_mod": [-0.5]
-        },
         "scaling_mods": {
-            "speed_mod": [2.28],
-            "dex_mod": [0.28]
+            "speed_mod": [-2.2],
+            "dex_mod": [-0.3]
         }
     }, {
         "type": "effect_type",
@@ -115,13 +107,9 @@
         "max_duration": 600,
         "rating": "bad",
         "resist_traits": ["POISRESIST"],
-        "base_mods": {
-            "dex_mod": [-1],
-            "speed_mod": [-3]
-        },
         "scaling_mods": {
-            "dex_mod": [1.55],
-            "speed_mod": [1.15]
+            "dex_mod": [-1.55],
+            "speed_mod": [-1.15]
         }
     }, {
         "type": "effect_type",
@@ -139,11 +127,8 @@
         "max_duration": 600,
         "rating": "bad",
         "resist_traits": ["POISRESIST"],
-        "base_mods": {
-            "int_mod": [-3, -2]
-        },
         "scaling_mods": {
-            "int_mod": [2, 1]
+            "int_mod": [-2, -1.25]
         }
     }, {
         "type": "effect_type",
@@ -194,11 +179,8 @@
         "int_decay_tick": 60,
         "max_duration": 300,
         "rating": "bad",
-        "base_mods": {
-            "int_mod": [-1, -4]
-        },
         "scaling_mods": {
-            "int_mod": [2]
+            "int_mod": [-2]
         }
     }, {
         "type": "effect_type",
@@ -215,14 +197,10 @@
         "int_decay_tick": 30,
         "max_duration": 300,
         "rating": "bad",
-        "base_mods": {
-            "dex_mod": [-2],
-            "speed_mod": [-2.5]
-        },
         "show_in_info": true,
         "scaling_mods": {
-            "dex_mod": [-0.25],
-            "speed_mod": [0.25]
+            "dex_mod": [-1.25],
+            "speed_mod": [-0.90]
         }
     }, {
         "type": "effect_type",
@@ -293,9 +271,9 @@
         "max_duration": 300,
         "rating": "bad",
         "base_mods": {
-            "pain_min": [3],
-            "pain_max": [5],
-            "pain_chance": [15]
+            "pain_min": [1],
+            "pain_max": [2],
+            "pain_chance": [30]
         },
         "scaling_mods": {
             "per_mod": [-0.04],
