@@ -6,18 +6,15 @@
                 "result": "t_vector",
                 "valid_flags": ["DIGGABLE"],
                 "message": "The ground here has been vectorized."
-            },
-            {
+            }, {
                 "result": "t_shrub_vector",
                 "valid_flags": ["SHRUB"],
                 "message": "The shrubs here has been vectorized."
-            },
-            {
+            }, {
                 "result": "t_tree_vector_young",
                 "valid_flags": ["YOUNG"],
                 "message": "The young trees here has been vectorized."
-            },
-            {
+            }, {
                 "result": "t_tree_vector",
                 "valid_flags": ["TREE"],
                 "message": "The trees here has been vectorized."
@@ -35,7 +32,7 @@
         "id": "vectocide",
         "fail_message": "There's no vectorized terrain here to kill.",
         "terrain": [{
-                "result": [ [ "t_dirt", 5 ], "t_grass" ],
+                "result": [["t_dirt", 5], "t_grass"],
                 "valid_flags": ["VECTOR"],
                 "message": "The vector here dies."
             }
