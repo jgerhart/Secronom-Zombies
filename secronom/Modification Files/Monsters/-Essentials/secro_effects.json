@@ -216,12 +216,12 @@
     }, {
         "//": "Unlike fungal infection, this will deal damage you instead of instant death if left alone...",
         "type": "effect_type",
-		"show_in_info": true,
+        "show_in_info": true,
         "id": "vector_infect",
         "apply_memorial_log": "Contracted a vector infection.",
         "remove_memorial_log": "Stopped a vector infection.",
         "miss_messages": [["You feel something sinks deep inside.", 1]],
-        "name": [ "Vector Infection", "Vector Infection", "Vector Infection" ],
+        "name": ["Vector Infection", "Vector Infection", "Vector Infection"],
         "desc": ["You are suffering from a vector infection!\nPharmaceutical drugs doesn't seem to take effect and may require something... juicy."],
         "//": "Subtle hint for anxious ppl.",
         "rating": "bad",
@@ -234,7 +234,7 @@
             "hurt_chance": [21],
             "hurt_tick": [6]
         },
-        
+
         "scaling_mods": {
             "speed_mod": [0.75],
             "str_mod": [-0.90],
@@ -284,9 +284,17 @@
         "type": "effect_type",
         "id": "deaf",
         "//": "Make players unaffected if they're deaf.",
-        "removes_effects": [
-            "secro_dissed"
-        ],
         "blocks_effects": ["secro_dissed"]
+    }, {
+        "type": "effect_type",
+        "id": "secro_uruxis_shroud",
+        "name": ["Shadow Mend"],
+        "desc": ["Shadow enshrouds you that heals and protects."],
+        "show_in_info": true,
+        "base_mods": {
+            "material_thickness": [8],
+            "environmental_protection": [4],
+            "speed_mod": [-30]
+        }
     }
 ]
