@@ -1,5 +1,6 @@
 [{
-		"//": "Fields are now customizable and thanks to the devs for this feature!", 
+        "//": "Fields are now customizable and thanks to the devs for this feature!",
+        "//": "Spawning monsters with fields has a delay for approximately 10 turns. This is a bug (that I did not report, still) that spawns all monster in an instance.",
         "id": "fd_portal_carrion",
         "type": "field_type",
         "intensity_levels": [{
@@ -7,7 +8,7 @@
                 "color": "dark_red",
                 "sym": "*",
                 "light_emitted": 5,
-                "monster_spawn_chance": 40,
+                "monster_spawn_chance": 50,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_CARRIONS"
@@ -21,7 +22,7 @@
             }, {
                 "color": "light_red",
                 "transparent": false,
-                "monster_spawn_chance": 15,
+                "monster_spawn_chance": 10,
                 "monster_spawn_count": 3,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_CARRIONS",
@@ -44,7 +45,7 @@
                 "color": "dark_blue",
                 "sym": "*",
                 "light_emitted": 5,
-                "monster_spawn_chance": 40,
+                "monster_spawn_chance": 50,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_VECTORS"
@@ -58,7 +59,7 @@
             }, {
                 "color": "light_blue",
                 "transparent": false,
-                "monster_spawn_chance": 15,
+                "monster_spawn_chance": 10,
                 "monster_spawn_count": 3,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_VECTORS",
@@ -135,10 +136,10 @@
                 "effect_min_duration": 15,
                 "effect_max_duration": 30
             }, {}, {
-	            "name": "vector seeds",
+                "name": "vector seeds",
                 "color": "blue",
                 "light_emitted": 3,
-                "monster_spawn_chance": 5,
+                "monster_spawn_chance": 25,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_VECTOR_SEEDLING",
@@ -164,9 +165,9 @@
         "type": "field_type",
         "intensity_levels": [{
                 "name": "resonant voice",
-				"sym": "~",
+                "sym": "~",
                 "color": "gray",
-				"inside_immune": false,
+                "inside_immune": false,
                 "effect_id": "secro_dissed",
                 "effect_min_duration": 4,
                 "effect_max_duration": 4
@@ -177,26 +178,77 @@
         "immunity_data": {
             "body_part_env_resistance": [["HEAD", 5]]
         },
-		"gas_absorption_factor": 10,
+        "gas_absorption_factor": 10,
         "percent_spread": 5,
         "dirty_transparency_cache": true,
         "phase": "gas",
         "display_items": true,
         "display_field": false
-    },
-    {
-    "id": "fd_jolt_elec",
-    "//": "Hidden field for spawning purposes of jolt.",
-    "type": "field_type",
-    "intensity_levels": [
-      { "name": "sparks", "sym": "9", "color": "cyan", "monster_spawn_chance": 100, "monster_spawn_count": 1, "monster_spawn_radius": 1, "monster_spawn_group": "GROUP_JOLT_BOLTS" },
-      { "name": "electric crackle", "color": "cyan", "monster_spawn_chance": 90 },
-      { "name": "electric cloud", "color": "blue", "monster_spawn_chance": 50 }
-    ],
-    "priority": 5,
-    "half_life": "1 turns",
-    "phase": "plasma",
-    "display_items": true,
-    "display_field": false
-  }
+    }, {
+        "id": "fd_jolt_elec",
+        "//": "Hidden field for spawning purposes of jolt. Has to be its electric diacharges, but it doesn't work.",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "sparks",
+                "sym": "9",
+                "color": "cyan",
+                "monster_spawn_chance": 150,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_JOLT_BOLTS"
+            }, {
+                "name": "electric crackle",
+                "color": "cyan",
+                "monster_spawn_chance": 125
+            }, {
+                "name": "electric cloud",
+                "color": "blue",
+                "monster_spawn_chance": 75
+            }
+        ],
+        "priority": 5,
+        "half_life": "1 turns",
+        "phase": "plasma",
+        "display_items": true,
+        "display_field": false
+    }, {
+        "//": "Uruxis picks from the GROUP_ZOMBIE monstergroup to summon.",
+        "id": "fd_uruxis_normal",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "airlock",
+                "sym": "0",
+                "color": "black",
+                "monster_spawn_chance": 750,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_ZOMBIE"
+            }
+        ],
+        "priority": 7,
+        "half_life": "1 turns",
+        "phase": "gas",
+        "display_items": true,
+        "display_field": false
+    }, {
+        "//": "Uruxis casts a spell to spread the field in a wide range, and at this range, summoning chance is very high.",
+        "id": "fd_uruxis_combat",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "intense airlock",
+                "sym": "0",
+                "color": "black",
+                "monster_spawn_chance": 100,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_ZOMBIE"
+            }
+        ],
+        "priority": 8,
+        "half_life": "1 turns",
+        "phase": "gas",
+        "wandering_field": "fd_uruxis_normal",
+        "display_items": true,
+        "display_field": false
+    }
 ]
