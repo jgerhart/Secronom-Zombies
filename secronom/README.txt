@@ -13,7 +13,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 #  REWORKS ON TILESET (frequent, or whenever I can)
 #  REMOVED LUA VERSION (we have spells and it's meant to replace the LUA attacks)
 
-#+ CHAOS ZEDS REWORKED (jolt, fake zombie. They're zed mutants now)
+#+ CHAOS ZEDS REWORKED (jolt, fake zombie, uruxis. Known as zed mutants now)
 
 +  VECTOR IMPROVEMENTS (infection of organic terrains, haze infects the creatures)
 +  ZED MUTANT (dissonant screamer)
