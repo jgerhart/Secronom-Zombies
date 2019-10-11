@@ -12,8 +12,8 @@
     "type": "emit",
     "field": "fd_acid",
     "intensity": 1,
-    "qty": 10,
-    "chance": 30
+    "qty": 2,
+    "chance": 10
   },
   {
     "id": "secro_zoth",
