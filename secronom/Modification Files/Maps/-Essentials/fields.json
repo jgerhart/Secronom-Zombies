@@ -250,5 +250,30 @@
         "wandering_field": "fd_uruxis_normal",
         "display_items": true,
         "display_field": false
-    }
+    },
+    {
+    "id": "fd_nix_fear",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "loathful pressence",
+        "sym": "0",
+        "dangerous": true,
+        "effect_id": "secro_nix_fear",
+        "effect_body_part": "HEAD",
+        "effect_min_duration": "1 seconds",
+        "effect_max_duration": "2 seconds"
+      }
+    ],
+    "decay_amount_factor": 5,
+    "gas_absorption_factor": 10,
+    "dirty_transparency_cache": true,
+    "percent_spread": 25,
+    "immunity_data": { "body_part_env_resistance": [ [ "EYES", 10 ] ] },
+    "priority": 8,
+    "half_life": "2 seconds",
+    "phase": "gas",
+    "accelerated_decay": true,
+    "display_field": false
+  }
 ]
