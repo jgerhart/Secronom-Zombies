@@ -240,6 +240,24 @@
             }
         ]
     }, {
+        "name": "GROUP_BLADED_UPGRADEX",
+        "type": "monstergroup",
+        "default": "mon_null",
+        "monsters": [{
+                "monster": "mon_zombie_sharpblade",
+                "freq": 100,
+                "cost_multiplier": 1
+            }, {
+                "monster": "mon_zombie_serratedblade",
+                "freq": 100,
+                "cost_multiplier": 1
+            }, {
+                "monster": "mon_zombie_razor",
+                "freq": 100,
+                "cost_multiplier": 10
+            }
+        ]
+    }, {
         "name": "GROUP_ZSPIDER_UPGRADE",
         "type": "monstergroup",
         "default": "mon_null",
