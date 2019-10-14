@@ -1,4 +1,4 @@
-[{
+{
         "type": "MOD_INFO",
         "ident": "secronom",
         "name": "Secronom",
@@ -7,4 +7,3 @@
         "category": "creatures",
         "dependencies": ["dda"]
     }
-]
