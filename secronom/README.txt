@@ -8,15 +8,15 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.6 - Currently, the plan is to provide a subtle lore and expand the information later on. Will add some new contents too. <--
+--> V1.6 - Currently, the plan is to add more miscellaneous zombies to complete both early and mid-game zed bestiary. I may provide a subtle lore later on... <--
 
 #  REWORKS ON TILESET (frequent, or whenever I can)
 #  REMOVED LUA VERSION (we have spells and it's meant to replace the LUA attacks)
 
-#+ CHAOS ZEDS REWORKED (jolt, fake zombie, uruxis. Known as zed mutants now)
+#+ CHAOS ZEDS REWORKED (jolt, fake zombie, uruxis, fleshmonger. Known as zed mutants now)
 
 +  VECTOR IMPROVEMENTS (infection of organic terrains, haze infects the creatures)
-+  ZED MUTANT (dissonant screamer)
++  ZED MUTANTS (dissonant screamer, clinger, nocturne)
 
 
 	=>PAST UPDATES<=
@@ -27,7 +27,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 #+ MAGIC OVERHAUL (unique spells for monsters to cast)
 
-+  7 GUNS (rare, milspec guns)
++  GUNS (7 rare, milspec guns)
 +  UNIFIER, LYING BODY (final upgrade path)
 +  WANDERING ABERRATIONS (flesh weaver, maneater)
 +  ZED MUTANTS (nautilus, stray - nature, corrosive)
@@ -40,7 +40,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 
 
---> v1.4 - Focused on recreating the main location of the mod, making it bigger, loot-worthy and more alive with unique dwellers inside. <--
+--> v1.4 - Focused on recreating the main location of the mod, making it bigger, loot-worthy and more alive with unique dwellers inside. Also introduced the flesh cavern - a hive for crimson horrors <--
 
 +  FAILED SPECIMEN (squirtler)
 +  BOW CREATURES (kaxix, axxuros, exios, drexx and epixo)
@@ -53,7 +53,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 
 
---> v1.3 - Focused on completing the zombie bestiary by adding the final upgrade counterparts and the last 3 LUA-based monsters. <--
+--> v1.3 - Focused on expanding the city zed bestiary by adding the final upgrade counterparts and the last 3 LUA-based monsters. <--
 
 +  CHAOS ZEDS (fleshmonger, faux, uruxis)
 +  INSECTOID MUTANT (worm)
