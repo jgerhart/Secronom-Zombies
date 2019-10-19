@@ -8,21 +8,21 @@
                 "color": "dark_red",
                 "sym": "*",
                 "light_emitted": 5,
-                "monster_spawn_chance": 50,
+                "monster_spawn_chance": 250,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_CARRIONS"
             }, {
                 "color": "red",
                 "light_emitted": 10,
-                "monster_spawn_chance": 25,
+                "monster_spawn_chance": 100,
                 "monster_spawn_count": 2,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_CARRIONS"
             }, {
                 "color": "light_red",
                 "transparent": false,
-                "monster_spawn_chance": 10,
+                "monster_spawn_chance": 25,
                 "monster_spawn_count": 3,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_CARRIONS",
@@ -45,21 +45,21 @@
                 "color": "dark_blue",
                 "sym": "*",
                 "light_emitted": 5,
-                "monster_spawn_chance": 50,
+                "monster_spawn_chance": 250,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_VECTORS"
             }, {
                 "color": "blue",
                 "light_emitted": 10,
-                "monster_spawn_chance": 25,
+                "monster_spawn_chance": 100,
                 "monster_spawn_count": 2,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_VECTORS"
             }, {
                 "color": "light_blue",
                 "transparent": false,
-                "monster_spawn_chance": 10,
+                "monster_spawn_chance": 25,
                 "monster_spawn_count": 3,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_VECTORS",
