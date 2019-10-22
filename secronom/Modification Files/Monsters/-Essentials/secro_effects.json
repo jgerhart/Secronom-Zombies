@@ -84,8 +84,8 @@
         "pain_sizing": true,
         "main_parts_only": true,
         "base_mods": {
-            "pain_min": [3],
-            "pain_chance": [400, 300, 200]
+            "pain_min": [1],
+            "pain_chance": [50]
         },
         "scaling_mods": {
             "pain_min": [1.30]
@@ -225,15 +225,14 @@
         "//": "Subtle hint for anxious ppl.",
         "rating": "bad",
         "max_intensity": 3,
+        "max_duration": 9600,
         "resist_traits": ["POISRESIST"],
         "base_mods": {
-            "speed_mod": [-3, -6, -10],
             "hurt_min": [1],
-            "hurt_max": [1, 1, 2],
-            "hurt_chance": [21, 21, 16],
-            "hurt_tick": [11, 11, 6]
+            "hurt_max": [2],
+            "hurt_chance": [21],
+            "hurt_tick": [6]
         },
-
         "scaling_mods": {
             "str_mod": [-0.90],
             "per_mod": [-0.82],
@@ -300,7 +299,7 @@
     "id": "secro_nix_fear",
     "name": [ "Afraid", "Scared", "Frightened", "Terrified", "Horrified" ],
     "desc": [ "The dreadful pressence of the nix leaves your body shaking." ],
-    "apply_message": "The nix is eating your mental stability!",
+    "apply_message": "The nix eats away your mental stability!",
     "remove_message": "You withdraw from fear.",
     "int_add_val": 1,
     "int_dur_factor": "12 seconds",
@@ -309,6 +308,10 @@
     "int_decay_tick": 24,
     "max_duration": 120,
     "rating": "bad",
-    "base_mods": { "int_mod": [-1, -1, -2, -3, -7], "dex_mod": [ 0, 0, -1, -2, -4 ], "vomit_chance": [ 100, 85, 60, 35, 10 ], "speed_mod": [ -1, -3, -5, -10, -25 ] }
+    "scaling_mods": {
+            "per_mod": [-0.54],
+            "dex_mod": [-0.22],
+            "speed_mod": [-1.40]
+        }
   }
 ]
