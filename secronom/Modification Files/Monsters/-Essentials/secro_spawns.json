@@ -58,7 +58,8 @@
             },
             { "monster": "mon_zombie_nocturne", "freq": 10, "cost_multiplier": 40, "starts": 228, "conditions": [ "DUSK", "NIGHT" ] },
             { "monster": "mon_zombie_nix", "freq": 10, "cost_multiplier": 25, "starts": 228 },
-            { "monster": "mon_zombie_fleshmonger", "freq": 10, "cost_multiplier": 50, "starts": 228 }
+            { "monster": "mon_zombie_fleshmonger", "freq": 10, "cost_multiplier": 50, "starts": 228 },
+            { "monster": "mon_zombie_gorepit", "freq": 10, "cost_multiplier": 65, "starts": 300 }
         ]
     }, {
         "type": "monstergroup",
@@ -134,7 +135,8 @@
             },
 			{ "monster": "mon_zombie_nocturne", "freq": 10, "cost_multiplier": 40, "starts": 228, "conditions": [ "DUSK", "NIGHT" ] },
             { "monster": "mon_zombie_nix", "freq": 10, "cost_multiplier": 25, "starts": 228 },
-            { "monster": "mon_zombie_fleshmonger", "freq": 10, "cost_multiplier": 50, "starts": 228 }
+            { "monster": "mon_zombie_fleshmonger", "freq": 10, "cost_multiplier": 50, "starts": 228 },
+            { "monster": "mon_zombie_gorepit", "freq": 10, "cost_multiplier": 65, "starts": 300 }
         ]
     }, {
         "name": "GROUP_MALL",
@@ -519,5 +521,9 @@
                 "cost_multiplier": 10
             }
         ]
+    }, {
+        "type": "monstergroup",
+        "name": "GROUP_GORE_TENT",
+        "default": "mon_zombie_gorepit_tent"
     }
 ]
