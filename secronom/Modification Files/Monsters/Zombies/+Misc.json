@@ -204,7 +204,7 @@
         "vision_day": 10,
         "luminance": 4,
         "emit_fields": ["emit_bolt_crackle_smol"],
-        "special_attacks": [["DISAPPEAR", 25]],
+        "special_attacks": [["DISAPPEAR", 75]],
         "special_when_hit": ["ZAPBACK", 20],
         "death_function": ["DISINTEGRATE"],
         "flags": ["SEES", "PACIFIST", "ACIDPROOF", "ELECTRIC", "NO_BREATHE", "FLIES"]
@@ -234,7 +234,7 @@
         "dodge": 6,
         "phase": "GAS",
         "emit_fields": ["emit_bolt_crackle_big"],
-        "special_attacks": [["DISAPPEAR", 35]],
+        "special_attacks": [["DISAPPEAR", 150]],
         "special_when_hit": ["ZAPBACK", 50],
         "death_function": ["DISINTEGRATE"],
         "flags": ["SEES", "PACIFIST", "ACIDPROOF", "ELECTRIC", "NO_BREATHE", "FLIES"]
@@ -661,13 +661,13 @@
         "volume": "1320 L",
         "weight": 2430000,
     "hp": 2120,
-    "speed": 15,
+    "speed": 5,
     "material": [ "flesh", "bone" ],
     "symbol": "&",
     "color": "magenta_yellow",
     "aggression": 10,
     "morale": 10,
-    "//": "15 turns, so that when it attacks, it'll takes some time to become passive again. Note that it deals an extremely high bash damage.",
+    "//": "15 turns, so that when it attacks, it'll takes some time to become passive again. It is a support, but note that it deals extremely high bash damage.",
     "attack_cost": 1525,
     "melee_skill": 10,
     "melee_dice": 8,
@@ -706,6 +706,247 @@
       "REVIVES",
       "PLASTIC",
       "REGENERATES_1"
+    ]
+  }, {
+        "//": "Summoner-type monster whose purpose is to send out minions using field emissions. Its basically a 3-tile wide monster: the center is its hitbox and the adjacent `mouth` causes damage when a creature steps on it.",
+        "//": "Spawns in cities after a year.",
+        "id": "mon_zombie_gorepit",
+        "type": "MONSTER",
+        "name": "gorepit",
+        "description": "An eerie pit composed mostly of decaying flesh, with a distinctive huge gap revealing thousands of bones and other organic materials aligned in its wall. Thick, sinewy webbing supports a central bulbous orb that undulates at a steady rate.",
+        "default_faction": "zombie",
+        "species": ["ZOMBIE"],
+        "diff": 50,
+        "volume": "69420 L",
+        "weight": 6669420,
+        "hp": 2620,
+        "speed": 50,
+        "material": ["flesh","bone"],
+        "symbol": "Y",
+        "color": "red",
+        "aggression": 100,
+        "morale": 100,
+        "emit_fields": ["emit_gorepit_main","emit_gorepit_edge","emit_gorepit_passive_summon"],
+        "melee_skill": 0,
+        "melee_dice": 0,
+        "melee_dice_sides": 0,
+        "melee_cut": 0,
+        "armor_bash": 1,
+        "armor_stab": 2,
+        "armor_cut": 4,
+        "vision_day": 13,
+        "vision_night": 13,
+        "harvest": "exempt",
+        "special_attacks": [{
+                "type": "spell",
+                "spell_id": "mon_zombie_gorepit_spawn_target",
+                "cooldown": 38,
+                "monster_message": "<color_red>You feel the ground shaking as it originates from %1$s!</color>\n%1$s sends a defeaning screech!"
+            }
+        ],
+        "death_function": ["DISINTEGRATE"],
+        "//": "The orb acts as its head, so headshot is allowed.",
+        "flags": [
+            "SEES",
+            "WARM",
+            "IMMOBILE",
+            "POISON",
+            "NO_BREATHE",
+            "PRIORITIZE_TARGETS",
+            "FLIES"
+        ]
+    }, {
+        "//": "Gorepit's main damage dealer.",
+        "id": "mon_zombie_gorepit_tent",
+        "type": "MONSTER",
+        "name": "giant tendril",
+        "description": "A stout, meandering tendril, consisting of flesh and bones. Its vein glows in sync with the orb.",
+        "default_faction": "zombie",
+        "species": ["ZOMBIE"],
+        "diff": 10,
+        "volume": "420 L",
+        "weight": 690000,
+        "hp": 210,
+        "speed": 50,
+        "material": ["flesh","bone"],
+        "symbol": "?",
+        "color": "red",
+        "aggression": 100,
+        "morale": 100,
+        "attack_cost": 575,
+        "melee_skill": 8,
+        "melee_dice": 4,
+        "melee_dice_sides": 6,
+        "melee_cut": 0,
+        "armor_bash": 1,
+        "armor_stab": 1,
+        "armor_cut": 2,
+        "vision_day": 13,
+        "vision_night": 13,
+        "harvest": "exempt",
+        "special_attacks": [{
+                "type": "spell",
+                "spell_id": "mon_zombie_gorepit_tent_target_random",
+                "cooldown": 14,
+                "monster_message": "%1$s slams at %3$s!"
+            },
+            ["DISAPPEAR", 200]
+        ],
+        "death_function": ["DISINTEGRATE"],
+        "flags": [
+            "SEES",
+            "WARM",
+            "IMMOBILE",
+            "POISON",
+            "NO_BREATHE",
+            "NOHEAD",
+            "PRIORITIZE_TARGETS"
+        ]
+    }, {
+    "//": "Aggro-type zed, both durable and lethal. Unlike other zed mutants, this one's very dependant on healing for itself whilst dealing damage, in addition to its unique debuff-inflicting acid.",
+    "//": "Spawns in cities after a year.",
+    "id": "mon_zombie_cordev",
+    "type": "MONSTER",
+    "name": "corrupted devourer",
+    "description": "A colossal, humanoid corpse, distinct to its seemingly volatile, torsal lump, a headless top and a set of arm biters with swollen eyes united into them. Drools corrupted acid, its great desire for flesh has sent its hunger beyond limitations, thus reaping and feasting upon its fellow undeads has became its norm.",
+    "default_faction": "zombie",
+    "bodytype": "human",
+    "species": [ "ZOMBIE", "ABERRATION" ],
+        "volume": "970 L",
+        "weight": 1125000,
+    "hp": 1325,
+    "speed": 65,
+    "material": [ "flesh", "bone" ],
+    "symbol": "⨀",
+    "color": "magenta_yellow",
+    "aggression": 100,
+    "morale": 100,
+    "attack_cost": 225,
+    "melee_skill": 10,
+    "melee_dice": 4,
+    "melee_dice_sides": 8,
+    "melee_cut": 6,
+    "armor_bash": 20,
+    "armor_cut": 13,
+    "armor_stab": 15,
+    "vision_day": 15,
+    "vision_night": 5,
+    "harvest": "zombie",
+    "special_attacks": [
+    {
+                "type": "spell",
+                "spell_id": "mon_zombie_cordev_target_random",
+                "cooldown": 9,
+                "monster_message": "%1$s performs a peculiar motion!"
+            },
+            {
+                "cooldown": 15,
+                "damage_max_instance": [{
+                        "amount": 12,
+                        "armor_multiplier": 0.3,
+                        "armor_penetration": 10,
+                        "damage_type": "bash"
+                    },
+					{
+                        "amount": 12,
+                        "armor_multiplier": 0.6,
+                        "armor_penetration": 20,
+                        "damage_type": "stab"
+                    }
+                ],
+                "effects": [{
+                        "bp": "ARM_L",
+                        "duration": 30,
+                        "id": "grabbed"
+                    },
+                    {
+                        "bp": "ARM_R",
+                        "duration": 30,
+                        "id": "grabbed"
+                    }
+                ],
+                "type": "bite"
+            }
+    ],
+    "death_function": [ "NORMAL" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "LOUDMOVES",
+      "ACIDPROOF",
+      "NOHEAD",
+      "DESTROYS",
+      "PUSH_MON",
+      "ATTACKMON",
+      "PUSH_VEH",
+      "REVIVES"
+    ]
+  }, {
+    "//": "Aggro-type zed aberration, extremely durable and full of deadly capabilities, unique to its drastic movement speed gain as long as it sees a target. One of the true end-game monsters, so be prepared for it.",
+    "//": "Spawns in cities after a year, but unsure if it shows up.",
+    "id": "mon_zombie_fleshysnaky",
+    "type": "MONSTER",
+    "name": "flesilisk",
+    "description": "A massive conglomeration of thick, gangrenous flesh, forming a snake-like figurine with its head resembling a forlorn dragon. Terrifyingly disastrous, its entire body is covered in bony scales, which in every gap is tipped with spikes of similar material. Yet its great lack of intuitive perception causes it to easily become enraged by the time it senses a prey, whether it is an undead or not.",
+    "default_faction": "zombie",
+    "bodytype": "snake",
+    "species": [ "ZOMBIE", "ABERRATION" ],
+        "volume": "3225 L",
+        "weight": 4300500,
+    "hp": 3350,
+    "speed": 70,
+    "material": [ "flesh", "bone" ],
+    "symbol": "⩚",
+    "color": "magenta",
+    "aggression": 100,
+    "morale": 100,
+    "attack_cost": 675,
+    "melee_skill": 10,
+    "melee_dice": 6,
+    "melee_dice_sides": 10,
+    "melee_cut": 6,
+    "armor_bash": 30,
+    "armor_cut": 34,
+    "armor_stab": 26,
+    "vision_day": 23,
+    "vision_night": 3,
+    "harvest": "zombie",
+    "special_attacks": [
+            {
+                "cooldown": 21,
+                "damage_max_instance": [{
+                        "amount": 32,
+                        "armor_penetration": 5,
+                        "damage_type": "bash"
+                    },
+					{
+                        "amount": 16,
+                        "armor_penetration": 30,
+                        "damage_type": "stab"
+                    }
+                ],
+                "type": "bite"
+            }
+    ],
+    "death_function": [ "NORMAL" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "LOUDMOVES",
+      "NOHEAD",
+      "DESTROYS",
+      "PUSH_MON",
+      "ATTACKMON",
+      "PUSH_VEH",
+      "REVIVES"
     ]
   }, {
         "//": "Aggro-type zed. This zombie obtains various abilities and spells (from nature, etc.).",
