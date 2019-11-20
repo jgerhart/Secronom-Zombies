@@ -8,21 +8,21 @@
                 "color": "dark_red",
                 "sym": "*",
                 "light_emitted": 5,
-                "monster_spawn_chance": 250,
+                "monster_spawn_chance": 1000,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_CARRIONS"
             }, {
                 "color": "red",
                 "light_emitted": 10,
-                "monster_spawn_chance": 100,
+                "monster_spawn_chance": 500,
                 "monster_spawn_count": 2,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_CARRIONS"
             }, {
                 "color": "light_red",
                 "transparent": false,
-                "monster_spawn_chance": 25,
+                "monster_spawn_chance": 100,
                 "monster_spawn_count": 3,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_CARRIONS",
@@ -45,21 +45,21 @@
                 "color": "dark_blue",
                 "sym": "*",
                 "light_emitted": 5,
-                "monster_spawn_chance": 250,
+                "monster_spawn_chance": 1000,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_VECTORS"
             }, {
                 "color": "blue",
                 "light_emitted": 10,
-                "monster_spawn_chance": 100,
+                "monster_spawn_chance": 500,
                 "monster_spawn_count": 2,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_VECTORS"
             }, {
                 "color": "light_blue",
                 "transparent": false,
-                "monster_spawn_chance": 25,
+                "monster_spawn_chance": 100,
                 "monster_spawn_count": 3,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_VECTORS",
@@ -139,7 +139,7 @@
                 "name": "vector seeds",
                 "color": "blue",
                 "light_emitted": 3,
-                "monster_spawn_chance": 25,
+                "monster_spawn_chance": 100,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_VECTOR_SEEDLING",
@@ -173,7 +173,7 @@
                 "effect_max_duration": 4
             }
         ],
-        "priority": 6,
+        "priority": 0,
         "half_life": "6 seconds",
         "immunity_data": {
             "body_part_env_resistance": [["HEAD", 5]]
@@ -186,65 +186,65 @@
         "display_field": false
     }, {
         "id": "fd_jolt_elec",
-        "//": "Hidden field for spawning purposes of jolt. Has to be its electric diacharges, but it doesn't work.",
+        "//": "Hidden field for spawning purposes of jolt. Has to be its damaging electric discharges, but it doesn't work.",
         "type": "field_type",
         "intensity_levels": [{
                 "name": "sparks",
                 "sym": "9",
                 "color": "cyan",
-                "monster_spawn_chance": 150,
+                "monster_spawn_chance": 500,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
                 "monster_spawn_group": "GROUP_JOLT_BOLTS"
             }, {
                 "name": "electric crackle",
                 "color": "cyan",
-                "monster_spawn_chance": 125
+                "monster_spawn_chance": 250
             }, {
                 "name": "electric cloud",
                 "color": "blue",
-                "monster_spawn_chance": 75
+                "monster_spawn_chance": 100
             }
         ],
-        "priority": 5,
+        "priority": 0,
         "half_life": "1 turns",
         "phase": "plasma",
         "display_items": true,
         "display_field": false
     }, {
-        "//": "Uruxis picks from the GROUP_ZOMBIE monstergroup to summon.",
+        "//": "Uruxis picks from the GROUP_ZOMBIE monstergroup to summon passively.",
         "id": "fd_uruxis_normal",
         "type": "field_type",
         "intensity_levels": [{
                 "name": "airlock",
                 "sym": "0",
                 "color": "black",
-                "monster_spawn_chance": 750,
+                "monster_spawn_chance": 5000,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
                 "monster_spawn_group": "GROUP_ZOMBIE"
             }
         ],
-        "priority": 7,
+        "priority": 0,
         "half_life": "1 turns",
         "phase": "gas",
         "display_items": true,
         "display_field": false
     }, {
-        "//": "Uruxis casts a spell to spread the field in a wide range, and at this range, summoning chance is very high.",
+        "//": "Uruxis casts a spell to spread this field in a wide range, and at this range, summoning chance is much higher.",
         "id": "fd_uruxis_combat",
         "type": "field_type",
         "intensity_levels": [{
                 "name": "intense airlock",
                 "sym": "0",
                 "color": "black",
-                "monster_spawn_chance": 100,
+                "monster_spawn_chance": 1000,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
                 "monster_spawn_group": "GROUP_ZOMBIE"
             }
         ],
-        "priority": 8,
+        "priority": 0,
         "half_life": "1 turns",
         "phase": "gas",
         "wandering_field": "fd_uruxis_normal",
@@ -270,10 +270,105 @@
     "dirty_transparency_cache": true,
     "percent_spread": 25,
     "immunity_data": { "body_part_env_resistance": [ [ "EYES", 10 ] ] },
-    "priority": 8,
+    "priority": 0,
     "half_life": "2 seconds",
     "phase": "gas",
     "accelerated_decay": true,
     "display_field": false
+  },
+  {
+    "id": "fd_gorepit_center",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "gorepit orb",
+        "sym": "o",
+        "dangerous": true
+      }
+    ],
+    "dirty_transparency_cache": true,
+    "priority": 2,
+    "half_life": "1 seconds",
+    "phase": "solid",
+    "display_items": false,
+    "display_field": false
+  },
+  {
+    "id": "fd_gorepit_wall",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "gorepit edge",
+        "sym": "#",
+        "dangerous": true,
+        "color": "red",
+        "effect_id": "secro_gorepit_wall_dmg",
+        "effect_body_part": "LEG_R",
+        "effect_min_duration": "1 seconds",
+        "effect_max_duration": "1 seconds"
+      }
+    ],
+    "dirty_transparency_cache": true,
+    "immunity_data": { "body_part_env_resistance": [ [ "LEG_L", 25 ] ] },
+    "priority": 1,
+    "half_life": "1 seconds",
+    "phase": "solid",
+    "display_items": false,
+    "display_field": true
+  },
+  {
+        "id": "fd_gorepit_normal",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "light earthquake",
+                "monster_spawn_chance": 2500,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_GORE_TENT"
+            }
+        ],
+        "priority": 0,
+        "half_life": "1 turns",
+        "phase": "gas",
+        "display_items": true,
+        "display_field": false
+    },
+  {
+        "//": "Similar case to uruxis.",
+        "id": "fd_gorepit_combat",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "earthquake",
+                "sym": "0",
+                "monster_spawn_chance": 1000,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_GORE_TENT"
+            }
+        ],
+        "priority": 0,
+        "half_life": "5 turns",
+        "phase": "gas",
+        "display_items": true,
+        "display_field": false
+    },
+    {
+    "id": "fd_cordev_corrupt_acid",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "corrupted acid splatter", "sym": "5", "color": "dark_gray", "dangerous": true, "effect_id": "secro_cordev_corrupt",
+        "effect_body_part": "LEG_R",
+        "effect_min_duration": "1 seconds",
+        "effect_max_duration": "1 seconds" },
+      { "name": "corrupted acid streak" },
+      { "name": "pool of corrupted acid", "color": "gray", "effect_max_duration": "2 seconds" }
+    ],
+    "immunity_data": { "traits": [ "ACIDPROOF" ] },
+    "underwater_age_speedup": "2 minutes",
+    "has_acid": true,
+    "priority": 2,
+    "half_life": "2 minutes",
+    "phase": "liquid",
+    "display_field": true
   }
 ]
