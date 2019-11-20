@@ -8,15 +8,17 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.6 - Currently, the plan is to add more miscellaneous zombies to complete both early and mid-game zed bestiary. I may provide a subtle lore later on... <--
+--> V1.6 - Currently, the plan is to complete the zed bestiary by adding more end-game zed mutants. <--
 
 #  REWORKS ON TILESET (frequent, or whenever I can)
 #  REMOVED LUA VERSION (we have spells and it's meant to replace the LUA attacks)
 
 #+ CHAOS ZEDS REWORKED (jolt, fake zombie, uruxis, fleshmonger. Known as zed mutants now)
 
-+  VECTOR IMPROVEMENTS (infection of organic terrains, haze infects the creatures)
-+  ZED MUTANTS (dissonant screamer, clinger, nocturne)
++  VECTOR IMPROVEMENTS (infection of organic terrains, haze infects the creatures which deals constant damage)
++  ZED MUTANTS (dissonant screamer, clinger, nocturne, gorepit, corrupted devourer, flesilisk)
++  NOXIOUS EATER (new upgrade path)
+
 
 
 	=>PAST UPDATES<=
@@ -56,7 +58,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 --> v1.3 - Focused on expanding the city zed bestiary by adding the final upgrade counterparts and the last 3 LUA-based monsters. <--
 
 +  CHAOS ZEDS (fleshmonger, faux, uruxis)
-+  INSECTOID MUTANT (worm)
++  INSECTOID MUTANT (noxious eater)
 
 +~ LICKER (new upgrade path, stats tweaked)
 +~ MOUTH, SCOURGE (new and final upgrade paths, stats tweaked)
