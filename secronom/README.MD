@@ -2,16 +2,16 @@
 
 Its mod thread is at the [official forums](https://discourse.cataclysmdda.org/t/secronom-zombies-mod-thread/16211/1).
 
-Mod made from various references, mixed up with random spices! If you're up for an action-packed playthrough or just loves beating zeds, activate this mod and see how they take you down instead!
+Mod made from various references, mixed up with random spices! A mod I've created with its original goal set to imitate the *Dead Frontier*'s zombies... Right now, **Secronom** (name referenced from the game) is a massive creature mod, with vast assortments of monsters. If you're up for an action-packed playthrough or just loves beating weird craps, activate this mod and see how your dark days get even darker!
 
 - This mod will only work with the latest experimental of CDDA. Update your client before using this.
-- This mod is WIP. Some new contents need rebalances and fixes, but expect no fatal crashes to occur.
-- Remember that CDDA is an open source game, so does this mod. Suggestions are welcome!
+- This mod is WIP and fatal crashes may occur... In very rare occasions.
+- For balancing purposes, do not activate **Stats Through Kills** mod.
 
 ## Zombies
 The secronom's main feature - the zeds. They range from weak up to strong variety of them.
 
-* There are 63 zombies in total: 44 city zeds, 9 zed mutants and 10 lab zombies. Only the zombies that spawn individually are counted, while minions and other special zeds aren't.
+* There are 67 zombies in total: 45 city zeds, 12 zed mutants and 10 lab zombies. Only the zombies that spawn individually are counted, while minions and other special zeds aren't.
 
 The evolution sheet is outdated and it is taken down until a new one is created. And due to a technical problem, I can't make monster sprites for the new creatures...
 
@@ -75,8 +75,9 @@ Zombie type with enormous health, extremely fast movement speed and slow, but co
 * _**Black Titan**_
 
 ##### Noxious Eater **!**
-A worm, zombie type that burrows underneath, with biting ability fatal even to heavily armored targets.
+A worm, zombie type that burrows underneath, with fatal biting ability.
 * **Grave Digger**
+* **Writhing Horror**
 
 ##### Swarmer Zombie **!**
 Zombie type that grows stronger as time passes by.
@@ -94,21 +95,27 @@ Zed mutants that are seen rarely in and out of the cities or has special conditi
 
 * _**Clinger**_ **+** - A small, quadruped critter, eager to grope on something.
 
-* _**Nocturne**_ **!** - A deadly nightstalker. Sets of razor claws glow faintly under the shadows. 
+* _**Nocturne**_ **!** - A deadly nightstalker. Sets of razor claws glow faintly under the shadows.
+
+* _**Gorepit**_ **~** - A huge, hollow pit of flesh, with tendrils accompanied by its side.
+
+* _**Corrupted Devourer**_ **!** - A strong, cannibalistic zed who regains health by eating chunks of itself or other's meat.
 
 * _**Jolt**_ **~** - An electric zombie, bolting constant discharges around its area.
 
-* _**Fake**_ **!** - A disguised zed that morphs into a more lethal counterparts when provoked.
+* _**Fake**_ **!** - A disguised zed that morphs into a more lethal counterpart when provoked.
 
-* _**Uruxis**_ **~** - A corpse with the ability to curse an area that can call new zeds out of the ground.
+* _**Uruxis**_ **~** - An eerie corpse with the ability to curse an area that can call new zeds out of the ground.
 
-* _**Fleshmonger**_ **+** - A gigantic flesh blob, with writhing tentacles that pierces to nearby creatures.
+* _**Fleshmonger**_ **+** - A gigantic flesh blob, with writhing tentacles that pierces into nearby creatures.
+
+* _**Flesilisk**_ **!** - A disastrous, serpentine aberration. End-game prize.
 
 ### Lab Zombies
 These are the zombies only exclusive to secronom labs:
 
 ##### Failed Mutants **!**
-Zombies which are completely deformed and are considered *garbages* by the lab...
+Zombies which are completely deformed and are considered *garbages* by the lab.
 
 * **Seeker**
 * **Flora**
@@ -117,7 +124,7 @@ Zombies which are completely deformed and are considered *garbages* by the lab..
 * **Squirtler**
 
 ##### BOWs **!**
-Bio-Organic-Weapons. These are the zombies set for warring purposes, contained within the lab perimeters. They could be wearing suits of power armor...
+Bio-Organic-Weapons. These are the zombies set for warring purposes, contained within the lab perimeters. They could be wearing suits of power armor.
 
 * **Kaxix**
 * **Axxuros**
@@ -126,10 +133,9 @@ Bio-Organic-Weapons. These are the zombies set for warring purposes, contained w
 * **Epixo**
 
 ## Abberations
-
 Vile creatures that are rarely sighted in the wilderness.
 
-* _**Ayenel**_ **!** - A towering abomination, with maximized range of vision. It excels in combat abilities and a baneful eye.
+* _**Ayenel**_ **!** - A towering abomination, with maximized range of vision. It excels in combat abilities and a baneful eye capable of disrupting its target.
 
 * _**Maneater**_ **!** - A triffid, but fleshy. Loathsome in its appearance, it strikes with viscious vines and sucks blood that replenishes its rotten fibers.
 
@@ -145,7 +151,7 @@ Extraterrestrial creatures from uncharted worlds.
 * _**Vector**_ **~** - Vectors are beautiful plant creatures that tends to spread and dominate the living by manipulation.
 
 ## Robots
-Coded for fun!
+Corrupted pieces of machinery on their goal for eradication.
 
 * **Secronom Dragon** **=** - Its enormous body paired with specialized armor platings makes it a formidable foe, with large weaponry system installed to bring wrath on its target.
 
@@ -156,7 +162,7 @@ All monsters aren't designed to kill the target, and thus providing roles to the
 
 * (**+**) *Support* - monsters that are sometimes weak and feeble, but takes the chance to provide benefits for its team, such as stunning enemy targets and healing allies.
 
-* (**~**) *Summoner* - monsters that takes advantage on creating/sending minions. Minions are usually weak, time limited and deals lesser damage, yet a hassle due to them having debuff inflicting abilities.
+* (**~**) *Summoner* - monsters who takes advantage on creating/sending minions. Minions are usually weak, time limited and deals lesser damage, yet a hassle due to them having debuff inflicting abilities.
 
 * (**=**) *Boss* - monsters that are versatile in every situation. Unique and those who opposes extreme danger are considered with this type.
 
