@@ -155,5 +155,26 @@
         "field": "fd_nix_fear",
         "qty": 50,
         "intensity": 1
+    },
+    {
+        "id": "emit_gorepit_main",
+        "type": "emit",
+        "field": "fd_gorepit_center",
+        "qty": 1,
+        "intensity": 1
+    },
+	{
+        "id": "emit_gorepit_edge",
+        "type": "emit",
+        "field": "fd_gorepit_wall",
+        "qty": 8,
+        "intensity": 1
+    },
+	{
+        "id": "emit_gorepit_passive_summon",
+        "type": "emit",
+        "field": "fd_gorepit_normal",
+        "qty": 80,
+        "intensity": 1
     }
 ]
