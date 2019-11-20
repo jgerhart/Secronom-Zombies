@@ -364,6 +364,20 @@
             }
         ]
     }, {
+        "name": "GROUP_NOX_UPGRADE",
+        "type": "monstergroup",
+        "default": "mon_null",
+        "monsters": [{
+                "monster": "mon_zombieworm_gravedigger",
+                "freq": 100,
+                "cost_multiplier": 1
+            }, {
+                "monster": "mon_zombieworm_wriggly",
+                "freq": 100,
+                "cost_multiplier": 5
+            }
+        ]
+    }, {
         "name": "GROUP_BOW_KAXIX",
         "type": "monstergroup",
         "default": "mon_null",
