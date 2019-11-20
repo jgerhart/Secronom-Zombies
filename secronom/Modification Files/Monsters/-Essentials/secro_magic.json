@@ -1527,5 +1527,436 @@
         "max_range": 1,
         "min_duration": 1,
         "max_duration": 1
+    },
+    {
+        "id": "mon_zombieworm_wriggly_tstab",
+        "type": "SPELL",
+        "name": "Tentacle Stab",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sends out a tentacle to pierce at its target, doing a small random stabbing damage. This is casted 4 times.'",
+        "flags": ["SILENT","RANDOM_DAMAGE"],
+        "valid_targets": ["hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_damage": 3,
+        "max_damage": 10,
+        "min_range": 3,
+        "max_range": 3,
+        "damage_type": "stab"
+    },
+    {
+        "id": "mon_zombieworm_wriggly_tflurry",
+        "type": "SPELL",
+        "name": "Tentacle Flurry",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its body, causing its tentacles to stretch outwards in all directions, dealing stabbing damage to all affected creatures.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_damage": 7,
+        "max_damage": 7,
+        "max_aoe": 3,
+        "min_aoe": 3,
+        "damage_type": "stab"
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_zombieworm_wriggly_target",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "extra_effects": [
+			{
+                "id": "mon_zombieworm_wriggly_tstab"
+            },
+            {
+                "id": "mon_zombieworm_wriggly_tstab"
+            },
+            {
+                "id": "mon_zombieworm_wriggly_tflurry"
+            },
+            {
+                "id": "mon_zombieworm_wriggly_tstab"
+            },
+            {
+                "id": "mon_zombieworm_wriggly_tstab"
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_range": 3,
+        "max_range": 3,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_zombie_gorepit_spawn",
+        "name": "Gorespawn",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels itself to send out giant tendrils more actively, causing the ground to resonate which applies unstable footing to all creatures within its range.'",
+        "flags": ["SILENT","RANDOM_DURATION"],
+        "valid_targets": ["ground", "ally", "hostile"],
+        "effect": "target_attack",
+        "effect_str": "downed",
+        "min_aoe": 13,
+        "max_aoe": 13,
+        "field_id": "fd_gorepit_combat",
+        "field_chance": 1,
+        "min_field_intensity": 1,
+        "max_field_intensity": 1,
+        "min_duration": 100,
+        "max_duration": 500
+    }, {
+        "type": "SPELL",
+        "id": "mon_zombie_gorepit_spawn_target",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "extra_effects": [{
+                "id": "mon_zombie_gorepit_spawn",
+                "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_range": 13,
+        "max_range": 13,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "id": "mon_zombie_gorepit_tent_slam",
+        "type": "SPELL",
+        "name": "Tentacle Slam",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster slams itself to the target, dealing bashing damage.'",
+        "flags": ["SILENT","RANDOM_DAMAGE"],
+        "valid_targets": ["hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_damage": 15,
+        "max_damage": 20,
+        "min_range": 3,
+        "max_range": 3,
+        "damage_type": "bash"
+    },
+    {
+        "id": "mon_zombie_gorepit_tent_smash",
+        "type": "SPELL",
+        "name": "Tentacle Smash",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster slams itself to the ground, dealing bashing damage and applying unstable footing to the affected creatures.'",
+        "flags": ["SILENT","RANDOM_DAMAGE"],
+        "valid_targets": ["hostile", "ground"],
+        "effect": "projectile_attack",
+        "effect_str": "downed",
+        "min_damage": 10,
+        "max_damage": 15,
+        "min_range": 3,
+        "max_range": 3,
+        "min_aoe": 2,
+        "max_aoe": 2,
+        "damage_type": "bash",
+        "min_duration": 200,
+        "max_duration": 200
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_zombie_gorepit_tent_target_random",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
+        "extra_effects": [
+			{
+                "id": "mon_zombie_gorepit_tent_slam"
+            },
+            {
+                "id": "mon_zombie_gorepit_tent_slam"
+            },
+            {
+                "id": "mon_zombie_gorepit_tent_slam"
+            },
+            {
+                "id": "mon_zombie_gorepit_tent_smash"
+            }
+        ],
+        "flags": ["SILENT","WONDER"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_range": 3,
+        "max_range": 3,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "id": "mon_zombie_cordev_mincem_heal",
+        "type": "SPELL",
+        "name": "Mincemeat Heal",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster is healed by 100.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["self"],
+        "effect": "projectile_attack",
+        "min_damage": -100,
+        "max_damage": -100,
+        "damage_type": "bio"
+    },
+    {
+        "id": "mon_zombie_cordev_mincem",
+        "type": "SPELL",
+        "name": "Mincemeat",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster cannibalizes, chomping at itself or an adjacent random ally that heals the caster amplified by 150% of the damage dealt.'",
+        "flags": ["SILENT","RANDOM_TARGET"],
+        "valid_targets": ["ally"],
+        "effect": "projectile_attack",
+        "extra_effects": [
+			{
+                "id": "mon_zombie_cordev_mincem_heal","hit_self": true
+            }
+        ],
+        "min_damage": 40,
+        "max_damage": 40,
+        "max_range": 2,
+        "min_range": 2,
+        "damage_type": "bio"
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_zombie_cordev_mincem_target",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "extra_effects": [
+			{
+                "id": "mon_zombie_cordev_mincem"
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_range": 4,
+        "max_range": 4,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "id": "mon_zombie_cordev_whip",
+        "type": "SPELL",
+        "name": "Whipslash",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's volatile lump sends forth a tendril that strikes the target, dealing cutting damage. This is casted 4 times.'",
+        "flags": ["SILENT", "RANDOM_DAMAGE"],
+        "valid_targets": ["hostile"],
+        "effect": "projectile_attack",
+        "min_damage": 5,
+        "max_damage": 13,
+        "max_range": 4,
+        "min_range": 4,
+        "damage_type": "cut"
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_zombie_cordev_whip_target",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "extra_effects": [
+			{
+                "id": "mon_zombie_cordev_whip"
+            },
+            {
+                "id": "mon_zombie_cordev_whip"
+            },
+            {
+                "id": "mon_zombie_cordev_whip"
+            },
+            {
+                "id": "mon_zombie_cordev_whip"
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_range": 4,
+        "max_range": 4,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "id": "mon_zombie_cordev_corrupt",
+        "type": "SPELL",
+        "name": "Corrupt",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's arm biters vomit a corrosive, sticky fluid at the target's area that enslows and constantly damages all creatures who stands on it.'",
+        "flags": ["SILENT", "RANDOM_AOE"],
+        "valid_targets": ["hostile","ground"],
+        "effect": "projectile_attack",
+        "max_range": 6,
+        "min_range": 6,
+        "min_aoe": 2,
+        "max_aoe": 4,
+        "field_id": "fd_cordev_corrupt_acid",
+        "field_chance": 1,
+        "min_field_intensity": 3,
+        "max_field_intensity": 3
+    },
+    {
+        "id": "mon_zombie_cordev_texplode_disable",
+        "type": "SPELL",
+        "name": "Disabled",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster becomes unable to do special moves. (inflicted with blindness till death)'",
+        "flags": ["SILENT"],
+        "valid_targets": ["self"],
+        "effect": "projectile_attack",
+        "effect_str": "blind",
+        "min_duration": 1000000,
+        "max_duration": 1000000
+    },
+    {
+        "id": "mon_zombie_cordev_texplode_dmg",
+        "type": "SPELL",
+        "name": "Core Damage",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster takes massive bio damage, along with the constant damaging and crippling effects from the explosion.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["self"],
+        "effect": "projectile_attack",
+        "effect_str": "secro_cordev_fatal",
+        "min_damage": 200,
+        "max_damage": 200,
+        "min_duration": 1000000,
+        "max_duration": 1000000
+    },
+    {
+        "id": "mon_zombie_cordev_texplode",
+        "type": "SPELL",
+        "name": "Core Explosion",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's torsal lump suddenly explodes, spreading a large area of corrupted acid and deals tremendous bashing damage that affects all creatures within range. Caster then becomes fatally dismembered, rendering it uncapable of doing special moves, greatly enslows and takes constant damage, which is the cause of its end to its life eventually.'",
+        "flags": ["SILENT", "RANDOM_AOE", "RANDOM_DAMAGE"],
+        "valid_targets": ["hostile","ground","ally"],
+        "effect": "projectile_attack",
+        "extra_effects": [
+			{
+                "id": "mon_zombie_cordev_texplode_disable", "hit_self": true
+            },
+            {
+                "id": "mon_zombie_cordev_texplode_dmg", "hit_self": true
+            }
+        ],
+        "min_damage": 30,
+        "max_damage": 40,
+        "min_aoe": 7,
+        "max_aoe": 10,
+        "field_id": "fd_cordev_corrupt_acid",
+        "field_chance": 2,
+        "min_field_intensity": 2,
+        "max_field_intensity": 2
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_zombie_cordev_texplode_target",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "extra_effects": [
+			{
+                "id": "mon_zombie_cordev_texplode", "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_range": 4,
+        "max_range": 4,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+    	"//": "Spammed by the devourer...",
+        "type": "SPELL",
+        "id": "mon_zombie_cordev_target_random",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
+        "extra_effects": [
+			{
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_whip_target"
+            },
+            {
+                "id": "mon_zombie_cordev_whip_target"
+            },
+            {
+                "id": "mon_zombie_cordev_corrupt"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_whip_target"
+            },
+            {
+                "id": "mon_zombie_cordev_whip_target"
+            },
+            {
+                "id": "mon_zombie_cordev_corrupt"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_whip_target"
+            },
+            {
+                "id": "mon_zombie_cordev_whip_target"
+            },
+            {
+                "id": "mon_zombie_cordev_corrupt"
+            },
+            {
+                "id": "mon_zombie_cordev_texplode_target"
+            }
+        ],
+        "flags": ["SILENT","WONDER"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_range": 4,
+        "max_range": 4,
+        "min_duration": 1,
+        "max_duration": 1
     }
 ]
