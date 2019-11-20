@@ -73,7 +73,7 @@
         "id": "mon_insect_saddler",
         "type": "MONSTER",
         "name": "saddler",
-        "description": "This saddler's current age is now capable to create its own acid, with swift limbs allow for quicker assaults!",
+        "description": "A spindy creature of alien origin, tinted in sickly hue. Filled with primal instinct, it is docile unless provoked.",
         "default_faction": "saddler",
         "species": ["INSECT"],
         "volume": "750 ml",
