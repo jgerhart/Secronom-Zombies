@@ -167,14 +167,14 @@
         "id": "emit_gorepit_edge",
         "type": "emit",
         "field": "fd_gorepit_wall",
-        "qty": 8,
+        "qty": 9,
         "intensity": 1
     },
 	{
         "id": "emit_gorepit_passive_summon",
         "type": "emit",
         "field": "fd_gorepit_normal",
-        "qty": 80,
+        "qty": 100,
         "intensity": 1
     }
 ]
