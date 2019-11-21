@@ -114,7 +114,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombieworm_wriggly_target",
                 "cooldown": 40,
-                "monster_message": "%1$s's tentacles pierces through %1$s!"
+                "monster_message": "%1$s's tentacles pierces through %3$s!"
             }, {
                 "type": "bite",
                 "cooldown": 22,
