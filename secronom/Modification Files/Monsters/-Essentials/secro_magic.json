@@ -1796,18 +1796,6 @@
         "max_field_intensity": 3
     },
     {
-        "id": "mon_zombie_cordev_texplode_disable",
-        "type": "SPELL",
-        "name": "Disabled",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster becomes unable to do special moves. (inflicted with blindness till death)'",
-        "flags": ["SILENT"],
-        "valid_targets": ["self"],
-        "effect": "projectile_attack",
-        "effect_str": "blind",
-        "min_duration": 1000000,
-        "max_duration": 1000000
-    },
-    {
         "id": "mon_zombie_cordev_texplode_dmg",
         "type": "SPELL",
         "name": "Core Damage",
@@ -1815,34 +1803,31 @@
         "flags": ["SILENT"],
         "valid_targets": ["self"],
         "effect": "projectile_attack",
-        "effect_str": "secro_cordev_fatal",
+        "effect_str": "secro_cordev_cripple",
         "min_damage": 200,
         "max_damage": 200,
-        "min_duration": 1000000,
-        "max_duration": 1000000
+        "min_duration": 2000,
+        "max_duration": 2000
     },
     {
         "id": "mon_zombie_cordev_texplode",
         "type": "SPELL",
         "name": "Core Explosion",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's torsal lump suddenly explodes, spreading a large area of corrupted acid and deals tremendous bashing damage that affects all creatures within range. Caster then becomes fatally dismembered, rendering it uncapable of doing special moves, greatly enslows and takes constant damage, which is the cause of its end to its life eventually.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's torsal lump suddenly explodes, spreading a large area of corrupted acid and deals tremendous bashing damage that affects all creatures within range. Caster then becomes crippled, rendering it unable to move for a long time.'",
         "flags": ["SILENT", "RANDOM_AOE", "RANDOM_DAMAGE"],
         "valid_targets": ["hostile","ground","ally"],
         "effect": "projectile_attack",
         "extra_effects": [
-			{
-                "id": "mon_zombie_cordev_texplode_disable", "hit_self": true
-            },
             {
                 "id": "mon_zombie_cordev_texplode_dmg", "hit_self": true
             }
         ],
-        "min_damage": 30,
+        "min_damage": 25,
         "max_damage": 40,
-        "min_aoe": 7,
+        "min_aoe": 6,
         "max_aoe": 10,
         "field_id": "fd_cordev_corrupt_acid",
-        "field_chance": 2,
+        "field_chance": 5,
         "min_field_intensity": 2,
         "max_field_intensity": 2
     },
@@ -1956,6 +1941,155 @@
         "max_damage": 1,
         "min_range": 4,
         "max_range": 4,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "id": "mon_zombie_fleshysnaky_pmissile",
+        "type": "SPELL",
+        "name": "Pin Missile",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots off needle-like spikes into the target, dealing stabbing damage. Casted randomly between 2 to 7 times.'",
+        "flags": ["SILENT", "RANDOM_DAMAGE"],
+        "valid_targets": ["hostile"],
+        "effect": "projectile_attack",
+        "min_damage": 5,
+        "max_damage": 11,
+        "max_range": 10,
+        "min_range": 10,
+        "damage_type": "stab"
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_zombie_fleshysnaky_pmissile_target_random",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
+        "extra_effects": [
+			{
+                "id": "mon_zombie_fleshysnaky_pmissile"
+            }
+        ],
+        "flags": ["SILENT","WONDER", "RANDOM_DAMAGE"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_damage": 2,
+        "max_damage": 7,
+        "min_range": 10,
+        "max_range": 10,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "id": "mon_zombie_fleshysnaky_sbomb",
+        "type": "SPELL",
+        "name": "Spike Bombardment",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots off spikes projected into the sky, then falls down into the target, dealing moderate stabbing damage to all affected creatures in an area.'",
+        "flags": ["SILENT", "RANDOM_DAMAGE"],
+        "valid_targets": ["hostile","ground"],
+        "effect": "projectile_attack",
+        "min_damage": 10,
+        "max_damage": 20,
+        "max_range": 10,
+        "min_range": 10,
+        "min_aoe": 3,
+        "max_aoe": 3,
+        "damage_type": "stab"
+    },
+    {
+        "id": "mon_zombie_fleshysnaky_hails",
+        "type": "SPELL",
+        "name": "Hail of Spikes",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels itself to shoot its spike in every direction, dealing moderate stabbing damage to all affected creatures surrounding it.'",
+        "flags": ["SILENT", "RANDOM_DAMAGE"],
+        "valid_targets": ["hostile","ground"],
+        "effect": "projectile_attack",
+        "min_damage": 10,
+        "max_damage": 30,
+        "min_aoe": 10,
+        "max_aoe": 10,
+        "damage_type": "stab"
+    },
+    {
+        "id": "mon_zombie_fleshysnaky_ppoint",
+        "type": "SPELL",
+        "name": "Pressure Point",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster spews out its fang at its target, dealing stabbing damage to all affected creatures within a line.'",
+        "flags": ["SILENT", "RANDOM_DAMAGE"],
+        "valid_targets": ["hostile","ground"],
+        "effect": "line_attack",
+        "min_damage": 20,
+        "max_damage": 30,
+        "max_range": 10,
+        "min_range": 10,
+        "damage_type": "stab"
+    },
+    {
+        "id": "mon_zombie_fleshysnaky_rage",
+        "type": "SPELL",
+        "name": "Rage",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's rage intensifies, drastically increasing its speed everytime it casts a spell.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["self"],
+        "effect": "target_attack",
+        "effect_str": "secro_fleshysnaky_enrage",
+        "min_duration": 4600,
+        "max_duration": 4600
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_zombie_fleshysnaky_target_random",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
+        "extra_effects": [
+			{
+                "id": "mon_zombie_fleshysnaky_pmissile_target_random"
+            },
+            {
+                "id": "mon_zombie_fleshysnaky_pmissile_target_random"
+            },
+            {
+                "id": "mon_zombie_fleshysnaky_pmissile_target_random"
+            },
+            {
+                "id": "mon_zombie_fleshysnaky_sbomb"
+            },
+            {
+                "id": "mon_zombie_fleshysnaky_hails","hit_self": true
+            },
+            {
+                "id": "mon_zombie_fleshysnaky_ppoint"
+            }
+        ],
+        "flags": ["SILENT","WONDER"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_range": 10,
+        "max_range": 10,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_zombie_fleshysnaky_target",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "extra_effects": [
+			{
+                "id": "mon_zombie_fleshysnaky_rage", "hit_self": true
+            },
+            {
+                "id": "mon_zombie_fleshysnaky_target_random"
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_range": 10,
+        "max_range": 10,
         "min_duration": 1,
         "max_duration": 1
     }
