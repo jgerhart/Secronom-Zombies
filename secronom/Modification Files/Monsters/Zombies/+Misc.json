@@ -1,5 +1,5 @@
 [{
-        "//": "Monsters that doesn't spawn directly in cities and has no upgrade paths (except the stray zombie). Rarely spawns in the wilds, in some parts of cities or other special conditions.",
+        "//": "Monsters that doesn't spawn directly in cities and has no upgrade paths (except the stray zombie). Rarely spawns in the wilds, in some parts of cities and/or other special conditions.",
         "//": "Summoner-type zed that afflicts the target with movement debuff.",
         "//": "Spawns in underground sewers.",
         "id": "mon_zombie_nautilus",
@@ -33,7 +33,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_nautilus_sewave",
                 "cooldown": 26,
-                "monster_message": "%1$s submerges and generates a seismic wave towards %3$s!"
+                "monster_message": "<color_yellow>%1$s submerges and generates a seismic wave towards %3$s</color>!"
             }
         ],
         "death_function": ["NORMAL"],
@@ -80,7 +80,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_nautilus_pedo_restraint",
                 "cooldown": 1,
-                "monster_message": "%1$s latches onto %3$s!"
+                "monster_message": "<color_yellow>%1$s latches onto %3$s!</color>"
             }
         ],
         "death_function": ["MELT"],
@@ -191,7 +191,7 @@
         "hp": 4,
         "speed": 105,
         "material": ["secro_null"],
-        "symbol": "*",
+        "symbol": "✶",
         "color": "cyan",
         "aggression": 100,
         "morale": 100,
@@ -199,9 +199,9 @@
         "melee_skill": 1,
         "melee_dice": 1,
         "melee_dice_sides": 1,
-        "vision_night": 10,
+        "vision_night": 11,
         "dodge": 6,
-        "vision_day": 10,
+        "vision_day": 11,
         "luminance": 4,
         "emit_fields": ["emit_bolt_crackle_smol"],
         "special_attacks": [["DISAPPEAR", 75]],
@@ -221,15 +221,15 @@
         "hp": 8,
         "speed": 90,
         "material": ["secro_null"],
-        "symbol": "*",
+        "symbol": "✸",
         "color": "light_blue",
         "aggression": 100,
         "morale": 100,
         "melee_skill": 1,
         "melee_dice": 1,
         "melee_dice_sides": 1,
-        "vision_night": 10,
-        "vision_day": 10,
+        "vision_night": 15,
+        "vision_day": 15,
         "luminance": 12,
         "dodge": 6,
         "phase": "GAS",
@@ -271,7 +271,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_fake_poly_ichorus",
                 "cooldown": 0,
-                "monster_message": "%1$s ruptures into an ichorus!"
+                "monster_message": "<color_red>%1$s ruptures into an ichorus!</color>"
             }
         ],
         "death_function": ["MELT"],
@@ -372,7 +372,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_fake_poly_psyrus",
                 "cooldown": 0,
-                "monster_message": "%1$s ruptures into a psyrus!"
+                "monster_message": "<color_red>%1$s ruptures into a psyrus!</color>"
             }
         ],
         "death_function": ["MELT"],
@@ -477,7 +477,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_uruxis_spawn_target",
                 "cooldown": 24,
-                "monster_message": "%1$s curses the area and shrouds itself in shadows!"
+                "monster_message": "<color_yellow>%1$s curses the surrounding area as it enshrouds itself in shadows!</color>"
             }
         ],
         "death_drops": "default_zombie_death_drops",
@@ -529,7 +529,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_cling_cling",
                 "cooldown": 111,
-                "monster_message": "%1$s lunges at %3$s!"
+                "monster_message": "<color_yellow>%1$s lunges at %3$s!</color>"
             }
         ],
         "death_function": ["DISINTEGRATE"],
@@ -578,7 +578,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_nocturne_spull_target",
                 "cooldown": 72,
-                "monster_message": "Errant shadows emerges from %1$s and performs an onslaught!"
+                "monster_message": "<color_yellow>Errant shadows emerges from %1$s as they perform an onslaught!</color>"
             },
       { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 20, "armor_multiplier": 1.22 } ] }
     ],
@@ -683,7 +683,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_fleshmonger_reflesh_target",
                 "cooldown": 18,
-                "monster_message": "%1$s pierces the nearby monsters!"
+                "monster_message": "<color_yellow>%1$s pierces the nearby monsters!</color>"
             }
     ],
     "placate_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "STALK", "MEAT", "HURT" ],
@@ -722,7 +722,7 @@
         "hp": 2620,
         "speed": 50,
         "material": ["flesh","bone"],
-        "symbol": "Y",
+        "symbol": "☀",
         "color": "red",
         "aggression": 100,
         "morale": 100,
@@ -741,7 +741,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_gorepit_spawn_target",
                 "cooldown": 38,
-                "monster_message": "<color_red>You feel the ground shaking as it originates from %1$s!</color>\n%1$s sends a defeaning screech!"
+                "monster_message": "<color_red>You feel the ground shaking as it originates from %1$s!</color>\n<color_yellow>%1$s sends a defeaning screech!</color>"
             }
         ],
         "death_function": ["DISINTEGRATE"],
@@ -788,9 +788,9 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_gorepit_tent_target_random",
                 "cooldown": 14,
-                "monster_message": "%1$s slams at %3$s!"
+                "monster_message": "<color_yellow>%1$s slams at %3$s!</color>"
             },
-            ["DISAPPEAR", 200]
+            ["DISAPPEAR", 250]
         ],
         "death_function": ["DISINTEGRATE"],
         "flags": [
@@ -817,8 +817,8 @@
     "hp": 1325,
     "speed": 65,
     "material": [ "flesh", "bone" ],
-    "symbol": "⨀",
-    "color": "magenta_yellow",
+    "symbol": "☊",
+    "color": "light_red",
     "aggression": 100,
     "morale": 100,
     "attack_cost": 225,
@@ -837,7 +837,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_cordev_target_random",
                 "cooldown": 9,
-                "monster_message": "%1$s performs a peculiar motion!"
+                "monster_message": "<color_yellow>%1$s performs a peculiar motion!</color>"
             },
             {
                 "cooldown": 15,
@@ -886,8 +886,8 @@
       "REVIVES"
     ]
   }, {
-    "//": "Aggro-type zed aberration, extremely durable and full of deadly capabilities, unique to its drastic movement speed gain as long as it sees a target. One of the true end-game monsters, so be prepared for it.",
-    "//": "Spawns in cities after a year, but unsure if it shows up.",
+    "//": "Aggro-type zed aberration, extremely tough, durable and full of deadly ranged capabilities, unique to its drastic movement speed gain as long as it sees a target. One of the true end-game monsters, so be prepared for it.",
+    "//": "Spawns in cities after 2 years.",
     "id": "mon_zombie_fleshysnaky",
     "type": "MONSTER",
     "name": "flesilisk",
@@ -898,15 +898,15 @@
         "volume": "3225 L",
         "weight": 4300500,
     "hp": 3350,
-    "speed": 70,
+    "speed": 40,
     "material": [ "flesh", "bone" ],
-    "symbol": "⩚",
+    "symbol": "⚶",
     "color": "magenta",
     "aggression": 100,
     "morale": 100,
     "attack_cost": 675,
     "melee_skill": 10,
-    "melee_dice": 6,
+    "melee_dice": 8,
     "melee_dice_sides": 10,
     "melee_cut": 6,
     "armor_bash": 30,
@@ -915,9 +915,14 @@
     "vision_day": 23,
     "vision_night": 3,
     "harvest": "zombie",
-    "special_attacks": [
-            {
+    "special_attacks": [{
+                "type": "spell",
+                "spell_id": "mon_zombie_fleshysnaky_target",
                 "cooldown": 21,
+                "monster_message": "<color_yellow>%1$s starts to volley its spikes!</color>\n<color_red>And as it glares at %3$s, %1$s's rage intensifies!</color>"
+            },
+            {
+                "cooldown": 31,
                 "damage_max_instance": [{
                         "amount": 32,
                         "armor_penetration": 5,
