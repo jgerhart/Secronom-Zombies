@@ -15,16 +15,16 @@
             }, {
                 "color": "red",
                 "light_emitted": 10,
-                "monster_spawn_chance": 500,
+                "monster_spawn_chance": 100,
                 "monster_spawn_count": 2,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_CARRIONS"
             }, {
                 "color": "light_red",
                 "transparent": false,
-                "monster_spawn_chance": 100,
+                "monster_spawn_chance": 25,
                 "monster_spawn_count": 3,
-                "monster_spawn_radius": 2,
+                "monster_spawn_radius": 3,
                 "monster_spawn_group": "GROUP_CARRIONS",
                 "light_emitted": 15
             }
@@ -52,16 +52,16 @@
             }, {
                 "color": "blue",
                 "light_emitted": 10,
-                "monster_spawn_chance": 500,
+                "monster_spawn_chance": 100,
                 "monster_spawn_count": 2,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_VECTORS"
             }, {
                 "color": "light_blue",
                 "transparent": false,
-                "monster_spawn_chance": 100,
+                "monster_spawn_chance": 25,
                 "monster_spawn_count": 3,
-                "monster_spawn_radius": 2,
+                "monster_spawn_radius": 3,
                 "monster_spawn_group": "GROUP_VECTORS",
                 "light_emitted": 15
             }
@@ -219,13 +219,12 @@
                 "name": "airlock",
                 "sym": "0",
                 "color": "black",
-                "monster_spawn_chance": 5000,
+                "monster_spawn_chance": 7500,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
                 "monster_spawn_group": "GROUP_ZOMBIE"
             }
         ],
-        "priority": 0,
         "half_life": "1 turns",
         "phase": "gas",
         "display_items": true,
@@ -238,13 +237,12 @@
                 "name": "intense airlock",
                 "sym": "0",
                 "color": "black",
-                "monster_spawn_chance": 1000,
+                "monster_spawn_chance": 2500,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
                 "monster_spawn_group": "GROUP_ZOMBIE"
             }
         ],
-        "priority": 0,
         "half_life": "1 turns",
         "phase": "gas",
         "wandering_field": "fd_uruxis_normal",
@@ -271,7 +269,6 @@
     "dirty_transparency_cache": true,
     "percent_spread": 25,
     "immunity_data": { "body_part_env_resistance": [ [ "EYES", 10 ] ] },
-    "priority": 0,
     "half_life": "2 seconds",
     "phase": "gas",
     "accelerated_decay": true,
@@ -315,13 +312,10 @@
       }
     ],
     "dirty_transparency_cache": true,
-    "immunity_data": { "body_part_env_resistance": [ [ "LEG_L", 25 ] ] },
+    "immunity_data": { "body_part_env_resistance": [ [ "LEG_L", 25 ], [ "LEG_R", 25 ] ] },
     "priority": 1,
     "half_life": "1 seconds",
-	"decay_amount_factor": 20,
-    "gas_absorption_factor": 10,
-    "percent_spread": 10,
-    "phase": "gas",
+    "phase": "solid",
     "display_items": false,
     "display_field": true
   },
@@ -331,13 +325,12 @@
         "intensity_levels": [{
                 "name": "light earthquake",
                 "color": "light_gray",
-                "monster_spawn_chance": 2500,
+                "monster_spawn_chance": 10000,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
                 "monster_spawn_group": "GROUP_GORE_TENT"
             }
         ],
-        "priority": 0,
         "half_life": "1 turns",
         "phase": "gas",
         "display_items": true,
@@ -350,13 +343,12 @@
         "intensity_levels": [{
                 "name": "earthquake",
                 "color": "white",
-                "monster_spawn_chance": 1000,
+                "monster_spawn_chance": 2500,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
                 "monster_spawn_group": "GROUP_GORE_TENT"
             }
         ],
-        "priority": 0,
         "half_life": "5 turns",
         "phase": "gas",
         "display_items": true,
