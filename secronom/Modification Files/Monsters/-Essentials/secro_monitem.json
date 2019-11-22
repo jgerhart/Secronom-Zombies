@@ -33,5 +33,5 @@
 	    "moves": 125
 			},
     "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MOVE_COST", "add": 25 }, { "value": "DEXTERITY", "add": -2 } ] } ] },
-    "flags": [ "PERSONAL", "FRAGILE", "NO_DROP", "NO_TAKEOFF" ]
+    "flags": [ "PERSONAL", "FRAGILE", "OUTER", "NO_DROP", "NO_TAKEOFF" ]
   }
