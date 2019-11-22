@@ -191,7 +191,7 @@
         "hp": 4,
         "speed": 105,
         "material": ["secro_null"],
-        "symbol": "✶",
+        "symbol": "*",
         "color": "cyan",
         "aggression": 100,
         "morale": 100,
@@ -221,7 +221,7 @@
         "hp": 8,
         "speed": 90,
         "material": ["secro_null"],
-        "symbol": "✸",
+        "symbol": "*",
         "color": "light_blue",
         "aggression": 100,
         "morale": 100,
@@ -713,7 +713,7 @@
         "id": "mon_zombie_gorepit",
         "type": "MONSTER",
         "name": "gorepit",
-        "description": "An eerie pit composed mostly of decaying flesh, with a distinctive huge gap revealing thousands of bones and other organic materials aligned in its wall. Thick, sinewy webbing supports a central bulbous orb that undulates at a steady rate.",
+        "description": "An eerie pit composed mostly of decaying flesh, with a distinctive huge gap revealing thousands of bones and other organic materials aligned in its wall. Thick, sinewy webbing supports a central bulbous orb that beats at a steady rate.",
         "default_faction": "zombie",
         "species": ["ZOMBIE"],
         "diff": 50,
@@ -886,12 +886,12 @@
       "REVIVES"
     ]
   }, {
-    "//": "Aggro-type zed aberration, extremely tough, durable and full of deadly ranged capabilities, unique to its drastic movement speed gain as long as it sees a target. One of the true end-game monsters, so be prepared for it.",
+    "//": "Aggro-type zed aberration, extremely tough, durable and full of deadly ranged capabilities, unique to its drastic movement speed gain as long as it sees a target. One of the true end-game monsters.",
     "//": "Spawns in cities after 2 years.",
     "id": "mon_zombie_fleshysnaky",
     "type": "MONSTER",
     "name": "flesilisk",
-    "description": "A massive conglomeration of thick, gangrenous flesh, forming a snake-like figurine with its head resembling a forlorn dragon. Terrifyingly disastrous, its entire body is covered in bony scales, which in every gap is tipped with spikes of similar material. Yet its great lack of intuitive perception causes it to easily become enraged by the time it senses a prey, whether it is an undead or not.",
+    "description": "A massive conglomeration of thick, gangrenous flesh, forming a snake-like figurine with its head resembling a dragon. Terrifyingly disastrous, its entire body is covered in bony scales and lies under it are spikes of similar material. Yet its great lack of intuitive perception causes it to easily become enraged by the time it senses a prey.",
     "default_faction": "zombie",
     "bodytype": "snake",
     "species": [ "ZOMBIE", "ABERRATION" ],
@@ -952,6 +952,56 @@
       "ATTACKMON",
       "PUSH_VEH",
       "REVIVES"
+    ]
+  }, {
+    "//": "Support-type zed who weakens the target by applying debuffs that intensifies for as long as it acquire LOS while randomly strengthens nearby allies. Feeble, yet a great nuisance behind its meat wall. One of the true end-game monsters.",
+    "//": "Spawns in cities after 2 years.",
+    "id": "mon_zombie_akin",
+    "type": "MONSTER",
+    "name": "akin",
+    "description": "A grotesquely baneful corpse, resonating pure dread in the air as it eagerly sways along its path. Visceral tendrils slither freely in its vicinity, acting like a guide in sensing the unfortunate host.",
+    "default_faction": "zombie",
+    "bodytype": "human",
+    "species": [ "ZOMBIE","HUMAN" ],
+        "volume": "62500 ml",
+        "weight": 81500,
+    "hp": 130,
+    "speed": 60,
+    "material": [ "flesh"],
+    "symbol": "Z",
+    "color": "dark_gray",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_cut": 1,
+    "armor_bash": 3,
+    "armor_cut": 1,
+    "vision_day": 19,
+    "vision_night": 7,
+    "harvest": "zombie",
+    "special_attacks": [
+    {
+                "type": "spell",
+                "spell_id": "mon_zombie_akin_target",
+                "cooldown": 5,
+                "monster_message": "<color_yellow>%1$s's visceral tendril undulates while it is attached to %3$s!</color>"
+            }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "KEENNOSE",
+      "HEARS",
+      "STUMBLES",
+      "WARM",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
     ]
   }, {
         "//": "Aggro-type zed. This zombie obtains various abilities and spells (from nature, etc.).",
