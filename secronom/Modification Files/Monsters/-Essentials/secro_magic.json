@@ -1795,6 +1795,18 @@
         "min_field_intensity": 3,
         "max_field_intensity": 3
     },
+	{
+        "id": "mon_zombie_cordev_texplode_stun",
+        "type": "SPELL",
+        "name": "Core Stun",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster becomes stunned.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["self"],
+        "effect": "projectile_attack",
+        "effect_str": "stunned",
+        "min_duration": 2000,
+        "max_duration": 2000
+    },
     {
         "id": "mon_zombie_cordev_texplode_dmg",
         "type": "SPELL",
@@ -1813,13 +1825,16 @@
         "id": "mon_zombie_cordev_texplode",
         "type": "SPELL",
         "name": "Core Explosion",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's torsal lump suddenly explodes, spreading a large area of corrupted acid and deals tremendous bashing damage that affects all creatures within range. Caster then becomes crippled, rendering it unable to move for a long time.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's torsal lump suddenly explodes, spreading a large area of corrupted acid and deals tremendous bashing damage that affects all creatures within range. Caster then becomes crippled, rendering it slowed and unconscious for a long time.'",
         "flags": ["SILENT", "RANDOM_AOE", "RANDOM_DAMAGE"],
         "valid_targets": ["hostile","ground","ally"],
         "effect": "projectile_attack",
         "extra_effects": [
             {
                 "id": "mon_zombie_cordev_texplode_dmg", "hit_self": true
+            },
+			{
+                "id": "mon_zombie_cordev_texplode_stun", "hit_self": true
             }
         ],
         "min_damage": 25,
@@ -2088,8 +2103,62 @@
         "valid_targets": ["ally", "hostile"],
         "effect": "target_attack",
         "effect_str": "secro_magic_target",
-        "min_range": 10,
-        "max_range": 10,
+        "min_range": 22,
+        "max_range": 22,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "id": "mon_zombie_akin_sattach_foe",
+        "type": "SPELL",
+        "name": "Siphoning Attachtment",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's viceral tendril latches onto the target, applying debuffs that intensifies for as long as it is attached.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "projectile_attack",
+        "effect_str": "secro_akin_siphon_foe",
+        "min_range": 7,
+        "max_range": 7,
+        "//": "Gains 2 intensity of debuff, halved to the buff.",
+        "min_duration": 1200,
+        "max_duration": 1200
+    },
+    {
+        "id": "mon_zombie_akin_lsattach_ally",
+        "type": "SPELL",
+        "name": "Life Siphoning Attachtment",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's viceral tendril latches onto an ally target, applying buffs that intensifies for as long as it is attached. This is casted 2 times.'",
+        "flags": ["SILENT","RANDOM_TARGET"],
+        "valid_targets": ["ally","self"],
+        "effect": "projectile_attack",
+        "effect_str": "secro_akin_siphon_ally",
+        "min_range": 7,
+        "max_range": 7,
+        "min_duration": 600,
+        "max_duration": 600
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_zombie_akin_target",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "extra_effects": [
+			{
+                "id": "mon_zombie_akin_sattach_foe"
+            },
+            {
+                "id": "mon_zombie_akin_lsattach_ally"
+            },
+			{
+                "id": "mon_zombie_akin_lsattach_ally"
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_range": 7,
+        "max_range": 7,
         "min_duration": 1,
         "max_duration": 1
     }
