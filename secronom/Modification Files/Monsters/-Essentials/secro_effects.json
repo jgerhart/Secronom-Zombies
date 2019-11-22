@@ -332,13 +332,13 @@
     	"//": "Alternate version of the effect above provided to the gorepit to keep it alive from self-generated damaging fields.",
         "type": "effect_type",
         "id": "secro_gorepit_dmg_immune",
-        "max_duration": 1,
-        "base_mods": {
-            "hurt_min": [-3],
-            "hurt_max": [-3],
-            "speed_mod": [30],
-            "dex_mod": [2]
-        }
+        "max_duration": 10,
+        "removes_effects": [
+            "secro_gorepit_wall_dmg"
+        ],
+        "blocks_effects": [
+            "secro_gorepit_wall_dmg"
+        ]
     },
     {
         "type": "effect_type",
@@ -385,6 +385,56 @@
         },
         "scaling_mods": {
             "speed_mod": [1.01]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_akin_siphon_foe",
+        "name": ["Siphoned"],
+        "desc": ["The visceral tendril's influence renders you weakened!"],
+        "show_in_info": true,
+        "apply_message": "A siphoning tendril latches onto you!",
+        "miss_messages": [["You feel dizzy...", 2]],
+        "remove_message": "The siphoning tendril falls off.",
+        "int_add_val": 1,
+  	  "int_dur_factor": "5 seconds",
+ 	   "max_intensity": 25,
+	    "int_decay_step": -25,
+ 	   "int_decay_tick": 6,
+        "max_duration": 250,
+        "base_mods": {
+            "hurt_min": [1],
+            "hurt_max": [1],
+            "hurt_tick": [10],
+            "speed_mod": [-1]
+        },
+        "scaling_mods": {
+            "speed_mod": [-1],
+            "str_mod": [-0.12],
+            "dex_mod": [-0.2],
+            "per_mod": [-0.05]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_akin_siphon_ally",
+        "name": ["Life Siphoned"],
+        "desc": ["The visceral tendril's influence strengthens you!"],
+        "show_in_info": true,
+        "int_add_val": 1,
+  	  "int_dur_factor": "5 seconds",
+ 	   "max_intensity": 25,
+	    "int_decay_step": -25,
+ 	   "int_decay_tick": 6,
+        "max_duration": 250,
+        "base_mods": {
+            "hurt_min": [-1],
+            "hurt_max": [-1],
+            "hurt_tick": [5],
+            "speed_mod": [1]
+        },
+        "scaling_mods": {
+            "speed_mod": [1]
         }
     }
 ]
