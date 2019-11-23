@@ -1690,21 +1690,21 @@
         "id": "mon_zombie_cordev_mincem_heal",
         "type": "SPELL",
         "name": "Mincemeat Heal",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster is healed by 100.'",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster is healed by 60.'",
         "flags": ["SILENT"],
         "valid_targets": ["self"],
         "effect": "projectile_attack",
-        "min_damage": -100,
-        "max_damage": -100,
+        "min_damage": -60,
+        "max_damage": -60,
         "damage_type": "bio"
     },
     {
         "id": "mon_zombie_cordev_mincem",
         "type": "SPELL",
         "name": "Mincemeat",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster cannibalizes, chomping at itself or an adjacent random ally that heals the caster amplified by 150% of the damage dealt.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster cannibalizes, chomping at itself or an adjacent random ally that heals the caster amplified by 50% of the damage dealt.'",
         "flags": ["SILENT","RANDOM_TARGET"],
-        "valid_targets": ["ally"],
+        "valid_targets": ["ally","self"],
         "effect": "projectile_attack",
         "extra_effects": [
 			{
@@ -1724,7 +1724,7 @@
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
         "extra_effects": [
 			{
-                "id": "mon_zombie_cordev_mincem"
+                "id": "mon_zombie_cordev_mincem","hit_self": true
             }
         ],
         "flags": ["SILENT"],
@@ -1740,7 +1740,7 @@
         "id": "mon_zombie_cordev_whip",
         "type": "SPELL",
         "name": "Whipslash",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's volatile lump sends forth a tendril that strikes the target, dealing cutting damage. This is casted 4 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's volatile lump sends forth an errant tendril that strikes the target, dealing cutting damage. This is casted randomly from 1 to 4 times.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
         "valid_targets": ["hostile"],
         "effect": "projectile_attack",
@@ -1752,9 +1752,9 @@
     },
     {
         "type": "SPELL",
-        "id": "mon_zombie_cordev_whip_target",
+        "id": "mon_zombie_cordev_whip_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
         "extra_effects": [
 			{
                 "id": "mon_zombie_cordev_whip"
@@ -1769,10 +1769,12 @@
                 "id": "mon_zombie_cordev_whip"
             }
         ],
-        "flags": ["SILENT"],
+        "flags": ["SILENT","WONDER","RANDOM_DAMAGE"],
         "valid_targets": ["ally", "hostile"],
         "effect": "target_attack",
         "effect_str": "secro_magic_target",
+		"min_damage": 1,
+        "max_damage": 4,
         "min_range": 4,
         "max_range": 4,
         "min_duration": 1,
@@ -1888,34 +1890,10 @@
                 "id": "mon_zombie_cordev_mincem_target"
             },
             {
-                "id": "mon_zombie_cordev_whip_target"
+                "id": "mon_zombie_cordev_whip_target_random"
             },
             {
-                "id": "mon_zombie_cordev_whip_target"
-            },
-            {
-                "id": "mon_zombie_cordev_corrupt"
-            },
-            {
-                "id": "mon_zombie_cordev_mincem_target"
-            },
-            {
-                "id": "mon_zombie_cordev_mincem_target"
-            },
-            {
-                "id": "mon_zombie_cordev_mincem_target"
-            },
-            {
-                "id": "mon_zombie_cordev_mincem_target"
-            },
-            {
-                "id": "mon_zombie_cordev_mincem_target"
-            },
-            {
-                "id": "mon_zombie_cordev_whip_target"
-            },
-            {
-                "id": "mon_zombie_cordev_whip_target"
+                "id": "mon_zombie_cordev_whip_target_random"
             },
             {
                 "id": "mon_zombie_cordev_corrupt"
@@ -1936,10 +1914,34 @@
                 "id": "mon_zombie_cordev_mincem_target"
             },
             {
-                "id": "mon_zombie_cordev_whip_target"
+                "id": "mon_zombie_cordev_whip_target_random"
             },
             {
-                "id": "mon_zombie_cordev_whip_target"
+                "id": "mon_zombie_cordev_whip_target_random"
+            },
+            {
+                "id": "mon_zombie_cordev_corrupt"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_mincem_target"
+            },
+            {
+                "id": "mon_zombie_cordev_whip_target_random"
+            },
+            {
+                "id": "mon_zombie_cordev_whip_target_random"
             },
             {
                 "id": "mon_zombie_cordev_corrupt"
