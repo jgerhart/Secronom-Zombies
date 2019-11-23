@@ -11,7 +11,7 @@ Mod made from various references, mixed up with random spices! A mod I've create
 ## Zombies
 The secronom's main feature - the zeds. They range from weak up to strong variety of them.
 
-* There are 67 zombies in total: 45 city zeds, 12 zed mutants and 10 lab zombies. Only the zombies that spawn individually are counted, while minions and other special zeds aren't.
+* There are 69 zombies in total: 45 city zeds, 14 zed mutants and 10 lab zombies. Only the zombies that spawn individually are counted, while minions and other special zeds aren't.
 
 The evolution sheet is outdated and it is taken down until a new one is created. And due to a technical problem, I can't make monster sprites for the new creatures...
 
@@ -110,6 +110,10 @@ Zed mutants that are seen rarely in and out of the cities or has special conditi
 * _**Fleshmonger**_ **+** - A gigantic flesh blob, with writhing tentacles that pierces into nearby creatures.
 
 * _**Flesilisk**_ **!** - A disastrous, serpentine aberration. End-game prize.
+
+* _**Akin**_ **+** - A baneful zed, with its visceral threads writhing incessantly. End-game prize.
+
+* _**Equinox**_ **~** - A conglomeration of meat, forming a massive brain-like hive. End-game prize.
 
 ### Lab Zombies
 These are the zombies only exclusive to secronom labs:
