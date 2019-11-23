@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.6 - Currently, the plan is to complete the zed bestiary by adding more end-game zed mutants. <--
+--> V1.6 - Currently, the plan is to rebalance the new creatures. Since idk what else to add, expect the mod's progress to hamper a bit. <--
 
 #  REWORKS ON TILESET (frequent, or whenever I can)
 #  REMOVED LUA VERSION (we have spells and it's meant to replace the LUA attacks)
@@ -16,8 +16,10 @@ https://discourse.cataclysmdda.org - CDDA official forums
 #+ CHAOS ZEDS REWORKED (jolt, fake zombie, uruxis, fleshmonger. Known as zed mutants now)
 
 +  VECTOR IMPROVEMENTS (infection of organic terrains, haze infects the creatures which deals constant damage)
-+  ZED MUTANTS (dissonant screamer, clinger, nocturne, gorepit, corrupted devourer, flesilisk)
++  ZED MUTANTS (dissonant screamer, clinger, nocturne, gorepit, corrupted devourer, flesilisk, akin, equinox)
 +  NOXIOUS EATER (new upgrade path)
+
+-  SECRONOM LAB (A small change to its deepest floor)
 
 
 
