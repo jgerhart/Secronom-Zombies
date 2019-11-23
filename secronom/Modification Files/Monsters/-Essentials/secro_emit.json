@@ -176,5 +176,29 @@
         "field": "fd_gorepit_normal",
         "qty": 100,
         "intensity": 1
+    },
+    {
+        "id": "emit_equinox_toxic_weak",
+        "type": "emit",
+        "field": "fd_toxic_gas",
+        "qty": 30,
+        "intensity": 1,
+        "chance": 75
+    },
+    {
+        "id": "emit_equinox_toxic_normal",
+        "type": "emit",
+        "field": "fd_toxic_gas",
+        "qty": 20,
+        "intensity": 2,
+        "chance": 25
+    },
+    {
+        "id": "emit_equinox_toxic_strong",
+        "type": "emit",
+        "field": "fd_toxic_gas",
+        "qty": 10,
+        "intensity": 3,
+        "chance": 10
     }
 ]
