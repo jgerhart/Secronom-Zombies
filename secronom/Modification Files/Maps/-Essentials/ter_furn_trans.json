@@ -44,5 +44,30 @@
                 "message": "The vector here dies."
             }
         ]
+    },
+    
+    {
+        "type": "ter_furn_transform",
+        "id": "gorepit_pit",
+        "fail_message": "There's no organic terrain here to vectorize.",
+        "terrain": [{
+        		"//": "Make every adjacent opaque terrains into dirt, so that we don't encounter bugs with gorepit's essential fields.",
+                "result": "t_dirt",
+                "valid_flags": ["WALL","CONNECT_TO_WALL","MOUNTABLE","THIN_OBSTACLE","BURROWABLE"],
+                "message": "The walls here has collapsed."
+            },{
+            	"//": "Flat, adjacent terrains become pits.",
+                "result": "t_pit",
+                "valid_flags": ["ROAD","DIGGABLE"],
+                "message": "The ground here has collapsed."
+            }
+        ],
+        "furniture": [{
+        		"//": "Similar thing to prevent bugs.",
+                "result": "f_null",
+                "valid_flags": ["MINEABLE","MOUNTABLE","BLOCKSDOOR","TRANSPARENT","FLAT_SURF"],
+                "message": "The furnitures here has collapsed."
+            }
+        ]
     }
 ]
