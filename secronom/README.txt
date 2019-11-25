@@ -18,8 +18,10 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  VECTOR IMPROVEMENTS (infection of organic terrains, haze infects the creatures which deals constant damage)
 +  ZED MUTANTS (dissonant screamer, clinger, nocturne, gorepit, corrupted devourer, flesilisk, akin, equinox)
 +  NOXIOUS EATER (new upgrade path)
++  CITY ZED MUTANT (charger)
 
--  SECRONOM LAB (A small change to its deepest floor)
+-  SECRONOM LAB (small changes to its deepest floor)
+-  SPELL REBALANCES (tweaked most spells, and made them a bit more random on damage, area of effect, etc. Some chained spells were seperated individually)
 
 
 
