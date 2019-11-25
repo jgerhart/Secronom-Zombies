@@ -377,7 +377,7 @@
     "id": "fd_necros_para_gas",
     "type": "field_type",
     "intensity_levels": [
-      { "name": "hazy cloud", "sym": "8", "dangerous": true, "translucency": 1, "effect_id": "secro_necros_para",
+      { "name": "hazy cloud", "sym": "8", "dangerous": true, "translucency": 1, "effect_id": "secro_necros_para", "effect_body_part": "TORSO",
         "effect_min_duration": "1 seconds",
         "effect_max_duration": "5 seconds" },
       { "name": "toxic gas", "color": "light_green", "transparent": false, "translucency": 10, "effect_min_duration": "6 seconds",
@@ -405,22 +405,22 @@
         "intensity_levels": [{
                 "name": "gangrenous flesh",
                 "sym": "#",
-                "color": "light_red",
-                "move_cost": 10,
-                "monster_spawn_chance": 2500,
+                "color": "pink",
+                "move_cost": 15,
+                "monster_spawn_chance": 3000,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
                 "monster_spawn_group": "GROUP_EQUINOX_CRAWLIES"
             },
             {
-                "color": "red",
-                "move_cost": 12,
+                "color": "light_red",
+                "move_cost": 35,
                 "monster_spawn_chance": 1500
             },
             {
-                "color": "dark_red",
-                "move_cost": 15,
-                "monster_spawn_chance": 500
+                "color": "red",
+                "move_cost": 50,
+                "monster_spawn_chance": 750
             }
         ],
         "half_life": "6 minutes",
