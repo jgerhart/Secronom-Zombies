@@ -11,7 +11,7 @@ Mod made from various references, mixed up with random spices! A mod I've create
 ## Zombies
 The secronom's main feature - the zeds. They range from weak up to strong variety of them.
 
-* There are 69 zombies in total: 45 city zeds, 14 zed mutants and 10 lab zombies. Only the zombies that spawn individually are counted, while minions and other special zeds aren't.
+* There are 70 zombies in total: 46 city zeds, 14 zed mutants and 10 lab zombies. Only the zombies that spawn individually are counted, while minions and other special zeds aren't.
 
 The evolution sheet is outdated and it is taken down until a new one is created. And due to a technical problem, I can't make monster sprites for the new creatures...
 
@@ -83,6 +83,9 @@ A worm, zombie type that burrows underneath, with fatal biting ability.
 Zombie type that grows stronger as time passes by.
 * It has 6 upgrade paths, in each progress strenghtens the zed.
 * The other swarmer zombie paths to city zed mutants.
+
+##### Charger Zombie **!**
+Zombie type with very high health but slow attack speed, with charging ability.
 
 ### Zombie Mutants
 Zed mutants that are seen rarely in and out of the cities or has special conditions to appear. These zeds has unique abilities unlike the city zeds:
@@ -162,12 +165,12 @@ Corrupted pieces of machinery on their goal for eradication.
 # Monster Roles
 All monsters aren't designed to kill the target, and thus providing roles to them is a must (imo). I categorized their type as:
 
-* (**!**) *Aggro* - monsters that focuses on dealing damage. Some have their own abilities to inflict status modifiers on targets, or just to deal even more damage.
+* (**!**) *Aggro* - monsters that focuses on dealing damage, and most hostile creatures belong to this role. Some have their own abilities to inflict status modifiers on targets, or just to deal even more damage.
 
-* (**+**) *Support* - monsters that are sometimes weak and feeble, but takes the chance to provide benefits for its team, such as stunning enemy targets and healing allies.
+* (**+**) *Support* - monsters that are sometimes weak and feeble, but takes the chance to provide benefits for its team, such as inflicting debuffs to enemy targets and healing allies. Few can tank a lot of damage and act as the vanguard.
 
-* (**~**) *Summoner* - monsters who takes advantage on creating/sending minions. Minions are usually weak, time limited and deals lesser damage, yet a hassle due to them having debuff inflicting abilities.
+* (**~**) *Summoner* - monsters who takes advantage on creating/sending minions. Minions are usually weak, time limited and deals lesser damage, yet a hassle due to them having debuff inflicting abilities. Some who heavily rely on their minions are the opposite.
 
-* (**=**) *Boss* - monsters that are versatile in every situation. Unique and those who opposes extreme danger are considered with this type.
+* (**=**) *Boss* - monsters that are versatile in every situation. Unique and those who opposes extreme danger are considered with this type. All of these monsters reside in their `lair`.
 
 Few are hybrids, but are still categorized into a type.
