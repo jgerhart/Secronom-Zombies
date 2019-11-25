@@ -181,7 +181,7 @@
         "id": "emit_equinox_toxic_weak",
         "type": "emit",
         "field": "fd_toxic_gas",
-        "qty": 30,
+        "qty": 45,
         "intensity": 1,
         "chance": 75
     },
@@ -198,6 +198,54 @@
         "type": "emit",
         "field": "fd_toxic_gas",
         "qty": 10,
+        "intensity": 3,
+        "chance": 10
+    },
+    {
+        "id": "emit_equinox_para",
+        "type": "emit",
+        "field": "fd_necros_para_gas",
+        "qty": 50,
+        "intensity": 1,
+        "chance": 10
+    },
+    {
+        "id": "emit_equinox_necros_para",
+        "type": "emit",
+        "field": "fd_necros_para_gas",
+        "qty": 1,
+        "intensity": 1,
+        "chance": 5
+    },
+    {
+        "id": "emit_equinox_necros_cut_para",
+        "type": "emit",
+        "field": "fd_necros_para_gas",
+        "qty": 3,
+        "intensity": 1,
+        "chance": 20
+    },
+    {
+        "id": "emit_equinox_necros_emit_weak_para",
+        "type": "emit",
+        "field": "fd_necros_para_gas",
+        "qty": 10,
+        "intensity": 1,
+        "chance": 50
+    },
+    {
+        "id": "emit_equinox_necros_emit_mode_para",
+        "type": "emit",
+        "field": "fd_necros_para_gas",
+        "qty": 5,
+        "intensity": 2,
+        "chance": 25
+    },
+    {
+        "id": "emit_equinox_necros_emit_stro_para",
+        "type": "emit",
+        "field": "fd_necros_para_gas",
+        "qty": 2,
         "intensity": 3,
         "chance": 10
     }
