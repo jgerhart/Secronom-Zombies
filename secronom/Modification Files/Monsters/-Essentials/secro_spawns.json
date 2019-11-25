@@ -81,24 +81,24 @@
                 "cost_multiplier": 65,
                 "starts": 300
             }, {
-                "monster": mon_zombie_cordev,
+                "monster": "mon_zombie_cordev",
                 "freq": 5,
                 "cost_multiplier": 50,
                 "starts": 300
             }, {
-                "monster": mon_zombie_fleshysnaky,
+                "monster": "mon_zombie_fleshysnaky",
                 "freq": 5,
-                "cost_multiplier": 75
+                "cost_multiplier": 75,
                 "starts": 600
             }, {
-                "monster": mon_zombie_akin,
+                "monster": "mon_zombie_akin",
                 "freq": 50,
-                "cost_multiplier": 25
+                "cost_multiplier": 25,
                 "starts": 600
             }, {
-                "monster": mon_zombie_equinox,
+                "monster": "mon_zombie_equinox",
                 "freq": 5,
-                "cost_multiplier": 75
+                "cost_multiplier": 75,
                 "starts": 600
             }
         ]
@@ -199,24 +199,24 @@
                 "cost_multiplier": 65,
                 "starts": 300
             }, {
-                "monster": mon_zombie_cordev,
+                "monster": "mon_zombie_cordev",
                 "freq": 5,
                 "cost_multiplier": 50,
                 "starts": 300
             }, {
-                "monster": mon_zombie_fleshysnaky,
+                "monster": "mon_zombie_fleshysnaky",
                 "freq": 5,
-                "cost_multiplier": 75
+                "cost_multiplier": 75,
                 "starts": 600
             }, {
-                "monster": mon_zombie_akin,
+                "monster": "mon_zombie_akin",
                 "freq": 50,
-                "cost_multiplier": 25
+                "cost_multiplier": 25,
                 "starts": 600
             }, {
-                "monster": mon_zombie_equinox,
+                "monster": "mon_zombie_equinox",
                 "freq": 5,
-                "cost_multiplier": 75
+                "cost_multiplier": 75,
                 "starts": 600
             }
         ]
