@@ -428,5 +428,24 @@
         "phase": "solid",
         "display_items": true,
         "display_field": true
-    }
+    },
+	{
+	"//": "Field to stun the player ONLY.",
+    "id": "fd_charger_stun",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+		"name": "this is a bug",
+		"color": "black",
+        "effect_id": "stunned",
+        "effect_body_part": "TORSO",
+        "effect_min_duration": "3 seconds",
+        "effect_max_duration": "3 seconds"
+      }
+    ],
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false
+  }
 ]
