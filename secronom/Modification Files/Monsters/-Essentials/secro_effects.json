@@ -295,6 +295,25 @@
         }
     }, {
         "type": "effect_type",
+        "id": "secro_fleshmonger_fleshed",
+        "name": ["Fleshed"],
+        "desc": ["Your body mass has increased from the excess flesh injected to you!"],
+        "rating": "good",
+        "show_in_info": true,
+        "int_add_val": 1,
+        "int_dur_factor": "30 seconds",
+        "max_intensity": 5,
+        "int_decay_step": -1,
+        "int_decay_tick": 60,
+        "max_duration": 600,
+        "base_mods": {
+            "size_mod": [0.2]
+        },
+        "scaling_mods": {
+            "size_mod": [0.2]
+        }
+    }, {
+        "type": "effect_type",
         "id": "secro_nix_fear",
         "name": ["Afraid", "Scared", "Frightened", "Terrified", "Horrified"],
         "desc": ["The dreadful pressence of the nix leaves your body shaking."],
@@ -467,7 +486,8 @@
         "blocks_effects": [
             "secro_necros_para"
         ]
-    }, {
+    },
+    {
         "type": "effect_type",
         "id": "charge_momentum",
         "name": ["Momentum"],
@@ -479,8 +499,77 @@
         "max_duration": 11,
         "rating": "bad",
         "show_in_info": true,
+		"base_mods": {
+            "hurt_min": [-2]
+        },
         "scaling_mods": {
-            "speed_mod": [10]
+            "speed_mod": [10],
+            "bash_mod": [1.25],
+            "hit_mod": [0.5]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "charge_spike_momentum",
+        "name": ["Momentum"],
+        "int_add_val": 1,
+		"int_dur_factor": "1 seconds",
+        "max_intensity": 10,
+        "int_decay_step": -10,
+        "int_decay_tick": 1,
+        "max_duration": 11,
+        "rating": "bad",
+        "show_in_info": true,
+		"base_mods": {
+            "hurt_min": [-3]
+        },
+        "scaling_mods": {
+            "speed_mod": [10],
+            "bash_mod": [0.25],
+            "cut_mod": [1.25],
+            "hit_mod": [0.5]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "charge_plate_momentum",
+        "name": ["Momentum"],
+        "int_add_val": 1,
+		"int_dur_factor": "1 seconds",
+        "max_intensity": 10,
+        "int_decay_step": -10,
+        "int_decay_tick": 1,
+        "max_duration": 11,
+        "rating": "bad",
+        "show_in_info": true,
+		"base_mods": {
+            "hurt_min": [-4]
+        },
+        "scaling_mods": {
+            "speed_mod": [10],
+            "bash_mod": [2.25],
+            "hit_mod": [0.75]
+        }
+    },
+	{
+        "type": "effect_type",
+        "id": "charge_vanguard_momentum",
+        "name": ["Momentum"],
+        "int_add_val": 1,
+		"int_dur_factor": "1 seconds",
+        "max_intensity": 10,
+        "int_decay_step": -10,
+        "int_decay_tick": 1,
+        "max_duration": 11,
+        "rating": "bad",
+        "show_in_info": true,
+		"base_mods": {
+            "hurt_min": [-5]
+        },
+        "scaling_mods": {
+            "speed_mod": [10],
+            "bash_mod": [3.5],
+            "hit_mod": [1]
         }
     }
 ]
