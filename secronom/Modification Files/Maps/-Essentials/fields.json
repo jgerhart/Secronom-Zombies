@@ -165,8 +165,6 @@
         "type": "field_type",
         "intensity_levels": [{
                 "name": "resonant voice",
-                "sym": "~",
-                "color": "gray",
                 "inside_immune": false,
                 "effect_id": "secro_dissed",
                 "effect_min_duration": 4,
@@ -189,20 +187,15 @@
         "//": "Hidden field for spawning purposes of jolt. Has to be its damaging electric discharges, but it doesn't work.",
         "type": "field_type",
         "intensity_levels": [{
-                "name": "sparks",
-                "sym": "9",
-                "color": "cyan",
+                "name": "this is a bug",
+				"color": "black",
                 "monster_spawn_chance": 500,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
                 "monster_spawn_group": "GROUP_JOLT_BOLTS"
             }, {
-                "name": "electric crackle",
-                "color": "cyan",
                 "monster_spawn_chance": 250
             }, {
-                "name": "electric cloud",
-                "color": "blue",
                 "monster_spawn_chance": 100
             }
         ],
@@ -217,8 +210,7 @@
         "type": "field_type",
         "intensity_levels": [{
                 "name": "airlock",
-                "sym": "0",
-                "color": "black",
+                "color": "gray",
                 "monster_spawn_chance": 7500,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
@@ -236,7 +228,7 @@
         "intensity_levels": [{
                 "name": "intense airlock",
                 "sym": "0",
-                "color": "black",
+                "color": "dark_gray",
                 "monster_spawn_chance": 2500,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
@@ -256,7 +248,6 @@
       {
         "name": "loathful pressence",
         "sym": "0",
-        "color": "dark_gray",
         "dangerous": true,
         "effect_id": "secro_nix_fear",
         "effect_body_part": "HEAD",
@@ -286,7 +277,10 @@
         "effect_id": "secro_gorepit_dmg_immune",
         "effect_body_part": "TORSO",
         "effect_min_duration": "1 seconds",
-        "effect_max_duration": "1 seconds"
+        "effect_max_duration": "1 seconds",
+                "chance_in_vehicle": 1,
+                "chance_inside_vehicle": 1,
+                "chance_outside_vehicle": 1
       }
     ],
     "dirty_transparency_cache": true,
@@ -306,12 +300,13 @@
         "dangerous": true,
         "color": "red",
         "effect_id": "secro_gorepit_wall_dmg",
-        "effect_body_part": "LEG_R",
         "effect_min_duration": "1 seconds",
-        "effect_max_duration": "1 seconds"
+        "effect_max_duration": "1 seconds",
+                "chance_in_vehicle": 1,
+                "chance_inside_vehicle": 1,
+                "chance_outside_vehicle": 1
       }
     ],
-    "dirty_transparency_cache": true,
     "immunity_data": { "body_part_env_resistance": [ [ "LEG_L", 25 ], [ "LEG_R", 25 ] ] },
     "priority": 1,
     "half_life": "1 seconds",
@@ -380,9 +375,9 @@
       { "name": "hazy cloud", "sym": "8", "dangerous": true, "translucency": 1, "effect_id": "secro_necros_para", "effect_body_part": "TORSO",
         "effect_min_duration": "1 seconds",
         "effect_max_duration": "5 seconds" },
-      { "name": "toxic gas", "color": "light_green", "transparent": false, "translucency": 10, "effect_min_duration": "6 seconds",
+      { "name": "neurotoxic gas", "color": "light_green", "transparent": false, "translucency": 10, "effect_min_duration": "6 seconds",
         "effect_max_duration": "10 seconds" },
-      { "name": "thick toxic gas", "color": "green", "translucency": 0, "effect_min_duration": "11 seconds",
+      { "name": "thick neurotoxic gas", "color": "green", "translucency": 0, "effect_min_duration": "11 seconds",
         "effect_max_duration": "20 seconds" }
     ],
     "decay_amount_factor": 5,
@@ -430,22 +425,60 @@
         "display_field": true
     },
 	{
-	"//": "Field to stun the player ONLY.",
+	"//": "It's the trail of charger charging towards the target, and it exploits the glitch of it going OVER/ABOVE the player, so that the effect is applied.",
     "id": "fd_charger_stun",
     "type": "field_type",
     "intensity_levels": [
       {
-		"name": "this is a bug",
+		"name": "u r gae",
+		"//": "Reading the name in-game is a bug, and let's make it edgy just for fun.",
 		"color": "black",
         "effect_id": "stunned",
         "effect_body_part": "TORSO",
         "effect_min_duration": "3 seconds",
-        "effect_max_duration": "3 seconds"
+        "effect_max_duration": "6 seconds"
       }
     ],
     "half_life": "1 seconds",
     "phase": "gas",
     "display_items": true,
+    "display_field": false
+  },
+  {
+    "//": "This web doesn't break when a creature moves through it, it'll disappear only.",
+    "id": "fd_mawy_web",
+    "type": "field_type",
+    "intensity_levels": [ { "name": "flesh strands", "sym": "}", "color": "light_red", "effect_id": "secro_mawy_web",
+        "effect_body_part": "TORSO",
+        "effect_min_duration": "5 seconds",
+        "effect_max_duration": "10 seconds" }, { "name": "flesh webs", "effect_min_duration": "10 seconds",
+        "effect_max_duration": "20 seconds" }, { "name": "thick flesh webs", "transparent": false, "color": "red", "effect_min_duration": "20 seconds",
+        "effect_max_duration": "40 seconds" } ],
+    "priority": 2,
+    "half_life": "3 seconds",
+    "phase": "solid",
+    "display_items": false,
+    "display_field": true
+  },
+  {
+    "id": "fd_mawy_web_immune",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "u r gae",
+        "color": "black",
+        "effect_id": "secro_mawy_web_immune",
+        "effect_body_part": "TORSO",
+        "effect_min_duration": "1 seconds",
+        "effect_max_duration": "1 seconds",
+                "chance_in_vehicle": 1,
+                "chance_inside_vehicle": 1,
+                "chance_outside_vehicle": 1
+      }
+    ],
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": false,
     "display_field": false
   }
 ]
