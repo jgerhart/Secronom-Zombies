@@ -11,7 +11,7 @@ Mod made from various references, mixed up with random spices! A mod I've create
 ## Zombies
 The secronom's main feature - the zeds. They range from weak up to strong variety of them.
 
-* There are 70 zombies in total: 46 city zeds, 14 zed mutants and 10 lab zombies. Only the zombies that spawn individually are counted, while minions and other special zeds aren't.
+* There are 74 zombies in total: 50 city zeds, 14 zed mutants and 10 lab zombies. Only the zombies that spawn individually are counted, while minions and other special zeds aren't.
 
 The evolution sheet is outdated and it is taken down until a new one is created. And due to a technical problem, I can't make monster sprites for the new creatures...
 
@@ -26,7 +26,7 @@ Zombie type with slow attack and movement speed.
 	
 ##### Tendril Zombie **!**
 Zombie type with fast attack speed and a set of chained abilities.
-* **Thick Tendrils**
+* **Thick Tendril Zombie**
 * **Tendricle Zombie**
 * _**Wraith**_
 	
@@ -78,6 +78,7 @@ Zombie type with enormous health, extremely fast movement speed and slow, but co
 A worm, zombie type that burrows underneath, with fatal biting ability.
 * **Grave Digger**
 * **Writhing Horror**
+* **Sinister Maw**
 
 ##### Swarmer Zombie **!**
 Zombie type that grows stronger as time passes by.
@@ -85,7 +86,10 @@ Zombie type that grows stronger as time passes by.
 * The other swarmer zombie paths to city zed mutants.
 
 ##### Charger Zombie **!**
-Zombie type with very high health but slow attack speed, with charging ability.
+Zombie type with very high health and an ability to charge.
+* **Spiky Charger Zombie**
+* **Plated Charger Zombie**
+* _**Vanguard**_
 
 ### Zombie Mutants
 Zed mutants that are seen rarely in and out of the cities or has special conditions to appear. These zeds has unique abilities unlike the city zeds:
@@ -98,9 +102,9 @@ Zed mutants that are seen rarely in and out of the cities or has special conditi
 
 * _**Clinger**_ **+** - A small, quadruped critter, eager to grope on something.
 
-* _**Nocturne**_ **!** - A deadly nightstalker. Sets of razor claws glow faintly under the shadows.
+* _**Nocturne**_ **!** - A deadly nightstalker. Sets of razor claws glow faintly under its shadows.
 
-* _**Gorepit**_ **~** - A huge, hollow pit of flesh, with tendrils accompanied by its side.
+* _**Gorepit**_ **~** - A hollow pit of flesh, with tendrils accompanied by its side.
 
 * _**Corrupted Devourer**_ **!** - A strong, cannibalistic zed who regains health by eating chunks of itself or other's meat.
 
@@ -155,22 +159,22 @@ Extraterrestrial creatures from uncharted worlds.
 
 * _**Carrion**_ **!** - Carrions are undeads that lived from their own ruined world. With no sustenance, they travel between dimensions to sate their hunger.
 
-* _**Vector**_ **~** - Vectors are beautiful plant creatures that tends to spread and dominate the living by manipulation.
+* _**Vector**_ **~** - Vectors are beautiful plant creatures that tends to spread and dominate the living by infecting them with their parasitic dusts.
 
 ## Robots
 Corrupted pieces of machinery on their goal for eradication.
 
-* **Secronom Dragon** **=** - Its enormous body paired with specialized armor platings makes it a formidable foe, with large weaponry system installed to bring wrath on its target.
+* **Secronom Dragon** **=** - An experimental reptilian creature, unknown to what caused it to inherit the dragon-like traits. Its enormous body paired with specialized armor plating makes it a formidable foe, with large weaponry system installed to bring wrath on its target.
 
 # Monster Roles
 All monsters aren't designed to kill the target, and thus providing roles to them is a must (imo). I categorized their type as:
 
 * (**!**) *Aggro* - monsters that focuses on dealing damage, and most hostile creatures belong to this role. Some have their own abilities to inflict status modifiers on targets, or just to deal even more damage.
 
-* (**+**) *Support* - monsters that are sometimes weak and feeble, but takes the chance to provide benefits for its team, such as inflicting debuffs to enemy targets and healing allies. Few can tank a lot of damage and act as the vanguard.
+* (**+**) *Support* - monsters that are sometimes weak and feeble, but takes the chance to provide benefits for its team, such as inflicting debuffs to enemy targets and healing allies. Few can withstand a lot of damage.
 
-* (**~**) *Summoner* - monsters who takes advantage on creating/sending minions. Minions are usually weak, time limited and deals lesser damage, yet a hassle due to them having debuff inflicting abilities. Some who heavily rely on their minions are the opposite.
+* (**~**) *Summoner* - monsters who takes advantage on creating/sending minions. Minions are usually weak, time limited and deals lesser damage, yet a hassle due to them having debuff inflicting abilities. Fee monsters who heavily rely on their minions are the opposite.
 
-* (**=**) *Boss* - monsters that are versatile in every situation. Unique and those who opposes extreme danger are considered with this type. All of these monsters reside in their `lair`.
+* (**=**) *Boss* - monsters that are versatile in every situation. Unique and those who opposes extreme danger are considered with this type. All of these monsters reside in their lair, concealing them to prevent a widespread annihilation.
 
 Few are hybrids, but are still categorized into a type.
