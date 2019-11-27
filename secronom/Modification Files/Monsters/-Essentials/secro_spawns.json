@@ -63,43 +63,43 @@
                 "monster": "mon_zombie_nocturne",
                 "freq": 10,
                 "cost_multiplier": 40,
-                "starts": 228,
+                "starts": 1092,
                 "conditions": ["DUSK", "NIGHT"]
             }, {
                 "monster": "mon_zombie_nix",
                 "freq": 10,
                 "cost_multiplier": 25,
-                "starts": 228
+                "starts": 1092
             }, {
                 "monster": "mon_zombie_fleshmonger",
                 "freq": 10,
                 "cost_multiplier": 50,
-                "starts": 228
+                "starts": 1092
             }, {
                 "monster": "mon_zombie_gorepit",
                 "freq": 10,
                 "cost_multiplier": 65,
-                "starts": 300
+                "starts": 1456
             }, {
                 "monster": "mon_zombie_cordev",
                 "freq": 5,
                 "cost_multiplier": 50,
-                "starts": 300
+                "starts": 1456
             }, {
                 "monster": "mon_zombie_fleshysnaky",
                 "freq": 5,
                 "cost_multiplier": 75,
-                "starts": 600
+                "starts": 2912
             }, {
                 "monster": "mon_zombie_akin",
                 "freq": 50,
                 "cost_multiplier": 25,
-                "starts": 600
+                "starts": 2912
             }, {
                 "monster": "mon_zombie_equinox",
                 "freq": 5,
                 "cost_multiplier": 75,
-                "starts": 600
+                "starts": 2912
             }
         ]
     }, {
@@ -181,43 +181,43 @@
                 "monster": "mon_zombie_nocturne",
                 "freq": 10,
                 "cost_multiplier": 40,
-                "starts": 228,
+                "starts": 1092,
                 "conditions": ["DUSK", "NIGHT"]
             }, {
                 "monster": "mon_zombie_nix",
                 "freq": 10,
                 "cost_multiplier": 25,
-                "starts": 228
+                "starts": 1092
             }, {
                 "monster": "mon_zombie_fleshmonger",
                 "freq": 10,
-                "cost_multiplier": 50,
-                "starts": 228
+                "cost_multiplier": 75,
+                "starts": 1092
             }, {
                 "monster": "mon_zombie_gorepit",
                 "freq": 10,
-                "cost_multiplier": 65,
-                "starts": 300
+                "cost_multiplier": 100,
+                "starts": 1456
             }, {
                 "monster": "mon_zombie_cordev",
                 "freq": 5,
                 "cost_multiplier": 50,
-                "starts": 300
+                "starts": 1456
             }, {
                 "monster": "mon_zombie_fleshysnaky",
                 "freq": 5,
-                "cost_multiplier": 75,
-                "starts": 600
+                "cost_multiplier": 150,
+                "starts": 2912
             }, {
                 "monster": "mon_zombie_akin",
                 "freq": 50,
-                "cost_multiplier": 25,
-                "starts": 600
+                "cost_multiplier": 35,
+                "starts": 2912
             }, {
                 "monster": "mon_zombie_equinox",
                 "freq": 5,
-                "cost_multiplier": 75,
-                "starts": 600
+                "cost_multiplier": 150,
+                "starts": 2912
             }
         ]
     }, {
@@ -320,7 +320,7 @@
                 "monster": "mon_zombie_fleshmonger",
                 "freq": 20,
                 "cost_multiplier": 20,
-                "starts": 228
+                "starts": 1092
             }
         ]
     }, {
@@ -625,11 +625,11 @@
             }, {
                 "monster": "mon_zombie_equinox_necros_stab",
                 "freq": 100,
-                "cost_multiplier": 5
+                "cost_multiplier": 3
             }, {
                 "monster": "mon_zombie_equinox_necros_cut",
                 "freq": 100,
-                "cost_multiplier": 5
+                "cost_multiplier": 3
             }, {
                 "monster": "mon_zombie_equinox_necros_emit",
                 "freq": 100,
