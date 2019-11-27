@@ -36,7 +36,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_titan_charge_target",
                 "cooldown": 60,
-                "monster_message": "%1$s blocks with both arms then sprints toward %3$s!"
+                "monster_message": "<color_yellow>%1$s blocks with both arms then sprints toward %3$s!</color>"
             },
             ["SMASH", 32]
         ],
@@ -83,7 +83,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_titan_charge_target",
                 "cooldown": 50,
-                "monster_message": "%1$s blocks with both arms then sprints toward %3$s!"
+                "monster_message": "<color_yellow>%1$s blocks with both arms then sprints toward %3$s!</color>"
             },
             ["SMASH", 26]
         ],

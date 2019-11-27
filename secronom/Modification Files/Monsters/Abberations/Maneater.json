@@ -30,7 +30,7 @@
             "type": "spell",
             "spell_id": "mon_maneater_vslash",
             "cooldown": 18,
-            "monster_message": "%1$s slashes %3$s with a sharp tendril!"
+            "monster_message": "<color_yellow>%1$s slashes %3$s with a sharp tendril!</color>"
         }
     ],
     "death_function": ["NORMAL"],

@@ -132,7 +132,7 @@
                 "type": "spell",
                 "spell_id": "mon_summon_nightwail_shadow",
                 "cooldown": 38,
-                "monster_message": "%1$s splits a chunk of its shadow!"
+                "monster_message": "<color_yellow>%1$s splits a chunk of its shadow!</color>"
             }
         ],
         "death_function": ["DISAPPEAR"],
@@ -165,7 +165,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_nightwail_shadow_curse",
                 "cooldown": 10,
-                "monster_message": "%1$s curses %3$s!"
+                "monster_message": "<color_yellow>%1$s curses %3$s!</color>"
             }
         ],
         "death_function": ["DISAPPEAR"],

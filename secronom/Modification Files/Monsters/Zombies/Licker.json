@@ -132,7 +132,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_xlick_pstab",
                 "cooldown": 18,
-                "monster_message": "%1$s stabs %3$s precisely with its tongue!"
+                "monster_message": "<color_yellow>%1$s stabs %3$s precisely with its tongue!</color>"
             }
         ],
         "death_drops": {

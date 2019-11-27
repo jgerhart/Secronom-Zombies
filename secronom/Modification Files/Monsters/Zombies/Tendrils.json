@@ -192,7 +192,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_tentawraith_outburst",
                 "cooldown": 52,
-                "monster_message": "%1$s strikes the ground then ruptures a vast amount of thick tentacles under %3$s!\nTendrils burst out of it too!"
+                "monster_message": "<color_yellow>%1$s strikes the ground then ruptures a vast amount of thick tentacles under %3$s!</color>\n<color_red>Tendrils burst out of it too!</color>"
             }, {
                 "type": "bite",
                 "cooldown": 7,
@@ -246,7 +246,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_tentawraith_tent_pmis",
                 "cooldown": 23,
-                "monster_message": "%1$s sweeps its tendril at %3$s!"
+                "monster_message": "<color_yellow>%1$s sweeps its tendril at %3$s!</color>"
             }
         ],
         "death_function": ["MELT"],

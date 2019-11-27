@@ -42,7 +42,7 @@
         },
         "special_attacks": [{
                 "type": "spell",
-                "monster_message": "%1$s blooms a vector haze!",
+                "monster_message": "<color_yellow>%1$s blooms a vector haze!</color>",
                 "spell_id": "mon_vector_rize_smol_target",
                 "cooldown": 14
             }
@@ -96,7 +96,7 @@
         },
         "special_attacks": [{
                 "type": "spell",
-                "monster_message": "%1$s blooms a vector haze!",
+                "monster_message": "<color_yellow>%1$s blooms a vector haze!</color>",
                 "spell_id": "mon_vector_rize_smol_target",
                 "cooldown": 24
             }
@@ -169,7 +169,7 @@
         },
         "special_attacks": [["DISAPPEAR", 200], {
                 "type": "spell",
-                "monster_message": "%1$s blooms a vector haze!",
+                "monster_message": "<color_yellow>%1$s blooms a vector haze!</color>",
                 "spell_id": "mon_vector_rize_smol_target",
                 "cooldown": 38
             }
@@ -217,7 +217,7 @@
         },
         "special_attacks": [{
                 "type": "spell",
-                "monster_message": "%1$s blooms a vector haze!",
+                "monster_message": "<color_yellow>%1$s blooms a vector haze!</color>",
                 "spell_id": "mon_vector_rize_big_target",
                 "cooldown": 34
             }
@@ -316,7 +316,7 @@
         },
         "special_attacks": [{
                 "type": "spell",
-                "monster_message": "%1$s blooms a vector haze!",
+                "monster_message": "<color_yellow>%1$s blooms a vector haze!</color>",
                 "spell_id": "mon_vector_rize_big_target",
                 "cooldown": 18
             }

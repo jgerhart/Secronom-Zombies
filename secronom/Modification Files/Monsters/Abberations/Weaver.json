@@ -34,7 +34,7 @@
             "type": "spell",
             "spell_id": "mon_fleshweaver_vscratch",
             "cooldown": 33,
-            "monster_message": "%1$s injects %3$s with a volatile fluid!"
+            "monster_message": "<color_yellow>%1$s injects %3$s with a volatile fluid!</color>"
         }
     ],
     "death_function": ["NORMAL"],

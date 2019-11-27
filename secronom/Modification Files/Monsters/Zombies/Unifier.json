@@ -126,7 +126,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_hemo_bwave",
                 "cooldown": 65,
-                "monster_message": "%1$s manipulates its own blood and sends it to %3$s.\nBlood vessels and fiend emerges from the %2$s!"
+                "monster_message": "<color_red>%1$s manipulates its own blood and sends it to %3$s!</color>\n<color_yellow>Blood vessels and a fiend emerges from the %2$s!</color>"
             }
         ],
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "PLASTIC"]

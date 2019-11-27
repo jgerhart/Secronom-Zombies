@@ -110,7 +110,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_leptiosa_ngas",
                 "cooldown": 33,
-                "monster_message": "%1$s generates a noxious, corrosive gas then sends it to %3$s!"
+                "monster_message": "<color_yellow>%1$s generates a noxious, corrosive gas then sends it to %3$s!</color>"
             }
         ],
         "death_function": ["GAS"],
