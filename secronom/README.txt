@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.6 - Currently, the plan is to rebalance the new creatures. Since idk what else to add, expect the mod's progress to hamper a bit. <--
+--> V1.6 - Currently, the plan is to rebalance the new creatures. Since idk what else to add, expect the mod's progress to hamper... <--
 
 #  REWORKS ON TILESET (frequent, or whenever I can)
 #  REMOVED LUA VERSION (we have spells and it's meant to replace the LUA attacks)
@@ -17,8 +17,8 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 +  VECTOR IMPROVEMENTS (infection of organic terrains, haze infects the creatures which deals constant damage)
 +  ZED MUTANTS (dissonant screamer, clinger, nocturne, gorepit, corrupted devourer, flesilisk, akin, equinox)
-+  NOXIOUS EATER (new upgrade path)
-+  CITY ZED MUTANT (charger)
++  NOXIOUS EATER (new upgrade paths)
++  CITY ZED MUTANT (charger and all of its upgrade path)
 
 -  SECRONOM LAB (small changes to its deepest floor)
 -  SPELL REBALANCES (tweaked most spells, and made them a bit more random on damage, area of effect, etc. Some chained spells were seperated individually)
