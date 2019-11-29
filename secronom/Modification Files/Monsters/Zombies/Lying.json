@@ -61,7 +61,7 @@
         "harvest": "zombie",
         "death_function": ["NORMAL"],
         "upgrades": {
-            "half_life": 10,
+            "half_life": 16,
             "into_group": "GROUP_LYING_UPGRADEX"
         },
         "flags": ["SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "FLIES", "BLEED", "GRABS"]
@@ -95,7 +95,7 @@
         "harvest": "zombie",
         "death_function": ["NORMAL"],
         "upgrades": {
-            "half_life": 10,
+            "half_life": 16,
             "into_group": "GROUP_LYING_UPGRADEX"
         },
         "flags": ["SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "FLIES", "BLEED", "GRABS"]

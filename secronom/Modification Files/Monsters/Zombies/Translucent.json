@@ -2,7 +2,7 @@
         "id": "mon_zombie_translucent",
         "type": "MONSTER",
         "name": "translucent zombie",
-        "description": "With its acid covering the whole body, this raging corpse sways in every step, vomiting filthy waste as its green, tinted eyes stare submissively out of nowhere.",
+        "description": "With acid covering its whole body, this raging corpse sways in every step, vomiting filthy waste as its green, tinted eyes stare submissively out of nowhere.",
         "default_faction": "zombie",
         "species": ["ZOMBIE", "HUMAN"],
         "volume": "62500 ml",
@@ -32,7 +32,7 @@
         "special_attacks": [["ACID_BARF", 30]],
         "death_drops": "default_zombie_death_drops",
         "upgrades": {
-            "half_life": 12,
+            "half_life": 14,
             "into": "mon_zombie_pellucid"
         },
         "anger_triggers": ["PLAYER_CLOSE"],
@@ -42,7 +42,7 @@
         "id": "mon_zombie_pellucid",
         "type": "MONSTER",
         "name": "pellucid zombie",
-        "description": "Unrecognizable face dribbles with unfriendly liquid. This zombie's skin thinned into a diversion of light, supposably an effect from acid reflux as it ages further. Within a closer look, its vein is compose mostly of green-ish glows.",
+        "description": "Unrecognizable face dribbles with unfriendly liquid. This zombie's skin thinned into a diversion of light, supposably an effect from acid reflux as it ages further. Within a closer look, the veins are composed mostly of green-ish glows.",
         "default_faction": "zombie",
         "species": ["ZOMBIE", "HUMAN"],
         "volume": "62500 ml",
@@ -68,10 +68,11 @@
         "luminance": 1,
         "armor_bash": 6,
         "armor_fire": 2,
-        "special_attacks": [["ACID_BARF", 30], ["ACID", 25], {
+        "special_attacks": [["ACID_BARF", 30], ["ACID", 40], {
                 "type": "spell",
                 "spell_id": "mon_zombie_pellucid_aburst",
-                "cooldown": 49
+                "cooldown": 49,
+                "monster_message": "<color_red>%1$s volleys a glob of acid onto %3$s!</color>"
             }
         ],
         "special_when_hit": ["ACIDSPLASH", 25],

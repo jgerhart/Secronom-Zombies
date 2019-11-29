@@ -103,7 +103,7 @@
         "symbol": "b",
         "type": "MONSTER",
         "upgrades": {
-            "half_life": 12,
+            "half_life": 16,
             "into_group": "GROUP_MOUTH_UPGRADEX"
         },
         "volume": "62500 ml",
@@ -169,7 +169,7 @@
         "symbol": "P",
         "type": "MONSTER",
         "upgrades": {
-            "half_life": 12,
+            "half_life": 16,
             "into_group": "GROUP_MOUTH_UPGRADEX"
         },
         "volume": "62500 ml",

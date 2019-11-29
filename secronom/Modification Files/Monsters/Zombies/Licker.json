@@ -90,7 +90,7 @@
         },
         "death_function": ["NORMAL"],
         "upgrades": {
-            "half_life": 10,
+            "half_life": 20,
             "into": "mon_zombie_xlick"
         },
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "REVIVES", "BONES", "GROUP_MORALE", "HARDTOSHOOT"]

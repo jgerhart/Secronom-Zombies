@@ -84,7 +84,7 @@
             }
         ],
         "upgrades": {
-            "half_life": 10,
+            "half_life": 20,
             "into_group": "GROUP_UNIFIER_UPGRADEX"
         },
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "PLASTIC"]

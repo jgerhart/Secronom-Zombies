@@ -1,5 +1,5 @@
 [{
-        "//": "This boss should path from brute zombie, and much like a hulk... Only difference is its armor, damage and speed gain.",
+        "//": "This zombie should path from brute zombie, and much like a hulk... Only difference is its armor, damage and speed gain.",
         "id": "mon_zombie_titan",
         "type": "MONSTER",
         "name": "titan",
@@ -42,7 +42,7 @@
         ],
         "death_drops": "mon_zombie_hulk_death_drops",
         "upgrades": {
-            "half_life": 12,
+            "half_life": 20,
             "into": "mon_zombie_blacktitan"
         },
         "death_function": ["NORMAL"],
