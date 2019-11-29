@@ -99,16 +99,16 @@
         "default": "mon_null",
         "monsters": [{
                 "monster": "mon_zombie_swarmer_evo_starving",
-                "freq": 50,
+                "freq": 100,
                 "cost_multiplier": 0
             }, {
                 "monster": "mon_zombie_swarmer_evo_savage",
-                "freq": 1,
-                "cost_multiplier": 3
+                "freq": 10,
+                "cost_multiplier": 0
             }, {
                 "monster": "mon_zombie_swarmer_evo_virulent",
                 "freq": 1,
-                "cost_multiplier": 10
+                "cost_multiplier": 0
             }
         ]
     }, {
@@ -281,7 +281,7 @@
                 "freq": 25,
                 "cost_multiplier": 1
             }, {
-                "monster": "mon_zombie_leptiosa",
+                "monster": "mon_zombie_charger_vanguard",
                 "freq": 100,
                 "cost_multiplier": 10
             }
