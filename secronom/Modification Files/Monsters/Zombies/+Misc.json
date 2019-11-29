@@ -612,7 +612,7 @@
         "id": "mon_zombie_nix",
         "type": "MONSTER",
         "name": "nix",
-        "description": "A hollow corpse, suffering from severe deterioration of flesh that made it appear completely skeletal. Its horrible ghastly visage is uncomfortable to the sight, and being near it is the worst than most.",
+        "description": "A hollow corpse, suffering from severe deterioration of flesh that made it appear completely skeletal. Its ghastly visage is uncomfortable to the sight, and being near it is the worst than most.",
         "default_faction": "zombie",
         "bodytype": "human",
         "species": ["ZOMBIE"],
@@ -682,6 +682,7 @@
         "vision_day": 22,
         "vision_night": 12,
         "harvest": "zombie",
+        "emit_fields": ["emit_down_immunity"],
         "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_zombie_fleshmonger_reflesh_target",
@@ -710,7 +711,7 @@
         ]
     }, {
         "//": "Summoner-type monster whose purpose is to send out minions using field emissions. Its basically a 3-tile wide monster: the center is its hitbox and the adjacent `mouth` causes damage when a creature steps on it.",
-        "//": "Spawns in cities after a year.",
+        "//": "Spawns in cities approximately after a year.",
         "id": "mon_zombie_gorepit",
         "type": "MONSTER",
         "name": "gorepit",
@@ -727,7 +728,7 @@
         "color": "red",
         "aggression": 100,
         "morale": 100,
-        "emit_fields": ["emit_gorepit_main", "emit_gorepit_edge", "emit_gorepit_passive_summon"],
+        "emit_fields": ["emit_down_immunity","emit_gorepit_main", "emit_gorepit_edge", "emit_gorepit_passive_summon"],
         "melee_skill": 0,
         "melee_dice": 0,
         "melee_dice_sides": 0,
@@ -773,6 +774,7 @@
         "material": ["flesh", "bone"],
         "symbol": "?",
         "color": "red",
+        "emit_fields": ["emit_down_immunity"],
         "aggression": 100,
         "morale": 100,
         "attack_cost": 575,
@@ -807,7 +809,7 @@
         ]
     }, {
         "//": "Aggro-type zed, both durable and lethal. Unlike other zed mutants, this one's very dependant on healing for itself whilst dealing damage, in addition to its unique debuff-inflicting acid.",
-        "//": "Spawns in cities after a year.",
+        "//": "Spawns in cities approximately after a year.",
         "id": "mon_zombie_cordev",
         "type": "MONSTER",
         "name": "corrupted devourer",
@@ -886,7 +888,7 @@
         ]
     }, {
         "//": "Aggro-type zed aberration, extremely tough, durable and full of deadly ranged capabilities, unique to its drastic movement speed gain as long as it sees a target. One of the true end-game monsters.",
-        "//": "Spawns in cities after 2 years.",
+        "//": "Spawns in cities approximately after 2 years.",
         "id": "mon_zombie_fleshysnaky",
         "type": "MONSTER",
         "name": "flesilisk",
@@ -901,6 +903,7 @@
         "diff": 100,
         "material": ["flesh", "bone"],
         "symbol": "⚶",
+        "emit_fields": ["emit_down_immunity"],
         "color": "magenta",
         "aggression": 100,
         "morale": 100,
@@ -953,8 +956,8 @@
             "REVIVES"
         ]
     }, {
-        "//": "Support-type zed who weakens the target by applying debuffs that intensifies for as long as it acquire LOS while randomly strengthens nearby allies. Feeble, yet a great nuisance behind its meat wall. One of the true end-game monsters.",
-        "//": "Spawns in cities after 2 years.",
+        "//": "Support-type zed who weakens the target by applying debuffs that intensifies for as long as it acquire LOS, while randomly strengthens nearby allies. Feeble, yet a great nuisance behind its meat wall. One of the true end-game monsters.",
+        "//": "Spawns in cities approximately after 2 years.",
         "id": "mon_zombie_akin",
         "type": "MONSTER",
         "name": "akin",
@@ -1004,6 +1007,7 @@
         ]
     }, {
         "//": "Summoner-type monster that excels at quickly sending out agile minions. One of the true end-game monsters.",
+        "//": "Spawns in cities approximately after 2 years.",
         "id": "mon_zombie_equinox",
         "type": "MONSTER",
         "name": "equinox",
@@ -1021,7 +1025,7 @@
         "color": "red",
         "aggression": 100,
         "morale": 100,
-        "emit_fields": ["emit_equinox_toxic_weak", "emit_equinox_toxic_normal", "emit_equinox_toxic_strong", "emit_equinox_para"],
+        "emit_fields": ["emit_down_immunity","emit_equinox_toxic_weak", "emit_equinox_toxic_normal", "emit_equinox_toxic_strong", "emit_equinox_para"],
         "melee_skill": 0,
         "melee_dice": 0,
         "melee_dice_sides": 0,
@@ -1038,9 +1042,9 @@
                 "monster_message": "<color_yellow>%1$s trembles as it spread its flesh into the vicinity!</color>\n<color_red>Twisted abominations starts to crawl out of %1$s!</color>"
             }
         ],
-        "harvest": "exempt",
-        "death_function": ["DISINTEGRATE"],
-        "//": "It's a huge brain, but doesn't mean there's weakness in any of its parts.",
+        "harvest": "zombie",
+        "death_function": ["SPLATTER"],
+        "//": "It's a huge brain, but doesn't mean there's weakness in any of that part.",
         "flags": [
             "SEES",
             "WARM",
