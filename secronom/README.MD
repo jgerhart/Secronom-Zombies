@@ -11,7 +11,7 @@ Mod made from various references, mixed up with random spices! A mod I've create
 ## Zombies
 The secronom's main feature - the zeds. They range from weak up to strong variety of them.
 
-* There are 74 zombies in total: 50 city zeds, 14 zed mutants and 10 lab zombies. Only the zombies that spawn individually are counted, while minions and other special zeds aren't.
+* There are 75 zombies in total: 51 city zeds, 14 zed mutants and 10 lab zombies. Only the zombies that spawn individually are counted, while minions and other special zeds aren't.
 
 The evolution sheet is outdated and it is taken down until a new one is created. And due to a technical problem, I can't make monster sprites for the new creatures...
 
@@ -64,6 +64,7 @@ Zombie type with an ability to create tough minions.
 ##### Grubby Zombie **~**
 Zombie type with an ability to create debuff-inflicting minions.
 * **Slimy Zombie**
+* _**Glut**_
 
 ##### Licker Zombie **!**
 Zombie type with extremely high agility and barrages melee attacks.
@@ -83,7 +84,7 @@ A worm, zombie type that burrows underneath, with fatal biting ability.
 ##### Swarmer Zombie **!**
 Zombie type that grows stronger as time passes by.
 * It has 6 upgrade paths, in each progress strenghtens the zed.
-* The other swarmer zombie paths to city zed mutants.
+* Final counterparts gain unique abilities.
 
 ##### Charger Zombie **!**
 Zombie type with very high health and an ability to charge.
