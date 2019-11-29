@@ -1,7 +1,7 @@
 [{
         "id": "mon_zombie_swarmer_weak",
         "type": "MONSTER",
-        "name": "swarmer zombie",
+        "name": "swarmer",
         "description": "A normal humanoid body, almost in its decaying state. It seems to know how \"teamwork\" is done as it moves simultaneously with other swarmers as a pack.",
         "default_faction": "zombie",
         "species": ["ZOMBIE", "HUMAN"],
@@ -13,6 +13,7 @@
         "material": ["flesh"],
         "symbol": "Z",
         "color": "light_green",
+
         "aggression": 50,
         "morale": 50,
         "melee_skill": 2,
@@ -36,7 +37,7 @@
     }, {
         "id": "mon_zombie_swarmer_segway",
         "type": "MONSTER",
-        "name": "swarmer zombie",
+        "name": "swarmer",
         "description": "A normal humanoid body, almost in its decaying state. It seems to know how \"teamwork\" is done as it moves simultaneously with other swarmers as a pack.",
         "default_faction": "zombie",
         "species": ["ZOMBIE", "HUMAN"],
@@ -48,6 +49,7 @@
         "material": ["flesh"],
         "symbol": "Z",
         "color": "light_green",
+
         "aggression": 50,
         "morale": 50,
         "melee_skill": 2,
@@ -72,7 +74,7 @@
     }, {
         "id": "mon_zombie_swarmer_moderate",
         "type": "MONSTER",
-        "name": "swarmer zombie",
+        "name": "swarmer",
         "description": "A normal humanoid body, almost in its decaying state. It seems to know how \"teamwork\" is done as it moves simultaneously with other swarmers as a pack.",
         "default_faction": "zombie",
         "species": ["ZOMBIE", "HUMAN"],
@@ -84,6 +86,7 @@
         "material": ["flesh"],
         "symbol": "Z",
         "color": "light_green",
+
         "aggression": 50,
         "morale": 50,
         "melee_skill": 2,
@@ -100,14 +103,14 @@
         "death_drops": "default_zombie_death_drops",
         "death_function": ["NORMAL"],
         "upgrades": {
-            "half_life": 14,
+            "half_life": 15,
             "into": "mon_zombie_swarmer_strong"
         },
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "BONES", "GROUP_MORALE", "SWARMS", "GRABS"]
     }, {
         "id": "mon_zombie_swarmer_strong",
         "type": "MONSTER",
-        "name": "swarmer zombie",
+        "name": "swarmer",
         "description": "A normal humanoid body, almost in its decaying state. It seems to know how \"teamwork\" is done as it moves simultaneously with other swarmers as a pack.",
         "default_faction": "zombie",
         "species": ["ZOMBIE", "HUMAN"],
@@ -119,6 +122,7 @@
         "material": ["flesh"],
         "symbol": "Z",
         "color": "light_green",
+
         "aggression": 50,
         "morale": 50,
         "melee_skill": 3,
@@ -135,14 +139,14 @@
         "death_drops": "default_zombie_death_drops",
         "death_function": ["NORMAL"],
         "upgrades": {
-            "half_life": 14,
+            "half_life": 16,
             "into": "mon_zombie_swarmer_evo_hungry"
         },
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "SWARMS", "GRABS"]
     }, {
         "id": "mon_zombie_swarmer_evo_hungry",
         "type": "MONSTER",
-        "name": "hungry swarmer zombie",
+        "name": "hungry swarmer",
         "description": "Defiled from fleshy excitement, it will do anything just to eat more and feast along with its \"team\".",
         "default_faction": "zombie",
         "species": ["ZOMBIE", "HUMAN"],
@@ -154,6 +158,7 @@
         "material": ["flesh"],
         "symbol": "Z",
         "color": "light_gray_yellow",
+
         "aggression": 50,
         "morale": 50,
         "melee_skill": 4,
@@ -170,14 +175,14 @@
         "death_drops": "default_zombie_death_drops",
         "death_function": ["NORMAL"],
         "upgrades": {
-            "half_life": 14,
+            "half_life": 17,
             "into": "mon_zombie_swarmer_evo_starving"
         },
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "SWARMS", "GRABS"]
     }, {
         "id": "mon_zombie_swarmer_evo_starving",
         "type": "MONSTER",
-        "name": "starving swarmer zombie",
+        "name": "starving swarmer",
         "description": "Further excitement to sate its hunger gave itself a boost to muscle tension, affecting its physical strength and speed, regardless of its heavily decayed state and flimsy limbs. Acts differently with its \"team\".",
         "default_faction": "zombie",
         "species": ["ZOMBIE", "HUMAN"],
@@ -205,45 +210,54 @@
         "death_drops": "default_zombie_death_drops",
         "death_function": ["NORMAL"],
         "upgrades": {
-            "half_life": 14,
+            "half_life": 18,
             "into_group": "GROUP_EZTARVING_UPGRADE"
         },
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "SWARMS", "GRABS"]
     }, {
+        "//": "Final counterparts has their own unique abilities.",
+        "//": "This one has a 1/5 chance to gain combat bonuses while a target is in LOS.",
         "id": "mon_zombie_swarmer_evo_savage",
         "type": "MONSTER",
-        "name": "savage swarmer zombie",
-        "description": "gray-ish visage in misunderstandable expression, this zombie has gone feral with extreme twitching of its head. Although it possesses a regular body, there's something wrong with it.",
+        "name": "savage swarmer",
+        "description": "Gray-ish visage in misunderstandable expression, this zombie has gone feral, visible to its extreme twitching of its head. Although possesses a regular body, there's something wrong in it.",
         "default_faction": "zombie",
         "species": ["ZOMBIE", "HUMAN"],
         "harvest": "zombie",
         "volume": "62500 ml",
         "weight": 81500,
         "hp": 135,
-        "speed": 105,
+        "speed": 85,
         "material": ["flesh"],
         "symbol": "Z",
         "color": "black_yellow",
         "aggression": 50,
         "morale": 50,
-        "melee_skill": 4,
-        "melee_dice": 4,
-        "melee_dice_sides": 3,
+        "melee_skill": 6,
+        "melee_dice": 2,
+        "melee_dice_sides": 4,
         "melee_cut": 4,
         "special_attacks": [{
                 "type": "bite",
                 "cooldown": 15
             },
-            ["scratch", 35]
+            ["scratch", 35], {
+                "type": "spell",
+                "spell_id": "mon_zombie_swarmer_evo_savage_tension_target_random",
+                "cooldown": 11,
+                "monster_message": "<color_magenta>%1$s twitches violently...</color>"
+            }
         ],
         "death_drops": "default_zombie_death_drops",
         "death_function": ["NORMAL"],
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "SWARMS"]
     }, {
+        "//": "This one's the strongest, but also the rarest.",
+        "//": "It gets even more accurate in attacking as long as it sees a target.",
         "id": "mon_zombie_swarmer_evo_virulent",
         "type": "MONSTER",
-        "name": "virulent swarmer zombie",
-        "description": "A greenish scourge with significant lust upon the living flesh. It rather bite its \"team\" when nothing edible insight, but seeing one brings this weirdo into a ferocious berserk, gnawing the air as it chase down the target.",
+        "name": "virulent swarmer",
+        "description": "A greenish scourge with significant lust upon the living flesh. It rather bite its \"team\" when nothing edible insight, but seeing one brings this corpse into a ferocious berserk, gnawing the air as it chase down the target.",
         "default_faction": "zombie",
         "species": ["ZOMBIE", "HUMAN"],
         "volume": "62500 ml",
@@ -256,15 +270,20 @@
         "color": "magenta_green",
         "aggression": 50,
         "morale": 50,
-        "melee_skill": 4,
+        "melee_skill": 8,
         "melee_dice": 2,
-        "melee_dice_sides": 3,
+        "melee_dice_sides": 4,
         "melee_cut": 4,
         "special_attacks": [{
                 "type": "bite",
                 "cooldown": 8
             },
-            ["scratch", 43]
+            ["scratch", 43], {
+                "type": "spell",
+                "spell_id": "mon_zombie_swarmer_evo_virulent_target",
+                "cooldown": 20,
+                "monster_message": "<color_magenta>As %1$s glares at %3$s, %1$s's become keen!</color>"
+            }
         ],
         "death_drops": "default_zombie_death_drops",
         "death_function": ["NORMAL"],
