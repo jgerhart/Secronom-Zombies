@@ -27,7 +27,7 @@
         "harvest": "secrodragon_harvest",
         "volume": "875000 ml",
         "weight": 200000,
-        "hp": 1310,
+        "hp": 2325,
         "speed": 0,
         "material": ["steel", "flesh"],
         "symbol": "D",
@@ -58,21 +58,22 @@
             "half_life": 22,
             "into": "mon_secrodragon_woke"
         },
-        "//": "Might wake up in approximately two years.",
+        "//": "Might wake up in approximately 1 year.",
         "flags": ["IMMOBILE", "WARM", "POISON", "NO_BREATHE", "BONES", "ELECTRIC", "FIREPROOF"]
     }, {
         "id": "mon_secrodragon_woke",
         "type": "MONSTER",
         "name": "secronom dragon",
-        "description": "This massively armored reptilian has its own purpose: ERADICATION. It's the product of technological advancements, altogether with the vast weaponry installations to form the \"savior\".",
+        "description": "This massively armored reptilian has its own purpose: ERADICATION.\nIt's the product of technological advancements using mere bionics, altogether with vast weaponry installations to form the \"SAVIOR\".",
         "default_faction": "bot",
         "species": ["ROBOT", "DRAGON"],
         "harvest": "secrodragon_harvest",
         "volume": "875000 ml",
         "weight": 200000,
-        "hp": 1310,
+        "hp": 2325,
         "speed": 60,
         "material": ["steel", "flesh"],
+        "emit_fields": ["emit_down_immunity"],
         "symbol": "D",
         "color": "white_red",
         "aggression": 100,
@@ -98,7 +99,13 @@
             ["secrodragon_SSLRatk", 2],
             ["secrodragon_M240atk", 5],
             ["secrodragon_SSGLatk", 15],
-            ["secrodragon_pershieldatk", 10]
+            ["secrodragon_pershieldatk", 10],
+             {
+                "type": "spell",
+                "spell_id": "mon_secrodragon_target_random",
+                "cooldown": 25,
+                "monster_message": "<color_yellow>%1$s growls as it performs a peculiar movement!</color>"
+            }
         ],
         "death_drops": {
             "groups": [["robots", 100], ["secrodrag_drops", 80]]
