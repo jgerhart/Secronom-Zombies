@@ -266,6 +266,7 @@
     "display_field": false
   },
   {
+    "//": "This field provides immunity to the gorepit's constant damage.",
     "id": "fd_gorepit_center",
     "type": "field_type",
     "intensity_levels": [
@@ -430,8 +431,8 @@
     "type": "field_type",
     "intensity_levels": [
       {
-		"name": "u r gae",
-		"//": "Reading the name in-game is a bug, and let's make it edgy just for fun.",
+		"name": "...",
+		"//": "Reading the name in-game is a bug.",
 		"color": "black",
         "effect_id": "stunned",
         "effect_body_part": "TORSO",
@@ -448,10 +449,10 @@
     "//": "This web doesn't break when a creature moves through it, it'll disappear only.",
     "id": "fd_mawy_web",
     "type": "field_type",
-    "intensity_levels": [ { "name": "flesh strands", "sym": "}", "color": "light_red", "effect_id": "secro_mawy_web",
+    "intensity_levels": [ { "name": "flesh strands", "sym": "}", "color": "pink", "effect_id": "secro_mawy_web",
         "effect_body_part": "TORSO",
         "effect_min_duration": "5 seconds",
-        "effect_max_duration": "10 seconds" }, { "name": "flesh webs", "effect_min_duration": "10 seconds",
+        "effect_max_duration": "10 seconds" }, { "name": "flesh webs", "color": "light_red","effect_min_duration": "10 seconds",
         "effect_max_duration": "20 seconds" }, { "name": "thick flesh webs", "transparent": false, "color": "red", "effect_min_duration": "20 seconds",
         "effect_max_duration": "40 seconds" } ],
     "priority": 2,
@@ -465,9 +466,32 @@
     "type": "field_type",
     "intensity_levels": [
       {
-        "name": "u r gae",
+        "name": "...",
         "color": "black",
         "effect_id": "secro_mawy_web_immune",
+        "effect_body_part": "TORSO",
+        "effect_min_duration": "1 seconds",
+        "effect_max_duration": "1 seconds",
+                "chance_in_vehicle": 1,
+                "chance_inside_vehicle": 1,
+                "chance_outside_vehicle": 1
+      }
+    ],
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": false,
+    "display_field": false
+  },
+  
+  {
+    "//": "Immunity fields designed for all creatures.",
+    "id": "fd_mon_down_immune",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+        "effect_id": "secro_down_immune",
         "effect_body_part": "TORSO",
         "effect_min_duration": "1 seconds",
         "effect_max_duration": "1 seconds",
