@@ -14,6 +14,15 @@
         "max_aoe": 1,
         "damage_type": "none"
     }, {
+    "type": "SPELL",
+    "id": "secro_spell_null",
+    "name": "null",
+    "description": "null... just ignore this.",
+    "valid_targets": [ "none" ],
+    "flags": [ "SILENT" ],
+    "message": "",
+    "effect": "target_attack"
+},{
         "type": "SPELL",
         "id": "mon_summon_tentawraith_tent",
         "name": "Summon Tentacles",
@@ -2034,7 +2043,7 @@
         "id": "mon_zombie_equinox_ndischarge",
         "type": "SPELL",
         "name": "Necrotic Discharge",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster ahoots out a mass of gangrenous flesh with force from its hollow gap at a random area, dealing tremendous bashing damage to all creatures within a line.'",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out a mass of gangrenous flesh with force from its hollow gap at a random area, dealing tremendous bashing damage to all creatures within a line.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_TARGET"],
         "valid_targets": ["hostile", "ally", "ground"],
         "effect": "line_attack",
@@ -2246,8 +2255,8 @@
         "max_aoe": 13,
         "min_duration": 100,
         "max_duration": 100,
-		"//": "Use field to stun DIRECTLY the PLAYER.",
-		"field_id": "fd_charger_stun",
+        "//": "Use field to stun DIRECTLY the PLAYER.",
+        "field_id": "fd_charger_stun",
         "min_field_intensity": 1,
         "max_field_intensity": 1
     }, {
@@ -2311,7 +2320,7 @@
         "max_aoe": 15,
         "min_duration": 100,
         "max_duration": 100,
-		"field_id": "fd_charger_stun",
+        "field_id": "fd_charger_stun",
         "min_field_intensity": 1,
         "max_field_intensity": 1
     }, {
@@ -2363,7 +2372,7 @@
         "max_aoe": 8,
         "min_duration": 100,
         "max_duration": 100,
-		"field_id": "fd_charger_stun",
+        "field_id": "fd_charger_stun",
         "min_field_intensity": 1,
         "max_field_intensity": 1
     }, {
@@ -2415,7 +2424,7 @@
         "max_aoe": 20,
         "min_duration": 100,
         "max_duration": 100,
-		"field_id": "fd_charger_stun",
+        "field_id": "fd_charger_stun",
         "min_field_intensity": 1,
         "max_field_intensity": 1
     }, {
@@ -2454,8 +2463,7 @@
         "max_range": 20,
         "min_duration": 1,
         "max_duration": 1
-    },
-    {
+    }, {
         "id": "mon_zombieworm_mawy_crunch",
         "type": "SPELL",
         "name": "Crunch",
@@ -2470,8 +2478,7 @@
         "min_field_intensity": 3,
         "max_field_intensity": 3,
         "damage_type": "stab"
-    },
-    {
+    }, {
         "id": "mon_zombieworm_mawy_web_low",
         "type": "SPELL",
         "name": "Web Spit",
@@ -2485,8 +2492,7 @@
         "field_chance": 5,
         "min_field_intensity": 1,
         "max_field_intensity": 1
-    },
-    {
+    }, {
         "id": "mon_zombieworm_mawy_web_med",
         "type": "SPELL",
         "name": "Web Spit",
@@ -2500,8 +2506,7 @@
         "field_chance": 15,
         "min_field_intensity": 2,
         "max_field_intensity": 2
-    },
-    {
+    }, {
         "id": "mon_zombieworm_mawy_web_high",
         "type": "SPELL",
         "name": "Web Spit",
@@ -2515,8 +2520,7 @@
         "field_chance": 30,
         "min_field_intensity": 3,
         "max_field_intensity": 3
-    },
-    {
+    }, {
         "type": "SPELL",
         "id": "mon_zombieworm_mawy_web_target",
         "name": "a spell",
@@ -2537,18 +2541,15 @@
         "max_range": 7,
         "min_duration": 1,
         "max_duration": 1
-    },
-    {
-    	"//": "Sinister maw either bites you or lay around its trap.",
+    }, {
+        "//": "Sinister maw either bites you or lay around its trap.",
         "type": "SPELL",
         "id": "mon_zombieworm_mawy_target_random",
         "name": "a spell",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
-        "extra_effects": [
-			{
+        "extra_effects": [{
                 "id": "mon_zombieworm_mawy_web_target"
-            },
-            {
+            }, {
                 "id": "mon_zombieworm_mawy_crunch"
             }
         ],
@@ -2557,9 +2558,336 @@
         "effect": "none",
         "min_damage": 1,
         "max_damage": 1,
-		"min_range": 7,
+        "min_range": 7,
         "max_range": 7,
         "min_duration": 1,
         "max_duration": 1
+    }, {
+        "type": "SPELL",
+        "id": "mon_zombie_summon_stomach",
+        "name": "Pus Eruption",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's pus explodes, releasing a swarm of parasitic worms.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_aoe": 2,
+        "max_aoe": 2,
+        "effect": "summon",
+        "effect_str": "mon_insect_parasiteworm_stomach"
+    }, {
+        "type": "SPELL",
+        "id": "mon_zombie_summon_move",
+        "name": "Pus Eruption",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's pus explodes, releasing a swarm of parasitic worms.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_aoe": 2,
+        "max_aoe": 2,
+        "effect": "summon",
+        "effect_str": "mon_insect_parasiteworm_move"
+    }, {
+        "type": "SPELL",
+        "id": "mon_zombie_summon_int",
+        "name": "Pus Eruption",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's pus explodes, releasing a swarm of parasitic worms.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_aoe": 2,
+        "max_aoe": 2,
+        "effect": "summon",
+        "effect_str": "mon_insect_parasiteworm_int"
+    }, {
+        "type": "SPELL",
+        "id": "mon_zombie_summon_pain",
+        "name": "Pus Eruption",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's pus explodes, releasing a swarm of parasitic worms.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_aoe": 2,
+        "max_aoe": 2,
+        "effect": "summon",
+        "effect_str": "mon_insect_parasiteworm_pain"
+    }, {
+        "type": "SPELL",
+        "id": "mon_zombie_grubby_target_random",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "extra_effects": [{
+                "id": "mon_zombie_summon_pain",
+                "hit_self": true
+            }, {
+                "id": "mon_zombie_summon_int",
+                "hit_self": true
+            }, {
+                "id": "mon_zombie_summon_move",
+                "hit_self": true
+            }, {
+                "id": "mon_zombie_summon_stomach",
+                "hit_self": true
+            }
+        ],
+        "flags": ["SILENT", "WONDER", "RANDOM_DAMAGE"],
+        "valid_targets": ["none"],
+        "effect": "none",
+        "min_damage": 1,
+        "max_damage": 3,
+        "min_range": 14,
+        "max_range": 14
+    }, {
+        "type": "SPELL",
+        "id": "mon_zombie_slimy_target_random",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "extra_effects": [{
+                "id": "mon_zombie_summon_pain",
+                "hit_self": true
+            }, {
+                "id": "mon_zombie_summon_int",
+                "hit_self": true
+            }, {
+                "id": "mon_zombie_summon_move",
+                "hit_self": true
+            }, {
+                "id": "mon_zombie_summon_stomach",
+                "hit_self": true
+            }
+        ],
+        "flags": ["SILENT", "WONDER", "RANDOM_DAMAGE"],
+        "valid_targets": ["none"],
+        "effect": "none",
+        "min_damage": 2,
+        "max_damage": 5,
+        "min_range": 17,
+        "max_range": 17
+    }, {
+        "type": "SPELL",
+        "id": "mon_zombie_glut_target_random",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "extra_effects": [{
+                "id": "mon_zombie_summon_pain",
+                "hit_self": true
+            }, {
+                "id": "mon_zombie_summon_int",
+                "hit_self": true
+            }, {
+                "id": "mon_zombie_summon_move",
+                "hit_self": true
+            }, {
+                "id": "mon_zombie_summon_stomach",
+                "hit_self": true
+            }
+        ],
+        "flags": ["SILENT", "WONDER", "RANDOM_DAMAGE", "RANDOM_TARGET"],
+        "valid_targets": ["ground"],
+        "effect": "projectile_attack",
+        "min_damage": 5,
+        "max_damage": 10,
+        "min_range": 10,
+        "max_range": 10
+    }, {
+        "id": "mon_zombie_glut_bexplode",
+        "type": "SPELL",
+        "name": "Bloated Explosion",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster causes a limb to explode, which then lets loose all parasites out of it and inflicts itself with crippling effect and loses its size.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["self"],
+        "effect": "projectile_attack",
+        "effect_str": "secro_glut_dismember",
+        "min_damage": 120,
+        "max_damage": 120,
+        "damage_type": "none",
+		"min_duration": 30000,
+        "max_duration": 30000
+    }, {
+        "type": "SPELL",
+        "id": "mon_zombie_glut_target",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "extra_effects": [{
+                "id": "mon_zombie_glut_target_random"
+            }, {
+                "id": "mon_zombie_glut_bexplode",
+                "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "projectile_attack",
+        "effect_str": "secro_magic_target",
+        "min_range": 10,
+        "max_range": 10,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
+        "//": "Lets make secronom dragon even more destructive!",
+        "id": "mon_secrodragon_barrier",
+        "type": "SPELL",
+        "name": "Barrier",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster creates an innate force field, pushing nearby hostiles. This is casted 5 times.'",
+        "effect": "area_push",
+        "effect_filter": ["hostile"],
+        "flags": ["SILENT"],
+        "valid_targets": ["self"],
+        "min_aoe": 3,
+        "max_aoe": 3
+    }, {
+        "type": "SPELL",
+        "id": "mon_secrodragon_barrier_target_random",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "extra_effects": [{
+                "id": "mon_secrodragon_barrier",
+                "hit_self": true
+            }
+        ],
+        "flags": ["SILENT", "WONDER"],
+        "valid_targets": ["self"],
+        "effect": "projectile_attack",
+        "min_damage": 5,
+        "max_damage": 5
+    }, {
+        "id": "mon_secrodragon_edischarge",
+        "type": "SPELL",
+        "name": "Electric Discharge",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster generates an electric current that sparks randomly, creating a line that deals electric damage to all creatures that gets hit. This is casted randomly between 6 to 12 times.'",
+        "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_TARGET"],
+        "valid_targets": ["hostile", "ally", "ground"],
+        "effect": "line_attack",
+        "affected_body_parts": ["HEAD", "TORSO", "ARM_R", "ARM_L", "LEG_R", "LEG_L"],
+        "min_damage": 3,
+        "max_damage": 6,
+        "max_range": 12,
+        "min_range": 6,
+        "min_aoe": 2,
+        "max_aoe": 2,
+        "damage_type": "electric",
+        "field_id": "fd_electricity",
+        "min_field_intensity": 2,
+        "max_field_intensity": 2
+    }, {
+        "type": "SPELL",
+        "id": "mon_secrodragon_edischarge_target_random",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "extra_effects": [{
+                "id": "mon_secrodragon_edischarge"
+            }
+        ],
+        "flags": ["SILENT", "WONDER", "RANDOM_DAMAGE"],
+        "valid_targets": ["ground"],
+        "effect": "projectile_attack",
+        "min_damage": 6,
+        "max_damage": 12
+    }, {
+        "type": "SPELL",
+        "id": "mon_secrodragon_target_random",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "extra_effects": [{
+                "id": "mon_secrodragon_barrier_target_random"
+            }, {
+                "id": "mon_secrodragon_edischarge_target_random"
+            }, {
+                "id": "mon_secrodragon_edischarge_target_random"
+            }
+        ],
+        "flags": ["SILENT", "WONDER"],
+        "valid_targets": ["ground"],
+        "effect": "none",
+        "min_damage": 1,
+        "max_damage": 1,
+        "max_range": 5,
+        "min_range": 5
+    },
+    {
+        "id": "mon_zombie_swarmer_evo_savage_tension_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "effect_str": "mon_zombie_swarmer_evo_savage_tension_target_random_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "id": "mon_zombie_swarmer_evo_savage_tension",
+        "type": "SPELL",
+        "name": "Tension",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster mutates, gaining temporary combat bonuses.'",
+        "flags": ["SILENT"],
+        "extra_effects": [{
+                "id": "mon_zombie_swarmer_evo_savage_tension_note", "hit_self": true
+            }
+        ],
+        "valid_targets": ["self"],
+        "effect": "projectile_attack",
+        "effect_str": "secro_swarmer_savage_tension",
+		"min_duration": 20000,
+        "max_duration": 20000
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_zombie_swarmer_evo_savage_tension_target_random",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "extra_effects": [{
+                "id": "mon_zombie_swarmer_evo_savage_tension", "hit_self": true
+            }, {
+                "id": "secro_spell_null"
+            }, {
+                "id": "secro_spell_null"
+            }, {
+                "id": "secro_spell_null"
+            }, {
+                "id": "secro_spell_null"
+            }
+        ],
+        "flags": ["SILENT", "WONDER"],
+        "valid_targets": ["ground"],
+        "effect": "none",
+        "min_damage": 1,
+        "max_damage": 1,
+        "max_range": 69,
+        "min_range": 69
+    },
+    {
+        "id": "mon_zombie_swarmer_evo_virulent_precision",
+        "type": "SPELL",
+        "name": "Precision",
+        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's senses sharpens by focusing at the target, increasing the accuracy of attacks and movement speed.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["self"],
+        "effect": "projectile_attack",
+        "effect_str": "secro_swarmer_virulent_precise",
+		"min_duration": 3500,
+        "max_duration": 3500
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_zombie_swarmer_evo_virulent_target",
+        "name": "a spell",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "extra_effects": [{
+                "id": "mon_zombie_swarmer_evo_virulent_precision",
+                "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_range": 69,
+        "max_range": 69
     }
 ]
