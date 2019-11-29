@@ -174,7 +174,7 @@ All monsters aren't designed to kill the target, and thus providing roles to the
 
 * (**+**) *Support* - monsters that are sometimes weak and feeble, but takes the chance to provide benefits for its team, such as inflicting debuffs to enemy targets and healing allies. Few can withstand a lot of damage.
 
-* (**~**) *Summoner* - monsters who takes advantage on creating/sending minions. Minions are usually weak, time limited and deals lesser damage, yet a hassle due to them having debuff inflicting abilities. Fee monsters who heavily rely on their minions are the opposite.
+* (**~**) *Summoner* - monsters who takes advantage on creating/sending minions. Minions are usually weak, time limited and deals lesser damage, yet a hassle due to them having debuff inflicting abilities. Monsters who heavily rely on their minions are the opposite.
 
 * (**=**) *Boss* - monsters that are versatile in every situation. Unique and those who opposes extreme danger are considered with this type. All of these monsters reside in their lair, concealing them to prevent a widespread annihilation.
 
