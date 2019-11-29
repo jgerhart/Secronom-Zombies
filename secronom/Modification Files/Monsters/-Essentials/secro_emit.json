@@ -255,5 +255,12 @@
         "field": "fd_mawy_web_immune",
         "qty": 1,
         "intensity": 1
+    },
+    {
+        "id": "emit_down_immunity",
+        "type": "emit",
+        "field": "fd_mon_down_immune",
+        "qty": 1,
+        "intensity": 1
     }
 ]
