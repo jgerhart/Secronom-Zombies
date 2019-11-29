@@ -88,7 +88,7 @@
             "pain_chance": [50]
         },
         "scaling_mods": {
-            "pain_min": [1.30]
+            "pain_min": [1.25]
         }
     }, {
         "type": "effect_type",
@@ -106,6 +106,10 @@
         "max_duration": 600,
         "rating": "bad",
         "resist_traits": ["POISRESIST"],
+		"base_mods": {
+            "dex_mod": [-1.55],
+            "speed_mod": [-1.15]
+        },
         "scaling_mods": {
             "dex_mod": [-1.55],
             "speed_mod": [-1.15]
@@ -126,6 +130,9 @@
         "max_duration": 1000,
         "rating": "bad",
         "resist_traits": ["POISRESIST"],
+		"base_mods": {
+            "int_mod": [-2, -1.25]
+        },
         "scaling_mods": {
             "int_mod": [-2, -1.25]
         }
@@ -147,13 +154,13 @@
         "resist_traits": ["POISRESIST"],
         "base_mods": {
             "hunger_min": [2, 1],
-            "hunger_chance": [300, 275, 200],
+            "hunger_chance": [275],
             "thirst_min": [3, 1],
-            "thirst_chance": [325, 300, 225]
+            "thirst_chance": [325]
         },
         "scaling_mods": {
-            "hunger_chance": [1],
-            "thirst_chance": [2]
+            "hunger_chance": [-1.1],
+            "thirst_chance": [-1.1]
         }
     }, {
         "type": "effect_type",
@@ -608,6 +615,87 @@
         ],
         "blocks_effects": [
             "secro_mawy_web"
+        ]
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_glut_dismember",
+        "name": ["Dismembered"],
+        "desc": ["You suffer from the great explosion you've just did!"],
+        "rating": "bad",
+        "show_in_info": true,
+		"int_add_val": 1,
+		"int_dur_factor": "300 turns",
+        "base_mods": {
+            "speed_mod": [-10],
+            "size_mod": [-0.3]
+        },
+        "scaling_mods": {
+            "speed_mod": [-10],
+            "size_mod": [-0.3]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_swarmer_savage_tension",
+        "name": ["Tension"],
+        "desc": ["From an ongoing lust for flesh, your muscles mutate!"],
+        "rating": "good",
+		"int_add_val": 1,
+		"int_dur_factor": "200 turns",
+        "max_intensity": 5,
+        "show_in_info": true,
+        "base_mods": {
+            "speed_mod": [0.2],
+            "size_mod": [0.05],
+            "bash_mod": [0.55],
+            "hit_mod": [0.1]
+        },
+        "scaling_mods": {
+            "speed_mod": [0.2],
+            "size_mod": [0.05],
+            "bash_mod": [0.55],
+            "hit_mod": [0.1]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_swarmer_virulent_precise",
+        "name": ["Precision"],
+        "desc": ["You feel your senses sharpen!"],
+        "rating": "good",
+		"int_add_val": 1,
+		"int_dur_factor": "30 turns",
+        "max_intensity": 20,
+        "show_in_info": true,
+        "base_mods": {
+            "speed_mod": [0.12],
+            "hit_mod": [0.08]
+        },
+        "scaling_mods": {
+            "speed_mod": [0.12],
+            "hit_mod": [0.08]
+        }
+    },
+    
+    {
+        "//": "Effects for notifying the player. This method is a bit unstable tho...",
+        "type": "effect_type",
+        "id": "mon_zombie_swarmer_evo_savage_tension_target_random_YES",
+        "apply_message": "Then its muscles suddenly mutates!",
+        "rating": "bad"
+    },
+    
+    {
+    	"//": "Effects used for immunity fields",
+        "type": "effect_type",
+        "id": "secro_down_immune",
+        "max_duration": 10,
+        "removes_effects": [
+            "downed"
+        ],
+        "blocks_effects": [
+            "downed"
         ]
     }
 ]
