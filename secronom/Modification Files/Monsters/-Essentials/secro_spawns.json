@@ -1,8 +1,7 @@
 [{
         "type": "monstergroup",
         "name": "GROUP_ZOMBIE",
-        "monsters": [
-			{
+        "monsters": [{
                 "monster": "mon_zombie_swarmer_weak",
                 "freq": 1,
                 "cost_multiplier": 8,
@@ -23,7 +22,7 @@
                 "cost_multiplier": 23,
                 "pack_size": [44, 88]
             }, {
-            	"//": "Lets fill the streets with these!",
+                "//": "Lets fill the streets with these!",
                 "monster": "mon_zombie_swarmer_weak",
                 "freq": 1,
                 "cost_multiplier": 40,
@@ -225,47 +224,47 @@
         "default": "mon_null",
         "monsters": [{
                 "monster": "mon_zombie_scientist",
-                "freq": 10,
-                "cost_multiplier": 1
+                "freq": 50,
+                "cost_multiplier": 0
             }, {
                 "monster": "mon_zedfail_seeker",
-                "freq": 30,
-                "cost_multiplier": 2
+                "freq": 25,
+                "cost_multiplier": 1
             }, {
                 "monster": "mon_zedfail_floral",
-                "freq": 40,
-                "cost_multiplier": 3
+                "freq": 30,
+                "cost_multiplier": 1
             }, {
                 "monster": "mon_zedfail_twistcrawl",
-                "freq": 25,
-                "cost_multiplier": 2
+                "freq": 15,
+                "cost_multiplier": 1
             }, {
                 "monster": "mon_zedfail_chomp",
-                "freq": 50,
-                "cost_multiplier": 3
+                "freq": 25,
+                "cost_multiplier": 1
             }, {
                 "monster": "mon_zedfail_squirtler",
-                "freq": 75,
-                "cost_multiplier": 5
+                "freq": 50,
+                "cost_multiplier": 1
             }, {
                 "monster": "mon_zedbow_kaxix",
-                "freq": 45,
-                "cost_multiplier": 3
+                "freq": 1,
+                "cost_multiplier": 5
             }, {
                 "monster": "mon_zedbow_axxuros",
-                "freq": 60,
-                "cost_multiplier": 5
+                "freq": 1,
+                "cost_multiplier": 6
             }, {
                 "monster": "mon_zedbow_exios",
-                "freq": 90,
-                "cost_multiplier": 5
-            }, {
-                "monster": "mon_zedbow_drexx",
-                "freq": 120,
+                "freq": 1,
                 "cost_multiplier": 7
             }, {
+                "monster": "mon_zedbow_drexx",
+                "freq": 1,
+                "cost_multiplier": 8
+            }, {
                 "monster": "mon_zedbow_epixo",
-                "freq": 150,
+                "freq": 1,
                 "cost_multiplier": 10
             }
         ]
@@ -276,43 +275,43 @@
         "default": "mon_null",
         "monsters": [{
                 "monster": "mon_zedfail_seeker",
-                "freq": 20,
-                "cost_multiplier": 1
+                "freq": 40,
+                "cost_multiplier": 0
             }, {
                 "monster": "mon_zedfail_floral",
                 "freq": 30,
-                "cost_multiplier": 2
+                "cost_multiplier": 0
             }, {
                 "monster": "mon_zedfail_twistcrawl",
-                "freq": 10,
-                "cost_multiplier": 1
+                "freq": 25,
+                "cost_multiplier": 0
             }, {
                 "monster": "mon_zedfail_chomp",
                 "freq": 35,
-                "cost_multiplier": 2
+                "cost_multiplier": 0
             }, {
                 "monster": "mon_zedfail_squirtler",
-                "freq": 75,
-                "cost_multiplier": 3
+                "freq": 10,
+                "cost_multiplier": 1
             }, {
                 "monster": "mon_zedbow_kaxix",
-                "freq": 50,
-                "cost_multiplier": 2
-            }, {
-                "monster": "mon_zedbow_axxuros",
-                "freq": 75,
-                "cost_multiplier": 3
-            }, {
-                "monster": "mon_zedbow_exios",
-                "freq": 100,
-                "cost_multiplier": 4
-            }, {
-                "monster": "mon_zedbow_drexx",
-                "freq": 125,
+                "freq": 1,
                 "cost_multiplier": 5
             }, {
+                "monster": "mon_zedbow_axxuros",
+                "freq": 1,
+                "cost_multiplier": 6
+            }, {
+                "monster": "mon_zedbow_exios",
+                "freq": 1,
+                "cost_multiplier": 7
+            }, {
+                "monster": "mon_zedbow_drexx",
+                "freq": 1,
+                "cost_multiplier": 8
+            }, {
                 "monster": "mon_zedbow_epixo",
-                "freq": 200,
+                "freq": 1,
                 "cost_multiplier": 10
             }
         ]
@@ -323,24 +322,24 @@
         "default": "mon_null",
         "monsters": [{
                 "monster": "mon_zedfail_seeker",
-                "freq": 75,
-                "cost_multiplier": 2
+                "freq": 20,
+                "cost_multiplier": 0
             }, {
                 "monster": "mon_zedfail_floral",
-                "freq": 100,
-                "cost_multiplier": 3
+                "freq": 25,
+                "cost_multiplier": 0
             }, {
                 "monster": "mon_zedfail_twistcrawl",
-                "freq": 50,
-                "cost_multiplier": 2
+                "freq": 20,
+                "cost_multiplier": 0
             }, {
                 "monster": "mon_zedfail_chomp",
-                "freq": 125,
-                "cost_multiplier": 3
+                "freq": 30,
+                "cost_multiplier": 0
             }, {
                 "monster": "mon_zedfail_squirtler",
-                "freq": 150,
-                "cost_multiplier": 5
+                "freq": 1,
+                "cost_multiplier": 3
             }
         ]
     }, {
@@ -350,24 +349,24 @@
         "default": "mon_null",
         "monsters": [{
                 "monster": "mon_zedbow_kaxix",
-                "freq": 10,
-                "cost_multiplier": 1
+                "freq": 70,
+                "cost_multiplier": 0
             }, {
                 "monster": "mon_zedbow_axxuros",
-                "freq": 40,
-                "cost_multiplier": 2
+                "freq": 95,
+                "cost_multiplier": 0
             }, {
                 "monster": "mon_zedbow_exios",
-                "freq": 80,
-                "cost_multiplier": 3
+                "freq": 15,
+                "cost_multiplier": 1
             }, {
                 "monster": "mon_zedbow_drexx",
-                "freq": 120,
-                "cost_multiplier": 4
+                "freq": 1,
+                "cost_multiplier": 3
             }, {
                 "monster": "mon_zedbow_epixo",
-                "freq": 150,
-                "cost_multiplier": 5
+                "freq": 1,
+                "cost_multiplier": 10
             }
         ]
     }, {
@@ -384,8 +383,7 @@
     }, {
         "type": "monstergroup",
         "name": "GROUP_FOREST",
-        "monsters": [
-			{
+        "monsters": [{
                 "monster": "mon_ayenel",
                 "freq": 1,
                 "cost_multiplier": 60
@@ -410,8 +408,7 @@
     }, {
         "type": "monstergroup",
         "name": "GROUP_SWAMP",
-        "monsters": [
-{
+        "monsters": [{
                 "monster": "mon_ayenel",
                 "freq": 1,
                 "cost_multiplier": 60
