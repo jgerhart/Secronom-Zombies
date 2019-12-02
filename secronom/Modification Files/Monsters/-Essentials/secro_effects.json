@@ -176,7 +176,7 @@
         "id": "omi_curse",
         "name": ["Ominous Curse"],
         "apply_message": "You've been cursed!",
-        "desc": ["A terrifying curse reduces your insanity!"],
+        "desc": ["A terrifying curse eats away your insanity!"],
         "decay_messages": [["You withdraw from the curse!", "good"]],
         "remove_message": "The curse lifts away!",
         "int_add_val": 1,
@@ -292,7 +292,7 @@
     }, {
         "type": "effect_type",
         "id": "secro_uruxis_shroud",
-        "name": ["Shadow Mend"],
+        "name": ["Shadow Mended"],
         "desc": ["Shadow enshrouds you that heals and protects, but burdens."],
         "show_in_info": true,
         "base_mods": {
@@ -334,14 +334,14 @@
         "max_duration": 120,
         "rating": "bad",
         "scaling_mods": {
-            "per_mod": [-0.54],
-            "dex_mod": [-0.22],
-            "speed_mod": [-1.40]
+            "per_mod": [-0.5],
+            "dex_mod": [-0.25],
+            "speed_mod": [-1.5]
         }
     }, {
         "type": "effect_type",
         "id": "secro_gorepit_wall_dmg",
-        "name": ["Unstable footing"],
+        "name": ["unstable footing"],
         "desc": ["You're standing on a dangerous terrain."],
         "rating": "bad",
         "max_duration": 1,
@@ -354,7 +354,7 @@
     }, {
         "type": "effect_type",
         "id": "secro_gorepit_dmg_immune",
-        "max_duration": 10,
+        "max_duration": 1,
         "removes_effects": [
             "secro_gorepit_wall_dmg"
         ],
@@ -500,7 +500,7 @@
     {
         "type": "effect_type",
         "id": "charge_momentum",
-        "name": ["Momentum"],
+        "name": ["on Momentum"],
         "int_add_val": 1,
 		"int_dur_factor": "1 seconds",
         "max_intensity": 10,
@@ -510,7 +510,7 @@
         "rating": "good",
         "show_in_info": true,
 		"base_mods": {
-            "hurt_min": [-2]
+            "hurt_min": [-10]
         },
         "scaling_mods": {
             "speed_mod": [10],
@@ -521,7 +521,7 @@
     {
         "type": "effect_type",
         "id": "charge_spike_momentum",
-        "name": ["Momentum"],
+        "name": ["on Momentum"],
         "int_add_val": 1,
 		"int_dur_factor": "1 seconds",
         "max_intensity": 10,
@@ -531,7 +531,7 @@
         "rating": "good",
         "show_in_info": true,
 		"base_mods": {
-            "hurt_min": [-3]
+            "hurt_min": [-15]
         },
         "scaling_mods": {
             "speed_mod": [10],
@@ -543,7 +543,7 @@
     {
         "type": "effect_type",
         "id": "charge_plate_momentum",
-        "name": ["Momentum"],
+        "name": ["on Momentum"],
         "int_add_val": 1,
 		"int_dur_factor": "1 seconds",
         "max_intensity": 10,
@@ -553,7 +553,7 @@
         "rating": "good",
         "show_in_info": true,
 		"base_mods": {
-            "hurt_min": [-4]
+            "hurt_min": [-15]
         },
         "scaling_mods": {
             "speed_mod": [10],
@@ -564,7 +564,7 @@
 	{
         "type": "effect_type",
         "id": "charge_vanguard_momentum",
-        "name": ["Momentum"],
+        "name": ["on Momentum"],
         "int_add_val": 1,
 		"int_dur_factor": "1 seconds",
         "max_intensity": 10,
@@ -574,7 +574,7 @@
         "rating": "good",
         "show_in_info": true,
 		"base_mods": {
-            "hurt_min": [-5]
+            "hurt_min": [-25]
         },
         "scaling_mods": {
             "speed_mod": [10],
@@ -590,7 +590,7 @@
         "show_in_info": true,
         "apply_message": "You've been covered in flesh webs!",
         "miss_messages": [["You can't move well with this sticky webs...", 1]],
-        "remove_message": "You got rid of the webs!",
+        "remove_message": "You've got rid of the webs!",
         "rating": "bad",
         "int_add_val": 1,
         "int_dur_factor": "20 seconds",
@@ -609,7 +609,7 @@
     {
         "type": "effect_type",
         "id": "secro_mawy_web_immune",
-        "max_duration": 10,
+        "max_duration": 1,
         "removes_effects": [
             "secro_mawy_web"
         ],
@@ -638,7 +638,7 @@
     {
         "type": "effect_type",
         "id": "secro_swarmer_savage_tension",
-        "name": ["Tension"],
+        "name": ["on Tension"],
         "desc": ["From an ongoing lust for flesh, your muscles mutate!"],
         "rating": "good",
 		"int_add_val": 1,
@@ -661,7 +661,7 @@
     {
         "type": "effect_type",
         "id": "secro_swarmer_virulent_precise",
-        "name": ["Precision"],
+        "name": ["on Precision"],
         "desc": ["You feel your senses sharpen!"],
         "rating": "good",
 		"int_add_val": 1,
@@ -677,6 +677,151 @@
             "hit_mod": [0.08]
         }
     },
+    {
+        "type": "effect_type",
+        "id": "secro_revenant_trigger",
+        "name": ["Triggered","Triggered","Triggered","Triggered","Triggered Potency"],
+        "desc": ["Your hidden potential prevails!"],
+        "rating": "good",
+		"int_add_val": 1,
+		"int_dur_factor": "20 turns",
+        "int_decay_step": -1,
+        "int_decay_tick": 20,
+        "max_intensity": 5,
+        "show_in_info": true,
+        "base_mods": {
+            "bash_mod": [0.25],
+            "cut_mod": [0.25],
+            "hit_mod": [0.15]
+        },
+        "scaling_mods": {
+            "bash_mod": [0.25],
+            "cut_mod": [0.25],
+            "hit_mod": [0.15]
+        }
+    },
+    {
+    	"//": "Don't trigger the triggerer.",
+        "type": "effect_type",
+        "id": "secro_revenant_trigger_immune",
+        "max_duration": 1,
+        "removes_effects": [
+            "secro_revenant_trigger"
+        ],
+        "blocks_effects": [
+            "secro_revenant_trigger"
+        ]
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_revenant_forsaken_dilute",
+        "name": ["Weakened","Weakened","Weakened","Weakened","Severely Weakened"],
+        "apply_message": "You feel like you've loosen the grip of fighting.",
+        "desc": ["You feel your attacks becoming exhausted."],
+        "rating": "bad",
+		"int_add_val": 1,
+		"int_dur_factor": "30 turns",
+        "int_decay_step": -2,
+        "int_decay_tick": 20,
+        "max_intensity": 5,
+        "show_in_info": true,
+        "base_mods": {
+            "bash_mod": [-0.2],
+            "cut_mod": [-0.2],
+            "hit_mod": [-0.1]
+        },
+        "scaling_mods": {
+            "bash_mod": [-0.2],
+            "cut_mod": [-0.2],
+            "hit_mod": [-0.1]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_revenant_allure_induce",
+        "name": ["Induced","Induced","Induced","Induced","Incited"],
+        "desc": ["Your mass increases, but makes you unstable and causes the blob to overwhelm you."],
+        "rating": "mixed",
+		"int_add_val": 1,
+		"int_dur_factor": "25 turns",
+        "int_decay_step": -1,
+        "int_decay_tick": 10,
+        "max_intensity": 5,
+        "show_in_info": true,
+        "base_mods": {
+            "hurt_min": [2],
+            "hurt_tick": [18],
+            "size_mod": [0.3],
+            "hit_mod": [0.5]
+        },
+        "scaling_mods": {
+            "hurt_tick": [-2],
+            "size_mod": [0.3],
+            "hit_mod": [0.5]
+        }
+    },
+    {
+    	"//": "Do not induce the inducer.",
+        "type": "effect_type",
+        "id": "secro_revenant_allure_induce_immune",
+        "max_duration": 1,
+        "removes_effects": [
+            "secro_revenant_allure_induce"
+        ],
+        "blocks_effects": [
+            "secro_revenant_allure_induce"
+        ]
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_skittyweavy_skit",
+        "name": ["Fleeing"],
+        "desc": ["Your body felt a sharp warning!"],
+        "show_in_info": true,
+        "base_mods": {
+            "speed_mod": [150],
+            "dodge_mod": [3]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_skittyweavy_regen",
+        "name": ["Regenerating"],
+        "rating": "good",
+        "show_in_info": true,
+		"base_mods": {
+            "hurt_min": [-10]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "mon_zombie_skittyweavy_repleshy_replesh",
+        "name": ["Replenishing"],
+        "rating": "good",
+        "show_in_info": true,
+		"base_mods": {
+            "hurt_min": [-30]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "mon_zombie_skittyweavy_sickly_toxin",
+        "name": ["Intoxicated"],
+        "desc": ["The toxin flows through you and hastens your reflexes!"],
+        "int_add_val": 1,
+		"int_dur_factor": "5 turns",
+        "int_decay_step": -2,
+        "int_decay_tick": 5,
+        "max_intensity": 5,
+        "max_duration": 30,
+        "show_in_info": true,
+        "base_mods": {
+            "speed_mod": [10]
+        },
+        "scaling_mods": {
+            "speed_mod": [10]
+        }
+    },
     
     {
         "//": "Effects for notifying the player. This method is a bit unstable tho...",
@@ -690,12 +835,34 @@
     	"//": "Effects used for immunity fields",
         "type": "effect_type",
         "id": "secro_down_immune",
-        "max_duration": 10,
+        "max_duration": 1,
         "removes_effects": [
             "downed"
         ],
         "blocks_effects": [
             "downed"
+        ]
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_dissed_immune",
+        "max_duration": 1,
+        "removes_effects": [
+            "secro_dissed"
+        ],
+        "blocks_effects": [
+            "secro_dissed"
+        ]
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_nix_fear_immune",
+        "max_duration": 1,
+        "removes_effects": [
+            "secro_nix_fear"
+        ],
+        "blocks_effects": [
+            "secro_nix_fear"
         ]
     }
 ]
