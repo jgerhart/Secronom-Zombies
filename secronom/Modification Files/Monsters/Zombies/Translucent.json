@@ -8,6 +8,7 @@
         "volume": "62500 ml",
         "weight": 81500,
         "hp": 70,
+        "diff": 1,
         "speed": 100,
         "material": ["flesh"],
         "symbol": "g",
@@ -49,6 +50,7 @@
         "weight": 81500,
         "hp": 90,
         "speed": 100,
+        "diff": 5,
         "material": ["flesh"],
         "symbol": "g",
         "color": "blue_green",
@@ -59,6 +61,7 @@
         "melee_dice_sides": 3,
         "melee_cut": 1,
         "dodge": 1,
+        
         "harvest": "zombie",
         "melee_damage": [{
                 "damage_type": "acid",

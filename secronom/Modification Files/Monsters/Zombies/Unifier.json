@@ -17,6 +17,7 @@
                 "chance": 25
             }
         ],
+        "diff": 1,
         "symbol": "Z",
         "color": "magenta",
         "aggression": 10,
@@ -54,6 +55,7 @@
         "weight": 81500,
         "hp": 205,
         "speed": 75,
+        "diff": 15,
         "material": ["flesh"],
         "attack_effs": [{
                 "id": "unity_bloodslow",
@@ -100,6 +102,7 @@
         "volume": "92500 ml",
         "weight": 120000,
         "hp": 380,
+        "diff": 15,
         "speed": 70,
         "material": ["flesh"],
         "attack_effs": [{
@@ -148,6 +151,7 @@
                 "chance": 25
             }
         ],
+        "diff": 5,
         "attack_cost": 300,
         "harvest": "exempt",
         "symbol": "&",
@@ -172,6 +176,7 @@
         "weight": 120000,
         "hp": 40,
         "speed": 40,
+		"diff": 50,
         "material": ["flesh"],
         "attack_effs": [{
                 "id": "unity_bloodslow",

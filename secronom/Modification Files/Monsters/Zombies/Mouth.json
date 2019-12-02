@@ -13,6 +13,7 @@
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "BONES"],
         "harvest": "zombie",
         "hp": 70,
+        "diff": 1,
         "id": "mon_zombie_mouth",
         "material": ["flesh"],
         "melee_cut": 3,
@@ -42,6 +43,7 @@
         ],
         "species": ["ZOMBIE"],
         "speed": 100,
+        
         "symbol": "P",
         "type": "MONSTER",
         "upgrades": {
@@ -66,6 +68,7 @@
         "grab_strength": 2,
         "harvest": "zombie",
         "hp": 125,
+        "diff": 5,
         "id": "mon_zombie_bellymouth",
         "material": ["flesh"],
         "melee_cut": 3,
@@ -100,6 +103,7 @@
         ],
         "species": ["ZOMBIE"],
         "speed": 90,
+        
         "symbol": "b",
         "type": "MONSTER",
         "upgrades": {
@@ -124,6 +128,7 @@
         "flags": ["HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "BONES"],
         "harvest": "zombie",
         "hp": 110,
+        "diff": 5,
         "id": "mon_zombie_omouth",
         "material": ["flesh"],
         "melee_cut": 5,
@@ -166,6 +171,7 @@
         ],
         "species": ["ZOMBIE"],
         "speed": 95,
+        
         "symbol": "P",
         "type": "MONSTER",
         "upgrades": {
@@ -192,6 +198,7 @@
         "grab_strength": 4,
         "harvest": "zombie",
         "hp": 405,
+        "diff": 15,
         "id": "mon_zombie_suctionmouth",
         "material": ["flesh"],
         "melee_cut": 4,
@@ -238,6 +245,7 @@
         ],
         "species": ["ZOMBIE"],
         "speed": 80,
+        
         "symbol": "P",
         "type": "MONSTER",
         "volume": "92500 ml",
