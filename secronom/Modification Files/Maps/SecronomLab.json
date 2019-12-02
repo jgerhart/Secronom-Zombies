@@ -377,7 +377,7 @@
                 }
             ],
             "place_monsters": [{
-                    "density": 0.1,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_ALL",
                     "x": [
                         4,
@@ -388,7 +388,7 @@
                         10
                     ]
                 }, {
-                    "density": 0.1,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_ALL",
                     "x": [
                         15,
@@ -399,7 +399,7 @@
                         10
                     ]
                 }, {
-                    "density": 0.2,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_ALL",
                     "x": [
                         8,
@@ -410,7 +410,7 @@
                         11
                     ]
                 }, {
-                    "density": 0.2,
+                    "density": 0.50,
                     "monster": "GROUP_SECROLAB_SPECIMENS",
                     "x": [
                         4,
@@ -421,7 +421,7 @@
                         10
                     ]
                 }, {
-                    "density": 0.1,
+                    "density": 0.50,
                     "monster": "GROUP_SECROLAB_SPECIMENS",
                     "x": [
                         15,
@@ -432,7 +432,7 @@
                         10
                     ]
                 }, {
-                    "density": 0.2,
+                    "density": 0.50,
                     "monster": "GROUP_SECROLAB_SPECIMENS",
                     "x": [
                         8,
@@ -443,7 +443,7 @@
                         11
                     ]
                 }, {
-                    "density": 0.5,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_ALL",
                     "x": [
                         13,
@@ -620,7 +620,7 @@
                 }
             ],
             "place_monsters": [{
-                    "density": 0.15,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_ALL",
                     "x": [
                         6,
@@ -631,7 +631,7 @@
                         18
                     ]
                 }, {
-                    "density": 0.15,
+                    "density": 0.25,
                     "monster": "GROUP_SECROLAB_BOWSPECIMENS",
                     "x": [
                         6,
@@ -642,7 +642,7 @@
                         10
                     ]
                 }, {
-                    "density": 0.3,
+                    "density": 0.25,
                     "monster": "GROUP_SECROLAB_BOWSPECIMENS",
                     "x": [
                         17,
@@ -653,7 +653,7 @@
                         17
                     ]
                 }, {
-                    "density": 0.3,
+                    "density": 0.25,
                     "monster": "GROUP_SECROLAB_BOWSPECIMENS",
                     "x": [
                         8,
@@ -929,7 +929,7 @@
                 }
             ],
             "place_monsters": [{
-                    "density": 0.3,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_SPECIMENS",
                     "x": [
                         10,
@@ -940,7 +940,7 @@
                         21
                     ]
                 }, {
-                    "density": 0.2,
+                    "density": 0.25,
                     "monster": "GROUP_SECROLAB_BOWSPECIMENS",
                     "x": [
                         10,
@@ -951,7 +951,7 @@
                         21
                     ]
                 }, {
-                    "density": 0.2,
+                    "density": 0.5,
                     "monster": "GROUP_SECROLAB_SPECIMENS",
                     "x": [
                         2,
@@ -962,7 +962,7 @@
                         10
                     ]
                 }, {
-                    "density": 0.2,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_ALL",
                     "x": [
                         2,
@@ -973,7 +973,7 @@
                         10
                     ]
                 }, {
-                    "density": 0.2,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_ALL",
                     "x": [
                         15,
@@ -984,7 +984,7 @@
                         10
                     ]
                 }, {
-                    "density": 0.2,
+                    "density": 0.25,
                     "monster": "GROUP_SECROLAB_BOWSPECIMENS",
                     "x": [
                         15,
@@ -995,7 +995,7 @@
                         10
                     ]
                 }, {
-                    "density": 0.1,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_FAILEDSPECIMENS",
                     "x": [
                         15,
@@ -1006,7 +1006,7 @@
                         21
                     ]
                 }, {
-                    "density": 0.1,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_ALL",
                     "x": [
                         20,
@@ -1017,7 +1017,7 @@
                         21
                     ]
                 }, {
-                    "density": 0.1,
+                    "density": 0.25,
                     "monster": "GROUP_SECROLAB_BOWSPECIMENS",
                     "x": [
                         20,
@@ -1127,7 +1127,7 @@
                 }
             ],
             "place_monsters": [{
-                    "density": 0.2,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_FAILEDSPECIMENS",
                     "x": [
                         3,
@@ -1138,7 +1138,7 @@
                         16
                     ]
                 }, {
-                    "density": 0.2,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_FAILEDSPECIMENS",
                     "x": [
                         7,
@@ -1149,7 +1149,7 @@
                         20
                     ]
                 }, {
-                    "density": 0.5,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_FAILEDSPECIMENS",
                     "x": [
                         18,
@@ -1160,7 +1160,7 @@
                         16
                     ]
                 }, {
-                    "density": 0.5,
+                    "density": 0.75,
                     "monster": "GROUP_SECROLAB_ALL",
                     "x": [
                         7,
@@ -1497,7 +1497,7 @@
                 }
             ],
             "place_monsters": [{
-                    "density": 0.1,
+                    "density": 0.2,
                     "monster": "GROUP_SWARMERSEGWAY_UPGRADE",
                     "x": [
                         3,
@@ -1508,7 +1508,7 @@
                         12
                     ]
                 }, {
-                    "density": 0.1,
+                    "density": 0.15,
                     "monster": "GROUP_ZOMBIE_UPGRADE",
                     "x": [
                         9,
@@ -1519,7 +1519,7 @@
                         7
                     ]
                 }, {
-                    "density": 0.1,
+                    "density": 0.2,
                     "monster": "GROUP_SWARMERSEGWAY_UPGRADE",
                     "x": [
                         16,
@@ -1530,7 +1530,7 @@
                         12
                     ]
                 }, {
-                    "density": 0.1,
+                    "density": 0.15,
                     "monster": "GROUP_ZOMBIE_UPGRADE",
                     "x": [
                         3,
@@ -1541,7 +1541,7 @@
                         18
                     ]
                 }, {
-                    "density": 0.05,
+                    "density": 0.1,
                     "monster": "GROUP_SWARMERSEGWAY_UPGRADE",
                     "x": [
                         3,
@@ -1552,7 +1552,7 @@
                         18
                     ]
                 }, {
-                    "density": 0.25,
+                    "density": 0.15,
                     "monster": "GROUP_ZOMBIE_UPGRADE",
                     "x": [
                         3,
@@ -1563,7 +1563,7 @@
                         18
                     ]
                 }, {
-                    "density": 0.05,
+                    "density": 0.2,
                     "monster": "GROUP_SWARMERSEGWAY_UPGRADE",
                     "x": [
                         11,
@@ -1574,7 +1574,7 @@
                         19
                     ]
                 }, {
-                    "density": 0.1,
+                    "density": 0.15,
                     "monster": "GROUP_ZOMBIE_UPGRADE",
                     "x": [
                         16,
