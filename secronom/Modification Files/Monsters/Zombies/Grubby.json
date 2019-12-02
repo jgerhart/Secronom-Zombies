@@ -1,5 +1,5 @@
 [{
-        "id": "mon_zombie_grubby_s",
+        "id": "mon_zombie_grubby",
         "type": "MONSTER",
         "name": "grubby zombie",
         "description": "Bloated anatomy, foul shrouding stench, and giant worm-filled pus around it is unpredictably unpleasant to look at from this horridly defiled corpse.",
@@ -10,6 +10,7 @@
         "harvest": "zombie",
         "hp": 70,
         "speed": 55,
+        "diff": 1,
         "material": ["flesh"],
         "symbol": "Z",
         "color": "yellow_cyan",
@@ -37,11 +38,11 @@
         "death_function": ["NORMAL"],
         "upgrades": {
             "half_life": 14,
-            "into": "mon_zombie_slimy_s"
+            "into": "mon_zombie_slimy"
         },
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "FILTHY", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE"]
     }, {
-        "id": "mon_zombie_slimy_s",
+        "id": "mon_zombie_slimy",
         "type": "MONSTER",
         "name": "slimy zombie",
         "description": "Fortified by blobs and worms infused inside its skinless body, this zombie can barely walk on its feet. With slimy liquid dripping from its holes, the parasites can \"swim\" faster through it.",
@@ -52,6 +53,7 @@
         "weight": 81500,
         "hp": 75,
         "speed": 40,
+        "diff": 15,
         "material": ["flesh"],
         "symbol": "Z",
         "color": "cyan_yellow",
@@ -95,6 +97,7 @@
         "//": "High health, for the use of its ability.",
         "hp": 400,
         "speed": 10,
+        "diff": 15,
         "material": ["flesh"],
         "symbol": "Z",
         "color": "red",

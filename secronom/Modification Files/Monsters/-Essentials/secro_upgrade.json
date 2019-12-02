@@ -46,7 +46,7 @@
                 "freq": 20,
                 "cost_multiplier": 4
             }, {
-                "monster": "mon_zombie_grubby_s",
+                "monster": "mon_zombie_grubby",
                 "freq": 30,
                 "cost_multiplier": 5
             }, {
@@ -319,7 +319,7 @@
         "type": "monstergroup",
         "default": "mon_null",
         "monsters": [{
-                "monster": "mon_zombie_slimy_s",
+                "monster": "mon_zombie_slimy",
                 "freq": 25,
                 "cost_multiplier": 1
             }, {
