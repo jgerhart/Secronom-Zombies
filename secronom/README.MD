@@ -2,7 +2,7 @@
 
 Its mod thread is at the [official forums](https://discourse.cataclysmdda.org/t/secronom-zombies-mod-thread/16211/1).
 
-Mod made from various references, mixed up with random spices! A mod I've created with its original goal set to imitate the *Dead Frontier*'s zombies... Right now, **Secronom** (name referenced from the game) is a massive creature mod, with vast assortments of monsters. If you're up for an action-packed playthrough or just loves beating weird craps, activate this mod and see how your dark days get even darker!
+Mod made from various references, mixed up with random spices! A mod I've created with its original goal set to imitate the *Dead Frontier*'s zombies... Right now, **Secronom** (name referenced from the game) is a creature mod, with vast assortments of monsters in its arsenal. If you're up for an action-packed playthrough or just loves beating weird craps, activate this mod and see how your dark days get even darker!
 
 - This mod will only work with the latest experimental of CDDA. Update your client before using this.
 - This mod is WIP and fatal crashes may occur... In very rare occasions.
@@ -11,9 +11,9 @@ Mod made from various references, mixed up with random spices! A mod I've create
 ## Zombies
 The secronom's main feature - the zeds. They range from weak up to strong variety of them.
 
-* There are 75 zombies in total: 51 city zeds, 14 zed mutants and 10 lab zombies. Only the zombies that spawn individually are counted, while minions and other special zeds aren't.
+* There are 81 zombies in total: 57 city zeds, 14 zed mutants and 10 lab zombies. Only the zombies that spawn individually and their evolved counterparts are counted, while minions and other special zeds aren't.
 
-The evolution sheet is outdated and it is taken down until a new one is created. And due to a technical problem, I can't make monster sprites for the new creatures...
+Thanks to SomeDeadGuy, he did all of the monster sprites on his own.
 
 ### City Zombies
 Listed below are the zombies encountered in a city, along with their upgrade paths:
@@ -57,12 +57,12 @@ Zombie type with high infection chance from biting.
 * _**Lepotitsa**_
 
 ##### Unifier Zombie **+**
-Zombie type with an ability to create tough minions.
+Zombie type with the ability to create tough minions.
 * **Unity Zombie**
 * _**Hemofiend**_
 
 ##### Grubby Zombie **~**
-Zombie type with an ability to create debuff-inflicting minions.
+Zombie type with the ability to create debuff-inflicting minions.
 * **Slimy Zombie**
 * _**Glut**_
 
@@ -73,7 +73,7 @@ Zombie type with extremely high agility and barrages melee attacks.
 
 ##### Titan **!**
 Zombie type with enormous health, extremely fast movement speed and slow, but concentrated melee attacks.
-* _**Black Titan**_
+* **Black Titan**
 
 ##### Noxious Eater **!**
 A worm, zombie type that burrows underneath, with fatal biting ability.
@@ -87,10 +87,20 @@ Zombie type that grows stronger as time passes by.
 * Final counterparts gain unique abilities.
 
 ##### Charger Zombie **!**
-Zombie type with very high health and an ability to charge.
+Zombie type with very high health and the ability to charge.
 * **Spiky Charger Zombie**
 * **Plated Charger Zombie**
 * _**Vanguard**_
+
+##### Revenant **+**
+Zombie type that manipulates the combat abilities of all creatures.
+* **Forsaken Revenant**
+* **Alluring Revenant**
+
+##### Skittering Weaver **+**
+An insect, zombie type who heals allies individually.
+* **Replenishing Weaver**
+* **Plague Weaver**
 
 ### Zombie Mutants
 Zed mutants that are seen rarely in and out of the cities or has special conditions to appear. These zeds has unique abilities unlike the city zeds:
@@ -176,6 +186,6 @@ All monsters aren't designed to kill the target, and thus providing roles to the
 
 * (**~**) *Summoner* - monsters who takes advantage on creating/sending minions. Minions are usually weak, time limited and deals lesser damage, yet a hassle due to them having debuff inflicting abilities. Monsters who heavily rely on their minions are the opposite.
 
-* (**=**) *Boss* - monsters that are versatile in every situation. Unique and those who opposes extreme danger are considered with this type. All of these monsters reside in their lair, concealing them to prevent a widespread annihilation.
+* (**=**) *Boss* - monsters that are versatile in every situation. Unique and those who opposes extreme danger are considered with this type. They also reside in their lair, concealing them to prevent a widespread annihilation.
 
 Few are hybrids, but are still categorized into a type.
