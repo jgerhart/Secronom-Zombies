@@ -1,0 +1,147 @@
+[{
+        "//": "Support-type zed who attacks allies to heal them, but it is completely harmless to the enemy.",
+        "id": "mon_zombie_skittyweavy",
+        "type": "MONSTER",
+        "name": "skittering weaver",
+        "description": "A mutated creature, the size of a cat with hybrid appearance of a tick and a beetle. Its forelimbs form a pair of oddly curved needles, tipped with a vented gap and saliva-drooling mandibles.",
+        "default_faction": "zombie",
+        "species": ["ZOMBIE", "INSECT"],
+        "volume": "4000 ml",
+        "weight": 4000,
+        "harvest": "arachnid_tainted",
+        "hp": 30,
+        "diff": 5,
+        "speed": 75,
+        "material": ["iflesh"],
+        "symbol": "⚚",
+        "color": "light_green",
+        "attack_cost": 225,
+        "aggression": 100,
+        "morale": 100,
+        "//": "Make attacks nearly undodgable to most zeds.",
+        "melee_skill": 8,
+        "melee_dice": 1,
+        "melee_dice_sides": 1,
+        "melee_cut": 0,
+        "dodge": 5,
+        "armor_bash": 1,
+        "armor_cut": 4,
+        "armor_stab": 2,
+        "//": "Never resist the heal.",
+        "melee_damage": [{
+                "amount": 1,
+                "damage_type": "true"
+            }
+        ],
+        "attack_effs": [{
+                "id": "secro_skittyweavy_regen",
+                "duration": 2
+            }
+        ],
+        "//": "Its spell is vital to prevent healing the enemies.",
+        "special_attacks": [{
+                "type": "spell",
+                "spell_id": "mon_zombie_skittyweavy_target",
+                "cooldown": 2,
+                "monster_message": "<color_light_red>%1$s flees from %3$s!</color>"
+            }
+        ],
+        "death_function": ["NORMAL"],
+        "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "POISON", "NO_BREATHE", "ATTACKMON", "HARDTOSHOOT", "PATH_AVOID_DANGER_2"]
+    }, {
+        "id": "mon_zombie_skittyweavy_repleshy",
+        "type": "MONSTER",
+        "name": "replenishing weaver",
+        "description": "A vile insect, protected beneath a membranous shelling. Shares similar traits to its predecessor, except the fact that it has grown larger in size.",
+        "default_faction": "zombie",
+        "species": ["ZOMBIE", "INSECT"],
+        "volume": "12000 ml",
+        "weight": 8000,
+        "harvest": "arachnid_tainted",
+        "hp": 75,
+        "diff": 30,
+        "speed": 50,
+        "material": ["iflesh"],
+        "symbol": "⚚",
+        "color": "green",
+        "aggression": 100,
+        "morale": 100,
+        "attack_cost": 325,
+        "melee_skill": 10,
+        "melee_dice": 1,
+        "melee_dice_sides": 1,
+        "melee_cut": 0,
+        "dodge": 4,
+        "armor_bash": 5,
+        "armor_cut": 15,
+        "armor_stab": 7,
+        "melee_damage": [{
+                "amount": 1,
+                "damage_type": "true"
+            }
+        ],
+        "attack_effs": [{
+                "id": "mon_zombie_skittyweavy_repleshy_replesh",
+                "duration": 2
+            }
+        ],
+        "special_attacks": [{
+                "type": "spell",
+                "spell_id": "mon_zombie_skittyweavy_target",
+                "cooldown": 2,
+                "monster_message": "<color_light_red>%1$s flees from %3$s!</color>"
+            }
+        ],
+        "death_function": ["NORMAL"],
+        "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "POISON", "NO_BREATHE", "ATTACKMON", "HARDTOSHOOT", "PATH_AVOID_DANGER_2"]
+    }, {
+        "id": "mon_zombie_skittyweavy_sickly",
+        "type": "MONSTER",
+        "name": "plague weaver",
+        "description": "A heavily mutated insect, with several spindly limbs stretching outwards from its membranous beetle shell. Deformed in every angle, a distinctive proboscis drips an intoxicating substance.",
+        "default_faction": "zombie",
+        "species": ["ZOMBIE", "INSECT"],
+        "volume": "10000 ml",
+        "weight": 7200,
+        "harvest": "arachnid_tainted",
+        "hp": 55,
+        "speed": 50,
+        "diff": 25,
+        "material": ["iflesh"],
+        "symbol": "⚚",
+        "color": "red",
+        "aggression": 100,
+        "morale": 100,
+        "attack_cost": 275,
+        "melee_skill": 10,
+        "melee_dice": 1,
+        "melee_dice_sides": 1,
+        "melee_cut": 0,
+        "dodge": 5,
+        "armor_bash": 3,
+        "armor_cut": 12,
+        "armor_stab": 5,
+        "melee_damage": [{
+                "amount": 1,
+                "damage_type": "true"
+            }
+        ],
+        "attack_effs": [{
+                "id": "secro_skittyweavy_regen",
+                "duration": 2
+            },{
+                "id": "mon_zombie_skittyweavy_sickly_toxin",
+                "duration": 10
+            }
+        ],
+        "special_attacks": [{
+                "type": "spell",
+                "spell_id": "mon_zombie_skittyweavy_target",
+                "cooldown": 2,
+                "monster_message": "<color_light_red>%1$s flees from %3$s!</color>"
+            }
+        ],
+        "death_function": ["NORMAL"],
+        "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "POISON", "NO_BREATHE", "ATTACKMON", "HARDTOSHOOT", "PATH_AVOID_DANGER_2"]
+    }
+]
