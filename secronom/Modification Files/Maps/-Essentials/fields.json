@@ -482,6 +482,48 @@
     "display_items": false,
     "display_field": false
   },
+  {
+    "id": "fd_revenant_trigger_immune",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+        "effect_id": "secro_revenant_trigger_immune",
+        "effect_body_part": "TORSO",
+        "effect_min_duration": "1 seconds",
+        "effect_max_duration": "1 seconds",
+                "chance_in_vehicle": 1,
+                "chance_inside_vehicle": 1,
+                "chance_outside_vehicle": 1
+      }
+    ],
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": false,
+    "display_field": false
+  },
+  {
+    "id": "fd_revenant_allure_induce_immune",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+        "effect_id": "secro_revenant_allure_induce_immune",
+        "effect_body_part": "TORSO",
+        "effect_min_duration": "1 seconds",
+        "effect_max_duration": "1 seconds",
+                "chance_in_vehicle": 1,
+                "chance_inside_vehicle": 1,
+                "chance_outside_vehicle": 1
+      }
+    ],
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": false,
+    "display_field": false
+  },
   
   {
     "//": "Immunity fields designed for all creatures.",
