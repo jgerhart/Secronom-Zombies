@@ -104,7 +104,7 @@
                 "type": "spell",
                 "spell_id": "mon_secrodragon_target_random",
                 "cooldown": 25,
-                "monster_message": "<color_yellow>%1$s growls as it performs a peculiar movement!</color>"
+                "monster_message": "<color_yellow>%1$s growls as it perform a peculiar movement!</color>"
             }
         ],
         "death_drops": {
