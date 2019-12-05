@@ -11,7 +11,7 @@ Mod made from various references, mixed up with random spices! A mod I've create
 ## Zombies
 The secronom's main feature - the zeds. They range from weak up to strong variety of them.
 
-* There are 81 zombies in total: 57 city zeds, 14 zed mutants and 10 lab zombies. Only the zombies that spawn individually and their evolved counterparts are counted, while minions and other special zeds aren't.
+* There are 82 zombies in total: 57 city zeds, 15 zed mutants and 10 lab zombies. Only the zombies that spawn individually and their evolved counterparts are counted, while minions and other special zeds aren't.
 
 Thanks to SomeDeadGuy, he did all of the monster sprites on his own.
 
@@ -133,6 +133,8 @@ Zed mutants that are seen rarely in and out of the cities or has special conditi
 
 * _**Equinox**_ **~** - A conglomeration of meat, forming a massive brain-like hive. End-game prize.
 
+* _**Fleshknot**_ **~** - A heavily mutated lump of flesh that infests buildings in the cities.
+
 ### Lab Zombies
 These are the zombies only exclusive to secronom labs:
 
@@ -189,3 +191,12 @@ All monsters aren't designed to kill the target, and thus providing roles to the
 * (**=**) *Boss* - monsters that are versatile in every situation. Unique and those who opposes extreme danger are considered with this type. They also reside in their lair, concealing them to prevent a widespread annihilation.
 
 Few are hybrids, but are still categorized into a type.
+
+# Structures
+These are the locations exclusive to the mod. Currently, there are few that can be seen in-game:
+
+### Secronom Lab
+The lab that's been the cause of spreading the newfound mutations throughout the entire lands. It also became the home for the secronom specimens (SS). Lab facilities are small, but there are beneficial items to loot from.
+
+### Infected Buildings
+These are once normal structures, but after a sudden mutation of a dwelling zed, who obtained 'this' newfound mutation, the whole building became infested with flesh. Loots and its layout are the same, but things are harsher than it was before.
