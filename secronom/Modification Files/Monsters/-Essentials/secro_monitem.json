@@ -10,7 +10,7 @@
     "to_hit": -1 ,
     "bashing": 1,
     "material": [ "flesh" ],
-    "symbol": "c",
+    "symbol": "⨨",
     "color": "yellow",
     "covers": [ "FEET" ],
     "coverage": 100,
