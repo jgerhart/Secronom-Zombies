@@ -18,7 +18,7 @@
             }
         ],
         "diff": 1,
-        "symbol": "Z",
+        "symbol": "☾",
         "color": "magenta",
         "aggression": 10,
         "morale": 50,
@@ -63,7 +63,7 @@
                 "chance": 50
             }
         ],
-        "symbol": "Z",
+        "symbol": "☪",
         "color": "pink",
         "aggression": 10,
         "morale": 50,
@@ -110,8 +110,8 @@
                 "duration": 120
             }
         ],
-        "symbol": "Z",
-        "color": "pink_red",
+        "symbol": "☪",
+        "color": "red_magenta",
         "aggression": 10,
         "morale": 50,
         "melee_skill": 6,

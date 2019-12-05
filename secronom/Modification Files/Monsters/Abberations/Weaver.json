@@ -11,7 +11,7 @@
     "hp": 160,
     "speed": 95,
     "material": ["flesh", "bone"],
-    "symbol": "H",
+    "symbol": "⨣",
     "color": "light_blue",
     "aggression": -100,
     "morale": 100,

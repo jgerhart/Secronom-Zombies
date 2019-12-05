@@ -44,7 +44,7 @@
         "species": ["ZOMBIE"],
         "speed": 100,
         
-        "symbol": "P",
+        "symbol": "<",
         "type": "MONSTER",
         "upgrades": {
             "half_life": 12,
@@ -104,7 +104,7 @@
         "species": ["ZOMBIE"],
         "speed": 90,
         
-        "symbol": "b",
+        "symbol": "⪕",
         "type": "MONSTER",
         "upgrades": {
             "half_life": 16,
@@ -172,7 +172,7 @@
         "species": ["ZOMBIE"],
         "speed": 95,
         
-        "symbol": "P",
+        "symbol": "⪦",
         "type": "MONSTER",
         "upgrades": {
             "half_life": 16,
@@ -246,7 +246,7 @@
         "species": ["ZOMBIE"],
         "speed": 80,
         
-        "symbol": "P",
+        "symbol": "⪃",
         "type": "MONSTER",
         "volume": "92500 ml",
         "weight": 120000

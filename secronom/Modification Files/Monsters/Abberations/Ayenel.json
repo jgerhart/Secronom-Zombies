@@ -12,7 +12,7 @@
     "hp": 535,
     "speed": 75,
     "material": ["flesh", "bone"],
-    "symbol": "A",
+    "symbol": "⒪",
     "color": "ltred",
     "aggression": 100,
     "morale": 100,
