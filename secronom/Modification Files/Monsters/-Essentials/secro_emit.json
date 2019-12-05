@@ -276,5 +276,40 @@
         "field": "fd_revenant_allure_induce_immune",
         "qty": 1,
         "intensity": 1
+    },
+    {
+        "id": "emit_fleshknot_gas_terrains",
+        "type": "emit",
+        "field": "fd_fleshknot_gas",
+        "qty": 125,
+        "intensity": 1
+    },
+    {
+        "id": "emit_fleshknot_gas_weak",
+        "type": "emit",
+        "field": "fd_fleshknot_gas",
+        "qty": 500,
+        "intensity": 1
+    },
+    {
+        "id": "emit_fleshknot_gas_mode",
+        "type": "emit",
+        "field": "fd_fleshknot_gas",
+        "qty": 400,
+        "intensity": 2
+    },
+    {
+        "id": "emit_fleshknot_gas_stro",
+        "type": "emit",
+        "field": "fd_fleshknot_gas",
+        "qty": 300,
+        "intensity": 3
+    },
+    {
+        "id": "emit_fleshknot_gas_vstro",
+        "type": "emit",
+        "field": "fd_fleshknot_gas",
+        "qty": 200,
+        "intensity": 4
     }
 ]
