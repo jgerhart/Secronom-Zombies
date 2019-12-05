@@ -718,6 +718,36 @@
 					{
                         "id": "mon_vector",
                         "fg": 154
+                    },
+					{
+                        "id": "t_tree_vector",
+                        "fg": 155,
+						"bg": 156
+                    },
+					{
+                        "id": "t_tree_vector_season_winter",
+                        "fg": 155,
+						"bg": 157
+                    },
+					{
+                        "id": "mon_vector_seedler",
+                        "fg": 158
+                    },
+					{
+                        "id": "mon_vector_stinger",
+                        "fg": 159
+                    },
+					{
+                        "id": "mon_vector_tree",
+                        "fg": 160
+                    },
+					{
+                        "id": "mon_zombieworm_wriggly",
+                        "fg": 161
+                    },
+					{
+                        "id": "corpse_mon_zombieworm_wriggly",
+                        "fg": 162
                     }
 					
 					
@@ -878,7 +908,147 @@
             }
 			],
 			"rotates": true
-            }	
+            },
+            {
+              "id": "fd_ministars",
+              "fg": 264
+            },
+            {
+              "id": "fd_portal_vector",
+              "fg": 265
+            },
+            {
+              "id": "fd_portal_carrion",
+              "fg": 266
+            },            {
+              "id": "fd_vector_seed",
+              "fg": 267
+            }, 
+			{
+              "id": "t_tree_vector_young",
+              "fg": 268
+            },{
+              "id": "t_shrub_vector",
+              "fg": 269
+            },{
+              "id": "f_floral_vector",
+              "fg": 270
+            },
+			{
+          "id": ["fd_vector_haze"],
+          "fg": 280,
+		  "bg": 0,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 280,
+			  "bg": 0
+            },		  
+           {
+              "id": "corner",
+              "fg": [281, 282, 283, 284],
+			  "bg": 0
+            },
+            {
+              "id": "t_connection",
+              "fg": [285, 286, 287, 288],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [289, 290],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [291, 292, 293, 294],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 295,
+			  "bg": 0
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_vector"],
+          "fg": 296,
+		  "bg": 0,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 296,
+			  "bg": 0
+            },		  
+           {
+              "id": "corner",
+              "fg": [297, 298, 299, 300],
+			  "bg": 0
+            },
+            {
+              "id": "t_connection",
+              "fg": [301, 302, 303, 304],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [305, 306],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [307, 308, 309, 310],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 311,
+			  "bg": 0
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_vector_season_winter"],
+          "fg": 312,
+		  "bg": 0,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 312,
+			  "bg": 0
+            },		  
+           {
+              "id": "corner",
+              "fg": [313, 314, 315, 316],
+			  "bg": 0
+            },
+            {
+              "id": "t_connection",
+              "fg": [317, 318, 319, 320],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [321, 322],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [323, 324, 325, 326],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 327,
+			  "bg": 0
+            }
+			],
+			"rotates": true
+            }
 				]
                 },{
                 "file": "4_32x32_monsters2_456-555.png",
@@ -1101,11 +1271,178 @@
                     }, {
                         "id": ["mon_unknown_unknown", "mon_unknown_unknown_carrion", "mon_unknown_unknown_vector"],
                         "fg": 516
+                    }, {
+                        "id": ["mon_vector_sprout"],
+                        "fg": 517,
+                        "bg": 1
+                    }, {
+                        "id": ["mon_vector_sprig"],
+                        "fg": 518,
+                        "bg": 1
+                    }, {
+                        "id": ["mon_vector_spore"],
+                        "fg": 519,
+                        "bg": 1
+                    }, {
+                        "id": ["corpse_mon_vector_sprout", "corpse_mon_vector_sprig"],
+                        "fg": 520
+                    }, {
+                        "id": ["corpse_mon_insect_saddler", "corpse_mon_insect_saddler_brood"],
+                        "fg": 521
+                    }, {
+                        "id": ["corpse_mon_insect_saddler_baby"],
+                        "fg": 522
+                    }, {
+                        "id": ["saddler_egg"],
+                        "fg": 523
+                    }, {
+                        "id": ["hatchingsaddleregg"],
+                        "fg": 524
+                    }, {
+                        "id": ["laser_rifle_secro"],
+                        "fg": 525
+                    }, {
+                        "id": ["overlay_wielded_laser_rifle_secro"],
+                        "fg": 526
+                    }, {
+                        "id": ["SS_grenade_launcher"],
+                        "fg": 527
+                    }, {
+                        "id": ["overlay_wielded_SS_grenade_launcher"],
+                        "fg": 528
+                    }, {
+                        "id": ["cheytac"],
+                        "fg": 529
+                    }, {
+                        "id": ["overlay_wielded_cheytac"],
+                        "fg": 530
+                    }, {
+                        "id": ["cheytacmag"],
+                        "fg": 531
+                    }, {
+                        "id": ["hecate"],
+                        "fg": 532
+                    }, {
+                        "id": ["overlay_wielded_hecate"],
+                        "fg": 533
+                    }, {
+                        "id": ["hecate_muzzle_brake"],
+                        "fg": 534
+                    }, {
+                        "id": ["hecatemag"],
+                        "fg": 535
+                    }, {
+                        "id": ["kacc"],
+                        "fg": 536
+                    }, {
+                        "id": ["overlay_wielded_kacc"],
+                        "fg": 537
+                    }, {
+                        "id": ["psg1"],
+                        "fg": 538
+                    }, {
+                        "id": ["overlay_wielded_psg1"],
+                        "fg": 539
+                    }, {
+                        "id": ["walther2000"],
+                        "fg": 540
+                    }, {
+                        "id": ["overlay_wielded_walther2000"],
+                        "fg": 541
+                    }, {
+                        "id": ["walther2000mag"],
+                        "fg": 542
+                    }, {
+                        "id": ["xm556"],
+                        "fg": 543
+                    }, {
+                        "id": ["overlay_wielded_xm556"],
+                        "fg": 544
+                    }, {
+                        "id": ["xm8"],
+                        "fg": 545
+                    }, {
+                        "id": ["overlay_wielded_xm8"],
+                        "fg": 546
+                    }, {
+                        "id": ["overlay_effect_unify_bloodslow"],
+                        "fg": 547
+                    }, {
+                        "id": ["overlay_effect_unify_bloodslow"],
+                        "fg": 548
+                    }, {
+                        "id": ["overlay_effect_pedo_restraint"],
+                        "fg": 549
+                    }, {
+                        "id": ["overlay_effect_rooty_grasp"],
+                        "fg": 550
+                    }, {
+                        "id": ["overlay_effect_vector_infect"],
+                        "fg": 551
+                    }, {
+                        "id": ["overlay_effect_secro_uruxis_shroud"],
+                        "fg": 552
+                    }, {
+                        "id": ["overlay_effect_secro_cordev_corrupt"],
+                        "fg": 553
+                    }, {
+                        "id": ["overlay_effect_secro_akin_siphon_foe"],
+                        "fg": 554
+                    }, {
+                        "id": ["overlay_effect_secro_akin_siphon_ally"],
+                        "fg": 555
                     }
 				
 				
                 ]
-            }
+            }, 
+	{
+    "file": "5_32x32_status_icons_556-665.png",
+    "sprite_offset_y":-16,
+    "tiles":
+    [      
+		{
+          "id": "overlay_effect_parasiteworm_pain",
+          "bg": 556
+        },	
+		{
+          "id": "overlay_effect_parasiteworm_int",
+          "bg": 557
+        },	
+		{
+          "id": "overlay_effect_parasiteworm_stomach",
+          "bg": 558
+        },	
+		{
+          "id": "overlay_effect_parasiteworm_move",
+          "bg": 559
+        },	
+		{
+          "id": "overlay_effect_omi_curse",
+          "bg": 560
+        },	
+		{
+          "id": "overlay_effect_secro_dissed",
+          "bg": 561
+        },	
+		{
+          "id": "overlay_effect_secro_nix_fear",
+          "bg": 562
+        },	
+		{
+          "id": "overlay_effect_secro_gorepit_wall_dmg",
+          "bg": 563
+        },	
+		{
+          "id": "overlay_effect_secro_fleshysnaky_enrage",
+          "bg": 564
+        }	
+		{
+          "id": "overlay_effect_secro_necros_para",
+          "bg": 564
+        }
+    ]
+	}
                 ] 
             }
         ]
