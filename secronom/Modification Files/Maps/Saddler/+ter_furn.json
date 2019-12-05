@@ -1,0 +1,13 @@
+{
+  	  "//": "Invisible and invincible emitter.",
+        "type": "furniture",
+        "id": "f_secro_saddler_biome_emit",
+        "name": "",
+        "description": "",
+        "symbol": " ",
+        "color": "black",
+        "move_cost_mod": 0,
+        "required_str": -1,
+        "emissions": ["emit_fleshknot_gas_terrains"],
+        "flags": ["TRANSPARENT", "NOCOLLIDE", "S_SADDLER", "EMITTER"]
+    }
