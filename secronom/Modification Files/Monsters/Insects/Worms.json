@@ -11,7 +11,7 @@
         "hp": 40,
         "speed": 60,
         "material": ["flesh"],
-        "symbol": "w",
+        "symbol": "⟆",
         "color": "pink",
         "aggression": 50,
         "morale": 50,
@@ -58,7 +58,7 @@
         "speed": 30,
         "//": "Super slow",
         "material": ["flesh"],
-        "symbol": "W",
+        "symbol": "⚕",
         "color": "red",
         "aggression": 50,
         "morale": 50,
@@ -104,7 +104,7 @@
         "hp": 710,
         "speed": 20,
         "material": ["flesh"],
-        "symbol": "W",
+        "symbol": "☤",
         "color": "light_red",
         "aggression": 50,
         "morale": 50,
@@ -142,11 +142,11 @@
         "flags": ["DIGS", "CAN_DIG", "HEARS", "SMELLS", "GOODHEARING", "WARM"]
     },
     {
-		"//": "More on dealing damage and afflicting debuff.",
+		"//": "Both deals damage and inflicts debuff.",
         "id": "mon_zombieworm_mawy",
         "type": "MONSTER",
         "name": "sinister maw",
-        "description": "A colossal worm, mysterious to its origin. Its glistening white surface depict its sly nature, but once it attempts to feast on its prey, its maw can deliver strands of web-like flesh with an inner mouth allowing it to consume from a distance.",
+        "description": "A colossal worm, mysterious to its origin. Its glistening white surface depicts its sly nature, but once it attempts to feast on its prey, its maw can deliver strands of web-like flesh with an inner mouth allowing to consume from a distance.",
         "default_faction": "zombie",
         "species": ["ZOMBIE", "WORM"],
         "volume": "875000 ml",
@@ -155,7 +155,7 @@
         "hp": 440,
         "speed": 35,
         "material": ["flesh"],
-        "symbol": "W",
+        "symbol": "⨛",
         "color": "white",
         "aggression": 50,
         "morale": 50,
@@ -171,7 +171,7 @@
                 "spell_id": "mon_zombieworm_mawy_target_random",
                 "cooldown": 22,
 				"self": true,
-                "monster_message": "<color_yellow>%1$s points its orifice at %3$s, then starts to spew fleshy webs!</color>"
+                "monster_message": "<color_yellow>%1$s points its orifice at %3$s...</color>"
             }, {
                 "type": "bite",
                 "cooldown": 16,

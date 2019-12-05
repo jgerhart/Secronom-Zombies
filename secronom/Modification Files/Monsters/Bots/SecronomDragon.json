@@ -30,7 +30,7 @@
         "hp": 2325,
         "speed": 0,
         "material": ["steel", "flesh"],
-        "symbol": "D",
+        "symbol": "☬",
         "color": "white",
         "aggression": 50,
         "morale": 50,
@@ -74,7 +74,7 @@
         "speed": 60,
         "material": ["steel", "flesh"],
         "emit_fields": ["emit_down_immunity"],
-        "symbol": "D",
+        "symbol": "☬",
         "color": "white_red",
         "aggression": 100,
         "morale": 100,
@@ -104,7 +104,7 @@
                 "type": "spell",
                 "spell_id": "mon_secrodragon_target_random",
                 "cooldown": 25,
-                "monster_message": "<color_yellow>%1$s growls as it perform a peculiar movement!</color>"
+                "monster_message": "<color_yellow>%1$s growls...</color>"
             }
         ],
         "death_drops": {
