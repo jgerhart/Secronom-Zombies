@@ -1597,6 +1597,7 @@
         "min_duration": 200,
         "max_duration": 200
     }, {
+    	"//": "Notes are unnecessary for this spell.",
         "type": "SPELL",
         "id": "mon_zombie_gorepit_tent_target_random",
         "name": "a spell",
@@ -1669,10 +1670,27 @@
         "min_duration": 1,
         "max_duration": 1
     }, {
+        "id": "mon_zombie_cordev_mincem_target_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_zombie_cordev_mincem_target"
+            }
+        ],
+        "effect_str": "mon_zombie_cordev_mincem_target_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
         "id": "mon_zombie_cordev_whip",
         "type": "SPELL",
         "name": "Whipslash",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's volatile lump sends forth an errant tendril that strikes the target, dealing cutting damage. This is casted randomly from 1 to 4 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's volatile lump sends forth an errant tendril that strikes the target, dealing cutting damage. This is casted randomly from 2 to 4 times.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
         "valid_targets": ["hostile"],
         "effect": "projectile_attack",
@@ -1688,22 +1706,33 @@
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_cordev_whip"
-            }, {
-                "id": "mon_zombie_cordev_whip"
-            }, {
-                "id": "mon_zombie_cordev_whip"
-            }, {
-                "id": "mon_zombie_cordev_whip"
             }
         ],
         "flags": ["SILENT", "WONDER", "RANDOM_DAMAGE"],
         "valid_targets": ["ally", "hostile"],
         "effect": "target_attack",
         "effect_str": "secro_magic_target",
-        "min_damage": 1,
+        "min_damage": 2,
         "max_damage": 4,
         "min_range": 4,
         "max_range": 4,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
+        "id": "mon_zombie_cordev_whip_target_random_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_zombie_cordev_whip_target_random"
+            }
+        ],
+        "effect_str": "mon_zombie_cordev_whip_target_random_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
         "min_duration": 1,
         "max_duration": 1
     }, {
@@ -1722,6 +1751,23 @@
         "field_chance": 1,
         "min_field_intensity": 3,
         "max_field_intensity": 3
+    }, {
+        "id": "mon_zombie_cordev_corrupt_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_zombie_cordev_corrupt"
+            }
+        ],
+        "effect_str": "mon_zombie_cordev_corrupt_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
     }, {
         "id": "mon_zombie_cordev_texplode_stun",
         "type": "SPELL",
@@ -1789,61 +1835,78 @@
         "min_duration": 1,
         "max_duration": 1
     }, {
+        "id": "mon_zombie_cordev_texplode_target_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_zombie_cordev_texplode_target"
+            }
+        ],
+        "effect_str": "mon_zombie_cordev_texplode_target_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
         "//": "Spammed by the devourer...",
         "type": "SPELL",
         "id": "mon_zombie_cordev_target_random",
         "name": "a spell",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
         "extra_effects": [{
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_whip_target_random"
+                "id": "mon_zombie_cordev_whip_target_random_note"
             }, {
-                "id": "mon_zombie_cordev_whip_target_random"
+                "id": "mon_zombie_cordev_whip_target_random_note"
             }, {
-                "id": "mon_zombie_cordev_corrupt"
+                "id": "mon_zombie_cordev_corrupt_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_whip_target_random"
+                "id": "mon_zombie_cordev_whip_target_random_note"
             }, {
-                "id": "mon_zombie_cordev_whip_target_random"
+                "id": "mon_zombie_cordev_whip_target_random_note"
             }, {
-                "id": "mon_zombie_cordev_corrupt"
+                "id": "mon_zombie_cordev_corrupt_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_mincem_target"
+                "id": "mon_zombie_cordev_mincem_target_note"
             }, {
-                "id": "mon_zombie_cordev_whip_target_random"
+                "id": "mon_zombie_cordev_whip_target_random_note"
             }, {
-                "id": "mon_zombie_cordev_whip_target_random"
+                "id": "mon_zombie_cordev_whip_target_random_note"
             }, {
-                "id": "mon_zombie_cordev_corrupt"
+                "id": "mon_zombie_cordev_corrupt_note"
             }, {
-                "id": "mon_zombie_cordev_texplode_target"
+                "id": "mon_zombie_cordev_texplode_target_note"
             }
         ],
         "flags": ["SILENT", "WONDER"],
@@ -1889,6 +1952,23 @@
         "min_duration": 1,
         "max_duration": 1
     }, {
+        "id": "mon_zombie_fleshysnaky_pmissile_target_random_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_zombie_fleshysnaky_pmissile_target_random"
+            }
+        ],
+        "effect_str": "mon_zombie_fleshysnaky_pmissile_target_random_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
         "id": "mon_zombie_fleshysnaky_sbomb",
         "type": "SPELL",
         "name": "Spike Bombardment",
@@ -1904,6 +1984,23 @@
         "max_aoe": 3,
         "damage_type": "stab"
     }, {
+        "id": "mon_zombie_fleshysnaky_sbomb_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_zombie_fleshysnaky_sbomb"
+            }
+        ],
+        "effect_str": "mon_zombie_fleshysnaky_sbomb_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
         "id": "mon_zombie_fleshysnaky_hails",
         "type": "SPELL",
         "name": "Hail of Spikes",
@@ -1917,6 +2014,24 @@
         "max_aoe": 10,
         "damage_type": "stab"
     }, {
+        "id": "mon_zombie_fleshysnaky_hails_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_zombie_fleshysnaky_hails",
+                "hit_self": true
+            }
+        ],
+        "effect_str": "mon_zombie_fleshysnaky_hails_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
         "id": "mon_zombie_fleshysnaky_ppoint",
         "type": "SPELL",
         "name": "Pressure Point",
@@ -1929,6 +2044,23 @@
         "max_range": 10,
         "min_range": 10,
         "damage_type": "stab"
+    }, {
+        "id": "mon_zombie_fleshysnaky_ppoint_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_zombie_fleshysnaky_ppoint"
+            }
+        ],
+        "effect_str": "mon_zombie_fleshysnaky_ppoint_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
     }, {
         "id": "mon_zombie_fleshysnaky_rage",
         "type": "SPELL",
@@ -1946,18 +2078,17 @@
         "name": "a spell",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
         "extra_effects": [{
-                "id": "mon_zombie_fleshysnaky_pmissile_target_random"
+                "id": "mon_zombie_fleshysnaky_pmissile_target_random_note"
             }, {
-                "id": "mon_zombie_fleshysnaky_pmissile_target_random"
+                "id": "mon_zombie_fleshysnaky_pmissile_target_random_note"
             }, {
-                "id": "mon_zombie_fleshysnaky_pmissile_target_random"
+                "id": "mon_zombie_fleshysnaky_pmissile_target_random_note"
             }, {
-                "id": "mon_zombie_fleshysnaky_sbomb"
+                "id": "mon_zombie_fleshysnaky_sbomb_note"
             }, {
-                "id": "mon_zombie_fleshysnaky_hails",
-                "hit_self": true
+                "id": "mon_zombie_fleshysnaky_hails_note"
             }, {
-                "id": "mon_zombie_fleshysnaky_ppoint"
+                "id": "mon_zombie_fleshysnaky_ppoint_note"
             }
         ],
         "flags": ["SILENT", "WONDER"],
@@ -2039,7 +2170,7 @@
         "min_duration": 1,
         "max_duration": 1
     }, {
-        "//": "All of the equinox's spell doesn't specifically target any creature sight, but possesses high damage if one got hit. It only focuses on making fields in its surroundings to maximize its summoning ability.",
+        "//": "All of the equinox's spell doesn't specifically target any creature in sight, but possesses high damage if one got hit. It only focuses on making fields to its surroundings to maximize the summoning ability.",
         "id": "mon_zombie_equinox_ndischarge",
         "type": "SPELL",
         "name": "Necrotic Discharge",
@@ -2058,6 +2189,23 @@
         "field_id": "fd_equinox_flesh",
         "min_field_intensity": 2,
         "max_field_intensity": 2
+    }, {
+        "id": "mon_zombie_equinox_ndischarge_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_zombie_equinox_ndischarge"
+            }
+        ],
+        "effect_str": "mon_zombie_equinox_ndischarge_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
     }, {
         "id": "mon_zombie_equinox_nimplode",
         "type": "SPELL",
@@ -2095,18 +2243,35 @@
         "min_duration": 1,
         "max_duration": 1
     }, {
+        "id": "mon_zombie_equinox_nimplode_target_random_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_zombie_equinox_nimplode_target_random"
+            }
+        ],
+        "effect_str": "mon_zombie_equinox_nimplode_target_random_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
         "type": "SPELL",
         "id": "mon_zombie_equinox_target_random",
         "name": "a spell",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
         "extra_effects": [{
-                "id": "mon_zombie_equinox_ndischarge"
+                "id": "mon_zombie_equinox_ndischarge_note"
             }, {
-                "id": "mon_zombie_equinox_ndischarge"
+                "id": "mon_zombie_equinox_ndischarge_note"
             }, {
-                "id": "mon_zombie_equinox_ndischarge"
+                "id": "mon_zombie_equinox_ndischarge_note"
             }, {
-                "id": "mon_zombie_equinox_nimplode_target_random"
+                "id": "mon_zombie_equinox_nimplode_target_random_note"
             }
         ],
         "flags": ["SILENT", "WONDER"],
@@ -2479,6 +2644,36 @@
         "max_field_intensity": 3,
         "damage_type": "stab"
     }, {
+        "id": "mon_zombieworm_mawy_crunch_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_zombieworm_mawy_crunch"
+            }
+        ],
+        "effect_str": "mon_zombieworm_mawy_crunch_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
+        "id": "mon_zombieworm_mawy_web_target_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "effect_str": "mon_zombieworm_mawy_web_target_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
         "id": "mon_zombieworm_mawy_web_low",
         "type": "SPELL",
         "name": "Web Spit",
@@ -2526,6 +2721,8 @@
         "name": "a spell",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
         "extra_effects": [{
+                "id": "mon_zombieworm_mawy_web_target_note"
+            }, {
                 "id": "mon_zombieworm_mawy_web_low"
             }, {
                 "id": "mon_zombieworm_mawy_web_med"
@@ -2754,6 +2951,23 @@
         "min_damage": 5,
         "max_damage": 5
     }, {
+        "id": "mon_secrodragon_barrier_target_random_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_secrodragon_barrier_target_random"
+            }
+        ],
+        "effect_str": "mon_secrodragon_barrier_target_random_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
         "id": "mon_secrodragon_edischarge",
         "type": "SPELL",
         "name": "Electric Discharge",
@@ -2787,16 +3001,33 @@
         "min_damage": 6,
         "max_damage": 12
     }, {
+        "id": "mon_secrodragon_edischarge_target_random_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_secrodragon_edischarge_target_random"
+            }
+        ],
+        "effect_str": "mon_secrodragon_edischarge_target_random_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
         "type": "SPELL",
         "id": "mon_secrodragon_target_random",
         "name": "a spell",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
         "extra_effects": [{
-                "id": "mon_secrodragon_barrier_target_random"
+                "id": "mon_secrodragon_barrier_target_random_note"
             }, {
-                "id": "mon_secrodragon_edischarge_target_random"
+                "id": "mon_secrodragon_edischarge_target_random_note"
             }, {
-                "id": "mon_secrodragon_edischarge_target_random"
+                "id": "mon_secrodragon_edischarge_target_random_note"
             }
         ],
         "flags": ["SILENT", "WONDER"],
@@ -2899,8 +3130,8 @@
         "valid_targets": ["self"],
         "effect": "target_attack",
         "effect_str": "run",
-		"min_duration": 300,
-        "max_duration": 1200
+		"min_duration": 600,
+        "max_duration": 1800
     },
     {
         "id": "mon_zombie_revenant_trigger",
@@ -3045,6 +3276,6 @@
         "valid_targets": ["ally", "hostile", "ground"],
         "effect": "target_attack",
         "min_range": 3,
-        "max_range": 3
+        "max_range": 5
     }
 ]
