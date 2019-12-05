@@ -171,7 +171,7 @@
                 "effect_max_duration": 4
             }
         ],
-        "priority": 0,
+        "priority": -1,
         "half_life": "6 seconds",
         "immunity_data": {
             "body_part_env_resistance": [["HEAD", 5]]
@@ -199,7 +199,7 @@
                 "monster_spawn_chance": 100
             }
         ],
-        "priority": 0,
+        "priority": -1,
         "half_life": "1 turns",
         "phase": "plasma",
         "display_items": true,
@@ -235,6 +235,7 @@
                 "monster_spawn_group": "GROUP_ZOMBIE"
             }
         ],
+        "priority": -1,
         "half_life": "1 turns",
         "phase": "gas",
         "wandering_field": "fd_uruxis_normal",
@@ -255,6 +256,7 @@
         "effect_max_duration": "2 seconds"
       }
     ],
+    "priority": -1,
     "decay_amount_factor": 5,
     "gas_absorption_factor": 10,
     "dirty_transparency_cache": true,
@@ -285,7 +287,7 @@
       }
     ],
     "dirty_transparency_cache": true,
-    "priority": 2,
+    "priority": -1,
     "half_life": "1 seconds",
     "phase": "solid",
     "display_items": false,
@@ -327,6 +329,7 @@
                 "monster_spawn_group": "GROUP_GORE_TENT"
             }
         ],
+        "priority": -1,
         "half_life": "1 turns",
         "phase": "gas",
         "display_items": true,
@@ -345,6 +348,7 @@
                 "monster_spawn_group": "GROUP_GORE_TENT"
             }
         ],
+        "priority": -1,
         "half_life": "5 turns",
         "phase": "gas",
         "display_items": true,
@@ -426,7 +430,7 @@
         "display_field": true
     },
 	{
-	"//": "It's the trail of charger charging towards the target, and it exploits the glitch of it going OVER/ABOVE the player, so that the effect is applied.",
+	"//": "It's the trail of charger charging towards the target, and it exploits the glitch of it going OVER/ABOVE the player, so that the effect gets applied successfully.",
     "id": "fd_charger_stun",
     "type": "field_type",
     "intensity_levels": [
@@ -440,13 +444,14 @@
         "effect_max_duration": "6 seconds"
       }
     ],
+    "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
     "display_items": true,
     "display_field": false
   },
   {
-    "//": "This web doesn't break when a creature moves through it, it'll disappear only.",
+    "//": "This web doesn't break when a creature moves through it.",
     "id": "fd_mawy_web",
     "type": "field_type",
     "intensity_levels": [ { "name": "flesh strands", "sym": "}", "color": "pink", "effect_id": "secro_mawy_web",
@@ -477,6 +482,7 @@
                 "chance_outside_vehicle": 1
       }
     ],
+    "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
     "display_items": false,
@@ -498,6 +504,7 @@
                 "chance_outside_vehicle": 1
       }
     ],
+    "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
     "display_items": false,
@@ -519,9 +526,39 @@
                 "chance_outside_vehicle": 1
       }
     ],
+    "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
     "display_items": false,
+    "display_field": false
+  },
+  {
+    "//": "This gas should disappear immediately when it is outside the structure.",
+    "id": "fd_fleshknot_gas",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "errant stench", "color": "dark_gray", "translucency": 1, "effect_id": "secro_fleshknot_poison",
+        "effect_body_part": "TORSO",
+        "effect_min_duration": "1 seconds",
+        "effect_max_duration": "3 seconds" },
+      { "name": "toxic stench", "color": "light_green", "translucency": 3, "effect_min_duration": "5 seconds",
+        "effect_max_duration": "10 seconds" },
+      { "name": "dense toxic stench", "color": "light_green", "translucency": 10,"effect_min_duration": "15 seconds",
+        "effect_max_duration": "30 seconds" },
+        { "name": "noxious stench", "color": "green", "translucency": 0,"effect_min_duration": "60 seconds",
+        "effect_max_duration": "90 seconds" }
+    ],
+    "decay_amount_factor": 80,
+    "gas_absorption_factor": 5,
+    "percent_spread": 50,
+    "outdoor_age_speedup": "30 minutes",
+    "dirty_transparency_cache": true,
+    "has_fume": true,
+    "immunity_data": { "body_part_env_resistance": [ [ "MOUTH", 15 ] ] },
+    "priority": -1,
+    "half_life": "10 minutes",
+    "phase": "gas",
+    "display_items": true,
     "display_field": false
   },
   
@@ -542,6 +579,7 @@
                 "chance_outside_vehicle": 1
       }
     ],
+    "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
     "display_items": false,
