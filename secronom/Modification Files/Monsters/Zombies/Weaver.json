@@ -1,5 +1,5 @@
 [{
-        "//": "Support-type zed who attacks allies to heal them, but it is completely harmless to the enemy.",
+        "//": "Support-type zed who attacks allies to heal them, but completely harmless to the enemy.",
         "id": "mon_zombie_skittyweavy",
         "type": "MONSTER",
         "name": "skittering weaver",
@@ -29,7 +29,7 @@
         "armor_stab": 2,
         "//": "Never resist the heal.",
         "melee_damage": [{
-                "amount": 1,
+                "amount": 2,
                 "damage_type": "true"
             }
         ],
@@ -42,7 +42,7 @@
         "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_zombie_skittyweavy_target",
-                "cooldown": 2,
+                "cooldown": 1,
                 "monster_message": "<color_light_red>%1$s flees from %3$s!</color>"
             }
         ],
@@ -76,7 +76,7 @@
         "armor_cut": 15,
         "armor_stab": 7,
         "melee_damage": [{
-                "amount": 1,
+                "amount": 2,
                 "damage_type": "true"
             }
         ],
@@ -88,7 +88,7 @@
         "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_zombie_skittyweavy_target",
-                "cooldown": 2,
+                "cooldown": 1,
                 "monster_message": "<color_light_red>%1$s flees from %3$s!</color>"
             }
         ],
@@ -122,7 +122,7 @@
         "armor_cut": 12,
         "armor_stab": 5,
         "melee_damage": [{
-                "amount": 1,
+                "amount": 2,
                 "damage_type": "true"
             }
         ],
@@ -137,7 +137,7 @@
         "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_zombie_skittyweavy_target",
-                "cooldown": 2,
+                "cooldown": 1,
                 "monster_message": "<color_light_red>%1$s flees from %3$s!</color>"
             }
         ],
