@@ -200,3 +200,6 @@ The lab that's been the cause of spreading the newfound mutations throughout the
 
 ### Infected Buildings
 These are once normal structures, but after a sudden mutation of a dwelling zed, who obtained 'this' newfound mutation, the whole building became infested with flesh. Loots and its layout are the same, but things are harsher than it was before.
+
+### Saddler Brooding Nest
+A rare cavern where acidic fiends dwell in. Like an ant hill, but lesser in paths, rooms and its population.
