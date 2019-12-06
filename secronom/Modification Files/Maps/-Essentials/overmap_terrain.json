@@ -47,5 +47,143 @@
         "sym": "L",
         "color": "ltgray",
         "see_cost": 5
+    }, {
+        "id": "saddler_cave_entrance_1",
+        "type": "overmap_terrain",
+        "name": "field",
+        "sym": ".",
+        "color": "brown",
+        "see_cost": 2,
+        "flags": ["NO_ROTATE"],
+        "extras": "build"
+    }, {
+        "id": "saddler_cave_entrance_2",
+        "type": "overmap_terrain",
+        "name": "field",
+        "sym": ".",
+        "color": "brown",
+        "see_cost": 2,
+        "flags": ["NO_ROTATE"],
+        "extras": "build"
+    }, {
+        "id": "saddler_cave_entrance_3",
+        "type": "overmap_terrain",
+        "name": "field",
+        "sym": ".",
+        "color": "brown",
+        "see_cost": 2,
+        "flags": ["NO_ROTATE"],
+        "extras": "build"
+    }, {
+        "id": "saddler_cave_entrance_4",
+        "type": "overmap_terrain",
+        "name": "field",
+        "sym": ".",
+        "color": "brown",
+        "see_cost": 2,
+        "flags": ["NO_ROTATE"],
+        "extras": "build"
+    }, {
+        "id": "saddler_cave_entrance_5",
+        "type": "overmap_terrain",
+        "name": "field",
+        "sym": ".",
+        "color": "green",
+        "see_cost": 2,
+        "flags": ["NO_ROTATE"],
+        "spawns": {
+            "group": "GROUP_SADDLER_ENTRANCE",
+            "population": [20, 40],
+            "chance": 100
+        },
+        "extras": "build"
+    }, {
+        "id": "saddler_cave_entrance_6",
+        "type": "overmap_terrain",
+        "name": "field",
+        "sym": ".",
+        "color": "brown",
+        "see_cost": 2,
+        "flags": ["NO_ROTATE"],
+        "extras": "build"
+    }, {
+        "id": "saddler_cave_entrance_7",
+        "type": "overmap_terrain",
+        "name": "field",
+        "sym": ".",
+        "color": "brown",
+        "see_cost": 2,
+        "flags": ["NO_ROTATE"],
+        "extras": "build"
+    }, {
+        "id": "saddler_cave_entrance_8",
+        "type": "overmap_terrain",
+        "name": "field",
+        "sym": ".",
+        "color": "brown",
+        "see_cost": 2,
+        "flags": ["NO_ROTATE"],
+        "extras": "build"
+    }, {
+        "id": "saddler_cave_entrance_9",
+        "type": "overmap_terrain",
+        "name": "field",
+        "sym": ".",
+        "color": "brown",
+        "see_cost": 2,
+        "flags": ["NO_ROTATE"],
+        "extras": "build"
+    }, {
+        "id": "saddler_cave_up",
+        "type": "overmap_terrain",
+        "name": "saddler nest",
+        "sym": "C",
+        "color": "green",
+        "see_cost": 5,
+        "spawns": {
+            "group": "GROUP_SADDLER",
+            "population": [25, 50],
+            "chance": 100
+        },"flags": ["NO_ROTATE"],
+        "extras": "build"
+    }, {
+        "id": "saddler_cave_north",
+        "type": "overmap_terrain",
+        "name": "saddler nest",
+        "sym": "C",
+        "color": "green",
+        "see_cost": 5,
+        "spawns": {
+            "group": "GROUP_SADDLER",
+            "population": [25, 50],
+            "chance": 100
+        },"flags": ["NO_ROTATE"],
+        "extras": "build"
+    }, {
+        "id": "saddler_cave_west",
+        "type": "overmap_terrain",
+        "name": "saddler nest",
+        "sym": "C",
+        "color": "green",
+        "see_cost": 5,
+        "spawns": {
+            "group": "GROUP_SADDLER",
+            "population": [25, 50],
+            "chance": 100
+        },"flags": ["NO_ROTATE"],
+        "extras": "build"
+    }, {
+        "id": "saddler_cave_brood",
+        "type": "overmap_terrain",
+        "name": "saddler nest",
+        "sym": "C",
+        "color": "light_green",
+        "see_cost": 5,
+        "spawns": {
+            "group": "GROUP_SADDLER",
+            "population": [25, 50],
+            "chance": 100
+        },"flags": ["NO_ROTATE"],
+        "extras": "build"
     }
 ]
