@@ -34,15 +34,14 @@
         "placate_triggers": ["MEAT"],
         "armor_bash": 5,
         "armor_cut": 3,
-        "armor_acid": 2,
-        "armor_fire": 1,
+        "armor_stab": 3,
         "death_function": ["NORMAL", "ACID"],
-        "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "BASHES", "POISON", "ACID_BLOOD", "ACIDPROOF", "BONES"]
+        "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "BASHES", "POISON", "ACID_BLOOD", "ACIDPROOF", "BONES", "QUEEN"]
     }, {
         "id": "mon_insect_saddler_baby",
         "type": "MONSTER",
         "name": "baby saddler",
-        "description": "Cute, with its tiny, harmless legs twitches and frequently stumbles to the ground.",
+        "description": "Cute, with its tiny, harmless legs twitching without command, causing it to frequently stumbles into the ground.",
         "default_faction": "saddler",
         "species": ["INSECT"],
         "volume": "750 ml",
@@ -96,6 +95,9 @@
                 "amount": 1
             }
         ],
+        "armor_bash": 3,
+        "armor_cut": 1,
+        "armor_stab": 1,
         "death_function": ["NORMAL", "ACID"],
         "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "BASHES", "POISON", "ACID_BLOOD", "ACIDPROOF"]
     },
@@ -115,7 +117,7 @@
         "symbol": "h",
         "anger_triggers": ["FRIEND_ATTACKED", "FRIEND_DIED"],
         "placate_triggers": ["MEAT"],
-        "color": "green",
+        "color": "black_green",
         "aggression": 50,
         "morale": 25,
         "melee_skill": 6,
@@ -127,6 +129,9 @@
                 "amount": 3
             }
         ],
+        "armor_bash": 9,
+        "armor_cut": 5,
+        "armor_stab": 5,
         "death_function": ["NORMAL", "ACID"],
         "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "BASHES", "POISON", "ACID_BLOOD", "PUSH_MON", "ACIDPROOF"]
     },
@@ -146,7 +151,7 @@
         "symbol": "h",
         "anger_triggers": ["FRIEND_ATTACKED", "FRIEND_DIED"],
         "placate_triggers": ["MEAT"],
-        "color": "green",
+        "color": "red_green",
         "aggression": 50,
         "morale": 25,
         "melee_skill": 4,
@@ -159,6 +164,7 @@
                 "amount": 1
             }
         ],
+        "armor_bash": 1,
         "death_function": ["NORMAL", "ACID"],
         "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "BASHES", "POISON", "ACID_BLOOD", "PUSH_MON", "ACIDPROOF"]
     }
