@@ -721,6 +721,7 @@
         "default_faction": "zombie",
         "species": ["ZOMBIE"],
         "diff": 50,
+        "//": "Immensive!",
         "volume": "69420 L",
         "weight": 6669420,
         "hp": 2620,
@@ -1944,7 +1945,7 @@
     "special_attacks": [ [ "FLESH_TENDRIL", 1 ] ],
     "death_function": [ "SPLATTER" ],
     "upgrades": {
-            "half_life": 12,
+            "half_life": 15,
             "into": "mon_zombie_fleshknot_stro"
         },
     "flags": [ "SEES", "HEARS", "SMELLS", "IMMOBILE", "WARM", "POISON", "IMMOBILE", "NOHEAD","NO_BREATHE" ]
@@ -1977,7 +1978,7 @@
     "special_attacks": [ [ "FLESH_TENDRIL", 1 ] ],
     "death_function": [ "SPLATTER" ],
     "upgrades": {
-            "half_life": 15,
+            "half_life": 20,
             "into": "mon_zombie_fleshknot_vstro"
         },
     "flags": [ "SEES", "HEARS", "SMELLS", "IMMOBILE", "WARM", "POISON", "IMMOBILE", "NOHEAD","NO_BREATHE" ]
