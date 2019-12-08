@@ -93,7 +93,7 @@
         "flags": ["NO_ROTATE"],
         "spawns": {
             "group": "GROUP_SADDLER_ENTRANCE",
-            "population": [20, 40],
+            "population": [25, 50],
             "chance": 100
         },
         "extras": "build"
@@ -142,9 +142,9 @@
         "see_cost": 5,
         "spawns": {
             "group": "GROUP_SADDLER",
-            "population": [25, 50],
+            "population": [50, 100],
             "chance": 100
-        },"flags": ["NO_ROTATE"],
+        },
         "extras": "build"
     }, {
         "id": "saddler_cave_north",
@@ -155,9 +155,9 @@
         "see_cost": 5,
         "spawns": {
             "group": "GROUP_SADDLER",
-            "population": [25, 50],
+            "population": [50, 100],
             "chance": 100
-        },"flags": ["NO_ROTATE"],
+        },
         "extras": "build"
     }, {
         "id": "saddler_cave_west",
@@ -168,9 +168,9 @@
         "see_cost": 5,
         "spawns": {
             "group": "GROUP_SADDLER",
-            "population": [25, 50],
+            "population": [50, 100],
             "chance": 100
-        },"flags": ["NO_ROTATE"],
+        },
         "extras": "build"
     }, {
         "id": "saddler_cave_brood",
@@ -181,9 +181,30 @@
         "see_cost": 5,
         "spawns": {
             "group": "GROUP_SADDLER",
-            "population": [25, 50],
+            "population": [100, 200],
             "chance": 100
-        },"flags": ["NO_ROTATE"],
+        },
         "extras": "build"
-    }
+    },
+    {
+    "type": "overmap_terrain",
+    "id": "secro_house_flesh",
+    "copy-from": "generic_residential_medium",
+    "name": "house",
+    "sym": "^",
+    "color": "green_red",
+    "see_cost": 2,
+    "extras": "build",
+    "mondensity": 3,
+    "flags": [ "SIDEWALK", "GENERIC_LOOT" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_basement_flesh",
+    "name": "basement",
+    "sym": "O",
+    "color": "dark_gray_red",
+    "copy-from": "generic_city_building_no_sidewalk",
+    "flags": [ "KNOWN_UP", "NO_ROTATE", "GENERIC_LOOT" ]
+  }
 ]
