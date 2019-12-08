@@ -1,0 +1,161 @@
+[
+{
+        "method": "json",
+        "object": {
+            "monster": {
+                "t": {
+                    "monster": "mon_turret"
+                }
+            },
+            "rows": [
+            "++++++++++++++++++++++++",
+            "+                      +",
+            "+                      +",
+            "+     ||||||||||||     +",
+            "+   ||||||||||||||||   +",
+            "+   |||||||>>|||||||   +",
+            "+  ||||||||dd||||||||  +",
+            "+  ||.||||.``.||||.||  +",
+            "+  ||``||``````||``||  +",
+            "+  ||```d`t``t`d```||  +",
+            "+  ||``||``````||``||  +",
+            "+  ||`||||````||||`||  +",
+            "+  ||d|||||``|||||d||  +",
+            "+  ||`````r``r`````||  +",
+            "+  |||.```r``r```.|||  +",
+            "+   |||```r``r```|||   +",
+            "+   |||||||DD|||||||   +",
+            "+     ||||6DD|||||     +",
+            "+     ------------     +",
+            "+     ------------     +",
+            "+++++--------------+++++",
+            "     --------------     ",
+            "    ----------------    ",
+            "    ----------------    "
+            ],
+            "terrain": {
+                " ": "t_grass",
+                "+": "t_chainfence",
+                "-": "t_concrete",
+                ".": "t_utility_light",
+                "6": "t_card_science",
+                ">": "t_stairs_down",
+                "D": "t_door_metal_locked",
+                "`": "t_strconc_floor",
+                "d": "t_door_metal_c",
+                "r": "t_reinforced_glass",
+                "t": "t_strconc_floor",
+                "|": "t_strconc_wall"
+            }
+        },
+        "om_terrain": "SecronomRLab_top",
+        "type": "mapgen",
+        "weight": 100
+    },
+    {
+        "method": "json",
+        "object": {
+            "monster": {
+                "t": {
+                    "monster": "mon_turret"
+                }
+            },
+            "rows": [
+            "++++++++++++++++++++++++",
+            "+                      +",
+            "+                      +",
+            "+     ||||||||||||     +",
+            "+   ||||||||||||||||   +",
+            "+   |||||||>>|||||||   +",
+            "+  ||||||||dd||||||||  +",
+            "+  |||.|||.``.|||.|||  +",
+            "+  ||```|``````|```||  +",
+            "+  ||```d`t``t`d```||  +",
+            "+  ||```|``````|```||  +",
+            "+  |||`|||````|||`|||  +",
+            "+  |||d|||rrrr|||d|||  +",
+            "+  ||.````````````.||  +",
+            "+  ||||``````````||||  +",
+            "+   |||||``````|||||   +",
+            "+   |||||||DD|||||||   +",
+            "+     ||||6DD|||||     +",
+            "+     ------------     +",
+            "+     ------------     +",
+            "+++++--------------+++++",
+            "     --------------     ",
+            "    ----------------    ",
+            "    ----------------    "
+            ],
+            "terrain": {
+                " ": "t_grass",
+                "+": "t_chainfence",
+                "-": "t_concrete",
+                ".": "t_utility_light",
+                "6": "t_card_science",
+                ">": "t_stairs_down",
+                "D": "t_door_metal_locked",
+                "`": "t_strconc_floor",
+                "d": "t_door_metal_c",
+                "r": "t_reinforced_glass",
+                "t": "t_strconc_floor",
+                "|": "t_strconc_wall"
+            }
+        },
+        "om_terrain": "SecronomRLab_top",
+        "type": "mapgen",
+        "weight": 100
+    },
+    {
+        "method": "json",
+        "object": {
+            "monster": {
+                "t": {
+                    "monster": "mon_turret"
+                }
+            },
+            "rows": [
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "           <<           ",
+            "           dd           ",
+            "           ``           ",
+            "           ``           ",
+            "           ..           ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        ",
+            "                        "
+            ],
+            "terrain": {
+                " ": "t_strconc_wall",
+                "+": "t_chainfence",
+                "-": "t_concrete",
+                ".": "t_utility_light",
+                "6": "t_card_science",
+                "<": "t_stairs_up",
+                "D": "t_door_metal_locked",
+                "`": "t_strconc_floor",
+                "d": "t_door_metal_c",
+                "r": "t_reinforced_glass",
+                "t": "t_strconc_floor",
+                "|": "t_strconc_wall"
+            }
+        },
+        "om_terrain": "SecronomRLab_b1_up",
+        "type": "mapgen",
+        "weight": 100
+    }
+]
