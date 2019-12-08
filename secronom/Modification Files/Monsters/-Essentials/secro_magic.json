@@ -4,7 +4,7 @@
         "id": "sacrifice_spell",
         "type": "SPELL",
         "name": "Sacrifice",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster deals an instant death damage, sacrificing itself upon casting a spell that's been combined with.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster deals an instant death damage, sacrificing itself upon casting a spell that's been combined with.'",
         "flags": ["SILENT"],
         "valid_targets": ["ally", "hostile", "ground", "self"],
         "effect": "target_attack",
@@ -26,7 +26,7 @@
         "type": "SPELL",
         "id": "mon_summon_tentawraith_tent",
         "name": "Summon Tentacles",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's tentacle outburst sprouts 3 tentacles out of the ground.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's tentacle outburst sprouts 3 tentacles out of the ground.'",
         "flags": ["SILENT", "HOSTILE_SUMMON"],
         "valid_targets": ["hostile", "ground"],
         "min_damage": 3,
@@ -43,7 +43,7 @@
         "id": "mon_zombie_tentawraith_twist",
         "type": "SPELL",
         "name": "Twisted Strike",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's tentacle outburst pierces the closest target from the caster with compact tentacles, dealing moderate stabbing damage and inflicts unconsciousness for 1 turn.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's tentacle outburst pierces the closest target from the caster with compact tentacles, dealing moderate stabbing damage and inflicts unconsciousness for 1 turn.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_DURATION"],
         "valid_targets": ["ground", "hostile"],
         "effect": "projectile_attack",
@@ -101,7 +101,7 @@
         "type": "SPELL",
         "id": "mon_zombie_titan_charge",
         "name": "Charging Stance",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sets itself into guarding stance, blocking physical damage while gaining a burst of speed.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sets itself into guarding stance, blocking physical damage while gaining a burst of speed.'",
         "flags": ["SILENT"],
         "valid_targets": ["ground", "ally"],
         "effect": "target_attack",
@@ -113,7 +113,7 @@
         "type": "SPELL",
         "id": "mon_zombie_titan_charge_target",
         "name": "a spell",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_titan_charge",
                 "hit_self": true,
@@ -204,7 +204,7 @@
         "type": "SPELL",
         "id": "mon_summon_hemo_bv",
         "name": "Summon 2 Blood Vessels",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's blood wave creates 2 blood vessels nearby.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's blood wave creates 2 blood vessels nearby.'",
         "flags": ["SILENT", "HOSTILE_SUMMON"],
         "valid_targets": ["ground"],
         "min_damage": 2,
@@ -219,7 +219,7 @@
         "type": "SPELL",
         "id": "mon_summon_hemo_bf",
         "name": "Summon Blood Fiend",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's blood wave creates a blood fiend nearby.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's blood wave creates a blood fiend nearby.'",
         "flags": ["SILENT", "HOSTILE_SUMMON"],
         "valid_targets": ["ground"],
         "min_damage": 1,
@@ -234,7 +234,7 @@
         "id": "mon_zombie_hemo_bcurl",
         "type": "SPELL",
         "name": "Blood Curl",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'When the target is nearby, caster manipulates some of the blood wave's blood to stick into the target, applying even more bloodbath. This is casted 3 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'When the target is nearby, caster manipulates some of the blood wave's blood to stick into the target, applying even more bloodbath. This is casted 3 times.'",
         "flags": ["SILENT", "RANDOM_DURATION"],
         "valid_targets": ["hostile"],
         "effect": "target_attack",
@@ -282,7 +282,7 @@
         "id": "mon_zombie_nightwail_shroud",
         "type": "SPELL",
         "name": "Enshroud",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'If the caster's target is nearby, the target is enveloped in shadows, dealing small true damage and blinds them.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'If the caster's target is nearby, the target is enveloped in shadows, dealing small true damage and blinds them.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_DURATION"],
         "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
@@ -317,7 +317,7 @@
         "id": "mon_zombie_nightwail_shadow_lshadow",
         "type": "SPELL",
         "name": "Lingering Shadow",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's ominous curse deals a light, continuous true damage to the target.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's ominous curse deals a light, continuous true damage to the target.'",
         "flags": ["SILENT", "RANDOM_DURATION"],
         "valid_targets": ["hostile"],
         "effect": "target_attack",
@@ -357,7 +357,7 @@
         "id": "mon_zombie_xlick_writhes",
         "type": "SPELL",
         "name": "Writhing Slash",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'If the caster's target is nearby after precision stab, the caster's tongue sweeps it sideways, dealing cutting damage and applies an unstable footing to the affected creatures. This is casted for 2 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'If the caster's target is nearby after precision stab, the caster's tongue sweeps it sideways, dealing cutting damage and applies an unstable footing to the affected creatures. This is casted for 2 times.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_DURATION"],
         "valid_targets": ["hostile", "ground"],
         "effect": "cone_attack",
@@ -395,7 +395,7 @@
         "id": "mon_zombie_leptiosa_gasb",
         "type": "SPELL",
         "name": "Gas Burst",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'If the caster's target is upclose, caster sends a strong burst of acidic gas in a wide, yet short cone, dealing moderate acid damage to all affected creatures.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'If the caster's target is upclose, caster sends a strong burst of acidic gas in a wide, yet short cone, dealing moderate acid damage to all affected creatures.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE"],
         "valid_targets": ["ally", "hostile", "ground"],
         "effect": "cone_attack",
@@ -529,7 +529,7 @@
         "id": "mon_maneater_pullb",
         "type": "SPELL",
         "name": "Pull Blood",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's blood suck pulls in the blood fields. This is casted for 3 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's blood suck pulls in the blood fields. This is casted for 3 times.'",
         "effect": "area_pull",
         "effect_filter": ["fd_blood"],
         "flags": ["SILENT"],
@@ -541,7 +541,7 @@
         "type": "SPELL",
         "name": "Blood Suck",
         "//": "Even if there's no blood field nearby, it still heals...",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'More vine strands from the caster sweeps around the vicinity, collecting and sucking the blood fields in which heals the caster.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'More vine strands from the caster sweeps around the vicinity, collecting and sucking the blood fields in which heals the caster.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
         "valid_targets": ["ally", "ground"],
         "effect": "target_attack",
@@ -595,7 +595,7 @@
         "type": "SPELL",
         "id": "mon_summon_nautilus_pedo",
         "name": "Summon 4 Nautilus Torpedos",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'After casting sewave, caster creates 4 nautilus torpedos.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'After casting sewave, caster creates 4 nautilus torpedos.'",
         "flags": ["SILENT", "HOSTILE_SUMMON", "RANDOM_DURATION"],
         "valid_targets": ["ally", "ground"],
         "min_damage": 4,
@@ -650,7 +650,7 @@
         "id": "mon_zombie_stray_w_leaf_stro1_lace",
         "type": "SPELL",
         "name": "Lacerate",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'If the target is nearby, caster slashes with a vine, dealing moderate cutting damage. This is casted 2 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'If the target is nearby, caster slashes with a vine, dealing moderate cutting damage. This is casted 2 times.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
         "valid_targets": ["hostile"],
         "effect": "projectile_attack",
@@ -684,7 +684,7 @@
         "id": "mon_zombie_stray_w_leaf_stro2_sscent",
         "type": "SPELL",
         "name": "Sweet Scent",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Floral bloom accompanies the wild outburst, spreading sleep-inducing pollens in the same area.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Floral bloom accompanies the wild outburst, spreading sleep-inducing pollens in the same area.'",
         "flags": ["SILENT", "RANDOM_AOE"],
         "valid_targets": ["hostile", "ground"],
         "effect": "projectile_attack",
@@ -746,7 +746,7 @@
         "id": "mon_zombie_stray_w_acid_stro2_atouch",
         "type": "SPELL",
         "name": "Acid Touch",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'When upclose, caster then scratches the target with its excess blood, dealing acid damage.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'When upclose, caster then scratches the target with its excess blood, dealing acid damage.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
         "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
@@ -786,7 +786,7 @@
         "id": "mon_zombie_stray_w_acid_stro3_asweep",
         "type": "SPELL",
         "name": "Sweepidic",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'If the target is nearby, caster sweeps some of the excess fluids in a small cone, dealing small damage to all creatures.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'If the target is nearby, caster sweeps some of the excess fluids in a small cone, dealing small damage to all creatures.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE"],
         "valid_targets": ["ally", "hostile", "ground"],
         "effect": "cone_attack",
@@ -832,7 +832,7 @@
         "id": "mon_unknown_unknown_portal_carrion",
         "type": "SPELL",
         "name": "Portal",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'A multi-dimensional portal is made from the collapse. This portal leads the carrion race into the world.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'A multi-dimensional portal is made from the collapse. This portal leads the carrion race into the world.'",
         "flags": ["SILENT"],
         "valid_targets": ["ally", "self", "ground"],
         "effect": "target_attack",
@@ -863,7 +863,7 @@
         ],
         "min_damage": 25,
         "max_damage": 35,
-        "//": "Basically, an enemy target has to be the center of explosion, so that combo spells get casted successfully.",
+        "//": "Basically, an enemy target has to be the center of explosion, so that Spells get casted successfully.",
         "min_range": 3,
         "max_range": 3,
         "min_aoe": 30,
@@ -877,7 +877,7 @@
         "id": "mon_unknown_unknown_portal_vector",
         "type": "SPELL",
         "name": "Portal",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'A multi-dimensional portal is made from the collapse. This portal leads the vector race into the world.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'A multi-dimensional portal is made from the collapse. This portal leads the vector race into the world.'",
         "flags": ["SILENT"],
         "valid_targets": ["ally", "self", "ground"],
         "effect": "target_attack",
@@ -908,7 +908,7 @@
         ],
         "min_damage": 25,
         "max_damage": 35,
-        "//": "Basically, an enemy target has to be the center of explosion, so that combo spells get casted successfully.",
+        "//": "Basically, an enemy target has to be the center of explosion, so that Spells get casted successfully.",
         "min_range": 3,
         "max_range": 3,
         "min_aoe": 30,
@@ -922,7 +922,7 @@
         "id": "mon_vector_rize_smol",
         "type": "SPELL",
         "name": "Vectorize",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'A wave of vector dust spreads from the caster, converting nearby organic terrains such as grass and bushes to become infected.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'A wave of vector dust spreads from the caster, converting nearby organic terrains such as grass and bushes to become infected.'",
         "flags": ["SILENT"],
         "valid_targets": ["ground", "self"],
         "effect": "ter_transform",
@@ -936,7 +936,7 @@
         "type": "SPELL",
         "id": "mon_vector_rize_smol_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "message": "The sight of <npcname> locks onto its target...",
         "extra_effects": [{
                 "id": "mon_vector_rize_smol",
@@ -955,7 +955,7 @@
         "id": "mon_vector_rize_big",
         "type": "SPELL",
         "name": "Vectorize",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'A wave of vector dust spreads from the caster, converting nearby organic terrains such as grass and bushes to become infected.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'A wave of vector dust spreads from the caster, converting nearby organic terrains such as grass and bushes to become infected.'",
         "flags": ["SILENT"],
         "valid_targets": ["ground", "self"],
         "effect": "ter_transform",
@@ -969,7 +969,7 @@
         "type": "SPELL",
         "id": "mon_vector_rize_big_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "message": "The sight of <npcname> locks onto its target...",
         "extra_effects": [{
                 "id": "mon_vector_rize_big",
@@ -1032,7 +1032,7 @@
         "type": "SPELL",
         "id": "mon_zombie_uruxis_spawn",
         "name": "Cursed Lands",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels itself, creating a lingering curse that calls zeds in its area while enshrouds the caster with the black mist to heal and protect.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels itself, creating a lingering curse that calls zeds in its area while enshrouds the caster with the black mist to heal and protect.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_DURATION"],
         "valid_targets": ["ground", "self"],
         "effect": "target_attack",
@@ -1050,7 +1050,7 @@
         "type": "SPELL",
         "id": "mon_zombie_uruxis_spawn_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_uruxis_spawn",
                 "hit_self": true
@@ -1085,7 +1085,7 @@
         "id": "mon_zombie_nocturne_spush",
         "type": "SPELL",
         "name": "Shadow Push",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster pushes the targets with its shadows.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster pushes the targets with its shadows.'",
         "effect": "area_push",
         "effect_filter": ["hostile"],
         "flags": ["SILENT"],
@@ -1096,7 +1096,7 @@
         "id": "mon_zombie_nocturne_sburst",
         "type": "SPELL",
         "name": "Shadow Burst",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sends out a wave of shadow, dealing moderate bashing damage, applying unstable footing and knocks them back.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sends out a wave of shadow, dealing moderate bashing damage, applying unstable footing and knocks them back.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_DURATION"],
         "valid_targets": ["hostile"],
         "effect": "projectile_attack",
@@ -1117,7 +1117,7 @@
         "id": "mon_zombie_nocturne_sstrike",
         "type": "SPELL",
         "name": "Sinister Strike",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster produces a compact shadow, forming a silhouette with its claws imbued in shadows then strikes the target, dealing moderate cutting damage and applying blindness.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster produces a compact shadow, forming a silhouette with its claws imbued in shadows then strikes the target, dealing moderate cutting damage and applying blindness.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_DURATION"],
         "valid_targets": ["hostile"],
         "effect": "projectile_attack",
@@ -1133,7 +1133,7 @@
         "id": "mon_zombie_nocturne_nsweep",
         "type": "SPELL",
         "name": "Nocturnal Sweep",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster nimbly slashes through the vicinity, dealing moderate cutting damage to the surrounding creatures.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster nimbly slashes through the vicinity, dealing moderate cutting damage to the surrounding creatures.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
         "valid_targets": ["hostile"],
         "effect": "projectile_attack",
@@ -1146,7 +1146,7 @@
         "id": "mon_zombie_nocturne_spull",
         "type": "SPELL",
         "name": "Shadow Pull",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its body to send forth errant shadows to the targets then pulls them in.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its body to send forth errant shadows to the targets then pulls them in.'",
         "effect": "area_pull",
         "effect_filter": ["hostile"],
         "flags": ["SILENT"],
@@ -1158,7 +1158,7 @@
         "type": "SPELL",
         "id": "mon_zombie_nocturne_spull_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_nocturne_spull",
                 "hit_self": true
@@ -1199,7 +1199,7 @@
         "id": "mon_zombie_fleshmonger_refleshs",
         "type": "SPELL",
         "name": "Refleshing Strike",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster stabs a random ally, injecting them with all the excess flesh that heals a tremendous amount of health and increases their body mass.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster stabs a random ally, injecting them with all the excess flesh that heals a tremendous amount of health and increases their body mass.'",
         "flags": ["SILENT", "RANDOM_TARGET", "RANDOM_DAMAGE", "RANDOM_DURATION"],
         "valid_targets": ["ally", "self"],
         "effect": "projectile_attack",
@@ -1215,7 +1215,7 @@
         "id": "mon_zombie_fleshmonger_reflesh",
         "type": "SPELL",
         "name": "Reflesh",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out tendrils that pierces nearby allies then injecting them with extra flesh, healing a moderate amount of health.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out tendrils that pierces nearby allies then injecting them with extra flesh, healing a moderate amount of health.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE"],
         "valid_targets": ["ally"],
         "extra_effects": [{
@@ -1232,7 +1232,7 @@
         "id": "mon_zombie_fleshmonger_fchunk",
         "type": "SPELL",
         "name": "Flesh Chunk",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster takes a chunk of its own flesh, dealing an enormous amount of damage on itself.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster takes a chunk of its own flesh, dealing an enormous amount of damage on itself.'",
         "flags": ["SILENT"],
         "valid_targets": ["self"],
         "effect": "projectile_attack",
@@ -1248,7 +1248,7 @@
         "type": "SPELL",
         "id": "mon_zombie_fleshmonger_reflesh_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_fleshmonger_fchunk",
                 "hit_self": true
@@ -1266,7 +1266,7 @@
         "id": "mon_zombie_razor_bstep",
         "type": "SPELL",
         "name": "Back Step",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster paces back from the target.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster paces back from the target.'",
         "effect": "area_push",
         "effect_filter": ["self"],
         "flags": ["SILENT"],
@@ -1279,7 +1279,7 @@
         "id": "mon_zombie_razor_wslash",
         "type": "SPELL",
         "name": "Wide Slash",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster performs a horizontal slash, dealing moderate cutting damage to the affected creatures in a wide, yet short arc, then steps back.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster performs a horizontal slash, dealing moderate cutting damage to the affected creatures in a wide, yet short arc, then steps back.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE"],
         "valid_targets": ["hostile"],
         "effect": "cone_attack",
@@ -1298,7 +1298,7 @@
         "id": "mon_zombie_razor_dslash_head",
         "type": "SPELL",
         "name": "Weakpoint Strike",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the weakpoint, applying unconsciousness for 2 turns.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the weakpoint, applying unconsciousness for 2 turns.'",
         "flags": ["SILENT"],
         "affected_body_parts": ["HEAD"],
         "valid_targets": ["hostile", "ground"],
@@ -1319,7 +1319,7 @@
         "id": "mon_zombie_razor_dslash_torso",
         "type": "SPELL",
         "name": "Weakpoint Strike",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the weakpoint, applying unconsciousness for 2 turns.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the weakpoint, applying unconsciousness for 2 turns.'",
         "flags": ["SILENT"],
         "affected_body_parts": ["TORSO"],
         "valid_targets": ["hostile", "ground"],
@@ -1340,7 +1340,7 @@
         "id": "mon_zombie_razor_dslash_larm",
         "type": "SPELL",
         "name": "Weakpoint Strike",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the weakpoint, applying unconsciousness for 2 turns.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the weakpoint, applying unconsciousness for 2 turns.'",
         "flags": ["SILENT"],
         "affected_body_parts": ["ARM_L"],
         "valid_targets": ["hostile", "ground"],
@@ -1361,7 +1361,7 @@
         "id": "mon_zombie_razor_dslash_rarm",
         "type": "SPELL",
         "name": "Weakpoint Strike",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the weakpoint, applying unconsciousness for 2 turns.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the weakpoint, applying unconsciousness for 2 turns.'",
         "flags": ["SILENT"],
         "affected_body_parts": ["ARM_R"],
         "valid_targets": ["hostile", "ground"],
@@ -1382,7 +1382,7 @@
         "id": "mon_zombie_razor_dslash_lleg",
         "type": "SPELL",
         "name": "Weakpoint Strike",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the weakpoint, applying unconsciousness for 2 turns.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the weakpoint, applying unconsciousness for 2 turns.'",
         "flags": ["SILENT"],
         "affected_body_parts": ["LEG_L"],
         "valid_targets": ["hostile", "ground"],
@@ -1403,7 +1403,7 @@
         "id": "mon_zombie_razor_dslash_rleg",
         "type": "SPELL",
         "name": "Weakpoint Strike",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the weakpoint, applying unconsciousness for 2 turns.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster strikes the weakpoint, applying unconsciousness for 2 turns.'",
         "flags": ["SILENT"],
         "affected_body_parts": ["LEG_R"],
         "valid_targets": ["hostile", "ground"],
@@ -1424,7 +1424,7 @@
         "id": "mon_zombie_razor_dslash",
         "type": "SPELL",
         "name": "Deceitful Slash",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster confounds the target with a fake slash, followed with a powerful swing to the weakpoint, dealing tremendous cutting damage and inflicts unconsciousness for 2 turns. If the target is a player or an NPC, the slash hits a random limb.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster confounds the target with a fake slash, followed with a powerful swing to the weakpoint, dealing tremendous cutting damage and inflicts unconsciousness for 2 turns. If the target is a player or an NPC, the slash hits a random limb.'",
         "flags": ["SILENT", "WONDER"],
         "valid_targets": ["hostile"],
         "effect": "projectile_attack",
@@ -1452,7 +1452,7 @@
         "type": "SPELL",
         "id": "mon_zombie_razor_dslash_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_razor_dslash"
             }
@@ -1495,7 +1495,7 @@
         "type": "SPELL",
         "id": "mon_zombieworm_wriggly_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombieworm_wriggly_tstab"
             }, {
@@ -1520,7 +1520,7 @@
         "type": "SPELL",
         "id": "mon_zombie_gorepit_spawn",
         "name": "Gorespawn",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels itself to send out giant tendrils more actively, causing the ground to resonate which applies unstable footing to all creatures within its range.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels itself to send out giant tendrils more actively, causing the ground to resonate which applies unstable footing to all creatures within its range.'",
         "flags": ["SILENT", "RANDOM_DURATION"],
         "valid_targets": ["ground", "ally", "hostile"],
         "effect": "target_attack",
@@ -1537,7 +1537,7 @@
         "id": "mon_zombie_gorepit_tdestruct",
         "type": "SPELL",
         "name": "Terrestrial Destruction",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster takes down adjacent terrains, destroying them which results into a deep pit.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster takes down adjacent terrains, destroying them which results into a deep pit.'",
         "flags": ["SILENT"],
         "valid_targets": ["ground", "self"],
         "effect": "ter_transform",
@@ -1546,12 +1546,29 @@
         "max_aoe": 1
     }, {
         "type": "SPELL",
+        "id": "mon_zombie_gorepit_tdisturb",
+        "name": "Tendril Disturbance",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'From sensing a nearby target, caster sends 1-2 tentacles near them.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "RANDOM_DAMAGE", "PERMANENT"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 2,
+        "min_range": 10,
+        "max_range": 10,
+        "min_aoe": 2,
+        "max_aoe": 2,
+        "effect": "summon",
+        "effect_str": "mon_zombie_gorepit_tent"
+    }, {
+        "type": "SPELL",
         "id": "mon_zombie_gorepit_spawn_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_gorepit_spawn",
                 "hit_self": true
+            }, {
+                "id": "mon_zombie_gorepit_tdisturb"
             }, {
                 "id": "mon_zombie_gorepit_tdestruct",
                 "hit_self": true
@@ -1601,7 +1618,7 @@
         "type": "SPELL",
         "id": "mon_zombie_gorepit_tent_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_gorepit_tent_slam"
             }, {
@@ -1626,7 +1643,7 @@
         "id": "mon_zombie_cordev_mincem_heal",
         "type": "SPELL",
         "name": "Mincemeat Heal",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster is healed by 60.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster is healed by 60.'",
         "flags": ["SILENT"],
         "valid_targets": ["self"],
         "effect": "projectile_attack",
@@ -1655,7 +1672,7 @@
         "type": "SPELL",
         "id": "mon_zombie_cordev_mincem_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_cordev_mincem",
                 "hit_self": true
@@ -1703,7 +1720,7 @@
         "type": "SPELL",
         "id": "mon_zombie_cordev_whip_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_cordev_whip"
             }
@@ -1820,7 +1837,7 @@
         "type": "SPELL",
         "id": "mon_zombie_cordev_texplode_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_cordev_texplode",
                 "hit_self": true
@@ -1856,7 +1873,7 @@
         "type": "SPELL",
         "id": "mon_zombie_cordev_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_cordev_mincem_target_note"
             }, {
@@ -1923,7 +1940,7 @@
         "id": "mon_zombie_fleshysnaky_pmissile",
         "type": "SPELL",
         "name": "Pin Missile",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots off needle-like spikes into the target, dealing stabbing damage. Casted randomly between 2 to 7 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots off needle-like spikes into the target, dealing stabbing damage. Casted randomly between 2 to 7 times.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
         "valid_targets": ["hostile"],
         "effect": "projectile_attack",
@@ -1936,7 +1953,7 @@
         "type": "SPELL",
         "id": "mon_zombie_fleshysnaky_pmissile_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_fleshysnaky_pmissile"
             }
@@ -1972,7 +1989,7 @@
         "id": "mon_zombie_fleshysnaky_sbomb",
         "type": "SPELL",
         "name": "Spike Bombardment",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots off spikes projected into the sky, then falls down into the target, dealing moderate stabbing damage to all affected creatures in an area.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots off spikes projected into the sky, then falls down into the target, dealing moderate stabbing damage to all affected creatures in an area.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
         "valid_targets": ["hostile", "ground"],
         "effect": "projectile_attack",
@@ -2004,7 +2021,7 @@
         "id": "mon_zombie_fleshysnaky_hails",
         "type": "SPELL",
         "name": "Hail of Spikes",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels itself to shoot its spike in every direction, dealing moderate stabbing damage to all affected creatures surrounding it.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels itself to shoot its spike in every direction, dealing moderate stabbing damage to all affected creatures surrounding it.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
         "valid_targets": ["hostile", "ground"],
         "effect": "projectile_attack",
@@ -2035,7 +2052,7 @@
         "id": "mon_zombie_fleshysnaky_ppoint",
         "type": "SPELL",
         "name": "Pressure Point",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster spews out its fang at its target, dealing stabbing damage to all affected creatures within a line.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster spews out its fang at its target, dealing stabbing damage to all affected creatures within a line.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
         "valid_targets": ["hostile", "ground"],
         "effect": "line_attack",
@@ -2065,7 +2082,7 @@
         "id": "mon_zombie_fleshysnaky_rage",
         "type": "SPELL",
         "name": "Rage",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's rage intensifies, drastically increasing its speed everytime it casts a spell.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's rage intensifies, drastically increasing its speed everytime it casts a spell.'",
         "flags": ["SILENT"],
         "valid_targets": ["self"],
         "effect": "target_attack",
@@ -2076,7 +2093,7 @@
         "type": "SPELL",
         "id": "mon_zombie_fleshysnaky_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_fleshysnaky_pmissile_target_random_note"
             }, {
@@ -2105,7 +2122,7 @@
         "type": "SPELL",
         "id": "mon_zombie_fleshysnaky_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_fleshysnaky_rage",
                 "hit_self": true
@@ -2125,7 +2142,7 @@
         "id": "mon_zombie_akin_sattach_foe",
         "type": "SPELL",
         "name": "Siphoning Attachtment",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's viceral tendril latches onto the target, applying debuffs that intensifies for as long as it is attached.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's viceral tendril latches onto the target, applying debuffs that intensifies for as long as it is attached.'",
         "flags": ["SILENT"],
         "valid_targets": ["hostile"],
         "effect": "projectile_attack",
@@ -2139,7 +2156,7 @@
         "id": "mon_zombie_akin_lsattach_ally",
         "type": "SPELL",
         "name": "Life Siphoning Attachtment",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's viceral tendril latches onto an ally target, applying buffs that intensifies for as long as it is attached. This is casted 2 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's viceral tendril latches onto an ally target, applying buffs that intensifies for as long as it is attached. This is casted 2 times.'",
         "flags": ["SILENT", "RANDOM_TARGET"],
         "valid_targets": ["ally", "self"],
         "effect": "projectile_attack",
@@ -2152,7 +2169,7 @@
         "type": "SPELL",
         "id": "mon_zombie_akin_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_akin_sattach_foe"
             }, {
@@ -2174,7 +2191,7 @@
         "id": "mon_zombie_equinox_ndischarge",
         "type": "SPELL",
         "name": "Necrotic Discharge",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out a mass of gangrenous flesh with force from its hollow gap at a random area, dealing tremendous bashing damage to all creatures within a line.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out a mass of gangrenous flesh with force from its hollow gap at a random area, dealing tremendous bashing damage to all creatures within a line.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE", "RANDOM_TARGET"],
         "valid_targets": ["hostile", "ally", "ground"],
         "effect": "line_attack",
@@ -2210,7 +2227,7 @@
         "id": "mon_zombie_equinox_nimplode",
         "type": "SPELL",
         "name": "Necrotic Implosion",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its inner flesh, then suddenly erupts internally. This explosion sends some flesh outwards from the gaps, creating a series of meteorites to fall down from the sky. All creatures that gets hit are inflicted with tremendous bashing damage while forming a potent living flesh under them. This is randomly casted between 20 to 40 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its inner flesh, then suddenly erupts internally. This explosion sends some flesh outwards from the gaps, creating a series of meteorites to fall down from the sky. All creatures that gets hit are inflicted with tremendous bashing damage while forming a potent living flesh under them. This is randomly casted between 20 to 40 times.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_TARGET"],
         "valid_targets": ["hostile", "ally", "ground"],
         "effect": "projectile_attack",
@@ -2227,7 +2244,7 @@
         "type": "SPELL",
         "id": "mon_zombie_equinox_nimplode_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_equinox_nimplode"
             }
@@ -2263,7 +2280,7 @@
         "type": "SPELL",
         "id": "mon_zombie_equinox_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_equinox_ndischarge_note"
             }, {
@@ -2288,7 +2305,7 @@
         "type": "SPELL",
         "id": "mon_zombie_equinox_summon_necros",
         "name": "Summon Necros",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out a necros from inside through a gap.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out a necros from inside through a gap.'",
         "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
         "valid_targets": ["ground"],
         "min_damage": 1,
@@ -2301,7 +2318,7 @@
         "type": "SPELL",
         "id": "mon_zombie_equinox_summon_necros_stab",
         "name": "Summon Necros Impaler",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out a necros impaler from inside through a gap.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out a necros impaler from inside through a gap.'",
         "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
         "valid_targets": ["ground"],
         "min_damage": 1,
@@ -2314,7 +2331,7 @@
         "type": "SPELL",
         "id": "mon_zombie_equinox_summon_necros_cut",
         "name": "Summon Necros Slicer",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out a necros slicer from inside through a gap.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out a necros slicer from inside through a gap.'",
         "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
         "valid_targets": ["ground"],
         "min_damage": 1,
@@ -2327,7 +2344,7 @@
         "type": "SPELL",
         "id": "mon_zombie_equinox_summon_necros_emit",
         "name": "Summon Necros Pollutant",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out a necros pollutant from inside through a gap.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots out a necros pollutant from inside through a gap.'",
         "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
         "valid_targets": ["ground"],
         "min_damage": 1,
@@ -2340,7 +2357,7 @@
         "type": "SPELL",
         "id": "mon_zombie_equinox_summon_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_equinox_summon_necros",
                 "hit_self": true
@@ -2390,7 +2407,7 @@
         "type": "SPELL",
         "id": "mon_zombie_equinox_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_equinox_target_random"
             }, {
@@ -2409,7 +2426,7 @@
         "id": "mon_zombie_charger_charge",
         "type": "SPELL",
         "name": "Charge!",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gains momentum, increasing movement speed, hit chance and impact damage as it takes effect.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gains momentum, increasing movement speed, hit chance and impact damage as it takes effect.'",
         "//": "Momentum's a short duration haste, accuracy and bonus bash damage. Max intensity after casting the spell.",
         "//": "Momentum is also a unique stat modifier that differs to the type of charger.",
         "flags": ["SILENT"],
@@ -2429,7 +2446,7 @@
         "id": "mon_zombie_charger_charge_push",
         "type": "SPELL",
         "name": "Stop",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster stops by the target.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster stops by the target.'",
         "effect": "area_push",
         "effect_filter": ["self"],
         "flags": ["SILENT"],
@@ -2440,7 +2457,7 @@
         "id": "mon_zombie_charger_charge_pull",
         "type": "SPELL",
         "name": "Charge",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sprints toward the target. This is casted randomly between 15 to 25 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sprints toward the target. This is casted randomly between 15 to 25 times.'",
         "effect": "area_pull",
         "effect_filter": ["self"],
         "flags": ["SILENT"],
@@ -2457,7 +2474,7 @@
         "type": "SPELL",
         "id": "mon_zombie_charger_charge_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_charger_charge_pull"
             }
@@ -2476,7 +2493,7 @@
         "id": "mon_zombie_charger_spike_charge",
         "type": "SPELL",
         "name": "Charge!",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gains momentum, increasing movement speed, hit chance and impact damage as it takes effect.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gains momentum, increasing movement speed, hit chance and impact damage as it takes effect.'",
         "flags": ["SILENT"],
         "valid_targets": ["self"],
         "effect": "projectile_attack",
@@ -2492,7 +2509,7 @@
         "id": "mon_zombie_charger_spike_charge_pull",
         "type": "SPELL",
         "name": "Charge",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sprints toward the target. This is casted randomly between 20 to 30 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sprints toward the target. This is casted randomly between 20 to 30 times.'",
         "effect": "area_pull",
         "effect_filter": ["self"],
         "flags": ["SILENT"],
@@ -2509,7 +2526,7 @@
         "type": "SPELL",
         "id": "mon_zombie_charger_spike_charge_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_charger_spike_charge_pull"
             }
@@ -2528,7 +2545,7 @@
         "id": "mon_zombie_charger_plate_charge",
         "type": "SPELL",
         "name": "Charge!",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gains momentum, increasing movement speed, hit chance and impact damage as it takes effect.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gains momentum, increasing movement speed, hit chance and impact damage as it takes effect.'",
         "flags": ["SILENT"],
         "valid_targets": ["self"],
         "effect": "projectile_attack",
@@ -2544,7 +2561,7 @@
         "id": "mon_zombie_charger_plate_charge_pull",
         "type": "SPELL",
         "name": "Charge",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sprints toward the target. This is casted randomly between 10 to 15 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sprints toward the target. This is casted randomly between 10 to 15 times.'",
         "effect": "area_pull",
         "effect_filter": ["self"],
         "flags": ["SILENT"],
@@ -2561,7 +2578,7 @@
         "type": "SPELL",
         "id": "mon_zombie_charger_plate_charge_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_charger_plate_charge_pull"
             }
@@ -2580,7 +2597,7 @@
         "id": "mon_zombie_charger_vanguard_charge",
         "type": "SPELL",
         "name": "Charge!",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gains momentum, increasing movement speed, hit chance and impact damage as it takes effect.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gains momentum, increasing movement speed, hit chance and impact damage as it takes effect.'",
         "flags": ["SILENT"],
         "valid_targets": ["self"],
         "effect": "projectile_attack",
@@ -2596,7 +2613,7 @@
         "id": "mon_zombie_charger_vanguard_charge_pull",
         "type": "SPELL",
         "name": "Charge",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sprints toward the target. This is casted randomly between 30 to 50 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster sprints toward the target. This is casted randomly between 30 to 50 times.'",
         "effect": "area_pull",
         "effect_filter": ["self"],
         "flags": ["SILENT"],
@@ -2613,7 +2630,7 @@
         "type": "SPELL",
         "id": "mon_zombie_charger_vanguard_charge_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_charger_vanguard_charge_pull"
             }
@@ -2632,7 +2649,7 @@
         "id": "mon_zombieworm_mawy_crunch",
         "type": "SPELL",
         "name": "Crunch",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster bites the target from a distance, dealing moderate stabbing damage and leaves a thick web on them.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster bites the target from a distance, dealing moderate stabbing damage and leaves a thick web on them.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
         "valid_targets": ["hostile", "ground"],
         "effect": "projectile_attack",
@@ -2719,7 +2736,7 @@
         "type": "SPELL",
         "id": "mon_zombieworm_mawy_web_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombieworm_mawy_web_target_note"
             }, {
@@ -2743,7 +2760,7 @@
         "type": "SPELL",
         "id": "mon_zombieworm_mawy_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombieworm_mawy_web_target"
             }, {
@@ -2763,7 +2780,7 @@
         "type": "SPELL",
         "id": "mon_zombie_summon_stomach",
         "name": "Pus Eruption",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's pus explodes, releasing a swarm of parasitic worms.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's pus explodes, releasing a swarm of parasitic worms.'",
         "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
         "valid_targets": ["ground"],
         "min_damage": 1,
@@ -2776,7 +2793,7 @@
         "type": "SPELL",
         "id": "mon_zombie_summon_move",
         "name": "Pus Eruption",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's pus explodes, releasing a swarm of parasitic worms.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's pus explodes, releasing a swarm of parasitic worms.'",
         "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
         "valid_targets": ["ground"],
         "min_damage": 1,
@@ -2789,7 +2806,7 @@
         "type": "SPELL",
         "id": "mon_zombie_summon_int",
         "name": "Pus Eruption",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's pus explodes, releasing a swarm of parasitic worms.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's pus explodes, releasing a swarm of parasitic worms.'",
         "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
         "valid_targets": ["ground"],
         "min_damage": 1,
@@ -2802,7 +2819,7 @@
         "type": "SPELL",
         "id": "mon_zombie_summon_pain",
         "name": "Pus Eruption",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's pus explodes, releasing a swarm of parasitic worms.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's pus explodes, releasing a swarm of parasitic worms.'",
         "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
         "valid_targets": ["ground"],
         "min_damage": 1,
@@ -2815,7 +2832,7 @@
         "type": "SPELL",
         "id": "mon_zombie_grubby_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_summon_pain",
                 "hit_self": true
@@ -2841,7 +2858,7 @@
         "type": "SPELL",
         "id": "mon_zombie_slimy_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_summon_pain",
                 "hit_self": true
@@ -2867,7 +2884,7 @@
         "type": "SPELL",
         "id": "mon_zombie_glut_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_summon_pain",
                 "hit_self": true
@@ -2893,7 +2910,7 @@
         "id": "mon_zombie_glut_bexplode",
         "type": "SPELL",
         "name": "Bloated Explosion",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster causes a limb to explode, which then lets loose all parasites out of it and inflicts itself with crippling effect and loses its size.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster causes a limb to explode, which then lets loose all parasites out of it and inflicts itself with crippling effect and loses its size.'",
         "flags": ["SILENT"],
         "valid_targets": ["self"],
         "effect": "projectile_attack",
@@ -2907,7 +2924,7 @@
         "type": "SPELL",
         "id": "mon_zombie_glut_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_glut_target_random"
             }, {
@@ -2928,7 +2945,7 @@
         "id": "mon_secrodragon_barrier",
         "type": "SPELL",
         "name": "Barrier",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster creates an innate force field, pushing nearby hostiles. This is casted 5 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster creates an innate force field, pushing nearby hostiles. This is casted 5 times.'",
         "effect": "area_push",
         "effect_filter": ["hostile"],
         "flags": ["SILENT"],
@@ -2939,7 +2956,7 @@
         "type": "SPELL",
         "id": "mon_secrodragon_barrier_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_secrodragon_barrier",
                 "hit_self": true
@@ -2971,7 +2988,7 @@
         "id": "mon_secrodragon_edischarge",
         "type": "SPELL",
         "name": "Electric Discharge",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster generates an electric current that sparks randomly, creating a line that deals electric damage to all creatures that gets hit. This is casted randomly between 6 to 12 times.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster generates an electric current that sparks randomly, creating a line that deals electric damage to all creatures that gets hit. This is casted randomly between 6 to 12 times.'",
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_TARGET"],
         "valid_targets": ["hostile", "ally", "ground"],
         "effect": "line_attack",
@@ -2990,7 +3007,7 @@
         "type": "SPELL",
         "id": "mon_secrodragon_edischarge_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_secrodragon_edischarge"
             }
@@ -3021,7 +3038,7 @@
         "type": "SPELL",
         "id": "mon_secrodragon_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_secrodragon_barrier_target_random_note"
             }, {
@@ -3056,7 +3073,7 @@
         "id": "mon_zombie_swarmer_evo_savage_tension",
         "type": "SPELL",
         "name": "Tension",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster mutates, gaining temporary combat bonuses.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster mutates, gaining temporary combat bonuses.'",
         "flags": ["SILENT"],
         "extra_effects": [{
                 "id": "mon_zombie_swarmer_evo_savage_tension_note", "hit_self": true
@@ -3072,7 +3089,7 @@
         "type": "SPELL",
         "id": "mon_zombie_swarmer_evo_savage_tension_target_random",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts one of the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_swarmer_evo_savage_tension", "hit_self": true
             }, {
@@ -3097,7 +3114,7 @@
         "id": "mon_zombie_swarmer_evo_virulent_precision",
         "type": "SPELL",
         "name": "Precision",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's senses sharpens by focusing at the target, increasing the accuracy of attacks and movement speed.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's senses sharpens by focusing at the target, increasing the accuracy of attacks and movement speed.'",
         "flags": ["SILENT"],
         "valid_targets": ["self"],
         "effect": "projectile_attack",
@@ -3109,7 +3126,7 @@
         "type": "SPELL",
         "id": "mon_zombie_swarmer_evo_virulent_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_swarmer_evo_virulent_precision",
                 "hit_self": true
@@ -3125,7 +3142,7 @@
         "id": "mon_zombie_revenant_withdraw",
         "type": "SPELL",
         "name": "Withdraw",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster then takes distance from the target.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster then takes distance from the target.'",
         "flags": ["SILENT","RANDOM_DURATION"],
         "valid_targets": ["self"],
         "effect": "target_attack",
@@ -3137,7 +3154,7 @@
         "id": "mon_zombie_revenant_trigger",
         "type": "SPELL",
         "name": "Trigger",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster unlocks the potential prowess of nearby monsters, increasing their combat abilities.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster unlocks the potential prowess of nearby monsters, increasing their combat abilities.'",
         "flags": ["SILENT"],
         "valid_targets": ["self","ally"],
         "effect": "target_attack",
@@ -3151,7 +3168,7 @@
         "type": "SPELL",
         "id": "mon_zombie_revenant_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_revenant_trigger",
                 "hit_self": true
@@ -3171,7 +3188,7 @@
         "id": "mon_zombie_revenant_forsaken_dilute",
         "type": "SPELL",
         "name": "Dilute",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster stares submissively at the target, inflicting negative combat bonuses.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster stares submissively at the target, inflicting negative combat bonuses.'",
         "flags": ["SILENT"],
         "valid_targets": ["hostile"],
         "effect": "target_attack",
@@ -3185,7 +3202,7 @@
         "type": "SPELL",
         "id": "mon_zombie_revenant_forsaken_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_revenant_forsaken_dilute"
             },
@@ -3204,7 +3221,7 @@
         "id": "mon_zombie_revenant_allure_incite",
         "type": "SPELL",
         "name": "Incite",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster spreads its blob-stimulating goo through its fingers, causing the infected creature's blob to grow rapidly which increases the host's body mass, gaining combat bonuses, but makes them suffer from excessive growth.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster spreads its blob-stimulating goo through its fingers, causing the infected creature's blob to grow rapidly which increases the host's body mass, gaining combat bonuses, but makes them suffer from excessive growth.'",
         "flags": ["SILENT"],
         "valid_targets": ["self","ally"],
         "effect": "target_attack",
@@ -3218,7 +3235,7 @@
         "type": "SPELL",
         "id": "mon_zombie_revenant_allure_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_revenant_allure_incite",
                 "hit_self": true
@@ -3238,7 +3255,7 @@
         "id": "mon_zombie_skittyweavy_flee_panic",
         "type": "SPELL",
         "name": "Panic",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's cowardly instinct sets itself on a panic run, significantly increasing its speed and dodge chance.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's cowardly instinct sets itself on a panic run, significantly increasing its speed and dodge chance.'",
         "flags": ["SILENT"],
         "valid_targets": ["self"],
         "effect": "target_attack",
@@ -3250,7 +3267,7 @@
         "id": "mon_zombie_skittyweavy_flee",
         "type": "SPELL",
         "name": "Flee",
-        "description": "Combo spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster avoids contact with the target.'",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster avoids contact with the target.'",
         "flags": ["SILENT"],
         "valid_targets": ["self"],
         "effect": "target_attack",
@@ -3262,7 +3279,7 @@
         "type": "SPELL",
         "id": "mon_zombie_skittyweavy_target",
         "name": "a spell",
-        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the combo spell(s).'",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
         "extra_effects": [{
                 "id": "mon_zombie_skittyweavy_flee",
                 "hit_self": true
@@ -3277,5 +3294,252 @@
         "effect": "target_attack",
         "min_range": 3,
         "max_range": 5
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_insect_saddler_brood_birth",
+        "name": "Birth",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gives a live birth to 2-5 baby saddlers. These saddlers are filled with hidden potentials, providing them the ability to grow so much faster into a full grown combat saddler once they sense danger around them.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "RANDOM_DAMAGE", "PERMANENT"],
+        "valid_targets": ["ground"],
+        "min_damage": 2,
+        "max_damage": 5,
+        "min_aoe": 3,
+        "max_aoe": 3,
+        "effect": "summon",
+        "effect_str": "mon_insect_saddler_baby_potent"
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_insect_saddler_brood_birth_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "mon_insect_saddler_brood_birth","hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "target_attack",
+        "min_range": 10,
+        "max_range": 10
+    },
+    {
+        "id": "mon_insect_saddler_baby_potent_grow_null_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "secro_spell_null",
+                "hit_self": true
+            }
+        ],
+        "effect_str": "mon_insect_saddler_baby_potent_grow_null_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_insect_saddler_baby_potent_grow_scout",
+        "name": "Morph",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster becomes a saddler scout.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 1,
+        "effect": "summon",
+        "effect_str": "mon_insect_saddler_scout"
+    },
+    {
+        "id": "mon_insect_saddler_baby_potent_grow_scout_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_insect_saddler_baby_potent_grow_scout",
+                "hit_self": true
+            }
+        ],
+        "effect_str": "mon_insect_saddler_baby_potent_grow_scout_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_insect_saddler_baby_potent_grow_brute",
+        "name": "Morph",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster becomes a saddler brute.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 1,
+        "effect": "summon",
+        "effect_str": "mon_insect_saddler_brute"
+    },
+    {
+        "id": "mon_insect_saddler_baby_potent_grow_brute_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_insect_saddler_baby_potent_grow_brute",
+                "hit_self": true
+            }
+        ],
+        "effect_str": "mon_insect_saddler_baby_potent_grow_brute_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_insect_saddler_baby_potent_grow",
+        "name": "Morph",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster becomes a saddler.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "PERMANENT"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 1,
+        "effect": "summon",
+        "effect_str": "mon_insect_saddler"
+    },
+    {
+        "id": "mon_insect_saddler_baby_potent_grow_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_insect_saddler_baby_potent_grow",
+                "hit_self": true
+            }
+        ],
+        "effect_str": "mon_insect_saddler_baby_potent_grow_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_insect_saddler_baby_potent_target_random",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
+        "extra_effects": [{
+                "id": "mon_insect_saddler_baby_potent_grow_scout_note"
+            }, {
+                "id": "mon_insect_saddler_baby_potent_grow_scout_note"
+            }, {
+                "id": "mon_insect_saddler_baby_potent_grow_brute_note"
+            }, {
+                "id": "mon_insect_saddler_baby_potent_grow_brute_note"
+            }, {
+                "id": "mon_insect_saddler_baby_potent_grow_note"
+            }, {
+                "id": "mon_insect_saddler_baby_potent_grow_note"
+            }, {
+                "id": "mon_insect_saddler_baby_potent_grow_note"
+            }, {
+                "id": "mon_insect_saddler_baby_potent_grow_note"
+            }, {
+                "id": "mon_insect_saddler_baby_potent_grow_note"
+            }, {
+                "id": "mon_insect_saddler_baby_potent_grow_null_note"
+            }
+        ],
+        "flags": ["SILENT", "WONDER"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "effect_str": "secro_magic_target",
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_range": 10,
+        "max_range": 10,
+        "min_duration": 1,
+        "max_duration": 1
+    }, 
+    {
+        "type": "SPELL",
+        "id": "mon_insect_saddler_baby_potent_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [{
+                "id": "sacrifice_spell",
+                "hit_self": true
+            },
+            {
+                "id": "mon_insect_saddler_baby_potent_target_random"
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "target_attack",
+        "min_range": 10,
+        "max_range": 10
+    },
+    {
+        "id": "mon_insect_saddler_brute_cimbue",
+        "type": "SPELL",
+        "name": "Corrosive Imbuement",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster coats its sharp limbs with potent substance, causing successful hits to sink deeper into the target.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["self"],
+        "effect": "target_attack",
+        "effect_str": "secro_saddler_brute_imbue",
+        "min_duration": 600,
+        "max_duration": 600
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_insect_saddler_brute_cimbue_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [{
+                "id": "mon_insect_saddler_brute_cimbue",
+                "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "target_attack",
+        "min_range": 4,
+        "max_range": 4
+    },
+    {
+        "id": "mon_insect_saddler_scout_cbile",
+        "type": "SPELL",
+        "name": "Corrosive Bile",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster spreads its acid into the target, dealing acid damage and leaves acidic fields in a cone.'",
+        "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE"],
+        "valid_targets": ["hostile", "ground"],
+        "effect": "cone_attack",
+        "min_damage": 3,
+        "max_damage": 6,
+        "min_range": 2,
+        "max_range": 4,
+        "min_aoe": 30,
+        "max_aoe": 60,
+        "field_id": "fd_acid",
+        "field_chance": 3,
+        "min_field_intensity": 1,
+        "max_field_intensity": 1,
+        "damage_type": "acid"
     }
 ]
