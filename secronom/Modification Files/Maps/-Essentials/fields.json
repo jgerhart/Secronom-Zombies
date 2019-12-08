@@ -22,9 +22,9 @@
             }, {
                 "color": "light_red",
                 "transparent": false,
-                "monster_spawn_chance": 25,
+                "monster_spawn_chance": 10,
                 "monster_spawn_count": 3,
-                "monster_spawn_radius": 3,
+                "monster_spawn_radius": 4,
                 "monster_spawn_group": "GROUP_CARRIONS",
                 "light_emitted": 15
             }
@@ -59,9 +59,9 @@
             }, {
                 "color": "light_blue",
                 "transparent": false,
-                "monster_spawn_chance": 25,
+                "monster_spawn_chance": 10,
                 "monster_spawn_count": 3,
-                "monster_spawn_radius": 3,
+                "monster_spawn_radius": 4,
                 "monster_spawn_group": "GROUP_VECTORS",
                 "light_emitted": 15
             }
@@ -96,6 +96,7 @@
                 "dangerous": true,
                 "light_emitted": 1,
                 "effect_id": "vector_infect",
+                "effect_body_part": "TORSO",
                 "effect_min_duration": 5,
                 "effect_max_duration": 15
             }, {
@@ -129,10 +130,11 @@
         "intensity_levels": [{
                 "name": "thick vector haze",
                 "sym": "~",
-                "color": "blue",
+                "color": "light_blue",
                 "dangerous": true,
                 "transparent": false,
                 "effect_id": "vector_infect",
+                "effect_body_part": "TORSO",
                 "effect_min_duration": 15,
                 "effect_max_duration": 30
             }, {}, {
@@ -167,6 +169,7 @@
                 "name": "resonant voice",
                 "inside_immune": false,
                 "effect_id": "secro_dissed",
+                "effect_body_part": "HEAD",
                 "effect_min_duration": 4,
                 "effect_max_duration": 4
             }
@@ -303,6 +306,7 @@
         "dangerous": true,
         "color": "red",
         "effect_id": "secro_gorepit_wall_dmg",
+        "effect_body_part": "LEG_R",
         "effect_min_duration": "1 seconds",
         "effect_max_duration": "1 seconds",
                 "chance_in_vehicle": 1,
