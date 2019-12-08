@@ -1,9 +1,10 @@
 [{
 	"//": "Let's pick some mapgens to infest with our gorey version of it! They're rarer, tho.",
+	"//": "Prepper basements are less likely to be the reward for invading a flesh house.",
     "type": "mapgen",
     "method": "json",
-    "om_terrain": [ "basement" ],
-    "weight": 200,
+    "om_terrain": [ "secro_basement_flesh" ],
+    "weight": 250,
     "object": {
       "rotation": [ 0, 3 ],
       "fill_ter": "t_rock",
@@ -98,8 +99,8 @@
   {
     "type": "mapgen",
     "method": "json",
-    "om_terrain": [ "basement" ],
-    "weight": 200,
+    "om_terrain": [ "secro_basement_flesh" ],
+    "weight": 125,
     "object": {
       "fill_ter": "t_rock",
       "rotation": [ 0, 3 ],
@@ -228,6 +229,98 @@
                 }
             },
       "place_monsters": [ { "monster": "GROUP_PREPPER_HOUSE", "x": [ 2, 10 ], "y": [ 4, 7 ], "chance": 2 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "basement" ],
+    "weight": 50,
+    "object": {
+      "fill_ter": "t_rock",
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "  --------------------  ",
+        "  |..................|  ",
+        "  |..{{{{{{{{{{{{{{M.|  ",
+        "  |.M......A.........|  ",
+        "  |..................|  ",
+        "  |..{{{{{{{{{{{{{{..|  ",
+        "  |..................|  ",
+        "  |..................|  ",
+        "  |..........M.......|  ",
+        "  |..........|---+---|  ",
+        "  |.M........|]M.....|  ",
+        "  |###s##|-+-|].....#|  ",
+        "  |------|...+....h.#|  ",
+        "         |<..|...####|  ",
+        "         -------------  ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": {
+        "#": "t_secro_rock_floor_flesh",
+        "+": "t_secro_door_flesh",
+        "-": "t_secro_wall_flesh",
+        ".": "t_secro_rock_floor_flesh",
+        "<": "t_secro_stairs_up_flesh",
+        "]": "t_secro_rock_floor_flesh",
+        "h": "t_secro_rock_floor_flesh",
+        "s": "t_secro_rock_floor_flesh",
+        "{": "t_secro_rock_floor_flesh",
+        "|": "t_secro_wall_flesh"
+      },
+      "furniture": { "#": "f_counter", "]": "f_bookcase", "h": "f_chair", "s": "f_gunsafe_ml", "{": "f_rack",
+        "M": "f_secro_fleshknot_emitter" },
+      "place_loot": [
+        { "group": "guns_smg_rare", "x": 6, "y": 2, "chance": 20, "magazine": 100 },
+        { "group": "guns_rifle_rare", "x": 7, "y": 2, "chance": 30, "magazine": 100 },
+        { "group": "mags_pistol_rare", "x": 8, "y": 2, "chance": 75 },
+        { "group": "guns_pistol_common", "x": 9, "y": 2, "chance": 90, "magazine": 100 },
+        { "group": "mags_pistol_common", "x": 10, "y": 2, "chance": 100, "repeat": [ 1, 3 ] },
+        { "group": "guns_rifle_common", "x": 11, "y": 2, "chance": 80, "magazine": 100 },
+        { "group": "guns_shotgun_common", "x": 12, "y": 2, "chance": 80, "magazine": 100 },
+        { "group": "mags_rifle_common", "x": 13, "y": 2, "chance": 100, "repeat": [ 1, 3 ] },
+        { "group": "guns_smg_common", "x": 14, "y": 2, "chance": 70, "magazine": 100 },
+        { "group": "guns_pistol_rare", "x": 15, "y": 2, "chance": 40, "magazine": 100 },
+        { "group": "mags_smg_common", "x": 16, "y": 2, "chance": 70, "repeat": [ 1, 2 ] },
+        { "group": "guns_shotgun_rare", "x": 17, "y": 2, "chance": 30, "magazine": 100 },
+        { "group": "ammo_shotgun_reloaded", "x": 6, "y": 5, "chance": 90, "repeat": [ 1, 2 ] },
+        { "group": "ammo_rifle_reloaded", "x": 7, "y": 5, "chance": 90, "repeat": [ 1, 2 ] },
+        { "group": "ammo_shotgun_common", "x": 8, "y": 5, "chance": 40, "repeat": [ 1, 2 ] },
+        { "group": "ammo_pistol_reloaded", "x": 9, "y": 5, "chance": 90, "repeat": [ 1, 2 ] },
+        { "group": "ammo_rifle_reloaded", "x": 10, "y": 5, "chance": 40, "repeat": [ 1, 2 ] },
+        { "group": "ammo_rifle_common", "x": 11, "y": 5, "chance": 90, "repeat": [ 1, 2 ] },
+        { "group": "ammo_smg_common", "x": 12, "y": 5, "chance": 40, "repeat": [ 1, 2 ] },
+        { "group": "ammo_pistol_common", "x": 13, "y": 5, "chance": 90, "repeat": [ 1, 2 ] },
+        { "group": "ammo_rifle_common", "x": 14, "y": 5, "chance": 40, "repeat": [ 1, 2 ] },
+        { "group": "ammo_pistol_common", "x": 15, "y": 5, "chance": 40, "repeat": [ 1, 2 ] },
+        { "group": "ammo_pistol_reloaded", "x": 16, "y": 5, "chance": 40, "repeat": [ 1, 2 ] },
+        { "group": "ammo_shotgun_common", "x": 17, "y": 5, "chance": 90, "repeat": [ 1, 2 ] },
+        { "group": "book_gunref", "x": 14, "y": [ 10, 11 ], "chance": 60 },
+        { "group": "gunmod_common", "x": 4, "y": 11, "chance": 100 },
+        { "group": "guns_obscure", "x": 6, "y": 11, "chance": 100, "ammo": 100, "magazine": 100 },
+        { "group": "museum_guns", "x": 6, "y": 11, "chance": 70, "ammo": 70, "magazine": 90 },
+        { "group": "tools_common", "x": 20, "y": 12, "chance": 100 },
+        { "group": "gunmod_rare", "x": 18, "y": 13, "chance": 30 },
+        { "group": "gunmod_rare", "x": 19, "y": 13, "chance": 100 }
+      ],
+      "monster": {
+                "A": {
+                    "monster": "mon_zombie_fleshknot_weak"
+                }
+            },
+      "place_monsters": [
+        { "monster": "GROUP_PREPPER_HOUSE", "x": [ 3, 20 ], "y": [ 1, 8 ], "chance": 2 },
+        { "monster": "GROUP_PREPPER_HOUSE", "x": [ 14, 20 ], "y": [ 10, 13 ], "chance": 4 }
+      ]
     }
   }
 ]
