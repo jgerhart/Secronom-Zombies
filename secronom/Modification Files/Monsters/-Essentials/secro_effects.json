@@ -878,6 +878,17 @@
      	   "str_mod": [ -0.2 ]
         }
     },
+    {
+        "type": "effect_type",
+        "id": "secro_saddler_brute_imbue",
+        "name": ["Imbued"],
+        "desc": ["Your limbs were imbued with potent acid!"],
+        "show_in_info": true,
+        "base_mods": {
+            "bash_mod": [0.5],
+            "cut_mod": [0.5]
+        }
+    },
     
     {
         "//": "Effects for notifying the player. This method is a bit unstable...",
@@ -969,6 +980,30 @@
         "id": "mon_zombie_cordev_mincem_target_YES",
         "apply_message": "But while the corrupted devourer looks at them, its arm biters suddenly eats away the flesh it touches!",
         "rating": "mixed"
+    },
+    {
+        "type": "effect_type",
+        "id": "mon_insect_saddler_baby_potent_grow_YES",
+        "apply_message": "Then grows into a saddler!",
+        "rating": "bad"
+    },
+    {
+        "type": "effect_type",
+        "id": "mon_insect_saddler_baby_potent_grow_brute_YES",
+        "apply_message": "Then grows into a saddler brute!",
+        "rating": "bad"
+    },
+    {
+        "type": "effect_type",
+        "id": "mon_insect_saddler_baby_potent_grow_scout_YES",
+        "apply_message": "Then grows into a saddler scout!",
+        "rating": "bad"
+    },
+    {
+        "type": "effect_type",
+        "id": "mon_insect_saddler_baby_potent_grow_null_YES",
+        "apply_message": "Suddenly it erupts into gore!",
+        "rating": "good"
     },
     
     {
