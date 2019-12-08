@@ -1,5 +1,5 @@
 [{
-        "//": "This is an insect, an alien variation of them. Its just an additional variation of ant-like faction, though they are not currently implemented in-game.",
+        "//": "This is an insect, an alien variation of them. Its an additional variation of ant-like faction, though it is rarely sighted in-game, nothing's good about them.",
         "id": "mon_insect_saddler_brood",
         "type": "MONSTER",
         "name": "saddler broodmother",
@@ -13,6 +13,7 @@
         "material": ["iflesh"],
         "harvest": "meatslug",
         "symbol": "H",
+        "attack_cost": 200,
         "color": "magenta_green",
         "aggression": 5,
         "morale": 100,
@@ -20,23 +21,66 @@
         "melee_dice": 4,
         "melee_dice_sides": 4,
         "melee_cut": 2,
-        "reproduction": {
-            "baby_monster": "mon_insect_saddler_baby",
-            "baby_count": 10,
-            "baby_timer": 1
-        },
         "melee_damage": [{
                 "damage_type": "acid",
                 "amount": 6
             }
         ],
+        "special_attacks": [
+            {
+                "type": "spell",
+                "spell_id": "mon_insect_saddler_brood_birth_target",
+                "cooldown": 20,
+                "monster_message": "<color_yellow>The saddler broodmother gave birth to baby saddlers!</color>"
+            }
+        ],
         "anger_triggers": ["FRIEND_ATTACKED", "FRIEND_DIED"],
         "placate_triggers": ["MEAT"],
-        "armor_bash": 5,
-        "armor_cut": 3,
-        "armor_stab": 3,
+        "armor_bash": 22,
+        "armor_cut": 20,
+        "armor_stab": 20,
+        "vision_day": 12,
         "death_function": ["NORMAL", "ACID"],
         "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "BASHES", "POISON", "ACID_BLOOD", "ACIDPROOF", "BONES", "QUEEN"]
+    }, {
+        "id": "mon_insect_saddler_baby_potent",
+        "type": "MONSTER",
+        "name": "baby saddler",
+        "description": "Cute, with its tiny, harmless legs twitching without command, causing it to frequently stumbles into the ground. .",
+        "default_faction": "saddler",
+        "species": ["INSECT"],
+        "volume": "750 ml",
+        "weight": 1000,
+        "hp": 5,
+        "speed": 35,
+        "material": ["iflesh"],
+        "harvest": "meatslug",
+        "symbol": "h",
+        "color": "light_green",
+        "anger_triggers": ["FRIEND_ATTACKED", "FRIEND_DIED"],
+        "placate_triggers": ["MEAT"],
+        "aggression": 100,
+        "morale": 100,
+        "melee_skill": 0,
+        "melee_dice": 1,
+        "melee_dice_sides": 2,
+        "melee_cut": 1,
+        "upgrades": {
+            "age_grow": 6,
+            "half_life": 1,
+            "into": "mon_insect_saddler"
+        },
+        "special_attacks": [
+            {
+                "type": "spell",
+                "spell_id": "mon_insect_saddler_baby_potent_target",
+                "cooldown": 100,
+                "monster_message": "<color_magenta>The bady saddler twitches...</color>"
+            }
+        ],
+        "vision_day": 4,
+        "death_function": ["NORMAL"],
+        "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "BASHES", "POISON", "STUMBLES", "ACID_BLOOD", "ACIDPROOF", "LARVA"]
     }, {
         "id": "mon_insect_saddler_baby",
         "type": "MONSTER",
@@ -65,6 +109,7 @@
             "half_life": 1,
             "into": "mon_insect_saddler"
         },
+        "vision_day": 4,
         "death_function": ["NORMAL"],
         "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "BASHES", "POISON", "STUMBLES", "ACID_BLOOD", "ACIDPROOF", "LARVA"]
     }, {
@@ -98,6 +143,7 @@
         "armor_bash": 3,
         "armor_cut": 1,
         "armor_stab": 1,
+        "vision_day": 6,
         "death_function": ["NORMAL", "ACID"],
         "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "BASHES", "POISON", "ACID_BLOOD", "ACIDPROOF"]
     },
@@ -105,7 +151,7 @@
         "id": "mon_insect_saddler_brute",
         "type": "MONSTER",
         "name": "saddler brute",
-        "description": "A saddler with larger limbs and a completely hairless bottom. Its whole body is bloated and guts from previous brawls reek in corrosive substance.",
+        "description": "Saddler with larger limbs and a completely hairless bottom. Its whole body is bloated and guts from previous brawls reek in corrosive substance.",
         "default_faction": "saddler",
         "species": ["INSECT"],
         "volume": "18000 ml",
@@ -129,9 +175,18 @@
                 "amount": 3
             }
         ],
-        "armor_bash": 9,
-        "armor_cut": 5,
-        "armor_stab": 5,
+        "special_attacks": [
+            {
+                "type": "spell",
+                "spell_id": "mon_insect_saddler_brute_cimbue_target",
+                "cooldown": 20,
+                "monster_message": "<color_magenta>The saddler brute's limbs were coated with concentrated acid!</color>"
+            }
+        ],
+        "vision_day": 12,
+        "armor_bash": 14,
+        "armor_cut": 10,
+        "armor_stab": 10,
         "death_function": ["NORMAL", "ACID"],
         "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "BASHES", "POISON", "ACID_BLOOD", "PUSH_MON", "ACIDPROOF"]
     },
@@ -164,8 +219,25 @@
                 "amount": 1
             }
         ],
+        "special_attacks": [{
+                "type": "gun",
+                "cooldown": 8,
+                "move_cost": 175,
+                "gun_type": "saddler_mouth",
+                "ranges": [[2, 8, "DEFAULT"]],
+                "require_targeting_player": false,
+                "description": "The saddler scout spew an acid glob!"
+            },
+            {
+                "type": "spell",
+                "spell_id": "mon_insect_saddler_scout_cbile",
+                "cooldown": 18,
+                "monster_message": "<color_red>The saddler scout coats the ground in corrosive acid!</color>"
+            }
+        ],
+        "vision_day": 16,
         "armor_bash": 1,
         "death_function": ["NORMAL", "ACID"],
-        "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "BASHES", "POISON", "ACID_BLOOD", "PUSH_MON", "ACIDPROOF"]
+        "flags": ["SEES", "HEARS", "SMELLS", "CLIMBS", "BASHES", "POISON", "ACID_BLOOD", "HIT_AND_RUN", "ACIDPROOF"]
     }
 ]
