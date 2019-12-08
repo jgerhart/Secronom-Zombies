@@ -14,6 +14,7 @@
             "<": "t_slope_up"
         },
         "furniture": {
+            " ": "f_secro_saddler_biome_emit",
             "]": "f_secro_saddler_biome_emit"
         },
         "fields": {
@@ -277,6 +278,7 @@
             ],
             "palettes": ["cave_saddler_underground"]
         },
+        "place_monster": [ { "monster": "mon_insect_saddler_brood", "x": 9, "y": 3 } ],
         "om_terrain": [
             "saddler_cave_brood"
         ],
@@ -314,6 +316,7 @@
             ],
             "palettes": ["cave_saddler_underground"]
         },
+        "place_monster": [ { "monster": "mon_insect_saddler_brood", "x": 9, "y": 21 } ],
         "om_terrain": [
             "saddler_cave_brood"
         ],

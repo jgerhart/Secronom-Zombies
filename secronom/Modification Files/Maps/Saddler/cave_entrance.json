@@ -30,6 +30,33 @@
                 "t_grass",
                 "t_grass",
                 "t_dirt",
+                "t_grass",
+                "t_grass",
+                "t_dirt",
+                "t_grass",
+                "t_grass",
+                "t_dirt",
+                "t_grass",
+                "t_grass",
+                "t_dirt",
+                "t_grass",
+                "t_grass",
+                "t_dirt",
+                "t_grass",
+                "t_grass",
+                "t_dirt",
+                "t_grass",
+                "t_grass",
+                "t_dirt",
+                "t_grass",
+                "t_grass",
+                "t_dirt",
+                "t_grass",
+                "t_grass",
+                "t_dirt",
+                "t_grass",
+                "t_grass",
+                "t_dirt",
                 "t_tree_dead"
             ],
             "=": "t_rock",
@@ -47,7 +74,8 @@
             ">": "t_slope_down"
         },
         "furniture": {
-            "]": "f_secro_saddler_biome_emit"
+            "]": "f_secro_saddler_biome_emit",
+            " ": "f_secro_saddler_biome_emit"
         }
     }, {
         "method": "json",
@@ -127,7 +155,6 @@
                 "........................................................................",
                 "........................................................................"
             ],
-            "predecessor_mapgen": "field",
             "palettes": ["cave_saddler_entrance"]
         },
         "om_terrain": [
