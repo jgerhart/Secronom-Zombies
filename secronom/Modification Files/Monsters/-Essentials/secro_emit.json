@@ -311,5 +311,13 @@
         "field": "fd_fleshknot_gas",
         "qty": 200,
         "intensity": 4
+    },
+    {
+        "id": "emit_saddler_biome",
+        "type": "emit",
+        "field": "fd_acid",
+        "qty": 2,
+        "intensity": 1,
+        "chance": 1
     }
 ]
