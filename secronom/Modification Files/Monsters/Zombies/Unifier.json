@@ -132,6 +132,7 @@
                 "monster_message": "<color_red>%1$s manipulates its own blood and sends it to %3$s!</color>\n<color_yellow>Blood vessels and a fiend emerges from the %2$s!</color>"
             }
         ],
+        "regenerates": 2,
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "GROUP_MORALE", "PLASTIC"]
     }, {
         "id": "mon_zombie_bloodvessel",
@@ -164,7 +165,8 @@
         "melee_cut": 0,
         "armor_bash": 20,
         "death_function": ["MELT"],
-        "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "ELECTRIC", "ACIDPROOF", "NO_BREATHE", "PLASTIC", "REGENERATES_10"]
+        "regenerates": 3,
+        "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "ELECTRIC", "ACIDPROOF", "NO_BREATHE", "PLASTIC"]
     }, {
         "id": "mon_zombie_bloodfiend",
         "type": "MONSTER",
@@ -196,7 +198,8 @@
         "melee_cut": 0,
         "armor_bash": 24,
         "death_function": ["MELT"],
+        "regenerates": 5,
         "looks_like": "mon_zombie_bloodvessel",
-        "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "ELECTRIC", "ACIDPROOF", "NO_BREATHE", "PLASTIC", "REGENERATES_10"]
+        "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "ELECTRIC", "ACIDPROOF", "NO_BREATHE", "PLASTIC"]
     }
 ]

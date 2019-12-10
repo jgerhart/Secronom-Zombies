@@ -139,8 +139,10 @@
                 "monster_message": "<color_yellow>%1$s splits a chunk of its shadow!</color>"
             }
         ],
+        "regenerates": 10,
+        "regenerates_in_dark": true,
         "death_function": ["DISAPPEAR"],
-        "flags": ["SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "FLIES", "PACIFIST", "REGENERATES_IN_DARK", "HARDTOSHOOT", "NOGIB", "NOHEAD", "WEBWALK", "PLASTIC", "ELECTRIC", "ACIDPROOF"],
+        "flags": ["SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "FLIES", "PACIFIST", "HARDTOSHOOT", "NOGIB", "NOHEAD", "WEBWALK", "PLASTIC", "ELECTRIC", "ACIDPROOF"],
         "//": "Imitates the jinx zombie for using shadows as weaponry."
     }, {
         "id": "mon_zombie_nightwail_shadow",
