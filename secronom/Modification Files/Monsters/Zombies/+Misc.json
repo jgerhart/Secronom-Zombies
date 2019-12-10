@@ -270,7 +270,7 @@
                 "cooldown": 5
             }, ["GRAB", 7], ["scratch", 20], {
                 "type": "spell",
-                "spell_id": "mon_zombie_fake_poly_ichorus",
+                "spell_id": "mon_zombie_fake_poly_ichorus_target",
                 "cooldown": 0,
                 "monster_message": "<color_red>%1$s ruptures into an ichorus!</color>"
             }
@@ -371,7 +371,7 @@
                 "cooldown": 5
             }, ["GRAB", 7], ["scratch", 20], {
                 "type": "spell",
-                "spell_id": "mon_zombie_fake_poly_psyrus",
+                "spell_id": "mon_zombie_fake_poly_psyrus_target",
                 "cooldown": 0,
                 "monster_message": "<color_red>%1$s ruptures into a psyrus!</color>"
             }
@@ -437,6 +437,7 @@
             "BLEED",
             "NO_BREATHE",
             "REVIVES",
+            "PUSH_VEH",
             "PUSH_MON",
             "FILTHY"
         ]
@@ -588,6 +589,8 @@
                 ]
             }
         ],
+        "regenerates": 3,
+        "regenerates_in_dark": true,
         "death_drops": "default_zombie_death_drops",
         "death_function": ["NORMAL"],
         "flags": [
@@ -604,7 +607,6 @@
             "REVIVES",
             "HARDTOSHOOT",
             "FILTHY",
-            "REGENERATES_IN_DARK",
             "SUNDEATH"
         ]
     }, {
@@ -692,6 +694,7 @@
                 "monster_message": "<color_yellow>%1$s pierces the nearby monsters!</color>"
             }
         ],
+        "regenerates": 20,
         "death_function": ["SPLATTER"],
         "flags": [
             "SEES",
@@ -708,7 +711,6 @@
             "PUSH_MON",
             "PUSH_VEH",
             "PLASTIC",
-            "REGENERATES_1",
             "STUN_IMMUNE"
         ]
     }, {
@@ -739,8 +741,8 @@
         "armor_bash": 1,
         "armor_stab": 2,
         "armor_cut": 4,
-        "vision_day": 13,
-        "vision_night": 13,
+        "vision_day": 30,
+        "vision_night": 6,
         "harvest": "exempt",
         "special_attacks": [{
                 "type": "spell",
