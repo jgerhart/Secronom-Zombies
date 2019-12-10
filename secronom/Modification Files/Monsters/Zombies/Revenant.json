@@ -91,7 +91,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_revenant_allure_target",
                 "cooldown": 12,
-                "monster_message": "<color_red>%1$s spreads its goo into the surroundings!</color>\n<color_red>"
+                "monster_message": "<color_red>%1$s spreads its goo into the surroundings!</color>"
             }
         ],
         "death_drops": "default_zombie_death_drops",
