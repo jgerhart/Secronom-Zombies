@@ -27,7 +27,7 @@
         ],
         "special_attacks": [ [ "SUICIDE", 250 ] ],
         "death_function": ["MELT"],
-        "flags": ["PATH_AVOID_DANGER_1", "SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "POISON"]
+        "flags": ["PATH_AVOID_DANGER_1", "SEES", "HEARS", "SMELLS", "NO_BREATHE","HARDTOSHOOT", "POISON"]
     }, {
         "id": "mon_insect_parasiteworm_int",
         "type": "MONSTER",
@@ -57,7 +57,7 @@
         ],
         "special_attacks": [ [ "SUICIDE", 250 ] ],
         "death_function": ["MELT"],
-        "flags": ["SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "POISON", "PATH_AVOID_DANGER_1"]
+        "flags": ["SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "POISON", "NO_BREATHE","PATH_AVOID_DANGER_1"]
     }, {
         "id": "mon_insect_parasiteworm_move",
         "type": "MONSTER",
@@ -87,7 +87,7 @@
         ],
         "special_attacks": [ [ "SUICIDE", 250 ] ],
         "death_function": ["MELT"],
-        "flags": ["SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "POISON", "PATH_AVOID_DANGER_1"]
+        "flags": ["SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "POISON", "NO_BREATHE","PATH_AVOID_DANGER_1"]
     }, {
         "id": "mon_insect_parasiteworm_stomach",
         "type": "MONSTER",
@@ -117,6 +117,6 @@
         ],
         "special_attacks": [ [ "SUICIDE", 250 ] ],
         "death_function": ["MELT"],
-        "flags": ["SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "POISON", "PATH_AVOID_DANGER_1"]
+        "flags": ["SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "POISON", "PATH_AVOID_DANGER_1", "NO_BREATHE"]
     }
 ]
