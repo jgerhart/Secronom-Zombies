@@ -24,10 +24,6 @@
         "melee_cut": 0,
         "armor_bash": 16,
         "armor_cut": 2,
-        "path_settings": {
-            "max_dist": 2,
-            "max_length": 10
-        },
         "//": "Charger deals bashing damage to itself and the creature who block its path. And yes, it is susceptible to bugs.",
         "special_attacks": [{
                 "type": "spell",
@@ -181,10 +177,6 @@
         "armor_bash": 40,
         "armor_cut": 10,
         "armor_stab": 5,
-        "path_settings": {
-            "max_dist": 2,
-            "max_length": 10
-        },
         "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_zombie_charger_vanguard_charge_target_random",
@@ -206,6 +198,7 @@
             "NO_BREATHE",
             "REVIVES",
             "PUSH_MON",
+            "PUSH_VEH",
             "FILTHY"
         ]
     }
