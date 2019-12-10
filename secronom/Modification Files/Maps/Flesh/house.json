@@ -236,7 +236,7 @@
 	  {
 	    "type": "mapgen",
 	    "method": "json",
-	    "om_terrain": [ "house" ],
+	    "om_terrain": [ "secro_house_flesh" ],
 	    "weight": 300,
 	    "object": {
 	      "fill_ter": "t_secro_floor_flesh",
