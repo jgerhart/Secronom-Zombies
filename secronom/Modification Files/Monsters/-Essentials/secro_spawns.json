@@ -563,5 +563,20 @@
       { "monster": "mon_insect_saddler_brute", "freq": 1, "cost_multiplier": 7 },
       { "monster": "mon_insect_saddler_scout", "freq": 1, "cost_multiplier": 10 }
     ]
-  }
+  },
+  {
+        "type": "monstergroup",
+        "name": "GROUP_SADDLER_DETACH",
+        "default": "mon_insect_saddler"
+    },
+    {
+        "type": "monstergroup",
+        "name": "GROUP_SADDLER_BRUTE_DETACH",
+        "default": "mon_insect_saddler_brute"
+    },
+    {
+        "type": "monstergroup",
+        "name": "GROUP_SADDLER_SCOUT_DETACH",
+        "default": "mon_insect_saddler_scout"
+    }
 ]
