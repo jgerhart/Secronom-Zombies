@@ -72,10 +72,6 @@
                 "t_rock_floor"
             ],
             ">": "t_slope_down"
-        },
-        "furniture": {
-            "]": "f_secro_saddler_biome_emit",
-            " ": "f_secro_saddler_biome_emit"
         }
     }, {
         "method": "json",

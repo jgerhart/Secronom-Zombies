@@ -12,17 +12,6 @@
                 "t_rock_floor"
             ],
             "<": "t_slope_up"
-        },
-        "furniture": {
-            " ": "f_secro_saddler_biome_emit",
-            "]": "f_secro_saddler_biome_emit"
-        },
-        "fields": {
-            ".": [{
-                    "field": "fd_acid",
-                    "chance": 5
-                }
-            ]
         }
     }, {
         "method": "json",
