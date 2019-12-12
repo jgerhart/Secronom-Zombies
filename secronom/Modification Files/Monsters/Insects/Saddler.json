@@ -7,7 +7,7 @@
         "default_faction": "saddler",
         "species": ["INSECT"],
         "volume": "62500 ml",
-   	 "weight": 81500,
+        "weight": 81500,
         "hp": 170,
         "speed": 15,
         "material": ["flesh"],
@@ -21,8 +21,7 @@
         "melee_dice": 4,
         "melee_dice_sides": 4,
         "melee_cut": 2,
-        "special_attacks": [
-            {
+        "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_insect_saddler_brood_birth_target",
                 "cooldown": 20,
@@ -36,7 +35,7 @@
         "armor_stab": 20,
         "vision_day": 12,
         "death_function": ["NORMAL"],
-        "flags": ["SEES", "HEARS", "SMELLS", "NO_BREATHE", "CLIMBS", "BASHES", "POISON",  "BONES", "QUEEN"]
+        "flags": ["SEES", "HEARS", "SMELLS", "NO_BREATHE", "CLIMBS", "BASHES", "POISON", "BONES", "QUEEN"]
     }, {
         "id": "mon_insect_saddler_baby_potent",
         "type": "MONSTER",
@@ -65,8 +64,7 @@
             "half_life": 1,
             "into": "mon_insect_saddler"
         },
-        "special_attacks": [
-            {
+        "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_insect_saddler_baby_potent_target",
                 "cooldown": 100,
@@ -75,7 +73,7 @@
         ],
         "vision_day": 4,
         "death_function": ["NORMAL"],
-        "flags": ["SEES", "HEARS", "SMELLS", "NO_BREATHE", "CLIMBS", "BASHES", "POISON", "STUMBLES",  "LARVA"]
+        "flags": ["SEES", "HEARS", "SMELLS", "NO_BREATHE", "CLIMBS", "BASHES", "POISON", "STUMBLES", "LARVA"]
     }, {
         "id": "mon_insect_saddler_baby",
         "type": "MONSTER",
@@ -106,7 +104,7 @@
         },
         "vision_day": 4,
         "death_function": ["NORMAL"],
-        "flags": ["SEES", "HEARS", "SMELLS", "NO_BREATHE", "CLIMBS", "BASHES", "POISON", "STUMBLES",  "LARVA"]
+        "flags": ["SEES", "HEARS", "SMELLS", "NO_BREATHE", "CLIMBS", "BASHES", "POISON", "STUMBLES", "LARVA"]
     }, {
         "id": "mon_insect_saddler",
         "type": "MONSTER",
@@ -126,9 +124,9 @@
         "color": "green",
         "aggression": 5,
         "morale": 5,
-        "melee_skill": 2,
+        "melee_skill": 4,
         "melee_dice": 1,
-        "melee_dice_sides": 2,
+        "melee_dice_sides": 3,
         "melee_cut": 2,
         "armor_bash": 3,
         "armor_cut": 1,
@@ -136,8 +134,7 @@
         "vision_day": 6,
         "death_function": ["NORMAL"],
         "flags": ["SEES", "HEARS", "SMELLS", "NO_BREATHE", "CLIMBS", "BASHES", "POISON"]
-    },
-    {
+    }, {
         "id": "mon_insect_saddler_brute",
         "type": "MONSTER",
         "name": "saddler brute",
@@ -145,37 +142,28 @@
         "default_faction": "saddler",
         "species": ["INSECT"],
         "volume": "18000 ml",
-    	"weight": 10500,
+        "weight": 10500,
         "harvest": "meatslug",
-        "hp": 80,
+        "hp": 65,
         "speed": 65,
         "material": ["flesh"],
         "symbol": "h",
         "anger_triggers": ["FRIEND_ATTACKED", "FRIEND_DIED"],
         "placate_triggers": ["MEAT"],
-        "color": "dark_gray_green",
+        "color": "dark_gray",
         "aggression": 50,
         "morale": 25,
-        "melee_skill": 6,
+        "melee_skill": 4,
         "melee_dice": 2,
-        "melee_dice_sides": 3,
-        "melee_cut": 1,
-        "special_attacks": [
-            {
-                "type": "spell",
-                "spell_id": "mon_insect_saddler_brute_cimbue_target",
-                "cooldown": 20,
-                "monster_message": "<color_magenta>The saddler brute's limbs were coated with concentrated acid!</color>"
-            }
-        ],
+        "melee_dice_sides": 4,
+        "melee_cut": 2,
         "vision_day": 12,
-        "armor_bash": 14,
-        "armor_cut": 10,
-        "armor_stab": 10,
+        "armor_bash": 7,
+        "armor_cut": 3,
+        "armor_stab": 2,
         "death_function": ["NORMAL"],
-        "flags": ["SEES", "HEARS", "SMELLS", "NO_BREATHE", "CLIMBS", "BASHES", "POISON",  "PUSH_MON"]
-    },
-    {
+        "flags": ["SEES", "HEARS", "SMELLS", "NO_BREATHE", "CLIMBS", "BASHES", "POISON", "PUSH_MON"]
+    }, {
         "id": "mon_insect_saddler_scout",
         "type": "MONSTER",
         "name": "saddler scout",
@@ -183,7 +171,7 @@
         "default_faction": "saddler",
         "species": ["INSECT"],
         "volume": "4750 ml",
-  	  "weight": 4750,
+        "weight": 4750,
         "harvest": "meatslug",
         "hp": 30,
         "speed": 110,
@@ -191,34 +179,25 @@
         "symbol": "h",
         "anger_triggers": ["FRIEND_ATTACKED", "FRIEND_DIED"],
         "placate_triggers": ["MEAT"],
-        "color": "red_green",
+        "color": "red",
         "aggression": 50,
         "morale": 25,
         "melee_skill": 4,
         "melee_dice": 1,
         "melee_dice_sides": 2,
         "melee_cut": 3,
-        "dodge": 4,
-        "special_attacks": [
-            {
-                "type": "spell",
-                "spell_id": "mon_insect_saddler_scout_cbile",
-                "cooldown": 18,
-                "monster_message": "<color_red>The saddler scout coats the ground in corrosive acid!</color>"
-            }
-        ],
+        "dodge": 5,
         "vision_day": 15,
         "armor_bash": 1,
         "death_function": ["NORMAL"],
         "flags": ["SEES", "HEARS", "SMELLS", "NO_BREATHE", "CLIMBS", "BASHES", "POISON"]
-    },
-    {
+    }, {
         "id": "mon_saddler_infected",
         "type": "MONSTER",
         "name": "infected saddler",
         "description": "Once human, now a stout vessel succumbed to the parasitic fiend. Its entire head has been 'eaten' under the slit of the saddler, while its hands has turned into viscious sharp claws. It moans in agony, and somewhat deep, inaudible mumbling voice is heard while near it.",
         "default_faction": "saddler",
-        "species": ["HUMAN", "INSECT"],
+        "species": ["HUMAN"],
         "volume": "62500 ml",
         "weight": 81500,
         "hp": 180,
@@ -234,27 +213,29 @@
         "melee_dice_sides": 6,
         "melee_cut": 6,
         "dodge": 1,
+        "armor_bash": 7,
+        "armor_cut": 4,
+        "armor_stab": 5,
         "special_attacks": [{
                 "type": "bite",
                 "cooldown": 25
             },
             ["GRAB", 40],
-            ["scratch", 32]
+            ["scratch", 32], ["PARROT", 22]
         ],
         "death_drops": {
-      "subtype": "collection",
-      "groups": [ "default_zombie_death_drops", "mon_insect_saddler_death_drop" ]
-    },
+            "subtype": "collection",
+            "groups": ["default_zombie_death_drops", "mon_insect_saddler_death_drop"]
+        },
         "death_function": ["NORMAL"],
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS"]
-    },
-    {
+    }, {
         "id": "mon_saddler_infected_brute",
         "type": "MONSTER",
         "name": "infected brute",
-        "description": "A humped human fallen under control to the brutal saddler. Its defiled claws reek with blood, hinting its sudden alteration that caused minor drawbacks.",
+        "description": "A humped human fallen under control to the brutal saddler. Its defiled claws reek with blood, hinting its sudden alteration caused minor drawbacks visible to its thickened skin layers.",
         "default_faction": "saddler",
-        "species": ["HUMAN", "INSECT"],
+        "species": ["HUMAN"],
         "volume": "62500 ml",
         "weight": 81500,
         "hp": 220,
@@ -269,27 +250,29 @@
         "melee_dice": 4,
         "melee_dice_sides": 4,
         "melee_cut": 4,
+        "armor_bash": 18,
+        "armor_cut": 13,
+        "armor_stab": 10,
         "special_attacks": [{
                 "type": "bite",
                 "cooldown": 25
             },
             ["GRAB", 40],
-            ["scratch", 32]
+            ["scratch", 32], ["PARROT", 22]
         ],
         "death_drops": {
-      "subtype": "collection",
-      "groups": [ "default_zombie_death_drops", "mon_insect_saddler_brute_death_drop" ]
-    },
+            "subtype": "collection",
+            "groups": ["default_zombie_death_drops", "mon_insect_saddler_brute_death_drop"]
+        },
         "death_function": ["NORMAL"],
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS"]
-    },
-    {
+    }, {
         "id": "mon_saddler_infected_scout",
         "type": "MONSTER",
         "name": "infected scout",
         "description": "An infected human with a slender and seemingly flexible body, with claws curved into horrifying pairs of sharp slashers. Yet deadly, its alteration causes the host's flesh and internal organs to become dense, which made its vital extremeties much fragile.",
         "default_faction": "saddler",
-        "species": ["HUMAN", "INSECT"],
+        "species": ["HUMAN"],
         "volume": "62500 ml",
         "weight": 81500,
         "hp": 80,
@@ -304,7 +287,127 @@
         "melee_dice": 1,
         "melee_dice_sides": 3,
         "melee_cut": 8,
-        "dodge": 3,
+        "dodge": 5,
+        "armor_bash": 3,
+        "armor_cut": 2,
+        "armor_stab": 1,
+        "special_attacks": [{
+                "type": "bite",
+                "cooldown": 25
+            },
+            ["GRAB", 40],
+            ["scratch", 32], ["PARROT", 22]
+        ],
+        "death_drops": {
+            "subtype": "collection",
+            "groups": ["default_zombie_death_drops", "mon_insect_saddler_scout_death_drop"]
+        },
+        "death_function": ["NORMAL"],
+        "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS"]
+    }, {
+        "id": "mon_zombie_saddler_infected",
+        "type": "MONSTER",
+        "name": "zombie saddler",
+        "description": "A corpse with large, skinny head dripping in black goo and pairs of intimidating sharp claws. Unknown to how the saddler managed to manipulate this undead's mind, but surely its senses are duller and the body alterations were amplified unlike the living's.",
+        "default_faction": "saddler",
+        "species": ["ZOMBIE"],
+        "volume": "62500 ml",
+        "weight": 81500,
+        "hp": 125,
+        "harvest": "zombie",
+        "speed": 55,
+        "material": ["flesh"],
+        "symbol": "Z",
+        "color": "green",
+        "aggression": 50,
+        "morale": 50,
+        "melee_skill": 4,
+        "melee_dice": 1,
+        "melee_dice_sides": 4,
+        "melee_cut": 4,
+        "dodge": 1,
+        "armor_bash": 12,
+        "armor_cut": 8,
+        "armor_stab": 6,
+        "special_attacks": [{
+                "type": "bite",
+                "cooldown": 25
+            },
+            ["GRAB", 40],
+            ["scratch", 32]
+        ],
+        "vision_day": 10,
+        "vision_night": 2,
+        "death_drops": {
+            "subtype": "collection",
+            "groups": ["default_zombie_death_drops", "mon_insect_saddler_death_drop"]
+        },
+        "death_function": ["NORMAL"],
+        "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS"]
+    }, {
+        "id": "mon_zombie_saddler_infected_brute",
+        "type": "MONSTER",
+        "name": "zombie brute",
+        "description": "A rugged zombie with a large saddler head and hands turned into bony claws. Its body can take a number of blows, but the stiffness of its skin made its movements look like it was crippled.",
+        "default_faction": "saddler",
+        "species": ["ZOMBIE"],
+        "volume": "62500 ml",
+        "weight": 81500,
+        "hp": 170,
+        "harvest": "zombie",
+        "speed": 45,
+        "material": ["flesh"],
+        "symbol": "Z",
+        "color": "dark_gray",
+        "aggression": 50,
+        "morale": 50,
+        "melee_skill": 6,
+        "melee_dice": 3,
+        "melee_dice_sides": 3,
+        "melee_cut": 2,
+        "armor_bash": 16,
+        "armor_cut": 13,
+        "armor_stab": 9,
+        "special_attacks": [{
+                "type": "bite",
+                "cooldown": 25
+            },
+            ["GRAB", 40],
+            ["scratch", 32]
+        ],
+        "vision_day": 10,
+        "vision_night": 2,
+        "death_drops": {
+            "subtype": "collection",
+            "groups": ["default_zombie_death_drops", "mon_insect_saddler_brute_death_drop"]
+        },
+        "death_function": ["NORMAL"],
+        "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS"]
+    }, {
+        "id": "mon_zombie_saddler_infected_scout",
+        "type": "MONSTER",
+        "name": "zombie scout",
+        "description": "A slim corpse with a slender saddler as its head and arms twice the average length, tipped with viciously sharp claws. Despite its thin, fragile body, it's nimble motion outpaces most of its target.",
+        "default_faction": "saddler",
+        "species": ["ZOMBIE"],
+        "volume": "62500 ml",
+        "weight": 81500,
+        "hp": 55,
+        "harvest": "zombie",
+        "speed": 100,
+        "material": ["flesh"],
+        "symbol": "Z",
+        "color": "red",
+        "aggression": 50,
+        "morale": 50,
+        "melee_skill": 6,
+        "melee_dice": 1,
+        "melee_dice_sides": 2,
+        "melee_cut": 6,
+        "dodge": 4,
+        "armor_bash": 3,
+        "armor_cut": 1,
+        "armor_stab": 1,
         "special_attacks": [{
                 "type": "bite",
                 "cooldown": 25
@@ -313,9 +416,9 @@
             ["scratch", 32]
         ],
         "death_drops": {
-      "subtype": "collection",
-      "groups": [ "default_zombie_death_drops", "mon_insect_saddler_scout_death_drop" ]
-    },
+            "subtype": "collection",
+            "groups": ["default_zombie_death_drops", "mon_insect_saddler_scout_death_drop"]
+        },
         "death_function": ["NORMAL"],
         "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS"]
     }
