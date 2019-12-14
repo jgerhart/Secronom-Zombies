@@ -163,7 +163,6 @@
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 2,
                 "monster_spawn_group": "GROUP_VECTOR_SEEDLING",
-                "effect_min_duration": 30,
                 "translucency": 10,
                 "effects": [
           {
@@ -193,11 +192,14 @@
         "type": "field_type",
         "intensity_levels": [{
                 "name": "resonant voice",
-                "inside_immune": false,
-                "effect_id": "secro_dissed",
-                "effect_body_part": "HEAD",
-                "effect_min_duration": 4,
-                "effect_max_duration": 4
+                "effects": [
+          {
+            "effect_id": "secro_dissed",
+            "body_part": "HEAD",
+            "min_duration": "4 seconds",
+            "max_duration": "4 seconds"
+          }
+        ]
             }
         ],
         "priority": -1,
@@ -279,10 +281,14 @@
         "name": "loathful pressence",
         "sym": "0",
         "dangerous": true,
-        "effect_id": "secro_nix_fear",
-        "effect_body_part": "HEAD",
-        "effect_min_duration": "1 seconds",
-        "effect_max_duration": "2 seconds"
+        "effects": [
+          {
+            "effect_id": "secro_nix_fear",
+            "body_part": "HEAD",
+            "min_duration": "1 seconds",
+            "max_duration": "2 seconds"
+          }
+        ]
       }
     ],
     "priority": -1,
@@ -306,13 +312,14 @@
         "sym": "o",
         "color": "pink",
         "dangerous": true,
-        "effect_id": "secro_gorepit_dmg_immune",
-        "effect_body_part": "TORSO",
-        "effect_min_duration": "1 seconds",
-        "effect_max_duration": "1 seconds",
-                "chance_in_vehicle": 1,
-                "chance_inside_vehicle": 1,
-                "chance_outside_vehicle": 1
+                "effects": [
+          {
+            "effect_id": "secro_gorepit_dmg_immune",
+            "body_part": "TORSO",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
       }
     ],
     "dirty_transparency_cache": true,
@@ -331,13 +338,14 @@
         "sym": "#",
         "dangerous": true,
         "color": "red",
-        "effect_id": "secro_gorepit_wall_dmg",
-        "effect_body_part": "LEG_R",
-        "effect_min_duration": "1 seconds",
-        "effect_max_duration": "1 seconds",
-                "chance_in_vehicle": 1,
-                "chance_inside_vehicle": 1,
-                "chance_outside_vehicle": 1
+                "effects": [
+          {
+            "effect_id": "secro_gorepit_wall_dmg",
+            "body_part": "LEG_R",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
       }
     ],
     "immunity_data": { "body_part_env_resistance": [ [ "LEG_L", 25 ], [ "LEG_R", 25 ] ] },
@@ -388,12 +396,24 @@
     "id": "fd_cordev_corrupt_acid",
     "type": "field_type",
     "intensity_levels": [
-      { "name": "corrupted acid splatter", "sym": "5", "color": "dark_gray", "dangerous": true, "effect_id": "secro_cordev_corrupt",
-        "effect_body_part": "LEG_R",
-        "effect_min_duration": "1 seconds",
-        "effect_max_duration": "1 seconds" },
+      { "name": "corrupted acid splatter", "sym": "5", "color": "dark_gray", "dangerous": true,
+"effects": [
+          {
+            "effect_id": "secro_cordev_corrupt",
+            "body_part": "LEG_R",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ] },
       { "name": "corrupted acid streak" },
-      { "name": "pool of corrupted acid", "color": "gray", "effect_max_duration": "2 seconds" }
+      { "name": "pool of corrupted acid", "color": "gray", "effects": [
+          {
+            "effect_id": "secro_cordev_corrupt",
+            "body_part": "LEG_R",
+            "min_duration": "1 seconds",
+            "max_duration": "2 seconds"
+          }
+        ] }
     ],
     "immunity_data": { "traits": [ "ACIDPROOF" ] },
     "underwater_age_speedup": "2 minutes",
@@ -407,13 +427,33 @@
     "id": "fd_necros_para_gas",
     "type": "field_type",
     "intensity_levels": [
-      { "name": "hazy cloud", "sym": "8", "dangerous": true, "translucency": 1, "effect_id": "secro_necros_para", "effect_body_part": "TORSO",
-        "effect_min_duration": "1 seconds",
-        "effect_max_duration": "5 seconds" },
-      { "name": "neurotoxic gas", "color": "light_green", "transparent": false, "translucency": 10, "effect_min_duration": "6 seconds",
-        "effect_max_duration": "10 seconds" },
-      { "name": "thick neurotoxic gas", "color": "green", "translucency": 0, "effect_min_duration": "11 seconds",
-        "effect_max_duration": "20 seconds" }
+      { "name": "hazy cloud", "sym": "8", "dangerous": true, "translucency": 1,
+"effects": [
+          {
+            "effect_id": "secro_necros_para",
+            "body_part": "TORSO",
+            "min_duration": "1 seconds",
+            "max_duration": "5 seconds"
+          }
+        ] },
+      { "name": "neurotoxic gas", "color": "light_green", "transparent": false, "translucency": 10,
+"effects": [
+          {
+            "effect_id": "secro_necros_para",
+            "body_part": "TORSO",
+            "min_duration": "6 seconds",
+            "max_duration": "10 seconds"
+          }
+        ] },
+      { "name": "thick neurotoxic gas", "color": "green", "translucency": 0,
+"effects": [
+          {
+            "effect_id": "secro_necros_para",
+            "body_part": "TORSO",
+            "min_duration": "11 seconds",
+            "max_duration": "20 seconds"
+          }
+        ] }
     ],
     "decay_amount_factor": 5,
     "gas_absorption_factor": 15,
@@ -468,10 +508,14 @@
 		"name": "...",
 		"//": "Reading the name in-game is a bug.",
 		"color": "black",
-        "effect_id": "stunned",
-        "effect_body_part": "TORSO",
-        "effect_min_duration": "3 seconds",
-        "effect_max_duration": "6 seconds"
+        "effects": [
+          {
+            "effect_id": "stunned",
+            "body_part": "TORSO",
+            "min_duration": "3 seconds",
+            "max_duration": "6 seconds"
+          }
+        ]
       }
     ],
     "priority": -1,
@@ -484,12 +528,31 @@
     "//": "This web doesn't break when a creature moves through it.",
     "id": "fd_mawy_web",
     "type": "field_type",
-    "intensity_levels": [ { "name": "flesh strands", "sym": "}", "color": "pink", "effect_id": "secro_mawy_web",
-        "effect_body_part": "TORSO",
-        "effect_min_duration": "5 seconds",
-        "effect_max_duration": "10 seconds" }, { "name": "flesh webs", "color": "light_red","effect_min_duration": "10 seconds",
-        "effect_max_duration": "20 seconds" }, { "name": "thick flesh webs", "transparent": false, "color": "red", "effect_min_duration": "20 seconds",
-        "effect_max_duration": "40 seconds" } ],
+    "intensity_levels": [ { "name": "flesh strands", "sym": "}", "color": "pink",
+"effects": [
+          {
+            "effect_id": "secro_mawy_web",
+            "body_part": "TORSO",
+            "min_duration": "5 seconds",
+            "max_duration": "10 seconds"
+          }
+        ] }, { "name": "flesh webs", "color": "light_red",
+"effects": [
+          {
+            "effect_id": "secro_mawy_web",
+            "body_part": "TORSO",
+            "min_duration": "10 seconds",
+            "max_duration": "20 seconds"
+          }
+        ] }, { "name": "thick flesh webs", "transparent": false, "color": "red",
+"effects": [
+          {
+            "effect_id": "secro_mawy_web",
+            "body_part": "TORSO",
+            "min_duration": "20 seconds",
+            "max_duration": "40 seconds"
+          }
+        ] } ],
     "priority": 2,
     "half_life": "3 seconds",
     "phase": "solid",
@@ -503,13 +566,14 @@
       {
         "name": "...",
         "color": "black",
-        "effect_id": "secro_mawy_web_immune",
-        "effect_body_part": "TORSO",
-        "effect_min_duration": "1 seconds",
-        "effect_max_duration": "1 seconds",
-                "chance_in_vehicle": 1,
-                "chance_inside_vehicle": 1,
-                "chance_outside_vehicle": 1
+                "effects": [
+          {
+            "effect_id": "secro_mawy_web_immune",
+            "body_part": "TORSO",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
       }
     ],
     "priority": -1,
@@ -525,13 +589,14 @@
       {
         "name": "...",
         "color": "black",
-        "effect_id": "secro_revenant_trigger_immune",
-        "effect_body_part": "TORSO",
-        "effect_min_duration": "1 seconds",
-        "effect_max_duration": "1 seconds",
-                "chance_in_vehicle": 1,
-                "chance_inside_vehicle": 1,
-                "chance_outside_vehicle": 1
+                "effects": [
+          {
+            "effect_id": "secro_revenant_trigger_immune",
+            "body_part": "TORSO",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
       }
     ],
     "priority": -1,
@@ -547,13 +612,14 @@
       {
         "name": "...",
         "color": "black",
-        "effect_id": "secro_revenant_allure_induce_immune",
-        "effect_body_part": "TORSO",
-        "effect_min_duration": "1 seconds",
-        "effect_max_duration": "1 seconds",
-                "chance_in_vehicle": 1,
-                "chance_inside_vehicle": 1,
-                "chance_outside_vehicle": 1
+                "effects": [
+          {
+            "effect_id": "secro_revenant_allure_induce_immune",
+            "body_part": "TORSO",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
       }
     ],
     "priority": -1,
@@ -567,16 +633,42 @@
     "id": "fd_fleshknot_gas",
     "type": "field_type",
     "intensity_levels": [
-      { "name": "errant stench", "color": "dark_gray", "translucency": 1, "effect_id": "secro_fleshknot_poison",
-        "effect_body_part": "TORSO",
-        "effect_min_duration": "1 seconds",
-        "effect_max_duration": "3 seconds" },
-      { "name": "toxic stench", "color": "light_green", "translucency": 3, "effect_min_duration": "5 seconds",
-        "effect_max_duration": "10 seconds" },
-      { "name": "dense toxic stench", "color": "light_green", "translucency": 10,"effect_min_duration": "15 seconds",
-        "effect_max_duration": "30 seconds" },
-        { "name": "noxious stench", "color": "green", "translucency": 0,"effect_min_duration": "60 seconds",
-        "effect_max_duration": "90 seconds" }
+      { "name": "errant stench", "color": "dark_gray", "translucency": 1,
+"effects": [
+          {
+            "effect_id": "secro_fleshknot_poison",
+            "body_part": "TORSO",
+            "min_duration": "1 seconds",
+            "max_duration": "3 seconds"
+          }
+        ] },
+      { "name": "toxic stench", "color": "light_green", "translucency": 3,
+"effects": [
+          {
+            "effect_id": "secro_fleshknot_poison",
+            "body_part": "TORSO",
+            "min_duration": "5 seconds",
+            "max_duration": "10 seconds"
+          }
+        ] },
+      { "name": "dense toxic stench", "color": "light_green", "translucency": 10,
+"effects": [
+          {
+            "effect_id": "secro_fleshknot_poison",
+            "body_part": "TORSO",
+            "min_duration": "15 seconds",
+            "max_duration": "30 seconds"
+          }
+        ] },
+        { "name": "noxious stench", "color": "green", "translucency": 0,
+"effects": [
+          {
+            "effect_id": "secro_fleshknot_poison",
+            "body_part": "TORSO",
+            "min_duration": "60 seconds",
+            "max_duration": "90 seconds"
+          }
+        ] }
     ],
     "decay_amount_factor": 80,
     "gas_absorption_factor": 5,
@@ -597,7 +689,7 @@
         "type": "field_type",
         "intensity_levels": [{
                 "name": "...",
-                "color": "red",
+                "color": "black",
                 "monster_spawn_chance": 1,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
@@ -615,7 +707,7 @@
         "type": "field_type",
         "intensity_levels": [{
                 "name": "...",
-                "color": "red",
+                "color": "black",
                 "monster_spawn_chance": 1,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
@@ -633,7 +725,7 @@
         "type": "field_type",
         "intensity_levels": [{
                 "name": "...",
-                "color": "red",
+                "color": "black",
                 "monster_spawn_chance": 1,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
@@ -646,6 +738,48 @@
         "display_items": true,
         "display_field": false
     },
+    {
+    	"//": "Similar thing from above...",
+        "id": "fd_relinquished_revive",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "...",
+                "color": "black",
+                "monster_spawn_chance": 1,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_RELINQUISH_REVIVE"
+            }
+        ],
+        "priority": -1,
+        "half_life": "1 turns",
+        "phase": "gas",
+        "display_items": true,
+        "display_field": false
+    },
+    {
+    "id": "fd_resolute_growth",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+                "effects": [
+          {
+            "effect_id": "secro_resolute_grow",
+            "body_part": "TORSO",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
+      }
+    ],
+    "priority": -1,
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": false,
+    "display_field": false
+  },
   
   {
     "//": "Immunity fields designed for all creatures.",
@@ -655,13 +789,14 @@
       {
         "name": "...",
         "color": "black",
-        "effect_id": "secro_down_immune",
-        "effect_body_part": "TORSO",
-        "effect_min_duration": "1 seconds",
-        "effect_max_duration": "1 seconds",
-                "chance_in_vehicle": 1,
-                "chance_inside_vehicle": 1,
-                "chance_outside_vehicle": 1
+                "effects": [
+          {
+            "effect_id": "secro_down_immune",
+            "body_part": "TORSO",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
       }
     ],
     "priority": -1,
