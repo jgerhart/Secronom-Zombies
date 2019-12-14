@@ -49,7 +49,7 @@
         "spawns": {
             "group": "GROUP_SADDLER",
             "population": [100, 200],
-            "radius": [1, 3]
+            "radius": [2, 5]
         },
         "overmaps": [{
                 "overmap": "saddler_cave_entrance_3_north",
