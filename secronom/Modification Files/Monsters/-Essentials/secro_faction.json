@@ -38,5 +38,8 @@
     }, {
         "type": "MONSTER_FACTION",
         "name": "vector"
+    }, {
+        "type": "MONSTER_FACTION",
+        "name": "secro_flesh"
     }
 ]
