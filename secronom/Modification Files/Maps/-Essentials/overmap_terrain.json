@@ -54,6 +54,11 @@
         "sym": ".",
         "color": "brown",
         "see_cost": 2,
+        "spawns": {
+            "group": "GROUP_SADDLER_ENTRANCE",
+            "population": [5, 25],
+            "chance": 100
+        },
         "extras": "build"
     }, {
         "id": "saddler_cave_entrance_2",
@@ -62,6 +67,11 @@
         "sym": ".",
         "color": "brown",
         "see_cost": 2,
+        "spawns": {
+            "group": "GROUP_SADDLER_ENTRANCE",
+            "population": [5, 25],
+            "chance": 100
+        },
         "extras": "build"
     }, {
         "id": "saddler_cave_entrance_3",
@@ -70,6 +80,11 @@
         "sym": ".",
         "color": "brown",
         "see_cost": 2,
+        "spawns": {
+            "group": "GROUP_SADDLER_ENTRANCE",
+            "population": [5, 25],
+            "chance": 100
+        },
         "extras": "build"
     }, {
         "id": "saddler_cave_entrance_4",
@@ -78,6 +93,11 @@
         "sym": ".",
         "color": "brown",
         "see_cost": 2,
+        "spawns": {
+            "group": "GROUP_SADDLER_ENTRANCE",
+            "population": [5, 25],
+            "chance": 100
+        },
         "extras": "build"
     }, {
         "id": "saddler_cave_entrance_5",
@@ -88,7 +108,7 @@
         "see_cost": 2,
         "spawns": {
             "group": "GROUP_SADDLER_ENTRANCE",
-            "population": [25, 50],
+            "population": [5, 25],
             "chance": 100
         },
         "extras": "build"
@@ -99,6 +119,11 @@
         "sym": ".",
         "color": "brown",
         "see_cost": 2,
+        "spawns": {
+            "group": "GROUP_SADDLER_ENTRANCE",
+            "population": [5, 25],
+            "chance": 100
+        },
         "extras": "build"
     }, {
         "id": "saddler_cave_entrance_7",
@@ -107,6 +132,11 @@
         "sym": ".",
         "color": "brown",
         "see_cost": 2,
+        "spawns": {
+            "group": "GROUP_SADDLER_ENTRANCE",
+            "population": [5, 25],
+            "chance": 100
+        },
         "extras": "build"
     }, {
         "id": "saddler_cave_entrance_8",
@@ -115,6 +145,11 @@
         "sym": ".",
         "color": "brown",
         "see_cost": 2,
+        "spawns": {
+            "group": "GROUP_SADDLER_ENTRANCE",
+            "population": [5, 25],
+            "chance": 100
+        },
         "extras": "build"
     }, {
         "id": "saddler_cave_entrance_9",
@@ -123,6 +158,11 @@
         "sym": ".",
         "color": "brown",
         "see_cost": 2,
+        "spawns": {
+            "group": "GROUP_SADDLER_ENTRANCE",
+            "population": [5, 25],
+            "chance": 100
+        },
         "extras": "build"
     }, {
         "id": "saddler_cave_up",
@@ -195,5 +235,69 @@
         "color": "dark_gray_red",
         "copy-from": "generic_city_building_no_sidewalk",
         "flags": ["KNOWN_UP", "NO_ROTATE", "GENERIC_LOOT"]
+    },
+	{
+        "id": "flesh_forest_1",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "id": "flesh_forest_2",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "id": "flesh_forest_3",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "id": "flesh_forest_4",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "id": "flesh_forest_5",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "light_red",
+        "see_cost": 10
+    }, {
+        "id": "flesh_forest_6",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "id": "flesh_forest_7",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "id": "flesh_forest_8",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "id": "flesh_forest_9",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
     }
 ]
