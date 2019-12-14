@@ -1,189 +1,193 @@
 [{
-    "type": "terrain",
-    "id": "t_secro_flat_roof_flesh",
-    "name": "fleshed flat roof",
-    "description": "A flat, rooftop, covered in gorey flesh.",
-    "symbol": ".",
-    "color": "dark_red",
-    "//": "Flesh version of terrains has +3 move cost.",
-    "move_cost": 5,
-    "flags": [ "TRANSPARENT", "FLAT", "S_FLESH" ],
-    "bash": {
-      "//": "Flesh terrains' str_min and _max has +5 bash resistance.",
-      "str_min": 35,
-      "str_max": 215,
-      "sound": "crash!",
-      "sound_fail": "splats!",
-      "//": "Flesh terrains goes back to normal upon destruction.",
-      "ter_set": "t_flat_roof"
-    }
-  },
-    {
-    "type": "terrain",
-    "id": "t_secro_wall_flesh",
-    "name": "fleshed wall",
-    "description": "A typical wall, now covered in membranous veins, flesh and swollen warts of some sort.",
-    "symbol": "LINE_OXOX",
-    "color": "red",
-    "move_cost": 0,
-    "coverage": 100,
-    "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "WALL", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND", "S_FLESH" ],
-    "bash": {
-      "str_min": 35,
-      "str_max": 215,
-      "sound": "crash!",
-      "sound_fail": "splat!",
-      "ter_set": "t_null",
-      "items": "wall_bash_results"
-    }
-  },
-  {
-    "type": "terrain",
-    "id": "t_secro_window_flesh",
-    "name": "fleshed window",
-    "description": "Webs of vein blocks the entirety of the glass, making it useless to see through unless you break it.",
-    "symbol": "\"",
-    "color": "light_red",
-    "move_cost": 0,
-    "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "FLAMMABLE", "NOITEM", "REDUCE_SCENT", "BARRICADABLE_WINDOW", "CONNECT_TO_WALL", "BLOCK_WIND", "S_FLESH" ],
-    "bash": {
-      "str_min": 8,
-      "str_max": 11,
-      "sound": "glass breaking!",
-      "sound_fail": "splat!",
-      "sound_vol": 16,
-      "sound_fail_vol": 10,
-      "ter_set": "t_secro_window_frame_flesh",
-      "items": [ { "item": "glass_shard", "count": [ 34, 50 ] } ]
-    }
-  },
-  {
-    "type": "terrain",
-    "id": "t_secro_window_frame_flesh",
-    "name": "fleshed window frame",
-    "description": "A window frame, splattered with blood and ripped veins in its jagged shards of glass.",
-    "symbol": "0",
-    "color": "light_red",
-    "move_cost": 11,
-    "coverage": 60,
-    "roof": "t_secro_flat_roof_flesh",
-    "bash": {
-      "str_min": 1,
-      "str_max": 1,
-      "sound": "glass crunching!",
-      "sound_fail": "splat!",
-      "sound_vol": 12,
-      "sound_fail_vol": 8,
-      "ter_set": "t_window_empty",
-      "items": [ { "item": "glass_shard", "count": [ 6, 10 ] } ]
-    },
-    "flags": [ "TRANSPARENT", "SHARP", "FLAMMABLE", "NOITEM", "MOUNTABLE", "CONNECT_TO_WALL", "SMALL_PASSAGE", "S_FLESH" ]
-  },
-  {
-    "type": "terrain",
-    "id": "t_secro_door_flesh",
-    "name": "fleshed wood door",
-    "description": "A standard door that is covered in thick, fleshy veins.",
-    "symbol": "+",
-    "color": "red",
-    "move_cost": 0,
-    "coverage": 95,
-    "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "FLAMMABLE_ASH", "DOOR", "NOITEM", "BARRICADABLE_DOOR", "CONNECT_TO_WALL", "BLOCK_WIND", "S_FLESH" ],
-    "bash": {
-      "str_min": 13,
-      "str_max": 85,
-      "str_min_blocked": 25,
-      "str_max_blocked": 110,
-      "sound": "splat!",
-      "sound_fail": "splat!",
-      "ter_set": "t_door_c"
-    }
-  },
-  {
-    "type": "terrain",
-    "id": "t_secro_door_flesh_locked",
-    "name": "fleshed wood door",
-    "description": "A standard door that is covered in thick, fleshy veins. You can barely see a deadbolt keyhole, though you can't do anything without removing all the gore sticking into it.",
-    "symbol": "+",
-    "color": "red",
-    "move_cost": 0,
-    "coverage": 95,
-    "roof": "t_secro_flat_roof_flesh",
-    "flags": [
-      "FLAMMABLE_ASH",
-      "NOITEM",
-      "OPENCLOSE_INSIDE",
-      "REDUCE_SCENT",
-      "CONNECT_TO_WALL",
-      "BARRICADABLE_DOOR",
-      "BLOCK_WIND", "S_FLESH"
-    ],
-    "bash": {
-      "str_min": 13,
-      "str_max": 85,
-      "str_min_blocked": 25,
-      "str_max_blocked": 110,
-      "sound": "smash!",
-      "sound_fail": "splat!",
-      "ter_set": "t_door_locked"
-    }
-  },
-  {
-    "type": "terrain",
-    "id": "t_secro_floor_flesh",
-    "name": "fleshed floor",
-    "description": "This floor has been infested by flesh strands, like roots digging deep in small gaps.",
-    "symbol": ".",
-    "color": "light_red",
-    "move_cost": 5,
-    "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "ROAD", "S_FLESH" ],
-    "bash": {
-      "sound": "SMASH!",
-      "ter_set": "t_floor",
-      "str_min": 55,
-      "str_max": 405,
-      "str_min_supported": 110
-    }
-  },
-  {
-    "type": "terrain",
-    "id": "t_secro_rock_floor_flesh",
-    "name": "fleshed rock floor",
-    "description": "Sticky webs of flesh strand reaches down from the ceiling into the floor.",
-    "symbol": ".",
-    "color": "red",
-    "move_cost": 5,
-    "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "INDOORS", "COLLAPSES", "SUPPORTS_ROOF", "FLAT", "ROAD", "S_FLESH" ],
-    "bash": { "ter_set": "t_rock_floor", "str_min": 80, "str_max": 405, "str_min_supported": 110, "bash_below": true }
-  },
-  {
-    "type": "terrain",
-    "id": "t_secro_stairs_down_flesh",
-    "name": "fleshed stairs",
-    "description": "A flight of stairs leading down, except the fact that it is overrun by flesh.",
-    "symbol": ">",
-    "color": "red",
-    "move_cost": 5,
-    "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "GOES_DOWN", "INDOORS", "PLACE_ITEM", "S_FLESH" ]
-  },
-  {
-    "type": "terrain",
-    "id": "t_secro_stairs_up_flesh",
-    "name": "fleshed stairs",
-    "description": "A flight of stairs leading up, except the fact that it is overrun by flesh.",
-    "symbol": "<",
-    "color": "red",
-    "move_cost": 5,
-    "flags": [ "TRANSPARENT", "GOES_UP", "INDOORS", "PLACE_ITEM", "S_FLESH" ]
-  },
-  {
-  	  "//": "Since terrains are not capable to act as emitters, we use an invincible, but flammable furniture for the solution.",
+        "type": "terrain",
+        "id": "t_secro_flat_roof_flesh",
+        "name": "fleshed flat roof",
+        "description": "A flat, rooftop, covered in gorey flesh.",
+        "symbol": ".",
+        "color": "dark_red",
+        "//": "Flesh version of terrains has +3 move cost.",
+        "move_cost": 5,
+        "flags": ["TRANSPARENT", "FLAT", "S_FLESH"],
+        "bash": {
+            "//": "Flesh terrains' str_min and _max has +5 bash resistance.",
+            "str_min": 35,
+            "str_max": 215,
+            "sound": "crash!",
+            "sound_fail": "splats!",
+            "//": "Flesh terrains goes back to normal upon destruction.",
+            "ter_set": "t_flat_roof"
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_wall_flesh",
+        "name": "fleshed wall",
+        "description": "A typical wall, now covered in membranous veins, flesh and swollen warts of some sort.",
+        "symbol": "LINE_OXOX",
+        "color": "red",
+        "move_cost": 0,
+        "coverage": 100,
+        "roof": "t_secro_flat_roof_flesh",
+        "flags": ["FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "WALL", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND", "S_FLESH"],
+        "bash": {
+            "str_min": 35,
+            "str_max": 215,
+            "sound": "crash!",
+            "sound_fail": "splat!",
+            "ter_set": "t_null",
+            "items": "wall_bash_results"
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_window_flesh",
+        "name": "fleshed window",
+        "description": "Webs of vein blocks the entirety of the glass, making it useless to see through unless you break it.",
+        "symbol": "\"",
+        "color": "light_red",
+        "move_cost": 0,
+        "roof": "t_secro_flat_roof_flesh",
+        "flags": ["FLAMMABLE", "NOITEM", "REDUCE_SCENT", "BARRICADABLE_WINDOW", "CONNECT_TO_WALL", "BLOCK_WIND", "S_FLESH"],
+        "bash": {
+            "str_min": 8,
+            "str_max": 11,
+            "sound": "glass breaking!",
+            "sound_fail": "splat!",
+            "sound_vol": 16,
+            "sound_fail_vol": 10,
+            "ter_set": "t_secro_window_frame_flesh",
+            "items": [{
+                    "item": "glass_shard",
+                    "count": [34, 50]
+                }
+            ]
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_window_frame_flesh",
+        "name": "fleshed window frame",
+        "description": "A window frame, splattered with blood and ripped veins in its jagged shards of glass.",
+        "symbol": "0",
+        "color": "light_red",
+        "move_cost": 11,
+        "coverage": 60,
+        "roof": "t_secro_flat_roof_flesh",
+        "bash": {
+            "str_min": 1,
+            "str_max": 1,
+            "sound": "glass crunching!",
+            "sound_fail": "splat!",
+            "sound_vol": 12,
+            "sound_fail_vol": 8,
+            "ter_set": "t_window_empty",
+            "items": [{
+                    "item": "glass_shard",
+                    "count": [6, 10]
+                }
+            ]
+        },
+        "flags": ["TRANSPARENT", "SHARP", "FLAMMABLE", "NOITEM", "MOUNTABLE", "CONNECT_TO_WALL", "SMALL_PASSAGE", "S_FLESH"]
+    }, {
+        "type": "terrain",
+        "id": "t_secro_door_flesh",
+        "name": "fleshed wood door",
+        "description": "A standard door that is covered in thick, fleshy veins.",
+        "symbol": "+",
+        "color": "red",
+        "move_cost": 0,
+        "coverage": 95,
+        "roof": "t_secro_flat_roof_flesh",
+        "flags": ["FLAMMABLE_ASH", "DOOR", "NOITEM", "BARRICADABLE_DOOR", "CONNECT_TO_WALL", "BLOCK_WIND", "S_FLESH"],
+        "bash": {
+            "str_min": 13,
+            "str_max": 85,
+            "str_min_blocked": 25,
+            "str_max_blocked": 110,
+            "sound": "splat!",
+            "sound_fail": "splat!",
+            "ter_set": "t_door_c"
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_door_flesh_locked",
+        "name": "fleshed wood door",
+        "description": "A standard door that is covered in thick, fleshy veins. You can barely see a deadbolt keyhole, though you can't do anything without removing all the gore sticking into it.",
+        "symbol": "+",
+        "color": "red",
+        "move_cost": 0,
+        "coverage": 95,
+        "roof": "t_secro_flat_roof_flesh",
+        "flags": [
+            "FLAMMABLE_ASH",
+            "NOITEM",
+            "OPENCLOSE_INSIDE",
+            "REDUCE_SCENT",
+            "CONNECT_TO_WALL",
+            "BARRICADABLE_DOOR",
+            "BLOCK_WIND", "S_FLESH"
+        ],
+        "bash": {
+            "str_min": 13,
+            "str_max": 85,
+            "str_min_blocked": 25,
+            "str_max_blocked": 110,
+            "sound": "smash!",
+            "sound_fail": "splat!",
+            "ter_set": "t_door_locked"
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_floor_flesh",
+        "name": "fleshed floor",
+        "description": "This floor has been infested by flesh strands, like roots digging deep in small gaps.",
+        "symbol": ".",
+        "color": "light_red",
+        "move_cost": 5,
+        "roof": "t_secro_flat_roof_flesh",
+        "flags": ["TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "ROAD", "S_FLESH"],
+        "bash": {
+            "sound": "SMASH!",
+            "ter_set": "t_floor",
+            "str_min": 55,
+            "str_max": 405,
+            "str_min_supported": 110
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_rock_floor_flesh",
+        "name": "fleshed rock floor",
+        "description": "Sticky webs of flesh strand reaches down from the ceiling into the floor.",
+        "symbol": ".",
+        "color": "red",
+        "move_cost": 5,
+        "roof": "t_secro_flat_roof_flesh",
+        "flags": ["TRANSPARENT", "INDOORS", "COLLAPSES", "SUPPORTS_ROOF", "FLAT", "ROAD", "S_FLESH"],
+        "bash": {
+            "ter_set": "t_rock_floor",
+            "str_min": 80,
+            "str_max": 405,
+            "str_min_supported": 110,
+            "bash_below": true
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_stairs_down_flesh",
+        "name": "fleshed stairs",
+        "description": "A flight of stairs leading down, except the fact that it is overrun by flesh.",
+        "symbol": ">",
+        "color": "red",
+        "move_cost": 5,
+        "roof": "t_secro_flat_roof_flesh",
+        "flags": ["TRANSPARENT", "GOES_DOWN", "INDOORS", "PLACE_ITEM", "S_FLESH"]
+    }, {
+        "type": "terrain",
+        "id": "t_secro_stairs_up_flesh",
+        "name": "fleshed stairs",
+        "description": "A flight of stairs leading up, except the fact that it is overrun by flesh.",
+        "symbol": "<",
+        "color": "red",
+        "move_cost": 5,
+        "flags": ["TRANSPARENT", "GOES_UP", "INDOORS", "PLACE_ITEM", "S_FLESH"]
+    }, {
+        "//": "Since terrains are not capable to act as emitters, we use an invincible, but flammable furniture for the solution.",
         "type": "furniture",
         "id": "f_secro_fleshknot_emitter",
         "name": "flesh wart",
@@ -194,5 +198,272 @@
         "required_str": -1,
         "emissions": ["emit_fleshknot_gas_terrains"],
         "flags": ["TRANSPARENT", "FLAMMABLE", "NOCOLLIDE", "S_FLESH", "EMITTER"]
+    },
+    {
+        "//": "Starting here are the furnitures and terrains seen in flesh forest.",
+        "type": "terrain",
+        "id": "t_secro_dirt_flesh",
+        "name": "fleshed dirt",
+        "description": "It's dirt, but covered in bloody veins.",
+        "symbol": ".",
+        "color": "light_red",
+        "move_cost": 5,
+        "flags": ["TRANSPARENT", "FLAT", "S_FLESH"],
+        "bash": {
+            "sound": "thump",
+            "ter_set": "t_dirt",
+            "str_min": 55,
+            "str_max": 105,
+            "str_min_supported": 100,
+            "bash_below": true
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_grass_flesh",
+        "name": "fleshed grass",
+        "description": "A cluster of tiny tentacles used to be the wild patch of living grass.",
+        "symbol": ".",
+        "color": "red",
+        "move_cost": 5,
+        "flags": ["TRANSPARENT", "FLAT", "S_FLESH"],
+        "bash": {
+            "sound": "thump",
+            "ter_set": "t_grass",
+            "str_min": 45,
+            "str_max": 105,
+            "str_min_supported": 110,
+            "bash_below": true
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_grass_long_flesh",
+        "name": "fleshed long grass",
+        "description": "A cluster of long, writhing tendrils about shin high.",
+        "symbol": ",",
+        "color": "red",
+        "move_cost": 6,
+        "flags": ["TRANSPARENT", "FLAT", "S_FLESH"],
+        "bash": {
+            "sound": "thump",
+            "ter_set": "t_grass_long",
+            "str_min": 45,
+            "str_max": 105,
+            "str_min_supported": 110,
+            "bash_below": true
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_grass_tall_flesh",
+        "name": "fleshed tall grass",
+        "description": "A cluster of tall, writhing tendrils about head high.",
+        "symbol": "'",
+        "color": "red",
+        "move_cost": 8,
+        "coverage": 50,
+        "flags": ["TRANSPARENT", "FLAT", "S_FLESH"],
+        "bash": {
+            "sound": "thump",
+            "ter_set": "t_grass_tall",
+            "str_min": 45,
+            "str_max": 105,
+            "str_min_supported": 110,
+            "bash_below": true
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_shrub_flesh",
+        "name": "fleshed shrub",
+        "description": "A small shrub, now a dense tendril cluster.",
+        "symbol": "#",
+        "color": "red",
+        "move_cost": 8,
+        "coverage": 40,
+        "flags": ["TRANSPARENT", "CONTAINER", "FLAMMABLE_ASH", "THIN_OBSTACLE", "PLACE_ITEM", "SHRUB", "SHORT", "S_FLESH"],
+        "bash": {
+            "str_min": 9,
+            "str_max": 35,
+            "sound": "crunch.",
+            "sound_fail": "splat.",
+            "ter_set": "t_shrub"
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_tree_young_flesh",
+        "name": "fleshed young tree",
+        "description": "Devoured by the flesh, this young sapling has its twigs covered in membranous veins and blood-dripping gore as its leaves.",
+        "symbol": "1",
+        "color": ["red", "light_red", "red", "red"],
+        "move_cost": 7,
+        "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "NOITEM", "YOUNG", "REDUCE_SCENT", "S_FLESH"],
+        "bash": {
+            "str_min": 9,
+            "str_max": 55,
+            "sound": "crunch!",
+            "sound_fail": "splat!",
+            "ter_set": "t_tree_young"
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_tree_flesh",
+        "name": "fleshed tree",
+        "description": "A fully grown tree, standing tall even though its already been overwhelmed by the flesh.",
+        "symbol": "7",
+        "color": ["red", "light_red", "red", "red"],
+        "move_cost": 0,
+        "coverage": 80,
+        "flags": ["FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT", "S_FLESH"],
+        "bash": {
+            "str_min": 85,
+            "str_max": 185,
+            "sound": "crunch!",
+            "sound_fail": "splat!",
+            "ter_set": "t_tree"
+        }
+    }, {
+        "type": "furniture",
+        "id": "f_secro_flower_flesh",
+        "name": "fleshed flower",
+        "description": "This flower has fallen to the grasp of the crimson horrors.",
+        "symbol": "f",
+        "color": "red",
+        "move_cost_mod": 0,
+        "required_str": -1,
+        "flags": ["TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "FLOWER", "S_FLESH"],
+        "bash": {
+            "str_min": 7,
+            "str_max": 11,
+            "sound": "crunch.",
+            "sound_fail": "whish."
+        }
+    }, {
+        "type": "furniture",
+        "id": "f_secro_boulder_small_flesh",
+        "name": "fleshed small boulder",
+        "description": "A small rock that has succumbed to the flesh.",
+        "symbol": "o",
+        "color": "dark_gray",
+        "move_cost_mod": 3,
+        "coverage": 30,
+        "required_str": 10,
+        "crafting_pseudo_item": "boulder_anvil",
+        "flags": ["TRANSPARENT", "S_FLESH", "UNSTABLE", "MOUNTABLE", "TINY"],
+        "bash": {
+            "str_min": 21,
+            "str_max": 45,
+            "sound": "smash!",
+            "sound_fail": "splat.",
+            "ter_set": "f_boulder_small"
+        }
+    }, {
+        "type": "furniture",
+        "id": "f_secro_boulder_medium_flesh",
+        "name": "fleshed medium boulder",
+        "description": "A rock that has succumbed to the flesh.",
+        "symbol": "0",
+        "color": "dark_gray",
+        "move_cost_mod": 6,
+        "coverage": 45,
+        "required_str": 16,
+        "crafting_pseudo_item": "boulder_anvil",
+        "flags": ["NOITEM", "TRANSPARENT", "S_FLESH", "UNSTABLE", "MOUNTABLE", "SHORT", "BASHABLE"],
+        "bash": {
+            "str_min": 37,
+            "str_max": 85,
+            "sound": "smash!",
+            "sound_fail": "splat.",
+            "ter_set": "f_boulder_medium"
+        }
+    }, {
+        "type": "furniture",
+        "id": "f_secro_boulder_large_flesh",
+        "name": "fleshed large boulder",
+        "description": "A large rock that has succumbed to the flesh.",
+        "symbol": "O",
+        "color": "dark_gray",
+        "move_cost_mod": -1,
+        "coverage": 65,
+        "required_str": 32,
+        "flags": ["NOITEM", "S_FLESH", "BASHABLE", "BLOCK_WIND"],
+        "bash": {
+            "str_min": 69,
+            "str_max": 165,
+            "sound": "smash!",
+            "sound_fail": "splat.",
+            "ter_set": "f_boulder_large"
+        }
+    },
+    {
+        "//": "Flesh forest's terrestrial body parts. Here we encounter LOTS of FF's abominations.",
+        "type": "terrain",
+        "id": "t_secro_flesh",
+        "name": "flesh",
+        "description": "It's flesh, no doubt about it.",
+        "symbol": ".",
+        "color": "red",
+        "move_cost": 5,
+        "flags": ["TRANSPARENT", "FLAT", "S_FLESH"]
+    }, {
+        "type": "terrain",
+        "id": "t_secro_flesh_wall",
+        "name": "flesh wall",
+        "description": "It's a wall of flesh, no doubt about it.",
+        "symbol": ".",
+        "color": "red",
+        "move_cost": 5,
+        "flags": ["NOITEM", "SUPPORTS_ROOF", "WALL", "AUTO_WALL_SYMBOL", "S_FLESH", "BLOCK_WIND"]
+    }, {
+        "type": "furniture",
+        "id": "f_secro_tree_flesh_atk",
+        "name": "fleshed tree",
+        "description": "A fully grown tree, standing tall even though its already been overwhelmed by the flesh. Within a closer look, its branches and stems seem to move independently.",
+        "symbol": "7",
+        "color": ["red", "light_red", "red", "red"],
+        "move_cost_mod": -1,
+		"required_str": -1,
+        "coverage": 80,
+        "flags": ["FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT", "S_FLESH"],
+        "bash": {
+            "str_min": 85,
+            "str_max": 185,
+            "sound": "crunch!",
+            "sound_fail": "splat!",
+            "ter_set": "t_tree"
+        }
+    }, {
+        "type": "furniture",
+        "id": "f_secro_flesh_tendril_spawner",
+        "name": "eye sprout",
+        "description": "An eyeball reemerging back and forth from the ground, constantly peeking at the vicinity. You might want to poke it.",
+        "symbol": "o",
+        "color": "light_red",
+        "move_cost_mod": 1,
+        "required_str": -1,
+        "emissions": ["emit_fleshknot_gas_terrains"],
+        "flags": ["TRANSPARENT", "FLAMMABLE", "S_FLESH", "EMITTER"],
+		"bash": {
+            "str_min": 2,
+            "str_max": 5,
+            "sound": "splook!",
+            "sound_fail": "splat!",
+            "ter_set": "f_null"
+        }
+    }, {
+        "type": "furniture",
+        "id": "f_secro_flesh_biter_spawner",
+        "name": "eye sprout",
+        "description": "An eyeball reemerging back and forth from the ground, constantly peeking at the vicinity. You might want to poke it.",
+        "symbol": "o",
+        "color": "light_red",
+        "move_cost_mod": 1,
+        "required_str": -1,
+        "emissions": ["emit_fleshknot_gas_terrains"],
+        "flags": ["TRANSPARENT", "FLAMMABLE", "S_FLESH", "EMITTER"],
+		"bash": {
+            "str_min": 2,
+            "str_max": 5,
+            "sound": "splook!",
+            "sound_fail": "splat!",
+            "ter_set": "f_null"
+        }
     }
 ]
