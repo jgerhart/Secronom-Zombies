@@ -32,7 +32,8 @@
         "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_zombie_unify_bv",
-                "cooldown": 44
+                "cooldown": 44,
+                "monster_message": "<color_yellow>A blood vessel were created under %2$s's hands!</color>"
             }
         ],
         "death_drops": "default_zombie_death_drops",
@@ -82,7 +83,8 @@
         "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_zombie_unity_bv",
-                "cooldown": 50
+                "cooldown": 50,
+                "monster_message": "<color_yellow>Blood vessels has emerged from %2$s's core!</color>"
             }
         ],
         "upgrades": {
@@ -129,7 +131,7 @@
                 "type": "spell",
                 "spell_id": "mon_zombie_hemo_bwave",
                 "cooldown": 65,
-                "monster_message": "<color_red>%1$s manipulates its own blood and sends it to %3$s!</color>\n<color_yellow>Blood vessels and a fiend emerges from the %2$s!</color>"
+                "monster_message": "<color_red>%1$s manipulates its own blood and sends it to %3$s!</color>\n<color_yellow>Blood vessels and a fiend emerges from %2$s!</color>"
             }
         ],
         "regenerates": 2,
