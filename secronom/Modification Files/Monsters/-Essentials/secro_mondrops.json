@@ -15,5 +15,11 @@
     "subtype": "collection",
     "id": "mon_insect_saddler_scout_death_drop",
     "entries": [ { "item": "saddler_scout_detach", "damage": [ 2, 3 ] } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_zombie_relinquish_death_drop",
+    "entries": [ { "item": "relinquish_revive" } ]
   }
  ]
