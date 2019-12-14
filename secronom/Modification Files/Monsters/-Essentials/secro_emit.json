@@ -319,5 +319,12 @@
         "qty": 2,
         "intensity": 1,
         "chance": 1
+    },
+    {
+        "id": "emit_resolute_grow",
+        "type": "emit",
+        "field": "fd_resolute_growth",
+        "qty": 1,
+        "intensity": 1
     }
 ]
