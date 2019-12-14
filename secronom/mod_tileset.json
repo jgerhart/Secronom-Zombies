@@ -256,22 +256,22 @@
                         "bg": 0
                     },		
 					{
-                        "id": "mon_zombie_grubby_s",
+                        "id": "mon_zombie_grubby",
                         "fg": 54,
                         "bg": 1
                     }, 
 					{
-                        "id": "corpse_mon_zombie_grubby_s",
+                        "id": "corpse_mon_zombie_grubby",
                         "fg": 55,
                         "bg": 0
                     },		
 					{
-                        "id": "mon_zombie_slimy_s",
+                        "id": "mon_zombie_slimy",
                         "fg": 56,
                         "bg": 1
                     }, 
 					{
-                        "id": "corpse_mon_zombie_slimy_s",
+                        "id": "corpse_mon_zombie_slimy",
                         "fg": 57,
                         "bg": 0
                     }, 
@@ -780,6 +780,98 @@
 					{
                         "id": "mon_zombie_fleshknot_vstro",
                         "fg": 170
+                    },
+					{
+                        "id": "mon_zombie_saddler_infected_brute",
+                        "fg": 171,
+                        "bg": 118
+                    },{
+                        "id": "corpse_mon_saddler_infected_brute",
+                        "fg": 172,
+                        "bg": 118
+                    },
+					{
+                        "id": "mon_zombie_saddler_infected_scout",
+                        "fg": 173,
+                        "bg": 118
+                    },					{
+                        "id": "corpse_mon_zombie_saddler_infected_scout",
+                        "fg": 174,
+                        "bg": 118
+                    },
+					{
+                        "id": "mon_zombieworm_mawy",
+                        "fg": 175,
+                        "bg": 100
+                    },
+					{
+                        "id": "corpse_mon_zombieworm_mawy",
+                        "fg": 176,
+                        "bg": 100
+                    },
+					{
+                        "id": "mon_zombieworm_mawy",
+                        "fg": 175,
+                        "bg": 100
+                    },
+					{
+                        "id": "corpse_mon_zombieworm_mawy",
+                        "fg": 176,
+                        "bg": 100
+                    },
+					{
+                        "id": "mon_zombie_charger_spike",
+                        "fg": 177,
+                        "bg": 118
+                    },
+					{
+                        "id": "corpse_mon_zombie_charger_spike",
+                        "fg": 178
+                    },
+					{
+                        "id": "mon_zombie_charger_plate",
+                        "fg": 179,
+                        "bg": 118
+                    },
+					{
+                        "id": "corpse_mon_zombie_charger_plate",
+                        "fg": 180
+                    },
+					{
+                        "id": "mon_zombie_charger_vanguard",
+                        "fg": 181,
+                        "bg": 100
+                    },
+					{
+                        "id": "corpse_mon_zombie_charger_vanguard",
+                        "fg": 182
+                    },
+					{
+                        "id": "mon_zombie_glut",
+                        "fg": 183,
+                        "bg": 100
+                    },
+					{
+                        "id": "corpse_mon_zombie_glut",
+                        "fg": 184
+                    },
+					{
+                        "id": "mon_saddler_infected_brute",
+                        "fg": 185,
+                        "bg": 118
+                    },
+					{
+                        "id": "corpse_mon_saddler_infected_brute",
+                        "fg": 186
+                    },
+					{
+                        "id": "mon_saddler_infected_scout",
+                        "fg": 187,
+                        "bg": 118
+                    },
+					{
+                        "id": "corpse_mon_saddler_infected_scout",
+                        "fg": 188
                     }
 					
 					
@@ -1271,7 +1363,7 @@
                         "fg": 398,
                         "bg": 0
                     },{
-          "id": ["fd_fleshknot_gas"],
+          "id": ["fd_mawy_web"],
           "fg": 408,
 		  "bg": 0,
 		  "multitile": true,
@@ -1651,8 +1743,114 @@
                     }, {
                         "id": ["overlay_effect_secro_akin_siphon_ally"],
                         "fg": 555
+                    },
+					{
+                        "id": ["mon_insect_saddler"],
+                        "fg": 556,
+						"bg": 1
+                    },					{
+                        "id": ["corpse_mon_insect_saddler"],
+                        "fg": 557
+                    },
+					{
+                        "id": ["mon_insect_saddler_brute"],
+                        "fg": 558,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_insect_saddler_brute"],
+                        "fg": 559
+                    },
+					{
+                        "id": ["mon_insect_saddler_scout"],
+                        "fg": 560,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_insect_saddler_scout"],
+                        "fg": 561
+                    },
+					{
+                        "id": ["mon_insect_saddler_baby_potent", "mon_insect_saddler_baby"],
+                        "fg": 562,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_insect_saddler_baby_potent", "corpse_mon_insect_saddler_baby"],
+                        "fg": 563
+                    },
+					{
+                        "id": ["mon_insect_saddler_brood"],
+                        "fg": 564,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_insect_saddler_brood"],
+                        "fg": 565
+                    },
+					{
+                        "id": ["mon_zombie_saddler_infected"],
+                        "fg": 566,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_zombie_saddler_infected"],
+                        "fg": 567
+                    },{
+                        "id": ["overlay_effect_secro_mawy_web"],
+                        "fg": 568
+                    },
+					{
+                        "id": ["mon_zombie_skittyweavy"],
+                        "fg": 569,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_zombie_skittyweavy"],
+                        "fg": 570
+                    },
+					{
+                        "id": ["mon_zombie_revenant"],
+                        "fg": 571,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_zombie_revenant"],
+                        "fg": 572
+                    },
+					{
+                        "id": ["mon_zombie_revenant_forsaken"],
+                        "fg": 573,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_zombie_revenant_forsaken"],
+                        "fg": 574
+                    },
+					{
+                        "id": ["mon_zombie_revenant_allure"],
+                        "fg": 575,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_zombie_revenant_allure"],
+                        "fg": 576
+                    },
+					{
+                        "id": ["mon_zombie_skittyweavy_repleshy"],
+                        "fg": 577,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_zombie_skittyweavy_repleshy"],
+                        "fg": 578
+                    },
+					{
+                        "id": ["mon_zombie_skittyweavy_sickly"],
+                        "fg": 579,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_zombie_skittyweavy_sickly"],
+                        "fg": 580
+                    },
+					{
+                        "id": ["mon_saddler_infected"],
+                        "fg": 581,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_saddler_infected"],
+                        "fg": 582
                     }
-				
 				
                 ]
             }, 
@@ -1663,43 +1861,43 @@
     [      
 		{
           "id": "overlay_effect_parasiteworm_pain",
-          "bg": 556
+          "bg": 656
         },	
 		{
           "id": "overlay_effect_parasiteworm_int",
-          "bg": 557
+          "bg": 657
         },	
 		{
           "id": "overlay_effect_parasiteworm_stomach",
-          "bg": 558
+          "bg": 658
         },	
 		{
           "id": "overlay_effect_parasiteworm_move",
-          "bg": 559
+          "bg": 659
         },	
 		{
           "id": "overlay_effect_omi_curse",
-          "bg": 560
+          "bg": 660
         },	
 		{
           "id": "overlay_effect_secro_dissed",
-          "bg": 561
+          "bg": 661
         },	
 		{
           "id": "overlay_effect_secro_nix_fear",
-          "bg": 562
+          "bg": 662
         },	
 		{
           "id": "overlay_effect_secro_gorepit_wall_dmg",
-          "bg": 563
+          "bg": 663
         },	
 		{
           "id": "overlay_effect_secro_fleshysnaky_enrage",
-          "bg": 564
+          "bg": 664
         },	
 		{
           "id": "overlay_effect_secro_necros_para",
-          "bg": 565
+          "bg": 665
         }
     ]
 	}
