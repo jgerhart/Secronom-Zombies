@@ -397,7 +397,7 @@
         "type": "terrain",
         "id": "t_secro_flesh",
         "name": "flesh",
-        "description": "It's flesh, no doubt about it.",
+        "description": "Disgusting mounds of meat, slimy and organic as if it lives. This pinkish flesh is rotten to the core.",
         "symbol": ".",
         "color": "red",
         "move_cost": 5,
@@ -406,7 +406,7 @@
         "type": "terrain",
         "id": "t_secro_flesh_wall",
         "name": "flesh wall",
-        "description": "It's a wall of flesh, no doubt about it.",
+        "description": "Disgusting wall of meat, slimy and organic as if it lives. This compact lumps of flesh is sinister to the core.",
         "symbol": ".",
         "color": "red",
         "move_cost": 5,
@@ -421,7 +421,8 @@
         "move_cost_mod": -1,
 		"required_str": -1,
         "coverage": 80,
-        "flags": ["FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT", "S_FLESH"],
+        "emissions": ["emit_flesh_tree_grab"],
+        "flags": ["FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT", "S_FLESH", "EMITTER"],
         "bash": {
             "str_min": 85,
             "str_max": 185,
@@ -430,38 +431,39 @@
             "ter_set": "t_tree"
         }
     }, {
-        "type": "furniture",
-        "id": "f_secro_flesh_tendril_spawner",
-        "name": "eye sprout",
-        "description": "An eyeball reemerging back and forth from the ground, constantly peeking at the vicinity. You might want to poke it.",
-        "symbol": "o",
-        "color": "light_red",
-        "move_cost_mod": 1,
-        "required_str": -1,
-        "emissions": ["emit_fleshknot_gas_terrains"],
-        "flags": ["TRANSPARENT", "FLAMMABLE", "S_FLESH", "EMITTER"],
-		"bash": {
-            "str_min": 2,
-            "str_max": 5,
-            "sound": "splook!",
-            "sound_fail": "splat!",
-            "ter_set": "f_null"
-        }
+        "type": "terrain",
+        "id": "t_secro_flesh_entrance_close",
+        "name": "flesh",
+        "description": "Disgusting mounds of meat, slimy and organic as if it lives. This pinkish flesh is rotten to the core.",
+        "symbol": ".",
+        "color": "red",
+        "move_cost": 5,
+        "flags": ["TRANSPARENT", "FLAT", "S_FLESH", "FF_ENTRANCE"]
+    }, {
+        "type": "terrain",
+        "id": "t_secro_flesh_entrance_open",
+        "name": "veinhole",
+        "description": "A dead veinhole, now a harmless opening revealing a hollow hole. Sure it is gross, but there's no other way...",
+        "symbol": "O",
+        "color": "red",
+        "move_cost": 5,
+        "flags": ["TRANSPARENT", "FLAT", "S_FLESH", "GOES_DOWN"]
     }, {
         "type": "furniture",
-        "id": "f_secro_flesh_biter_spawner",
-        "name": "eye sprout",
-        "description": "An eyeball reemerging back and forth from the ground, constantly peeking at the vicinity. You might want to poke it.",
-        "symbol": "o",
-        "color": "light_red",
+        "id": "f_secro_sack_hatch",
+        "name": "hatched flesh sack",
+        "description": "A flesh sack with its vented mouth opened widely. You may want to destroy it as soon as possible.",
+        "symbol": "0",
+        "color": "red",
         "move_cost_mod": 1,
-        "required_str": -1,
-        "emissions": ["emit_fleshknot_gas_terrains"],
-        "flags": ["TRANSPARENT", "FLAMMABLE", "S_FLESH", "EMITTER"],
-		"bash": {
-            "str_min": 2,
-            "str_max": 5,
-            "sound": "splook!",
+		"required_str": -1,
+        "coverage": 30,
+        "emissions": ["emit_flesh_sack_hatch"],
+        "flags": ["FLAMMABLE", "REDUCE_SCENT", "S_FLESH", "EMITTER"],
+        "bash": {
+            "str_min": 12,
+            "str_max": 24,
+            "sound": "splash!",
             "sound_fail": "splat!",
             "ter_set": "f_null"
         }
