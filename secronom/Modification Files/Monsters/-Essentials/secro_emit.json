@@ -326,5 +326,42 @@
         "field": "fd_resolute_growth",
         "qty": 1,
         "intensity": 1
+    },
+    {
+        "id": "emit_eye_spawn_tendril",
+        "type": "emit",
+        "field": "fd_sflesh_spawn_tendril",
+        "qty": 30,
+        "intensity": 1
+    },
+    {
+        "id": "emit_eye_spawn_jaw",
+        "type": "emit",
+        "field": "fd_sflesh_spawn_jaw",
+        "qty": 30,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_tree_grab",
+        "type": "emit",
+        "field": "fd_flesh_tree_grab",
+        "//": "The flesh tree spreads its 'grabbing branches and stem' in 6 directions per turn",
+        "qty": 7,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_sack_hatch",
+        "type": "emit",
+        "field": "fd_sflesh_sack",
+        "qty": 1,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_sack_blind",
+        "type": "emit",
+        "field": "fd_sflesh_sack_maybe",
+        "qty": 1,
+        "intensity": 1,
+        "chance": 99
     }
 ]
