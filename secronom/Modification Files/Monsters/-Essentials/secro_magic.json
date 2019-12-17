@@ -3603,5 +3603,155 @@
         "effect": "target_attack",
         "min_range": 10,
         "max_range": 10
+    },
+    {
+        "id": "mon_sflesh_tendril_lace",
+        "type": "SPELL",
+        "name": "Lacerate",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster lashes the target, dealing cutting damage.'",
+        "flags": ["SILENT", "RANDOM_DAMAGE"],
+        "valid_targets": ["hostile"],
+        "effect": "projectile_attack",
+        "min_damage": 6,
+        "max_damage": 12,
+        "min_range": 3,
+        "max_range": 3,
+        "damage_type": "cut"
+    },
+    {
+        "id": "mon_sflesh_vbeast_wlace",
+        "type": "SPELL",
+        "name": "Wide Lacerate",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster lashes the target in a wide cone, dealing cutting damage.'",
+        "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE"],
+        "valid_targets": ["hostile"],
+        "effect": "cone_attack",
+        "min_damage": 6,
+        "max_damage": 18,
+        "min_range": 2,
+        "max_range": 4,
+        "min_aoe": 90,
+        "max_aoe": 150,
+        "damage_type": "cut"
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_sflesh_surface_spawner_tendril",
+        "name": "Summon Flesh Tendrils",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels itself to alert the flesh, calling flesh tendrils as the response.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "RANDOM_DAMAGE", "RANDOM_DURATION"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 2,
+        "min_aoe": 5,
+        "max_aoe": 5,
+        "effect": "summon",
+        "effect_str": "mon_sflesh_tendril",
+        "min_duration": 25000,
+        "max_duration": 50000,
+        "field_id": "fd_sflesh_spawn_tendril",
+        "min_field_intensity": 1,
+        "max_field_intensity": 1
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_sflesh_surface_spawner_jaw",
+        "name": "Summon Jawed Fleshes",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels itself to alert the flesh, calling jawed fleshes as the response.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "RANDOM_DAMAGE", "RANDOM_DURATION"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 2,
+        "min_aoe": 5,
+        "max_aoe": 5,
+        "effect": "summon",
+        "effect_str": "mon_sflesh_jaw",
+        "min_duration": 25000,
+        "max_duration": 50000,
+        "field_id": "fd_sflesh_spawn_jaw",
+        "min_field_intensity": 1,
+        "max_field_intensity": 1
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_sflesh_surface_spawner_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "mon_sflesh_surface_spawner_tendril", "hit_self": true
+            },
+            {
+                "id": "mon_sflesh_surface_spawner_jaw", "hit_self": true
+            }
+        ],
+        "flags": ["SILENT","WONDER"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "min_damage": 1,
+        "max_damage": 1,
+        "effect": "target_attack",
+        "min_range": 20,
+        "max_range": 20
+    },
+    {
+        "id": "mon_sflesh_entrance_open",
+        "type": "SPELL",
+        "name": "Veinhole Death",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's death leaves a hole that serves as an entrance to the innards of the flesh.'",
+        "flags": ["SILENT"],
+        "message": "<color_light_green>The veinhole leaves a vile gap upon its death.</color>",
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "ter_transform",
+        "effect_str": "veinhole_open",
+        "min_aoe": 100,
+        "max_aoe": 100
+    },
+    {
+        "id": "mon_sflesh_sack_hatch",
+        "type": "SPELL",
+        "name": "Hatch",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster hatches, rendering itself becoming a hatched sack.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "ter_transform",
+        "effect_str": "sflesh_sack"
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_sflesh_sack_birth",
+        "name": "Birth",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster hatches, sending newborn parasytes into the fields.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "RANDOM_DAMAGE", "PERMANENT"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 3,
+        "min_aoe": 2,
+        "max_aoe": 2,
+        "effect": "summon",
+        "effect_str": "mon_sflesh_parasyte"
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_sflesh_sack_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "sacrifice_spell", "hit_self": true
+            },
+            {
+                "id": "mon_sflesh_sack_birth", "hit_self": true
+            },
+            {
+                "id": "mon_sflesh_sack_hatch", "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "min_damage": 1,
+        "max_damage": 1,
+        "effect": "projectile_attack",
+        "min_range": 10,
+        "max_range": 10
     }
 ]
