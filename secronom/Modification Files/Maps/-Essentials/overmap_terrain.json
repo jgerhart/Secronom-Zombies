@@ -299,5 +299,40 @@
         "sym": "F",
         "color": "red",
         "see_cost": 10
+    }, {
+        "id": "flesh_forest_vfaraway",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "id": "flesh_forest_vfar",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "id": "flesh_forest_far",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "id": "flesh_forest_mid",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "id": "flesh_forest_near",
+        "type": "overmap_terrain",
+        "name": "forest",
+        "sym": "F",
+        "color": "red",
+        "see_cost": 10
     }
 ]
