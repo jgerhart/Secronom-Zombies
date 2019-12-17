@@ -21,5 +21,17 @@
     "subtype": "collection",
     "id": "mon_zombie_relinquish_death_drop",
     "entries": [ { "item": "relinquish_revive" } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_sflesh_entrance_death_drop",
+    "entries": [ { "item": "veinhole_gap" } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_sflesh_sack_death_drop",
+    "entries": [ { "item": "flesh_sack_death" } ]
   }
  ]
