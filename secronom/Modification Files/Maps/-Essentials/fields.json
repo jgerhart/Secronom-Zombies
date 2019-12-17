@@ -777,9 +777,128 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "display_items": false,
+    "display_items": true,
     "display_field": false
   },
+  {
+        "id": "fd_sflesh_spawn_tendril",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "...",
+                "color": "black",
+                "monster_spawn_chance": 1000,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_FLESH_SPAWN_TENDRIL"
+            }
+        ],
+        "priority": -1,
+        "half_life": "1 turns",
+        "phase": "gas",
+        "display_items": true,
+        "display_field": false
+    },
+    {
+        "id": "fd_sflesh_spawn_jaw",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "...",
+                "color": "black",
+                "monster_spawn_chance": 1000,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_FLESH_SPAWN_JAW"
+            }
+        ],
+        "priority": -1,
+        "half_life": "1 turns",
+        "phase": "gas",
+        "display_items": true,
+        "display_field": false
+    },
+    {
+    "id": "fd_flesh_tree_grab",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+                "effects": [
+          {
+            "effect_id": "secro_flesh_tree_grab",
+            "body_part": "TORSO",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
+      }
+    ],
+    "priority": -1,
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false
+  },
+  {
+    "//": "Make hatching a chance using blindness effect.",
+    "id": "fd_sflesh_sack_maybe",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+                "effects": [
+          {
+            "effect_id": "blind",
+            "body_part": "TORSO",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
+      }
+    ],
+    "priority": -1,
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false
+  },
+  {
+        "id": "fd_sflesh_sack",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "...",
+                "color": "black",
+                "monster_spawn_chance": 250,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_FLESH_SACK"
+            }
+        ],
+        "priority": -1,
+        "half_life": "1 turns",
+        "phase": "gas",
+        "display_items": true,
+        "display_field": false
+    },
+    {
+        "id": "fd_sflesh_sack_dead",
+        "type": "field_type",
+        "intensity_levels": [{
+                "name": "...",
+                "color": "black",
+                "monster_spawn_chance": 1,
+                "monster_spawn_count": 1,
+                "monster_spawn_radius": 1,
+                "monster_spawn_group": "GROUP_FLESH_SACK"
+            }
+        ],
+        "priority": -1,
+        "half_life": "2 turns",
+        "phase": "gas",
+        "display_items": true,
+        "display_field": false
+    },
   
   {
     "//": "Immunity fields designed for all creatures.",
