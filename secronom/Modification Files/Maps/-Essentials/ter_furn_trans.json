@@ -69,5 +69,29 @@
                 "message": "The furnitures here has collapsed."
             }
         ]
+    },
+    {
+        "type": "ter_furn_transform",
+        "id": "veinhole_open",
+        "fail_message": "You were too far from the entrance...",
+        "terrain": [{
+        		"//": "We use a spell to open the closed entrance once the veinhole dies.",
+                "result": "t_secro_flesh_entrance_open",
+                "valid_flags": ["FF_ENTRANCE"],
+                "message": "The veinhole leaves a vile gap upon its death."
+            }
+        ]
+    },
+    {
+        "type": "ter_furn_transform",
+        "id": "sflesh_sack",
+        "fail_message": "Can't place the egg.",
+        "furniture": [{
+                "result": "f_secro_sack_hatch",
+                "valid_flags": ["TRANSPARENT","S_FLESH"],
+                "valid_furniture": [ "f_null" ],
+                "message": "The flesh sack hatches."
+            }
+        ]
     }
 ]
