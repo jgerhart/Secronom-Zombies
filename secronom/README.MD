@@ -11,7 +11,7 @@ Mod made from various references, mixed up with random spices! A mod I've create
 ## Zombies
 The secronom's main feature - the zeds. They range from weak up to strong variety of them.
 
-* There are 82 zombies in total: 57 city zeds, 15 zed mutants and 10 lab zombies. Only the zombies that spawn individually and their evolved counterparts are counted, while minions and other special zeds aren't.
+* There are 83 zombies in total: 57 city zeds, 16 zed mutants and 10 lab zombies. Only the zombies that spawn individually and their evolved counterparts are counted, while minions and other special zeds aren't.
 
 Thanks to SomeDeadGuy, he did all of the monster sprites on his own.
 
@@ -135,6 +135,8 @@ Zed mutants that are seen rarely in and out of the cities or has special conditi
 
 * _**Fleshknot**_ **~** - A heavily mutated lump of flesh that infests buildings in the cities.
 
+* _**Relinquished Zombie**_ **!** - A weak zombie with destructive vengeance. End-game prize. 
+
 ### Lab Zombies
 These are the zombies only exclusive to secronom labs:
 
@@ -203,3 +205,6 @@ These are once normal structures, but after a sudden mutation of a dwelling zed,
 
 ### Saddler Gathering Nest
 A cavern where saddlers tend to gather and populate. These nests are rarely seen around the world, yet its occupants are troublesome parasites - parasites which takes control of the sentient target's consciousness.
+
+### Flesh Forest
+Forests that has been infested by the crimson horrors, unlike the infected buildings, its entirety of area is manipulated by one, gigantic creature whose purpose is to spread its domain. Odd formation of terrains and uniquely vile dwelling abominations make it a death trap for unprepared wanderers. If one would travel into the depths of this tremendous monster, escaping is no more...
