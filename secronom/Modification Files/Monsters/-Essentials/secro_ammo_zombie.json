@@ -504,5 +504,44 @@
             "fields_min_intensity": 1,
             "fields_max_intensity": 1
         }
+    },
+    {
+        "id": "flesh_death",
+        "type": "TOOL",
+        "name": "melting flesh",
+        "description": "The flesh is disintigrating. You're not sure if its still alive...",
+        "volume": "1000 L",
+        "weight": "23000 kg",
+        "price": 0,
+        "to_hit": -2,
+        "bashing": 1,
+        "material": ["secro_null"],
+        "symbol": "0",
+        "color": "red",
+        "drop_action": {
+            "target": "flesh_death_act",
+            "target_charges": 1,
+            "active": true,
+            "type": "transform"
+        }
+    },
+    {
+        "id": "flesh_death_act",
+        "type": "TOOL",
+        "name": "melting flesh",
+        "description": "The flesh is disintigrating. You're not sure if its still alive...",
+        "volume": "200 L",
+        "weight": 200000,
+        "price": 0,
+        "to_hit": -2,
+        "bashing": 1,
+        "material": ["secro_null"],
+        "symbol": "0",
+        "color": "red",
+        "countdown_interval": 1,
+        "countdown_destroy": true,
+        "countdown_action": {
+            "type": "cast_spell", "spell_id": "mon_sflesh_flesh_bio_death", "no_fail": true, "level": 0
+            }
     }
 ]
