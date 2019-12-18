@@ -1,5 +1,5 @@
 [{
-		"//": "All crimson horrors are immune to stun and are resistant to impact damage, so beating them with blunt weapons aren't effective.",
+        "//": "All crimson horrors are immune to stun and are resistant to impact damage, so beating them with blunt weapons aren't effective.",
         "id": "mon_sflesh_surface_spawner",
         "type": "MONSTER",
         "name": "eye sprout",
@@ -24,7 +24,7 @@
                 "type": "spell",
                 "spell_id": "mon_sflesh_surface_spawner_target",
                 "//": "Since the player is walking on the flesh, this spell's cooldown should be VERY high.",
-                "cooldown": 150,
+                "cooldown": 225,
                 "monster_message": "<color_light_red>%1$s writhes, sending crimson horrors to confront %3$s!</color>"
             }
         ],
@@ -38,8 +38,7 @@
             "STUN_IMMUNE",
             "IMMOBILE"
         ]
-    },
-	{
+    }, {
         "id": "mon_sflesh_tendril",
         "type": "MONSTER",
         "name": "flesh tendril",
@@ -79,8 +78,7 @@
             "STUN_IMMUNE",
             "IMMOBILE"
         ]
-    },
-    {
+    }, {
         "id": "mon_sflesh_jaw",
         "type": "MONSTER",
         "name": "jawed flesh",
@@ -134,8 +132,7 @@
             "STUN_IMMUNE",
             "IMMOBILE"
         ]
-    },
-    {
+    }, {
         "id": "mon_sflesh_entrance",
         "type": "MONSTER",
         "name": "veinhole",
@@ -191,52 +188,9 @@
             "STUN_IMMUNE",
             "IMMOBILE"
         ]
-    },
-    {
-        "id": "mon_sflesh_vbeast",
-        "type": "MONSTER",
-        "name": "vein beast",
-        "description": "A cluster of veins formed into a horrendous creeping abomination. Thick strands of membranous vine-like tendrils reaches out of its beating core.",
-        "default_faction": "secro_flesh",
-        "bodytype": "migo",
-        "species": ["ABERRATION"],
-        "volume": "92500 ml",
-   	 "weight": 120000,
-        "hp": 140,
-        "speed": 85,
-        "material": ["flesh"],
-        "symbol": "⨳",
-        "color": "light_red",
-        "aggression": 100,
-        "morale": 100,
-        "melee_skill": 6,
-        "melee_dice": 2,
-        "melee_dice_sides": 4,
-        "melee_cut": 6,
-        "armor_bash": 10,
-        "armor_cut": 3,
-        "armor_stab": 8,
-        "special_attacks": [{
-                "type": "spell",
-                "spell_id": "mon_sflesh_vbeast_wlace",
-                "cooldown": 28,
-                "monster_message": "<color_light_red>%1$s sweeps its tendrils onto %3$s!</color>"
-            }
-        ],
-        "harvest": "exempt",
-        "death_function": ["MELT"],
-        "flags": [
-            "SEES",
-            "WARM",
-            "POISON",
-            "NO_BREATHE",
-            "STUN_IMMUNE",
-            "CLIMBS"
-        ]
-    },
-    {
-    	"//": "Destroying the sack is better than letting it hatch (killing itself).",
-    	"//": "Destroying makes it spawn 2 parasytes, but if it hatches, it can spawn up to 5 parasytes and will spawn more if you don't bash the hatched flesh sack.",
+    }, {
+        "//": "Destroying the sack is better than letting it hatch (killing itself).",
+        "//": "Destroying makes it spawn 2 parasytes, but if it hatches, it can spawn up to 5 parasytes and will spawn more if you don't bash the hatched flesh sack.",
         "id": "mon_sflesh_sack",
         "type": "MONSTER",
         "name": "flesh sack",
@@ -245,11 +199,12 @@
         "bodytype": "blob",
         "species": ["ABERRATION"],
         "volume": "92500 ml",
-   	 "weight": 120000,
+        "weight": 120000,
         "hp": 25,
         "speed": 85,
         "material": ["flesh"],
         "symbol": "◈",
+        "emit_fields": ["emit_flesh_sack_blind"],
         "color": "light_red",
         "aggression": 100,
         "morale": 100,
@@ -260,6 +215,7 @@
         "armor_bash": 14,
         "armor_cut": 4,
         "armor_stab": 10,
+        "vision_day": 22,
         "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_sflesh_sack_target",
@@ -279,9 +235,8 @@
             "IMMOBILE",
             "PACIFIST"
         ]
-    },
-    {
-    	"//": "Face hugger from the alien movie!",
+    }, {
+        "//": "Face hugger from the alien movie!",
         "id": "mon_sflesh_parasyte",
         "type": "MONSTER",
         "name": "parasyte",
@@ -290,7 +245,7 @@
         "bodytype": "spider",
         "species": ["ABERRATION"],
         "volume": "2000 ml",
-   	 "weight": 200,
+        "weight": 200,
         "hp": 15,
         "speed": 70,
         "material": ["flesh"],
@@ -314,6 +269,392 @@
             "STUN_IMMUNE",
             "CLIMBS",
             "PATH_AVOID_DANGER_2"
+        ]
+    }, {
+        "//": "Here are the crimson horrors that are encountered inside the flesh.",
+        "//": "Vein that deals cutting damage.",
+        "id": "mon_sflesh_vbeast",
+        "type": "MONSTER",
+        "name": "vein beast",
+        "description": "A cluster of veins formed into a horrendous creeping abomination. Thick strands of membranous vine-like tendrils reaches out of its beating core.",
+        "default_faction": "secro_flesh",
+        "bodytype": "migo",
+        "species": ["ABERRATION"],
+        "volume": "92500 ml",
+        "weight": 120000,
+        "hp": 140,
+        "speed": 85,
+        "material": ["flesh"],
+        "symbol": "⨳",
+        "color": "light_red",
+        "aggression": 100,
+        "morale": 100,
+        "melee_skill": 6,
+        "melee_dice": 0,
+        "melee_dice_sides": 4,
+        "melee_cut": 6,
+        "armor_bash": 10,
+        "armor_cut": 3,
+        "armor_stab": 8,
+        "special_attacks": [{
+                "type": "spell",
+                "spell_id": "mon_sflesh_vbeast_wlace",
+                "cooldown": 28,
+                "monster_message": "<color_light_red>%1$s sweeps its tendrils onto %3$s!</color>"
+            }
+        ],
+        "harvest": "exempt",
+        "death_function": ["MELT"],
+        "flags": [
+            "SMELLS",
+            "WARM",
+            "POISON",
+            "NO_BREATHE",
+            "STUN_IMMUNE",
+            "CLIMBS"
+        ]
+    }, {
+        "//": "Vein that deals bashing damage.",
+        "id": "mon_sflesh_vrumbler",
+        "type": "MONSTER",
+        "name": "rumbler",
+        "description": "A thick group of veins unified into a crawling nightmare. Large, amalgous core is visible to its predominant limb, and tendrils seemingly gathers around it.",
+        "default_faction": "secro_flesh",
+        "bodytype": "migo",
+        "species": ["ABERRATION"],
+        "volume": "92500 ml",
+        "weight": 120000,
+        "hp": 185,
+        "speed": 85,
+        "material": ["flesh"],
+        "symbol": "⩮",
+        "color": "light_red",
+        "aggression": 100,
+        "morale": 100,
+        "melee_skill": 6,
+        "melee_dice": 6,
+        "melee_dice_sides": 4,
+        "melee_cut": 0,
+        "armor_bash": 10,
+        "armor_cut": 3,
+        "armor_stab": 8,
+        "special_attacks": [["flesh_vrumbler_thrash", 24]
+        ],
+        "harvest": "exempt",
+        "death_function": ["MELT"],
+        "flags": [
+            "SMELLS",
+            "WARM",
+            "POISON",
+            "NO_BREATHE",
+            "STUN_IMMUNE",
+            "CLIMBS"
+        ]
+    }, {
+        "//": "Like flesh sacks, but destroying or letting it hatch results the same.",
+        "id": "mon_sflesh_taken",
+        "type": "MONSTER",
+        "name": "the taken",
+        "description": "A membranous pod of flesh, filled with putrid yellow-ish fluid. Hanging from the ceiling, a creature seems to be trapped inside, but unknown to what it is.",
+        "default_faction": "secro_flesh",
+        "bodytype": "blob",
+        "species": ["ABERRATION"],
+        "volume": "92500 ml",
+        "weight": 120000,
+        "hp": 35,
+        "speed": 85,
+        "material": ["flesh"],
+        "symbol": "⚱",
+        "emit_fields": ["emit_flesh_taken_blind"],
+        "color": "light_red",
+        "aggression": 100,
+        "morale": 100,
+        "melee_skill": 6,
+        "melee_dice": 2,
+        "melee_dice_sides": 4,
+        "melee_cut": 6,
+        "armor_bash": 20,
+        "armor_cut": 8,
+        "armor_stab": 17,
+        "vision_day": 22,
+        "special_attacks": [{
+                "type": "spell",
+                "spell_id": "mon_sflesh_taken_target",
+                "cooldown": 0,
+                "monster_message": "<color_light_red>The taken bursts, letting loose of its content!</color>"
+            }
+        ],
+        "death_drops": "mon_sflesh_taken_death_drop",
+        "harvest": "exempt",
+        "death_function": ["MELT"],
+        "flags": [
+            "SEES",
+            "WARM",
+            "POISON",
+            "NO_BREATHE",
+            "STUN_IMMUNE",
+            "IMMOBILE",
+            "PACIFIST"
+        ]
+    }, {
+        "//": "The taken - flesh version of some common creatures, this includes the wildlife (appears lesser than zed, ofc).",
+        "//": "The takens has +25% health, +3 bash resistance and +2 adaptive damage (higher melee dice provides 2 bashing damage to its melee attack. If equal, then half for both). Everything else are the same, except the living's conversion into undead.",
+        "id": "mon_sflesh_taken_zombie",
+        "type": "MONSTER",
+        "name": "flesh zombie",
+        "description": "A corpse devoured by the flesh, with complete manipulation over its mindless thoughts.",
+        "default_faction": "secro_flesh",
+        "bodytype": "human",
+        "species": ["ABERRATION", "ZOMBIE", "HUMAN"],
+        "volume": "62500 ml",
+        "weight": 81500,
+        "hp": 100,
+        "speed": 70,
+        "material": ["flesh"],
+        "symbol": "Z",
+        "color": "light_red",
+        "aggression": 100,
+        "morale": 100,
+        "melee_skill": 4,
+        "melee_dice": 2,
+        "melee_dice_sides": 3,
+        "melee_cut": 0,
+        "melee_damage": [{
+                "amount": 2,
+                "damage_type": "bash"
+            }
+        ],
+        "vision_night": 3,
+        "armor_bash": 3,
+        "harvest": "zombie",
+        "special_attacks": [{
+                "type": "bite",
+                "cooldown": 5
+            }, ["GRAB", 7], ["scratch", 20]],
+        "death_drops": "default_zombie_death_drops",
+        "death_function": ["NORMAL"],
+        "flags": [
+            "SEES",
+            "HEARS",
+            "SMELLS",
+            "STUMBLES",
+            "WARM",
+            "BASHES",
+            "GROUP_BASH",
+            "POISON",
+            "BLEED",
+            "NO_BREATHE",
+            "PUSH_MON",
+            "FILTHY"
+        ]
+    }, {
+        "id": "mon_sflesh_taken_bear",
+        "type": "MONSTER",
+        "name": "flesh bear",
+        "description": "A vigorous American black bear, infested by flesh. With powerful jaws and claws glistening in sharpness, its inhumane instinct proves a deadly threat.",
+        "default_faction": "secro_flesh",
+        "bodytype": "bear",
+        "species": ["ABERRATION", "MAMMAL"],
+        "volume": "154250 ml",
+        "weight": 154250,
+        "hp": 125,
+        "speed": 140,
+        "material": ["flesh"],
+        "symbol": "B",
+        "color": "light_red",
+        "aggression": 100,
+        "morale": 100,
+        "melee_skill": 6,
+        "melee_dice": 4,
+        "melee_dice_sides": 6,
+        "melee_cut": 4,
+        "melee_damage": [{
+                "amount": 1,
+                "damage_type": "bash"
+            }, {
+                "amount": 1,
+                "damage_type": "cut"
+            }
+        ],
+        "dodge": 3,
+        "armor_bash": 5,
+        "vision_day": 30,
+        "vision_night": 10,
+        "death_function": ["NORMAL"],
+        "//": "Its not actually THAT fleshy in all, just infected, so harvest is the same.",
+        "harvest": "mammal_large_fur",
+        "flags": ["SEES", "HEARS", "SMELLS", "WARM", "BLEED",
+            "POISON",
+            "NO_BREATHE",
+            "STUN_IMMUNE", "BASHES"]
+    }, {
+        "id": "mon_sflesh_taken_rat",
+        "type": "MONSTER",
+        "name": "flesh rat",
+        "description": "A rodent with sharp, pointy teeth and briskly membranous fur.",
+        "default_faction": "secro_flesh",
+        "bodytype": "pig",
+        "species": ["ABERRATION", "MAMMAL"],
+        "volume": "200 ml",
+        "weight": 200,
+        "hp": 8,
+        "speed": 100,
+        "material": ["flesh"],
+        "symbol": "r",
+        "color": "light_red",
+        "aggression": 100,
+        "morale": 100,
+        "melee_skill": 5,
+        "melee_dice": 1,
+        "melee_dice_sides": 1,
+        "melee_cut": 1,
+        "melee_damage": [{
+                "amount": 1,
+                "damage_type": "bash"
+            }, {
+                "amount": 1,
+                "damage_type": "cut"
+            }
+        ],
+        "armor_bash": 3,
+        "dodge": 2,
+        "vision_day": 30,
+        "vision_night": 10,
+        "harvest": "mammal_tiny",
+        "death_function": ["NORMAL"],
+        "flags": ["SEES", "SMELLS", "HEARS", "WARM",
+            "POISON",
+            "NO_BREATHE",
+            "STUN_IMMUNE", "SWIMS"]
+    }, {
+        "id": "mon_sflesh_taken_cougar",
+        "type": "MONSTER",
+        "name": "flesh cougar",
+        "description": "A large feline predator consumed and manipulated by the flesh. With fierce claws, enormous fangs and powerful hind legs combined, the prey can't escape nor survive its onslaught.",
+        "default_faction": "secro_flesh",
+        "bodytype": "dog",
+        "species": ["ABERRATION", "MAMMAL"],
+        "volume": "63000 ml",
+        "weight": 63000,
+        "hp": 75,
+        "speed": 180,
+        "material": ["flesh"],
+        "symbol": "C",
+        "color": "light_red",
+        "morale": 40,
+        "melee_skill": 6,
+        "melee_dice": 2,
+        "melee_dice_sides": 4,
+        "melee_cut": 6,
+        "dodge": 5,
+        "armor_bash": 4,
+        "vision_night": 10,
+        "melee_damage": [{
+                "amount": 2,
+                "damage_type": "cut"
+            }
+        ],
+        "special_attacks": [["scratch", 10], {
+                "type": "leap",
+                "cooldown": 5,
+                "max_range": 5
+            }
+        ],
+        "death_function": ["NORMAL"],
+        "harvest": "mammal_fur",
+        "flags": [
+            "SEES",
+            "HEARS",
+            "GOODHEARING",
+            "SMELLS",
+            "WARM",
+            "KEENNOSE",
+            "POISON",
+            "NO_BREATHE",
+            "STUN_IMMUNE",
+            "BLEED"
+        ]
+    }, {
+        "id": "mon_sflesh_taken_moose",
+        "type": "MONSTER",
+        "name": "flesh moose",
+        "description": "A large, hooved grazing herbivore that has succumbed to the grasp of the crimson horror. Blood-dripping veins hang from its overgrown antlers.",
+        "default_faction": "secro_flesh",
+        "bodytype": "horse",
+        "species": ["ABERRATION", "MAMMAL"],
+        "volume": "386000 ml",
+        "weight": 386000,
+        "hp": 150,
+        "speed": 200,
+        "material": ["flesh"],
+        "symbol": "M",
+        "color": "light_red",
+        "aggression": 100,
+        "morale": 100,
+        "melee_skill": 6,
+        "melee_dice": 3,
+        "melee_dice_sides": 4,
+        "melee_cut": 0,
+        "melee_damage": [{
+                "amount": 2,
+                "damage_type": "bash"
+            }
+        ],
+        "dodge": 1,
+        "armor_bash": 7,
+        "armor_cut": 1,
+        "vision_night": 7,
+        "death_function": ["NORMAL"],
+        "harvest": "mammal_large_leather",
+        "flags": ["SEES", "HEARS", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "BLEED"]
+    },
+    
+  {
+    	"//": "This is the boss. It regenerates super fast, attacks with highly damaging wide aoe, converts nearby terrain into a biohazard and calls out new takens at will!",
+  	  "//": "Killing it won't bring the flesh terrains back to normal, but it is the queen, so crimson horrors will cease to exist... hopefully.",
+        "id": "mon_sflesh_flesh",
+        "type": "MONSTER",
+        "name": "flesh",
+        "description": "A gargantuan lump of meat, pulsating in faint, velvety hue. Thick, numerous veins penetrate the walls, in every beat causes the surrounding flesh to undulate.",
+        "default_faction": "secro_flesh",
+        "bodytype": "blob",
+        "species": ["ABERRATION"],
+        "volume": "875000 ml",
+    	"weight": 200000,
+        "hp": 4200,
+        "speed": 85,
+        "material": ["flesh","bone"],
+        "symbol": "⨷",
+        "emit_fields": ["emit_flesh_taken_blind"],
+        "color": "red_magenta",
+        "aggression": 100,
+        "morale": 100,
+        "melee_skill": 10,
+        "melee_dice": 10,
+        "melee_dice_sides": 8,
+        "melee_cut": 0,
+        "armor_bash": 24,
+        "armor_cut": 12,
+        "armor_stab": 20,
+        "vision_day": 22,
+        "special_attacks": [{
+                "type": "spell",
+                "spell_id": "mon_sflesh_taken_target",
+                "cooldown": 0,
+                "monster_message": "<color_light_red>%1$s bursts, letting loose its content!</color>"
+            }
+        ],
+        "death_drops": "mon_sflesh_taken_death_drop",
+        "harvest": "exempt",
+        "death_function": ["MELT"],
+        "flags": [
+            "SEES",
+            "WARM",
+            "POISON",
+            "NO_BREATHE",
+            "STUN_IMMUNE",
+            "IMMOBILE",
+            "PACIFIST"
         ]
     }
 ]
