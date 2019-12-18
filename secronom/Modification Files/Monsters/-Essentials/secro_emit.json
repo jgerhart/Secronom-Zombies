@@ -378,5 +378,104 @@
         "field": "fd_sflesh_tentclus",
         "qty": 1,
         "intensity": 1
+    },
+    {
+        "id": "emit_flesh_bones_r",
+        "type": "emit",
+        "field": "fd_sflesh_bones_r",
+        "qty": 1,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_bones_l",
+        "type": "emit",
+        "field": "fd_sflesh_bones_l",
+        "qty": 1,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_tendrils_r",
+        "type": "emit",
+        "field": "fd_sflesh_tendrils_r",
+        "qty": 1,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_tendrils_l",
+        "type": "emit",
+        "field": "fd_sflesh_tendrils_l",
+        "qty": 1,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_taken_potent_blind",
+        "type": "emit",
+        "field": "fd_sflesh_sack_maybe",
+        "qty": 1,
+        "intensity": 1,
+        "chance": 20
+    },
+    {
+        "id": "emit_flesh_biome_h",
+        "type": "emit",
+        "field": "fd_flesh_biome_h",
+        "qty": 500,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_biome_t",
+        "type": "emit",
+        "field": "fd_flesh_biome_t",
+        "qty": 500,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_biome_la",
+        "type": "emit",
+        "field": "fd_flesh_biome_la",
+        "qty": 500,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_biome_ra",
+        "type": "emit",
+        "field": "fd_flesh_biome_ra",
+        "qty": 500,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_biome_ll",
+        "type": "emit",
+        "field": "fd_flesh_biome_ll",
+        "qty": 500,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_biome_rl",
+        "type": "emit",
+        "field": "fd_flesh_biome_rl",
+        "qty": 500,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_biome_immunity",
+        "type": "emit",
+        "field": "fd_flesh_biome_immune",
+        "qty": 1,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_wall",
+        "type": "emit",
+        "field": "fd_sflesh_wall",
+        "qty": 1,
+        "intensity": 1
+    },
+    {
+        "id": "emit_flesh_wall_limitation",
+        "type": "emit",
+        "field": "fd_sflesh_wall_limit",
+        "qty": 1,
+        "intensity": 1
     }
 ]
