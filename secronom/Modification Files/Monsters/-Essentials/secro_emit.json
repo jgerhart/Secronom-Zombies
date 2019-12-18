@@ -362,6 +362,21 @@
         "field": "fd_sflesh_sack_maybe",
         "qty": 1,
         "intensity": 1,
-        "chance": 99
+        "chance": 50
+    },
+    {
+        "id": "emit_flesh_taken_blind",
+        "type": "emit",
+        "field": "fd_sflesh_sack_maybe",
+        "qty": 1,
+        "intensity": 1,
+        "chance": 40
+    },
+    {
+        "id": "emit_flesh_tentclus",
+        "type": "emit",
+        "field": "fd_sflesh_tentclus",
+        "qty": 1,
+        "intensity": 1
     }
 ]
