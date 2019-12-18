@@ -208,7 +208,7 @@
         "symbol": ".",
         "color": "light_red",
         "move_cost": 5,
-        "flags": ["TRANSPARENT", "FLAT", "S_FLESH"],
+        "flags": ["FLAMMABLE", "TRANSPARENT", "FLAT", "S_FLESH"],
         "bash": {
             "sound": "thump",
             "ter_set": "t_dirt",
@@ -225,7 +225,7 @@
         "symbol": ".",
         "color": "red",
         "move_cost": 5,
-        "flags": ["TRANSPARENT", "FLAT", "S_FLESH"],
+        "flags": ["FLAMMABLE", "TRANSPARENT", "FLAT", "S_FLESH"],
         "bash": {
             "sound": "thump",
             "ter_set": "t_grass",
@@ -242,7 +242,7 @@
         "symbol": ",",
         "color": "red",
         "move_cost": 6,
-        "flags": ["TRANSPARENT", "FLAT", "S_FLESH"],
+        "flags": ["FLAMMABLE", "TRANSPARENT", "FLAT", "S_FLESH"],
         "bash": {
             "sound": "thump",
             "ter_set": "t_grass_long",
@@ -260,7 +260,7 @@
         "color": "red",
         "move_cost": 8,
         "coverage": 50,
-        "flags": ["TRANSPARENT", "FLAT", "S_FLESH"],
+        "flags": ["FLAMMABLE", "TRANSPARENT", "FLAT", "S_FLESH"],
         "bash": {
             "sound": "thump",
             "ter_set": "t_grass_tall",
@@ -328,7 +328,7 @@
         "color": "red",
         "move_cost_mod": 0,
         "required_str": -1,
-        "flags": ["TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "FLOWER", "S_FLESH"],
+        "flags": ["FLAMMABLE_ASH", "TRANSPARENT", "TINY", "FLAMMABLE_ASH", "NOCOLLIDE", "FLOWER", "S_FLESH"],
         "bash": {
             "str_min": 7,
             "str_max": 11,
@@ -346,7 +346,7 @@
         "coverage": 30,
         "required_str": 10,
         "crafting_pseudo_item": "boulder_anvil",
-        "flags": ["TRANSPARENT", "S_FLESH", "UNSTABLE", "MOUNTABLE", "TINY"],
+        "flags": ["FLAMMABLE_HARD", "TRANSPARENT", "S_FLESH", "UNSTABLE", "MOUNTABLE", "TINY"],
         "bash": {
             "str_min": 21,
             "str_max": 45,
@@ -365,7 +365,7 @@
         "coverage": 45,
         "required_str": 16,
         "crafting_pseudo_item": "boulder_anvil",
-        "flags": ["NOITEM", "TRANSPARENT", "S_FLESH", "UNSTABLE", "MOUNTABLE", "SHORT", "BASHABLE"],
+        "flags": ["FLAMMABLE_HARD", "NOITEM", "TRANSPARENT", "S_FLESH", "UNSTABLE", "MOUNTABLE", "SHORT", "BASHABLE"],
         "bash": {
             "str_min": 37,
             "str_max": 85,
@@ -383,7 +383,7 @@
         "move_cost_mod": -1,
         "coverage": 65,
         "required_str": 32,
-        "flags": ["NOITEM", "S_FLESH", "BASHABLE", "BLOCK_WIND"],
+        "flags": ["FLAMMABLE_HARD", "NOITEM", "S_FLESH", "BASHABLE", "BLOCK_WIND"],
         "bash": {
             "str_min": 69,
             "str_max": 165,
@@ -401,16 +401,17 @@
         "symbol": ".",
         "color": "red",
         "move_cost": 5,
-        "flags": ["TRANSPARENT", "FLAT", "S_FLESH"]
+        "flags": ["FLAMMABLE_HARD", "TRANSPARENT", "FLAT", "S_FLESH"]
     }, {
         "type": "terrain",
         "id": "t_secro_flesh_wall",
         "name": "flesh wall",
         "description": "Disgusting wall of meat, slimy and organic as if it lives. This compact lumps of flesh is sinister to the core.",
-        "symbol": ".",
-        "color": "red",
-        "move_cost": 5,
-        "flags": ["NOITEM", "SUPPORTS_ROOF", "WALL", "AUTO_WALL_SYMBOL", "S_FLESH", "BLOCK_WIND"]
+        "symbol": "#",
+        "color": "dark_red",
+        "move_cost": 0,
+        "coverage": 100,
+        "flags": ["FLAMMABLE_HARD", "NOITEM", "SUPPORTS_ROOF", "WALL", "AUTO_WALL_SYMBOL", "S_FLESH", "BLOCK_WIND"]
     }, {
         "type": "furniture",
         "id": "f_secro_tree_flesh_atk",
@@ -420,7 +421,7 @@
         "color": ["red", "light_red", "red", "red"],
         "move_cost_mod": -1,
 		"required_str": -1,
-        "coverage": 80,
+        "coverage": 95,
         "emissions": ["emit_flesh_tree_grab"],
         "flags": ["FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT", "S_FLESH", "EMITTER"],
         "bash": {
@@ -438,7 +439,7 @@
         "symbol": ".",
         "color": "red",
         "move_cost": 5,
-        "flags": ["TRANSPARENT", "FLAT", "S_FLESH", "FF_ENTRANCE"]
+        "flags": ["FLAMMABLE_HARD", "TRANSPARENT", "FLAT", "S_FLESH", "FF_ENTRANCE"]
     }, {
         "type": "terrain",
         "id": "t_secro_flesh_entrance_open",
@@ -447,7 +448,16 @@
         "symbol": "O",
         "color": "red",
         "move_cost": 5,
-        "flags": ["TRANSPARENT", "FLAT", "S_FLESH", "GOES_DOWN"]
+        "flags": ["FLAMMABLE_HARD", "TRANSPARENT", "FLAT", "S_FLESH", "GOES_DOWN"]
+    }, {
+        "type": "terrain",
+        "id": "t_secro_flesh_entrance_up",
+        "name": "veinhole",
+        "description": "A dead veinhole's inner orifice that leads to the surface. Sure it is gross, but there's no other way...",
+        "symbol": "O",
+        "color": "red",
+        "move_cost": 5,
+        "flags": ["FLAMMABLE_HARD", "TRANSPARENT", "FLAT", "S_FLESH", "GOES_UP"]
     }, {
         "type": "furniture",
         "id": "f_secro_sack_hatch",
@@ -457,13 +467,88 @@
         "color": "red",
         "move_cost_mod": 1,
 		"required_str": -1,
-        "coverage": 30,
+        "coverage": 20,
         "emissions": ["emit_flesh_sack_hatch"],
-        "flags": ["FLAMMABLE", "REDUCE_SCENT", "S_FLESH", "EMITTER"],
+        "flags": ["FLAMMABLE", "S_FLESH", "EMITTER"],
         "bash": {
             "str_min": 12,
             "str_max": 24,
-            "sound": "splash!",
+            "sound": "splook!",
+            "sound_fail": "splat!",
+            "ter_set": "f_null"
+        }
+    }, {
+        "type": "furniture",
+        "id": "f_secro_tendril_cluster",
+        "name": "tendril cluster",
+        "description": "A patch of large, writhing tentacles sprouting from both ground and ceiling. Within a closer look, these tentacles are trying to form into one. You may want to destroy it as soon as possible.",
+        "symbol": "&",
+        "color": "light_red",
+        "move_cost_mod": 1,
+		"required_str": -1,
+        "coverage": 5,
+        "emissions": ["emit_flesh_tentclus"],
+        "flags": ["FLAMMABLE", "S_FLESH", "EMITTER"],
+        "bash": {
+            "str_min": 15,
+            "str_max": 30,
+            "sound": "splook!",
+            "sound_fail": "splat!",
+            "ter_set": "f_null"
+        }
+    }, {
+        "type": "terrain",
+        "id": "t_secro_flesh_inside_down",
+        "name": "mouth slit",
+        "description": "A mouth slit. With enough courage, you can slip through it and will lead you to the depths.",
+        "symbol": "O",
+        "color": "light_red",
+        "move_cost": 5,
+        "flags": ["FLAMMABLE_HARD", "TRANSPARENT", "FLAT", "S_FLESH", "GOES_DOWN"]
+    }, {
+        "type": "terrain",
+        "id": "t_secro_flesh_inside_up",
+        "name": "mouth slit",
+        "description": "A mouth slit. With enough courage, you can climb up by grabbing at its flabby, slimy flesh edges.",
+        "symbol": "O",
+        "color": "light_red",
+        "move_cost": 5,
+        "flags": ["FLAMMABLE_HARD", "TRANSPARENT", "FLAT", "S_FLESH", "GOES_UP"]
+    }, {
+        "type": "furniture",
+        "id": "f_secro_flesh_bones",
+        "name": "bony outgrowths",
+        "description": "An area full of prickly sharp bones, emerging from underneath, so watch where you step!",
+        "symbol": "^",
+        "color": "light_red",
+        "move_cost_mod": 1,
+		"required_str": -1,
+        "coverage": 5,
+        "emissions": ["emit_flesh_tentclus"],
+        "flags": ["FLAMMABLE", "S_FLESH", "SHARP", "EMITTER"],
+        "bash": {
+            "str_min": 10,
+            "str_max": 20,
+            "sound": "smash!",
+            "sound_fail": "splook!",
+            "ter_set": "f_null"
+        }
+    }, {
+        "type": "furniture",
+        "id": "f_secro_flesh_tent",
+        "name": "tendril outgrowths",
+        "description": "A patch of densely-crowded tendrils. These are short, but can grab firmly so watch where you step!",
+        "symbol": "^",
+        "color": "light_red",
+        "move_cost_mod": 1,
+		"required_str": -1,
+        "coverage": 5,
+        "emissions": ["emit_flesh_tentclus"],
+        "flags": ["FLAMMABLE", "S_FLESH", "EMITTER"],
+        "bash": {
+            "str_min": 7,
+            "str_max": 14,
+            "sound": "splook!",
             "sound_fail": "splat!",
             "ter_set": "f_null"
         }
