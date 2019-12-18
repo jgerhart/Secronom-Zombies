@@ -203,8 +203,19 @@ The lab that's been the cause of spreading the newfound mutations throughout the
 ### Infected Buildings
 These are once normal structures, but after a sudden mutation of a dwelling zed, who obtained 'this' newfound mutation, the whole building became infested with flesh. Loots and its layout are the same, but things are harsher than it was before.
 
+##### Exclusive Monsters:
+* _**Fleshknot**_ - The main source of noxious gas lingering throughout the structure.
+
 ### Saddler Gathering Nest
 A cavern where saddlers tend to gather and populate. These nests are rarely seen around the world, yet its occupants are troublesome parasites - parasites which takes control of the sentient target's consciousness.
 
+##### Exclusive Monsters:
+* _**Saddlers**_ - insect-like parasites who manipulates the sentient creatures. They go with different types such as **brute** and **scout**, with the **broodmother** as their queen. Poses minimal threat, unless they control a creature.
+
 ### Flesh Forest
-Forests that has been infested by the crimson horrors, unlike the infected buildings, its entirety of area is manipulated by one, gigantic creature whose purpose is to spread its domain. Odd formation of terrains and uniquely vile dwelling abominations make it a death trap for unprepared wanderers. If one would travel into the depths of this tremendous monster, escaping is no more...
+Forests that has been infested by the crimson horrors. Unlike the infected buildings, its entirety of area is manipulated by one, gigantic creature whose purpose is to spread its domain. Odd formation of terrains and uniquely vile dwelling abominations make it a death trap for unprepared wanderers. If one would travel into the depths of this tremendous monster, escaping is no more...
+
+* Basically, this location (and pretty much everything about it) was adopted from a thread. It was an old thread, and json stuff wasn't good by that time... But now, things are possible to do without fumbling with C++!
+
+##### Exclusive Monsters:
+* **Crimson Horrors** - Monsters that reside in, out or nearby the flesh. The surface monsters usually act as guards, having **flesh sacks** giving birth to **parasytes** and **eye sprouts** alerting the flesh of unwanted visitors. The inner monsters are much more aggressive: **vein beast** and **rumblers** are made internally to fend off intruders while the takens are creatures devoured by the flesh, manipulated into a minion of the flesh.
