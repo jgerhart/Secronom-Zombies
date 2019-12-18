@@ -10,6 +10,7 @@
         "volume": "4000 ml",
         "weight": 1000,
         "hp": 10,
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "speed": 80,
         "material": ["flesh", "bone"],
         "symbol": "⭗",
@@ -52,6 +53,7 @@
         "speed": 80,
         "material": ["flesh", "bone"],
         "symbol": "⟆",
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "color": "light_red",
         "aggression": 100,
         "morale": 100,
@@ -75,6 +77,7 @@
             "WARM",
             "POISON",
             "NO_BREATHE",
+            "NOHEAD",
             "STUN_IMMUNE",
             "IMMOBILE"
         ]
@@ -89,6 +92,7 @@
         "volume": "30000 ml",
         "weight": 40750,
         "hp": 45,
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "speed": 80,
         "material": ["flesh", "bone"],
         "symbol": "☀",
@@ -130,6 +134,7 @@
             "POISON",
             "NO_BREATHE",
             "STUN_IMMUNE",
+            "NOHEAD",
             "IMMOBILE"
         ]
     }, {
@@ -156,6 +161,7 @@
         "armor_bash": 18,
         "armor_cut": 8,
         "armor_stab": 12,
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "special_attacks": [{
                 "cooldown": 10,
                 "damage_max_instance": [{
@@ -185,6 +191,7 @@
             "WARM",
             "POISON",
             "NO_BREATHE",
+            "NOHEAD",
             "STUN_IMMUNE",
             "IMMOBILE"
         ]
@@ -204,7 +211,7 @@
         "speed": 85,
         "material": ["flesh"],
         "symbol": "◈",
-        "emit_fields": ["emit_flesh_sack_blind"],
+        "emit_fields": ["emit_flesh_sack_blind","emit_flesh_biome_immunity"],
         "color": "light_red",
         "aggression": 100,
         "morale": 100,
@@ -232,6 +239,7 @@
             "POISON",
             "NO_BREATHE",
             "STUN_IMMUNE",
+            "NOHEAD",
             "IMMOBILE",
             "PACIFIST"
         ]
@@ -253,6 +261,7 @@
         "color": "light_red",
         "aggression": 100,
         "morale": 100,
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "melee_skill": 2,
         "melee_dice": 1,
         "melee_dice_sides": 2,
@@ -283,6 +292,7 @@
         "volume": "92500 ml",
         "weight": 120000,
         "hp": 140,
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "speed": 85,
         "material": ["flesh"],
         "symbol": "⨳",
@@ -325,6 +335,7 @@
         "volume": "92500 ml",
         "weight": 120000,
         "hp": 185,
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "speed": 85,
         "material": ["flesh"],
         "symbol": "⩮",
@@ -354,7 +365,7 @@
         "//": "Like flesh sacks, but destroying or letting it hatch results the same.",
         "id": "mon_sflesh_taken",
         "type": "MONSTER",
-        "name": "the taken",
+        "name": " taken",
         "description": "A membranous pod of flesh, filled with putrid yellow-ish fluid. Hanging from the ceiling, a creature seems to be trapped inside, but unknown to what it is.",
         "default_faction": "secro_flesh",
         "bodytype": "blob",
@@ -365,7 +376,7 @@
         "speed": 85,
         "material": ["flesh"],
         "symbol": "⚱",
-        "emit_fields": ["emit_flesh_taken_blind"],
+        "emit_fields": ["emit_flesh_taken_blind","emit_flesh_biome_immunity"],
         "color": "light_red",
         "aggression": 100,
         "morale": 100,
@@ -377,10 +388,11 @@
         "armor_cut": 8,
         "armor_stab": 17,
         "vision_day": 22,
+        "vision_night": 22,
         "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_sflesh_taken_target",
-                "cooldown": 0,
+                "cooldown": 10,
                 "monster_message": "<color_light_red>The taken bursts, letting loose of its content!</color>"
             }
         ],
@@ -394,6 +406,7 @@
             "NO_BREATHE",
             "STUN_IMMUNE",
             "IMMOBILE",
+            "NOHEAD",
             "PACIFIST"
         ]
     }, {
@@ -409,6 +422,7 @@
         "volume": "62500 ml",
         "weight": 81500,
         "hp": 100,
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "speed": 70,
         "material": ["flesh"],
         "symbol": "Z",
@@ -458,6 +472,7 @@
         "volume": "154250 ml",
         "weight": 154250,
         "hp": 125,
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "speed": 140,
         "material": ["flesh"],
         "symbol": "B",
@@ -498,6 +513,7 @@
         "volume": "200 ml",
         "weight": 200,
         "hp": 8,
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "speed": 100,
         "material": ["flesh"],
         "symbol": "r",
@@ -537,6 +553,7 @@
         "volume": "63000 ml",
         "weight": 63000,
         "hp": 75,
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "speed": 180,
         "material": ["flesh"],
         "symbol": "C",
@@ -588,6 +605,7 @@
         "speed": 200,
         "material": ["flesh"],
         "symbol": "M",
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "color": "light_red",
         "aggression": 100,
         "morale": 100,
@@ -610,7 +628,7 @@
     },
     
   {
-    	"//": "This is the boss. It regenerates super fast, attacks with highly damaging wide aoe, converts nearby terrain into a biohazard and calls out new takens at will!",
+    	"//": "This is the boss. It regenerates super fast, attacks by converting nearby terrains into biohazards and calls out new takens at will!",
   	  "//": "Killing it won't bring the flesh terrains back to normal, but it is the queen, so crimson horrors will cease to exist... hopefully.",
         "id": "mon_sflesh_flesh",
         "type": "MONSTER",
@@ -619,16 +637,16 @@
         "default_faction": "secro_flesh",
         "bodytype": "blob",
         "species": ["ABERRATION"],
-        "volume": "875000 ml",
-    	"weight": 200000,
+        "volume": "100000 L",
+    	"weight": "533525 kg",
         "hp": 4200,
         "speed": 85,
         "material": ["flesh","bone"],
         "symbol": "⨷",
-        "emit_fields": ["emit_flesh_taken_blind"],
         "color": "red_magenta",
         "aggression": 100,
         "morale": 100,
+        "emit_fields": ["emit_flesh_biome_immunity"],
         "melee_skill": 10,
         "melee_dice": 10,
         "melee_dice_sides": 8,
@@ -636,12 +654,63 @@
         "armor_bash": 24,
         "armor_cut": 12,
         "armor_stab": 20,
+        "vision_day": 30,
+        "vision_night": 30,
+        "special_attacks": [{
+                "type": "spell",
+                "spell_id": "mon_sflesh_flesh_target",
+                "cooldown": 12,
+                "monster_message": "<color_light_red>%1$s trembles!</color>"
+            }
+        ],
+        "regenerates": 25,
+        "death_drops": "mon_sflesh_flesh_death_drop",
+        "harvest": "exempt",
+        "death_function": ["MELT"],
+        "flags": [
+            "SEES",
+            "WARM",
+            "POISON",
+            "NO_BREATHE",
+            "STUN_IMMUNE",
+            "NOHEAD",
+            "IMMOBILE",
+            "PACIFIST",
+            "QUEEN"
+        ]
+    }, {
+        "id": "mon_sflesh_taken_potent",
+        "type": "MONSTER",
+        "name": "taken",
+        "description": "A membranous pod of flesh, filled with putrid yellow-ish fluid. Sprouting from the flesh, a creature seems to be trapped inside, but unknown to what it is.",
+        "default_faction": "secro_flesh",
+        "bodytype": "blob",
+        "species": ["ABERRATION"],
+        "volume": "92500 ml",
+        "weight": 120000,
+        "hp": 35,
+        "speed": 85,
+        "material": ["flesh"],
+        "symbol": "⚱",
+        "emit_fields": ["emit_flesh_taken_potent_blind","emit_flesh_biome_immunity"],
+        "color": "light_red",
+        "aggression": 100,
+        "morale": 100,
+        "melee_skill": 6,
+        "melee_dice": 2,
+        "melee_dice_sides": 4,
+        "melee_cut": 6,
+        "armor_bash": 20,
+        "armor_cut": 8,
+        "armor_stab": 17,
         "vision_day": 22,
+        "vision_night": 22,
         "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_sflesh_taken_target",
-                "cooldown": 0,
-                "monster_message": "<color_light_red>%1$s bursts, letting loose its content!</color>"
+                "cooldown": 5,
+                "self": true,
+                "monster_message": "<color_light_red>The taken bursts, letting loose of its content!</color>"
             }
         ],
         "death_drops": "mon_sflesh_taken_death_drop",
@@ -653,7 +722,56 @@
             "POISON",
             "NO_BREATHE",
             "STUN_IMMUNE",
+            "NOHEAD",
             "IMMOBILE",
+            "PACIFIST"
+        ]
+    }, {
+    	"//": "These walls will make obstacles as long as they live. They remain for 10-20 turns!",
+        "id": "mon_sflesh_flesh_wall",
+        "type": "MONSTER",
+        "name": "wall of flesh",
+        "description": "Thick, lumps of meat taken control by the flesh. It slowly protrudes from the wall, creating fleshed barriers on its way.",
+        "default_faction": "secro_flesh",
+        "bodytype": "blob",
+        "species": ["ABERRATION"],
+        "volume": "10000 L",
+        "weight": "23750 kg",
+        "hp": 200,
+        "speed": 10,
+        "material": ["flesh"],
+        "symbol": "☒",
+        "emit_fields": ["emit_flesh_biome_immunity","emit_flesh_wall_limitation"],
+        "color": "light_red",
+        "aggression": 100,
+        "morale": 100,
+        "melee_skill": 6,
+        "melee_dice": 2,
+        "melee_dice_sides": 4,
+        "melee_cut": 6,
+        "armor_bash": 30,
+        "armor_cut": 10,
+        "armor_stab": 25,
+        "vision_day": 30,
+        "vision_night": 30,
+        "regenerates": -5,
+        "special_attacks": [{
+                "type": "spell",
+                "spell_id": "mon_sflesh_wall_ing_target",
+                "cooldown": 5,
+                "self": true,
+                "monster_message": "<color_light_red>%1$s trembles!</color>"
+            }
+        ],
+        "harvest": "exempt",
+        "death_function": ["MELT"],
+        "flags": [
+            "SEES",
+            "WARM",
+            "POISON",
+            "NO_BREATHE",
+            "NOHEAD",
+            "STUN_IMMUNE",
             "PACIFIST"
         ]
     }
