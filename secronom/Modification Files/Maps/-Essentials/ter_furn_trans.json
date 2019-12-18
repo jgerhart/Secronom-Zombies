@@ -93,5 +93,112 @@
                 "message": "The flesh sack hatches."
             }
         ]
+    },
+    {
+        "type": "ter_furn_transform",
+        "id": "sflesh_flesh_trap",
+        "fail_message": "Can't place traps.",
+        "furniture": [{
+                "result": "f_secro_flesh",
+                "valid_furniture": ["f_null"],
+                "message": "The flesh here became a biohazard!"
+            }
+        ]
+    },
+    {
+        "type": "ter_furn_transform",
+        "id": "sflesh_flesh_biohazard_accurate",
+        "fail_message": "Can't place traps.",
+        "furniture": [{
+                "result": [["f_secro_flesh", 20], "f_secro_flesh_bones", "f_secro_flesh_tent"],
+                "valid_furniture": [ "f_secro_flesh" ],
+                "message": "The flesh here became a biohazard!"
+            },
+            {
+                "result": [["f_secro_flesh_wall_spawning", 40], "f_secro_flesh_wall"],
+                "valid_furniture": [ "f_secro_flesh_wall" ],
+                "message": "The flesh here became a biohazard!"
+            }
+        ]
+    },
+    {
+        "type": "ter_furn_transform",
+        "id": "sflesh_flesh_biohazard",
+        "fail_message": "Can't place traps.",
+        "furniture": [{
+                "result": [["f_secro_flesh", 200], "f_secro_flesh_bones", "f_secro_flesh_tent"],
+                "valid_furniture": [ "f_secro_flesh" ],
+                "message": "The flesh here became a biohazard!"
+            },
+            {
+                "result": [["f_secro_flesh_wall_spawning", 400], "f_secro_flesh_wall"],
+                "valid_furniture": [ "f_secro_flesh_wall" ],
+                "message": "The flesh here became a biohazard!"
+            }
+        ]
+    },
+    {
+    	"//": "To prevent the abuse of traps and/or to keep some safe area.",
+        "type": "ter_furn_transform",
+        "id": "sflesh_flesh_biohazard_remove_bone",
+        "fail_message": "Can't remove traps.",
+        "furniture": [{
+                "result": [["f_secro_flesh_bones", 10], "f_secro_flesh"],
+                "valid_furniture": [ "f_secro_flesh_bones" ],
+                "message": "The biohazard here has withdraw!"
+            }
+        ]
+    },
+    {
+        "type": "ter_furn_transform",
+        "id": "sflesh_flesh_biohazard_remove_tent",
+        "fail_message": "Can't remove traps.",
+        "furniture": [{
+                "result": [["f_secro_flesh_tent", 10], "f_secro_flesh"],
+                "valid_furniture": [ "f_secro_flesh_tent" ],
+                "message": "The biohazard here has withdraw!"
+            }
+        ]
+    },
+    {
+    	"//": "The lair will become safe after the flesh's death.",
+        "type": "ter_furn_transform",
+        "id": "sflesh_flesh_biohazard_dead",
+        "fail_message": "Can't remove all traps.",
+        "terrain": [{
+        		"//": "The exit opens once you beat the flesh.",
+                "result": "t_secro_flesh_inside_up",
+                "valid_flags": ["FF_EXIT"],
+                "message": "An orifice opens after the flesh's death."
+            },
+            {
+                "result": "t_secro_flesh",
+                "valid_flags": ["FF_BIOHAZARD"],
+                "message": "The walls has melted away."
+            }
+        ],
+        "furniture": [{
+                "result": "f_null",
+                "valid_flags": ["FF_BIOHAZARD"],
+                "message": "The biohazards has been neutralized!"
+            }
+        ]
+    },
+    {
+        "type": "ter_furn_transform",
+        "id": "sflesh_flesh_wall",
+        "fail_message": "Can't make walls.",
+        "terrain": [{
+                "result": "t_secro_flesh_wall_weak",
+                "valid_flags": ["S_FLESH"],
+                "message": "A wall has been created!"
+            }
+        ],
+        "furniture": [{
+                "result": "f_secro_flesh_wall",
+                "valid_flags": ["S_FLESH"],
+                "message": "The biohazards has been neutralized!"
+            }
+        ]
     }
 ]
