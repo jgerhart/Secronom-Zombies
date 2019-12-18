@@ -39,5 +39,11 @@
     "subtype": "collection",
     "id": "mon_sflesh_taken_death_drop",
     "entries": [ { "item": "flesh_taken_death" } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_sflesh_flesh_death_drop",
+    "entries": [ { "item": "flesh_death" } ]
   }
  ]
