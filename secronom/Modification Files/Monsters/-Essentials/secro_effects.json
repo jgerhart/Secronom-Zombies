@@ -894,6 +894,92 @@
     "scaling_mods": { "speed_mod": [ -10 ] },
     "show_in_info": true
   },
+  {
+        "type": "effect_type",
+        "id": "secro_flesh_bones",
+        "name": ["unstable footing"],
+        "desc": ["You feel the bones sink deeper from underneath as you stand on it!"],
+        "show_in_info": true,
+        "rating": "bad",
+        "max_duration": 1,
+        "base_mods": {
+            "hurt_min": [1,4],
+            "hurt_tick": [3],
+            "speed_mod": [-4]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_flesh_tendrils",
+        "name": ["unstable footing"],
+        "desc": ["The tendril outgrowths has contricted your feet!\nYou are being held in place, and dodging and blocking are extremely difficult!"],
+        "show_in_info": true,
+        "rating": "bad",
+        "max_duration": 1,
+        "base_mods": {
+            "dodge_mod": [-1],
+            "speed_mod": [-10]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_flesh_biome",
+        "name": [
+"Dissolving","Dissolving","Dissolving","Dissolving","Dissolving",
+"Dissolving","Dissolving","Dissolving","Dissolving","Dissolving",
+"Dissolving","Dissolving","Dissolving","Dissolving","Dissolving",
+"Dissolving","Dissolving","Dissolving","Dissolving","Dissolving",
+"Dissolving","Dissolving","Dissolving","Dissolving","Dissolving"
+],
+        "desc": ["This body part is being devoured by the flesh!"],
+        "rating": "bad",
+        "miss_messages": [ [ "You feel your body succumbing to the flesh.", 1 ] ],
+		"int_add_val": 1,
+		"int_dur_factor": "2 turns",
+        "int_decay_step": -1,
+        "int_decay_tick": 1,
+        "max_intensity": 25,
+        "max_duration": 50,
+        "show_in_info": true,
+        "pain_sizing": true,
+	    "hurt_sizing": true,
+        "base_mods": {
+            "hurt_min": [1],
+            "hurt_tick": [10],
+  	      "dex_mod": [ -0.30 ],
+     	   "str_mod": [ -0.85 ]
+        },
+        "scaling_mods": {
+            "hurt_min": [0.1],
+            "hurt_tick": [-0.25],
+  	      "dex_mod": [ -0.2 ],
+     	   "str_mod": [ -0.1 ]
+        }
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_flesh_biome_immune",
+        "max_duration": 1,
+        "removes_effects": [
+            "secro_flesh_biome"
+        ],
+        "blocks_effects": [
+            "secro_flesh_biome"
+        ]
+    },
+    {
+        "type": "effect_type",
+        "id": "secro_flesh_wall_limit",
+        "name": ["Melting"],
+        "desc": ["You are melting as you move!"],
+        "show_in_info": true,
+        "rating": "bad",
+        "max_duration": 1,
+        "base_mods": {
+            "hurt_min": [5,10],
+            "hurt_tick": [1]
+        }
+    },
     
     {
         "//": "Effects for notifying the player. This method is a bit unstable...",
