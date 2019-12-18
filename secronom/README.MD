@@ -150,7 +150,7 @@ Zombies which are completely deformed and are considered *garbages* by the lab.
 * **Squirtler**
 
 ##### BOWs **!**
-Bio-Organic-Weapons. These are the zombies set for warring purposes, contained within the lab perimeters. They could be wearing suits of power armor.
+Bio-Organic-Weapons. These are the zombies set for warring purposes, contained within the lab perimeters.
 
 * **Kaxix**
 * **Axxuros**
@@ -190,7 +190,7 @@ All monsters aren't designed to kill the target, and thus providing roles to the
 
 * (**~**) *Summoner* - monsters who takes advantage on creating/sending minions. Minions are usually weak, time limited and deals lesser damage, yet a hassle due to them having debuff inflicting abilities. Monsters who heavily rely on their minions are the opposite.
 
-* (**=**) *Boss* - monsters that are versatile in every situation. Unique and those who opposes extreme danger are considered with this type. They also reside in their lair, concealing them to prevent a widespread annihilation.
+* (**=**) *Boss* - monsters that are versatile in every situation. Unique and those who opposes extreme danger are considered with this type. They also reside in their lair, concealing them to prevent genocidal annihilation.
 
 Few are hybrids, but are still categorized into a type.
 
@@ -200,22 +200,27 @@ These are the locations exclusive to the mod. Currently, there are few that can 
 ### Secronom Lab
 The lab that's been the cause of spreading the newfound mutations throughout the entire lands. It also became the home for the secronom specimens (SS). Lab facilities are small, but there are beneficial items to loot from.
 
+##### Exclusive Monsters:
+* _**Failed Mutants**_ - Humanoid test subjects that suffered from intense mutation. Their body alteration serves no purpose, and are considered as trash.
+* _**Bio-Organic-Weapons**_ - Test subjects, with successful mutations that are built for combats. These zombies are rare, and few wears power armors as their battle suit.
+* _**Secronom Dragon**_ - A massive reptilian creature made by the SS lab, whose purpose is to perform widespread eradication of undead... and living. It is locked beneath the facility.
+
 ### Infected Buildings
 These are once normal structures, but after a sudden mutation of a dwelling zed, who obtained 'this' newfound mutation, the whole building became infested with flesh. Loots and its layout are the same, but things are harsher than it was before.
 
 ##### Exclusive Monsters:
-* _**Fleshknot**_ - The main source of noxious gas lingering throughout the structure.
+* _**Fleshknot**_ - The main source of noxious gas lingering throughout the structure. Its growth amplifies the gas, as well as its mass.
 
 ### Saddler Gathering Nest
 A cavern where saddlers tend to gather and populate. These nests are rarely seen around the world, yet its occupants are troublesome parasites - parasites which takes control of the sentient target's consciousness.
 
 ##### Exclusive Monsters:
-* _**Saddlers**_ - insect-like parasites who manipulates the sentient creatures. They go with different types such as **brute** and **scout**, with the **broodmother** as their queen. Poses minimal threat, unless they control a creature.
+* _**Saddlers**_ - Insect-like parasites who manipulates the sentient creatures. They go with different types such as **brute** and **scout**, with the **broodmother** as their queen. Poses minimal threat, unless they control a creature.
 
 ### Flesh Forest
-Forests that has been infested by the crimson horrors. Unlike the infected buildings, its entirety of area is manipulated by one, gigantic creature whose purpose is to spread its domain. Odd formation of terrains and uniquely vile dwelling abominations make it a death trap for unprepared wanderers. If one would travel into the depths of this tremendous monster, escaping is no more...
+Forests that has been infested by the crimson horrors. Unlike the infected buildings, its entirety of area is manipulated by one, gigantic creature whose purpose is to spread its domain. Odd formation of terrains and uniquely vile dwelling abominations make it a death trap for unprepared wanderers. Bring your trusty flamethrower and set everything on fire!
 
 * Basically, this location (and pretty much everything about it) was adopted from a thread. It was an old thread, and json stuff wasn't good by that time... But now, things are possible to do without fumbling with C++!
 
 ##### Exclusive Monsters:
-* **Crimson Horrors** - Monsters that reside in, out or nearby the flesh. The surface monsters usually act as guards, having **flesh sacks** giving birth to **parasytes** and **eye sprouts** alerting the flesh of unwanted visitors. The inner monsters are much more aggressive: **vein beast** and **rumblers** are made internally to fend off intruders while the takens are creatures devoured by the flesh, manipulated into a minion of the flesh.
+* _**Crimson Horrors**_ - Monsters that resides in, out or nearby the flesh. The surface monsters usually act as guards, having **flesh sacks** giving birth to **parasytes** and **eye sprouts** alerting the flesh of unwanted visitors. The inner monsters are much more aggressive: **vein beasts** and **rumblers** are made internally to fend off intruders while the **takens** are creatures devoured by the flesh, manipulated into minions. The **flesh** is the hivemind - hidden in its inescapable lair - and a combat with it is a challenge.
