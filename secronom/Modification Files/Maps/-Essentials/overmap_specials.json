@@ -1338,6 +1338,134 @@
                     7,
                     0
                 ]
+            },
+            {
+                "overmap": "flesh_forest_bot1_3_north",
+                "point": [
+                    0,
+                    0,
+                    -1
+                ]
+            }, {
+                "overmap": "flesh_forest_bot1_2_north",
+                "point": [
+                    1,
+                    0,
+                    -1
+                ]
+            }, {
+                "overmap": "flesh_forest_bot1_1_north",
+                "point": [
+                    2,
+                    0,
+                    -1
+                ]
+            }, {
+                "overmap": "flesh_forest_bot1_6_north",
+                "point": [
+                    0,
+                    1,
+                    -1
+                ]
+            }, {
+                "overmap": "flesh_forest_bot1_5_north",
+                "point": [
+                    1,
+                    1,
+                    -1
+                ]
+            }, {
+                "overmap": "flesh_forest_bot1_4_north",
+                "point": [
+                    2,
+                    1,
+                    -1
+                ]
+            }, {
+                "overmap": "flesh_forest_bot1_9_north",
+                "point": [
+                    0,
+                    2,
+                    -1
+                ]
+            }, {
+                "overmap": "flesh_forest_bot1_8_north",
+                "point": [
+                    1,
+                    2,
+                    -1
+                ]
+            }, {
+                "overmap": "flesh_forest_bot1_7_north",
+                "point": [
+                    2,
+                    2,
+                    -1
+                ]
+            },
+            {
+                "overmap": "flesh_forest_bot2_3_north",
+                "point": [
+                    0,
+                    0,
+                    -2
+                ]
+            }, {
+                "overmap": "flesh_forest_bot2_2_north",
+                "point": [
+                    1,
+                    0,
+                    -2
+                ]
+            }, {
+                "overmap": "flesh_forest_bot2_1_north",
+                "point": [
+                    2,
+                    0,
+                    -2
+                ]
+            }, {
+                "overmap": "flesh_forest_bot2_6_north",
+                "point": [
+                    0,
+                    1,
+                    -2
+                ]
+            }, {
+                "overmap": "flesh_forest_bot2_5_north",
+                "point": [
+                    1,
+                    1,
+                    -2
+                ]
+            }, {
+                "overmap": "flesh_forest_bot2_4_north",
+                "point": [
+                    2,
+                    1,
+                    -2
+                ]
+            }, {
+                "overmap": "flesh_forest_bot2_9_north",
+                "point": [
+                    0,
+                    2,
+                    -2
+                ]
+            }, {
+                "overmap": "flesh_forest_bot2_8_north",
+                "point": [
+                    1,
+                    2,
+                    -2
+                ]
+            }, {
+                "overmap": "flesh_forest_bot2_7_north",
+                "point": [
+                    2,
+                    2,
+                    -2
+                ]
             }
         ],
         "type": "overmap_special"
