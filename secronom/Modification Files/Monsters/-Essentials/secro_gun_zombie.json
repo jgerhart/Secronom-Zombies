@@ -90,22 +90,5 @@
             "damage_type": "acid",
             "amount": 2
         }
-    },
-    {
-        "id": "saddler_mouth",
-        "type": "GUN",
-        "copy-from": "fake_item",
-        "name": "saddler mouth",
-        "description": "An acid-spitting mouth from a saddler scout.",
-        "flags": ["NEVER_JAMS"],
-        "ammo_effects": ["NO_DAMAGE_SCALING"],
-        "skill": "rifle",
-        "durability": 10,
-        "range": 12,
-        "dispersion": 1000,
-        "ranged_damage": {
-            "damage_type": "acid",
-            "amount": 3
-        }
     }
 ]
