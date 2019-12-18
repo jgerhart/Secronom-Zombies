@@ -609,5 +609,35 @@
         "type": "monstergroup",
         "name": "GROUP_FLESH_SACK",
         "default": "mon_sflesh_parasyte"
+    },
+    {
+        "type": "monstergroup",
+        "name": "GROUP_FLESH_TENTCLUS",
+        "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_sflesh_vbeast", "freq": 75, "cost_multiplier": 0 },
+      { "monster": "mon_sflesh_vrumbler", "freq": 50, "cost_multiplier": 0 }
+    ]
+    },
+    {
+        "type": "monstergroup",
+        "name": "GROUP_FF_SURFACE",
+        "default": "mon_sflesh_sack"
+    },
+    {
+        "type": "monstergroup",
+        "name": "GROUP_FF_INSIDE",
+        "default": "mon_sflesh_taken"
+    },
+    {
+        "type": "monstergroup",
+        "name": "GROUP_FLESH_TAKEN",
+        "default": "mon_sflesh_taken_zombie",
+    "monsters": [
+      { "monster": "mon_sflesh_taken_bear", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_sflesh_taken_rat", "freq": 125, "cost_multiplier": 0 },
+      { "monster": "mon_sflesh_taken_cougar", "freq": 25, "cost_multiplier": 0 },
+      { "monster": "mon_sflesh_taken_moose", "freq": 5, "cost_multiplier": 0 }
+    ]
     }
 ]
