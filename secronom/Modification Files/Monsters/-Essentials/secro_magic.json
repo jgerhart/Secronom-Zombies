@@ -3626,8 +3626,8 @@
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE"],
         "valid_targets": ["hostile"],
         "effect": "cone_attack",
-        "min_damage": 6,
-        "max_damage": 18,
+        "min_damage": 7,
+        "max_damage": 14,
         "min_range": 2,
         "max_range": 4,
         "min_aoe": 90,
@@ -3703,8 +3703,9 @@
         "valid_targets": ["ally", "hostile", "ground"],
         "effect": "ter_transform",
         "effect_str": "veinhole_open",
-        "min_aoe": 100,
-        "max_aoe": 100
+        "min_aoe": 50,
+        "max_aoe": 50,
+        "//": "The reach of this spell is close to the reality bubble, incase of veinhole dies because of something else."
     },
     {
         "id": "mon_sflesh_sack_hatch",
@@ -3767,5 +3768,171 @@
         "effect": "projectile_attack",
         "min_range": 20,
         "max_range": 20
+    },
+    {
+        "id": "mon_sflesh_flesh_bioacc",
+        "type": "SPELL",
+        "name": "Accurate Biohazard",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster accurately converts the flesh underneath the target into a biohazard.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "ter_transform",
+        "effect_str": "sflesh_flesh_biohazard_accurate",
+        "min_range": 20,
+        "max_range": 20,
+        "min_aoe": 2,
+        "max_aoe": 2
+    },
+    {
+        "id": "mon_sflesh_flesh_bio",
+        "type": "SPELL",
+        "name": "Biohazard",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster converts the flesh underneath the target into a biohazard.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "ter_transform",
+        "effect_str": "sflesh_flesh_biohazard",
+        "min_range": 20,
+        "max_range": 20,
+        "min_aoe": 10,
+        "max_aoe": 10
+    },
+    {
+        "id": "mon_sflesh_flesh_bio_bone",
+        "type": "SPELL",
+        "name": "Cleanse",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster cleanses the area of excess traps.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "ter_transform",
+        "effect_str": "sflesh_flesh_biohazard_remove_bone",
+        "min_aoe": 60,
+        "max_aoe": 60
+    },
+    {
+        "id": "mon_sflesh_flesh_bio_tent",
+        "type": "SPELL",
+        "name": "Cleanse",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster cleanses the area of excess traps.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "ter_transform",
+        "effect_str": "sflesh_flesh_biohazard_remove_tent",
+        "min_aoe": 60,
+        "max_aoe": 60
+    },
+    {
+        "id": "mon_sflesh_flesh_trap",
+        "type": "SPELL",
+        "name": "Flesh Augmentation",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster converts the target's position into an augmented trap, making it suitable for biohazards.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "ter_transform",
+        "effect_str": "sflesh_flesh_trap",
+        "min_range": 40,
+        "max_range": 40
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_sflesh_flesh_taken",
+        "name": "Swarm of the Taken",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster brings its takens into the fields by channeling itself. They emerge from underneath, which makes them more potent.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "RANDOM_TARGET", "PERMANENT"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_range": 20,
+        "max_range": 20,
+        "effect": "summon",
+        "effect_str": "mon_sflesh_taken_potent"
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_sflesh_flesh_taken_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "mon_sflesh_flesh_taken"
+            }
+        ],
+        "flags": ["SILENT","RANDOM_DAMAGE","RANDOM_TARGET","WONDER"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 3,
+        "effect": "target_attack",
+        "min_range": 20,
+        "max_range": 20
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_sflesh_flesh_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "mon_sflesh_flesh_bio_tent", "hit_self": true
+            },
+            {
+                "id": "mon_sflesh_flesh_bio_bone", "hit_self": true
+            },
+            {
+                "id": "mon_sflesh_flesh_trap"
+            },
+            {
+                "id": "mon_sflesh_flesh_bio"
+            },
+            {
+                "id": "mon_sflesh_flesh_bioacc"
+            },
+            {
+                "id": "mon_sflesh_flesh_taken_target"
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_range": 30,
+        "max_range": 30
+    },
+    {
+        "id": "mon_sflesh_flesh_bio_death",
+        "type": "SPELL",
+        "name": "Fleshed Collapse",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's death causes all traps to neutralize, becoming inactive and out of view.'",
+        "message": "<color_light_green>As the flesh melts away, the surrounding biohazards has reverted back to normal...</color>\n<color_dark_gray>The flesh is alive, but its prevalent domination ceases to spread.</color>",
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "ter_transform",
+        "effect_str": "sflesh_flesh_biohazard_dead",
+        "min_aoe": 50,
+        "max_aoe": 50
+    },
+    {
+        "id": "mon_sflesh_wall_ing",
+        "type": "SPELL",
+        "name": "Fortiry",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster creates a wall on its position.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "ter_transform",
+        "effect_str": "sflesh_flesh_wall"
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_sflesh_wall_ing_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "mon_sflesh_wall_ing", "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_range": 30,
+        "max_range": 30
     }
 ]
