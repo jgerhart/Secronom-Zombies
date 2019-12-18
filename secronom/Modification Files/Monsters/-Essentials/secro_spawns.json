@@ -639,5 +639,10 @@
       { "monster": "mon_sflesh_taken_cougar", "freq": 25, "cost_multiplier": 0 },
       { "monster": "mon_sflesh_taken_moose", "freq": 5, "cost_multiplier": 0 }
     ]
+    },
+    {
+        "type": "monstergroup",
+        "name": "GROUP_FLESH_WALL",
+        "default": "mon_sflesh_flesh_wall"
     }
 ]
