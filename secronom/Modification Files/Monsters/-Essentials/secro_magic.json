@@ -12,7 +12,7 @@
         "max_damage": 9999999,
         "min_aoe": 1,
         "max_aoe": 1,
-        "damage_type": "none"
+        "damage_type": "bio"
     }, {
     "type": "SPELL",
     "id": "secro_spell_null",
@@ -293,7 +293,7 @@
         "max_range": 6,
         "min_duration": 200,
         "max_duration": 600,
-        "damage_type": "none"
+        "damage_type": "bio"
     }, {
         "type": "SPELL",
         "id": "mon_summon_nightwail_shadow",
@@ -331,7 +331,7 @@
         "max_dot": 1,
         "min_duration": 300,
         "max_duration": 600,
-        "damage_type": "none"
+        "damage_type": "bio"
     }, {
         "id": "mon_zombie_nightwail_shadow_curse",
         "type": "SPELL",
@@ -352,7 +352,7 @@
         "max_range": 3,
         "min_duration": 3000,
         "max_duration": 6000,
-        "damage_type": "none"
+        "damage_type": "bio"
     }, {
         "id": "mon_zombie_xlick_writhes",
         "type": "SPELL",
@@ -2935,7 +2935,7 @@
         "effect_str": "secro_glut_dismember",
         "min_damage": 120,
         "max_damage": 120,
-        "damage_type": "none",
+        "damage_type": "bio",
 		"min_duration": 30000,
         "max_duration": 30000
     }, {
@@ -3748,10 +3748,24 @@
         ],
         "flags": ["SILENT"],
         "valid_targets": ["ally", "hostile", "ground"],
-        "min_damage": 1,
-        "max_damage": 1,
         "effect": "projectile_attack",
-        "min_range": 10,
-        "max_range": 10
+        "min_range": 20,
+        "max_range": 20
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_sflesh_taken_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "sacrifice_spell", "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_range": 20,
+        "max_range": 20
     }
 ]
