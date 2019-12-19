@@ -2,7 +2,8 @@
         "type": "mod_tileset",
         "compatibility": [
             "MSX++DEAD_PEOPLE",
-            "UNDEAD_PEOPLE"
+            "UNDEAD_PEOPLE",
+			"Xotto+"
         ],
         "tiles-new": [{
                 "file": "1_32x32_monsters_0-99.png",
@@ -872,6 +873,37 @@
 					{
                         "id": "corpse_mon_saddler_infected_scout",
                         "fg": 188
+                    },
+					{
+                        "id": "t_secro_tree_flesh",
+                        "fg": 189,
+						"bg": 190
+                    },
+					{
+                        "id": "t_secro_tree_young_flesh",
+                        "fg": 191,
+						"bg": 190
+                    },
+					{
+                        "id": "t_secro_flesh_entrance_open",
+                        "fg": 192
+                    },
+					{
+                        "id": "f_secro_tree_flesh_atk",
+                        "fg": 193
+                    },
+					{
+                        "id": "mon_sflesh_entrance",
+                        "fg": 194
+                    },
+					{
+                        "id": "mon_sflesh_vbeast",
+                        "fg": 195,
+						"bg": 100
+                    },
+					{
+                        "id": "f_secro_boulder_large_flesh",
+                        "fg": 196
                     }
 					
 					
@@ -1363,6 +1395,26 @@
                         "fg": 398,
                         "bg": 0
                     },{
+                        "id": "!t_secro_flesh_entrance_open",
+                        "fg": 400,
+                        "bg": 1
+                    },{
+                        "id": "t_secro_flesh_entrance_close",
+                        "fg": 401,
+                        "bg": 0
+                    },{
+                        "id": "f_secro_flower_flesh",
+                        "fg": 402,
+                        "bg": 0
+                    },{
+                        "id": "f_secro_boulder_small_flesh",
+                        "fg": 403,
+                        "bg": 0
+                    },{
+                        "id": "f_secro_boulder_medium_flesh",
+                        "fg": 404,
+                        "bg": 1
+                    },{
           "id": ["fd_mawy_web"],
           "fg": 408,
 		  "bg": 0,
@@ -1850,12 +1902,44 @@
                     },{
                         "id": ["corpse_mon_saddler_infected"],
                         "fg": 582
+                    },{
+                        "id": ["mon_sflesh_surface_spawner"],
+                        "fg": 583
+                    },{
+                        "id": ["mon_sflesh_tendril"],
+                        "fg": 584
+                    },{
+                        "id": ["mon_sflesh_jaw"],
+                        "fg": 585
+                    },{
+                        "id": ["mon_sflesh_sack"],
+                        "fg": 586
+                    },{
+                        "id": ["f_secro_sack_hatch"],
+                        "fg": 587
+                    },{
+                        "id": ["mon_sflesh_parasyte"],
+                        "fg": 588
+                    },{
+                        "id": ["corpse_mon_sflesh_parasyte"],
+                        "fg": 589
+                    },{
+                        "id": ["mon_zombie_relinquish"],
+                        "fg": 590,
+						"bg": 1
+                    },{
+                        "id": ["mon_zombie_relinquish_revived"],
+                        "fg": 591,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_zombie_relinquish_revived"],
+                        "fg": 592
                     }
 				
                 ]
             }, 
 	{
-    "file": "5_32x32_status_icons_556-665.png",
+    "file": "5_32x32_status_icons_656-765.png",
     "sprite_offset_y":-16,
     "tiles":
     [      
@@ -1898,7 +1982,289 @@
 		{
           "id": "overlay_effect_secro_necros_para",
           "bg": 665
+        },	
+		{
+          "id": "overlay_effect_secro_flesh_tree_grab",
+          "bg": 666
         }
+    ]
+	}, 
+	{
+    "file": "6_32x32_terrain2_766-1021.png",
+    "tiles":
+    [      
+		{
+          "id": ["t_secro_dirt_flesh"],
+          "fg": 766,
+		  "bg": 399,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 756,
+			  "bg": 399
+            },		  
+           {
+              "id": "corner",
+              "fg": [757, 758, 759, 760],
+			  "bg": 399
+            },
+            {
+              "id": "t_connection",
+              "fg": [761, 762, 763, 764],
+			  "bg": 399
+            },
+            {
+              "id": "edge",
+              "fg": [765, 766],
+			  "bg": 399
+            },
+            {
+              "id": "end_piece",
+              "fg": [767, 768, 769, 770],
+			  "bg": 399
+            },
+            {
+              "id": "unconnected",
+              "fg": [
+            { "weight":3, "sprite":771},
+            { "weight":3, "sprite":405},
+			{ "weight":3, "sprite":406},
+			{ "weight":3, "sprite":407}
+            ],
+			  "bg": 399
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_secro_grass_flesh"],
+          "fg": 772,
+		  "bg": 399,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 772,
+			  "bg": 399
+            },		  
+           {
+              "id": "corner",
+              "fg": [773, 774, 775, 776],
+			  "bg": 399
+			},
+            {
+              "id": "t_connection",
+              "fg": [777, 778, 779, 780],
+			  "bg": 399
+            },
+            {
+              "id": "edge",
+              "fg": [781, 782],
+			  "bg": 399
+            },
+            {
+              "id": "end_piece",
+              "fg": [783, 784, 785, 786],
+			  "bg": 399
+            },
+            {
+              "id": "unconnected",
+              "fg": 787,
+			  "bg": 399
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_secro_grass_long_flesh"],
+          "fg": 788,
+		  "bg": 399,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 788,
+			  "bg": 399
+            },		  
+           {
+              "id": "corner",
+              "fg": [789, 790, 791, 792],
+			  "bg": 399
+			},
+            {
+              "id": "t_connection",
+              "fg": [793, 794, 795, 796],
+			  "bg": 399
+            },
+            {
+              "id": "edge",
+              "fg": [797, 798],
+			  "bg": 399
+            },
+            {
+              "id": "end_piece",
+              "fg": [799, 800, 801, 802],
+			  "bg": 399
+            },
+            {
+              "id": "unconnected",
+              "fg": 803,
+			  "bg": 399
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_secro_grass_tall_flesh"],
+          "fg": 804,
+		  "bg": 399,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 804,
+			  "bg": 399
+            },		  
+           {
+              "id": "corner",
+              "fg": [805, 806, 807, 808],
+			  "bg": 399
+			},
+            {
+              "id": "t_connection",
+              "fg": [809, 810, 811, 812],
+			  "bg": 399
+            },
+            {
+              "id": "edge",
+              "fg": [813, 814],
+			  "bg": 399
+            },
+            {
+              "id": "end_piece",
+              "fg": [815, 816, 817, 818],
+			  "bg": 399
+            },
+            {
+              "id": "unconnected",
+              "fg": 819,
+			  "bg": 399
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_secro_flesh"],
+          "fg": 820,
+		  "bg": 399,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 820,
+			  "bg": 399
+            },		  
+           {
+              "id": "corner",
+              "fg": [821, 822, 823, 824],
+			  "bg": 399
+			},
+            {
+              "id": "t_connection",
+              "fg": [825, 826, 827, 828],
+			  "bg": 399
+            },
+            {
+              "id": "edge",
+              "fg": [829, 830],
+			  "bg": 399
+            },
+            {
+              "id": "end_piece",
+              "fg": [831, 832, 833, 834],
+			  "bg": 399
+            },
+            {
+              "id": "unconnected",
+              "fg": 835,
+			  "bg": 399
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_secro_flesh_wall"],
+          "fg": 836,
+		  "bg": 399,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 836,
+			  "bg": 399
+            },		  
+           {
+              "id": "corner",
+              "fg": [837, 838, 839, 840],
+			  "bg": 399
+			},
+            {
+              "id": "t_connection",
+              "fg": [841, 842, 843, 844],
+			  "bg": 399
+            },
+            {
+              "id": "edge",
+              "fg": [845, 846],
+			  "bg": 399
+            },
+            {
+              "id": "end_piece",
+              "fg": [847, 848, 849, 850],
+			  "bg": 399
+            },
+            {
+              "id": "unconnected",
+              "fg": 851,
+			  "bg": 399
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_secro_shrub_flesh"],
+          "fg": 852,
+		  "bg": 399,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 852,
+			  "bg": 399
+            },		  
+           {
+              "id": "corner",
+              "fg": [853, 854, 855, 856],
+			  "bg": 399
+			},
+            {
+              "id": "t_connection",
+              "fg": [857, 858, 859, 860],
+			  "bg": 399
+            },
+            {
+              "id": "edge",
+              "fg": [861, 862],
+			  "bg": 399
+            },
+            {
+              "id": "end_piece",
+              "fg": [863, 864, 865, 866],
+			  "bg": 399
+            },
+            {
+              "id": "unconnected",
+              "fg": 867,
+			  "bg": 399
+            }
+			],
+			"rotates": true
+            }
     ]
 	}
                 ] 
