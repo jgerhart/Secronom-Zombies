@@ -44,6 +44,6 @@
     "type": "item_group",
     "subtype": "collection",
     "id": "mon_sflesh_flesh_death_drop",
-    "entries": [ { "item": "flesh_death" } ]
+    "entries": [ { "item": "flesh_death" }, { "item": "sflesh_bio", "count": [ 2, 5 ] } ]
   }
  ]
