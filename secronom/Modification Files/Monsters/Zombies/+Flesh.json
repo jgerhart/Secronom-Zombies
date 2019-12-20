@@ -628,7 +628,7 @@
     },
     
   {
-    	"//": "This is the boss. It regenerates super fast, attacks by converting nearby terrains into biohazards and calls out new takens at will!",
+    	"//": "This is the boss. It regenerates super fast, converts nearby terrains into biohazards, calls out new takens and will try to devour the target by suppressing them with the walls!",
   	  "//": "Killing it won't bring the flesh terrains back to normal, but it is the queen, so crimson horrors will cease to exist... hopefully.",
         "id": "mon_sflesh_flesh",
         "type": "MONSTER",
@@ -646,7 +646,7 @@
         "color": "red_magenta",
         "aggression": 100,
         "morale": 100,
-        "emit_fields": ["emit_flesh_biome_immunity"],
+        "emit_fields": ["emit_flesh_biome_immunity","emit_down_immunity"],
         "melee_skill": 10,
         "melee_dice": 10,
         "melee_dice_sides": 8,
@@ -665,8 +665,8 @@
         ],
         "regenerates": 25,
         "death_drops": "mon_sflesh_flesh_death_drop",
-        "harvest": "exempt",
-        "death_function": ["MELT"],
+        "harvest": "meatslug",
+        "death_function": ["SPLATTER","MELT"],
         "flags": [
             "SEES",
             "WARM",
@@ -741,7 +741,7 @@
         "speed": 10,
         "material": ["flesh"],
         "symbol": "☒",
-        "emit_fields": ["emit_flesh_biome_immunity","emit_flesh_wall_limitation"],
+        "emit_fields": ["emit_flesh_biome_immunity","emit_flesh_wall_limitation","emit_down_immunity"],
         "color": "light_red",
         "aggression": 100,
         "morale": 100,
