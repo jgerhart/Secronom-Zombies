@@ -3,7 +3,7 @@
         "ident": "secronom",
         "name": "Secronom",
         "authors": ["Axema Vales"],
-        "description": "Delve deeper into the depths of your world with vast expansion of atrocious creatures ready to get slaughtered!",
+        "description": "Delve deeper into the depths of your world with vast expansion of atrocious creatures ready to get slaughtered!\nDeactivate <color_yellow>Stats Through Kills</color> mod for balancing purposes.",
         "category": "creatures",
         "dependencies": ["dda"]
     }
