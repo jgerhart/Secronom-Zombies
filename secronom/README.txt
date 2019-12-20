@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.7 - The flesh forest is almost completed. All it needs are polishing and bug fixes. Once done, further progress will hamper (taking a break at the moment) <--
+--> V1.7 - The flesh forest is almost completed. All it needs are polishing and bug fixes. <--
 
 #  TILESET REWORKS (if possible)
 
@@ -20,6 +20,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  ZED MUTANT (relinquished zombie)
 +  FLESH FOREST (a forest infested by the flesh, home for the crimson horrors)
 +  CRIMSON HORRORS (creatures unique to the flesh forest)
++  FLESH CHUNKS (a consumable food with regenerative prowess)
 
 ~  SADDLER REBALANCES (stats tweaked to existing saddlers)
 
