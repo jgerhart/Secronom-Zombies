@@ -205,11 +205,20 @@ The lab that's been the cause of spreading the newfound mutations throughout the
 * _**Bio-Organic-Weapons**_ - Test subjects, with successful mutations that are built for combats. These zombies are rare, and few wears power armors as their battle suit.
 * _**Secronom Dragon**_ - A massive reptilian creature made by the SS lab, whose purpose is to perform widespread eradication of undead... and living. It is locked beneath the facility.
 
+##### Loots:
+* **Bionics** - Sometimes industrial.
+* **Rare Medicines** - Strong medicines such as morphine.
+* **Weaponry** - Some milspec guns inside the safe. Beating the secronom dragon might reward you with a weapon.
+
 ### Infected Buildings
 These are once normal structures, but after a sudden mutation of a dwelling zed, who obtained 'this' newfound mutation, the whole building became infested with flesh. Loots and its layout are the same, but things are harsher than it was before.
 
 ##### Exclusive Monsters:
 * _**Fleshknot**_ - The main source of noxious gas lingering throughout the structure. Its growth amplifies the gas, as well as its mass.
+
+##### Loots:
+* **Common** - Items found inside a house such as clothing, foods and tools.
+* **Prepper** - Rarely found under the basement and they contain weaponry and ammunition.
 
 ### Saddler Gathering Nest
 A cavern where saddlers tend to gather and populate. These nests are rarely seen around the world, yet its occupants are troublesome parasites - parasites which takes control of the sentient target's consciousness.
@@ -224,3 +233,7 @@ Forests that has been infested by the crimson horrors. Unlike the infected build
 
 ##### Exclusive Monsters:
 * _**Crimson Horrors**_ - Monsters that resides in, out or nearby the flesh. The surface monsters usually act as guards, having **flesh sacks** giving birth to **parasytes** and **eye sprouts** alerting the flesh of unwanted visitors. The inner monsters are much more aggressive: **vein beasts** and **rumblers** are made internally to fend off intruders while the **takens** are creatures devoured by the flesh, manipulated into minions. The **flesh** is the hivemind - hidden in its inescapable lair - and a combat with it is a challenge.
+
+##### Loots:
+* **Edible Meat** - You can't take the flesh that's under your feet nor you touch, but in the deeps, you may gather all the meat you can take after beating the flesh.
+* **Flesh Chunk** - Chunks of vile flesh from the melting flesh. This flesh is known to possess regenerative properties that can mend all your injuries, even the broken ones.
