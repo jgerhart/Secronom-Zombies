@@ -35,51 +35,51 @@
                 "pack_size": [3, 5]
             }, {
                 "monster": "mon_zombie_blade",
-                "freq": 20,
+                "freq": 10,
                 "cost_multiplier": 4
             }, {
                 "monster": "mon_zombie_spoder",
-                "freq": 20,
+                "freq": 10,
                 "cost_multiplier": 4,
                 "pack_size": [1, 2]
             }, {
                 "monster": "mon_zombie_tendrils",
-                "freq": 20,
+                "freq": 8,
                 "cost_multiplier": 4
             }, {
                 "monster": "mon_zombie_mouth",
-                "freq": 20,
+                "freq": 8,
                 "cost_multiplier": 4
             }, {
                 "monster": "mon_zombie_translucent",
-                "freq": 20,
+                "freq": 7,
                 "cost_multiplier": 4
             }, {
                 "monster": "mon_zombie_WALKINGPOTATO",
-                "freq": 20,
-                "cost_multiplier": 6
+                "freq": 15,
+                "cost_multiplier": 3
             }, {
                 "monster": "mon_zombie_charger",
-                "freq": 30,
-                "cost_multiplier": 5
+                "freq": 20,
+                "cost_multiplier": 3
             }, {
                 "monster": "mon_zombie_scourge",
-                "freq": 30,
-                "cost_multiplier": 5,
+                "freq": 10,
+                "cost_multiplier": 3,
                 "pack_size": [1, 2]
             }, {
                 "monster": "mon_zombie_revenant",
                 "freq": 5,
-                "cost_multiplier": 7
+                "cost_multiplier": 3
             }, {
                 "monster": "mon_zombie_skittyweavy",
-                "freq": 10,
-                "cost_multiplier": 7,
+                "freq": 1,
+                "cost_multiplier": 10,
                 "pack_size": [2, 3]
             }, {
                 "monster": "mon_zombieworm_noxeater",
                 "freq": 1,
-                "cost_multiplier": 10
+                "cost_multiplier": 20
             }, {
                 "monster": "mon_zombie_nocturne",
                 "freq": 1,

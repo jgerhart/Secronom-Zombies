@@ -12,51 +12,50 @@
         "type": "monstergroup",
         "name": "GROUP_ZOMBIE_UPGRADE",
         "default": "mon_zombie_tough",
-        "//": "Masters pick from here when upgrading; no dogs, bionics, or profession-types",
         "monsters": [{
                 "monster": "mon_zombie_blade",
-                "freq": 20,
-                "cost_multiplier": 4
+                "freq": 25,
+                "cost_multiplier": 5
             }, {
                 "monster": "mon_zombie_tendrils",
                 "freq": 20,
-                "cost_multiplier": 4
+                "cost_multiplier": 5
             }, {
                 "monster": "mon_zombie_spoder",
-                "freq": 20,
-                "cost_multiplier": 4
+                "freq": 30,
+                "cost_multiplier": 5
             }, {
                 "monster": "mon_zombie_mouth",
                 "freq": 20,
-                "cost_multiplier": 4
+                "cost_multiplier": 5
             }, {
                 "monster": "mon_zombie_translucent",
-                "freq": 20,
-                "cost_multiplier": 4
+                "freq": 5,
+                "cost_multiplier": 5
             }, {
                 "monster": "mon_zombie_WALKINGPOTATO",
-                "freq": 30,
-                "cost_multiplier": 5
+                "freq": 50,
+                "cost_multiplier": 2
             }, {
                 "monster": "mon_zombie_charger",
-                "freq": 25,
-                "cost_multiplier": 4
+                "freq": 10,
+                "cost_multiplier": 5
             }, {
                 "monster": "mon_zombie_scourge",
-                "freq": 20,
-                "cost_multiplier": 4
+                "freq": 45,
+                "cost_multiplier": 3
             }, {
                 "monster": "mon_zombie_grubby",
-                "freq": 30,
-                "cost_multiplier": 5
+                "freq": 50,
+                "cost_multiplier": 7
             }, {
                 "monster": "mon_zombie_lick",
-                "freq": 35,
-                "cost_multiplier": 5
+                "freq": 30,
+                "cost_multiplier": 6
             }, {
                 "monster": "mon_zombie_unify",
-                "freq": 30,
-                "cost_multiplier": 5
+                "freq": 40,
+                "cost_multiplier": 6
             }
         ]
     }, {
