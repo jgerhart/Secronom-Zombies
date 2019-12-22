@@ -6,6 +6,7 @@ Mod made from various references, mixed up with random spices! A mod I've create
 
 - This mod will only work with the latest experimental of CDDA. Update your client before using this.
 - This mod is WIP and fatal crashes may occur... In very rare occasions.
+- Make sure to **turn off** the `Experimental 3D FOV`, as it breaks some intended functions of the mod.
 - For balancing purposes, do not activate **Stats Through Kills** mod.
 
 ## Zombies
@@ -237,3 +238,6 @@ Forests that has been infested by the crimson horrors. Unlike the infected build
 ##### Loots:
 * **Edible Meat** - You can't take the flesh that's under your feet nor you touch, but in the deeps, you may gather all the meat you can take after beating the flesh.
 * **Flesh Chunk** - Chunks of vile flesh from the melting flesh. This flesh is known to possess regenerative properties that can mend all your injuries, even the broken ones.
+
+###### Hazards:
+* **Corroding Environment** - Without environmental protection, the flesh will devour you little by little, taking constant damage as long as you're inside.
