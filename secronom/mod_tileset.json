@@ -12,6 +12,62 @@
                 "sprite_offset_x": 0,
                 "sprite_offset_y": 0,
                 "tiles": [{
+                        "id": [
+"SSxgrenade",
+"SSxgrenadeact",
+"SSygrenade",
+"SSygrenadeact",
+"SSzgrenade",
+"SSzgrenadeact",
+"SSimpactgrenade",
+"SSimpactgrenadeact",
+"bot_secroinforcer",
+"bot_secroshocker",
+"bot_secroriflewalker",
+"bot_secrolauncher",
+"bot_secromissile",
+"saddler_detach",
+"saddler_brute_detach",
+"saddler_scout_detach",
+"relinquish_revive",
+"flesh_sack_death",
+"flesh_taken_death",
+"laser_rifle_secrodragon",
+"SS_grenade_launchersecrodragon",
+"SS_pershield",
+"squirtler_bulb",
+"clinger_clinging",
+"fd_disser_scream",
+"fd_jolt_elec",
+"fd_uruxis_normal",
+"fd_uruxis_combat",
+"fd_nix_fear",
+"fd_gorepit_center",
+"fd_gorepit_normal",
+"fd_gorepit_combat",
+"fd_charger_stun",
+"fd_mawy_web_immune",
+"fd_revenant_trigger_immune",
+"fd_revenant_allure_induce_immune",
+"fd_fleshknot_gas",
+"fd_saddler_detach",
+"fd_saddler_brute_detach",
+"fd_saddler_scout_detach",
+"fd_relinquished_revive",
+"fd_resolute_growth",
+"fd_sflesh_spawn_tendril",
+"fd_sflesh_spawn_jaw",
+"fd_flesh_tree_grab",
+"fd_sflesh_sack_maybe",
+"fd_sflesh_sack",
+"fd_sflesh_sack_dead",
+"fd_sflesh_tentclus",
+"fd_sflesh_taken",
+"fd_mon_down_immune"],
+                        "fg": 0
+                    },
+				
+				{
                         "id": "mon_zombie_blade",
                         "fg": 2,
                         "bg": 1
@@ -904,6 +960,18 @@
 					{
                         "id": "f_secro_boulder_large_flesh",
                         "fg": 196
+                    },
+					{
+                        "id": "t_secro_flesh_entrance_up",
+                        "fg": 197
+                    },
+					{
+                        "id": ["veinhole_gap", "veinhole_gap_act"],
+                        "fg": 198
+                    },
+					{
+                        "id": ["t_secro_flesh_inside_down"],
+                        "fg": 199
                     }
 					
 					
@@ -1452,6 +1520,21 @@
             }
 			],
 			"rotates": true
+            },
+            {
+              "id": "f_secro_tendril_cluster",
+              "fg": 424,
+			  "bg": 0
+            },
+            {
+              "id": "f_secro_flesh_bones",
+              "fg": 425,
+			  "bg": 0
+            },
+            {
+              "id": "f_secro_flesh_tent",
+              "fg": 426,
+			  "bg": 0
             }
 				]
                 },{
@@ -1934,6 +2017,58 @@
                     },{
                         "id": ["corpse_mon_zombie_relinquish_revived"],
                         "fg": 592
+                    },{
+                        "id": ["mon_sflesh_taken_zombie"],
+                        "fg": [
+            { "weight":3, "sprite":593},
+            { "weight":3, "sprite":594},
+			{ "weight":3, "sprite":595},
+			{ "weight":3, "sprite":596}
+            ],
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_sflesh_taken_zombie"],
+                        "fg": 597
+                    },{
+                        "id": ["mon_sflesh_taken_bear"],
+                        "fg": 598,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_sflesh_taken_bear"],
+                        "fg": 599
+                    },{
+                        "id": ["mon_sflesh_taken_rat"],
+                        "fg": 600,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_sflesh_taken_rat"],
+                        "fg": 601
+                    },{
+                        "id": ["mon_sflesh_taken_cougar"],
+                        "fg": 602,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_sflesh_taken_cougar"],
+                        "fg": 603
+                    },{
+                        "id": ["mon_sflesh_taken_moose"],
+                        "fg": 604,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_sflesh_taken_moose"],
+                        "fg": 605
+                    },{
+                        "id": ["sflesh_bio"],
+                        "fg": 606
+                    },{
+                        "id": ["sflesh_bio_cooked"],
+                        "fg": 607
+                    },{
+                        "id": ["sflesh_bio_smoked"],
+                        "fg": 608
+                    },{
+                        "id": ["!mon_sflesh_flesh_wall"],
+                        "fg": 609
                     }
 				
                 ]
@@ -1990,7 +2125,7 @@
     ]
 	}, 
 	{
-    "file": "6_32x32_terrain2_766-1021.png",
+    "file": "6_32x32_terrain2_766-1011.png",
     "tiles":
     [      
 		{
@@ -2188,7 +2323,15 @@
             }
 			],
 			"rotates": true
-            },{
+            },
+			
+			            {
+              "id": "t_secro_flesh_inside_up_close",
+              "fg": 835,
+			  "bg": 399
+            },
+			
+			{
           "id": ["t_secro_flesh_wall"],
           "fg": 836,
 		  "bg": 399,
@@ -2264,9 +2407,191 @@
             }
 			],
 			"rotates": true
+            },{
+          "id": ["t_secro_flesh_wall_weak"],
+          "fg": 868,
+		  "bg": 399,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 868,
+			  "bg": 820
+            },		  
+           {
+              "id": "corner",
+              "fg": [869, 870, 871, 872],
+			  "bg": [821, 822, 823, 824]
+			},
+            {
+              "id": "t_connection",
+              "fg": [873, 874, 875, 876],
+			  "bg": [825, 826, 827, 828]
+            },
+            {
+              "id": "edge",
+              "fg": [877, 878],
+			  "bg": [829, 830]
+            },
+            {
+              "id": "end_piece",
+              "fg": [879, 880, 881, 882],
+			  "bg": [831, 832, 833, 834]
+            },
+            {
+              "id": "unconnected",
+              "fg": 883,
+			  "bg": 835
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["f_secro_flesh"],
+          "fg": 884,
+		  "bg": 0,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 884,
+			  "bg": 0
+            },		  
+           {
+              "id": "corner",
+              "fg": [885, 886, 887, 888],
+			  "bg": 0
+			},
+            {
+              "id": "t_connection",
+              "fg": [889, 890, 891, 892],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [893, 894],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [895, 896, 897, 898],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 899,
+			  "bg": 0
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["f_secro_biome"],
+          "fg": 900,
+		  "bg": 0,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 900,
+			  "bg": 0
+            },		  
+           {
+              "id": "corner",
+              "fg": [901, 902, 903, 904],
+			  "bg": 0
+			},
+            {
+              "id": "t_connection",
+              "fg": [905, 906, 907, 908],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [909, 910],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [911, 912, 913, 914],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 915,
+			  "bg": 0
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["f_secro_flesh_wall", "f_secro_flesh_wall_spawning"],
+          "fg": 916,
+		  "bg": 0,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 916,
+			  "bg": 0
+            },		  
+           {
+              "id": "corner",
+              "fg": [917, 918, 919, 920],
+			  "bg": 0
+			},
+            {
+              "id": "t_connection",
+              "fg": [921, 922, 923, 924],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [925, 926],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [927, 928, 929, 930],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 931,
+			  "bg": 0
+            }
+			],
+			"rotates": true
             }
     ]
-	}
+	}, {
+                "file": "7_64x80_big_monsters2_and_big_terrain2_1012-1112.png",
+                "sprite_height": 80, 
+                "sprite_width": 64,
+                "sprite_offset_x": -16,
+                "sprite_offset_y": -48,
+                "tiles": [{
+                        "id": "t_secro_flesh_inside_up",
+                        "fg": 1012,
+                        "bg": 0
+                    },{
+                        "id": "mon_sflesh_vrumbler",
+                        "fg": 1013,
+                        "bg": 100
+                    },{
+                        "id": ["mon_sflesh_taken", "mon_sflesh_taken_potent"],
+                        "fg": 1014,
+                        "bg": 0
+                    },{
+                        "id": "mon_sflesh_flesh",
+                        "fg": 1015,
+                        "bg": 100
+                    },{
+                        "id": "mon_sflesh_flesh_wall",
+                        "fg": 1016,
+                        "bg": 100
+                    }
+					
+					
+                ]
+            }
                 ] 
             }
         ]
