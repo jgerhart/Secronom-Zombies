@@ -121,6 +121,11 @@
                 "freq": 1,
                 "cost_multiplier": 80,
                 "starts": 2912
+            }, {
+                "monster": "mon_zombie_relinquish",
+                "freq": 1,
+                "cost_multiplier": 110,
+                "starts": 2912
             }
         ]
     }, {
