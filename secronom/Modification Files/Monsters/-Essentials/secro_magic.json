@@ -8,11 +8,9 @@
         "flags": ["SILENT"],
         "valid_targets": ["ally", "hostile", "ground", "self"],
         "effect": "target_attack",
-        "min_damage": 10000,
-        "max_damage": 10000,
+		"effect_str": "secro_sacrifice_effect",
         "min_aoe": 1,
-        "max_aoe": 1,
-        "damage_type": "none"
+        "max_aoe": 1
     }, {
     "type": "SPELL",
     "id": "secro_spell_null",
