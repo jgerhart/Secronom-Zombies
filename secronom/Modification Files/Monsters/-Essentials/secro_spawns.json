@@ -649,5 +649,10 @@
         "type": "monstergroup",
         "name": "GROUP_FLESH_WALL",
         "default": "mon_sflesh_flesh_wall"
+    },
+    {
+        "type": "monstergroup",
+        "name": "GROUP_FLESH_CITY",
+        "default": "mon_sflesh_taken_zombie"
     }
 ]
