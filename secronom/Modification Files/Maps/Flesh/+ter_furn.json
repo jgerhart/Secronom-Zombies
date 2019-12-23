@@ -107,7 +107,7 @@
         }
     }, {
         "type": "terrain",
-        "id": "t_secro_door_flesh_locked",
+        "id": "t_secro_door_locked_flesh",
         "name": "fleshed wood door",
         "description": "A standard door that is covered in thick, fleshy veins. You can barely see a deadbolt keyhole, though you can't do anything without removing all the gore sticking into it.",
         "symbol": "+",
@@ -673,6 +673,120 @@
   },
   {
     "type": "terrain",
+    "id": "t_secro_wall_r_flesh",
+    "name": "fleshed red wall",
+    "description": "Wall painted red, adorned by gore and veins.",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "WALL", "CHIP", "S_FLESH", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 35,
+      "str_max": 215,
+      "sound": "crash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_r"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_wall_b_flesh",
+    "name": "fleshed blue wall",
+    "description": "Wall painted blue, adorned by gore and veins.",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "WALL", "CHIP", "S_FLESH", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 35,
+      "str_max": 215,
+      "sound": "crash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_b"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_brick_wall_flesh",
+    "name": "fleshed brick wall",
+    "description": "A solid brick wall, sturdy enough to support a roof with enough walls and keep out any unwanted visitors.",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND", "S_FLESH" ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 65,
+      "str_max": 165,
+      "sound": "crash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_brick_wall"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_rock_wall_flesh",
+    "name": "fleshed stone wall",
+    "description": "An even sturdier stone wall covered by the flesh.",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "S_FLESH", "WALL", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 85,
+      "str_max": 305,
+      "sound": "crash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_rock_wall"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_bars_flesh",
+    "name": "metal bars",
+    "description": "Heavy bars overrun by the flesh. Nearly impenetrable due to the thick veins covering it.",
+    "symbol": "\"",
+    "color": "red",
+    "move_cost": 0,
+    "flags": [ "TRANSPARENT", "NOITEM", "PERMEABLE", "CONNECT_TO_WALL", "THIN_OBSTACLE", "S_FLESH" ],
+    "bash": {
+      "str_min": 65,
+      "str_max": 255,
+      "sound": "metal screeching!",
+      "sound_fail": "splat!",
+      "ter_set": "t_bars"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_wall_glass_flesh",
+    "name": "fleshed glass wall",
+    "description": "A wall of glass with flesh covering the entirety of its surface, blocking the vision through it.",
+    "symbol": "LINE_OXOX",
+    "color": "light_red",
+    "move_cost": 0,
+    "coverage": 90,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "NOITEM", "WALL", "AUTO_WALL_SYMBOL", "BLOCK_WIND", "S_FLESH" ],
+    "bash": {
+      "str_min": 9,
+      "str_max": 17,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_glass"
+    }
+  },
+  {
+    "type": "terrain",
     "id": "t_secro_door_glass_flesh",
     "name": "fleshed glass door",
     "description": "A glass door overrun by the flesh. You can't go through it unless...",
@@ -723,33 +837,85 @@
   },
   {
     "type": "terrain",
-    "id": "t_secro_ladder_up_flesh",
-    "name": "fleshed ladder",
-    "description": "A ladder with gore and veins leading up.",
-    "symbol": "<",
+    "id": "t_secro_pavement_flesh",
+    "name": "fleshed pavement",
+    "connects_to": "PAVEMENT",
+    "description": "A segment of asphalt, with thick veins running across the cracks.",
+    "symbol": ".",
     "color": "red",
     "move_cost": 5,
-    "flags": [ "TRANSPARENT", "GOES_UP", "PLACE_ITEM", "DIFFICULT_Z" ]
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "S_FLESH","MINEABLE" ],
+    "bash": {
+      "ter_set": "t_pavement",
+      "str_min": 55,
+      "str_max": 405,
+      "str_min_supported": 110
+    }
   },
   {
     "type": "terrain",
-    "id": "t_secro_ladder_down_flesh",
+    "id": "t_secro_pavement_y_flesh",
+    "name": "fleshed yellow pavement",
+    "connects_to": "PAVEMENT",
+    "description": "The lines of yellow marks are barely visible underneath the thick membranous veins.",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "S_FLESH", "MINEABLE" ],
+    "bash": {
+      "ter_set": "t_pavement_y",
+      "str_min": 55,
+      "str_max": 405,
+      "str_min_supported": 110
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_thconc_floor_flesh",
+    "name": "fleshed concrete floor",
+    "description": "A concrete floor with flesh all over it.",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "ROAD", "S_FLESH" ],
+    "bash": {
+      "sound": "crash!",
+      "ter_set": "t_thconc_floor",
+      "str_min": 105,
+      "str_max": 405,
+      "str_min_supported": 110
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_ladder_broken_flesh",
     "name": "fleshed ladder",
-    "description": "A ladder with gore and veins leading up.",
-    "symbol": ">",
+    "description": "A ladder with gore and veins blocking the way.",
+    "symbol": "<",
     "color": "red",
     "move_cost": 5,
-    "flags": [ "TRANSPARENT", "GOES_DOWN", "PLACE_ITEM", "DIFFICULT_Z" ]
+    "flags": [ "TRANSPARENT","PLACE_ITEM" ]
   },
+  {
+        "type": "terrain",
+        "id": "t_secro_stairs_broken_flesh",
+        "name": "fleshed stairs",
+        "description": "A flight of stairs heavily infested by the flesh. The path is block, and is impossible to go through it.",
+        "symbol": "<",
+        "color": "red",
+        "move_cost": 5,
+        "flags": ["TRANSPARENT", "INDOORS", "PLACE_ITEM", "S_FLESH"]
+    }, 
   {
     "type": "terrain",
     "id": "t_secro_gutter_downspout_flesh",
     "name": "fleshed downspout",
-    "description": "A gutter with overgrown tendrils groping from top to bottom. Still, you can go down from it.",
+    "description": "A gutter with overgrown tendrils groping from top to bottom. Its slimy texture makes it slippery.",
     "symbol": "|",
     "color": "light_red",
     "move_cost": 6,
-    "flags": [ "TRANSPARENT", "S_FLESH", "THIN_OBSTACLE", "UNSTABLE", "CLIMBABLE" ],
+    "flags": [ "TRANSPARENT", "S_FLESH", "THIN_OBSTACLE", "UNSTABLE" ],
     "bash": {
       "str_min": 11,
       "str_max": 17,
@@ -778,97 +944,418 @@
   },
   {
     "type": "terrain",
-    "id": "t_secro_gutter_north_flesh",
-    "description": "It is infected by the flesh, but it still channels water from the roof towards the ground.",
-    "name": "fleshed rain gutter",
-    "symbol": "LINE_OXOX",
-    "looks_like": "t_metal_floor",
-    "color": "light_red",
-    "move_cost": 6,
-    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "S_FLESH", "MOUNTABLE", "TINY", "AUTO_WALL_SYMBOL", "UNSTABLE" ],
-    "connects_to": "RAILING",
+    "id": "t_secro_door_metal_flesh",
+    "name": "fleshed metal door",
+    "description": "A steel door that can withstand more punishment with the flesh covering it.",
+    "symbol": "+",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 95,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "NOITEM", "S_FLESH", "CONNECT_TO_WALL", "MINEABLE", "BLOCK_WIND" ],
     "bash": {
-      "str_min": 10,
-      "str_max": 17,
-      "sound": "clang!",
+      "str_min": 85,
+      "str_max": 255,
+      "sound": "metal screeching!",
       "sound_fail": "splat!",
-      "ter_set": "t_gutter_north"
+      "ter_set": "t_door_metal_c"
+  }},
+  {
+    "type": "terrain",
+    "id": "t_secro_door_metal_locked_flesh",
+    "name": "fleshed metal door",
+    "description": "A steel door that can withstand more punishment with the flesh covering it. It is also locked.",
+    "symbol": "+",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 95,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "NOITEM", "REDUCE_SCENT", "CONNECT_TO_WALL", "MINEABLE", "BLOCK_WIND", "S_FLESH" ],
+    "bash": {
+      "str_min": 85,
+      "str_max": 255,
+      "sound": "metal screeching!",
+      "sound_fail": "splat!",
+      "ter_set": "t_door_metal_locked"
     }
   },
   {
     "type": "terrain",
-    "id": "t_secro_gutter_south_flesh",
-    "description": "It is infected by the flesh, but it still channels water from the roof towards the ground.",
-    "name": "fleshed rain gutter",
-    "symbol": "LINE_OXOX",
-    "looks_like": "t_secro_gutter_north",
-    "color": "light_red",
-    "move_cost": 6,
-    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "S_FLESH", "MOUNTABLE", "TINY", "AUTO_WALL_SYMBOL", "UNSTABLE" ],
-    "connects_to": "RAILING",
+    "id": "t_secro_carpet_red_flesh",
+    "name": "fleshed red carpet",
+    "description": "Soft red carpet overrun by gore and veins.",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "S_FLESH", "FLAT" ],
     "bash": {
-      "str_min": 10,
-      "str_max": 17,
-      "sound": "clang!",
-      "sound_fail": "splat!",
-      "ter_set": "t_gutter_south"
+      "sound": "SMASH!",
+      "ter_set": "t_carpet_red",
+      "str_min": 55,
+      "str_max": 405,
+      "str_min_supported": 110
     }
   },
   {
     "type": "terrain",
-    "id": "t_secro_gutter_east_flesh",
-    "description": "It is infected by the flesh, but it still channels water from the roof towards the ground.",
-    "name": "fleshed rain gutter",
-    "symbol": "LINE_OXOX",
-    "looks_like": "t_secro_gutter_north",
-    "color": "light_red",
-    "move_cost": 6,
-    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "S_FLESH", "MOUNTABLE", "TINY", "AUTO_WALL_SYMBOL", "UNSTABLE" ],
-    "connects_to": "RAILING",
+    "id": "t_secro_carpet_yellow_flesh",
+    "name": "fleshed yellow carpet",
+    "description": "Soft yellow carpet overrun by gore and veins.",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "S_FLESH", "FLAT" ],
     "bash": {
-      "str_min": 10,
-      "str_max": 17,
-      "sound": "clang!",
-      "sound_fail": "splat!",
-      "ter_set": "t_gutter_east"
+      "sound": "SMASH!",
+      "ter_set": "t_carpet_yellow",
+      "str_min": 55,
+      "str_max": 405,
+      "str_min_supported": 110
     }
   },
   {
     "type": "terrain",
-    "id": "t_secro_gutter_west_flesh",
-    "description": "It is infected by the flesh, but it still channels water from the roof towards the ground.",
-    "name": "fleshed rain gutter",
-    "symbol": "LINE_OXOX",
-    "looks_like": "t_secro_gutter_north",
-    "color": "light_red",
-    "move_cost": 6,
-    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "S_FLESH", "MOUNTABLE", "TINY", "AUTO_WALL_SYMBOL", "UNSTABLE" ],
-    "connects_to": "RAILING",
+    "id": "t_secro_carpet_green_flesh",
+    "name": "fleshed green carpet",
+    "description": "Soft green carpet overrun by gore and veins.",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "S_FLESH", "FLAT" ],
     "bash": {
-      "str_min": 10,
-      "str_max": 17,
-      "sound": "clang!",
-      "sound_fail": "splat!",
-      "ter_set": "t_gutter_west"
+      "sound": "SMASH!",
+      "ter_set": "t_carpet_green",
+      "str_min": 55,
+      "str_max": 405,
+      "str_min_supported": 110
     }
   },
   {
     "type": "terrain",
-    "id": "t_secro_gutter_drop_flesh",
-    "name": "fleshed gutter drop",
-    "description": "Yet devoured by the flesh, it still funnels water from gutter system towards the ground, it looks flimsy.  You may be able to climb down here.",
-    "symbol": "o",
-    "looks_like": "t_secro_gutter_north",
-    "color": "light_red",
-    "move_cost": 6,
-    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "S_FLESH", "MOUNTABLE", "TINY", "AUTO_WALL_SYMBOL", "UNSTABLE", "CLIMBABLE" ],
-    "connects_to": "RAILING",
+    "id": "t_secro_carpet_purple_flesh",
+    "name": "fleshed purple carpet",
+    "description": "Soft purple carpet overrun by gore and veins.",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "S_FLESH", "FLAT" ],
     "bash": {
-      "str_min": 10,
-      "str_max": 17,
-      "sound": "clang!",
+      "sound": "SMASH!",
+      "ter_set": "t_carpet_purple",
+      "str_min": 55,
+      "str_max": 405,
+      "str_min_supported": 110
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_linoleum_white_flesh",
+    "name": "fleshed linoleum tile",
+    "description": "A tough, white, rubbery floor infested by flesh.",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "S_FLESH", "FLAT", "ROAD" ],
+    "bash": {
+      "sound": "SMASH!",
+      "ter_set": "t_linoleum_white",
+      "str_min": 55,
+      "str_max": 405,
+      "str_min_supported": 110
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_linoleum_gray_flesh",
+    "name": "fleshed linoleum tile",
+    "roof": "t_secro_flat_roof_flesh",
+    "description": "A tough, gray, rubbery floor infested by flesh.",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "S_FLESH", "FLAT", "ROAD" ],
+    "bash": {
+      "sound": "SMASH!",
+      "ter_set": "t_linoleum_gray",
+      "str_min": 55,
+      "str_max": 405,
+      "str_min_supported": 110
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_fence_flesh",
+    "name": "fleshed picket fence",
+    "description": "A barrier made of wood, it's nothing complicated.  Mildly suggests where not to go.",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 6,
+    "flags": [
+      "TRANSPARENT",
+      "DIGGABLE",
+      "FLAMMABLE_ASH",
+      "NOITEM",
+      "THIN_OBSTACLE",
+      "REDUCE_SCENT",
+      "MOUNTABLE",
+      "SHORT",
+      "AUTO_WALL_SYMBOL",
+      "BURROWABLE",
+      "S_FLESH"
+    ],
+    "connects_to": "WOODFENCE",
+    "bash": {
+      "str_min": 9,
+      "str_max": 25,
+      "sound": "crack.",
+      "sound_fail": "splat.",
+      "ter_set": "t_fence"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_column_flesh",
+    "name": "fleshed column",
+    "description": "A concrete column, covered in flesh.",
+    "symbol": "1",
+    "color": "light_red",
+    "move_cost": 0,
+    "coverage": 80,
+    "flags": [ "WALL", "MINEABLE", "S_FLESH" ],
+    "bash": {
+      "str_min": 125,
+      "str_max": 205,
+      "sound": "crash!",
       "sound_fail": "splat!",
-      "ter_set": "t_gutter_drop"
+      "ter_set": "t_column"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_console_broken_flesh",
+    "name": "fleshed broken console",
+    "description": "This is a standalone computer terminal that is beyond broken. Veins crawl through the monitor.",
+    "symbol": "6",
+    "color": "light_red",
+    "move_cost": 0,
+    "coverage": 50,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "TRANSPARENT", "NOITEM", "INDOORS", "SHORT", "PERMEABLE" ],
+    "bash": {
+      "str_min": 21,
+      "str_max": 155,
+      "sound": "crunch!",
+      "sound_fail": "splat!",
+      "ter_set": "t_console_broken"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_console_flesh",
+    "name": "fleshed computer console",
+    "description": "This is a standalone computer terminal. Veins crawl through the monitor, but seems to work in its current condition.",
+    "symbol": "6",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 50,
+    "light_emitted": 5,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "TRANSPARENT", "CONSOLE", "S_FLESH", "NOITEM", "INDOORS", "SHORT", "PERMEABLE" ],
+    "bash": {
+      "str_min": 13,
+      "str_max": 155,
+      "sound": "crunch!",
+      "sound_fail": "splat!",
+      "ter_set": "t_console"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_gates_mech_control_flesh",
+    "name": "fleshed mechanical winch",
+    "description": "This is a gate control winch. Thich tendrils cover the handle, if removed, it may be usable.",
+    "symbol": "6",
+    "color": "red",
+    "move_cost": 0,
+    "flags": [ "TRANSPARENT", "NOITEM", "INDOORS", "PERMEABLE", "THIN_OBSTACLE","S_FLESH" ],
+    "bash": {
+      "str_min": 23,
+      "str_max": 85,
+      "sound": "metal screeching!",
+      "sound_fail": "splat!",
+      "ter_set": "t_gates_mech_control"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_gates_control_concrete_flesh",
+    "name": "fleshed mechanical winch",
+    "description": "This is a gate control winch. Thich tendrils cover the handle, if removed, it may be usable.",
+    "symbol": "6",
+    "color": "cyan_red",
+    "move_cost": 0,
+    "flags": [ "TRANSPARENT", "NOITEM", "INDOORS", "PERMEABLE", "THIN_OBSTACLE", "S_FLESH" ],
+    "examine_action": "controls_gate",
+    "bash": {
+      "str_min": 23,
+      "str_max": 85,
+      "sound": "metal screeching!",
+      "sound_fail": "splat!",
+      "ter_set": "t_gates_control_concrete"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_atm_flesh",
+    "name": "fleshed ATM",
+    "description": "With flesh covering the entire mechanism, you can't do anything useful...",
+    "symbol": "&",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 55,
+    "flags": [ "TRANSPARENT", "NOITEM", "REDUCE_SCENT", "PERMEABLE" ],
+    "bash": {
+      "str_min": 45,
+      "str_max": 215,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_atm"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_window_stained_green_flesh",
+    "name": "flesh high stained glass window",
+    "description": "An emerald-stained window covered in flesh.",
+    "symbol": "\"",
+    "color": "red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "BARRICADABLE_WINDOW", "CONNECT_TO_WALL", "MINEABLE", "BLOCK_WIND", "S_FLESH" ],
+    "bash": {
+      "str_min": 105,
+      "str_max": 405,
+      "sound": "glass breaking!",
+      "sound_fail": "splat!",
+      "ter_set": "t_window_stained_green"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_window_stained_red_flesh",
+    "name": "flesh high stained glass window",
+    "description": "A ruby-stained window covered in flesh.",
+    "symbol": "\"",
+    "color": "red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "BARRICADABLE_WINDOW", "CONNECT_TO_WALL", "MINEABLE", "BLOCK_WIND", "S_FLESH" ],
+    "bash": {
+      "str_min": 105,
+      "str_max": 405,
+      "sound": "glass breaking!",
+      "sound_fail": "splat!",
+      "ter_set": "t_window_stained_red"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_window_stained_blue_flesh",
+    "name": "flesh high stained glass window",
+    "description": "An sapphire-stained window covered in flesh.",
+    "symbol": "\"",
+    "color": "red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "BARRICADABLE_WINDOW", "CONNECT_TO_WALL", "MINEABLE", "BLOCK_WIND", "S_FLESH" ],
+    "bash": {
+      "str_min": 105,
+      "str_max": 405,
+      "sound": "glass breaking!",
+      "sound_fail": "splat!",
+      "ter_set": "t_window_stained_blue"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_window_bars_flesh",
+    "name": "fleshed window frame with metal bars",
+    "description": "A windom frame with steel bars and a giant sheet of glass shrouded in bloody veins.",
+    "symbol": "#",
+    "color": "light_red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "TRANSPARENT", "NOITEM", "CONNECT_TO_WALL", "THIN_OBSTACLE","S_FLESH" ],
+    "bash": {
+      "str_min": 65,
+      "str_max": 255,
+      "sound": "metal screeching!",
+      "sound_fail": "splat!",
+      "ter_set": "t_window_bars"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_chainfence_flesh",
+    "name": "fleshed chain link fence",
+    "description": "A chain link fence with its patterned holes blocked with thick flesh.",
+    "symbol": "LINE_OXOX",
+    "color": "light_red",
+    "move_cost": 0,
+    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "PERMEABLE", "UNSTABLE", "CLIMBABLE", "AUTO_WALL_SYMBOL", "BURROWABLE", "S_FLESH" ],
+    "connects_to": "CHAINFENCE",
+    "examine_action": "chainfence",
+    "bash": {
+      "str_min": 15,
+      "str_max": 155,
+      "sound": "metal screeching!",
+      "sound_fail": "splat!",
+      "ter_set": "t_chainfence"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_chaingate_l_flesh",
+    "name": "fleshed wire gate",
+    "description": "A chain gate with flesh covering most of the hole. It has a visible padlock mechanism, and opening it may require you to remove all the gore in it.",
+    "symbol": "+",
+    "color": "red",
+    "move_cost": 0,
+    "flags": [ "TRANSPARENT", "PERMEABLE", "THIN_OBSTACLE", "BURROWABLE", "S_FLESH" ],
+    "connects_to": "CHAINFENCE",
+    "bash": {
+      "str_min": 15,
+      "str_max": 155,
+      "str_min_blocked": 25,
+      "str_max_blocked": 185,
+      "sound": "metal screeching!",
+      "sound_fail": "splat!",
+      "ter_set": "t_chaingate_l"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_chaingate_c_flesh",
+    "name": "fleshed wire gate",
+    "description": "A chain gate with flesh covering most of the hole.",
+    "symbol": "+",
+    "color": "red",
+    "move_cost": 0,
+    "flags": [ "TRANSPARENT", "PERMEABLE", "THIN_OBSTACLE", "BURROWABLE", "S_FLESH" ],
+    "connects_to": "CHAINFENCE",
+    "bash": {
+      "str_min": 15,
+      "str_max": 155,
+      "str_min_blocked": 25,
+      "str_max_blocked": 185,
+      "sound": "metal screeching!",
+      "sound_fail": "splat!",
+      "ter_set": "t_chaingate_c"
     }
   }
 ]
