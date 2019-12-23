@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.7 - The flesh forest is almost completed. All it needs are polishing and bug fixes. <--
+--> V1.7 - The flesh forest is almost completed. All it needs are polishing and bug fixes. Once done, further progress will hamper (taking a break at the moment) <--
 
 #  TILESET REWORKS (if possible)
 
