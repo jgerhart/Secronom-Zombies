@@ -1597,5 +1597,44 @@
             }
         ],
         "type": "overmap_special"
+    },
+    {
+        "id": "Flesh City 1",
+        "locations": [
+            "field"
+        ],
+        "occurrences": [
+            0,
+            2
+        ],
+        "spawns": {
+            "group": "GROUP_FLESH_CITY",
+            "population": [750, 1250],
+            "radius": [5, 10]
+        },
+        "overmaps": [
+			{ "point": [ 0, 0, 0 ], "overmap": "secro_flesh_city_core_north" },
+			{ "point": [ 1, 0, 0 ], "overmap": "secro_road_leftright_flesh_north" },
+			{ "point": [ -1, 0, 0 ], "overmap": "secro_road_leftright_flesh_north" },
+			{ "point": [ 2, 0, 0 ], "overmap": "secro_road_leftright_flesh_north" },
+			{ "point": [ -2, 0, 0 ], "overmap": "secro_road_leftright_flesh_north" },
+			{ "point": [ 0, 1, 0 ], "overmap": "secro_road_updown_flesh_north" },
+			{ "point": [ 0, -1, 0 ], "overmap": "secro_road_updown_flesh_north" },
+			{ "point": [ 0, 2, 0 ], "overmap": "secro_road_updown_flesh_north" },
+			{ "point": [ 0, -2, 0 ], "overmap": "secro_road_updown_flesh_north" },
+			{ "point": [ 1, -1, 0 ], "overmap": "s_shop_flesh_west" },
+			{ "point": [ -1, 1, 0 ], "overmap": "s_shop_flesh_north" },
+			{ "point": [ -1, -1, 0 ], "overmap": "s_shop_flesh_south" },
+			{ "point": [ 1, 1, 0 ], "overmap": "s_shop_flesh_north" },
+			{ "point": [ 2, -1, 0 ], "overmap": "s_house_flesh_south" },
+			{ "point": [ -2, 1, 0 ], "overmap": "s_house_flesh_north" },
+			{ "point": [ -2, -1, 0 ], "overmap": "s_house_flesh_south" },
+			{ "point": [ 2, 1, 0 ], "overmap": "s_house_flesh_north" },
+			{ "point": [ 1, 2, 0 ], "overmap": "s_house_flesh_west" },
+			{ "point": [ -1, -2, 0 ], "overmap": "s_house_flesh_east" },
+			{ "point": [ -1, 2, 0 ], "overmap": "s_house_flesh_east" },
+			{ "point": [ 1, -2, 0 ], "overmap": "s_house_flesh_west" }
+        ],
+        "type": "overmap_special"
     }
 ]
