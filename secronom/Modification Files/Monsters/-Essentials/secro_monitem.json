@@ -36,7 +36,7 @@
     "flags": [ "PERSONAL", "FRAGILE", "BELTED", "NO_DROP", "NO_TAKEOFF" ]
   },
   {
-    "//": "Eating this vile meat mends your body to the fullest, even broken limbs! (not head and torso, ofc)",
+    "//": "Eating this vile meat mends your body, even broken limbs! (not head and torso, ofc).",
     "//": "Also has the effect of royal jelly, which cures most debuffs.",
     "id": "sflesh_bio",
     "copy-from": "flesh",
@@ -60,7 +60,7 @@
       "activation_message": "<color_light_green>As you chomp down the flesh, your body feels refreshed.</color>",
       "effects": [  { "id": "secro_flesh_bio_heal", "duration": 120, "bp": "TORSO" }, { "id": "secro_flesh_bio_heal", "duration": 120, "bp": "HEAD" },{ "id": "secro_flesh_bio_heal", "duration": 120, "bp": "ARM_L" }, { "id": "secro_flesh_bio_heal", "duration": 120, "bp": "ARM_R" }, { "id": "secro_flesh_bio_heal", "duration": 120, "bp": "LEG_L" }, { "id": "secro_flesh_bio_heal", "duration": 120, "bp": "LEG_R" }, { "id": "secro_flesh_bio_limb", "duration": 10, "bp": "HEAD" }, { "id": "secro_flesh_bio_limb", "duration": 10, "bp": "TORSO" }, { "id": "secro_flesh_bio_limb", "duration": 10, "bp": "ARM_L" }, { "id": "secro_flesh_bio_limb", "duration": 10, "bp": "ARM_R" }, { "id": "secro_flesh_bio_limb", "duration": 10, "bp": "LEG_L" }, { "id": "secro_flesh_bio_limb", "duration": 10, "bp": "LEG_R" }, { "id": "cureall", "duration": 1 } ]
     },
-    "smoking_result": "meat_smoked"
+    "smoking_result": "sflesh_bio_smoked"
   },
   {
     "id": "sflesh_bio_cooked",
