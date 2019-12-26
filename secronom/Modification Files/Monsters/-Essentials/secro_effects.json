@@ -983,7 +983,7 @@
     {
         "type": "effect_type",
         "id": "secro_flesh_bio_limb",
-        "name": [ "mending" ],
+        "name": [ "Mending" ],
     "desc": [ "Your broken limbs are mending!" ],
         "max_duration": 10,
         "main_parts_only": true,
@@ -991,6 +991,7 @@
         "removes_effects": [
             "disabled"
         ],
+        "//": "Due to the disabled effect being hardcode, we force the broken limb to block the effect.",
         "blocks_effects": [
             "disabled"
         ]
@@ -1005,7 +1006,7 @@
    	 "rating": "good",
         "base_mods": {
             "hurt_min": [-1],
-            "hurt_tick": [4,9]
+            "hurt_tick": [5]
         }
     },
     
