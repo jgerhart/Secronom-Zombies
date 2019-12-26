@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.7 - The flesh forest is almost completed. All it needs are polishing and bug fixes. <--
+--> V1.7 - For the last project of structural overhaul, the flesh city is now in-progress. <--
 
 #  TILESET REWORKS (if possible)
 
@@ -30,7 +30,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 -  SKITTERING WEAVER (changed how it heals allies, due to relentless healing when a player is targeted. Instead of direct melee attacks, it uses spell to execute its ability)
 
 ~  SADDLER REWORKS (they are parasites which manipulates sentient targets, thus removing their acid prowess entirely)
-
+~  MONSTER SPAWNGROUP REBALANCES (balanced the spawnrate for both vanilla and secronom)
 
 
 	=>PAST UPDATES<=
