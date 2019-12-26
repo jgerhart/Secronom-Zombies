@@ -1051,7 +1051,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "immunity_data": { "body_part_env_resistance": [ [ "HEAD", 5 ] ] },
+    "immunity_data": { "body_part_env_resistance": [ [ "HEAD", 2 ] ] },
     "display_items": true,
     "display_field": false
   },
@@ -1075,7 +1075,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "immunity_data": { "body_part_env_resistance": [ [ "TORSO", 5 ] ] },
+    "immunity_data": { "body_part_env_resistance": [ [ "TORSO", 2 ] ] },
     "display_items": true,
     "display_field": false
   },
@@ -1099,7 +1099,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "immunity_data": { "body_part_env_resistance": [ [ "ARM_L", 5 ] ] },
+    "immunity_data": { "body_part_env_resistance": [ [ "ARM_L", 2 ] ] },
     "display_items": true,
     "display_field": false
   },
@@ -1123,7 +1123,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "immunity_data": { "body_part_env_resistance": [ [ "ARM_R", 5 ] ] },
+    "immunity_data": { "body_part_env_resistance": [ [ "ARM_R", 2 ] ] },
     "display_items": true,
     "display_field": false
   },
@@ -1147,7 +1147,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "immunity_data": { "body_part_env_resistance": [ [ "LEG_L", 5 ] ] },
+    "immunity_data": { "body_part_env_resistance": [ [ "LEG_L", 2 ] ] },
     "display_items": true,
     "display_field": false
   },
@@ -1171,7 +1171,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "immunity_data": { "body_part_env_resistance": [ [ "LEG_R", 5 ] ] },
+    "immunity_data": { "body_part_env_resistance": [ [ "LEG_R", 2 ] ] },
     "display_items": true,
     "display_field": false
   },
