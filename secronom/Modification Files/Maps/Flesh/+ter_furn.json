@@ -631,5 +631,244 @@
             "sound_fail": "splat!",
             "ter_set": "t_secro_flesh"
         }
+    },
+    
+    {
+    "type": "terrain",
+    "id": "t_secro_wall_w_flesh",
+    "name": "fleshed white wall",
+    "description": "Wall painted white, adorned by gore and veins.",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "WALL", "CHIP", "S_FLESH", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 35,
+      "str_max": 215,
+      "sound": "crash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_w"
     }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_wall_g_flesh",
+    "name": "fleshed green wall",
+    "description": "Wall painted green, adorned by gore and veins.",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "WALL", "CHIP", "S_FLESH", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 35,
+      "str_max": 215,
+      "sound": "crash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_g"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_door_glass_flesh",
+    "name": "fleshed glass door",
+    "description": "A glass door overrun by the flesh. You can't go through it unless...",
+    "symbol": "+",
+    "color": "light_red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "S_FLESH", "NOITEM", "CONNECT_TO_WALL", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 11,
+      "str_max": 25,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_door_glass_c"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_concrete_flesh",
+    "name": "fleshed concrete",
+    "description": "A concrete with thick, membranous veins all over it.",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "MINEABLE", "S_FLESH" ],
+    "bash": {
+      "ter_set": "t_concrete",
+      "str_min": 55,
+      "str_max": 405,
+      "str_min_supported": 110
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_sidewalk_flesh",
+    "name": "fleshed sidewalk",
+    "description": "A pavement infected with flesh, with thick veins digging through the cracks.",
+    "symbol": ".",
+    "color": "light_red",
+    "move_cost": 5,
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "MINEABLE", "S_FLESH" ],
+    "bash": {
+      "ter_set": "t_sidewalk",
+      "str_min": 55,
+      "str_max": 405,
+      "str_min_supported": 110
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_ladder_up_flesh",
+    "name": "fleshed ladder",
+    "description": "A ladder with gore and veins leading up.",
+    "symbol": "<",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [ "TRANSPARENT", "GOES_UP", "PLACE_ITEM", "DIFFICULT_Z" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_ladder_down_flesh",
+    "name": "fleshed ladder",
+    "description": "A ladder with gore and veins leading up.",
+    "symbol": ">",
+    "color": "red",
+    "move_cost": 5,
+    "flags": [ "TRANSPARENT", "GOES_DOWN", "PLACE_ITEM", "DIFFICULT_Z" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_gutter_downspout_flesh",
+    "name": "fleshed downspout",
+    "description": "A gutter with overgrown tendrils groping from top to bottom. Still, you can go down from it.",
+    "symbol": "|",
+    "color": "light_red",
+    "move_cost": 6,
+    "flags": [ "TRANSPARENT", "S_FLESH", "THIN_OBSTACLE", "UNSTABLE", "CLIMBABLE" ],
+    "bash": {
+      "str_min": 11,
+      "str_max": 17,
+      "sound": "clang!",
+      "sound_fail": "splat.",
+      "ter_set": "t_gutter_downspout"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_railing_flesh",
+    "name": "railing",
+    "description": "A wooden railing infested by the flesh.",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 6,
+    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "MOUNTABLE", "SHORT", "AUTO_WALL_SYMBOL", "BURROWABLE", "S_FLESH" ],
+    "connects_to": "RAILING",
+    "bash": {
+      "str_min": 25,
+      "str_max": 85,
+      "sound": "crack!",
+      "sound_fail": "splat.",
+      "ter_set": "t_railing"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_gutter_north_flesh",
+    "description": "It is infected by the flesh, but it still channels water from the roof towards the ground.",
+    "name": "fleshed rain gutter",
+    "symbol": "LINE_OXOX",
+    "looks_like": "t_metal_floor",
+    "color": "light_red",
+    "move_cost": 6,
+    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "S_FLESH", "MOUNTABLE", "TINY", "AUTO_WALL_SYMBOL", "UNSTABLE" ],
+    "connects_to": "RAILING",
+    "bash": {
+      "str_min": 10,
+      "str_max": 17,
+      "sound": "clang!",
+      "sound_fail": "splat!",
+      "ter_set": "t_gutter_north"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_gutter_south_flesh",
+    "description": "It is infected by the flesh, but it still channels water from the roof towards the ground.",
+    "name": "fleshed rain gutter",
+    "symbol": "LINE_OXOX",
+    "looks_like": "t_secro_gutter_north",
+    "color": "light_red",
+    "move_cost": 6,
+    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "S_FLESH", "MOUNTABLE", "TINY", "AUTO_WALL_SYMBOL", "UNSTABLE" ],
+    "connects_to": "RAILING",
+    "bash": {
+      "str_min": 10,
+      "str_max": 17,
+      "sound": "clang!",
+      "sound_fail": "splat!",
+      "ter_set": "t_gutter_south"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_gutter_east_flesh",
+    "description": "It is infected by the flesh, but it still channels water from the roof towards the ground.",
+    "name": "fleshed rain gutter",
+    "symbol": "LINE_OXOX",
+    "looks_like": "t_secro_gutter_north",
+    "color": "light_red",
+    "move_cost": 6,
+    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "S_FLESH", "MOUNTABLE", "TINY", "AUTO_WALL_SYMBOL", "UNSTABLE" ],
+    "connects_to": "RAILING",
+    "bash": {
+      "str_min": 10,
+      "str_max": 17,
+      "sound": "clang!",
+      "sound_fail": "splat!",
+      "ter_set": "t_gutter_east"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_gutter_west_flesh",
+    "description": "It is infected by the flesh, but it still channels water from the roof towards the ground.",
+    "name": "fleshed rain gutter",
+    "symbol": "LINE_OXOX",
+    "looks_like": "t_secro_gutter_north",
+    "color": "light_red",
+    "move_cost": 6,
+    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "S_FLESH", "MOUNTABLE", "TINY", "AUTO_WALL_SYMBOL", "UNSTABLE" ],
+    "connects_to": "RAILING",
+    "bash": {
+      "str_min": 10,
+      "str_max": 17,
+      "sound": "clang!",
+      "sound_fail": "splat!",
+      "ter_set": "t_gutter_west"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_gutter_drop_flesh",
+    "name": "fleshed gutter drop",
+    "description": "Yet devoured by the flesh, it still funnels water from gutter system towards the ground, it looks flimsy.  You may be able to climb down here.",
+    "symbol": "o",
+    "looks_like": "t_secro_gutter_north",
+    "color": "light_red",
+    "move_cost": 6,
+    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "S_FLESH", "MOUNTABLE", "TINY", "AUTO_WALL_SYMBOL", "UNSTABLE", "CLIMBABLE" ],
+    "connects_to": "RAILING",
+    "bash": {
+      "str_min": 10,
+      "str_max": 17,
+      "sound": "clang!",
+      "sound_fail": "splat!",
+      "ter_set": "t_gutter_drop"
+    }
+  }
 ]
