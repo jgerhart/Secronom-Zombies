@@ -639,7 +639,7 @@
         "species": ["ABERRATION"],
         "volume": "100000 L",
     	"weight": "533525 kg",
-        "hp": 4200,
+        "hp": 2200,
         "speed": 85,
         "material": ["flesh","bone"],
         "symbol": "⨷",
@@ -663,7 +663,7 @@
                 "monster_message": "<color_light_red>%1$s trembles!</color>"
             }
         ],
-        "regenerates": 25,
+        "regenerates": 20,
         "death_drops": "mon_sflesh_flesh_death_drop",
         "harvest": "meatslug",
         "death_function": ["SPLATTER","MELT"],
