@@ -5,9 +5,11 @@ Its mod thread is at the [official forums](https://discourse.cataclysmdda.org/t/
 Mod made from various references, mixed up with random spices! A mod I've created with its original goal set to imitate the *Dead Frontier*'s zombies... Right now, **Secronom** (name referenced from the game) is a creature mod, with vast assortments of monsters in its arsenal. If you're up for an action-packed playthrough or just loves beating weird craps, activate this mod and see how your dark days get even darker!
 
 - This mod will only work with the latest experimental of CDDA. Update your client before using this.
-- This mod is WIP and fatal crashes may occur... In very rare occasions.
-- Make sure to **turn off** the `Experimental 3D FOV`, as it breaks some intended functions of the mod.
-- For balancing purposes, do not activate **Stats Through Kills** mod.
+- This mod is stable. Submit an issue if you encounter a bug.
+- Make sure to **turn off** the `Experimental 3D FOV`, as it'll break some intended functions of the mod.
+- For balancing purposes, do not activate `Stats Through Kills` mod.
+
+The lore behind all monsters and locations aren't explained in-game... yet.
 
 ## Zombies
 The secronom's main feature - the zeds. They range from weak up to strong variety of them.
@@ -219,7 +221,10 @@ These are once normal structures, but after a sudden mutation of a dwelling zed,
 
 ##### Loots:
 * **Common** - Items found inside a house such as clothing, foods and tools.
-* **Prepper** - Rarely found under the basement and they contain weaponry and ammunition.
+* **Prepper** - Rarely found under the basement. Contains weaponry and ammunition.
+
+##### Hazards:
+* **Noxious Gas** - Without proper protection against the gas, it will slowly poison you. The poison becomes lethal if you inhale too much or the main source has matured.
 
 ### Saddler Gathering Nest
 A cavern where saddlers tend to gather and populate. These nests are rarely seen around the world, yet its occupants are troublesome parasites - parasites which takes control of the sentient target's consciousness.
@@ -236,8 +241,20 @@ Forests that has been infested by the crimson horrors. Unlike the infected build
 * _**Crimson Horrors**_ - Monsters that resides in, out or nearby the flesh. The surface monsters usually act as guards, having **flesh sacks** giving birth to **parasytes** and **eye sprouts** alerting the flesh of unwanted visitors. The inner monsters are much more aggressive: **vein beasts** and **rumblers** are made internally to fend off intruders while the **takens** are creatures devoured by the flesh, manipulated into minions. The **flesh** is the hivemind - hidden in its inescapable lair - and a combat with it is a challenge.
 
 ##### Loots:
-* **Edible Meat** - You can't take the flesh that's under your feet nor you touch, but in the deeps, you may gather all the meat you can take after beating the flesh.
-* **Flesh Chunk** - Chunks of vile flesh from the melting flesh. This flesh is known to possess regenerative properties that can mend all your injuries, even the broken ones.
+* **Flesh Chunk** - Chunk of vile, edible meat from the melting flesh. This flesh is known to possess regenerative properties that can mend all your injuries, even the broken ones.
 
 ###### Hazards:
-* **Corroding Environment** - Without environmental protection, the flesh will devour you little by little, taking constant damage as long as you're inside.
+* **Compact Environment** - Without environmental protection, the underground flesh will devour you little by little, taking constant damage as long as you're inside.
+
+### Flesh City
+A city full of zeds, now overrun by the flesh. The flesh might be related to the flesh forest, but in this case, the flesh itself is aggressive, taking over a whole city as its predominant territory. A towering heap of flesh stands tall at the center, with its thick veins penetrate the ground that pulsates in velvety beats.
+
+##### Exclusive Monsters:
+* _**Crimson Horrors**_ - Fleshed monsters that dwells in the city. The **flesh version** of **zombies** cover most of the vicinity, while the *eye sprouts* scattered throughout the city can alert the flesh of intruders. On the top of the tower lies the **flesh** - it looks like the underground flesh, but much more fragile and having lesser mass. A combat with it is much more challengng.
+
+##### Loots:
+* **City Loots** - Structures in the city has the same loots as before.
+* **Flesh Chunk**
+
+###### Hazards:
+* **Compact Environment** - The flesh tower is a living structure that can devour anyone without environmental protection.
