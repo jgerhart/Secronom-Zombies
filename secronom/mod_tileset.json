@@ -63,7 +63,20 @@
 "fd_sflesh_sack_dead",
 "fd_sflesh_tentclus",
 "fd_sflesh_taken",
-"fd_mon_down_immune"],
+"fd_mon_down_immune",
+"fd_sflesh_bones_r",
+"fd_sflesh_bones_l",
+"fd_sflesh_tendrils_r",
+"fd_sflesh_tendrils_l",
+"fd_flesh_biome_h",
+"fd_flesh_biome_t",
+"fd_flesh_biome_la",
+"fd_flesh_biome_ra",
+"fd_flesh_biome_ll",
+"fd_flesh_biome_rl",
+"fd_flesh_biome_immune",
+"fd_sflesh_wall",
+"fd_sflesh_wall_limit"],
                         "fg": 0
                     },
 				
@@ -1535,6 +1548,11 @@
               "id": "f_secro_flesh_tent",
               "fg": 426,
 			  "bg": 0
+            },
+            {
+              "id": "t_secro_door_glass_flesh",
+              "fg": 427,
+			  "bg": 0
             }
 				]
                 },{
@@ -2559,6 +2577,234 @@
             }
 			],
 			"rotates": true
+            },{
+          "id": ["t_secro_wall_w_flesh"],
+          "fg": 932,
+		  "bg": 0,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 932,
+			  "bg": 0
+            },		  
+           {
+              "id": "corner",
+              "fg": [933, 934, 935, 936],
+			  "bg": 0
+			},
+            {
+              "id": "t_connection",
+              "fg": [937, 938, 939, 940],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [941, 942],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [943, 944, 945, 946],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 947,
+			  "bg": 0
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_secro_wall_g_flesh"],
+          "fg": 948,
+		  "bg": 0,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 948,
+			  "bg": 0
+            },		  
+           {
+              "id": "corner",
+              "fg": [949, 950, 951, 952],
+			  "bg": 0
+			},
+            {
+              "id": "t_connection",
+              "fg": [953, 954, 955, 956],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [957, 958],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [959, 960, 961, 962],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 963,
+			  "bg": 0
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_secro_concrete_flesh"],
+          "fg": 964,
+		  "bg": 0,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 964,
+			  "bg": 0
+            },		  
+           {
+              "id": "corner",
+              "fg": [965, 966, 967, 968],
+			  "bg": 0
+			},
+            {
+              "id": "t_connection",
+              "fg": [969, 970, 971, 972],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [973, 974],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [975, 976, 977, 978],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 979,
+			  "bg": 0
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_secro_sidewalk_flesh"],
+          "fg": 980,
+		  "bg": 0,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 980,
+			  "bg": 0
+            },		  
+           {
+              "id": "corner",
+              "fg": [981, 982, 983, 984],
+			  "bg": 0
+			},
+            {
+              "id": "t_connection",
+              "fg": [985, 986, 987, 988],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [989, 990],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [991, 992, 993, 994],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 995,
+			  "bg": 0
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_secro_railing_flesh"],
+          "fg": 996,
+		  "bg": 0,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 996,
+			  "bg": 0
+            },		  
+           {
+              "id": "corner",
+              "fg": [997, 998, 999, 1000],
+			  "bg": 0
+			},
+            {
+              "id": "t_connection",
+              "fg": [1001, 1002, 1003, 1004],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [1005, 1006],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [1007, 1008, 1009, 1010],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 1011,
+			  "bg": 0
+            }
+			],
+			"rotates": true
+            },{
+          "id": ["t_secro_gutter_north_flesh", "t_secro_gutter_south_flesh", "t_secro_gutter_east_flesh", "t_secro_gutter_west_flesh"],
+          "fg": 1012,
+		  "bg": 0,
+		  "multitile": true,
+          "additional_tiles": [ 
+            {
+              "id": "center",
+              "fg": 1012,
+			  "bg": 0
+            },		  
+           {
+              "id": "corner",
+              "fg": [1013, 1014, 1015, 1016],
+			  "bg": 0
+			},
+            {
+              "id": "t_connection",
+              "fg": [1017, 1018, 1019, 1020],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [1021, 1022],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [1023, 1024, 1025, 1026],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 1027,
+			  "bg": 0
+            }
+			],
+			"rotates": true
             }
     ]
 	}, {
@@ -2569,24 +2815,41 @@
                 "sprite_offset_y": -48,
                 "tiles": [{
                         "id": "t_secro_flesh_inside_up",
-                        "fg": 1012,
+                        "fg": 1268,
                         "bg": 0
                     },{
                         "id": "mon_sflesh_vrumbler",
-                        "fg": 1013,
+                        "fg": 1269,
                         "bg": 100
                     },{
                         "id": ["mon_sflesh_taken", "mon_sflesh_taken_potent"],
-                        "fg": 1014,
+                        "fg": 1270,
                         "bg": 0
                     },{
                         "id": "mon_sflesh_flesh",
-                        "fg": 1015,
+                        "fg": 1271,
                         "bg": 100
                     },{
                         "id": "mon_sflesh_flesh_wall",
-                        "fg": 1016,
+                        "fg": 1272,
                         "bg": 100
+                    },{
+                        "id": "t_secro_gutter_downspout_flesh",
+                        "fg": 1273
+                    },{
+                        "id": "t_secro_gutter_drop_flesh",
+                        "fg": 1274
+                    },
+					{
+              "id": "t_secro_ladder_down_flesh",
+              "fg": 1275
+					},
+					{
+              "id": "t_secro_ladder_up_flesh",
+              "fg": 1276
+					},{
+                        "id": "mon_sflesh_parasyte",
+                        "fg": 1277
                     }
 					
 					
