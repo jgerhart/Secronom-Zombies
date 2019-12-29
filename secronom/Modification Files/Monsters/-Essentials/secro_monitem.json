@@ -92,7 +92,7 @@
     "name": "smoked flesh chunk",
     "description": "A disgusting chunk of flesh that has been smoked for preservation.",
     "symbol": "%",
-    "color": "dark_red",
+    "color": "red",
     "spoils_in": "20 days",
     "quench": -1,
     "fun": -30,

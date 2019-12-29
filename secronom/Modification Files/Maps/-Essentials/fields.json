@@ -5,7 +5,7 @@
         "type": "field_type",
         "intensity_levels": [{
                 "name": "carrion portal",
-                "color": "dark_red",
+                "color": "red",
                 "sym": "*",
                 "light_emitted": 5,
                 "monster_spawn_chance": 1000,
@@ -42,7 +42,7 @@
         "type": "field_type",
         "intensity_levels": [{
                 "name": "vector portal",
-                "color": "dark_blue",
+                "color": "blue",
                 "sym": "*",
                 "light_emitted": 5,
                 "monster_spawn_chance": 1000,
@@ -241,7 +241,7 @@
         "type": "field_type",
         "intensity_levels": [{
                 "name": "airlock",
-                "color": "gray",
+                "color": "light_gray",
                 "monster_spawn_chance": 7500,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
@@ -406,7 +406,7 @@
           }
         ] },
       { "name": "corrupted acid streak" },
-      { "name": "pool of corrupted acid", "color": "gray", "effects": [
+      { "name": "pool of corrupted acid", "color": "light_gray", "effects": [
           {
             "effect_id": "secro_cordev_corrupt",
             "body_part": "LEG_R",
