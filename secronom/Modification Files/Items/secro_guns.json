@@ -359,7 +359,7 @@
         [ "grip", 1 ],
         [ "rail", 1 ],
         [ "sights", 1 ],
-		[ "stock", 1 ],
+		[ "stock", 1 ]
 		],
 		"ammo_effects": [ "PLASMA", "INCENDIARY" ],
 		"flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE" ]
