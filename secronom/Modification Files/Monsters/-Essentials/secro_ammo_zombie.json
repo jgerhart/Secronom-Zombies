@@ -159,7 +159,7 @@
         "bashing": 6,
         "material": ["steel", "plastic"],
         "symbol": "*",
-        "color": "ltred",
+        "color": "light_red",
         "explode_in_fire": true,
         "use_action": {
             "target": "SSimpactgrenadeact",
