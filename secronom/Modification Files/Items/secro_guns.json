@@ -48,7 +48,7 @@
         "bashing": 12,
         "material": ["steel"],
         "symbol": ")",
-        "color": "ltred",
+        "color": "light_red",
         "ammo": "SSgrenade",
         "skill": "launcher",
         "range": 30,

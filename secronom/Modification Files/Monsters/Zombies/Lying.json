@@ -48,7 +48,7 @@
         "diff": 5,
         "material": ["flesh"],
         "symbol": "♆",
-        "color": "dkgray_red",
+        "color": "dark_gray_red",
         "aggression": 100,
         "morale": 100,
         "melee_skill": 3,
