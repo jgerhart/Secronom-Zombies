@@ -1,4 +1,5 @@
-﻿[{
+
+[{
         "type": "overmap_terrain",
         "id": "SecronomSSLab_top",
         "name": "secronom lab",
@@ -235,13 +236,13 @@
         "color": "dark_gray_red",
         "copy-from": "generic_city_building_no_sidewalk",
         "flags": ["KNOWN_UP", "NO_ROTATE", "GENERIC_LOOT"]
-    },
-	{
+    }, {
         "id": "flesh_forest_1",
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
             "population": [1, 3],
             "chance": 100
@@ -252,7 +253,8 @@
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
             "population": [1, 3],
             "chance": 100
@@ -263,7 +265,8 @@
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
             "population": [1, 3],
             "chance": 100
@@ -274,7 +277,8 @@
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
             "population": [1, 3],
             "chance": 100
@@ -292,7 +296,8 @@
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
             "population": [1, 3],
             "chance": 100
@@ -303,7 +308,8 @@
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
             "population": [1, 3],
             "chance": 100
@@ -314,7 +320,8 @@
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
             "population": [1, 3],
             "chance": 100
@@ -325,7 +332,8 @@
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
             "population": [1, 3],
             "chance": 100
@@ -336,7 +344,8 @@
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
             "population": [1, 3],
             "chance": 100
@@ -347,7 +356,8 @@
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
             "population": [1, 3],
             "chance": 100
@@ -358,7 +368,8 @@
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
             "population": [1, 3],
             "chance": 100
@@ -369,7 +380,8 @@
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
             "population": [1, 3],
             "chance": 100
@@ -380,16 +392,18 @@
         "type": "overmap_terrain",
         "name": "forest",
         "sym": "F",
-        "color": "green","spawns": {
+        "color": "green",
+        "spawns": {
             "group": "GROUP_FF_SURFACE",
-            "population": [1,2]
+            "population": [1, 2]
         },
         "see_cost": 10
     }, {
         "id": "flesh_forest_bot1_1",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -400,7 +414,8 @@
         "id": "flesh_forest_bot1_2",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -411,7 +426,8 @@
         "id": "flesh_forest_bot1_3",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -422,7 +438,8 @@
         "id": "flesh_forest_bot1_4",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -433,7 +450,8 @@
         "id": "flesh_forest_bot1_5",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -444,7 +462,8 @@
         "id": "flesh_forest_bot1_6",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -455,7 +474,8 @@
         "id": "flesh_forest_bot1_7",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -466,7 +486,8 @@
         "id": "flesh_forest_bot1_8",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -477,7 +498,8 @@
         "id": "flesh_forest_bot1_9",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -488,7 +510,8 @@
         "id": "flesh_forest_bot2_1",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -499,7 +522,8 @@
         "id": "flesh_forest_bot2_2",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -510,7 +534,8 @@
         "id": "flesh_forest_bot2_3",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -521,7 +546,8 @@
         "id": "flesh_forest_bot2_4",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -532,7 +558,8 @@
         "id": "flesh_forest_bot2_5",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -543,7 +570,8 @@
         "id": "flesh_forest_bot2_6",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -554,7 +582,8 @@
         "id": "flesh_forest_bot2_7",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -565,7 +594,8 @@
         "id": "flesh_forest_bot2_8",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -576,19 +606,20 @@
         "id": "flesh_forest_bot2_9",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
         },
         "color": "red",
         "see_cost": 10
-    },
-    {
+    }, {
         "id": "flesh_forest_bot3_1",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -599,7 +630,8 @@
         "id": "flesh_forest_bot3_2",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -610,7 +642,8 @@
         "id": "flesh_forest_bot3_3",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -621,7 +654,8 @@
         "id": "flesh_forest_bot3_4",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -632,7 +666,8 @@
         "id": "flesh_forest_bot3_5",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -643,7 +678,8 @@
         "id": "flesh_forest_bot3_6",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -654,7 +690,8 @@
         "id": "flesh_forest_bot3_7",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -665,7 +702,8 @@
         "id": "flesh_forest_bot3_8",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -676,19 +714,20 @@
         "id": "flesh_forest_bot3_9",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
         },
         "color": "red",
         "see_cost": 10
-    },
-    {
+    }, {
         "id": "flesh_forest_boss_1",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -699,7 +738,8 @@
         "id": "flesh_forest_boss_2",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -710,7 +750,8 @@
         "id": "flesh_forest_boss_3",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -721,7 +762,8 @@
         "id": "flesh_forest_boss_4",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -732,7 +774,8 @@
         "id": "flesh_forest_boss_5",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -743,7 +786,8 @@
         "id": "flesh_forest_boss_6",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -754,7 +798,8 @@
         "id": "flesh_forest_boss_7",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -765,7 +810,8 @@
         "id": "flesh_forest_boss_8",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -776,7 +822,8 @@
         "id": "flesh_forest_boss_9",
         "type": "overmap_terrain",
         "name": "flesh",
-        "sym": "#", "spawns": {
+        "sym": "#",
+        "spawns": {
             "group": "GROUP_FF_INSIDE",
             "population": [1, 3],
             "chance": 20
@@ -784,13 +831,13 @@
         "color": "red",
         "see_cost": 10
     }, {
-    "type": "overmap_terrain",
-    "id": "secro_flesh_city_core",
-    "name": "flesh tower",
-    "sym": "╋",
-    "color": "red",
-    "see_cost": 10
-  }, {
+        "type": "overmap_terrain",
+        "id": "secro_flesh_city_core",
+        "name": "flesh tower",
+        "sym": "╋",
+        "color": "red",
+        "see_cost": 10
+    }, {
         "type": "overmap_terrain",
         "id": "s_house_flesh",
         "name": "fleshed structure",
@@ -820,29 +867,25 @@
         "extras": "build",
         "mondensity": 3,
         "flags": ["SIDEWALK", "GENERIC_LOOT"]
-    },
-    {
-    "type": "overmap_terrain",
-    "id": "secro_road_updown_flesh",
-    "name": "fleshed road",
-    "sym": "┃",
-    "color": "red",
-    "see_cost": 10
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "secro_road_leftright_flesh",
-    "name": "fleshed road",
-    "sym": "━",
-    "color": "red",
-    "see_cost": 10
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "secro_road_4d_flesh",
-    "name": "fleshed road",
-    "sym": "╋",
-    "color": "red",
-    "see_cost": 10
-  }
-]
+    }, {
+        "type": "overmap_terrain",
+        "id": "secro_road_updown_flesh",
+        "name": "fleshed road",
+        "sym": "┃",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "type": "overmap_terrain",
+        "id": "secro_road_leftright_flesh",
+        "name": "fleshed road",
+        "sym": "━",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "type": "overmap_terrain",
+        "id": "secro_road_4d_flesh",
+        "name": "fleshed road",
+        "sym": "╋",
+        "color": "red",
+        "see_cost": 10
+    }]
