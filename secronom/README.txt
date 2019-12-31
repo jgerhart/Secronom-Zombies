@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.7 - For the last project of structural overhaul, the flesh city is now in-progress. <--
+--> V1.7 - The flesh city is in WIP, and lots of necessary works are still required. <--
 
 #  TILESET REWORKS (if possible)
 
