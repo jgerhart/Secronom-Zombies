@@ -20,7 +20,8 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  ZED MUTANT (relinquished zombie)
 +  FLESH FOREST (a forest infested by the flesh, home for the crimson horrors)
 +  CRIMSON HORRORS (creatures unique to the flesh forest)
-+  FLESH CHUNKS (a consumable food with regenerative prowess)
++  FLESH CHUNKS (a consumable food with superior regenerative prowess)
++  FLESH CITY (a city overwhelmed by the flesh)
 
 ~  SADDLER REBALANCES (stats tweaked to existing saddlers)
 
