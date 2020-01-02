@@ -9,6 +9,9 @@
         "valid_targets": ["ally", "hostile", "ground", "self"],
         "effect": "target_attack",
 		"effect_str": "secro_sacrifice_effect",
+		"min_damage": 100000000,
+        "max_damage": 100000000,
+        "//": "There's a bug in which self-damaging spells are being 'reflected', so we'll use a damaging effect to apply to the caster (the effect requires a turn to apply the damage, and it's a bit unpleasant... but still a backup to prevent overcasting).",
         "min_aoe": 1,
         "max_aoe": 1
     }, {
@@ -339,11 +342,6 @@
         "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "effect_str": "omi_curse",
-        "extra_effects": [{
-                "id": "sacrifice_spell",
-                "hit_self": true
-            }
-        ],
         "min_damage": 2,
         "max_damage": 5,
         "min_range": 3,
@@ -352,6 +350,24 @@
         "max_duration": 6000,
         "damage_type": "none"
     }, {
+        "type": "SPELL",
+        "id": "mon_zombie_nightwail_shadow_curse_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "mon_zombie_nightwail_shadow_curse"
+            },
+            {
+                "id": "sacrifice_spell", "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_range": 3,
+        "max_range": 3
+    },{
         "id": "mon_zombie_xlick_writhes",
         "type": "SPELL",
         "name": "Writhing Slash",
@@ -635,16 +651,29 @@
         "valid_targets": ["hostile", "ground"],
         "effect": "target_attack",
         "effect_str": "pedo_restraint",
-        "extra_effects": [{
-                "id": "sacrifice_spell",
-                "hit_self": true
-            }
-        ],
         "min_range": 1,
         "max_range": 1,
         "min_duration": 3000,
         "max_duration": 6000
     }, {
+        "type": "SPELL",
+        "id": "mon_zombie_nautilus_pedo_restraint_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "mon_zombie_nautilus_pedo_restraint"
+            },
+            {
+                "id": "sacrifice_spell", "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_range": 1,
+        "max_range": 1
+    },{
         "id": "mon_zombie_stray_w_leaf_stro1_lace",
         "type": "SPELL",
         "name": "Lacerate",
@@ -834,13 +863,6 @@
         "flags": ["SILENT"],
         "valid_targets": ["ally", "self", "ground"],
         "effect": "target_attack",
-        "extra_effects": [{
-                "id": "sacrifice_spell",
-                "hit_self": true
-            }
-        ],
-        "min_damage": -1,
-        "max_damage": -1,
         "min_aoe": 2,
         "max_aoe": 2,
         "field_id": "fd_portal_carrion",
@@ -855,10 +877,6 @@
         "flags": ["SILENT", "RANDOM_DAMAGE", "RANDOM_AOE"],
         "valid_targets": ["ally", "hostile", "ground"],
         "effect": "projectile_attack",
-        "extra_effects": [{
-                "id": "mon_unknown_unknown_portal_carrion"
-            }
-        ],
         "min_damage": 25,
         "max_damage": 35,
         "//": "Basically, an enemy target has to be the center of explosion, so that Spells get casted successfully.",
@@ -872,6 +890,27 @@
         "max_field_intensity": 1,
         "damage_type": "bash"
     }, {
+        "type": "SPELL",
+        "id": "mon_unknown_unknown_carrion_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+        	{
+                "id": "mon_unknown_unknown_gcollapse_carrion", "hit_self": true
+            },
+            {
+                "id": "mon_unknown_unknown_portal_carrion", "hit_self": true
+            },
+            {
+                "id": "sacrifice_spell", "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_range": 5,
+        "max_range": 5
+    },{
         "id": "mon_unknown_unknown_portal_vector",
         "type": "SPELL",
         "name": "Portal",
@@ -917,6 +956,27 @@
         "max_field_intensity": 1,
         "damage_type": "bash"
     }, {
+        "type": "SPELL",
+        "id": "mon_unknown_unknown_vector_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+        	{
+                "id": "mon_unknown_unknown_gcollapse_vector", "hit_self": true
+            },
+            {
+                "id": "mon_unknown_unknown_portal_vector", "hit_self": true
+            },
+            {
+                "id": "sacrifice_spell", "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_range": 5,
+        "max_range": 5
+    },{
         "id": "mon_vector_rize_smol",
         "type": "SPELL",
         "name": "Vectorize",
@@ -991,6 +1051,8 @@
         "valid_targets": ["ground"],
         "min_damage": 1,
         "max_damage": 1,
+        "min_aoe": 2,
+        "max_aoe": 2,
         "effect": "summon",
         "effect_str": "mon_zombie_ichorus"
     }, {
@@ -1004,7 +1066,7 @@
                 "hit_self": true
             },
             {
-            	"//": "Then place the polymorphed version in the tile it was standing on... Bad side is, sacrifice spell shows a million damage value at the timeline.",
+            	"//": "Then place the monster beside them.",
                 "id": "mon_zombie_fake_poly_ichorus",
                 "hit_self": true
             }
@@ -1023,6 +1085,8 @@
         "valid_targets": ["ground"],
         "min_damage": 1,
         "max_damage": 1,
+        "min_aoe": 2,
+        "max_aoe": 2,
         "effect": "summon",
         "effect_str": "mon_zombie_psyrus"
     }, {
