@@ -78,7 +78,7 @@
         "vision_night": 20,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_nautilus_pedo_restraint",
+                "spell_id": "mon_zombie_nautilus_pedo_restraint_target",
                 "cooldown": 1,
                 "monster_message": "<color_yellow>%1$s latches onto %3$s!</color>"
             }

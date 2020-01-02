@@ -170,7 +170,7 @@
         "harvest": "exempt",
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_nightwail_shadow_curse",
+                "spell_id": "mon_zombie_nightwail_shadow_curse_target",
                 "cooldown": 10,
                 "monster_message": "<color_yellow>%1$s curses %3$s!</color>"
             }

@@ -46,7 +46,7 @@
         "name_plural": "???",
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_unknown_unknown_gcollapse_carrion",
+                "spell_id": "mon_unknown_unknown_carrion_target",
                 "cooldown": 10
             }
         ]
@@ -59,7 +59,7 @@
         "name_plural": "???",
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_unknown_unknown_gcollapse_vector",
+                "spell_id": "mon_unknown_unknown_vector_target",
                 "cooldown": 10
             }
         ]
