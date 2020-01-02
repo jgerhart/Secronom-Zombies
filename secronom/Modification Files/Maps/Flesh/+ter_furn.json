@@ -142,7 +142,7 @@
         "color": "light_red",
         "move_cost": 5,
         "roof": "t_secro_flat_roof_flesh",
-        "flags": ["TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "ROAD", "S_FLESH"],
+        "flags": ["TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "ROAD", "NOCOLLIDE","S_FLESH"],
         "bash": {
             "sound": "SMASH!",
             "ter_set": "t_floor",
@@ -159,7 +159,7 @@
         "color": "red",
         "move_cost": 5,
         "roof": "t_secro_flat_roof_flesh",
-        "flags": ["TRANSPARENT", "INDOORS", "COLLAPSES", "SUPPORTS_ROOF", "FLAT", "ROAD", "S_FLESH"],
+        "flags": ["TRANSPARENT", "INDOORS", "COLLAPSES", "SUPPORTS_ROOF", "FLAT", "ROAD","NOCOLLIDE", "S_FLESH"],
         "bash": {
             "ter_set": "t_rock_floor",
             "str_min": 80,
@@ -811,7 +811,7 @@
     "symbol": ".",
     "color": "red",
     "move_cost": 5,
-    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "MINEABLE", "S_FLESH" ],
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "MINEABLE", "NOCOLLIDE","S_FLESH" ],
     "bash": {
       "ter_set": "t_concrete",
       "str_min": 55,
@@ -827,7 +827,7 @@
     "symbol": ".",
     "color": "light_red",
     "move_cost": 5,
-    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "MINEABLE", "S_FLESH" ],
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "MINEABLE","NOCOLLIDE", "S_FLESH" ],
     "bash": {
       "ter_set": "t_sidewalk",
       "str_min": 55,
@@ -844,7 +844,7 @@
     "symbol": ".",
     "color": "red",
     "move_cost": 5,
-    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "S_FLESH","MINEABLE" ],
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "S_FLESH","NOCOLLIDE","MINEABLE" ],
     "bash": {
       "ter_set": "t_pavement",
       "str_min": 55,
@@ -861,7 +861,7 @@
     "symbol": ".",
     "color": "light_red",
     "move_cost": 5,
-    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "S_FLESH", "MINEABLE" ],
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "S_FLESH", "NOCOLLIDE","MINEABLE" ],
     "bash": {
       "ter_set": "t_pavement_y",
       "str_min": 55,
@@ -878,7 +878,7 @@
     "color": "light_red",
     "move_cost": 5,
     "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "ROAD", "S_FLESH" ],
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "NOCOLLIDE", "ROAD", "S_FLESH" ],
     "bash": {
       "sound": "crash!",
       "ter_set": "t_thconc_floor",
@@ -988,7 +988,7 @@
     "color": "red",
     "move_cost": 5,
     "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "S_FLESH", "FLAT" ],
+    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "NOCOLLIDE", "S_FLESH", "FLAT" ],
     "bash": {
       "sound": "SMASH!",
       "ter_set": "t_carpet_red",
@@ -1006,7 +1006,7 @@
     "color": "red",
     "move_cost": 5,
     "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "S_FLESH", "FLAT" ],
+    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "NOCOLLIDE", "S_FLESH", "FLAT" ],
     "bash": {
       "sound": "SMASH!",
       "ter_set": "t_carpet_yellow",
@@ -1024,7 +1024,7 @@
     "color": "red",
     "move_cost": 5,
     "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "S_FLESH", "FLAT" ],
+    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "NOCOLLIDE","S_FLESH", "FLAT" ],
     "bash": {
       "sound": "SMASH!",
       "ter_set": "t_carpet_green",
@@ -1042,7 +1042,7 @@
     "color": "red",
     "move_cost": 5,
     "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "S_FLESH", "FLAT" ],
+    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "SUPPORTS_ROOF", "COLLAPSES", "NOCOLLIDE","INDOORS", "S_FLESH", "FLAT" ],
     "bash": {
       "sound": "SMASH!",
       "ter_set": "t_carpet_purple",
@@ -1060,7 +1060,7 @@
     "color": "light_red",
     "move_cost": 5,
     "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "S_FLESH", "FLAT", "ROAD" ],
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "NOCOLLIDE","S_FLESH", "FLAT", "ROAD" ],
     "bash": {
       "sound": "SMASH!",
       "ter_set": "t_linoleum_white",
@@ -1078,7 +1078,7 @@
     "symbol": ".",
     "color": "light_red",
     "move_cost": 5,
-    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "S_FLESH", "FLAT", "ROAD" ],
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "NOCOLLIDE","S_FLESH", "FLAT", "ROAD" ],
     "bash": {
       "sound": "SMASH!",
       "ter_set": "t_linoleum_gray",
