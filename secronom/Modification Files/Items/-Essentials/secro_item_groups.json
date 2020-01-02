@@ -29,8 +29,8 @@
             ["walther2000", 2],
             ["xm556", 5],
             ["xm8", 30],
-            ["zx1sniper", 20],
-            ["lmilaser", 10]
+            ["zx1sniper", 5],
+            ["lmilaser", 5]
         ]
     }, {
         "type": "item_group",
