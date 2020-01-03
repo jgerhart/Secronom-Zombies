@@ -8,9 +8,13 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.8 - Aside of extending the flesh city, upcoming contents are unplanned. <--
+--> V1.8 - Aside of expanding the flesh city, upcoming contents are unplanned. <--
 
 #  TILESET REWORKS (if possible)
+
++  FLESH ZOMBIES (expansion of flesh zombie variants for the flesh city)
+
+-  FLESH CITY POPULATION (now densely crowded)
 
 
 
@@ -27,7 +31,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  FLESH FOREST (a forest infested by the flesh, home for the crimson horrors)
 +  CRIMSON HORRORS (creatures unique to the fleshed environment)
 +  FLESH CHUNKS (a consumable food with superior regenerative prowess)
-+  FLESH CITY (a city overwhelmed by the flesh)
++  FLESH CITY (cities overwhelmed by the flesh)
 
 ~  SADDLER REBALANCES (stats tweaked to existing saddlers)
 ~  SADDLER REWORKS (they are parasites which manipulates sentient targets, thus removing their acid prowess entirely)
