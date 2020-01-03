@@ -1137,14 +1137,14 @@
         "intensity_levels": [{
                 "name": "...",
                 "color": "black",
-                "monster_spawn_chance": 3,
+                "monster_spawn_chance": 5,
                 "monster_spawn_count": 1,
                 "monster_spawn_radius": 1,
                 "monster_spawn_group": "GROUP_FLESH_HEAP"
             }
         ],
         "priority": -1,
-        "half_life": "5 turns",
+        "half_life": "1 turns",
         "phase": "gas",
         "display_items": true,
         "display_field": false
