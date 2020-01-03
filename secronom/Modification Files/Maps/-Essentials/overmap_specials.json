@@ -1604,7 +1604,7 @@
             "field"
         ],
         "occurrences": [
-            10,
+            50,
             100
         ],
         "flags": ["UNIQUE"],
@@ -1619,7 +1619,8 @@
 			{ "point": [ -1, 0, 0 ], "overmap": "secro_road_leftright_sidewalk_flesh_north" },
 			{ "point": [ 2, 0, 0 ], "overmap": "secro_road_leftright_sidewalk_flesh_north" },
 			{ "point": [ 3, 0, 0 ], "overmap": "road_end_east" },
-			{ "point": [ -2, 0, 0 ], "overmap": "secro_road_hori_end_flesh_north" },
+			{ "point": [ -2, 0, 0 ], "overmap": "secro_road_curve_ru_flesh_north" },
+			{ "point": [ -2, -1, 0 ], "overmap": "secro_road_verti_end_flesh_south" },
 			{ "point": [ 0, 1, 0 ], "overmap": "secro_road_updown_sidewalk_flesh_north" },
 			{ "point": [ 0, -1, 0 ], "overmap": "secro_road_updown_sidewalk_flesh_north" },
 			{ "point": [ 0, 2, 0 ], "overmap": "secro_road_updown_sidewalk_flesh_north" },
@@ -1631,7 +1632,8 @@
 			{ "point": [ 1, 1, 0 ], "overmap": "s_shop_flesh_north" },
 			{ "point": [ 2, -1, 0 ], "overmap": "s_house_flesh_south" },
 			{ "point": [ -2, 1, 0 ], "overmap": "s_house_flesh_north" },
-			{ "point": [ -2, -1, 0 ], "overmap": "s_house_flesh_south" },
+			{ "point": [ -3, 0, 0 ], "overmap": "s_house_flesh_east" },
+			{ "point": [ -3, -1, 0 ], "overmap": "s_house_flesh_east" },
 			{ "point": [ 2, 1, 0 ], "overmap": "s_house_flesh_north" },
 			{ "point": [ 1, 2, 0 ], "overmap": "s_house_flesh_west" },
 			{ "point": [ -1, -2, 0 ], "overmap": "s_house_flesh_east" },
