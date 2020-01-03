@@ -1611,10 +1611,10 @@
         "spawns": {
             "group": "GROUP_FLESH_CITY",
             "population": [750, 1250],
-            "radius": [5, 10]
+            "radius": [2, 5]
         },
         "rotate": false,
-        "//": "Flesh City must not rotate, otherwise a horrible bug will appear.",
+        "//": "Flesh City overmap specials must not rotate, otherwise a horrible bug will appear (i.e jumbled road symbols but correct layouts).",
         "overmaps": [
 			{ "point": [ 0, 0, 0 ], "overmap": "secro_flesh_city_core" },
 			{ "point": [ 0, 0, 1 ], "overmap": "secro_flesh_city_core_up" },
@@ -1684,10 +1684,9 @@
         "spawns": {
             "group": "GROUP_FLESH_CITY",
             "population": [750, 1250],
-            "radius": [5, 10]
+            "radius": [2, 5]
         },
         "rotate": false,
-        "//": "Flesh City must not rotate, otherwise a horrible bug will appear.",
         "overmaps": [
 			{ "point": [ 0, 0, 0 ], "overmap": "secro_flesh_city_core" },
 			{ "point": [ 0, 0, 1 ], "overmap": "secro_flesh_city_core_up" },
