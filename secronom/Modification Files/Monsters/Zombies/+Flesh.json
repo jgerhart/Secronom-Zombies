@@ -426,7 +426,7 @@
         "speed": 70,
         "material": ["flesh"],
         "symbol": "Z",
-        "color": "light_red",
+        "color": "red",
         "aggression": 100,
         "morale": 100,
         "melee_skill": 4,
@@ -1045,6 +1045,12 @@
     "armor_bash": 3,
     "vision_night": 3,
     "harvest": "zombie",
+    "special_attacks": [ {
+                "type": "spell",
+                "spell_id": "mon_sflesh_zombie_spitter_cspit",
+                "cooldown": 12,
+                "monster_message": "<color_light_red>%1$s spews out concentrated glob of blood acid!</color>"
+            } ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
@@ -1148,7 +1154,7 @@
     ]
   },
   {
-  	"//": "Killing this monster will split flesh zombie(s), up to 5 of them!",
+  	"//": "Killing this monster will split flesh zombie(s), up to 9 of them! (3x3 tile from the location)",
     "id": "mon_sflesh_zombie_turret",
     "type": "MONSTER",
     "name": "flesh heap",
