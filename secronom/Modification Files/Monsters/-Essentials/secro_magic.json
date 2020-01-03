@@ -4336,7 +4336,7 @@
         "name": "Acid Spit",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster spews out a glob of acid onto the target, dealing acid damage and creates a blood acid underneath. Casted randomly between 2 to 4 times.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
-        "valid_targets": ["hostile"],
+        "valid_targets": ["hostile","ground"],
         "effect": "projectile_attack",
         "min_damage": 4,
         "max_damage": 8,
@@ -4389,7 +4389,7 @@
         "name": "Acid Discharge",
         "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster channels its core, producing large amounts of acid and eventually discharges, dealing acid damage to all affected creatures and creating blood acid in its surroundings.'",
         "flags": ["SILENT", "RANDOM_DAMAGE"],
-        "valid_targets": ["hostile"],
+        "valid_targets": ["hostile","ground"],
         "effect": "projectile_attack",
         "min_damage": 6,
         "max_damage": 12,
@@ -4442,5 +4442,44 @@
         "effect": "projectile_attack",
         "min_range": 10,
         "max_range": 10
+    },
+    {
+        "id": "mon_sflesh_zombie_spitter_cspread",
+        "type": "SPELL",
+        "name": "Corrosive Spread",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's blood acid spreads further.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile","ground"],
+        "effect": "projectile_attack",
+        "max_range": 8,
+        "min_range": 8,
+        "min_aoe": 4,
+        "max_aoe": 4,
+		"field_id": "fd_blood_acid",
+		"field_chance": 3,
+        "min_field_intensity": 1,
+        "max_field_intensity": 1
+    },
+    {
+    	"//": "In order to recreate the SPIT special attack, we used a spell... Downside is, it is perfectly accurate.",
+        "id": "mon_sflesh_zombie_spitter_cspit",
+        "type": "SPELL",
+        "name": "Corrosive Spit",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster spits a concentrated blob of acid onto the target that explodes upon impact, creating blood acid within a large area.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile","ground"],
+        "effect": "projectile_attack",
+        "extra_effects": [
+            {
+                "id": "mon_sflesh_zombie_spitter_cspread"
+            }
+        ],
+        "max_range": 8,
+        "min_range": 8,
+        "min_aoe": 2,
+        "max_aoe": 2,
+		"field_id": "fd_blood_acid",
+        "min_field_intensity": 1,
+        "max_field_intensity": 1
     }
 ]
