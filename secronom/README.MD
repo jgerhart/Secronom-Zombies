@@ -249,8 +249,10 @@ Forests that has been infested by the crimson horrors. Unlike the infected build
 ### Flesh City
 A city full of zeds, now overrun by the flesh. The flesh is similar to the forest, but in this case, it is an aggressive type to which it took over a whole city and claimed it as its predominant territory. A towering heap of flesh stands tall at the center, with its thick veins penetrating the ground that pulsates in velvety beats.
 
+* Flesh City is a variant of the flesh forest. It has lesser terrestrial hazards but densely crowded by monsters. 
+
 ##### Exclusive Monsters:
-* _**Crimson Horrors**_ - Monsters that dwells in the city. The **flesh version** of **zombies** cover most of the vicinity, while the *eye sprouts* scattered throughout the city can alert the flesh of intruders. On the top of the tower lies the **flesh** - it looks like the underground flesh, but much more fragile and having lesser mass. A combat with it is much more challengng.
+* _**Crimson Horrors**_ - Monsters that dwells in the city. The **flesh version** of **zombies** cover most of the vicinity, while on the top of the tower lies the **flesh** - it looks like the underground flesh, but much more fragile and having lesser mass. A combat with it is much more challenging.
 
 ##### Loots:
 * **City Loots** - Structures in the city has the same loots as before.
