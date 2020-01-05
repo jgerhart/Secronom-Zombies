@@ -12056,16 +12056,16 @@
             "terrain": {
                 ".": [
                     ["t_secro_dirt_flesh", 250],
-                    ["t_dirt", 2000],
+                    ["t_dirt", 1000],
                     ["t_secro_grass_flesh", 150],
-                    ["t_grass", 1200],
+                    ["t_grass", 600],
                     ["t_secro_shrub_flesh", 10],
-                    ["t_shrub", 40]
+                    ["t_shrub", 20]
                 ]
             },
             "furniture": {
                 ".": [
-                    ["f_null", 64000],
+                    ["f_null", 32000],
                     ["f_secro_flower_flesh", 50],
                     ["f_dandelion", 200],
                     ["f_chamomile", 200],
@@ -12127,17 +12127,17 @@
             ],
             "terrain": {
                 " ": [["t_secro_dirt_flesh", 250],
-                    ["t_dirt", 2000],
+                    ["t_dirt", 1000],
                     ["t_secro_grass_flesh", 150],
-                    ["t_grass", 1200],
+                    ["t_grass", 600],
                     ["t_secro_shrub_flesh", 10],
-                    ["t_shrub", 40]],
+                    ["t_shrub", 20]],
                 ".": [["t_secro_pavement_flesh", 250],
-                    ["t_pavement", 2000]],
+                    ["t_pavement", 1000]],
                 ":": [["t_secro_pavement_y_flesh", 250],
-                    ["t_pavement_y", 2000]],
+                    ["t_pavement_y", 1000]],
                 "]": [["t_secro_sidewalk_flesh", 250],
-                    ["t_sidewalk", 2000]]
+                    ["t_sidewalk", 1000]]
             }
         }
     }
