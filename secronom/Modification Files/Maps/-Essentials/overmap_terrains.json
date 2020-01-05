@@ -832,41 +832,41 @@
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
-        "id": "secro_flesh_city_core",
+        "id": "secro_flesh_city_core","flags": ["NO_ROTATE"],
         "name": "flesh tower",
         "sym": "┼",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
-        "id": "secro_flesh_city_core_up",
+        "id": "secro_flesh_city_core_up","flags": ["NO_ROTATE"],
         "name": "flesh tower",
         "sym": "⨂",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
-        "id": "secro_flesh_city_core_upper",
+        "id": "secro_flesh_city_core_upper","flags": ["NO_ROTATE"],
         "name": "flesh tower",
         "sym": "⨂",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
-        "id": "secro_flesh_city_core_uppest",
+        "id": "secro_flesh_city_core_uppest","flags": ["NO_ROTATE"],
         "name": "flesh tower",
         "sym": "⨀",
         "color": "light_red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
-        "id": "secro_flesh_city_core_uppest_roof",
+        "id": "secro_flesh_city_core_uppest_roof","flags": ["NO_ROTATE"],
         "name": "flesh tower",
         "sym": "⨀",
         "color": "red",
         "see_cost": 10
     }, {
-        "id": "secro_flesh_city_edge",
+        "id": "secro_flesh_city_edge", "flags": ["NO_ROTATE"],
         "type": "overmap_terrain",
         "name": "field",
         "sym": ".",
@@ -875,11 +875,12 @@
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_connect_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "─",
         "color": "red",
         "see_cost": 10
     }, {
+    	"//": "The buildings in Flesh City does not show their original symbols, rendering them unknown from the overmap (but at the center of the city is sure to be the commercial structures)",
         "type": "overmap_terrain",
         "id": "s_house_flesh",
         "name": "fleshed structure",
@@ -912,35 +913,35 @@
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_updown_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "│",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_leftright_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "─",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_4d_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "┼",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_updown_sidewalk_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "│",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_leftright_sidewalk_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "─",
         "color": "red",
         "see_cost": 10
@@ -961,56 +962,56 @@
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_tee_lru_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "┴",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_tee_lrd_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "┬",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_tee_lud_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "┤",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_tee_rud_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "├",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_curve_ru_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "└",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_curve_lu_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "┘",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_curve_rd_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "┌",
         "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
         "id": "secro_road_curve_ld_flesh",
-        "copy-from": "generic_transportation", "name": "fleshed road",
+        "copy-from": "generic_transportation", "flags": ["NO_ROTATE"], "name": "fleshed road",
         "sym": "┐",
         "color": "red",
         "see_cost": 10
