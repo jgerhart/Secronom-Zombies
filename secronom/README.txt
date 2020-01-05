@@ -1,4 +1,4 @@
-Secronom V1.7 - Axema Vales (author)
+Secronom V1.8 - Axema Vales (author)
 
 https://discourse.cataclysmdda.org - CDDA official forums
 
@@ -8,34 +8,39 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.7 - The flesh city is in WIP, and lots of necessary works are still required. <--
+--> V1.8 - Aside of extending the flesh city, upcoming contents are unplanned. <--
 
 #  TILESET REWORKS (if possible)
 
-+  FLESHED STRUCTURES (some houses and basements, for now)
+
+
+	=>PAST UPDATES<=
+
+--> V1.7 - Focused on creating various structures, being the flesh forest/city the biggest project. Saddlers were also reworked for its appearance to the mod. <--
+
++  FLESHED STRUCTURES (basic city buildings)
 +  ZED MUTANT (fleshknot)
 +  SADDLER NEST (gathering nests of saddlers)
 +  SADDLER (brute, scout)
 +  INFECTED SADDLERS (normal, brute and scout)
 +  ZED MUTANT (relinquished zombie)
 +  FLESH FOREST (a forest infested by the flesh, home for the crimson horrors)
-+  CRIMSON HORRORS (creatures unique to the flesh forest)
++  CRIMSON HORRORS (creatures unique to the fleshed environment)
 +  FLESH CHUNKS (a consumable food with superior regenerative prowess)
 +  FLESH CITY (a city overwhelmed by the flesh)
 
 ~  SADDLER REBALANCES (stats tweaked to existing saddlers)
+~  SADDLER REWORKS (they are parasites which manipulates sentient targets, thus removing their acid prowess entirely)
+~  MONSTER SPAWNGROUP REBALANCES (balanced the spawnrate for both vanilla and secronom)
 
 -  MONSTER SYMBOLS (now uses unicode characters to symbolize most monsters)
 -  SPELL IMPROVEMENTS (spells with random results now provides a notice about it)
 -  FAKE ZOMBIE (a minor bug fix regarding to its morphing ability)
 -  SKITTERING WEAVER (changed how it heals allies, due to relentless healing when a player is targeted. Instead of direct melee attacks, it uses spell to execute its ability)
 
-~  SADDLER REWORKS (they are parasites which manipulates sentient targets, thus removing their acid prowess entirely)
-~  MONSTER SPAWNGROUP REBALANCES (balanced the spawnrate for both vanilla and secronom)
 
 
-	=>PAST UPDATES<=
-	
+
 --> V1.6 - Focused on vast expansion of the zombie bestiary, mostly about the city and zed mutants. Monster sprites were redrawn by SomeDeadGuy and made them more pleasant to the game. <--
 
 #  MASSIVE TILESET REWORKS (SDG redrew every monster's sprite)
