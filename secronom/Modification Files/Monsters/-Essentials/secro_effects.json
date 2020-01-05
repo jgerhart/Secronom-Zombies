@@ -1125,6 +1125,12 @@
         "apply_message": "Suddenly it erupts into gore!",
         "rating": "good"
     },
+    {
+        "type": "effect_type",
+        "id": "mon_sflesh_flesh_city_fturmoil_YES",
+        "apply_message": "As the flesh trembles further, the tower's tentacle veins suddenly moves and thrashes the entire area!",
+        "rating": "bad"
+    },
     
     {
     	"//": "Effects used for immunity fields",
