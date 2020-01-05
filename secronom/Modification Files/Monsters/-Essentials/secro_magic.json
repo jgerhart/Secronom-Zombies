@@ -4005,5 +4005,329 @@
         "effect": "projectile_attack",
         "min_range": 30,
         "max_range": 30
+    }, {
+        "type": "SPELL",
+        "id": "mon_sflesh_wall_city_ing_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "sacrifice_spell", "hit_self": true
+            },{
+                "id": "mon_sflesh_wall_ing", "hit_self": true
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_range": 30,
+        "max_range": 30
+    }, {
+        "id": "mon_sflesh_flesh_city_thrash",
+        "type": "SPELL",
+        "name": "Thrash",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's thick surrounding tentacles thrashes at the area, dealing moderate bashing damage to all affected creatures.'",
+        "flags": ["SILENT","RANDOM_DAMAGE"],
+        "valid_targets": ["hostile"],
+        "effect": "projectile_attack",
+        "affected_body_parts": ["HEAD", "TORSO", "ARM_R", "ARM_L", "LEG_R", "LEG_L"],
+        "min_damage": 10,
+        "max_damage": 20,
+        "min_aoe": 2,
+        "max_aoe": 2,
+        "damage_type": "bash"
+    }, {
+        "id": "mon_sflesh_flesh_city_fturmoil",
+        "type": "SPELL",
+        "name": "Fleshed Turmoil",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster unleashes the tower's destructive turbulence - to which all tentacles hidden under the flesh rampages the entirety of the area, causing unconsciousness and dealing massive bashing damage to all affected creatures.'",
+        "flags": ["SILENT","RANDOM_DAMAGE", "RANDOM_DURATION"],
+        "valid_targets": ["hostile","ground"],
+        "effect": "target_attack",
+        "effect_str": "stunned",
+        "affected_body_parts": ["HEAD", "TORSO", "ARM_R", "ARM_L", "LEG_R", "LEG_L"],
+        "min_damage": 20,
+        "max_damage": 40,
+        "min_aoe": 10,
+        "max_aoe": 10,
+        "min_duration": 200,
+        "max_duration": 600,
+        "damage_type": "bash"
+    }, {
+        "id": "mon_sflesh_flesh_city_fturmoil_note",
+        "type": "SPELL",
+        "name": "a note",
+        "description": "Note spell casted by a monster. If you're seeing this, then read this one instead:\n'Provides a notice about the casted spell's result.'",
+        "flags": ["SILENT"],
+        "valid_targets": ["hostile"],
+        "effect": "target_attack",
+        "extra_effects": [{
+                "id": "mon_sflesh_flesh_city_fturmoil"
+            }
+        ],
+        "effect_str": "mon_sflesh_flesh_city_fturmoil_YES",
+        "min_aoe": 69,
+        "max_aoe": 69,
+        "min_duration": 1,
+        "max_duration": 1
+    }, {
+        "type": "SPELL",
+        "id": "mon_sflesh_flesh_city_fturmoil_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "mon_sflesh_flesh_city_fturmoil_note"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            },
+            {
+                "id": "secro_spell_null"
+            }
+        ],
+        "flags": ["SILENT","RANDOM_DAMAGE","RANDOM_TARGET","WONDER"],
+        "valid_targets": ["hostile"],
+        "min_damage": 1,
+        "max_damage": 1,
+        "effect": "target_attack",
+        "min_range": 10,
+        "max_range": 10
+    },{
+        "id": "mon_sflesh_flesh_city_tthrust_head",
+        "type": "SPELL",
+        "name": "Tendril Thrust",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster pierces the target with its tentacle, dealing stabbing damage.'",
+        "flags": ["SILENT"],
+        "affected_body_parts": ["HEAD"],
+        "valid_targets": ["hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_damage": 7,
+        "max_damage": 14,
+        "min_range": 5,
+        "max_range": 10,
+        "damage_type": "stab"
+    }, {
+        "id": "mon_sflesh_flesh_city_tthrust_torso",
+        "type": "SPELL",
+        "name": "Tendril Thrust",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster pierces the target with its tentacle, dealing stabbing damage.'",
+        "flags": ["SILENT"],
+        "affected_body_parts": ["TORSO"],
+        "valid_targets": ["hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_damage": 7,
+        "max_damage": 14,
+        "min_range": 5,
+        "max_range": 10,
+        "damage_type": "stab"
+    }, {
+        "id": "mon_sflesh_flesh_city_tthrust_larm",
+        "type": "SPELL",
+        "name": "Tendril Thrust",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster pierces the target with its tentacle, dealing stabbing damage.'",
+        "flags": ["SILENT"],
+        "affected_body_parts": ["ARM_L"],
+        "valid_targets": ["hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_damage": 7,
+        "max_damage": 14,
+        "min_range": 5,
+        "max_range": 10,
+        "damage_type": "stab"
+    }, {
+        "id": "mon_sflesh_flesh_city_tthrust_rarm",
+        "type": "SPELL",
+        "name": "Tendril Thrust",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster pierces the target with its tentacle, dealing stabbing damage.'",
+        "flags": ["SILENT"],
+        "affected_body_parts": ["ARM_R"],
+        "valid_targets": ["hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_damage": 7,
+        "max_damage": 14,
+        "min_range": 5,
+        "max_range": 10,
+        "damage_type": "stab"
+    }, {
+        "id": "mon_sflesh_flesh_city_tthrust_lleg",
+        "type": "SPELL",
+        "name": "Tendril Thrust",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster pierces the target with its tentacle, dealing stabbing damage.'",
+        "flags": ["SILENT"],
+        "affected_body_parts": ["LEG_L"],
+        "valid_targets": ["hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_damage": 7,
+        "max_damage": 14,
+        "min_range": 5,
+        "max_range": 10,
+        "damage_type": "stab"
+    }, {
+        "id": "mon_sflesh_flesh_city_tthrust_rleg",
+        "type": "SPELL",
+        "name": "Tendril Thrust",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster pierces the target with its tentacle, dealing stabbing damage.'",
+        "flags": ["SILENT"],
+        "affected_body_parts": ["LEG_R"],
+        "valid_targets": ["hostile", "ground"],
+        "effect": "projectile_attack",
+        "min_damage": 7,
+        "max_damage": 14,
+        "min_range": 5,
+        "max_range": 10,
+        "damage_type": "stab"
+    }, {
+        "id": "mon_sflesh_flesh_city_tthrust",
+        "type": "SPELL",
+        "name": "Tendril Thrust",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster forms several needle-like tentacles to strike at the target that hits a random limb. This is casted randomly from 1 to 4.'",
+        "flags": ["SILENT", "WONDER"],
+        "valid_targets": ["hostile"],
+        "effect": "projectile_attack",
+        "extra_effects": [{
+                "id": "mon_sflesh_flesh_city_tthrust_head"
+            }, {
+                "id": "mon_sflesh_flesh_city_tthrust_torso"
+            }, {
+                "id": "mon_sflesh_flesh_city_tthrust_larm"
+            }, {
+                "id": "mon_sflesh_flesh_city_tthrust_rarm"
+            }, {
+                "id": "mon_sflesh_flesh_city_tthrust_lleg"
+            }, {
+                "id": "mon_sflesh_flesh_city_tthrust_rleg"
+            }
+        ],
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_range": 10,
+        "max_range": 10
+    },  {
+        "type": "SPELL",
+        "id": "mon_sflesh_flesh_city_tthrust_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "mon_sflesh_flesh_city_tthrust"
+            }
+        ],
+        "flags": ["SILENT","RANDOM_DAMAGE","RANDOM_TARGET","WONDER"],
+        "valid_targets": ["hostile"],
+        "min_damage": 1,
+        "max_damage": 4,
+        "effect": "target_attack",
+        "min_range": 10,
+        "max_range": 10
+    }, {
+        "type": "SPELL",
+        "id": "mon_sflesh_flesh_city_wall",
+        "name": "Compress",
+        "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster splits up a chunk of flesh directly from the tower, creating a wall of flesh.'",
+        "flags": ["SILENT", "HOSTILE_SUMMON", "RANDOM_TARGET", "PERMANENT"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 1,
+        "min_range": 20,
+        "max_range": 20,
+        "effect": "summon",
+        "effect_str": "mon_sflesh_flesh_wall_city"
+    },
+    {
+        "type": "SPELL",
+        "id": "mon_sflesh_flesh_city_wall_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [
+            {
+                "id": "mon_sflesh_flesh_city_wall"
+            }
+        ],
+        "flags": ["SILENT","RANDOM_DAMAGE","RANDOM_TARGET","WONDER"],
+        "valid_targets": ["ground"],
+        "min_damage": 1,
+        "max_damage": 2,
+        "effect": "target_attack",
+        "min_range": 20,
+        "max_range": 20
+    },{
+        "type": "SPELL",
+        "id": "mon_sflesh_flesh_city_target",
+        "name": "a spell",
+        "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+        "extra_effects": [{
+                "id": "mon_sflesh_flesh_city_wall_target"
+            }, {
+                "id": "mon_sflesh_flesh_city_tthrust_target"
+            }, {
+                "id": "mon_sflesh_flesh_city_fturmoil_target",
+                "hit_self": true
+            }, {
+                "id": "mon_sflesh_flesh_city_thrash",
+                "hit_self": true
+            }, {
+                "id": "mon_sflesh_flesh_bio_tent", "hit_self": true
+            },
+            {
+                "id": "mon_sflesh_flesh_bio_bone", "hit_self": true
+            },
+            {
+                "id": "mon_sflesh_flesh_trap"
+            },
+            {
+                "id": "mon_sflesh_flesh_bio"
+            },
+            {
+                "id": "mon_sflesh_flesh_bioacc"
+            }
+        ],
+        "flags": ["SILENT"],
+        "valid_targets": ["ally", "hostile", "ground"],
+        "effect": "projectile_attack",
+        "effect_str": "secro_magic_target",
+        "min_range": 10,
+        "max_range": 10,
+        "min_duration": 1,
+        "max_duration": 1
     }
 ]
