@@ -173,7 +173,7 @@
             },
             {
                 "result": "t_secro_flesh_inside_down",
-                "valid_terrain": [ "t_secro_flesh_exit_closed" ],
+                "valid_flags": ["FC_EXIT"],
                 "message": "An orifice opens after the flesh's death."
             },
             {
