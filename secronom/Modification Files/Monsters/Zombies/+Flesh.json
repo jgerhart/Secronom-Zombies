@@ -754,7 +754,6 @@
         "armor_stab": 25,
         "vision_day": 30,
         "vision_night": 30,
-        "regenerates": -5,
         "special_attacks": [{
                 "type": "spell",
                 "spell_id": "mon_sflesh_wall_ing_target",
@@ -805,9 +804,9 @@
         "vision_night": 30,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_sflesh_flesh_target",
-                "cooldown": 12,
-                "monster_message": "<color_light_red>%1$s trembles!</color>"
+                "spell_id": "mon_sflesh_flesh_city_target",
+                "cooldown": 16,
+                "monster_message": "<color_light_red>%1$s trembles, pounding everything with its tentacles!\n%1$s's tendrils pierces %3$s!</color>"
             }
         ],
         "regenerates": 10,
@@ -824,6 +823,53 @@
             "IMMOBILE",
             "PACIFIST",
             "QUEEN"
+        ]
+    }, {
+    	"//": "This one creates a wall once then dies!",
+        "id": "mon_sflesh_flesh_wall_city",
+        "type": "MONSTER",
+        "name": "wall of flesh",
+        "description": "Thick, lumps of meat taken control by the flesh. It slowly protrudes from the wall, creating fleshed barriers on its way.",
+        "default_faction": "secro_flesh",
+        "bodytype": "blob",
+        "species": ["ABERRATION"],
+        "volume": "10000 L",
+        "weight": "23750 kg",
+        "hp": 200,
+        "speed": 10,
+        "material": ["flesh"],
+        "symbol": "☒",
+        "emit_fields": ["emit_flesh_biome_immunity","emit_flesh_wall_limitation","emit_down_immunity"],
+        "color": "light_red",
+        "aggression": 100,
+        "morale": 100,
+        "melee_skill": 6,
+        "melee_dice": 2,
+        "melee_dice_sides": 4,
+        "melee_cut": 6,
+        "armor_bash": 30,
+        "armor_cut": 10,
+        "armor_stab": 25,
+        "vision_day": 30,
+        "vision_night": 30,
+        "special_attacks": [{
+                "type": "spell",
+                "spell_id": "mon_sflesh_wall_city_ing_target",
+                "cooldown": 5,
+                "self": true,
+                "monster_message": "<color_light_red>%1$s trembles!</color>"
+            }
+        ],
+        "harvest": "exempt",
+        "death_function": ["MELT"],
+        "flags": [
+            "SEES",
+            "WARM",
+            "POISON",
+            "NO_BREATHE",
+            "NOHEAD",
+            "STUN_IMMUNE",
+            "PACIFIST"
         ]
     }
 ]
