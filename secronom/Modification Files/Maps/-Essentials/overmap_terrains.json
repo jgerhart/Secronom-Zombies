@@ -846,6 +846,13 @@
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
+        "id": "secro_road_connect_flesh",
+        "copy-from": "generic_transportation", "name": "fleshed road",
+        "sym": "─",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "type": "overmap_terrain",
         "id": "s_house_flesh",
         "name": "fleshed structure",
         "sym": "⨳",
