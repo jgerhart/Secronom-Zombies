@@ -838,11 +838,46 @@
         "color": "red",
         "see_cost": 10
     }, {
+        "type": "overmap_terrain",
+        "id": "secro_flesh_city_core_up",
+        "name": "flesh tower",
+        "sym": "⨂",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "type": "overmap_terrain",
+        "id": "secro_flesh_city_core_upper",
+        "name": "flesh tower",
+        "sym": "⨂",
+        "color": "red",
+        "see_cost": 10
+    }, {
+        "type": "overmap_terrain",
+        "id": "secro_flesh_city_core_uppest",
+        "name": "flesh tower",
+        "sym": "⨀",
+        "color": "light_red",
+        "see_cost": 10
+    }, {
+        "type": "overmap_terrain",
+        "id": "secro_flesh_city_core_uppest_roof",
+        "name": "flesh tower",
+        "sym": "⨀",
+        "color": "red",
+        "see_cost": 10
+    }, {
         "id": "secro_flesh_city_edge",
         "type": "overmap_terrain",
         "name": "field",
         "sym": ".",
         "color": "brown",
+        "see_cost": 10
+    }, {
+        "type": "overmap_terrain",
+        "id": "secro_road_connect_flesh",
+        "copy-from": "generic_transportation", "name": "fleshed road",
+        "sym": "─",
+        "color": "red",
         "see_cost": 10
     }, {
         "type": "overmap_terrain",
