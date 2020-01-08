@@ -172,6 +172,11 @@
                 "message": "An orifice opens after the flesh's death."
             },
             {
+                "result": "t_secro_flesh_inside_down",
+                "valid_terrain": [ "t_secro_flesh_exit_closed" ],
+                "message": "An orifice opens after the flesh's death."
+            },
+            {
                 "result": "t_secro_flesh",
                 "valid_flags": ["FF_BIOHAZARD"],
                 "message": "The walls has melted away."
