@@ -631,6 +631,16 @@
             "sound_fail": "splat!",
             "ter_set": "t_secro_flesh"
         }
+    }, {
+    	"looks_like": "t_secro_flesh_inside_up_close",
+        "type": "terrain",
+        "id": "t_secro_flesh_exit_closed",
+        "name": "flesh",
+        "description": "Disgusting mounds of meat, slimy and organic as it seems to live. This pinkish flesh is rotten to the core, and setting it on fire may not be the cure.",
+        "symbol": ".",
+        "color": "red",
+        "move_cost": 5,
+        "flags": ["FLAMMABLE_HARD", "TRANSPARENT", "FLAT", "S_FLESH"]
     },
     
     {
