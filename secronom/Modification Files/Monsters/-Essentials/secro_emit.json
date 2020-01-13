@@ -380,30 +380,16 @@
         "intensity": 1
     },
     {
-        "id": "emit_flesh_bones_r",
+        "id": "emit_flesh_bones",
         "type": "emit",
-        "field": "fd_sflesh_bones_r",
+        "field": "fd_sflesh_bones",
         "qty": 1,
         "intensity": 1
     },
     {
-        "id": "emit_flesh_bones_l",
+        "id": "emit_flesh_tendrils",
         "type": "emit",
-        "field": "fd_sflesh_bones_l",
-        "qty": 1,
-        "intensity": 1
-    },
-    {
-        "id": "emit_flesh_tendrils_r",
-        "type": "emit",
-        "field": "fd_sflesh_tendrils_r",
-        "qty": 1,
-        "intensity": 1
-    },
-    {
-        "id": "emit_flesh_tendrils_l",
-        "type": "emit",
-        "field": "fd_sflesh_tendrils_l",
+        "field": "fd_sflesh_tendrils",
         "qty": 1,
         "intensity": 1
     },
@@ -416,44 +402,9 @@
         "chance": 20
     },
     {
-        "id": "emit_flesh_biome_h",
+        "id": "emit_flesh_biome",
         "type": "emit",
-        "field": "fd_flesh_biome_h",
-        "qty": 500,
-        "intensity": 1
-    },
-    {
-        "id": "emit_flesh_biome_t",
-        "type": "emit",
-        "field": "fd_flesh_biome_t",
-        "qty": 500,
-        "intensity": 1
-    },
-    {
-        "id": "emit_flesh_biome_la",
-        "type": "emit",
-        "field": "fd_flesh_biome_la",
-        "qty": 500,
-        "intensity": 1
-    },
-    {
-        "id": "emit_flesh_biome_ra",
-        "type": "emit",
-        "field": "fd_flesh_biome_ra",
-        "qty": 500,
-        "intensity": 1
-    },
-    {
-        "id": "emit_flesh_biome_ll",
-        "type": "emit",
-        "field": "fd_flesh_biome_ll",
-        "qty": 500,
-        "intensity": 1
-    },
-    {
-        "id": "emit_flesh_biome_rl",
-        "type": "emit",
-        "field": "fd_flesh_biome_rl",
+        "field": "fd_flesh_biome",
         "qty": 500,
         "intensity": 1
     },
