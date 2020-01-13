@@ -523,7 +523,7 @@
         "color": "white",
         "move_cost_mod": 1,
 		"required_str": -1,
-        "emissions": ["emit_flesh_bones_r", "emit_flesh_bones_l"],
+        "emissions": ["emit_flesh_bones"],
         "flags": ["FLAMMABLE", "TRANSPARENT", "S_FLESH", "ROUGH", "EMITTER", "FF_BIOHAZARD"],
         "bash": {
             "str_min": 10,
@@ -541,7 +541,7 @@
         "color": "light_red",
         "move_cost_mod": 2,
 		"required_str": -1,
-        "emissions": ["emit_flesh_tendrils_r","emit_flesh_tendrils_l"],
+        "emissions": ["emit_flesh_tendrils"],
         "flags": ["FLAMMABLE", "TRANSPARENT", "S_FLESH", "EMITTER", "FF_BIOHAZARD"],
         "bash": {
             "str_min": 7,
@@ -612,7 +612,7 @@
         "color": "red",
         "move_cost_mod": 1,
 		"required_str": -1,
-        "emissions": ["emit_flesh_biome_h","emit_flesh_biome_t","emit_flesh_biome_la","emit_flesh_biome_ra","emit_flesh_biome_ll","emit_flesh_biome_rl"],
+        "emissions": ["emit_flesh_biome"],
         "flags": ["TRANSPARENT","FLAMMABLE", "S_FLESH", "EMITTER"]
     }, {
         "type": "terrain",
