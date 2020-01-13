@@ -653,6 +653,20 @@
     {
         "type": "monstergroup",
         "name": "GROUP_FLESH_CITY",
+        "default": "mon_sflesh_taken_zombie",
+        "monsters": [
+      { "monster": "mon_sflesh_zombie_turret", "freq": 1, "cost_multiplier": 20 },
+      { "monster": "mon_sflesh_zombie_brute", "freq": 1, "cost_multiplier": 40 },
+      { "monster": "mon_sflesh_zombie_dog", "freq": 1, "cost_multiplier": 4 },
+      { "monster": "mon_sflesh_zombie_spitter", "freq": 1, "cost_multiplier": 25 },
+      { "monster": "mon_sflesh_skeleton", "freq": 1, "cost_multiplier": 5 },
+      { "monster": "mon_sflesh_zombie_fat", "freq": 1, "cost_multiplier": 1 },
+      { "monster": "mon_sflesh_zombie_tough", "freq": 1, "cost_multiplier": 2 }
+    ]
+    },
+    {
+        "type": "monstergroup",
+        "name": "GROUP_FLESH_HEAP",
         "default": "mon_sflesh_taken_zombie"
     }
 ]
