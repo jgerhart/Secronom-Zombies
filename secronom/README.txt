@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.8 - Aside of expanding the flesh city, upcoming contents are unplanned. <--
+--> V1.8 - Aside of expanding the flesh city, upcoming contents are unplanned, therefore, mod's progress is greatly hampered. <--
 
 #  TILESET REWORKS (if possible)
 
