@@ -76,7 +76,11 @@
                             "fd_flesh_biome_rl",
                             "fd_flesh_biome_immune",
                             "fd_sflesh_wall",
-                            "fd_sflesh_wall_limit"],
+                            "fd_sflesh_wall_limit",
+							"fd_sflesh_bones",
+							"fd_sflesh_tendrils",
+							"fd_flesh_biome",
+							"fd_sflesh_heap_death"],
                         "fg": 0
                     },
                     {
@@ -1376,6 +1380,14 @@
                         "id": "t_secro_door_metal_locked_flesh",
                         "fg": 441,
                         "bg": 0
+                    }, {
+                        "id": "t_secro_stairs_broken_flesh",
+                        "fg": 442,
+                        "bg": 0
+                    }, {
+                        "id": "t_secro_window_bars_flesh",
+                        "fg": 443,
+                        "bg": 0
                     }
                 ]
             }, {
@@ -1905,6 +1917,74 @@
                     }, {
                         "id": ["!mon_sflesh_flesh_wall"],
                         "fg": 609
+                    }, {
+                        "id": ["mon_sflesh_zombie_tough"],
+                        "fg": [{
+                                "weight": 3,
+                                "sprite": 610
+                            }, {
+                                "weight": 3,
+                                "sprite": 611
+                            }, {
+                                "weight": 3,
+                                "sprite": 612
+                            }, {
+                                "weight": 3,
+                                "sprite": 613
+                            }
+                        ],
+                        "bg": 1
+                    }, {
+                        "id": ["corpse_mon_sflesh_zombie_tough"],
+                        "fg": 614
+                    }, {
+                        "id": ["mon_sflesh_zombie_fat"],
+                        "fg": [{
+                                "weight": 3,
+                                "sprite": 615
+                            }, {
+                                "weight": 3,
+                                "sprite": 616
+                            }, {
+                                "weight": 3,
+                                "sprite": 617
+                            }, {
+                                "weight": 3,
+                                "sprite": 618
+                            }
+                        ],
+                        "bg": 1
+                    }, {
+                        "id": ["corpse_mon_sflesh_zombie_fat"],
+                        "fg": 619
+                    },{
+                        "id": ["mon_sflesh_skeleton"],
+                        "fg": 620,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_sflesh_skeleton"],
+                        "fg": 621
+                    },{
+                        "id": ["mon_sflesh_zombie_spitter"],
+                        "fg": 622,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_sflesh_zombie_spitter"],
+                        "fg": 623
+                    },{
+                        "id": ["mon_sflesh_zombie_dog"],
+                        "fg": 624,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_sflesh_zombie_dog"],
+                        "fg": 625
+                    },{
+                        "id": ["mon_sflesh_zombie_brute"],
+                        "fg": 626,
+						"bg": 1
+                    },{
+                        "id": ["corpse_mon_sflesh_zombie_brute"],
+                        "fg": 627
                     }
 
                 ]
@@ -1914,7 +1994,7 @@
                 "tiles":
                 [{
                         "id": "overlay_effect_parasiteworm_pain",
-                        "bg": 656
+                        "bg": 656 
                     }, {
                         "id": "overlay_effect_parasiteworm_int",
                         "bg": 657
@@ -2801,6 +2881,38 @@
                             }
                         ],
                         "rotates": true
+                    }, {
+                        "id": ["fd_blood_acid"],
+                        "fg": 1172,
+                        "bg": 0,
+                        "multitile": true,
+                        "additional_tiles": [{
+                                "id": "center",
+                                "fg": 1172,
+                                "bg": 0
+                            }, {
+                                "id": "corner",
+                                "fg": [1173, 1174, 1175, 1176],
+                                "bg": 0
+                            }, {
+                                "id": "t_connection",
+                                "fg": [1177, 1178, 1179, 1180],
+                                "bg": 0
+                            }, {
+                                "id": "edge",
+                                "fg": [1181, 1182],
+                                "bg": 0
+                            }, {
+                                "id": "end_piece",
+                                "fg": [1183, 1184, 1185, 1186],
+                                "bg": 0
+                            }, {
+                                "id": "unconnected",
+                                "fg": 1187,
+                                "bg": 0
+                            }
+                        ],
+                        "rotates": true
                     }
                 ]
             }, {
@@ -2844,6 +2956,15 @@
                     }, {
                         "id": "mon_sflesh_parasyte",
                         "fg": 1277
+                    }, {
+                        "id": "mon_sflesh_flesh_city",
+                        "fg": 1278
+                    }, {
+                        "id": "mon_sflesh_flesh_wall_city",
+                        "fg": 1279
+                    }, {
+                        "id": "mon_sflesh_zombie_turret",
+                        "fg": 1280
                     }
 
                 ]
