@@ -194,7 +194,7 @@
         "armor_fire": 2,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_tentawraith_outburst",
+                "spell_data": { "id":"mon_zombie_tentawraith_outburst"},
                 "cooldown": 52,
                 "monster_message": "<color_yellow>%1$s strikes the ground then ruptures a vast amount of thick tentacles under %3$s!</color>\n<color_red>Tendrils burst out of it too!</color>"
             }, {
@@ -249,7 +249,7 @@
         "special_attacks": [
             ["STRETCH_ATTACK", 12], {
                 "type": "spell",
-                "spell_id": "mon_zombie_tentawraith_tent_pmis",
+                "spell_data": { "id":"mon_zombie_tentawraith_tent_pmis"},
                 "cooldown": 23,
                 "monster_message": "<color_yellow>%1$s sweeps its tendril at %3$s!</color>"
             }

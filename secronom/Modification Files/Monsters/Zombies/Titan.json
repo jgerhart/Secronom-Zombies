@@ -35,7 +35,7 @@
         "armor_fire": 5,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_titan_charge_target",
+                "spell_data": { "id":"mon_zombie_titan_charge_target"},
                 "cooldown": 60,
                 "monster_message": "<color_yellow>%1$s blocks with both arms then sprints toward %3$s!</color>"
             },
@@ -83,7 +83,7 @@
         "armor_fire": 8,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_titan_charge_target",
+                "spell_data": { "id":"mon_zombie_titan_charge_target"},
                 "cooldown": 50,
                 "monster_message": "<color_yellow>%1$s blocks with both arms then sprints toward %3$s!</color>"
             },

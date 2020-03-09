@@ -163,7 +163,7 @@
         "name": "razor",
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_razor_dslash_target",
+                "spell_data": { "id":"mon_zombie_razor_dslash_target"},
                 "cooldown": 22,
                 "monster_message": "%1$s performs an onslaught of attacks!"
             },

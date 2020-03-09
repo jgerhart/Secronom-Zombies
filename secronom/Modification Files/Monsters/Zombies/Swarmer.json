@@ -244,7 +244,7 @@
             },
             ["scratch", 35], {
                 "type": "spell",
-                "spell_id": "mon_zombie_swarmer_evo_savage_tension_target_random",
+                "spell_data": { "id":"mon_zombie_swarmer_evo_savage_tension_target_random"},
                 "cooldown": 11,
                 "monster_message": "<color_magenta>%1$s twitches violently...</color>"
             }
@@ -282,7 +282,7 @@
             },
             ["scratch", 43], {
                 "type": "spell",
-                "spell_id": "mon_zombie_swarmer_evo_virulent_target",
+                "spell_data": { "id":"mon_zombie_swarmer_evo_virulent_target"},
                 "cooldown": 20,
                 "monster_message": "<color_magenta>As %1$s glares at %3$s, %1$s's senses become keen!</color>"
             }

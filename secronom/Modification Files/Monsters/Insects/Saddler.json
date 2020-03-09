@@ -23,7 +23,7 @@
         "melee_cut": 2,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_insect_saddler_brood_birth_target",
+                "spell_data": { "id":"mon_insect_saddler_brood_birth_target"},
                 "cooldown": 20,
                 "monster_message": "<color_yellow>The saddler broodmother gave birth to baby saddlers!</color>"
             }
@@ -64,7 +64,7 @@
         },
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_insect_saddler_baby_potent_target",
+                "spell_data": { "id":"mon_insect_saddler_baby_potent_target"},
                 "cooldown": 100,
                 "monster_message": "<color_magenta>The bady saddler twitches...</color>"
             }

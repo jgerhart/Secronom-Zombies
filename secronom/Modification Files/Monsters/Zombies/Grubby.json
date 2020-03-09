@@ -29,7 +29,7 @@
         },
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_grubby_target_random",
+                "spell_data": { "id":"mon_zombie_grubby_target_random"},
                 "cooldown": 17,
                 "monster_message": "<color_yellow>%1$s's pus erupts, releasing swarms of parasitic worms!</color>"
             }
@@ -72,7 +72,7 @@
         },
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_slimy_target_random",
+                "spell_data": { "id":"mon_zombie_slimy_target_random"},
                 "cooldown": 34,
                 "monster_message": "<color_yellow>%1$s's pus explodes, releasing swarms of parasitic worms!</color>"
             }
@@ -114,7 +114,7 @@
         },
         "special_attacks": [["SUICIDE", 0], {
                 "type": "spell",
-                "spell_id": "mon_zombie_glut_target",
+                "spell_data": { "id":"mon_zombie_glut_target"},
                 "cooldown": 34,
                 "monster_message": "<color_yellow>%1$s's limb explodes violently, releasing an overwhelming swarm of parasitic worms!</color>"
             }

@@ -35,7 +35,7 @@
         ["ayenel_swing", 18],
         ["ayenel_bitedown", 26], {
             "type": "spell",
-            "spell_id": "mon_ayenel_locko_v",
+            "spell_data": { "id":"mon_ayenel_locko_v"},
             "cooldown": 148,
             "monster_message": "<color_yellow>%1$s glares at %3$s with pure malice!</color>"
         }

@@ -23,7 +23,7 @@
         "melee_cut": 0,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_sflesh_surface_spawner_target",
+                "spell_data": { "id":"mon_sflesh_surface_spawner_target"},
                 "//": "Since the player is walking on the flesh, this spell's cooldown should be VERY high.",
                 "cooldown": 225,
                 "monster_message": "<color_light_red>%1$s writhes, sending crimson horrors to confront %3$s!</color>"
@@ -65,7 +65,7 @@
         "armor_stab": 2,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_sflesh_tendril_lace",
+                "spell_data": { "id":"mon_sflesh_tendril_lace"},
                 "cooldown": 15,
                 "monster_message": "<color_light_red>%1$s slashes %3$s!</color>"
             }
@@ -225,7 +225,7 @@
         "vision_day": 22,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_sflesh_sack_target",
+                "spell_data": { "id":"mon_sflesh_sack_target"},
                 "cooldown": 0,
                 "monster_message": "<color_light_red>%1$s bursts, giving birth to parasytes!</color>"
             }
@@ -308,7 +308,7 @@
         "armor_stab": 8,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_sflesh_vbeast_wlace",
+                "spell_data": { "id":"mon_sflesh_vbeast_wlace"},
                 "cooldown": 28,
                 "monster_message": "<color_light_red>%1$s sweeps its tendrils onto %3$s!</color>"
             }
@@ -391,7 +391,7 @@
         "vision_night": 22,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_sflesh_taken_target",
+                "spell_data": { "id":"mon_sflesh_taken_target"},
                 "cooldown": 10,
                 "monster_message": "<color_light_red>The taken bursts, letting loose of its content!</color>"
             }
@@ -658,7 +658,7 @@
         "vision_night": 30,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_sflesh_flesh_target",
+                "spell_data": { "id":"mon_sflesh_flesh_target"},
                 "cooldown": 12,
                 "monster_message": "<color_light_red>%1$s trembles!</color>"
             }
@@ -707,7 +707,7 @@
         "vision_night": 22,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_sflesh_taken_target",
+                "spell_data": { "id":"mon_sflesh_taken_target"},
                 "cooldown": 5,
                 "self": true,
                 "monster_message": "<color_light_red>The taken bursts, letting loose of its content!</color>"
@@ -756,7 +756,7 @@
         "vision_night": 30,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_sflesh_wall_ing_target",
+                "spell_data": { "id":"mon_sflesh_wall_ing_target"},
                 "cooldown": 5,
                 "self": true,
                 "monster_message": "<color_light_red>%1$s trembles!</color>"
@@ -804,7 +804,7 @@
         "vision_night": 30,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_sflesh_flesh_city_target",
+                "spell_data": { "id":"mon_sflesh_flesh_city_target"},
                 "cooldown": 16,
                 "monster_message": "<color_light_red>%1$s trembles, pounding everything with its tentacles!\n%1$s's tendrils pierces %3$s!</color>"
             }
@@ -854,7 +854,7 @@
         "vision_night": 30,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_sflesh_wall_city_ing_target",
+                "spell_data": { "id":"mon_sflesh_wall_city_ing_target"},
                 "cooldown": 5,
                 "self": true,
                 "monster_message": "<color_light_red>%1$s trembles!</color>"
@@ -1047,7 +1047,7 @@
     "harvest": "zombie",
     "special_attacks": [ {
                 "type": "spell",
-                "spell_id": "mon_sflesh_zombie_spitter_cspit",
+                "spell_data": { "id":"mon_sflesh_zombie_spitter_cspit"},
                 "cooldown": 12,
                 "monster_message": "<color_light_red>%1$s spews out concentrated glob of blood acid!</color>"
             } ],
@@ -1180,7 +1180,7 @@
     "harvest": "zombie",
     "special_attacks": [ [ "GRAB", 1 ], {
                 "type": "spell",
-                "spell_id": "mon_sflesh_zombie_turret_target",
+                "spell_data": { "id":"mon_sflesh_zombie_turret_target"},
                 "cooldown": 12,
                 "monster_message": "<color_light_red>%1$s pulsates...</color>"
             } ],

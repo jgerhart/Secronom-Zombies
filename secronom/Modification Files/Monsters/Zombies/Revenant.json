@@ -24,7 +24,7 @@
         "melee_cut": 0,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_revenant_target",
+                "spell_data": { "id":"mon_zombie_revenant_target"},
                 "cooldown": 12,
                 "monster_message": "<color_red>%1$s snaps the potent prowess of nearby monsters!</color>"
             }
@@ -56,7 +56,7 @@
         "melee_cut": 0,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_revenant_forsaken_target",
+                "spell_data": { "id":"mon_zombie_revenant_forsaken_target"},
                 "cooldown": 12,
                 "monster_message": "<color_red>%1$s glares at %3$s submissively!</color>"
             }
@@ -89,7 +89,7 @@
         "melee_cut": 0,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_revenant_allure_target",
+                "spell_data": { "id":"mon_zombie_revenant_allure_target"},
                 "cooldown": 12,
                 "monster_message": "<color_red>%1$s spreads its goo into the surroundings!</color>"
             }

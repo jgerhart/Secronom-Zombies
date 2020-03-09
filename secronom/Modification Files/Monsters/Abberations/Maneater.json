@@ -28,7 +28,7 @@
     "vision_night": 8,
     "special_attacks": [{
             "type": "spell",
-            "spell_id": "mon_maneater_vslash",
+            "spell_data": { "id":"mon_maneater_vslash"},
             "cooldown": 18,
             "monster_message": "<color_yellow>%1$s slashes %3$s with a sharp tendril!</color>"
         }

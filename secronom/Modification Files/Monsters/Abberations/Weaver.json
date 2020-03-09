@@ -32,7 +32,7 @@
     "//": "As the description says, it helps... But with ASSIST and CHECK_UP special attack, it parrots with robotic voice, so not for now.",
     "special_attacks": [["PARROT_AT_DANGER", 10], {
             "type": "spell",
-            "spell_id": "mon_fleshweaver_vscratch",
+            "spell_data": { "id":"mon_fleshweaver_vscratch"},
             "cooldown": 33,
             "monster_message": "<color_yellow>%1$s injects %3$s with a volatile fluid!</color>"
         }

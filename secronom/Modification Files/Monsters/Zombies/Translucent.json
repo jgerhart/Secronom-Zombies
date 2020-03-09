@@ -73,7 +73,7 @@
         "armor_fire": 2,
         "special_attacks": [["ACID_BARF", 30], ["ACID", 40], {
                 "type": "spell",
-                "spell_id": "mon_zombie_pellucid_aburst",
+                "spell_data": { "id":"mon_zombie_pellucid_aburst"},
                 "cooldown": 49,
                 "monster_message": "<color_red>%1$s volleys a glob of acid onto %3$s!</color>"
             }

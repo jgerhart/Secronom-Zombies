@@ -28,7 +28,7 @@
         "armor_stab": 2,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_skittyweavy_target",
+                "spell_data": { "id":"mon_zombie_skittyweavy_target"},
                 "cooldown": 2,
                 "monster_message": "<color_light_red>%1$s flees from %3$s!</color>\n<color_yellow>Then %1$s hastily injects its needle!</color>"
             }
@@ -64,7 +64,7 @@
         "armor_stab": 7,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_skittyweavy_repleshy_target",
+                "spell_data": { "id":"mon_zombie_skittyweavy_repleshy_target"},
                 "cooldown": 2,
                 "monster_message": "<color_light_red>%1$s flees from %3$s!</color>\n<color_yellow>Then %1$s hastily injects its needle!</color>"
             }
@@ -100,7 +100,7 @@
         "armor_stab": 5,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_skittyweavy_sickly_target",
+                "spell_data": { "id":"mon_zombie_skittyweavy_sickly_target"},
                 "cooldown": 2,
                 "monster_message": "<color_light_red>%1$s flees from %3$s!</color>\n<color_yellow>Then %1$s hastily injects its proboscis!</color>"
             }

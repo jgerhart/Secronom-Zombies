@@ -27,7 +27,7 @@
         "//": "Charger deals bashing damage to itself and the creature who block its path. And yes, it is susceptible to bugs.",
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_charger_charge_target_random",
+                "spell_data": { "id":"mon_zombie_charger_charge_target_random"},
                 "cooldown": 110,
                 "monster_message": "<color_red>%1$s charges at %3$s!</color>"
             }
@@ -80,7 +80,7 @@
         "armor_stab": 2,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_charger_spike_charge_target_random",
+                "spell_data": { "id":"mon_zombie_charger_spike_charge_target_random"},
                 "cooldown": 125,
                 "monster_message": "<color_red>%1$s charges at %3$s!</color>"
             }
@@ -130,7 +130,7 @@
         "armor_stab": 6,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_charger_plate_charge_target_random",
+                "spell_data": { "id":"mon_zombie_charger_plate_charge_target_random"},
                 "cooldown": 125,
                 "monster_message": "<color_red>%1$s charges at %3$s!</color>"
             }
@@ -179,7 +179,7 @@
         "armor_stab": 5,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_charger_vanguard_charge_target_random",
+                "spell_data": { "id":"mon_zombie_charger_vanguard_charge_target_random"},
                 "cooldown": 125,
                 "monster_message": "<color_red>%1$s charges at %3$s!</color>"
             }

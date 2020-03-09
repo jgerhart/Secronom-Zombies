@@ -31,7 +31,7 @@
         "vision_night": 18,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_nautilus_sewave",
+                "spell_data": { "id":"mon_zombie_nautilus_sewave"},
                 "cooldown": 26,
                 "monster_message": "<color_yellow>%1$s submerges and generates a seismic wave towards %3$s</color>!"
             }
@@ -78,7 +78,7 @@
         "vision_night": 20,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_nautilus_pedo_restraint_target",
+                "spell_data": { "id":"mon_zombie_nautilus_pedo_restraint_target"},
                 "cooldown": 1,
                 "monster_message": "<color_yellow>%1$s latches onto %3$s!</color>"
             }
@@ -270,7 +270,7 @@
                 "cooldown": 5
             }, ["GRAB", 7], ["scratch", 20], {
                 "type": "spell",
-                "spell_id": "mon_zombie_fake_poly_ichorus_target",
+                "spell_data": { "id":"mon_zombie_fake_poly_ichorus_target"},
                 "cooldown": 0,
                 "monster_message": "<color_red>%1$s ruptures into an ichorus!</color>"
             }
@@ -371,7 +371,7 @@
                 "cooldown": 5
             }, ["GRAB", 7], ["scratch", 20], {
                 "type": "spell",
-                "spell_id": "mon_zombie_fake_poly_psyrus_target",
+                "spell_data": { "id":"mon_zombie_fake_poly_psyrus_target"},
                 "cooldown": 0,
                 "monster_message": "<color_red>%1$s ruptures into a psyrus!</color>"
             }
@@ -477,7 +477,7 @@
         },
         "special_attacks": [["UPGRADE", 48], {
                 "type": "spell",
-                "spell_id": "mon_zombie_uruxis_spawn_target",
+                "spell_data": { "id":"mon_zombie_uruxis_spawn_target"},
                 "cooldown": 24,
                 "monster_message": "<color_yellow>%1$s curses the surrounding area as it enshrouds itself in shadows!</color>"
             }
@@ -528,7 +528,7 @@
         "anger_triggers": ["PLAYER_CLOSE"],
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_cling_cling",
+                "spell_data": { "id":"mon_zombie_cling_cling"},
                 "cooldown": 111,
                 "monster_message": "<color_yellow>%1$s lunges at %3$s!</color>"
             }
@@ -576,7 +576,7 @@
         "harvest": "zombie",
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_nocturne_spull_target",
+                "spell_data": { "id":"mon_zombie_nocturne_spull_target"},
                 "cooldown": 72,
                 "monster_message": "<color_yellow>Errant shadows emerges from %1$s as they perform an onslaught!</color>"
             }, {
@@ -689,7 +689,7 @@
         "emit_fields": ["emit_down_immunity"],
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_fleshmonger_reflesh_target",
+                "spell_data": { "id":"mon_zombie_fleshmonger_reflesh_target"},
                 "cooldown": 18,
                 "monster_message": "<color_yellow>%1$s pierces the nearby monsters!</color>"
             }
@@ -746,7 +746,7 @@
         "harvest": "exempt",
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_gorepit_spawn_target",
+                "spell_data": { "id":"mon_zombie_gorepit_spawn_target"},
                 "cooldown": 38,
                 "monster_message": "<color_red>You feel the ground shaking as it originates from %1$s!</color>\n<color_yellow>%1$s sends a defeaning screech!</color>"
             }
@@ -795,7 +795,7 @@
         "harvest": "exempt",
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_gorepit_tent_target_random",
+                "spell_data": { "id":"mon_zombie_gorepit_tent_target_random"},
                 "cooldown": 14,
                 "monster_message": "<color_yellow>%1$s slams at %3$s!</color>"
             },
@@ -844,7 +844,7 @@
         "harvest": "zombie",
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_cordev_target_random",
+                "spell_data": { "id":"mon_zombie_cordev_target_random"},
                 "cooldown": 9,
                 "monster_message": "<color_yellow>%1$s's sight locks onto %3$s...</color>"
             }, {
@@ -925,7 +925,7 @@
         "harvest": "zombie",
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_fleshysnaky_target",
+                "spell_data": { "id":"mon_zombie_fleshysnaky_target"},
                 "cooldown": 21,
                 "monster_message": "<color_yellow>%1$s's rage intensifies as it glares at %3$s!</color>"
             }, {
@@ -991,7 +991,7 @@
         "harvest": "zombie",
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_akin_target",
+                "spell_data": { "id":"mon_zombie_akin_target"},
                 "cooldown": 5,
                 "monster_message": "<color_yellow>%1$s's visceral tendril undulates while it is attached to %3$s!</color>"
             }
@@ -1042,7 +1042,7 @@
         "vision_night": 12,
         "special_attacks": [{
                 "type": "spell",
-                "spell_id": "mon_zombie_equinox_target",
+                "spell_data": { "id":"mon_zombie_equinox_target"},
                 "cooldown": 33,
                 "monster_message": "<color_yellow>Twisted abominations starts to crawl out of %1$s!</color>"
             }
@@ -1524,7 +1524,7 @@
                 "cooldown": 5
             }, ["GRAB", 7], ["scratch", 20], {
                 "type": "spell",
-                "spell_id": "mon_zombie_stray_w_leaf_stro1_razorl",
+                "spell_data": { "id":"mon_zombie_stray_w_leaf_stro1_razorl"},
                 "cooldown": 24,
                 "monster_message": "%1$s slashes %3$s with its razor sharp leaves!"
             }
@@ -1580,7 +1580,7 @@
                 "cooldown": 5
             }, ["GRAB", 7], ["scratch", 20], {
                 "type": "spell",
-                "spell_id": "mon_zombie_stray_w_leaf_stro2_wildo",
+                "spell_data": { "id":"mon_zombie_stray_w_leaf_stro2_wildo"},
                 "cooldown": 44,
                 "monster_message": "%1$s strikes the ground, then a wild outgrowth of vines and branches erupts under %3$s!"
             }
@@ -1637,7 +1637,7 @@
                 "cooldown": 5
             }, ["GRAB", 7], ["scratch", 20], {
                 "type": "spell",
-                "spell_id": "mon_summon_stray_w_leaf_stro3_triffid",
+                "spell_data": { "id":"mon_summon_stray_w_leaf_stro3_triffid"},
                 "cooldown": 59,
                 "monster_message": "%1$s strikes the ground, then a wild outgrowth of vines and branches erupts under %3$s!\nTriffids burst out of it too!"
             }
@@ -1879,7 +1879,7 @@
                 "cooldown": 5
             }, ["GRAB", 7], ["scratch", 20], ["ACID_BARF", 28], {
                 "type": "spell",
-                "spell_id": "mon_zombie_stray_w_acid_stro2_acoat",
+                "spell_data": { "id":"mon_zombie_stray_w_acid_stro2_acoat"},
                 "cooldown": 38,
                 "monster_message": "%1$s sends a large amount of concentrated acid to %3$s!"
             }
@@ -1942,7 +1942,7 @@
                 "cooldown": 5
             }, ["GRAB", 7], ["scratch", 20], ["ACID_BARF", 25], {
                 "type": "spell",
-                "spell_id": "mon_zombie_stray_w_acid_stro3_arain",
+                "spell_data": { "id":"mon_zombie_stray_w_acid_stro3_arain"},
                 "cooldown": 69,
                 "monster_message": "%1$s sends a massive glob of acid above %3$s, then explodes violently!"
             }

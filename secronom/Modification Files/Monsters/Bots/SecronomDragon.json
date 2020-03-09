@@ -102,7 +102,7 @@
             ["secrodragon_pershieldatk", 10],
              {
                 "type": "spell",
-                "spell_id": "mon_secrodragon_target_random",
+                "spell_data": { "id":"mon_secrodragon_target_random"},
                 "cooldown": 25,
                 "monster_message": "<color_yellow>%1$s growls...</color>"
             }
