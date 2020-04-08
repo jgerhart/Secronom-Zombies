@@ -1,7 +1,7 @@
 # Secronom-Zombies
 
 ## Latest updates
-Head to this link for the updated version of the mod. This will fix all bugs as of **#10500**.
+Head to this [link](https://github.com/Axema/Secronom-Zombies/issues/12) for the updated version of the mod. This will fix all bugs as of **#10500**.
 If you're concerned about the file being *zip* and having viruses, please REFRAIN from downloading and wait for the official commits instead!
 
 ### How to install the mod:
