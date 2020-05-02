@@ -65,6 +65,18 @@
   },
   {
     "type": "effect_type",
+    "id": "secro_scientist_repairing"
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_scientist_repairing_laserturret"
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_scientist_repair_laserturret"
+  },
+  {
+    "type": "effect_type",
     "id": "secro_researcher_mission1_help"
   },
   {
