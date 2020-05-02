@@ -6,17 +6,11 @@ Mod made from various references, mixed up with random spices! A mod I've create
 
 - This mod will only work with the latest experimental of CDDA. Update your client before using this.
 - This mod is stable. Submit an issue if you encounter a bug.
-- Make sure to **turn off** the `Experimental 3D FOV`, as it'll break some intended functions of the mod.
-- For balancing purposes, do not activate `Stats Through Kills` mod.
-
-The lore behind all monsters and locations aren't explained in-game... yet.
 
 ## Zombies
 The secronom's main feature - the zeds. They range from weak up to strong variety of them.
 
 * There are 83 zombies in total: 57 city zeds, 16 zed mutants and 10 lab zombies. Only the zombies that spawn individually and their evolved counterparts are counted, while minions and other special zeds aren't.
-
-Thanks to SomeDeadGuy, he did all of the monster sprites on his own.
 
 ### City Zombies
 Listed below are the zombies encountered in a city, along with their upgrade paths:
@@ -301,3 +295,18 @@ Based from the spider zombie. Grows 2 additional pairs of arms that act as dupli
 
 ###### Tier 3
 * **Superior Arachnid Limbs**
+
+# NPCs
+These NPCs are the remnants of the facility. They take refuge in the underground bunker - a small, yet highly defended area. Interactions with them can provide you with great advantage in survival using their advanced utilities.
+
+Listed below are few unique features available only when you tend on their needs.
+
+* _**Turrets**_ - Advanced sci-fi turrets. They are less damaging compared to real ones, but uses electricity as ammo and can be repaired.
+
+# Credits
+Great people who contributed to this ever-expanding mod :>
+
+* **SomeDeadGuy** - He drew everything in this mod and made it compatible for the UndeadPeople tileset!
+* **RickyVanz** - His 2 new sci-fi guns eased the game a bit.
+* **ephemeralstoryteller** - She fixed the color bug when I'm not around.
+* **Kenan2000** - He helped with some bugfixes.
