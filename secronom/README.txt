@@ -13,6 +13,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 #  TILESET REWORKS (if possible)
 
 +  SECRONOM BUNKER (a small underground fortress that's connected to the lab)
++  NPCS (they provide a subtle lore and few other features)
 
 
 
@@ -21,9 +22,8 @@ https://discourse.cataclysmdda.org - CDDA official forums
 	
 --> V1.8 - Focused mostly on improving the flesh forest/city features. Few mutations were created for later expansion. <--
 
-#  TILESET REWORKS (if possible)
 #  MINOR UI CHANGES (mod is now highlighted in red when viewed in world generation (and in loading screen), to notify players of its extreme difficulty)
-#  ACHIEVEMENTS (long-term goals for your adventures)
+#  ACHIEVEMENTS (long- and short-term goals for your adventures)
 
 +  WANDERING ABERRATION (shapeshifter)
 +  CRIMSON HORROR (veinstalk)
@@ -47,7 +47,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  SADDLER (brute, scout)
 +  INFECTED SADDLERS (normal, brute and scout)
 +  ZED MUTANT (relinquished zombie)
-+  FLESH FOREST (a forest infested by the flesh, home for the crimson horrors)
++  FLESH FOREST (home for the crimson horrors)
 +  CRIMSON HORRORS (creatures unique to the fleshed environment)
 +  FLESH CHUNKS (a consumable food with superior regenerative prowess)
 +  FLESH CITY (cities overwhelmed by the flesh)
