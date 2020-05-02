@@ -4143,6 +4143,17 @@
     "max_duration": 1
   },
   {
+    "id": "mon_secro_turret_hpdown",
+    "type": "SPELL",
+    "name": "Energy Consumption",
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster's shot drains their health.'",
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "min_damage": 1,
+    "max_damage": 1
+  },
+  {
     "id": "mon_secro_electurret_elecshock",
     "type": "SPELL",
     "name": "Electroshock",
@@ -4181,7 +4192,6 @@
     "flags": [ "SILENT" ],
     "valid_targets": [ "hostile", "ally", "ground" ],
     "effect": "target_attack",
-    
     "min_aoe": 2,
     "max_aoe": 2,
     "field_id": "fd_gravtur_magnet",
@@ -4197,6 +4207,23 @@
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots with its concentrated ray of heat, which pierces through the targets.'",
     "flags": [ "SILENT" ],
     "valid_targets": [ "hostile", "ally", "ground" ],
+    "effect": "line_attack",
+    "min_damage": 12,
+    "max_damage": 16,
+    "damage_type": "fire",
+    "min_range": 25,
+    "max_range": 25
+  },
+  {
+    "id": "mon_secro_laserturret_mod_heatray",
+    "type": "SPELL",
+    "name": "Heat Ray",
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots with its concentrated ray of heat, which pierces through the targets.'",
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "hostile", "ally", "ground" ],
+    "extra_effects": [
+      { "id": "mon_secro_turret_hpdown", "hit_self": true }
+    ],
     "effect": "line_attack",
     "min_damage": 12,
     "max_damage": 16,
