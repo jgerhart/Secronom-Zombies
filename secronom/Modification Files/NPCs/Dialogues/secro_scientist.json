@@ -484,13 +484,9 @@
     "type": "talk_topic",
     "id": "TALK_SECRO_SCIENTIST_uhelp_turret",
     "dynamic_line": {
-      "u_has_effect": "secro_scientist_hold_mission2",
-      "no": "Well then. If you complete this job, we'll both utilize this defensive turret. Do you agree?",
-      "yes": {
-        "u_has_effect": "secro_scientist_mission2_progress",
-        "no": "Yes, the autonomous turrets that you saw on the bunker. So, do you accept my request",
-        "yes": "Take your time while you gather them."
-      }
+      "u_has_effect": "secro_scientist_mission2_progress",
+      "no": "Yes, the autonomous turrets that you saw on the bunker. So, do you accept my request?",
+      "yes":  "Take your time while you gather them."
     },
     "responses": [
       { "text": "Yes.", "topic": "TALK_MISSION_OFFER", "condition": { "not": { "u_has_effect": "secro_scientist_mission2_progress" } } },
@@ -506,51 +502,5 @@
         "condition": { "u_has_effect": "secro_scientist_mission2_progress" }
       }
     ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_SECRO_SCIENTIST_repair",
-    "dynamic_line": {
-      "u_has_effect": "secro_scientist_repairing",
-      "no": "What do you want to repair?",
-      "yes": "I'm currently working on repairs..."
-    },
-    "responses": [
-      {
-        "text": "Let me check the progress of SDP-L1 turret's repair.",
-        "trial": {
-          "type": "CONDITION",
-          "condition": {
-            "and": [
-              { "u_has_effect": "secro_scientist_repairing" },
-              { "not": { "u_has_effect": "secro_scientist_repairing_laserturret" } }
-            ]
-          }
-        },
-        "success": { "topic": "TALK_SECRO_SCIENTIST_repair_laserturret" },
-        "failure": { "topic": "TALK_SECRO_SCIENTIST_repair_laserturret_no" },
-        "condition": { "u_has_effect": "secro_scientist_repair_laserturret" }
-      },
-      {
-        "truefalsetext": { "condition": { "u_has_effect": "secro_scientist_repairing" }, "true": "I'll check them later.", "false": "I got nothing." },
-        "topic": "TALK_SECRO_SCIENTIST_main"
-      }
-    ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_SECRO_SCIENTIST_repair_laserturret",
-    "dynamic_line": "It is done. I modified the turret and made it cheaper in power usage, with a built-in storage battery.",
-    "responses": [ { "text": "I'll take it!", "topic": "TALK_SECRO_SCIENTIST_repair", "effect": [
-          { "u_lose_effect": "secro_scientist_repair_laserturret" },
-          { "u_lose_effect": "secro_scientist_repairing" },
-          { "u_buy_monster": "mon_secro_laserturret_mod" }
-        ] } ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_SECRO_SCIENTIST_repair_laserturret_no",
-    "dynamic_line": "I need more time to fully repair the turret.",
-    "responses": [ { "text": "Okay.", "topic": "TALK_SECRO_SCIENTIST_main" } ]
   }
 ]
