@@ -17,8 +17,7 @@
       "friendly_msg": "The SPD-L1 emits a beeping sound, then scans the vicinity...",
       "hostile_msg": "Oh no...",
       "difficulty": 0,
-      "moves": 225,
-      "place_randomly": true,
+      "moves": 250,
       "skill1": "electronics",
       "skill2": "computer"
     }
