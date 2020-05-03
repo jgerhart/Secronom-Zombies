@@ -37,7 +37,7 @@
   {
     "id": "MISSION_SECRO_SCIENTIST_GET_TURRET_PARTS",
     "type": "mission_definition",
-    "name": { "str": "Gather all necessary materials needed by the scientist" },
+    "name": { "str": "Gather materials for SDP-L1 turret" },
     "description": "Collect <color_light_green>4 chunks of steel</color>, <color_light_green>18 scrap metals</color>, <color_light_green>9 electronic scraps</color>, <color_light_green>9 power converters</color>, <color_light_green>5 copper wires</color> and <color_light_green>a broken laser beam turret</color>.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": {
@@ -70,7 +70,7 @@
         { "npc_consume_item": "cable", "count": 5 },
         { "npc_consume_item": "broken_secro_laserturret" },
         { "duration": "PERMANENT", "u_add_effect": "secro_scientist_partake_mission2" },
-        { "u_add_effect": "secro_scientist_repairing_laserturret", "duration": 37 },
+        { "npc_add_effect": "secro_scientist_repairing_laserturret", "duration": 3700 },
         { "duration": "PERMANENT", "u_add_effect": "secro_scientist_repairing" },
         { "duration": "PERMANENT", "u_add_effect": "secro_scientist_repair_laserturret" }
       ]
