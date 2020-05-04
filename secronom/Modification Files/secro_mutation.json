@@ -5,9 +5,9 @@
     "threshold_mut": "THRESH_SECRONOM_EX",
     "mutagen_message": "You feel so strange.",
     "iv_message": "You inject yoursel-arRGH!",
-    "iv_min_mutations": 4,
-    "iv_additional_mutations": 2,
-    "iv_additional_mutations_chance": 2,
+    "iv_min_mutations": 2,
+    "iv_additional_mutations": 1,
+    "iv_additional_mutations_chance": 5,
     "iv_fatigue": 65,
     "iv_sound": true,
     "iv_sound_message": "yourself scream in agony!",
@@ -60,7 +60,7 @@
     "types": [ "HANDS" ],
     "restricts_gear": [ "HAND_L", "HAND_R" ],
     "changes_to": [ "SECRO_TENDRIL_TENT", "SECRO_TENDRIL_THICK" ],
-    "cancels": [ "NAILS", "CLAWS", "TALONS", "WEBBED", "ARM_TENTACLES", "SECRO_BLADE_L", "SECRO_TENDRIL_THICK_THRESHOLD", "SECRO_TENDRIL_TENT_THRESHOLD" ],
+    "cancels": [ "NAILS", "CLAWS", "TALONS", "WEBBED", "ARM_TENTACLES", "SECRO_BLADE_L", "SECRO_SPIDER", "SECRO_TENDRIL_THICK_THRESHOLD", "SECRO_TENDRIL_TENT_THRESHOLD", "SECRO_BLADE_SHARP_THRESHOLD", "SECRO_BLADE_SERRATED_THRESHOLD" ],
     "encumbrance_always": [ [ "HAND_L", 20 ], [ "HAND_R", 20 ] ],
     "encumbrance_covered": [ [ "HAND_L", 30 ], [ "HAND_R", 30 ] ],
     "rand_bash_bonus": { "min": 1, "max": 3 },
@@ -147,7 +147,7 @@
   {
     "type": "mutation",
     "id": "SECRO_TENDRIL_THICK_THRESHOLD",
-    "name": { "str": "Tendril Core" },
+    "name": { "str": "Core - Tendril" },
     "points": 10,
     "visibility": 2,
     "ugliness": 0,
@@ -164,7 +164,7 @@
   {
     "type": "mutation",
     "id": "SECRO_TENDRIL_TENT_THRESHOLD",
-    "name": { "str": "Tendril Core" },
+    "name": { "str": "Core - Tendril" },
     "points": 10,
     "visibility": 2,
     "ugliness": 0,
@@ -191,7 +191,7 @@
     "types": [ "HANDS" ],
     "restricts_gear": [ "HAND_L" ],
     "changes_to": [ "SECRO_BLADE_L_SHARP", "SECRO_BLADE_L_SERRATED" ],
-    "cancels": [ "NAILS", "CLAWS", "TALONS", "WEBBED", "ARM_TENTACLES", "SECRO_TENDRIL", "SECRO_BLADE_SHARP_THRESHOLD", "SECRO_BLADE_SERRATED_THRESHOLD" ],
+    "cancels": [ "NAILS", "CLAWS", "TALONS", "WEBBED", "ARM_TENTACLES", "SECRO_TENDRIL", "SECRO_SPIDER", "SECRO_TENDRIL_THICK_THRESHOLD", "SECRO_TENDRIL_TENT_THRESHOLD", "SECRO_BLADE_SHARP_THRESHOLD", "SECRO_BLADE_SERRATED_THRESHOLD" ],
     "encumbrance_always": [ [ "HAND_L", 100 ] ],
     "rand_bash_bonus": { "min": 4, "max": 8 },
 	"armor": [ { "parts": "ARM_L", "bash": 10, "cut": 10, "stab": 10 } ],
@@ -241,7 +241,7 @@
   {
     "type": "mutation",
     "id": "SECRO_BLADE_SHARP_THRESHOLD",
-    "name": { "str": "Blade Core" },
+    "name": { "str": "Core - Blade" },
     "points": 10,
     "visibility": 4,
     "ugliness": 2,
@@ -256,7 +256,7 @@
   {
     "type": "mutation",
     "id": "SECRO_BLADE_SERRATED_THRESHOLD",
-    "name": { "str": "Blade Core" },
+    "name": { "str": "Core - Blade" },
     "points": 10,
     "visibility": 4,
     "ugliness": 4,
@@ -367,7 +367,7 @@
     "description": "You grew 2 additional pairs of arms sticking out from the sides of your torso close to the abdominal part. They seem to function as duplicates of normal ones, gaining 1 permanent dex and making them beneficial for crafting, combat and vaulting through objects, but increases torsal encumberance by 10 which triples when you wear a tight clothing.",
     "types": [ "HANDS" ],
     "changes_to": [ "SECRO_SPIDER_OK", "SECRO_SPIDER_NOTOK" ],
-    "cancels": [ "NAILS", "CLAWS", "TALONS", "WEBBED", "ARM_TENTACLES", "SECRO_TENDRIL", "SECRO_BLADE_L", "SECRO_TENDRIL_THICK_THRESHOLD", "SECRO_TENDRIL_TENT_THRESHOLD" ],
+    "cancels": [ "NAILS", "CLAWS", "TALONS", "WEBBED", "ARM_TENTACLES", "SECRO_TENDRIL", "SECRO_BLADE_L", "SECRO_TENDRIL_THICK_THRESHOLD", "SECRO_TENDRIL_TENT_THRESHOLD", "SECRO_BLADE_SHARP_THRESHOLD", "SECRO_BLADE_SERRATED_THRESHOLD" ],
     "encumbrance_always": [ [ "TORSO", 10 ] ],
     "encumbrance_covered": [ [ "TORSO", 30 ] ],
     "attackcost_modifier": 0.95,
@@ -396,6 +396,7 @@
     "valid": false,
     "description": "Your additional limbs have become more responsive, which eases your control over them. They permanently increases your dex by 2 and slightly improving its basic modifiers.",
     "types": [ "HANDS" ],
+    "prereqs": [ "SECRO_SPIDER" ],
     "changes_to": [ "SECRO_SPIDER_VERYOK", "SECRO_SPIDER_NOTOK" ],
     "encumbrance_always": [ [ "TORSO", 10 ] ],
     "encumbrance_covered": [ [ "TORSO", 30 ] ],
@@ -425,6 +426,7 @@
     "valid": false,
     "description": "Your extra limbs became twisted and malformed, which slightly affects the movements of your arms. They removed your permanent dex, increased your torsal encumberance by 15 and a drastic reduction to its basic modifiers.",
     "types": [ "HANDS" ],
+    "prereqs": [ "SECRO_SPIDER_OK" ],
     "encumbrance_always": [ [ "TORSO", 15 ] ],
     "encumbrance_covered": [ [ "TORSO", 45 ] ],
     "attackcost_modifier": 0.975,
@@ -441,6 +443,7 @@
     "valid": false,
     "description": "Further mutations has caused your limbs to unify with your cerebral cortex, accepting them as part of your body. With full control over them, they permanently increases your dex by 3 and significantly improves the basic modifiers.",
     "types": [ "HANDS" ],
+    "prereqs": [ "SECRO_SPIDER_OK" ],
     "encumbrance_always": [ [ "TORSO", 10 ] ],
     "encumbrance_covered": [ [ "TORSO", 30 ] ],
     "attackcost_modifier": 0.875,
@@ -457,6 +460,201 @@
       [ "survival", 2 ]
     ],
     "passive_mods": { "dex_mod": 3 },
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_LICKER",
+    "name": { "str": "Lushen Tongue" },
+    "points": 4,
+    "visibility": 4,
+    "ugliness": 4,
+    "mixed_effect": true,
+    "valid": false,
+    "description": "Your tongue have become long and slender that stretches and retracts at your will. It somewhat helps you in sensing scents and movements.",
+    "types": [ "MUZZLE" ],
+    "changes_to": [ "SECRO_LICKER_DEF", "SECRO_LICKER_ATK" ],
+    "cancels": [ "MOUTH_TENTACLES", "MOUTH_FLAPS", "SECRO_LICKER_ATK_THRESHOLD" ],
+    "dodge_modifier": 0.05,
+    "hearing_modifier": 0.1,
+    "attacks": [
+      {
+        "attack_text_u": "You lick %s",
+        "attack_text_npc": "%1$s licks %2$s",
+        "body_part": ["MOUTH"],
+        "chance": 30,
+        "strength_damage": { "damage_type": "bash", "amount": 0.3 }
+      }
+    ],
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_LICKER_NOTOK",
+    "name": { "str": "Malformed Tongue" },
+    "points": -6,
+    "visibility": 6,
+    "ugliness": 10,
+    "valid": false,
+    "description": "Your tongue has deformed into a large, unpleasant tendril-like flesh strand. It greatly hampers your breathing, reducing your stamina by 30% and is useless when it comes to sensing nearby creatures.",
+    "types": [ "MUZZLE" ],
+    "prereqs": [ "SECRO_LICKER_ATK", "SECRO_LICKER_DEF" ],
+    "social_modifiers": { "persuade": -15, "lie": -15 },
+    "max_stamina_modifier": 0.70,
+    "attacks": [
+      {
+        "attack_text_u": "You lick %s",
+        "attack_text_npc": "%1$s licks %2$s",
+        "body_part": ["MOUTH"],
+        "chance": 75,
+        "strength_damage": { "damage_type": "bash", "amount": 0.5 }
+      }
+    ],
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_LICKER_DEF",
+    "name": { "str": "Callous Tongue" },
+    "points": 4,
+    "visibility": 5,
+    "ugliness": 6,
+    "mixed_effect": true,
+    "valid": false,
+    "description": "From prolonged alteration, your tongue have sightly become thicker and harder, yet still retains its flexibility.",
+    "types": [ "MUZZLE" ],
+    "prereqs": [ "SECRO_LICKER" ],
+    "changes_to": [ "SECRO_LICKER_DEF_OK", "SECRO_LICKER_NOTOK" ],
+    "dodge_modifier": 0.04,
+    "hearing_modifier": 0.1,
+    "social_modifiers": { "persuade": -3, "lie": -3 },
+    "attacks": [
+      {
+        "attack_text_u": "You lick %s",
+        "attack_text_npc": "%1$s licks %2$s",
+        "body_part": ["MOUTH"],
+        "chance": 50,
+        "strength_damage": { "damage_type": "bash", "amount": 0.5 }
+      }
+    ],
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_LICKER_DEF_OK",
+    "name": { "str": "Tongue Hypertrophy" },
+    "points": 4,
+    "visibility": 6,
+    "ugliness": 8,
+    "mixed_effect": true,
+    "valid": false,
+    "description": "Your tongue has hardened and swollen a bit. You find conversations tricky and its larger scale has greatly reduced their sensing capability, yet their resistance helps alot in blocking incoming damage.",
+    "types": [ "MUZZLE" ],
+    "prereqs": [ "SECRO_LICKER_DEF" ],
+    "dodge_modifier": 0.0175,
+    "hearing_modifier": 0.01,
+    "social_modifiers": { "persuade": -10, "lie": -10 },
+    "armor": [ { "parts": "HEAD", "cut": 2, "bash": 4, "stab": 2 } ],
+    "attacks": [
+      {
+        "attack_text_u": "You lick %s",
+        "attack_text_npc": "%1$s licks %2$s",
+        "body_part": ["MOUTH"],
+        "chance": 50,
+        "strength_damage": { "damage_type": "bash", "amount": 0.8 }
+      }
+    ],
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_LICKER_ATK",
+    "name": { "str": "Succulent Tongue" },
+    "points": 4,
+    "visibility": 4,
+    "ugliness": 6,
+    "mixed_effect": true,
+    "valid": false,
+    "description": "Your tongue has slightly become thinner and longer, which further improves your senses and combat capabilities.",
+    "types": [ "MUZZLE" ],
+    "prereqs": [ "SECRO_LICKER" ],
+    "changes_to": [ "SECRO_LICKER_ATK_OK", "SECRO_LICKER_NOTOK" ],
+    "dodge_modifier": 0.075,
+    "hearing_modifier": 0.11,
+    "attacks": [
+      {
+        "attack_text_u": "You lick %s",
+        "attack_text_npc": "%1$s licks %2$s",
+        "body_part": ["MOUTH"],
+        "chance": 20,
+        "strength_damage": { "damage_type": "bash", "amount": 0.3 }
+      }
+    ],
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_LICKER_ATK_OK",
+    "name": { "str": "Tongue Lasher" },
+    "points": 4,
+    "visibility": 5,
+    "ugliness": 6,
+    "mixed_effect": true,
+    "valid": false,
+    "description": "Due to further alteration, your tongue have become broader and has developed a set of retractable bony blades on either sides of its surface. Despite its significant improvements on senses and offensive capabilities, your conversations with other people also becomes much more difficult to handle... but find it great for terrorizing.",
+    "types": [ "MUZZLE" ],
+    "prereqs": [ "SECRO_LICKER_ATK" ],
+    "dodge_modifier": 0.125,
+    "hearing_modifier": 0.15,
+    "social_modifiers": { "persuade": -10, "lie": -10, "intimidate": 10 },
+    "attacks": [
+      {
+        "attack_text_u": "You lick %s",
+        "attack_text_npc": "%1$s licks %2$s",
+        "body_part": ["MOUTH"],
+        "blocker_mutations": [ "SECRO_LICKER_ATK_THRESHOLD" ],
+        "chance": 20,
+        "strength_damage": { "damage_type": "cut", "amount": 0.5 }
+      },
+      {
+        "attack_text_u": "You lashed %s with your tongue",
+        "attack_text_npc": "%1$s lashes %2$s with their tongue",
+        "body_part": ["MOUTH"],
+        "required_mutations": [ "SECRO_LICKER_ATK_THRESHOLD" ],
+        "chance": 20,
+        "strength_damage": { "damage_type": "cut", "amount": 1.1 }
+      }
+    ],
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_LICKER_DEF_THRESHOLD",
+    "name": { "str": "Core - Licker" },
+    "points": 10,
+    "visibility": 4,
+    "ugliness": 2,
+    "valid": false,
+    "description": "Your tongue secretes concentrated saliva whenever it gets stretched. This allows your lick attacks to enlow the target in combat.",
+    "prereqs": [ "SECRO_LICKER_DEF_OK" ],
+    "cancels": [ "SECRO_LICKER_ATK_THRESHOLD" ],
+    "threshreq": [ "THRESH_SECRONOM_EX" ],
+    "enchantments": [ "SECRO_LICKER_DEF_THRESHOLD_ench" ],
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_LICKER_ATK_THRESHOLD",
+    "name": { "str": "Core - Licker" },
+    "points": 10,
+    "visibility": 4,
+    "ugliness": 2,
+    "valid": false,
+    "description": "The blades on your tongue were sharpened and is pulsating in dark, velvety streaks. This greatly improves the damage of lick attacks, as well as its potency in combat.",
+    "prereqs": [ "SECRO_LICKER_ATK_OK" ],
+    "cancels": [ "SECRO_LICKER_DEF_THRESHOLD" ],
+    "threshreq": [ "THRESH_SECRONOM_EX" ],
+    "enchantments": [ "SECRO_LICKER_ATK_THRESHOLD_ench" ],
     "category": [ "SECRONOM_EX" ]
   }
 ]
