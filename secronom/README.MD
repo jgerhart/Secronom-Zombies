@@ -296,6 +296,18 @@ Based from the spider zombie. Grows 2 additional pairs of arms that act as dupli
 ###### Tier 3
 * **Superior Arachnid Limbs**
 
+#### Lushen Tongue
+Based from the licker zombie. Causes your tongue to become a whip-like weapon.
+
+###### Tier 2
+* **Callous Tongue**
+* **Succulent Tongue**
+* **Malformed Tongue**
+
+###### Tier 3
+* **Tongue Hypertrophy**
+* **Tongue Lasher**
+
 # NPCs
 These NPCs are the remnants of the facility. They take refuge in the underground bunker - a small, yet highly defended area. Interactions with them can provide you with great advantage in survival using their advanced utilities.
 
