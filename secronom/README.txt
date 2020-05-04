@@ -14,6 +14,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 +  SECRONOM BUNKER (a small underground fortress that's connected to the lab)
 +  NPCS (they provide a subtle lore and few other features)
++  EXPERIMENTAL MUTATION (a new combat-type mutation)
 
 
 
