@@ -86,5 +86,42 @@
       "success_lie": "...",
       "failure": "..."
     }
+  },
+  {
+    "id": "MISSION_SECRO_GUARD_KILL_ENIGMA",
+    "type": "mission_definition",
+    "name": { "str": "Clear the enigma chamber" },
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 5,
+    "value": 200000,
+    "start": {
+      "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_guard_mission1_progress" }, "follow_only" ],
+      "assign_mission_target": { "om_terrain": "SecronomSSLab_enigmaspecs", "reveal_radius": 1, "search_range": 10, "z": -2 },
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_ayenel", "x": 16, "y": 10, "target": true },
+          { "monster": "mon_maneater", "x": 9, "y": 22, "target": true }
+        ],
+        "place_nested": [{
+                        "chunks": ["secro_guard_mission1_opendadoor"],
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+      }
+    },
+    "end": { "effect": { "duration": "PERMANENT", "u_add_effect": "secro_guard_partake_mission1" } },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "…",
+      "offer": "So she wants you to clear out the enigma chamber, and you need my help to access that room. But are you ready? You can refuse if it felt like a deathwish.",
+      "accepted": "Let's head to the entrance of that chamber real quick!",
+      "rejected": "Just ask me again once you're ready to take on.",
+      "advice": "Since this facility have come into chaos, we might see creatures other than them.",
+      "inquire": "Did you killed them?",
+      "success": "Great! Lets head back to others and see if they need anything else. Enigma chamber is pretty messed up anyway.",
+      "success_lie": "Really? I've come alongside you and yet you lied to something you obviously didn't do?",
+      "failure": "..."
+    }
   }
 ]
