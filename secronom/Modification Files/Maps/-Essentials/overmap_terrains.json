@@ -21,6 +21,7 @@
     "name": "underground secronom lab",
     "sym": "L",
     "color": "light_gray",
+    "flags": ["NO_ROTATE"],
     "see_cost": 5
   },
   {
@@ -977,5 +978,14 @@
     "sym": ".",
     "color": "brown",
     "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "SecronomSSLab_enigmaspecs",
+    "name": "underground secronom lab",
+    "sym": "L",
+    "color": "light_gray",
+    "flags": ["NO_ROTATE"],
+    "see_cost": 5
   }
 ]
