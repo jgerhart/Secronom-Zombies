@@ -31,23 +31,33 @@
         }
       },
       {
-      "text": "Yeah, and I want to know more about your plans.",
-      "topic": "TALK_DONE",
-      "condition": {
-        "and": [
-          { "not": { "u_has_effect": "secro_researcher_mission1_help_done" } },
-          { "u_has_effect": "secro_scientist_partake_mission1" }
-        ]
+        "text": "Yeah, and I want to know more about your plans.",
+        "topic": "TALK_DONE",
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "secro_researcher_mission1_help_done" } },
+            { "u_has_effect": "secro_scientist_partake_mission1" }
+          ]
+        },
+        "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_researcher_mission1_help_done" }, "stop_following" ]
       },
-      "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_researcher_mission1_help_done" }, "stop_following" ]
-    },
       {
         "truefalsetext": {
-          "condition": { "u_has_effect": "secro_scientist_mission1_progress" },
-          "true": "Nothing.",
-          "false": "Bye then...",
-          "topic": "TALK_DONE"
+          "condition": { "u_has_effect": "secro_guard_mission1_gonnastart" },
+          "true": "The guard told me you need assistance.",
+          "false": "What's your plan?"
         },
+        "topic": "TALK_SECRO_RESEARCHER_guard_mission1_gonnastart",
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "secro_guard_mission1_startnow" } },
+            { "u_has_effect": "secro_researcher_mission1_help_done" }
+          ]
+        }
+      },
+      {
+        "truefalsetext": { "condition": { "u_has_effect": "secro_scientist_mission1_progress" }, "true": "Nothing.", "false": "Bye then..." },
+        "topic": "TALK_DONE",
         "condition": { "not": { "u_has_effect": "secro_researcher_mission1_help" } }
       },
       {
@@ -76,6 +86,49 @@
         "text": "Okay.",
         "topic": "TALK_DONE",
         "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_researcher_mission1_help" }, "follow_only" ]
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SECRO_RESEARCHER_guard_mission1_gonnastart",
+    "dynamic_line": {
+      "u_has_effect": "secro_guard_mission1_gonnastart",
+      "no": "Since you've proven yourself worthy for our future plans, I'll be glad if you help me with this rather odd request.",
+      "yes": "Yes, since you've proven yourself worthy for our plans, I'll be glad if you help me with this rather odd request."
+    },
+    "responses": [
+      {
+        "text": "Tell me.",
+        "topic": "TALK_SECRO_RESEARCHER_guard_mission1_start",
+        "effect": { "duration": "PERMANENT", "u_add_effect": "secro_guard_mission1_start" }
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SECRO_RESEARCHER_guard_mission1_start",
+    "dynamic_line": "But first, let me tell you a subtle understanding on our facility. There are total of 3 specimen variants: the failed, BOW and enigma, each in their respective rooms.",
+    "responses": [
+      { "text": "Failed, BOW, enigma? What are those?", "topic": "TALK_SECRO_RESEARCHER_guard_mission1_start_info" },
+      { "text": "Just describe what needs to be done.", "topic": "TALK_SECRO_RESEARCHER_guard_mission1_start_now" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SECRO_RESEARCHER_guard_mission1_start_info",
+    "dynamic_line": "Failed specimens are the results of unsuccessful mutations, otherwise they are called BOWs. Enigmas, on the other hand, were formed using potent mutagens.",
+    "responses": [ { "text": "So what exactly is your plan?", "topic": "TALK_SECRO_RESEARCHER_guard_mission1_start_now" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SECRO_RESEARCHER_guard_mission1_start_now",
+    "dynamic_line": "Clear out the enigma room of monsters. That room is currently locked down, and you'll need the authorization from someone to open it up. If you're ready, talk to the guard about this.",
+    "responses": [
+      {
+        "text": "Okay. I will go now",
+        "topic": "TALK_SECRO_RESEARCHER_main",
+        "effect": { "duration": "PERMANENT", "u_add_effect": "secro_guard_mission1_startnow" }
       }
     ]
   }
