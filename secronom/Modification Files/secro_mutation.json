@@ -1,4 +1,5 @@
-[{
+[
+{
     "type": "mutation_category",
     "id": "SECRONOM_EX",
     "name": "Experimental",
@@ -135,7 +136,7 @@
         "attack_text_u": "You pierced %s with your tendrils",
         "attack_text_npc": "%1$s pierces %2$s with their tendrils",
         "body_part": ["HAND_L", "HAND_R"],
-        "chance": 20,
+        "chance": 30,
         "strength_damage": { "damage_type": "stab", "amount": 0.3 }
       }
     ],
@@ -622,7 +623,7 @@
         "body_part": ["MOUTH"],
         "required_mutations": [ "SECRO_LICKER_ATK_THRESHOLD" ],
         "chance": 20,
-        "strength_damage": { "damage_type": "cut", "amount": 1.1 }
+        "strength_damage": { "damage_type": "cut", "amount": 0.85 }
       }
     ],
     "category": [ "SECRONOM_EX" ]
@@ -655,6 +656,149 @@
     "cancels": [ "SECRO_LICKER_DEF_THRESHOLD" ],
     "threshreq": [ "THRESH_SECRONOM_EX" ],
     "enchantments": [ "SECRO_LICKER_ATK_THRESHOLD_ench" ],
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_UNKNOWN_WING_START",
+    "name": { "str": "Shoulder Bumps" },
+    "points": 0,
+    "visibility": 3,
+    "ugliness": 3,
+    "mixed_effect": true,
+    "valid": false,
+    "description": "You've got a bumps on both of your shoulder joints.",
+    "changes_to": [ "SECRO_UNKNOWN_WING_MEMB", "SECRO_UNKNOWN_WING_BONY", "SECRO_UNKNOWN_WING_NOTOK" ],
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_UNKNOWN_WING_MEMB",
+    "name": { "str": "Membranous Wings" },
+    "points": 6,
+    "visibility": 8,
+    "ugliness": 8,
+    "valid": false,
+    "description": "You've got wing-like appendages sprouting on your shoulder joints stretching down to your pelvis. The wing is composed of muscle tissues and fiber webbings, with each ends tipped with a sharp, bony blade appendixes. They might be encumbering and heavy, but their strong build provides +2 strength.",
+    "types": [ "WINGS" ],
+    "prereqs": [ "SECRO_UNKNOWN_WING_START" ],
+    "encumbrance_always": [ [ "TORSO", 15 ] ],
+    "weight_capacity_modifier": 1.15,
+    "dodge_modifier": -1,
+    "movecost_modifier": 1.1,
+    "movecost_obstacle_modifier": 0.925,
+    "attacks": [
+      {
+        "attack_text_u": "You rake %s",
+        "attack_text_npc": "%1$s rakes %2$s",
+        "chance": 50,
+        "strength_damage": { "damage_type": "cut", "amount": 1.25 }
+      }
+    ],
+    "passive_mods": { "str_mod": 2 },
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_UNKNOWN_WING_BONY",
+    "name": { "str": "Skeletal Wings" },
+    "points": 6,
+    "visibility": 8,
+    "ugliness": 5,
+    "valid": false,
+    "description": "Protruding from your shoulder is a thin, flexible pair of endoskeletal wings. Though bulky and encumbering, they can be used to balance your movements, handling heavy stuff and shredding anyone you dislike.",
+    "types": [ "WINGS" ],
+    "prereqs": [ "SECRO_UNKNOWN_WING_START" ],
+    "encumbrance_always": [ [ "TORSO", 10 ] ],
+    "weight_capacity_modifier": 1.075,
+    "dodge_modifier": 0.75,
+    "movecost_modifier": 0.925,
+    "movecost_obstacle_modifier": 0.95,
+    "craft_skill_bonus": [
+      [ "mechanics", 1 ],
+      [ "traps", 1 ],
+      [ "fabrication", 1 ]
+    ],
+    "attacks": [
+      {
+        "attack_text_u": "You thrust you wings towards %s",
+        "attack_text_npc": "%1$s thrusts their wings %2$s",
+        "chance": 25,
+        "strength_damage": { "damage_type": "stab", "amount": 0.7 }
+      }
+    ],
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_UNKNOWN_WING_NOTOK",
+    "name": { "str": "Fleshed Mantle" },
+    "points": -5,
+    "visibility": 8,
+    "ugliness": 10,
+    "valid": false,
+    "description": "You've grown a mass of flabby flesh from your shoulders to the back of your body. Aside from being able to deflect physical harm, it severely hampers your movements and actions that requires finesse.",
+    "types": [ "WINGS" ],
+    "prereqs": [ "SECRO_UNKNOWN_WING_START" ],
+    "armor": [ { "parts": "TORSO", "bash": 5, "cut": 5, "stab": 5 } ],
+    "encumbrance_always": [ [ "TORSO", 25 ] ],
+    "dodge_modifier": -6,
+    "movecost_modifier": 1.15,
+    "movecost_obstacle_modifier": 1.25,
+    "speed_modifier": 1.1,
+    "attackcost_modifier": 1.1,
+    "attacks": [
+      {
+        "attack_text_u": "You slam %s with your mantle",
+        "attack_text_npc": "%1$s slams %2$s with their mantle",
+        "chance": 100,
+        "strength_damage": { "damage_type": "bash", "amount": 1.1 }
+      }
+    ],
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_UNKNOWN_HAIR_START",
+    "name": { "str": "Tumors" },
+    "points": 0,
+    "visibility": 3,
+    "ugliness": 3,
+    "mixed_effect": true,
+    "valid": false,
+    "description": "You have small head bumps scattered underneath your scalp.",
+    "changes_to": [ "SECRO_UNKNOWN_HAIR_EYES", "SECRO_UNKNOWN_HAIR_SUCK" ],
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_UNKNOWN_HAIR_EYES",
+    "name": { "str": "Eyegrowths" },
+    "points": 6,
+    "visibility": 6,
+    "ugliness": 8,
+    "valid": false,
+    "description": "You have several eyesprouts scattered throughout your hair, and they are sometimes painful when covered by a headgear. Provides additional vision bonuses and increases your perception by 3, but increases head encumberance by 20.",
+    "prereqs": [ "SECRO_UNKNOWN_HAIR_START" ],
+    "encumbrance_always": [ [ "HEAD", 20 ] ],
+    "map_memory_capacity_multiplier": 1.25,
+    "overmap_sight": 2.5,
+    "overmap_multiplier": 1.25,
+    "passive_mods": { "per_mod": 3 },
+    "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRO_UNKNOWN_HAIR_SUCK",
+    "name": { "str": "Writhing Proboscides" },
+    "points": 6,
+    "visibility": 6,
+    "ugliness": 6,
+    "valid": false,
+    "description": "You've got a few, slender proboscides on your head. They twitch occasionally, and involuntarily, increasing head encumberance by 25.  If conditions are met, they can suck the lifeforce out of your victim... only if they're alive.",
+    "prereqs": [ "SECRO_UNKNOWN_HAIR_START" ],
+    "encumbrance_always": [ [ "HEAD", 25 ] ],
+    "enchantments": [ "SECRO_UNKNOWN_HAIR_SUCK_ench" ],
     "category": [ "SECRONOM_EX" ]
   }
 ]
