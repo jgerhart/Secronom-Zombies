@@ -309,6 +309,19 @@ Based from the licker zombie. Causes your tongue to mutate into a whip-like weap
 * **Tongue Hypertrophy**!
 * **Tongue Lasher**!
 
+#### Shoulder Bumps
+
+###### Tier 2
+* **Membranous Wings**
+* **Skeletal Wings**
+* **Fleshed Mantle**
+
+#### Tumors
+
+###### Tier 2
+* **Eyegrowths**
+* **Writhing Proboscides**
+
 # NPCs
 These NPCs are the remnants of the facility. They take refuge in the underground bunker - a small, yet highly defended area. Interactions with them can provide you with great advantage in survival using their advanced utilities.
 
@@ -323,3 +336,4 @@ Great people who contributed to this ever-expanding mod :>
 * **RickyVanz** - His 2 new sci-fi guns eased the game a bit.
 * **ephemeralstoryteller** - She fixed the color bug when I'm not around.
 * **Kenan2000** - He helped with some bugfixes.
+* **The Go-Goat** - She shared some ideas with mutations.
