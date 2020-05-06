@@ -116,7 +116,7 @@
       {
         "text": "Nope. Bye.",
         "topic": "TALK_DONE",
-        "condition": { "not": { "u_has_effect": "secro_guard_partake_mission1" } }, { "u_has_effect": "secro_guard_partake_mission1" } 
+        "condition": [{ "not": { "u_has_effect": "secro_guard_partake_mission1" } }, { "u_has_effect": "secro_guard_partake_mission1" }]
       }
     ]
   },
