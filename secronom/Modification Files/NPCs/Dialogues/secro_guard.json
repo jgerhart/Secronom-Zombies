@@ -113,11 +113,7 @@
           "and": [ { "not": { "u_has_effect": "secro_guard_partake_mission1" } }, { "u_has_effect": "secro_guard_mission1_progress" } ]
         }
       },
-      {
-        "text": "Nope. Bye.",
-        "topic": "TALK_DONE",
-        "condition": [{ "not": { "u_has_effect": "secro_guard_partake_mission1" } }, { "u_has_effect": "secro_guard_partake_mission1" }]
-      }
+      { "text": "Nope. Bye.", "topic": "TALK_DONE", "condition": { "u_has_effect": "secro_guard_partake_mission1" } }
     ]
   },
   {
