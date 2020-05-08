@@ -837,6 +837,16 @@
     "show_in_info": true
   },
   {
+    "type": "effect_type",
+    "id": "mon_shifter_illu_limit",
+    "base_mods": { "hurt_min": [ 5 ], "hurt_max": [ 10 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_shifter_onslaught_dmgpure_dmg",
+    "base_mods": { "hurt_min": [ 8 ], "hurt_max": [ 16 ] }
+  },
+  {
     "//": "Effects for notifying the player. This method is a bit unstable...",
     "type": "effect_type",
     "id": "mon_zombie_swarmer_evo_savage_tension_target_random_YES",
@@ -974,6 +984,36 @@
     "id": "mon_shifter_stun_YES",
     "apply_message": "The air thickens as the shapeshifter moves.",
     "rating": "bad"
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_shifter_target_atk_illu_YES",
+    "apply_message": "Silhouettes were formed around the shapeshifter!",
+    "rating": "mixed"
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_shifter_target_atk_onslaught_dmgcutlow_YES",
+    "apply_message": "An errant silhouette flies toward its target, then shreds them!",
+    "rating": "bad"
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_shifter_target_atk_onslaught_dmgcuthigh_YES",
+    "apply_message": "An errant silhouette rakes through their target!",
+    "rating": "bad"
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_shifter_target_atk_onslaught_dmgpure_YES",
+    "apply_message": "The shapeshifter sets out a harrowing shriek before reaping their target!",
+    "rating": "bad"
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_shifter_target_atk_onslaught_illu_YES",
+    "apply_message": "A silhouette were formed before the shapeshifter!",
+    "rating": "mixed"
   },
   {
     "//": "Effects used for immunity fields",
