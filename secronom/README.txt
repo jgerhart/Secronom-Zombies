@@ -2,13 +2,13 @@ Secronom V1.9 - Axema Vales (author)
 
 https://discourse.cataclysmdda.org - CDDA official forums
 
-  *This README.txt is my changelog, so what is done will be recorded and released depending on accumulated progress.  
+  *This README.txt act as my changelog.
 
 
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.9 - Focuses on improving the secronom lab by adding NPCs and expanding the facility. Also some reworks to experimental mutation branch. <--
+--> V1.9 - Focuses on improving the secronom lab by adding NPCs and expanding the facility. Also some reworks to experimental mutation branch and rebalancing the existing monsters. <--
 
 #  TILESET REWORKS (if possible)
 
@@ -16,6 +16,8 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  NPCS (they provide a subtle lore and few other features)
 +  EXPERIMENTAL MUTATIONS (3 new mutation paths)
 +  SECRONOM LAB (more rooms)
+
+~  CITY ZED REBALANCES (tweaked the stats of tendril, blade and spider zombies, for early game balance)
 
 
 
