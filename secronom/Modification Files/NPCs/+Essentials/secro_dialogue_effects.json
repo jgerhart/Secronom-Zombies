@@ -85,6 +85,26 @@
   },
   {
     "type": "effect_type",
+    "id": "secro_researcher_guard_mission1_done"
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_researcher_searching_shapeshifter"
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_researcher_mission1_gonnastart"
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_researcher_mission1_progress"
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_researcher_partake_mission1"
+  },
+  {
+    "type": "effect_type",
     "id": "secro_guard_mission1_help"
   },
   {
@@ -106,10 +126,6 @@
   {
     "type": "effect_type",
     "id": "secro_guard_mission1_progress"
-  },
-  {
-    "type": "effect_type",
-    "id": "secro_guard_mission1_dadoor"
   },
   {
     "type": "effect_type",
