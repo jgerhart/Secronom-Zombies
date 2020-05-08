@@ -61,8 +61,8 @@
         "topic": "TALK_SECRO_GUARD_jobs",
         "condition": {
           "and": [
-                { "not": { "u_has_effect": "secro_guard_mission1_gonnastart" } },
-                { "not": { "u_has_effect": "secro_guard_mission1_startnow" } },
+            { "not": { "u_has_effect": "secro_guard_mission1_gonnastart" } },
+            { "not": { "u_has_effect": "secro_guard_mission1_startnow" } },
             { "u_has_effect": "secro_guard_mission1_help_done" }
           ]
         }
@@ -72,13 +72,6 @@
         "topic": "TALK_MISSION_OFFER",
         "condition": {
           "and": [ { "not": { "u_has_effect": "secro_guard_mission1_progress" } }, { "u_has_effect": "secro_guard_mission1_startnow" } ]
-        }
-      },
-      {
-        "text": "Open the entrance.",
-        "topic": "TALK_SECRO_GUARD_mission1_opendadoor",
-        "condition": {
-          "and": [ { "not": { "u_has_effect": "secro_guard_mission1_dadoor" } }, { "npc_at_om_location": "SecronomSSLab_enigmaspecs" } ]
         }
       },
       {
@@ -125,24 +118,6 @@
         "text": "I will.",
         "topic": "TALK_DONE",
         "effect": { "duration": "PERMANENT", "u_add_effect": "secro_guard_mission1_gonnastart" }
-      }
-    ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_SECRO_GUARD_mission1_opendadoor",
-    "dynamic_line": "Just give me a moment...\n\n...\n..\n.\n!\n\nAuthorization complete. We can go through now.",
-    "responses": [
-      {
-        "text": "Let's go.",
-        "topic": "TALK_DONE",
-        "effect": [
-          { "duration": "PERMANENT", "u_add_effect": "secro_guard_mission1_dadoor" },
-          {
-                    "mapgen_update": "secro_guard_mission1_opendadoor",
-                    "origin_npc": true
-                }
-        ]
       }
     ]
   },
