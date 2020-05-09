@@ -167,13 +167,11 @@ Vile creatures that are rarely sighted in the wilderness and/or certain location
 * _**Shapeshifter**_ **!** - An overwhelming apparition, specialized in deception. It takes form of any humanoid creature, mostly those who are weak.
 
 ## Unknown
-Extraterrestrial creatures from uncharted worlds.
+Creatures of unknown races roaming the world.
 
-* _**???**_ **~** - A ripple of space and time. If disturbed, it explodes like a MININUKE in its collapse, which creates a portal that leads the extraterrestrials into the world. (Alien invasion, in other words)
+* _**Carrion**_ **!** - Odd undead creatures with adaptive, necrotic body. Travels by group, and swarm on feasts.
 
-* _**Carrion**_ **!** - Carrions are undeads that lived from their own ruined world. With no sustenance, they travel between dimensions to sate their hunger.
-
-* _**Vector**_ **~** - Vectors are beautiful plant creatures that tends to spread and dominate the living by infecting them with their parasitic dusts.
+* _**Vector**_ **~** - Beautiful plant-like organisms that tends to spread and dominate the living by infecting them with their parasitic dusts.
 
 ## Robots
 Corrupted pieces of machinery on their goal for eradication.
