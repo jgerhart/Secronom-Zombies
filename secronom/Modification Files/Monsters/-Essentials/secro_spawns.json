@@ -180,8 +180,6 @@
       { "monster": "mon_ayenel", "freq": 1, "cost_multiplier": 60 },
       { "monster": "mon_fleshweaver", "freq": 1, "cost_multiplier": 45 },
       { "monster": "mon_maneater", "freq": 1, "cost_multiplier": 50 },
-      { "monster": "mon_unknown_unknown_carrion", "freq": 1, "cost_multiplier": 75 },
-      { "monster": "mon_unknown_unknown_vector", "freq": 1, "cost_multiplier": 75 },
       { "monster": "mon_shifter_zombie", "freq": 1, "cost_multiplier": 90 },
       { "monster": "mon_shifter_zombie_rot", "freq": 1, "cost_multiplier": 90 }
     ]
@@ -193,8 +191,6 @@
       { "monster": "mon_ayenel", "freq": 1, "cost_multiplier": 60 },
       { "monster": "mon_fleshweaver", "freq": 1, "cost_multiplier": 45 },
       { "monster": "mon_maneater", "freq": 1, "cost_multiplier": 50 },
-      { "monster": "mon_unknown_unknown_carrion", "freq": 1, "cost_multiplier": 75 },
-      { "monster": "mon_unknown_unknown_vector", "freq": 1, "cost_multiplier": 75 },
       { "monster": "mon_shifter_zombie", "freq": 1, "cost_multiplier": 90 },
       { "monster": "mon_shifter_zombie_rot", "freq": 1, "cost_multiplier": 90 }
     ]
@@ -220,6 +216,18 @@
       { "monster": "mon_vector_seedler", "freq": 30, "cost_multiplier": 1 },
       { "monster": "mon_vector_stinger", "freq": 35, "cost_multiplier": 1 },
       { "monster": "mon_vector_tree", "freq": 50, "cost_multiplier": 1 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_VECTOR_BIOME",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_vector_sprig", "freq": 5, "cost_multiplier": 1 },
+      { "monster": "mon_vector_sprout", "freq": 10, "cost_multiplier": 1 },
+      { "monster": "mon_vector", "freq": 20, "cost_multiplier": 1 },
+      { "monster": "mon_vector_seedler", "freq": 30, "cost_multiplier": 1 },
+      { "monster": "mon_vector_stinger", "freq": 35, "cost_multiplier": 1 }
     ]
   },
   {
