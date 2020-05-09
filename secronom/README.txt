@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.9 - Focuses on improving the secronom lab by adding NPCs and expanding the facility. Also some reworks to experimental mutation branch and rebalancing the existing monsters. <--
+--> V1.9 - Focuses on improving the secronom lab by adding NPCs and expanding the facility. May also work on new contents and/or rework existing ones. <--
 
 #  TILESET REWORKS (if possible)
 
@@ -19,6 +19,9 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 ~  CITY ZED REBALANCES (tweaked the stats of tendril, blade and spider zombies, for early game balance)
 ~  SHAPESHIFTER REWORKS (now much more deadly with improved abilities)
+
+-  UNKNOWN RACES REWORK (removed the wandering portal "???". Unknown creatures now spawn in the wild)
+
 
 
 
@@ -31,7 +34,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 +  WANDERING ABERRATION (shapeshifter)
 +  CRIMSON HORROR (veinstalk)
-+  EXPERIMENTAL MUTATIONS (a new mutation branch)
++  EXPERIMENTAL MUTATIONS (new, early mutation paths)
 +  FLESH ZOMBIES (complete expansion of flesh zombie variants for the flesh city. Land wildlife included)
 
 ~  SECRONOM LAB (now has a very rare, exclusive mutagen)
