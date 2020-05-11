@@ -20,7 +20,15 @@
               "yes": {
                 "u_has_effect": "secro_guard_partake_mission1",
                 "no": "We've got to go to the enigma chamber.",
-                "yes": "You need something, survivor?"
+                "yes": {
+                  "u_has_effect": "secro_guard_partake_mission2",
+                  "no": "You need something, survivor?",
+                  "yes": {
+                    "u_has_effect": "secro_guard_backfrom_mission2",
+                    "no": "We seem to find nothing...\nWe should go back.",
+                    "yes": "What do you want?"
+                  }
+                }
               }
             }
           }
@@ -86,6 +94,24 @@
         }
       },
       {
+        "text": "About the coordinates...",
+        "topic": "TALK_MISSION_OFFER",
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "secro_guard_mission2_progress" } },
+            { "u_has_effect": "secro_researcher_mission1_progress" }
+          ]
+        }
+      },
+      {
+        "text": "We're here...",
+        "topic": "TALK_DONE",
+        "condition": {
+          "and": [ { "not": { "u_has_effect": "secro_guard_backfrom_mission2" } }, { "npc_at_om_location": "SecronomSSLab_bowspecs" } ]
+        },
+        "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_guard_backfrom_mission2" }, "stop_following" ]
+      },
+      {
         "text": "Okay then...",
         "topic": "TALK_DONE",
         "condition": {
@@ -106,7 +132,21 @@
           "and": [ { "not": { "u_has_effect": "secro_guard_partake_mission1" } }, { "u_has_effect": "secro_guard_mission1_progress" } ]
         }
       },
-      { "text": "Nope. Bye.", "topic": "TALK_DONE", "condition": { "u_has_effect": "secro_guard_partake_mission1" } }
+      {
+        "text": "Nope. Bye.",
+        "topic": "TALK_DONE",
+        "condition": {
+          "and": [ { "not": { "u_has_effect": "secro_guard_partake_mission2" } }, { "u_has_effect": "secro_guard_partake_mission1" } ]
+        }
+      },
+      {
+        "text": "Not yet.",
+        "topic": "TALK_DONE",
+        "condition": {
+          "and": [ { "not": { "u_has_effect": "secro_guard_backfrom_mission2" } }, { "u_has_effect": "secro_guard_partake_mission2" } ]
+        }
+      },
+      { "text": "Nothing.", "topic": "TALK_DONE", "condition": { "u_has_effect": "secro_guard_backfrom_mission2" } }
     ]
   },
   {
