@@ -134,5 +134,17 @@
   {
     "type": "effect_type",
     "id": "secro_guard_backfrom_mission1"
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_guard_mission2_progress"
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_guard_partake_mission2"
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_guard_backfrom_mission2"
   }
 ]
