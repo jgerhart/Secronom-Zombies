@@ -6,14 +6,14 @@
       { "monster": "mon_zombie_swarmer_weak", "freq": 1, "cost_multiplier": 8, "pack_size": [ 11, 22 ] },
       { "monster": "mon_zombie_swarmer_segway", "freq": 1, "cost_multiplier": 10, "pack_size": [ 4, 12 ] },
       { "monster": "mon_zombie_swarmer_weak", "freq": 1, "cost_multiplier": 15, "pack_size": [ 22, 44 ] },
-      { "monster": "mon_zombie_swarmer_weak", "freq": 1, "cost_multiplier": 23, "pack_size": [ 44, 88 ] },
+      { "monster": "mon_zombie_swarmer_weak", "freq": 1, "cost_multiplier": 23, "pack_size": [ 44, 88 ], "starts": 4380 },
       {
         "//": "Lets fill the streets with these!",
         "monster": "mon_zombie_swarmer_weak",
         "freq": 1,
         "cost_multiplier": 40,
         "pack_size": [ 88, 176 ],
-        "starts": 2912
+        "starts": 8760
       },
       { "monster": "mon_zombie_swarmer_weak", "freq": 100, "cost_multiplier": 0, "pack_size": [ 3, 5 ] },
       { "monster": "mon_zombie_blade", "freq": 10, "cost_multiplier": 4 },
@@ -31,17 +31,17 @@
         "monster": "mon_zombie_nocturne",
         "freq": 1,
         "cost_multiplier": 40,
-        "starts": 1092,
+        "starts": 4380,
         "conditions": [ "DUSK", "NIGHT" ]
       },
-      { "monster": "mon_zombie_nix", "freq": 1, "cost_multiplier": 25, "starts": 1092 },
-      { "monster": "mon_zombie_fleshmonger", "freq": 1, "cost_multiplier": 40, "starts": 1092 },
-      { "monster": "mon_zombie_gorepit", "freq": 1, "cost_multiplier": 65, "starts": 1456 },
-      { "monster": "mon_zombie_cordev", "freq": 1, "cost_multiplier": 55, "starts": 1456 },
-      { "monster": "mon_zombie_fleshysnaky", "freq": 1, "cost_multiplier": 125, "starts": 2912 },
-      { "monster": "mon_zombie_akin", "freq": 1, "cost_multiplier": 30, "starts": 2912 },
-      { "monster": "mon_zombie_equinox", "freq": 1, "cost_multiplier": 80, "starts": 2912 },
-      { "monster": "mon_zombie_relinquish", "freq": 1, "cost_multiplier": 110, "starts": 2912 }
+      { "monster": "mon_zombie_nix", "freq": 1, "cost_multiplier": 25, "starts": 4380 },
+      { "monster": "mon_zombie_fleshmonger", "freq": 1, "cost_multiplier": 40, "starts": 4380 },
+      { "monster": "mon_zombie_gorepit", "freq": 1, "cost_multiplier": 65, "starts": 8760 },
+      { "monster": "mon_zombie_cordev", "freq": 1, "cost_multiplier": 55, "starts": 8760 },
+      { "monster": "mon_zombie_fleshysnaky", "freq": 1, "cost_multiplier": 125, "starts": 10950 },
+      { "monster": "mon_zombie_akin", "freq": 1, "cost_multiplier": 30, "starts": 10950 },
+      { "monster": "mon_zombie_equinox", "freq": 1, "cost_multiplier": 80, "starts": 10950 },
+      { "monster": "mon_zombie_relinquish", "freq": 1, "cost_multiplier": 110, "starts": 10950 }
     ]
   },
   {
@@ -101,7 +101,7 @@
   {
     "type": "monstergroup",
     "name": "DUMP_ZOMBIES",
-    "monsters": [ { "monster": "mon_zombie_fleshmonger", "freq": 1, "cost_multiplier": 30, "starts": 1092 } ]
+    "monsters": [ { "monster": "mon_zombie_fleshmonger", "freq": 1, "cost_multiplier": 30, "starts": 4380 } ]
   },
   {
     "//": "Spawn random secrolab and vanilla creatures. Scientist are common here, followed by failed specimens.",
@@ -132,7 +132,7 @@
       { "monster": "mon_zedfail_floral", "freq": 30, "cost_multiplier": 0 },
       { "monster": "mon_zedfail_twistcrawl", "freq": 25, "cost_multiplier": 0 },
       { "monster": "mon_zedfail_chomp", "freq": 35, "cost_multiplier": 0 },
-      { "monster": "mon_zedfail_squirtler", "freq": 120, "cost_multiplier": 1 },
+      { "monster": "mon_zedfail_squirtler", "freq": 10, "cost_multiplier": 0 },
       { "monster": "mon_zedbow_kaxix", "freq": 1, "cost_multiplier": 5 },
       { "monster": "mon_zedbow_axxuros", "freq": 1, "cost_multiplier": 6 },
       { "monster": "mon_zedbow_exios", "freq": 1, "cost_multiplier": 7 },
@@ -150,7 +150,7 @@
       { "monster": "mon_zedfail_floral", "freq": 25, "cost_multiplier": 0 },
       { "monster": "mon_zedfail_twistcrawl", "freq": 20, "cost_multiplier": 0 },
       { "monster": "mon_zedfail_chomp", "freq": 30, "cost_multiplier": 0 },
-      { "monster": "mon_zedfail_squirtler", "freq": 40, "cost_multiplier": 3 }
+      { "monster": "mon_zedfail_squirtler", "freq": 5, "cost_multiplier": 0 }
     ]
   },
   {
