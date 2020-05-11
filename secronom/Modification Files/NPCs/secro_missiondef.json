@@ -106,6 +106,7 @@
       }
     },
     "end": { "effect": { "duration": "PERMANENT", "u_add_effect": "secro_guard_partake_mission1" } },
+    "followup": "MISSION_SECRO_GUARD_HELP_SHAPESHIFTER",
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "…",
@@ -148,12 +149,38 @@
     "dialogue": {
       "describe": "…",
       "offer": "You must obtain a sample from that creature using a sampler kit I'm about to provide once you're ready.",
-      "accepted": "But remember, this creature uses deception to hide itself.",
+      "accepted": "Okay, here's the kit. It is set to scan for an enigma specimen. I've sent the coordinates to our guard and talk to him about this, he'll show you the way. But remember, this creature uses deception to hide itself.",
       "rejected": "Well then... Lets talk about it again later.",
-      "advice": "The images captured from that creature are blurry and undecipherable...",
+      "advice": "Be cautious on using the sampler kit, as it scans only the enigma, otherwise you'll waste batteries.",
       "inquire": "How's the sample?",
       "success": "Well done, survivor. I'll start to identify this resin, and hope it can of good use.",
       "success_lie": "...",
+      "failure": "..."
+    }
+  },
+  {
+    "id": "MISSION_SECRO_GUARD_HELP_SHAPESHIFTER",
+    "type": "mission_definition",
+    "name": { "str": "Slay the shapeshifter?" },
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 5,
+    "value": 200000,
+    "start": {
+      "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_guard_mission2_progress" }, "follow_only" ],
+      "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 1, "search_range": 15, "z": 0 },
+      "update_mapgen": { "place_monster": [ { "monster": "mon_shifter_zombie", "x": 11, "y": 11, "target": true } ] }
+    },
+    "end": { "effect": { "duration": "PERMANENT", "u_add_effect": "secro_guard_partake_mission2" } },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "…",
+      "offer": "She gave me the coordinates as soon as the drone reported her. I'll help you out collecting the sample, and fend off this creature from you. So, are you ready?",
+      "accepted": "Good. The target is not far from here.",
+      "rejected": "Just ask me again once you're ready to take on.",
+      "advice": "I never encountered this creature...",
+      "inquire": "Did you killed them?",
+      "success": "Wait. It's not the right one... I guess we lost it.",
+      "success_lie": "Really? I've come alongside you and yet you lied to something you obviously didn't do?",
       "failure": "..."
     }
   }
