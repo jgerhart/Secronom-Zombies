@@ -73,7 +73,8 @@
         "condition": {
           "and": [
             { "not": { "u_has_effect": "secro_researcher_mission1_gonnastart" } },
-            { "u_has_effect": "secro_researcher_guard_mission1_done" }
+            { "u_has_effect": "secro_researcher_guard_mission1_done" },
+            { "not": { "u_has_effect": "secro_researcher_mission1_progress" } }
           ]
         }
       },
@@ -83,7 +84,8 @@
         "condition": {
           "and": [
             { "u_has_effect": "secro_researcher_searching_shapeshifter" },
-            { "u_has_effect": "secro_researcher_mission1_gonnastart" }
+            { "u_has_effect": "secro_researcher_mission1_gonnastart" },
+            { "not": { "u_has_effect": "secro_researcher_mission1_progress" } }
           ]
         }
       },
@@ -220,11 +222,6 @@
     "type": "talk_topic",
     "id": "TALK_SECRO_RESEARCHER_mission1_start",
     "dynamic_line": "The drone has revealed the location of our target.",
-    "responses": [
-      {
-        "text": "Okay, what should I do?",
-        "topic": "TALK_MISSION_OFFER"
-      }
-    ]
+    "responses": [ { "text": "Okay, what should I do?", "topic": "TALK_MISSION_OFFER" } ]
   }
 ]
