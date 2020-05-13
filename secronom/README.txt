@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.9 - Focuses on improving the secronom lab by adding NPCs and expanding the facility. May also work on new contents and/or rework existing ones. <--
+--> V1.9 - Focuses on improving the secronom lab by adding NPCs and expanding the facility. Also focuses on creating power armors, with different functions. <--
 
 #  TILESET REWORKS (if possible)
 
