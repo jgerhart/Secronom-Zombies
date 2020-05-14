@@ -667,14 +667,14 @@
       {
         "type": "spell",
         "spell_data": { "id": "mon_sflesh_fleshling_tiny_devour" },
-        "cooldown": 20,
+        "cooldown": 50,
         "monster_message": "<color_magenta>%1$s devours %3$s...</color>",
         "self": true
       }
     ],
-    "harvest": "zombie_meatslug",
-    "death_function": [ "SPLATTER", "MELT" ],
-    "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "PACIFIST" ]
+    "harvest": "exempt",
+    "death_function": [ "MELT" ],
+    "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "ABSORBS", "PACIFIST" ]
   },
   {
     "id": "mon_sflesh_fleshling_smol",
@@ -698,9 +698,18 @@
     "melee_dice": 2,
     "melee_dice_sides": 3,
     "melee_cut": 3,
-    "harvest": "zombie_meatslug",
-    "death_function": [ "SPLATTER", "MELT" ],
-    "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "PACIFIST" ]
+    "harvest": "exempt",
+    "death_function": [ "MELT" ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "mon_sflesh_fleshling_smol_devour" },
+        "cooldown": 25,
+        "monster_message": "<color_magenta>%1$s devours %3$s...</color>",
+        "self": true
+      }
+    ],
+    "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "ABSORBS", "PACIFIST" ]
   },
   {
     "id": "mon_sflesh_fleshling_med",
@@ -715,7 +724,7 @@
     "hp": 40,
     "speed": 55,
     "material": [ "flesh" ],
-    "symbol": "◈",
+    "symbol": "◆",
     "color": "light_red",
     "aggression": 100,
     "morale": 100,
@@ -724,15 +733,24 @@
     "melee_dice": 3,
     "melee_dice_sides": 4,
     "melee_cut": 4,
-    "harvest": "zombie_meatslug",
-    "death_function": [ "SPLATTER", "MELT" ],
-    "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "PACIFIST" ]
+    "harvest": "exempt",
+    "death_function": [ "MELT" ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "mon_sflesh_fleshling_med_devour" },
+        "cooldown": 75,
+        "monster_message": "<color_magenta>%1$s devours %3$s...</color>",
+        "self": true
+      }
+    ],
+    "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "ABSORBS", "PACIFIST" ]
   },
   {
     "id": "mon_sflesh_fleshling_big",
     "type": "MONSTER",
     "name": "big flesh blob",
-    "description": "A large slab of meat that's larger than a human . Will try to devour anything nearby.",
+    "description": "A big slab of meat that's larger than a human. Will try to devour anything nearby.",
     "default_faction": "secro_flesh2",
     "bodytype": "blob",
     "species": [ "SFLESH", "ABERRATION" ],
@@ -741,7 +759,7 @@
     "hp": 80,
     "speed": 45,
     "material": [ "flesh" ],
-    "symbol": "◈",
+    "symbol": "●",
     "color": "light_red",
     "aggression": 100,
     "morale": 100,
@@ -750,15 +768,24 @@
     "melee_dice": 4,
     "melee_dice_sides": 5,
     "melee_cut": 5,
-    "harvest": "zombie_meatslug",
-    "death_function": [ "SPLATTER", "MELT" ],
-    "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "PACIFIST" ]
+    "harvest": "exempt",
+    "death_function": [ "MELT" ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "mon_sflesh_fleshling_big_devour" },
+        "cooldown": 100,
+        "monster_message": "<color_magenta>%1$s devours %3$s...</color>",
+        "self": true
+      }
+    ],
+    "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "ABSORBS", "PACIFIST" ]
   },
   {
     "id": "mon_sflesh_fleshling_huge",
     "type": "MONSTER",
     "name": "flesh mound",
-    "description": "A humongous conglomeration of rotten flesh, as large as a tank. Can devour anything nearby.",
+    "description": "A humongous conglomeration of rotten flesh, as large as a tank. Can devour anything.",
     "default_faction": "secro_flesh2",
     "bodytype": "blob",
     "species": [ "SFLESH", "ABERRATION" ],
@@ -767,7 +794,7 @@
     "hp": 360,
     "speed": 30,
     "material": [ "flesh" ],
-    "symbol": "◆",
+    "symbol": "⬤",
     "color": "light_red",
     "aggression": 100,
     "morale": 100,
@@ -776,8 +803,17 @@
     "melee_dice": 7,
     "melee_dice_sides": 8,
     "melee_cut": 8,
-    "harvest": "zombie_meatslug",
-    "death_function": [ "SPLATTER", "MELT" ],
-    "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "PACIFIST" ]
+    "harvest": "exempt",
+    "death_function": [ "MELT" ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "mon_sflesh_fleshling_huge_devour" },
+        "cooldown": 150,
+        "monster_message": "<color_light_red>%1$s devours %3$s...</color>",
+        "self": true
+      }
+    ],
+    "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "ABSORBS", "PACIFIST" ]
   }
 ]
