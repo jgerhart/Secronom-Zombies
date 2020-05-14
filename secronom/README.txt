@@ -16,6 +16,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  NPCS (they provide a subtle lore and few other features)
 +  EXPERIMENTAL MUTATIONS (3 new mutation paths)
 +  SECRONOM LAB (more rooms)
++  CRIMSON HORROR (fleshlings)
 
 ~  CITY ZED REBALANCES (tweaked the stats of tendril, blade and spider zombies, for early game balance)
 ~  SHAPESHIFTER REWORKS (now much more deadly with improved abilities)
