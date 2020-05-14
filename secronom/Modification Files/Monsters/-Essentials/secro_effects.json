@@ -906,6 +906,15 @@
     "scaling_mods": { "size_mod": [ 0.05 ] }
   },
   {
+    "type": "effect_type",
+    "id": "secro_flesh_satisfy",
+    "name": [ "Satisfied" ],
+    "desc": [ "You've devoured something earlier." ],
+    "max_duration": "2 minutes",
+    "rating": "good",
+    "base_mods": { "speed_mod": [ -50 ] }
+  },
+  {
     "note": "Effects for notifying the player. This method is a bit unstable...",
     "type": "effect_type",
     "id": "mon_zombie_swarmer_evo_savage_tension_target_random_YES",
