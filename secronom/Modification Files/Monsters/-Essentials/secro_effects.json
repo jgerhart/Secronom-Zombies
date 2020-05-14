@@ -828,7 +828,7 @@
     "type": "effect_type",
     "id": "secro_gravtur_magnet",
     "name": [ "Magnetized" ],
-    "desc": [ "You are unable to move." ],
+    "desc": [ "Your movements were hampered." ],
     "apply_message": "You were magnetized!",
     "rating": "bad",
     "max_duration": "3 s",
@@ -844,6 +844,66 @@
     "type": "effect_type",
     "id": "mon_shifter_onslaught_dmgpure_dmg",
     "base_mods": { "hurt_min": [ 8 ], "hurt_max": [ 16 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_power_armor_flesh_devouring_note",
+    "apply_message": "You body fills in with distress...",
+    "remove_message": "The flesh ceases to spread... for now.",
+    "rating": "bad",
+    "base_mods": {
+      "hurt_min": [ 1 ],
+      "hurt_chance": [ 20 ],
+      "pain_min": [ 1 ],
+      "pain_chance": [ 10 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_power_armor_flesh_devouring",
+    "rating": "bad",
+    "base_mods": {
+      "hurt_min": [ 1 ],
+      "hurt_chance": [ 20 ],
+      "pain_min": [ 1 ],
+      "pain_chance": [ 10 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_power_armor_flesh_linked",
+    "name": [ "Linked" ],
+    "desc": [ "Your mind were linked to your power armor!\nThis effect applies only when you wear the flesh vessel" ],
+    "max_duration": 6,
+    "main_parts_only": true,
+    "rating": "good",
+    "removes_effects": [ "secro_power_armor_flesh_devouring_note", "secro_power_armor_flesh_devouring" ],
+    "blocks_effects": [ "secro_power_armor_flesh_devouring_note", "secro_power_armor_flesh_devouring" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_power_armor_flesh_morphed_tentacles_eff",
+    "name": [ "Injected" ],
+    "desc": [ "You have been injected with a paralyzing chemical!" ],
+    "apply_message": "You felt numb all of a sudden!",
+    "rating": "bad",
+    "max_duration": "20 s",
+    "max_intensity": 5,
+    "base_mods": { "speed_mod": [ -25 ] },
+    "scaling_mods": { "speed_mod": [ -10 ] },
+    "show_in_info": true
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_flesh_growth",
+    "name": [ "Growing" ],
+    "desc": [ "You are growing!" ],
+    "show_in_info": true,
+    "int_add_val": 1,
+    "int_dur_factor": "1 minutes",
+    "max_intensity": 100,
+    "base_mods": { "size_mod": [ 0.05 ] },
+    "scaling_mods": { "size_mod": [ 0.05 ] }
   },
   {
     "note": "Effects for notifying the player. This method is a bit unstable...",
@@ -1013,6 +1073,12 @@
     "id": "mon_shifter_target_atk_onslaught_illu_YES",
     "apply_message": "A silhouette were formed before the shapeshifter!",
     "rating": "mixed"
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_power_armor_flesh_morphed_gun_spit_as_YES",
+    "apply_message": "Your armament - spitter shoots a glob of blood acid!",
+    "rating": "good"
   },
   {
     "note": "Effects used for immunity fields",
