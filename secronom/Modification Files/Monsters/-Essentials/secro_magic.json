@@ -4534,5 +4534,90 @@
     "effect": "target_attack",
     "min_range": 3,
     "max_range": 3
+  },
+  {
+    "id": "mon_sflesh_fleshling_grow",
+    "type": "SPELL",
+    "name": "Grow",
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster builds mass after devouring.'",
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "effect_str": "secro_flesh_growth",
+    "min_duration": 9000,
+    "max_duration": 9000
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_sflesh_fleshling_tiny_evo",
+    "name": "Grow",
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster grows into a small flesh blob.'",
+    "flags": [ "SILENT", "PERMANENT", "HOSTILE_SUMMON" ],
+    "valid_targets": [ "ground" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "effect": "summon",
+    "effect_str": "mon_sflesh_fleshling_smol"
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_sflesh_fleshling_tiny_evo_target",
+    "name": "a spell",
+    "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
+    "extra_effects": [
+      { "id": "sacrifice_spell", "hit_self": true },
+      { "id": "mon_sflesh_fleshling_tiny_evo", "hit_self": true }
+    ],
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "ally", "hostile", "ground" ],
+    "effect": "target_attack",
+    "min_range": 1,
+    "max_range": 1
+  },
+  {
+    "type": "SPELL",
+    "id": "mon_sflesh_fleshling_tiny_evo_target_random",
+    "name": "a spell",
+    "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then randomly casts one of the Spell(s).'",
+    "extra_effects": [
+      { "id": "mon_sflesh_fleshling_tiny_evo_target" },
+      { "id": "secro_spell_null" },
+      { "id": "secro_spell_null" },
+      { "id": "secro_spell_null" },
+      { "id": "secro_spell_null" },
+      { "id": "secro_spell_null" },
+      { "id": "secro_spell_null" },
+      { "id": "secro_spell_null" },
+      { "id": "secro_spell_null" },
+      { "id": "secro_spell_null" },
+      { "id": "secro_spell_null" }
+    ],
+    "flags": [ "SILENT", "WONDER" ],
+    "valid_targets": [ "hostile" ],
+    "effect": "target_attack",
+    "effect_str": "secro_magic_target",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 1,
+    "max_range": 1,
+    "min_duration": 1,
+    "max_duration": 1
+  },
+  {
+    "id": "mon_sflesh_fleshling_tiny_devour",
+    "type": "SPELL",
+    "name": "Devour",
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster devours its target, dealing biological damage.'",
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
+    "valid_targets": [ "hostile", "ally" ],
+    "effect": "projectile_attack",
+    "extra_effects": [
+      { "id": "mon_sflesh_fleshling_grow", "hit_self": true },
+      { "id": "mon_sflesh_fleshling_tiny_evo_target_random" }
+    ],
+    "min_damage": 2,
+    "max_damage": 3,
+    "min_range": 1,
+    "max_range": 1
   }
 ]
