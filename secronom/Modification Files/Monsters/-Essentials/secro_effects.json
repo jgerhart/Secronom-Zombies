@@ -882,7 +882,7 @@
   },
   {
     "type": "effect_type",
-    "id": "secro_power_armor_flesh_morphed_tentacles_eff",
+    "id": "secro_power_armor_flesh_morphed_fite_tentacles_eff",
     "name": [ "Injected" ],
     "desc": [ "You have been injected with a paralyzing chemical!" ],
     "apply_message": "You felt numb all of a sudden!",
@@ -913,6 +913,26 @@
     "max_duration": "2 minutes",
     "rating": "good",
     "base_mods": { "speed_mod": [ -50 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_skeletaloutburst_cost",
+    "rating": "bad",
+    "base_mods": {
+      "hurt_min": [ 2 ],
+      "pain_min": [ 0 ],
+      "pain_max": [ 2 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_power_armor_flesh_created_gun_bonerifle_cost",
+    "rating": "bad",
+    "base_mods": {
+      "hurt_min": [ 5 ],
+      "pain_min": [ 1 ],
+      "pain_max": [ 7 ]
+    }
   },
   {
     "note": "Effects for notifying the player. This method is a bit unstable...",
@@ -1086,7 +1106,7 @@
   {
     "type": "effect_type",
     "id": "secro_power_armor_flesh_morphed_gun_spit_as_YES",
-    "apply_message": "Your armament - spitter shoots a glob of blood acid!",
+    "apply_message": "Your spitter armament shoots a glob of blood acid!",
     "rating": "good"
   },
   {
