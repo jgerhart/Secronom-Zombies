@@ -24,8 +24,10 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 ~  CITY ZED REBALANCES (tweaked the stats of tendril, blade and spider zombies, for early game balance)
 ~  SHAPESHIFTER REWORKS (now much more deadly with improved abilities)
+~  FLESHED TER/FURN (almost all fleshed ter/furn counterparts has a fixed bash resistance)
 
 -  UNKNOWN RACES REWORK (removed the wandering portal "???". Unknown creatures now spawn in the wild)
+-  SADDLERS (now are butchered for tainted meat)
 
 
 
