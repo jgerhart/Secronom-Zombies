@@ -20,6 +20,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  POWER ARMOR MODULES (module implants for power armor augmentations)
 +  CRIMSON HORROR (fleshlings)
 +  VESSEL MORPH/FORM (flesh vessel abilities)
++  FLESHED MILITARY BUNKERS (same old bunker, but it's infested by the flesh)
 
 ~  CITY ZED REBALANCES (tweaked the stats of tendril, blade and spider zombies, for early game balance)
 ~  SHAPESHIFTER REWORKS (now much more deadly with improved abilities)
