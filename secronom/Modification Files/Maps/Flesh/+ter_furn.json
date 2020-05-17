@@ -679,7 +679,7 @@
     "color": "red",
     "move_cost": 0,
     "flags": [ "TRANSPARENT", "NOITEM", "PERMEABLE", "CONNECT_TO_WALL", "THIN_OBSTACLE", "S_FLESH" ],
-    "bash": { "str_min": 65, "str_max": 255, "sound": "metal screeching!", "sound_fail": "splat!", "ter_set": "t_bars" }
+    "bash": { "str_min": 65, "str_max": 255, "sound": "splash!", "sound_fail": "splat!", "ter_set": "t_bars" }
   },
   {
     "type": "terrain",
@@ -819,7 +819,7 @@
     "coverage": 95,
     "roof": "t_secro_flat_roof_flesh",
     "flags": [ "NOITEM", "S_FLESH", "CONNECT_TO_WALL", "MINEABLE", "BLOCK_WIND" ],
-    "bash": { "str_min": 85, "str_max": 255, "sound": "metal screeching!", "sound_fail": "splat!", "ter_set": "t_door_metal_c" }
+    "bash": { "str_min": 85, "str_max": 255, "sound": "splash!", "sound_fail": "splat!", "ter_set": "t_door_metal_c" }
   },
   {
     "type": "terrain",
@@ -835,7 +835,7 @@
     "bash": {
       "str_min": 85,
       "str_max": 255,
-      "sound": "metal screeching!",
+      "sound": "splash!",
       "sound_fail": "splat!",
       "ter_set": "t_door_metal_locked"
     }
@@ -987,7 +987,7 @@
     "bash": {
       "str_min": 23,
       "str_max": 85,
-      "sound": "metal screeching!",
+      "sound": "splash!",
       "sound_fail": "splat!",
       "ter_set": "t_gates_mech_control"
     }
@@ -1005,7 +1005,7 @@
     "bash": {
       "str_min": 23,
       "str_max": 85,
-      "sound": "metal screeching!",
+      "sound": "splash!",
       "sound_fail": "splat!",
       "ter_set": "t_gates_control_concrete"
     }
@@ -1086,7 +1086,7 @@
     "move_cost": 0,
     "roof": "t_secro_flat_roof_flesh",
     "flags": [ "TRANSPARENT", "NOITEM", "CONNECT_TO_WALL", "THIN_OBSTACLE", "S_FLESH" ],
-    "bash": { "str_min": 65, "str_max": 255, "sound": "metal screeching!", "sound_fail": "splat!", "ter_set": "t_window_bars" }
+    "bash": { "str_min": 65, "str_max": 255, "sound": "splash!", "sound_fail": "splat!", "ter_set": "t_window_bars" }
   },
   {
     "type": "terrain",
@@ -1109,7 +1109,7 @@
     ],
     "connects_to": "CHAINFENCE",
     "examine_action": "chainfence",
-    "bash": { "str_min": 15, "str_max": 155, "sound": "metal screeching!", "sound_fail": "splat!", "ter_set": "t_chainfence" }
+    "bash": { "str_min": 15, "str_max": 155, "sound": "splash!", "sound_fail": "splat!", "ter_set": "t_chainfence" }
   },
   {
     "type": "terrain",
@@ -1126,7 +1126,7 @@
       "str_max": 155,
       "str_min_blocked": 25,
       "str_max_blocked": 185,
-      "sound": "metal screeching!",
+      "sound": "splash!",
       "sound_fail": "splat!",
       "ter_set": "t_chaingate_l"
     }
@@ -1146,7 +1146,7 @@
       "str_max": 155,
       "str_min_blocked": 25,
       "str_max_blocked": 185,
-      "sound": "metal screeching!",
+      "sound": "splash!",
       "sound_fail": "splat!",
       "ter_set": "t_chaingate_c"
     }
@@ -1189,5 +1189,166 @@
     "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND", "S_FLESH" ],
     "connects_to": "WALL",
     "bash": { "str_min": 65, "str_max": 165, "sound": "crash!", "sound_fail": "splat!", "ter_set": "t_brick_wall" }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_concrete_wall_flesh",
+    "name": "fleshed concrete wall",
+    "description": "An already unpleasant wall infected by the flesh.",
+    "symbol": "LINE_OXOX",
+    "color": "red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "S_FLESH", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 75,
+      "str_max": 305,
+      "sound": "crash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_concrete_wall"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_wall_metal_flesh",
+    "name": "fleshed metal wall",
+    "description": "A thick, blast-proof metal wall overrun by the flesh. Now you've got more time to take it down.",
+    "symbol": "LINE_OXOX",
+    "color": "light_red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "S_FLESH", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 205,
+      "str_max": 605,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_wall_metal"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_reinforced_glass_flesh",
+    "name": "fleshed reinforced glass",
+    "description": "Thick, durable pane of reinforced glass infested by flesh. Not only it is tough, it completely blocks the vision through it.",
+    "symbol": "LINE_OXOX",
+    "color": "light_red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "TRANSPARENT", "NOITEM", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "S_FLESH", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 45,
+      "str_max": 215,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_reinforced_glass"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_water_dispenser_flesh",
+    "name": "fleshed water dispenser",
+    "description": "A machine with several taps that dispenses clean water. Although, the flesh clogs the dispenser, rendering it useless.",
+    "symbol": "W",
+    "color": "light_red",
+    "move_cost": 0,
+    "coverage": 40,
+    "flags": [ "TRANSPARENT", "S_FLESH" ],
+    "bash": {
+      "str_min": 20,
+      "str_max": 85,
+      "sound": "splash!",
+      "sound_fail": "splat.",
+      "ter_set": "t_water_dispenser"
+    }
+  },
+  {
+   "type": "terrain",
+    "id": "t_secro_ballistic_glass_flesh",
+    "name": "fleshed ballistic glass",
+    "looks_like": "t_reinforced_glass",
+    "description": "Overrun by the flesh, this stacked up laminated glass is much tougher than before.",
+    "symbol": "LINE_OXOX",
+    "color": "light_red",
+    "move_cost": 0,
+    "roof": "t_secro_flat_roof_flesh",
+    "flags": [ "TRANSPARENT", "NOITEM", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND", "S_FLESH" ],
+    "bash": {
+      "str_min": 205,
+      "str_max": 405,
+      "sound": "splash!",
+      "sound_fail": "splat!",
+      "ter_set": "t_ballistic_glass"
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_card_flesh",
+    "name": "card reader",
+    "description": "This is a smartcard reader. Engraved is a text saying \"Secronom Project\" underneath a biohazard symbol. You'll definitely need a special keycard of some sort to unlock the door.",
+    "//": "Secronom. You'll find the keycard in the secronom lab.",
+    "symbol": "6",
+    "color": "pink",
+    "move_cost": 0,
+    "flags": [ "NOITEM", "CONNECT_TO_WALL" ],
+    "bash": {
+      "str_min": 18,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_card_reader_broken",
+      "items": [ { "item": "plastic_chunk", "count": [ 0, 2 ] }, { "item": "scrap", "prob": 50 } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_door_metal_secrofv",
+    "name": "biohazard metal door",
+    "description": "A galvanized steel door, forged to withstand punishment and impede anyone or anything. Typically used in conjunction with automated electronic locking mechanisms that require an external source to unlock. It has a biohazard symbol depicting something unearthly on the other side... as the flesh fibers crawl out of the edges. A card reader is embedded to the door, and it requires a special key card for it to open.",
+    "//": "Actually locked, as in, LOCKED",
+    "symbol": "+",
+    "looks_like": "t_door_metal_c",
+    "color": "cyan",
+    "move_cost": 0,
+    "coverage": 95,
+    "roof": "t_flat_roof",
+    "flags": [ "NOITEM", "REDUCE_SCENT", "CONNECT_TO_WALL", "LOCKED", "MINEABLE", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 120,
+      "str_max": 350,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "ter_set": "t_mdoor_frame",
+      "items": [
+        { "item": "scrap", "count": [ 15, 30 ] },
+        { "item": "steel_plate", "prob": 80 },
+        { "item": "hinge", "count": [ 1, 4 ] }
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_secro_experiment_vat",
+    "name": "experimental vat",
+    "description": "A large vat full of yellowish solution. Flesh seems to surround the glass tube, as if they are concealing something...",
+    "symbol": "0",
+    "color": "light_red",
+    "looks_like": "t_vat",
+    "move_cost": 0,
+    "coverage": 40,
+    "roof": "t_flat_roof",
+    "flags": [ "TRANSPARENT", "SEALED", "PLACE_ITEM", "WALL" ],
+    "bash": {
+      "str_min": 12,
+      "str_max": 90,
+      "sound": "splash!",
+      "sound_fail": "splat.",
+      "sound_vol": 16,
+      "sound_fail_vol": 12,
+      "ter_set": "t_floor",
+      "items": [ { "item": "glass_shard", "count": [ 42, 84 ] }, { "item": "scrap", "count": [ 0, 2 ] } ]
+    }
   }
 ]
