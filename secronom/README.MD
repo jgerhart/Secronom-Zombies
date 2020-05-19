@@ -4,7 +4,7 @@ Its mod thread is at the [official forums](https://discourse.cataclysmdda.org/t/
 
 Mod made from various references, mixed up with random spices! A mod I've created with its original goal set to imitate the *Dead Frontier*'s zombies... Right now, **Secronom** (name referenced from the game) is a creature mod, with vast assortments of monsters in its arsenal. If you're up for an action-packed playthrough or just loves beating weird craps, activate this mod and see how your dark days get even darker!
 
-- This mod will only work with the latest experimental of CDDA. Update your client before using this.
+- This mod will only work with the latest experimental of CDDA. Update your client before activating.
 - This mod is stable. There are no known bugs that can cause fatal error, unless a recent update on CDDA broke something. Please notify me of that.
 
 ## Zombies
@@ -332,6 +332,8 @@ Great people who contributed to this ever-expanding mod :>
 
 * **SomeDeadGuy** - He drew everything in this mod and made it compatible for the UndeadPeople tileset.
 * **RickyVanz** - His 2 new sci-fi guns eased the game a bit.
-* **ephemeralstoryteller** - She fixed the color bug when I'm not around.
-* **Kenan2000** - He helped with some bugfixes.
+* **ephemeralstoryteller** - She fixed the majority of color bugs when I'm not around.
+* **Kenan2000** - He helped with some bugfixes. Also my modding companion.
 * **The Go-Goat** - She shared some ideas with mutations.
+* **SzQ** - He helped on developing/expanding the flesh and flesh vessel exoskeletons.
+* **Lurak** and **Malkeus42** - They've suggested some in-game rebalances/tweaks.
