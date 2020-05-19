@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.9 - Focuses on improving the secronom lab by adding NPCs and expanding the facility. Also focuses on creating power armors, with different functions. <--
+--> V1.9 - Focuses on improving the secronom lab by adding NPCs and expanding the facility. Also focuses on creating power armors with different functions and finding more bugs in the mod. <--
 
 #  TILESET REWORKS (if possible)
 
@@ -21,6 +21,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  CRIMSON HORROR (fleshlings)
 +  VESSEL MORPH/FORM (flesh vessel abilities)
 +  FLESHED MILITARY BUNKERS (same old bunker, but it's infested by the flesh)
++  VESSEL EXPANSION (5 more types of flesh vessels)
 
 ~  CITY ZED REBALANCES (tweaked the stats of tendril, blade and spider zombies, for early game balance)
 ~  SHAPESHIFTER REWORKS (now much more deadly with improved abilities)
