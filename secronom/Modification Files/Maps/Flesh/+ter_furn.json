@@ -34,8 +34,7 @@
       "str_max": 16,
       "sound": "splash!",
       "sound_fail": "splat!",
-      "ter_set": "t_null",
-      "items": "wall_bash_results"
+      "ter_set": "t_wall"
     }
   },
   {
@@ -1119,7 +1118,7 @@
     "color": "light_red",
     "move_cost": 0,
     "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "NOITEM", "CONNECT_TO_WALL", "THIN_OBSTACLE", "S_FLESH" ],
+    "flags": [ "NOITEM", "CONNECT_TO_WALL", "THIN_OBSTACLE", "S_FLESH" ],
     "bash": { "str_min": 8,
       "str_max": 16, "sound": "splash!", "sound_fail": "splat!", "ter_set": "t_window_bars" }
   },
@@ -1201,12 +1200,12 @@
     "type": "terrain",
     "id": "t_secro_reinforced_door_glass_flesh",
     "name": "fleshed reinforced glass door",
-    "description": "A reinforced glass door infested by flesh. Opening it might be a major problem...",
+    "description": "A reinforced glass door infested by flesh. Opening it might be a minor problem...",
     "symbol": "+",
     "color": "red",
     "move_cost": 0,
     "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "NOITEM", "CONNECT_TO_WALL", "MINEABLE", "BLOCK_WIND", "S_FLESH" ],
+    "flags": [ "NOITEM", "CONNECT_TO_WALL", "MINEABLE", "BLOCK_WIND", "S_FLESH" ],
     "bash": { "str_min": 8,
       "str_max": 16, "sound": "splash!", "sound_fail": "splat!", "ter_set": "t_reinforced_door_glass_c" }
   },
@@ -1272,7 +1271,7 @@
     "color": "light_red",
     "move_cost": 0,
     "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "NOITEM", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "S_FLESH", "BLOCK_WIND" ],
+    "flags": [ "NOITEM", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "S_FLESH", "BLOCK_WIND" ],
     "bash": {
       "str_min": 8,
       "str_max": 16,
@@ -1309,7 +1308,7 @@
     "color": "light_red",
     "move_cost": 0,
     "roof": "t_secro_flat_roof_flesh",
-    "flags": [ "TRANSPARENT", "NOITEM", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND", "S_FLESH" ],
+    "flags": [ "NOITEM", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND", "S_FLESH" ],
     "bash": {
       "str_min": 8,
       "str_max": 16,
