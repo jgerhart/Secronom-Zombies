@@ -1187,6 +1187,14 @@
     "note": "Used only on tamed secronom dragon, so players would be able to ride it.",
     "type": "effect_type",
     "id": "pet",
+    "max_duration": 10,
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "pacified",
+    "max_duration": 10,
     "name": [ "" ],
     "desc": [ "" ]
   }
