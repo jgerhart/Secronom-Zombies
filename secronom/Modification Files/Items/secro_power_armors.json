@@ -223,7 +223,7 @@
     "charges_per_use": 10,
     "use_action": {
       "type": "cast_spell",
-      "spell_id": "secro_power_armor_flesh_morphform_list",
+      "spell_id": "secro_power_armor_flesh_coward_morphform_list",
       "no_fail": true,
       "need_worn": true,
       "level": 0
@@ -342,7 +342,16 @@
             { "value": "MAX_HP", "multiply": 0.025 },
             { "value": "METABOLISM", "multiply": 0.0625 }
           ],
-          "intermittent_activation": { "effects": [ { "frequency": "3 minutes", "spell_effects": [ { "id": "secro_power_armor_flesh_devour_note" } ] } ] }
+          "intermittent_activation": { "effects": [ { "frequency": "3 minutes", "spell_effects": [ { "id": "secro_power_armor_flesh_devour_note" } ] }, { "frequency": "1 seconds", "spell_effects": [ { "id": "secro_power_armor_flesh_infect_or_random" } ] } ] },
+          "hit_you_effect": [
+            {
+              "id": "mon_flesh_infect_target",
+              "hit_self": false,
+              "once_in": 10,
+              "message": "Your vessel infects %2$s!",
+              "npc_message": "%1$s's vessel infects %2$s!"
+            }
+          ]
         }
       ]
     },
