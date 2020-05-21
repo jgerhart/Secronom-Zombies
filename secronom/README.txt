@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.9 - Alternately working on NPCs, the flesh, power armors and bugfixing existing ones. <--
+--> V1.9 - Alternately working on NPCs, the flesh's features, power armors and bugfixing existing ones. <--
 
 #  TILESET REWORKS (if possible)
 
@@ -17,7 +17,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  EXPERIMENTAL MUTATIONS (3 new mutation paths)
 +  SECRONOM LAB (more rooms)
 +  SECRONOM EXOSKELETONS (2 new power armors)
-+  POWER ARMOR MODULES (module implants for power armor augmentations)
++  POWER ARMOR MODULES (module implants for power armors)
 +  CRIMSON HORROR (fleshlings)
 +  VESSEL MORPH/FORM (flesh vessel abilities)
 +  FLESHED MILITARY BUNKERS (same old bunker, but it's infested by the flesh)
@@ -26,7 +26,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 ~  CITY ZED REBALANCES (tweaked the stats of tendril, blade and spider zombies, for early game balance)
 ~  SHAPESHIFTER REWORKS (now much more deadly with improved abilities)
-~  FLESHED TER/FURN (almost all fleshed ter/furn counterparts has a fixed bash resistance)
+~  FLESHED TER/FURN (almost all fleshed ter/furn counterparts now has fixed bash resistance)
 
 -  UNKNOWN RACES REWORK (removed the wandering portal "???". Unknown creatures now spawn in the wild)
 -  SADDLERS (now are butchered for tainted meat)
