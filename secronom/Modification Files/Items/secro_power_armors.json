@@ -305,7 +305,7 @@
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": { "str": "flesh vessel \"Pathogen\"" },
-    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel (Pathogen)\" is the result of prolonged research for augmentation using mutagens. Its cell structure is much more intricate than the other vessel types, in which it allows mutual connection to the crimson horrors in trade of greatly reduced proficiency on morphing and forming. Due to its extreme need of organic compounds, users may not last long wearing the suit.\n\nSecronom exoskeleton type \"Vessel (Pathogen)\" provides:\n<color_white>Maximum health: <color_light_green>+5%</color>\nBiological armor: <color_light_green>+1</color>\nMetabolism: <color_red>+12.5%</color></color>",
+    "description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel (Pathogen)\" is the result of prolonged research for augmentation using mutagens. Its cell structure is much more intricate than the other vessel types, in which it allows mutual connection to the crimson horrors in trade of greatly reduced proficiency on morphing and forming. Due to its extreme need of organic compounds, users may not last long wearing the suit.\n\nSecronom exoskeleton type \"Vessel (Pathogen)\" provides:\n<color_white>Maximum health: <color_light_green>+5%</color>\nBiological armor: <color_light_green>+1</color>\nMetabolism: <color_red>+12.5%</color></color>\n\nActivate to perform:\n<color_cyan><color_pink>[FORM]</color> The Flesh</color> - <color_yellow>60000 movecost</color>/<color_red>100 flesh</color>\n<color_white>* Your flesh vessel forms a sentient flesh hivemind. This hivemind sticks to the the location it is placed, then slowly dominates the surrounding area. Interact for additional commands.</color>",
     "weight": "17600 g",
     "volume": "19 L",
     "price": 32300000,
@@ -324,13 +324,13 @@
     "material_thickness": 24,
     "environmental_protection": 12,
     "power_armor": true,
-    "charges_per_use": 10,
+    "charges_per_use": 500,
     "use_action": {
-      "type": "cast_spell",
-      "spell_id": "secro_power_armor_flesh_morphform_list",
-      "no_fail": true,
-      "need_worn": true,
-      "level": 0
+      "type": "place_npc",
+      "npc_class_id": "secronom_flesh",
+      "summon_msg": "You sacrificed a huge amount of flesh to make an artificial flesh hivemind...",
+      "place_randomly": false,
+      "moves": 60000
     },
     "relic_data": {
       "passive_effects": [
@@ -342,12 +342,17 @@
             { "value": "MAX_HP", "multiply": 0.025 },
             { "value": "METABOLISM", "multiply": 0.0625 }
           ],
-          "intermittent_activation": { "effects": [ { "frequency": "3 minutes", "spell_effects": [ { "id": "secro_power_armor_flesh_devour_note" } ] }, { "frequency": "1 seconds", "spell_effects": [ { "id": "secro_power_armor_flesh_infect_or_random" } ] } ] },
+          "intermittent_activation": {
+            "effects": [
+              { "frequency": "3 minutes", "spell_effects": [ { "id": "secro_power_armor_flesh_devour_note" } ] },
+              { "frequency": "1 seconds", "spell_effects": [ { "id": "secro_power_armor_flesh_infect_or_random" } ] }
+            ]
+          },
           "hit_you_effect": [
             {
               "id": "mon_flesh_infect_target",
               "hit_self": false,
-              "once_in": 10,
+              "once_in": 5,
               "message": "Your vessel infects %2$s!",
               "npc_message": "%1$s's vessel infects %2$s!"
             }
@@ -356,7 +361,7 @@
       ]
     },
     "ammo": "secro_flesh",
-    "magazines": [ [ "secro_flesh", [ "secro_flesh_container" ] ] ],
+    "magazines": [ [ "secro_flesh", [ "secro_flesh_container_pathogen" ] ] ],
     "magazine_well": 1,
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   }
