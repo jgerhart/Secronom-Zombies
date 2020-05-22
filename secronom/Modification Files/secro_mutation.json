@@ -800,5 +800,33 @@
     "encumbrance_always": [ [ "HEAD", 25 ] ],
     "enchantments": [ "SECRO_UNKNOWN_HAIR_SUCK_ench" ],
     "category": [ "SECRONOM_EX" ]
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_SECRONOM_FLESH",
+    "name": { "str": "Flesh" },
+    "points": 10,
+    "description": "Who needs veggy?",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true,
+    "ignored_by": [ "SFLESH" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRONOM_FLESH_BIO",
+    "name": { "str": "Bio-organic Reconstruction" },
+    "points": 10,
+    "description": "You can build a variety of structures using flesh, but you are completely immobile.",
+    "valid": false,
+    "purifiable": false,
+    "dodge_modifier": 0.1,
+    "speed_modifier": -100,
+    "movecost_modifier": 100,
+    "movecost_flatground_modifier": 100,
+    "movecost_obstacle_modifier": 100,
+    "attackcost_modifier": 100,
+    "hearing_modifier": -100,
+    "enchantments": [ "SECRONOM_FLESH_BIO_ench" ]
   }
 ]
