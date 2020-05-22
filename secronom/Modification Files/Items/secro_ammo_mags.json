@@ -20,7 +20,7 @@
     "name": { "str": "flesh", "str_pl": "fleshes" },
     "symbol": "=",
     "color": "red",
-    "description": "A throbbing, seemingly alive slab of meat. Reacts differently with a certain type of exoskeleton.",
+    "description": "A throbbing, seemingly alive slab of meat. Reacts differently once in contant with the flesh.",
     "volume": "250 ml",
     "weight": "90 g",
     "ammo_type": "secro_flesh",
@@ -62,6 +62,23 @@
     "color": "light_red",
     "ammo_type": "secro_flesh",
     "capacity": 100,
+    "flags": [ "NO_SALVAGE", "NO_UNLOAD" ]
+  },
+  {
+    "id": "secro_flesh_container_pathogen",
+    "type": "MAGAZINE",
+    "category": "spare_parts",
+    "name": { "str": "massive flesh residue" },
+    "description": "A massive pouched orifice that consumes a special type of flesh. Unifies permanently to a certain flesh vessel.",
+    "weight": "3200 g",
+    "volume": "5530 ml",
+    "price": 1,
+    "price_postapoc": 1,
+    "material": [ "flesh" ],
+    "symbol": "%",
+    "color": "light_red",
+    "ammo_type": "secro_flesh",
+    "capacity": 1000,
     "flags": [ "NO_SALVAGE", "NO_UNLOAD" ]
   },
   {
