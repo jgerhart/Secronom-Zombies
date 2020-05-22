@@ -47,7 +47,7 @@
     "name": "Transmit",
     "description": "Spell casted by an item. If you're seeing this, then read this one instead:\n'Item signals the nearby crimson horrors, hinting them the wearer is friendly.'",
     "message": "",
-    "flags": [ "SILENT", "RANDOM_TARGET", "RANDOM_DURATION" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_TARGET", "RANDOM_DURATION" ],
     "valid_targets": [ "hostile", "ally" ],
     "targeted_monster_ids": [
       "mon_sflesh_zombie_turret",
