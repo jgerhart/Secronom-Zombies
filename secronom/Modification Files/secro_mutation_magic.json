@@ -154,5 +154,51 @@
     "min_range": 2,
     "max_range": 2,
     "damage_type": "none"
+  },
+  {
+    "id": "SECRONOM_FLESH_BIO_spread_near",
+    "type": "SPELL",
+    "name": "Devour",
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster guides the flesh to spread to nearby tiles.'",
+    "flags": [ "SILENT", "IGNORE_WALLS" ],
+    "valid_targets": [ "ground", "self" ],
+    "effect": "ter_transform",
+    "effect_str": "flesh_spread",
+    "min_aoe": 4,
+    "max_aoe": 4
+  },
+  {
+    "id": "SECRONOM_FLESH_BIO_spread_far",
+    "type": "SPELL",
+    "name": "Devour",
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster guides the flesh to spread to nearby tiles. This spreading reaches further.'",
+    "flags": [ "SILENT", "IGNORE_WALLS" ],
+    "valid_targets": [ "ground", "self" ],
+    "effect": "ter_transform",
+    "effect_str": "flesh_spread",
+    "min_aoe": 12,
+    "max_aoe": 12
+  },
+  {
+    "id": "SECRONOM_FLESH_BIO_spread_veryveryfar",
+    "type": "SPELL",
+    "name": "Devour",
+    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster guides the flesh to spread to nearby tiles. This spreading reaches further.'",
+    "flags": [ "SILENT", "IGNORE_WALLS" ],
+    "valid_targets": [ "ground", "self" ],
+    "effect": "ter_transform",
+    "effect_str": "flesh_spread",
+    "min_aoe": 36,
+    "max_aoe": 36
+  },
+  {
+    "id": "SECRONOM_FLESH_BIO_disable",
+    "type": "SPELL",
+    "name": "Disable",
+    "description": "Spell casted by a mutation or trait, either passive or active. If you're seeing this, then read this one instead:\n'You are nothing, but a mere builder...'",
+    "flags": [ "SILENT", "PERMANENT" ],
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "effect_str": "blind"
   }
 ]
