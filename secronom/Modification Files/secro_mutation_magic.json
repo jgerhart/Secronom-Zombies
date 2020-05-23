@@ -163,7 +163,7 @@
     "flags": [ "SILENT", "IGNORE_WALLS" ],
     "valid_targets": [ "ground", "self" ],
     "effect": "ter_transform",
-    "effect_str": "flesh_spread",
+    "effect_str": "fv_flesh_spread",
     "min_aoe": 4,
     "max_aoe": 4
   },
@@ -175,7 +175,7 @@
     "flags": [ "SILENT", "IGNORE_WALLS" ],
     "valid_targets": [ "ground", "self" ],
     "effect": "ter_transform",
-    "effect_str": "flesh_spread",
+    "effect_str": "fv_flesh_spread",
     "min_aoe": 12,
     "max_aoe": 12
   },
@@ -187,7 +187,7 @@
     "flags": [ "SILENT", "IGNORE_WALLS" ],
     "valid_targets": [ "ground", "self" ],
     "effect": "ter_transform",
-    "effect_str": "flesh_spread",
+    "effect_str": "fv_flesh_spread",
     "min_aoe": 36,
     "max_aoe": 36
   },
