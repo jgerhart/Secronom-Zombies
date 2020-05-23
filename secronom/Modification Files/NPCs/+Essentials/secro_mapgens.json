@@ -1,35 +1,87 @@
-{
-  "type": "mapgen",
-  "method": "json",
-  "nested_mapgen_id": "secro_guard_mission1_opendadoor",
-  "object": {
-    "mapgensize": [ 24, 24 ],
-    "rows": [
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "           ee           ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        ",
-      "                        "
-    ],
-    "terrain": { "e": "t_door_metal_c" }
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "secro_guard_mission1_opendadoor",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "           ee           ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": { "e": "t_door_metal_c" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "secro_fleshcamp_start",
+    "object": {
+      "place_nested": [ { "chunks": [ "secro_fleshcamp_base" ], "x": 0, "y": 0 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "secro_fleshcamp_base",
+    "method": "json",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "         ,,,,,          ",
+        "        ,,+++,,         ",
+        "       ,,++.++,,        ",
+        "      ,,++...++,,       ",
+        "      ,++.....++,       ",
+        "      ,+.......+,       ",
+        "      ,++.....++,       ",
+        "      ,,++...++,,       ",
+        "       ,,++.++,,        ",
+        "        ,,+++,,         ",
+        "         ,,,,,          ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "faction_owner": [ { "id": "your_followers", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
+      "place_npcs": [ { "class": "secronom_flesh", "x": 11, "y": 11 } ],
+      "palettes": [ "secro_fleshcamp_pal" ]
+    }
+  },
+  {
+    "type": "palette",
+    "id": "secro_fleshcamp_pal",
+    "terrain": { ".": "t_secro_flesh_camp", "+": "t_secro_flesh_camp_wall_veins", ",": [ "t_secro_flesh_camp", "t_dirt" ] }
   }
-}
+]
