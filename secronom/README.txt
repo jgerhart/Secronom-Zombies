@@ -23,6 +23,8 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  FLESHED MILITARY BUNKERS (same old bunker, but it's infested by the flesh)
 +  VESSEL EXPANSION (5 types of flesh vessels)
 +  AMALGAMS (fleshmound offsprings)
++  PATHOGEN FLESH VESSEL (can now form a new hivemind, AKA flesh base)
++  HIVEMIND NPC (a mini version of the flesh boss that can be augmented. Interactable for developing a flesh base)
 
 ~  CITY ZED REBALANCES (tweaked the stats of tendril, blade and spider zombies, for early game balance)
 ~  SHAPESHIFTER REWORKS (now much more deadly with improved abilities)
