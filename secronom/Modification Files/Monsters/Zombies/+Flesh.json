@@ -617,8 +617,8 @@
     "note": "Short-lived, harmless monster passively spawned by veinstalks, which then gets targeted for activation of its spell (incase nothing else is seen).",
     "id": "mon_sflesh_veinstalk_crawly",
     "type": "MONSTER",
-    "name": "creeping tendrils",
-    "description": "A dense tentacle outgrowths creeping across the surface. They shrink and return underneath the veinstalk whenever they reach their limits.",
+    "name": { "str": "creeping tendrils", "str_pl": "creeping tendrils" },
+    "description": "A dense tentacle outgrowths creeping across the surface. They shrink and return underneath whenever they reach their limits.",
     "default_faction": "secro_flesh",
     "species": [ "SFLESH", "ABERRATION" ],
     "volume": "5 L",
@@ -638,7 +638,7 @@
     "armor_bash": 3,
     "harvest": "zombie",
     "death_function": [ "MELT" ],
-    "flags": [ "WARM", "POISON", "NO_BREATHE", "IMMOBILE", "PACIFIST", "FILTHY" ]
+    "flags": [ "WARM", "POISON", "NO_BREATHE", "IMMOBILE", "PACIFIST", "ABSORBS" ]
   },
   {
     "note": "Small, random pieces of crap from infected creatures!",
