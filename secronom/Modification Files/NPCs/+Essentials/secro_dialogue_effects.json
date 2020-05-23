@@ -146,5 +146,11 @@
   {
     "type": "effect_type",
     "id": "secro_guard_backfrom_mission2"
+  },
+  {
+    "type": "effect_type",
+    "id": "secro_flesh_campestablished",
+    "apply_message": "Some tendrils came off of the flesh after its relocation!",
+    "rating": "mixed"
   }
 ]
