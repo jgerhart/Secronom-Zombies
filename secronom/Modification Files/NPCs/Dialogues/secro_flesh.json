@@ -14,9 +14,8 @@
       {
         "text": "Set a camp here.",
         "topic": "SECRO_FLESH_HIVEMIND_base",
-        "condition": {
-          "and": [ { "not": { "npc_at_om_location": "FACTION_CAMP_ANY" } }, { "npc_at_om_location": "FACTION_CAMP_START" } ]
-        }, "effect": "start_camp"
+        "condition": { "and": [ { "not": { "npc_at_om_location": "FACTION_CAMP_ANY" } }, { "npc_at_om_location": "FACTION_CAMP_START" } ] },
+        "effect": "start_camp"
       },
       { "text": "I request mending.", "topic": "SECRO_FLESH_HIVEMIND_healme" },
       { "text": "Leave it.", "topic": "TALK_DONE" }
@@ -33,10 +32,18 @@
     "type": "talk_topic",
     "dynamic_line": {
       "npc_at_om_location": "FACTION_CAMP_ANY",
-      "yes": "*stretches its tendrils into the ground, forming compact veins as the temporary walls.",
+      "yes": "*stretches its tendrils into the ground, then starts to move to an ideal location. It reformed the surrounding tendrils into compact vein walls, concealing itself from outside view.",
       "no": "*withdraw its surrounding tendrils as soon as you revoke the establishment of the camp."
     },
-    "responses": [ { "text": "…", "topic": "TALK_DONE" } ]
+    "responses": [
+      {
+        "text": "…",
+        "topic": "TALK_DONE",
+        "condition": { "npc_at_om_location": "FACTION_CAMP_ANY" },
+        "effect": [ "npc_die", { "mapgen_update": "secro_fleshcamp_start", "origin_npc": true }, { "u_buy_monster": "mon_sflesh_veinstalk_crawly", "count": 8 }, { "u_add_effect": "secro_flesh_campestablished", "duration": "PERMANENT" } ]
+      },
+      { "text": "…", "topic": "TALK_DONE", "condition": { "not": { "npc_at_om_location": "FACTION_CAMP_ANY" } } }
+    ]
   },
   {
     "id": "SECRO_FLESH_HIVEMIND_healme",
