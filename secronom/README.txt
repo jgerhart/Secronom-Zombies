@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.9 - Alternately working on NPCs, the flesh's features, power armors and bugfixing existing ones. <--
+--> V1.9 - Currently working on the hivemind. <--
 
 #  TILESET REWORKS (if possible)
 
