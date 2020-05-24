@@ -4,7 +4,7 @@
     "id": "avatar_secronom_secrozed_1_kills",
     "type": "event_transformation",
     "event_transformation": "avatar_species_kills",
-    "value_constraints": { "species": { "equals": "SECROZED_1" } }
+    "value_constraints": { "species": { "equals": [ "species_id", "SECROZED_1" ] } }
   },
   {
     "id": "num_avatar_secronom_secrozed_1_kills",
@@ -17,7 +17,7 @@
     "id": "avatar_secronom_secrozed_2_kills",
     "type": "event_transformation",
     "event_transformation": "avatar_species_kills",
-    "value_constraints": { "species": { "equals": "SECROZED_2" } }
+    "value_constraints": { "species": { "equals": [ "species_id", "SECROZED_2" ] } }
   },
   {
     "id": "num_avatar_secronom_secrozed_2_kills",
@@ -30,7 +30,7 @@
     "id": "avatar_secronom_secrozed_3_kills",
     "type": "event_transformation",
     "event_transformation": "avatar_species_kills",
-    "value_constraints": { "species": { "equals": "SECROZED_3" } }
+    "value_constraints": { "species": { "equals": [ "species_id", "SECROZED_3" ] } }
   },
   {
     "id": "num_avatar_secronom_secrozed_3_kills",
@@ -43,7 +43,7 @@
     "id": "avatar_secronom_secrozed_ultimate_kills",
     "type": "event_transformation",
     "event_transformation": "avatar_species_kills",
-    "value_constraints": { "species": { "equals": "SECROZED_ULTIMATE" } }
+    "value_constraints": { "species": { "equals": [ "species_id", "SECROZED_ULTIMATE" ] } }
   },
   {
     "id": "num_avatar_secronom_secrozed_ultimate_kills",
@@ -56,7 +56,7 @@
     "id": "avatar_secronom_secrospec_kills",
     "type": "event_transformation",
     "event_transformation": "avatar_species_kills",
-    "value_constraints": { "species": { "equals": "SECROSPEC" } }
+    "value_constraints": { "species": { "equals": [ "species_id", "SECROSPEC" ] } }
   },
   {
     "id": "num_avatar_secronom_secrospec_kills",
@@ -69,7 +69,7 @@
     "id": "avatar_secronom_secroflesh_kills",
     "type": "event_transformation",
     "event_transformation": "avatar_species_kills",
-    "value_constraints": { "species": { "equals": "SFLESH" } }
+    "value_constraints": { "species": { "equals": [ "species_id", "SFLESH" ] } }
   },
   {
     "id": "num_avatar_secronom_secroflesh_kills",
@@ -82,7 +82,7 @@
     "id": "avatar_secronom_secrosaddler_kills",
     "type": "event_transformation",
     "event_transformation": "avatar_species_kills",
-    "value_constraints": { "species": { "equals": "SSADDLER" } }
+    "value_constraints": { "species": { "equals": [ "species_id", "SECROZED_ULTIMATESSADDLER
   },
   {
     "id": "num_avatar_secronom_secrosaddler_kills",
