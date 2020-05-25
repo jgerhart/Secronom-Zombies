@@ -82,7 +82,7 @@
     "id": "avatar_secronom_secrosaddler_kills",
     "type": "event_transformation",
     "event_transformation": "avatar_species_kills",
-    "value_constraints": { "species": { "equals": [ "species_id", "SECROZED_ULTIMATESSADDLER ] } }
+    "value_constraints": { "species": { "equals": [ "species_id", "SECROZED_ULTIMATESSADDLER" ] } }
   },
   {
     "id": "num_avatar_secronom_secrosaddler_kills",
