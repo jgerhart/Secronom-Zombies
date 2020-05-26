@@ -8,7 +8,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.9 - Currently working on the hivemind. <--
+--> V1.9 - Currently working on the hivemind and the flesh base. <--
 
 #  TILESET REWORKS (if possible)
 
@@ -23,6 +23,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  FLESHED MILITARY BUNKERS (same old bunker, but it's infested by the flesh)
 +  PATHOGEN FLESH VESSEL (can now form a new hivemind, AKA flesh camp)
 +  HIVEMIND NPC (a mini version of the flesh boss that can be augmented. Interactable for developing a flesh base)
++  HIVEMIND SPAWN (NPCs spawned by the flesh hivemind. Has its own characteristics)
 +  CRIMSON HORROR (fleshlings)
 +  AMALGAMS (fleshmound offsprings)
 
