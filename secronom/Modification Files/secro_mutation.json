@@ -815,12 +815,11 @@
   {
     "type": "mutation",
     "id": "SECRONOM_FLESH_BIO",
-    "name": { "str": "Bio-organic Reconstruction" },
+    "name": { "str": "Flesh Hivemind" },
     "points": 10,
-    "description": "You can build a variety of structures using flesh, but you are completely immobile.",
+    "description": "You might be immobile, but you have the power to dominate the world!",
     "valid": false,
     "purifiable": false,
-    "dodge_modifier": 0.1,
     "speed_modifier": -100,
     "movecost_modifier": 100,
     "movecost_flatground_modifier": 100,
@@ -828,5 +827,23 @@
     "attackcost_modifier": 100,
     "hearing_modifier": -100,
     "enchantments": [ "SECRONOM_FLESH_BIO_ench" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRONOM_FLESH_BIO_construction",
+    "name": { "str": "Bio-organic Construction" },
+    "points": 10,
+    "description": "You can build a variety of structures using flesh.",
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "SECRONOM_FLESH_BIO_construction_advance",
+    "name": { "str": "Advanced Bio-organic Construction" },
+    "points": 10,
+    "description": "You can build a variety of advanced structures using flesh.",
+    "valid": false,
+    "purifiable": false
   }
 ]
