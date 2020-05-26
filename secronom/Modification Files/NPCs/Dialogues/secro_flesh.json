@@ -2,22 +2,69 @@
   {
     "id": "SECRO_FLESH_HIVEMIND_main",
     "type": "talk_topic",
-    "dynamic_line": "*writhes erractically as you confront it.",
+    "dynamic_line": {
+      "u_has_effect": "secro_flesh_isadjacent",
+      "yes": [
+        "*is writhing erractically.",
+        "*writhes erractically.",
+        "*writhes.",
+        "*emits a low, harsh shriek.",
+        "*sways a tendril towards you.",
+        "*trembles.",
+        "glob glob",
+        "glob glob"
+      ],
+      "no": "*responds only when it is adjacent to you."
+    },
     "responses": [
       {
         "text": "Set a camp here.",
         "topic": "SECRO_FLESH_HIVEMIND_base_no",
         "condition": {
-          "and": [ { "not": { "npc_at_om_location": "FACTION_CAMP_ANY" } }, { "not": { "npc_at_om_location": "FACTION_CAMP_START" } } ]
+          "and": [
+            { "u_has_effect": "secro_flesh_isadjacent" },
+            { "not": { "npc_at_om_location": "FACTION_CAMP_ANY" } },
+            { "not": { "npc_at_om_location": "FACTION_CAMP_START" } }
+          ]
         }
       },
       {
         "text": "Set a camp here.",
         "topic": "SECRO_FLESH_HIVEMIND_base",
-        "condition": { "and": [ { "not": { "npc_at_om_location": "FACTION_CAMP_ANY" } }, { "npc_at_om_location": "FACTION_CAMP_START" } ] },
+        "condition": {
+          "and": [
+            { "u_has_effect": "secro_flesh_isadjacent" },
+            { "not": { "npc_at_om_location": "FACTION_CAMP_ANY" } },
+            { "npc_at_om_location": "FACTION_CAMP_START" }
+          ]
+        },
         "effect": "start_camp"
       },
-      { "text": "I request mending.", "topic": "SECRO_FLESH_HIVEMIND_healme" },
+      {
+        "text": "I'd like to strengthen you up.",
+        "topic": "SECRO_FLESH_HIVEMIND_upgrades",
+        "condition": { "and": [ { "u_has_effect": "secro_flesh_isadjacent" }, { "npc_at_om_location": "FACTION_CAMP_ANY" } ] }
+      },
+      {
+        "text": "I'd like you to build something.",
+        "topic": "SECRO_FLESH_HIVEMIND_build",
+        "condition": { "and": [ { "u_has_effect": "secro_flesh_isadjacent" }, { "npc_at_om_location": "FACTION_CAMP_ANY" }, { "npc_has_trait": "SECRONOM_FLESH_BIO_construction" } ] }
+      },
+      {
+        "text": "I'd like you to build something.",
+        "topic": "SECRO_FLESH_HIVEMIND_build",
+        "condition": { "and": [ { "u_has_effect": "secro_flesh_isadjacent" }, { "npc_at_om_location": "FACTION_CAMP_ANY" }, { "npc_has_trait": "SECRONOM_FLESH_BIO_construction_advance" } ] }
+      },
+      {
+        "text": "About your services...",
+        "topic": "SECRO_FLESH_HIVEMIND_service",
+        "condition": { "and": [ { "u_has_effect": "secro_flesh_isadjacent" }, { "npc_at_om_location": "FACTION_CAMP_ANY" }, { "npc_has_effect": "secro_flesh_built_room_meatfarm" } ] }
+      },
+      {
+        "text": "I request mending.",
+        "topic": "SECRO_FLESH_HIVEMIND_healme",
+        "condition": { "and": [ { "u_has_effect": "secro_flesh_isadjacent" }, { "npc_at_om_location": "FACTION_CAMP_ANY" } ] }
+      },
       { "text": "Leave it.", "topic": "TALK_DONE" }
     ]
   },
@@ -40,7 +87,12 @@
         "text": "…",
         "topic": "TALK_DONE",
         "condition": { "npc_at_om_location": "FACTION_CAMP_ANY" },
-        "effect": [ "npc_die", { "mapgen_update": "secro_fleshcamp_start", "origin_npc": true }, { "u_buy_monster": "mon_sflesh_veinstalk_crawly", "count": 8 }, { "u_add_effect": "secro_flesh_campestablished", "duration": "PERMANENT" } ]
+        "effect": [
+          "npc_die",
+          { "mapgen_update": "secro_fleshcamp_start", "origin_npc": true },
+          { "u_buy_monster": "mon_sflesh_veinstalk_crawly", "count": 8 },
+          { "u_add_effect": "secro_flesh_campestablished", "duration": "PERMANENT" }
+        ]
       },
       { "text": "…", "topic": "TALK_DONE", "condition": { "not": { "npc_at_om_location": "FACTION_CAMP_ANY" } } }
     ]
@@ -51,7 +103,7 @@
     "dynamic_line": {
       "npc_has_effect": "currently_busy",
       "yes": "*reveals a revolting response, showing its tendrils that are currently in service.",
-      "no": "*responds with a subtle shake then reveals a gaping orifice."
+      "no": "*responds with a subtle shake, as it reveals a gaping orifice."
     },
     "responses": [
       {
