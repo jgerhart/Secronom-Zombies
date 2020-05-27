@@ -20,12 +20,14 @@
     "name": { "str": "flesh", "str_pl": "fleshes" },
     "symbol": "=",
     "color": "red",
-    "description": "A throbbing, seemingly alive slab of meat. Reacts differently once in contant with the flesh.",
+    "description": "A throbbing, seemingly alive slab of meat. .",
     "volume": "250 ml",
     "weight": "90 g",
     "ammo_type": "secro_flesh",
     "count": 10,
-    "stack_size": 10
+    "stack_size": 10,
+    "phase": "solid",
+    "fuel": { "energy": 75 }
   },
   {
     "type": "AMMO",
