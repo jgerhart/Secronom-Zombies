@@ -24,6 +24,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  PATHOGEN FLESH VESSEL (can now form a new hivemind, AKA flesh camp)
 +  HIVEMIND NPC (a mini version of the flesh boss that can be augmented. Interactable for developing a flesh base)
 +  HIVEMIND SPAWN (NPCs spawned by the flesh hivemind. Has its own characteristics)
++  BIO-ORGANIC VEHICLE PARTS (a new set of flesh vehicle parts)
 +  CRIMSON HORROR (fleshlings)
 +  AMALGAMS (fleshmound offsprings)
 
