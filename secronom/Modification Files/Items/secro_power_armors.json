@@ -89,6 +89,7 @@
     "ammo": "secro_flesh",
     "magazines": [ [ "secro_flesh", [ "secro_flesh_container" ] ] ],
     "magazine_well": 1,
+    "qualities": [ [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   },
   {
@@ -141,6 +142,7 @@
     "ammo": "secro_flesh",
     "magazines": [ [ "secro_flesh", [ "secro_flesh_container" ] ] ],
     "magazine_well": 1,
+    "qualities": [ [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   },
   {
@@ -194,6 +196,7 @@
     "ammo": "secro_flesh",
     "magazines": [ [ "secro_flesh", [ "secro_flesh_container" ] ] ],
     "magazine_well": 1,
+    "qualities": [ [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   },
   {
@@ -247,6 +250,7 @@
     "ammo": "secro_flesh",
     "magazines": [ [ "secro_flesh", [ "secro_flesh_container" ] ] ],
     "magazine_well": 1,
+    "qualities": [ [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   },
   {
@@ -298,6 +302,7 @@
     "ammo": "secro_flesh",
     "magazines": [ [ "secro_flesh", [ "secro_flesh_container" ] ] ],
     "magazine_well": 1,
+    "qualities": [ [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   },
   {
@@ -330,7 +335,7 @@
       "npc_class_id": "secronom_flesh",
       "summon_msg": "You sacrificed a huge amount of flesh to make an artificial flesh hivemind...",
       "place_randomly": false,
-      "moves": 60000
+      "moves": 10
     },
     "relic_data": {
       "passive_effects": [
@@ -364,6 +369,7 @@
     "ammo": "secro_flesh",
     "magazines": [ [ "secro_flesh", [ "secro_flesh_container_pathogen" ] ] ],
     "magazine_well": 1,
+    "qualities": [ [ "SECRO_FLESH_MORPHING", 2 ], [ "SECRO_FLESH_REFORMING", 2 ] ],
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   }
 ]
