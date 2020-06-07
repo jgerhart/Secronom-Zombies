@@ -3,7 +3,7 @@
     "id": "secro_flesh_splicer",
     "type": "TOOL",
     "name": { "str": "bio-organic splicer" },
-    "description": "A disk-shaped bio-organic device used in DNA extraction on living (or undead) subjects.",
+    "description": "A disk-shaped bio-organic device used in DNA extraction suitable on living (or undead) subjects.",
     "weight": "1330 g",
     "volume": "640 ml",
     "price": 100,
@@ -15,8 +15,7 @@
     "charges_per_use": 1,
     "use_action": { "type": "cast_spell", "spell_id": "secro_flesh_splicer_target", "no_fail": true, "level": 0 },
     "flags": [ "NONCONDUCTIVE" ],
-    "magazines": [ [ "secro_flesh", [ "secro_flesh_container_devices" ] ] ],
-    "magazine_well": 1
+    "max_charges": 10
   },
   {
     "type": "GENERIC",
