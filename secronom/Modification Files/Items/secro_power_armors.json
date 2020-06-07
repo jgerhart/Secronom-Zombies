@@ -87,8 +87,7 @@
       ]
     },
     "ammo": "secro_flesh",
-    "magazines": [ [ "secro_flesh", [ "secro_flesh_container" ] ] ],
-    "magazine_well": 1,
+"max_charges": 100,
     "qualities": [ [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   },
@@ -140,8 +139,7 @@
       ]
     },
     "ammo": "secro_flesh",
-    "magazines": [ [ "secro_flesh", [ "secro_flesh_container" ] ] ],
-    "magazine_well": 1,
+"max_charges": 100,
     "qualities": [ [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   },
@@ -194,8 +192,7 @@
       ]
     },
     "ammo": "secro_flesh",
-    "magazines": [ [ "secro_flesh", [ "secro_flesh_container" ] ] ],
-    "magazine_well": 1,
+"max_charges": 100,
     "qualities": [ [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   },
@@ -248,8 +245,7 @@
       ]
     },
     "ammo": "secro_flesh",
-    "magazines": [ [ "secro_flesh", [ "secro_flesh_container" ] ] ],
-    "magazine_well": 1,
+"max_charges": 100,
     "qualities": [ [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   },
@@ -300,8 +296,7 @@
       ]
     },
     "ammo": "secro_flesh",
-    "magazines": [ [ "secro_flesh", [ "secro_flesh_container" ] ] ],
-    "magazine_well": 1,
+"max_charges": 100,
     "qualities": [ [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   },
@@ -329,7 +324,7 @@
     "material_thickness": 24,
     "environmental_protection": 12,
     "power_armor": true,
-    "charges_per_use": 750,
+    "charges_per_use": 50,
     "use_action": {
       "type": "place_npc",
       "npc_class_id": "secronom_flesh",
@@ -367,8 +362,7 @@
       ]
     },
     "ammo": "secro_flesh",
-    "magazines": [ [ "secro_flesh", [ "secro_flesh_container_pathogen" ] ] ],
-    "magazine_well": 1,
+"max_charges": 200,
     "qualities": [ [ "SECRO_FLESH_MORPHING", 2 ], [ "SECRO_FLESH_REFORMING", 2 ] ],
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES" ]
   }
