@@ -18,29 +18,6 @@
     },
     "responses": [
       {
-        "text": "Set a camp here.",
-        "topic": "SECRO_FLESH_HIVEMIND_base_no",
-        "condition": {
-          "and": [
-            { "u_has_effect": "secro_flesh_isadjacent" },
-            { "not": { "npc_at_om_location": "FACTION_CAMP_ANY" } },
-            { "not": { "npc_at_om_location": "FACTION_CAMP_START" } }
-          ]
-        }
-      },
-      {
-        "text": "Set a camp here.",
-        "topic": "SECRO_FLESH_HIVEMIND_base",
-        "condition": {
-          "and": [
-            { "u_has_effect": "secro_flesh_isadjacent" },
-            { "not": { "npc_at_om_location": "FACTION_CAMP_ANY" } },
-            { "npc_at_om_location": "FACTION_CAMP_START" }
-          ]
-        },
-        "effect": "start_camp"
-      },
-      {
         "text": "I'd like to strengthen you up.",
         "topic": "SECRO_FLESH_HIVEMIND_upgrades",
         "condition": { "and": [ { "u_has_effect": "secro_flesh_isadjacent" }, { "npc_at_om_location": "FACTION_CAMP_ANY" } ] }
@@ -79,35 +56,6 @@
         }
       },
       { "text": "Leave it.", "topic": "TALK_DONE" }
-    ]
-  },
-  {
-    "id": "SECRO_FLESH_HIVEMIND_base_no",
-    "type": "talk_topic",
-    "dynamic_line": "*refuses as the surrounding area is not compatible for bio-organic reconstruction. You might want to relocate to an open location such as the fields.",
-    "responses": [ { "text": "…", "topic": "SECRO_FLESH_HIVEMIND_main" } ]
-  },
-  {
-    "id": "SECRO_FLESH_HIVEMIND_base",
-    "type": "talk_topic",
-    "dynamic_line": {
-      "npc_at_om_location": "FACTION_CAMP_ANY",
-      "yes": "*stretches its tendrils into the ground, then starts to move to an ideal location. It reformed the surrounding tendrils into a circular outline of self-regenerating compact vein walls.",
-      "no": "*withdraw its surrounding tendrils as soon as you revoke the establishment of the camp."
-    },
-    "responses": [
-      {
-        "text": "…",
-        "topic": "TALK_DONE",
-        "condition": { "npc_at_om_location": "FACTION_CAMP_ANY" },
-        "effect": [
-          "npc_die",
-          { "mapgen_update": "secro_fleshcamp_start", "origin_npc": true },
-          { "u_buy_monster": "mon_sflesh_veinstalk_crawly", "count": 8 },
-          { "u_add_effect": "secro_flesh_campestablished", "duration": "PERMANENT" }
-        ]
-      },
-      { "text": "…", "topic": "TALK_DONE", "condition": { "not": { "npc_at_om_location": "FACTION_CAMP_ANY" } } }
     ]
   }
 ]
