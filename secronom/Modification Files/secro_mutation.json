@@ -979,6 +979,16 @@
   },
   {
     "type": "mutation",
+    "id": "SECRONOM_FLESH_STARTER",
+    "name": { "str": "Unstable Hivemind" },
+    "points": 10,
+    "description": "Your body slowly melts away!",
+    "valid": false,
+    "purifiable": false,
+    "enchantments": [ "SECRONOM_FLESH_STARTER_ench" ]
+  },
+  {
+    "type": "mutation",
     "id": "SECRONOM_FLESH_BIO_spread1",
     "name": { "str": "Infectious Tendrils" },
     "points": 10,
