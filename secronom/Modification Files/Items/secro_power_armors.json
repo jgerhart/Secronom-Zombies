@@ -333,10 +333,10 @@
       "level": 0
     },{
       "type": "place_npc",
-      "npc_class_id": "secronom_flesh",
-      "summon_msg": "You sacrificed a huge amount of flesh to make an artificial flesh hivemind...",
+      "npc_class_id": "secronom_flesh_spawn_start",
+      "summon_msg": "You formed an artificial flesh hivemind...",
       "place_randomly": false,
-      "moves": 10
+      "moves": 500
     } ],
     "relic_data": {
       "passive_effects": [
