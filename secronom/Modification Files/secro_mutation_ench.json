@@ -133,5 +133,10 @@
         { "frequency": "500 seconds", "spell_effects": [ { "id": "SECRONOM_FLESH_BIO_spreadiest_veryveryfar" } ] }
       ]
     }
+  },
+  {
+    "type": "enchantment",
+    "id": "SECRONOM_FLESH_STARTER_ench",
+    "ench_effects": [ { "effect": "SECRONOM_FLESH_STARTER_melt", "intensity": 1 } ]
   }
 ]
