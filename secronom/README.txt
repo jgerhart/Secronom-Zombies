@@ -27,6 +27,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 +  BIO-ORGANIC VEHICLE PARTS (a new set of flesh vehicle parts)
 +  CRIMSON HORROR (fleshlings)
 +  AMALGAMS (fleshmound offsprings)
++  SCENARIO/PROFESSION (a simple scenario/profession introducing the use of flesh vessel)
 
 ~  CITY ZED REBALANCES (tweaked the stats of tendril, blade and spider zombies, for early game balance)
 ~  SHAPESHIFTER REWORKS (now much more deadly with improved abilities)
