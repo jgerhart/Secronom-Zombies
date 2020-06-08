@@ -236,6 +236,34 @@
   },
   {
     "type": "SPELL",
+    "id": "secro_power_armor_feed_give",
+    "name": "Morph",
+    "description": "Spell casted by an item. If you're seeing this, then read this one instead:\n'Item provides an object used for selecting the morphing branch.'",
+    "message": "",
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ],
+    "effect": "spawn_item",
+    "effect_str": "secro_power_armor_feed_item",
+    "min_duration": 300,
+    "max_duration": 300,
+    "base_casting_time": 1
+  },
+  {
+    "id": "secro_power_armor_feed",
+    "type": "SPELL",
+    "name": "Feed",
+    "description": "Spell casted by an item. If you're seeing this, then read this one instead:\n'Item consumes your flesh.'",
+    "message": "<color_light_green>You let the vessel to consume your flesh.</color>",
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "effect_str": "secro_power_armor_flesh_linked",
+    "note": "6 to 12 hours.",
+    "min_duration": 2160000,
+    "max_duration": 4320000
+  },
+  {
+    "type": "SPELL",
     "id": "secro_power_armor_flesh_morphform_list",
     "name": "Morph",
     "description": "Spell casted by an item. If you're seeing this, then read this one instead:\n'Item provides morph/form list for activation.'",
@@ -244,6 +272,7 @@
     "valid_targets": [ "self" ],
     "effect": "target_attack",
     "extra_effects": [
+      { "id": "secro_power_armor_feed_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_morph_fite_blades_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_morph_fite_tentacles_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_morph_fite_fleshpound_give", "hit_self": true },
@@ -268,6 +297,7 @@
     "valid_targets": [ "self" ],
     "effect": "target_attack",
     "extra_effects": [
+      { "id": "secro_power_armor_feed_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_morph_fite_blades_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_morph_fite_tentacles_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_morph_fite_fleshpound_give", "hit_self": true },
@@ -286,6 +316,7 @@
     "valid_targets": [ "self" ],
     "effect": "target_attack",
     "extra_effects": [
+      { "id": "secro_power_armor_feed_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_morph_jugg_bonespikes_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_create_jugg_bpick_give", "hit_self": true }
     ],
@@ -300,7 +331,8 @@
     "flags": [ "SILENT" ],
     "valid_targets": [ "self" ],
     "effect": "target_attack",
-    "extra_effects": [ { "id": "secro_power_armor_flesh_morph_coward_powerlegs_give", "hit_self": true } ],
+    "extra_effects": [
+      { "id": "secro_power_armor_feed_give", "hit_self": true }, { "id": "secro_power_armor_flesh_morph_coward_powerlegs_give", "hit_self": true } ],
     "base_casting_time": 1
   },
   {
@@ -313,10 +345,23 @@
     "valid_targets": [ "self" ],
     "effect": "target_attack",
     "extra_effects": [
+      { "id": "secro_power_armor_feed_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_morph_gun_spit_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_morph_gun_bonelance_give", "hit_self": true },
       { "id": "secro_power_armor_flesh_create_gun_bonerifle_give", "hit_self": true }
     ],
+    "base_casting_time": 1
+  },
+  {
+    "type": "SPELL",
+    "id": "secro_power_armor_flesh_infect_morphform_list",
+    "name": "Morph",
+    "description": "Spell casted by an item. If you're seeing this, then read this one instead:\n'Item provides morph/form list for activation.'",
+    "message": "",
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "extra_effects": [ { "id": "secro_power_armor_feed_give", "hit_self": true } ],
     "base_casting_time": 1
   },
   {
