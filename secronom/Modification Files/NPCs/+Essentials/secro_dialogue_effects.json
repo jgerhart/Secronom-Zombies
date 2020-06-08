@@ -176,6 +176,10 @@
   },
   {
     "type": "effect_type",
+    "id": "secro_flesh_building_starter"
+  },
+  {
+    "type": "effect_type",
     "id": "secro_flesh_building_core1"
   },
   {
