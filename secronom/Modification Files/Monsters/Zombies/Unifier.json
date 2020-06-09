@@ -10,7 +10,7 @@
     "weight": 81500,
     "harvest": "zombie",
     "hp": 155,
-    "speed": 100,
+    "speed": 85,
     "material": [ "flesh" ],
     "attack_effs": [ { "id": "unify_bloodslow", "duration": 120, "chance": 25 } ],
     "diff": 1,
@@ -28,9 +28,9 @@
     "special_attacks": [
       {
         "type": "spell",
-        "spell_data": { "id": "mon_zombie_unify_bv" },
-        "cooldown": 44,
-        "monster_message": "<color_yellow>A blood vessel were created under %2$s's hands!</color>"
+        "spell_data": { "id": "mon_zombie_unify_bv_target" },
+        "cooldown": 45,
+        "monster_message": "<color_yellow>A blood vessel were created under %1$s's hands!</color>"
       }
     ],
     "death_drops": "default_zombie_death_drops",
@@ -86,9 +86,9 @@
     "special_attacks": [
       {
         "type": "spell",
-        "spell_data": { "id": "mon_zombie_unity_bv" },
-        "cooldown": 50,
-        "monster_message": "<color_yellow>Blood vessels has emerged from %2$s's core!</color>"
+        "spell_data": { "id": "mon_zombie_unity_bv_target" },
+        "cooldown": 60,
+        "monster_message": "<color_yellow>Blood vessels has emerged from %1$s's core!</color>"
       }
     ],
     "upgrades": { "half_life": 20, "into_group": "GROUP_UNIFIER_UPGRADEX" },
@@ -143,8 +143,8 @@
       {
         "type": "spell",
         "spell_data": { "id": "mon_zombie_hemo_bwave" },
-        "cooldown": 65,
-        "monster_message": "<color_red>%1$s manipulates its own blood and sends it to %3$s!</color>\n<color_yellow>Blood vessels and a fiend emerges from %2$s!</color>"
+        "cooldown": 60,
+        "monster_message": "<color_red>%1$s manipulates its own blood and sends it to %3$s!</color>\n<color_yellow>Several blood vessel emerges from %1$s's body!</color>"
       }
     ],
     "regenerates": 2,
