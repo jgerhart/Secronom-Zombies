@@ -13,5 +13,8 @@
 
 ###### Do this everytime you update. It is done to avoid errors.
 
+### What is the .zip file?
+The *secronom.zip* file contains the latest mod version's files that works for pre-nested experimental version of CDDA (build #10614). Also note that this zip file has not tileset. Place the old tilesets in this version if you are about to use it.
+
 ### Additional info:
 _Secronom_ mod folder has informational texts that might help you out...
