@@ -924,5 +924,42 @@
         "message": "The furnitures here has collapsed."
       }
     ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "secro_furn_build",
+    "fail_message": "Can't build a flesh furniture.",
+    "furniture": [
+      {
+        "result": "f_secro_flesh_camp_bed",
+        "valid_furniture": [ "f_secro_flesh_camp_bed_mark" ],
+        "message": "Flesh furniture has been built!"
+      },
+      {
+        "result": "f_secro_flesh_camp_floorstorage",
+        "valid_furniture": [ "f_secro_flesh_camp_floorstorage_mark" ],
+        "message": "Flesh furniture has been built!"
+      },
+      {
+        "result": "f_secro_flesh_camp_storage",
+        "valid_furniture": [ "f_secro_flesh_camp_storage_mark" ],
+        "message": "Flesh furniture has been built!"
+      },
+      {
+        "result": "f_secro_flesh_camp_displaystorage",
+        "valid_furniture": [ "f_secro_flesh_camp_displaystorage_mark" ],
+        "message": "Flesh furniture has been built!"
+      },
+      {
+        "result": "f_secro_flesh_camp_liquidstorage",
+        "valid_furniture": [ "f_secro_flesh_camp_liquidstorage_mark" ],
+        "message": "Flesh furniture has been built!"
+      },
+      {
+        "result": "f_secro_flesh_camp_light",
+        "valid_furniture": [ "f_secro_flesh_camp_light_mark" ],
+        "message": "Flesh furniture has been built!"
+      }
+    ]
   }
 ]
