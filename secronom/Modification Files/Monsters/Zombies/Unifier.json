@@ -168,7 +168,7 @@
     "id": "mon_zombie_bloodvessel",
     "type": "MONSTER",
     "name": "blood vessel",
-    "description": "An animate substance completely made out of blood, too viscous to move in limited speed.",
+    "description": "An animate substance completely made out of blood, too viscous to move in limited speed. It throbs erratically.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE" ],
     "volume": "62500 ml",
@@ -191,6 +191,14 @@
     "armor_bash": 20,
     "death_function": [ "MELT" ],
     "regenerates": 3,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "mon_zombie_bloodvessel_explo_target" },
+        "cooldown": 120,
+        "monster_message": "<color_yellow>The blood vessel explodes!</color>"
+      }
+    ],
     "flags": [
       "SEES",
       "HEARS",
@@ -209,7 +217,7 @@
     "id": "mon_zombie_bloodfiend",
     "type": "MONSTER",
     "name": "blood fiend",
-    "description": "A large, animated substance made out of thickened blood. Dark goo seeps from its 'mouth'.",
+    "description": "A large, animated substance made out of thickened blood. Bloated portions of its body looks volatile, and throbs at a faster pace.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE" ],
     "volume": "92500 ml",
@@ -232,6 +240,14 @@
     "armor_bash": 24,
     "death_function": [ "MELT" ],
     "regenerates": 5,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "mon_zombie_bloodfiend_explo_target" },
+        "cooldown": 120,
+        "monster_message": "<color_yellow>The blood fiend explodes violently!</color>"
+      }
+    ],
     "looks_like": "mon_zombie_bloodvessel",
     "flags": [
       "SEES",
