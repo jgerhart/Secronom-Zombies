@@ -21,12 +21,12 @@
     "items": {
       "both": {
         "items": [
-          "secro_power_armor_flesh",
           "secro_power_armor_module_core"
         ],
         "entries": [
           { "item": "secro_flesh", "count": 10 },
           { "item": "secro_recipe_flesh_field" },
+          { "item": "secro_power_armor_flesh", "ammo-item": "secro_flesh", "charges": 100 },
           { "item": "knife_combat" },
           { "group": "charged_cell_phone" }
         ]
@@ -38,8 +38,8 @@
     "type": "profession",
     "ident": "secro_prof_pathogenvessel",
     "name": "Pathogenic Experimental",
-    "description": "You, a hapless lab rat, were chosen to wear an extremely unstable bio-organic power armor - the flesh vessel \"Pathogen\". Although the team may have granted you access to the outside world, your exact movements were monitored. But now that everything has fallen into chaos, you can either free yourself from the suit, or become one with it...",
-    "points": 6,
+    "description": "You, a hapless lab rat, were chosen to wear an extremely unstable bio-organic power armor - the flesh vessel \"Pathogen\" - for testing purposes. Although the team may have granted you access to the outside world, your exact movements were monitored. But now that everything has fallen into chaos, you can either free yourself from the suit, or become one with it...",
+    "points": 8,
     "skills": [
       { "level": 1, "name": "melee" }
     ],
@@ -47,16 +47,17 @@
       "bio_power_armor_interface",
       "bio_batteries",
       "bio_power_storage_mkII",
+      "bio_power_storage_mkII",
       "bio_power_storage_mkII"
     ],
     "items": {
       "both": {
         "items": [
-          "secro_power_armor_flesh_infect",
           "secro_power_armor_module_core"
         ],
         "entries": [
           { "item": "secro_flesh", "count": 12 },
+          { "item": "secro_power_armor_flesh_infect", "ammo-item": "secro_flesh", "charges": 200 },
           { "item": "secro_recipe_flesh_field" },
           { "group": "charged_cell_phone" }
         ]
