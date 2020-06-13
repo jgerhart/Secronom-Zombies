@@ -477,7 +477,7 @@
   {
     "id": "achievement_secronom_special_survive1",
     "type": "achievement",
-    "name": "<color_light_red>(Secronom)</color> 30th Days Survived",
+    "name": "<color_light_red>(Secronom)</color> 30th Day Survived",
     "description": "Warning: mutants have become more aggressive.\n",
     "time_constraint": { "since": "game_start", "is": ">=", "target": "30 days" },
     "requirements": [ { "event_statistic": "num_avatar_wake_ups", "is": "anything" } ]
