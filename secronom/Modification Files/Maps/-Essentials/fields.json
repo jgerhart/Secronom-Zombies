@@ -1271,7 +1271,7 @@
       {
         "name": "...",
         "color": "black",
-        "monster_spawn_chance": 20000,
+        "monster_spawn_chance": 5,
         "monster_spawn_count": 1,
         "monster_spawn_radius": 1,
         "monster_spawn_group": "GROUP_FLESHLING"
